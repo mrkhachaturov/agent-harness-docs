@@ -1,27 +1,30 @@
-# Claude Code Documentation Mirror + Knowledge Graph
+# Claude Code Documentation Mirror
 
-Local mirror of Claude Code documentation with a graphify knowledge graph layer.
-Docs are updated via GitHub Actions. The graph is rebuilt manually when needed.
+Local mirror of the official Claude Code documentation, optimized for use
+with [Miyo](https://miyo.md) local semantic search.
 
-## Navigation
+Docs are kept in `docs/` and updated upstream via GitHub Actions
+(see `scripts/fetch_claude_docs.py`).
 
-1. **Graph overview** — `graphify-out/GRAPH_REPORT.md` (god nodes, communities)
-2. **Wiki articles** — `graphify-out/wiki/index.md` (one article per topic cluster)
-3. **Raw docs** — `docs/{topic}.md` (full documentation pages)
+## How users consume this repo
 
-Use the lightest level that answers the question. Do not read raw docs when
-the wiki article suffices.
+`install.sh` does NOT clone the repo into the user's home. Instead it:
 
-## Rebuilding the graph
+1. Maintains a hidden cache clone at `~/Library/Caches/claude-code-docs-mirror/`
+2. Rsyncs `docs/*` into `~/claude-code-docs/` (flat, no subfolders)
+3. Installs a launchd job that re-runs the sync every hour
+4. Copies `skills/claude-code-docs/SKILL.md` → `~/.claude/skills/claude-code-docs/`
+5. Copies `rules/claude-code-docs.md` → `~/.claude/rules/`
 
-```bash
-python scripts/preprocess-for-graphify.py
-# Then run /graphify graphify-out/.preprocessed/ --mode deep --wiki
-```
+The user then points Miyo at `~/claude-code-docs/` (labelled
+`claude-code-docs`) and Miyo handles the embedding + reranking. The
+shipped skill calls `mcp__miyo__search` with the required
+`folder_path: "claude-code-docs"` scope.
 
 ## Key files
 
-@scripts/preprocess-for-graphify.py
-@skills/claude-code-docs/SKILL.md
 @install.sh
-@.graphifyignore
+@uninstall.sh
+@skills/claude-code-docs/SKILL.md
+@rules/claude-code-docs.md
+@scripts/fetch_claude_docs.py
