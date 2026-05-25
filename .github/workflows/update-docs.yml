@@ -1,4 +1,4 @@
-name: Update Claude Code Documentation
+name: Update agent harness docs
 
 on:
   schedule:
@@ -13,86 +13,94 @@ permissions:
 jobs:
   update-docs:
     runs-on: ubuntu-latest
-    
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         ref: main
-    
+
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-    
+
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r scripts/requirements.txt
-    
-    - name: Fetch latest documentation
-      id: fetch-docs
+
+    - name: Verify skill renders are in sync with templates
+      run: python scripts/render_skills.py --check
+
+    - name: Fetch Claude Code documentation
+      id: fetch-claude
       env:
         GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_REF_NAME: ${{ github.ref_name }}
       run: |
-        python scripts/fetch_claude_docs.py || echo "fetch_failed=true" >> $GITHUB_OUTPUT
+        python scripts/fetch_claude_docs.py || echo "claude_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
-    
+
+    - name: Fetch Codex documentation
+      id: fetch-codex
+      env:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        GITHUB_REF_NAME: ${{ github.ref_name }}
+      run: |
+        python scripts/fetch_codex_docs.py || echo "codex_failed=true" >> $GITHUB_OUTPUT
+      continue-on-error: true
+
     - name: Check for changes
       id: verify-changed-files
       run: |
-        git diff --exit-code || echo "changed=true" >> $GITHUB_OUTPUT
-    
+        git diff --exit-code -- docs/ || echo "changed=true" >> $GITHUB_OUTPUT
+
     - name: Generate commit message
       if: steps.verify-changed-files.outputs.changed == 'true'
       id: commit-msg
       run: |
-        # Stage changes to see what will be committed
         git add -A docs/
-        
-        # Get list of changed files
-        CHANGED_FILES=$(git diff --name-status --cached | grep "^M" | cut -f2 | grep -E "\.md$" | sed 's/docs\///' | paste -sd ", " -)
-        ADDED_FILES=$(git diff --name-status --cached | grep "^A" | cut -f2 | grep -E "\.md$" | sed 's/docs\///' | paste -sd ", " -)
-        DELETED_FILES=$(git diff --name-status --cached | grep "^D" | cut -f2 | grep -E "\.md$" | sed 's/docs\///' | paste -sd ", " -)
-        
-        # Build commit message
-        COMMIT_MSG="Update Claude Code docs - $(date +'%Y-%m-%d')"
-        
-        if [ -n "$CHANGED_FILES" ]; then
-          COMMIT_MSG="$COMMIT_MSG | Updated: $CHANGED_FILES"
+
+        # Per-docset change summaries
+        claude_changes=$(git diff --name-status --cached -- docs/claude-code/ | wc -l | tr -d ' ')
+        codex_changes=$(git diff --name-status --cached -- docs/codex/       | wc -l | tr -d ' ')
+
+        COMMIT_MSG="Update agent harness docs - $(date +'%Y-%m-%d')"
+        if [ "$claude_changes" != "0" ]; then
+          COMMIT_MSG="$COMMIT_MSG | Claude Code: $claude_changes files changed"
         fi
-        
-        if [ -n "$ADDED_FILES" ]; then
-          COMMIT_MSG="$COMMIT_MSG | Added: $ADDED_FILES"
+        if [ "$codex_changes" != "0" ]; then
+          COMMIT_MSG="$COMMIT_MSG | Codex: $codex_changes files changed"
         fi
-        
-        if [ -n "$DELETED_FILES" ]; then
-          COMMIT_MSG="$COMMIT_MSG | Removed: $DELETED_FILES"
-        fi
-        
+
         echo "message=$COMMIT_MSG" >> $GITHUB_OUTPUT
-    
+
     - name: Commit and push if changed
       if: steps.verify-changed-files.outputs.changed == 'true'
       run: |
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
-        # Files already staged in previous step
         git commit -m "${{ steps.commit-msg.outputs.message }}"
         git push
-    
+
     - name: Create issue on failure
-      if: steps.fetch-docs.outputs.fetch_failed == 'true'
+      if: steps.fetch-claude.outputs.claude_failed == 'true' || steps.fetch-codex.outputs.codex_failed == 'true'
       uses: actions/github-script@v7
       with:
         script: |
           const date = new Date().toISOString().split('T')[0];
+          const claudeFailed = '${{ steps.fetch-claude.outputs.claude_failed }}' === 'true';
+          const codexFailed  = '${{ steps.fetch-codex.outputs.codex_failed }}'  === 'true';
+          const which = [
+            claudeFailed ? 'Claude Code' : null,
+            codexFailed  ? 'Codex'       : null,
+          ].filter(Boolean).join(' + ');
           await github.rest.issues.create({
             owner: context.repo.owner,
             repo: context.repo.repo,
-            title: `Documentation update failed - ${date}`,
-            body: `The automated documentation update failed on ${date}.\n\nPlease check the [workflow run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}) for details.`,
+            title: `Documentation update failed (${which}) - ${date}`,
+            body: `The automated documentation update failed for ${which} on ${date}.\n\nSee the [workflow run](${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}).`,
             labels: ['bug', 'automation']
           })

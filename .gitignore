@@ -35,6 +35,10 @@ graphify-out/cache/
 .last_check
 claude-docs-helper.sh
 
+# Local-only instructions / overrides (per Claude Code convention)
+CLAUDE.local.md
+*.local.md
+
 # Test files
 test_*.txt
 test_*.md

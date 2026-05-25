@@ -75,20 +75,20 @@ def save_manifest(docs_dir: Path, manifest: dict) -> None:
     manifest["last_updated"] = datetime.now().isoformat()
     
     # Get GitHub repository from environment or use default
-    github_repo = os.environ.get('GITHUB_REPOSITORY', 'mrkhachaturov/claude-code-docs')
+    github_repo = os.environ.get('GITHUB_REPOSITORY', 'mrkhachaturov/agent-harness-docs')
     github_ref = os.environ.get('GITHUB_REF_NAME', 'main')
-    
+
     # Validate repository name format (owner/repo)
     if not re.match(r'^[\w.-]+/[\w.-]+$', github_repo):
         logger.warning(f"Invalid repository format: {github_repo}, using default")
-        github_repo = 'mrkhachaturov/claude-code-docs'
-    
+        github_repo = 'mrkhachaturov/agent-harness-docs'
+
     # Validate branch/ref name
     if not re.match(r'^[\w.-]+$', github_ref):
         logger.warning(f"Invalid ref format: {github_ref}, using default")
         github_ref = 'main'
-    
-    manifest["base_url"] = f"https://raw.githubusercontent.com/{github_repo}/{github_ref}/docs/"
+
+    manifest["base_url"] = f"https://raw.githubusercontent.com/{github_repo}/{github_ref}/docs/claude-code/"
     manifest["github_repository"] = github_repo
     manifest["github_ref"] = github_ref
     manifest["description"] = "Claude Code documentation manifest. Keys are filenames, append to base_url for full URL."
@@ -477,12 +477,12 @@ def main():
     logger.info("Starting Claude Code documentation fetch (improved version)")
     
     # Log configuration
-    github_repo = os.environ.get('GITHUB_REPOSITORY', 'mrkhachaturov/claude-code-docs')
+    github_repo = os.environ.get('GITHUB_REPOSITORY', 'mrkhachaturov/agent-harness-docs')
     logger.info(f"GitHub repository: {github_repo}")
-    
-    # Create docs directory at repository root
-    docs_dir = Path(__file__).parent.parent / 'docs'
-    docs_dir.mkdir(exist_ok=True)
+
+    # Output directory: docs/claude-code/ (sibling of docs/codex/)
+    docs_dir = Path(__file__).parent.parent / 'docs' / 'claude-code'
+    docs_dir.mkdir(parents=True, exist_ok=True)
     logger.info(f"Output directory: {docs_dir}")
     
     # Load manifest
