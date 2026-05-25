@@ -843,8 +843,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-25T13:09:10.755859",
-    "fetch_duration_seconds": 76.303685,
+    "last_fetch_completed": "2026-05-25T15:58:56.381714",
+    "fetch_duration_seconds": 74.587877,
     "total_pages_discovered": 140,
     "pages_fetched_successfully": 141,
     "pages_failed": 0,
@@ -854,9 +854,9 @@
     "total_files": 140,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-25T13:09:10.755893",
-  "base_url": "https://raw.githubusercontent.com/mrkhachaturov/claude-code-docs/main/docs/",
-  "github_repository": "mrkhachaturov/claude-code-docs",
+  "last_updated": "2026-05-25T15:58:56.381745",
+  "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
+  "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
   "description": "Claude Code documentation manifest. Keys are filenames, append to base_url for full URL."
 }
