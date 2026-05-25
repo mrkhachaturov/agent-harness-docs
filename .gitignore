@@ -30,7 +30,8 @@ graphify-out/cache/
 
 # Project specific
 *.log
-.claude/settings.local.json
+.claude/
+.rkstack/
 .last_pull
 .last_check
 claude-docs-helper.sh
