@@ -39,8 +39,8 @@
     "app__commands.md": {
       "original_url": "https://developers.openai.com/codex/app/commands",
       "original_md_url": "https://developers.openai.com/codex/app/commands.md",
-      "hash": "93892e713cd13cb043dd4aa7760e69290a4efbdae40ab5031087776490511fbe",
-      "last_updated": "2026-05-25T17:33:50.223816"
+      "hash": "5292360935a565515eee35e8e70f9bd26cb8ed79445a75322095903e2f46b117",
+      "last_updated": "2026-05-26T16:19:25.069190"
     },
     "app__computer-use.md": {
       "original_url": "https://developers.openai.com/codex/app/computer-use",
@@ -69,8 +69,8 @@
     "app__settings.md": {
       "original_url": "https://developers.openai.com/codex/app/settings",
       "original_md_url": "https://developers.openai.com/codex/app/settings.md",
-      "hash": "6f6787593d43428454b703cac30cfcc7ead8790462f373d71db253fe95355d73",
-      "last_updated": "2026-05-25T17:33:53.206897"
+      "hash": "371b44f9d62af04efbb6cdc93ee42c6c488c87131132dd67916b268282ece438",
+      "last_updated": "2026-05-26T16:19:28.056343"
     },
     "app__troubleshooting.md": {
       "original_url": "https://developers.openai.com/codex/app/troubleshooting",
@@ -488,8 +488,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-26T13:00:09.087895",
-    "fetch_duration_seconds": 43.441218,
+    "last_fetch_completed": "2026-05-26T16:20:07.350298",
+    "fetch_duration_seconds": 46.061537,
     "total_pages_discovered": 81,
     "pages_fetched_successfully": 81,
     "pages_failed": 0,
@@ -499,7 +499,7 @@
     "total_files": 81,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-05-26T13:00:09.087929",
+  "last_updated": "2026-05-26T16:20:07.350328",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
