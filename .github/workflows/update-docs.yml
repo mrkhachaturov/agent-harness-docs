@@ -26,10 +26,21 @@ jobs:
       with:
         python-version: '3.11'
 
-    - name: Install dependencies
+    - name: Install Python dependencies
       run: |
         python -m pip install --upgrade pip
         pip install -r scripts/requirements.txt
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        cache: 'npm'
+        cache-dependency-path: scripts/package-lock.json
+
+    - name: Install Node dependencies (for MDX → MD conversion)
+      working-directory: scripts
+      run: npm ci
 
     - name: Verify skill renders are in sync with templates
       run: python scripts/render_skills.py --check
@@ -52,6 +63,15 @@ jobs:
         python scripts/fetch_codex_docs.py || echo "codex_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
 
+    - name: Fetch OpenCode documentation
+      id: fetch-opencode
+      env:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        GITHUB_REF_NAME: ${{ github.ref_name }}
+      run: |
+        python scripts/fetch_opencode_docs.py || echo "opencode_failed=true" >> $GITHUB_OUTPUT
+      continue-on-error: true
+
     - name: Check for changes
       id: verify-changed-files
       run: |
@@ -65,7 +85,8 @@ jobs:
 
         # Per-docset change summaries
         claude_changes=$(git diff --name-status --cached -- docs/claude-code/ | wc -l | tr -d ' ')
-        codex_changes=$(git diff --name-status --cached -- docs/codex/       | wc -l | tr -d ' ')
+        codex_changes=$(git diff --name-status --cached -- docs/codex/        | wc -l | tr -d ' ')
+        opencode_changes=$(git diff --name-status --cached -- docs/opencode/  | wc -l | tr -d ' ')
 
         COMMIT_MSG="Update agent harness docs - $(date +'%Y-%m-%d')"
         if [ "$claude_changes" != "0" ]; then
@@ -73,6 +94,9 @@ jobs:
         fi
         if [ "$codex_changes" != "0" ]; then
           COMMIT_MSG="$COMMIT_MSG | Codex: $codex_changes files changed"
+        fi
+        if [ "$opencode_changes" != "0" ]; then
+          COMMIT_MSG="$COMMIT_MSG | OpenCode: $opencode_changes files changed"
         fi
 
         echo "message=$COMMIT_MSG" >> $GITHUB_OUTPUT
@@ -86,16 +110,18 @@ jobs:
         git push
 
     - name: Create issue on failure
-      if: steps.fetch-claude.outputs.claude_failed == 'true' || steps.fetch-codex.outputs.codex_failed == 'true'
+      if: steps.fetch-claude.outputs.claude_failed == 'true' || steps.fetch-codex.outputs.codex_failed == 'true' || steps.fetch-opencode.outputs.opencode_failed == 'true'
       uses: actions/github-script@v7
       with:
         script: |
           const date = new Date().toISOString().split('T')[0];
-          const claudeFailed = '${{ steps.fetch-claude.outputs.claude_failed }}' === 'true';
-          const codexFailed  = '${{ steps.fetch-codex.outputs.codex_failed }}'  === 'true';
+          const claudeFailed   = '${{ steps.fetch-claude.outputs.claude_failed     }}' === 'true';
+          const codexFailed    = '${{ steps.fetch-codex.outputs.codex_failed       }}' === 'true';
+          const opencodeFailed = '${{ steps.fetch-opencode.outputs.opencode_failed }}' === 'true';
           const which = [
-            claudeFailed ? 'Claude Code' : null,
-            codexFailed  ? 'Codex'       : null,
+            claudeFailed   ? 'Claude Code' : null,
+            codexFailed    ? 'Codex'       : null,
+            opencodeFailed ? 'OpenCode'    : null,
           ].filter(Boolean).join(' + ');
           await github.rest.issues.create({
             owner: context.repo.owner,

@@ -1,0 +1,19 @@
+{
+  "name": "agent-harness-docs-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Maintainer-side Node tools (MDX→MD converter for opencode docs).",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "unified": "^11.0.5",
+    "remark-parse": "^11.0.0",
+    "remark-mdx": "^3.1.0",
+    "remark-gfm": "^4.0.0",
+    "remark-stringify": "^11.0.0",
+    "unist-util-visit": "^5.0.0",
+    "mdast-util-to-string": "^4.0.0"
+  }
+}

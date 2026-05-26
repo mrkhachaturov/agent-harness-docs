@@ -31,6 +31,7 @@ INDEXERS = ["plain", "miyo"]
 TEMPLATES = {
     "claude-code-docs.SKILL.md.j2": "claude-code-docs",
     "codex-docs.SKILL.md.j2":       "codex-docs",
+    "opencode-docs.SKILL.md.j2":    "opencode-docs",
 }
 
 

@@ -36,6 +36,15 @@ graphify-out/cache/
 .last_check
 claude-docs-helper.sh
 
+# Sparse-checkout caches used by maintainer fetchers
+.cache/
+
+# Node deps for the MDX converter (lockfile IS committed for reproducible CI)
+scripts/node_modules/
+
+# Local exploration clones (user clones upstream repos here for inspection)
+tmp/
+
 # Local-only instructions / overrides (per Claude Code convention)
 CLAUDE.local.md
 *.local.md
