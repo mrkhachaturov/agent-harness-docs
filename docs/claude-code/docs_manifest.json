@@ -243,8 +243,8 @@
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "be7f2091cda0e05aef0a4adfbab3d5053720f335e107ec42aaec981a15ca1b69",
-      "last_updated": "2026-05-23T04:18:17.076061",
+      "hash": "61879925630becf24491819fb662d0abcabb3a396eb3ca783b6c0eefdf2499d7",
+      "last_updated": "2026-05-27T04:31:53.553979",
       "source": "claude-code-repository"
     },
     "channels.md": {
@@ -849,8 +849,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-27T00:39:16.161647",
-    "fetch_duration_seconds": 82.122977,
+    "last_fetch_completed": "2026-05-27T04:31:53.554012",
+    "fetch_duration_seconds": 74.710725,
     "total_pages_discovered": 141,
     "pages_fetched_successfully": 142,
     "pages_failed": 0,
@@ -860,7 +860,7 @@
     "total_files": 141,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-05-27T00:39:16.161677",
+  "last_updated": "2026-05-27T04:31:53.554031",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
