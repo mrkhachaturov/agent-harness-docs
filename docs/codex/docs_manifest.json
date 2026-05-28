@@ -381,8 +381,8 @@
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
       "original_md_url": "https://developers.openai.com/codex/plugins.md",
-      "hash": "d38137f280059a0942fcd0e1815576fbbda7e47d3546939475a7b064fb6d670c",
-      "last_updated": "2026-05-25T17:34:24.356139"
+      "hash": "f8474ab5a5844c2c0a87e9227c3e2cd7345da4b580769b19ef63226cfa1b0979",
+      "last_updated": "2026-05-28T18:54:46.756213"
     },
     "plugins__build.md": {
       "original_url": "https://developers.openai.com/codex/plugins/build",
@@ -429,14 +429,20 @@
     "security.md": {
       "original_url": "https://developers.openai.com/codex/security",
       "original_md_url": "https://developers.openai.com/codex/security.md",
-      "hash": "ade6ad0e932c9ef80b2722a7e033493ca7950692aebd793aa11f6ab2a53d6917",
-      "last_updated": "2026-05-25T17:34:29.059787"
+      "hash": "f790f0d2d9088e473ca0966988afdb9cb767b6b4fd9c6245466cb3d995cf2bf6",
+      "last_updated": "2026-05-28T18:54:51.319502"
     },
     "security__faq.md": {
       "original_url": "https://developers.openai.com/codex/security/faq",
       "original_md_url": "https://developers.openai.com/codex/security/faq.md",
       "hash": "06f20d095a1cb0ee45c160650ce83fbb392b478c696e8394cb0c17fd507a6fdf",
       "last_updated": "2026-05-25T17:34:30.520827"
+    },
+    "security__plugin.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin.md",
+      "hash": "7a3bc745d2ef0bf455b6873a551e8056112efd1c5d2e16a5f3bb1cae6aacc2bd",
+      "last_updated": "2026-05-28T18:54:52.471692"
     },
     "security__setup.md": {
       "original_url": "https://developers.openai.com/codex/security/setup",
@@ -488,18 +494,18 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-28T16:29:28.141247",
-    "fetch_duration_seconds": 43.294397,
-    "total_pages_discovered": 81,
-    "pages_fetched_successfully": 81,
+    "last_fetch_completed": "2026-05-28T18:54:57.117970",
+    "fetch_duration_seconds": 46.841609,
+    "total_pages_discovered": 82,
+    "pages_fetched_successfully": 82,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 81,
+    "total_files": 82,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-05-28T16:29:28.141294",
+  "last_updated": "2026-05-28T18:54:57.118002",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
