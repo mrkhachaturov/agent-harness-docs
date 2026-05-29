@@ -12,7 +12,8 @@ set -euo pipefail
 #   ~/Library/Caches/agent-harness-docs-mirror/                cache git clone (full repo)
 #   ~/Library/Application Support/agent-harness-docs/sync.sh   sync script (all four targets)
 #   ~/Library/LaunchAgents/com.mrkhachaturov.agent-harness-docs.plist   hourly job
-#   ~/.claude/skills/claude-code-docs/SKILL.md                 Claude Code skill
+#   ~/.agents/skills/claude-code-docs/SKILL.md                 Claude-Code-docs skill (shared)
+#   ~/.claude/skills/claude-code-docs                          → symlink to above (for Claude Code)
 #   ~/.claude/rules/claude-code-docs.md                        always-on rule
 #   ~/.agents/skills/codex-docs/SKILL.md                       Codex skill (agentskills.io USER scope)
 #   ~/.agents/skills/opencode-docs/SKILL.md                    OpenCode-docs skill (shared)
@@ -39,7 +40,12 @@ PLIST_LABEL="com.mrkhachaturov.agent-harness-docs"
 PLIST_FILE="$LAUNCH_AGENTS_DIR/$PLIST_LABEL.plist"
 SYNC_SCRIPT="$SUPPORT_DIR/sync.sh"
 
-CLAUDE_SKILL_DIR="$HOME/.claude/skills/claude-code-docs"
+# claude-code-docs is a shared skill: canonical SKILL.md lives in ~/.agents/skills/
+# (which opencode AND codex read natively, so any harness can answer Claude Code
+# questions). For Claude Code itself, expose it via a symlink at
+# ~/.claude/skills/claude-code-docs → ~/.agents/skills/claude-code-docs.
+CLAUDE_SKILL_DIR="$HOME/.agents/skills/claude-code-docs"
+CLAUDE_SKILL_CLAUDE_LINK="$HOME/.claude/skills/claude-code-docs"
 CLAUDE_RULE_FILE="$HOME/.claude/rules/claude-code-docs.md"
 CODEX_SKILL_DIR="$HOME/.agents/skills/codex-docs"
 
@@ -205,12 +211,22 @@ detect_indexer() {
 INDEXER=$(detect_indexer)
 echo "✓ Detected indexer: $INDEXER"
 
-# --- Install Claude Code skill + rule ---------------------------------
-mkdir -p "$CLAUDE_SKILL_DIR" "$(dirname "$CLAUDE_RULE_FILE")"
+# --- Install Claude-Code-docs skill (shared) + rule -------------------
+# Canonical lives in ~/.agents/skills/ — both opencode and codex read it
+# natively. For Claude Code, we add a symlink at ~/.claude/skills/.
+mkdir -p "$CLAUDE_SKILL_DIR" "$(dirname "$CLAUDE_SKILL_CLAUDE_LINK")" "$(dirname "$CLAUDE_RULE_FILE")"
 cp "$CACHE_DIR/skills/claude-code-docs/$INDEXER/SKILL.md" "$CLAUDE_SKILL_DIR/SKILL.md"
 cp "$CACHE_DIR/rules/claude-code-docs.md" "$CLAUDE_RULE_FILE"
-echo "✓ Installed Claude Code skill ($INDEXER): $CLAUDE_SKILL_DIR/SKILL.md"
-echo "✓ Installed Claude Code rule:             $CLAUDE_RULE_FILE"
+echo "✓ Installed Claude-Code-docs skill ($INDEXER): $CLAUDE_SKILL_DIR/SKILL.md"
+echo "✓ Installed Claude Code rule:               $CLAUDE_RULE_FILE"
+
+# Replace whatever's at the Claude link path with a fresh symlink (handles
+# upgrades from older versions that copied the file into ~/.claude/skills/).
+if [[ -L "$CLAUDE_SKILL_CLAUDE_LINK" ]] || [[ -e "$CLAUDE_SKILL_CLAUDE_LINK" ]]; then
+    rm -rf "$CLAUDE_SKILL_CLAUDE_LINK"
+fi
+ln -s "$CLAUDE_SKILL_DIR" "$CLAUDE_SKILL_CLAUDE_LINK"
+echo "✓ Symlinked into Claude Code:               $CLAUDE_SKILL_CLAUDE_LINK → $CLAUDE_SKILL_DIR"
 
 # --- Install Codex skill ----------------------------------------------
 mkdir -p "$CODEX_SKILL_DIR"
@@ -365,7 +381,7 @@ echo "Codex docs:         $CODEX_DOCS_DIR  ($CODEX_COUNT files)"
 echo "OpenCode docs:      $OPENCODE_DOCS_DIR  ($OPENCODE_COUNT files)"
 echo "Pi docs:            $PI_DOCS_DIR  ($PI_COUNT files)"
 echo "Sync log:           $SUPPORT_DIR/sync.log"
-echo "Skills:             /claude-code-docs (Claude Code)"
+echo "Skills:             /claude-code-docs (Claude + Codex + OpenCode — shared)"
 echo "                    /codex-docs (Codex)"
 echo "                    /opencode-docs (Claude + Codex + OpenCode — shared)"
 echo "                    /pi-docs (Claude + Codex + Pi — shared)"

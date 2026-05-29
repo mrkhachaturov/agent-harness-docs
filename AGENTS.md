@@ -70,7 +70,7 @@ agent-harness-docs/
 6. Installs **one** launchd job that re-runs the sync every hour
 7. **Detects** the user's indexer (currently: `miyo` or `plain` fallback)
 8. Copies skills into the agents' native locations:
-   - `~/.claude/skills/claude-code-docs/SKILL.md` (Claude Code)
+   - `~/.agents/skills/claude-code-docs/SKILL.md` (shared) + symlink at `~/.claude/skills/claude-code-docs`
    - `~/.agents/skills/codex-docs/SKILL.md` (Codex)
    - `~/.agents/skills/opencode-docs/SKILL.md` (shared) + symlink at `~/.claude/skills/opencode-docs`
    - `~/.agents/skills/pi-docs/SKILL.md` (shared) + symlink at `~/.claude/skills/pi-docs`
@@ -110,7 +110,7 @@ Pi docs are already clean Markdown — no MDX or HTML conversion is needed.
 The fetcher simply sparse-checks out the `.md` files and copies them into
 `docs/pi/`.
 
-## Skills — two shared, two per-harness
+## Skills — three shared, one per-harness
 
 Each agent scans its own conventional skill location:
 
@@ -118,15 +118,14 @@ Each agent scans its own conventional skill location:
 - **Codex** → `~/.agents/skills/` (open agent skills standard)
 - **OpenCode** → `~/.config/opencode/skills/` (native), `~/.claude/skills/`, AND `~/.agents/skills/` — all three are read
 
-`claude-code-docs` and `codex-docs` are per-harness, so they live in the
-agent's own folder — automatic isolation, no leakage between harnesses,
-no symlinks needed.
+`claude-code-docs`, `opencode-docs`, and `pi-docs` are **shared**: any
+harness can use them when the user asks about Claude Code, OpenCode, or Pi
+while chatting. The canonical SKILL.md lives at `~/.agents/skills/<docset>/`
+(which opencode AND codex pick up natively), and a symlink at
+`~/.claude/skills/<docset>` exposes it to Claude Code too.
 
-`opencode-docs` and `pi-docs` are **shared**: any harness can use them
-when the user asks about OpenCode or Pi while chatting. The canonical
-SKILL.md lives at `~/.agents/skills/<docset>/` (which opencode AND codex
-pick up natively), and a symlink at `~/.claude/skills/<docset>` exposes
-it to Claude Code too.
+`codex-docs` is the only per-harness skill — it lives solely in the agent's
+own folder (`~/.agents/skills/codex-docs/`), which Codex reads natively.
 
 This is the pattern all cross-harness skills should follow.
 
