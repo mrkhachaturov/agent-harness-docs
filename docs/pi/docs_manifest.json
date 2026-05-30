@@ -99,8 +99,8 @@
     "settings.md": {
       "upstream_path": "packages/coding-agent/docs/settings.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/settings.md",
-      "hash": "8981f3a8feab652e59d3313d0b4732d07fc7e312589b57b0d65e738aa983206f",
-      "last_updated": "2026-05-28T03:22:00.708577"
+      "hash": "47245fecc8d5f2549e9970a97b9b7fc1ac9dd1d4688d101ee0c4b174f4043af5",
+      "last_updated": "2026-05-30T00:40:13.096288"
     },
     "shell-aliases.md": {
       "upstream_path": "packages/coding-agent/docs/shell-aliases.md",
@@ -117,8 +117,8 @@
     "terminal-setup.md": {
       "upstream_path": "packages/coding-agent/docs/terminal-setup.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/terminal-setup.md",
-      "hash": "360e6bfa00dcddb0309a23e30487e90812023ddf1841c82b3a643611e217b5e3",
-      "last_updated": "2026-05-28T03:22:00.709097"
+      "hash": "05342dc43082c159760bdb226fbc00fc1b1ab34ad4d6a77805d83e1c15cec1a3",
+      "last_updated": "2026-05-30T00:40:13.096843"
     },
     "termux.md": {
       "upstream_path": "packages/coding-agent/docs/termux.md",
@@ -141,8 +141,8 @@
     "tui.md": {
       "upstream_path": "packages/coding-agent/docs/tui.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/tui.md",
-      "hash": "0f66d9b3d2973ad7ad8e01097857c6536d189c1d45aaa46f411206ce1bc8a027",
-      "last_updated": "2026-05-28T03:22:00.709861"
+      "hash": "c9f652cb093edd1ece7dfb6629fa4228a616e2273759f2bd07ae3b40873f245f",
+      "last_updated": "2026-05-30T00:40:13.097732"
     },
     "usage.md": {
       "upstream_path": "packages/coding-agent/docs/usage.md",
@@ -158,8 +158,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-05-29T21:38:23.445395",
-    "fetch_duration_seconds": 0.595661,
+    "last_fetch_completed": "2026-05-30T00:40:13.098047",
+    "fetch_duration_seconds": 0.556299,
     "total_pages_discovered": 26,
     "pages_fetched_successfully": 26,
     "pages_failed": 0,
@@ -170,7 +170,7 @@
     "total_files": 26,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-05-29T21:38:23.445414",
+  "last_updated": "2026-05-30T00:40:13.098061",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
