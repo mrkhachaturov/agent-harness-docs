@@ -219,14 +219,14 @@
     "enterprise__access-tokens.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/access-tokens",
       "original_md_url": "https://developers.openai.com/codex/enterprise/access-tokens.md",
-      "hash": "d58448b40264c391591dd47e4b9f1c0854971580470261729775e3ae1aa8522c",
-      "last_updated": "2026-05-25T17:34:07.773942"
+      "hash": "11162d4a11a61b14a0192a5f1df4d4f8de2fb2343c4187354da0e3de1ecc50ea",
+      "last_updated": "2026-06-02T00:45:53.063040"
     },
     "enterprise__admin-setup.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/admin-setup",
       "original_md_url": "https://developers.openai.com/codex/enterprise/admin-setup.md",
-      "hash": "2a508b886f4fb7b2d8c3123f025b70e50ac3c7b71912afc5edee23a5944527e6",
-      "last_updated": "2026-05-25T17:34:08.359506"
+      "hash": "6d16e33889c77aa28c671c98fc9039438c355b7c8292e545e31632c8cfa92762",
+      "last_updated": "2026-06-02T00:45:53.605147"
     },
     "enterprise__governance.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/governance",
@@ -506,8 +506,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-01T22:05:03.669982",
-    "fetch_duration_seconds": 44.411099,
+    "last_fetch_completed": "2026-06-02T00:46:18.587108",
+    "fetch_duration_seconds": 45.543782,
     "total_pages_discovered": 84,
     "pages_fetched_successfully": 84,
     "pages_failed": 0,
@@ -517,7 +517,7 @@
     "total_files": 84,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-01T22:05:03.670004",
+  "last_updated": "2026-06-02T00:46:18.587137",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
