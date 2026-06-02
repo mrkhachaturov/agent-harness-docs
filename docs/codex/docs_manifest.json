@@ -9,8 +9,8 @@
     "amazon-bedrock.md": {
       "original_url": "https://developers.openai.com/codex/amazon-bedrock",
       "original_md_url": "https://developers.openai.com/codex/amazon-bedrock.md",
-      "hash": "dea2dda13c195d5f4a54a00343b998a9fd16966bdc36c6c10ae82d61f6a23098",
-      "last_updated": "2026-06-01T22:04:19.989629"
+      "hash": "e7550a09f35a1e68db5e9d961b98b6b4b4caa696eca8a1be116d3d790b94def7",
+      "last_updated": "2026-06-02T21:59:37.148205"
     },
     "app-server.md": {
       "original_url": "https://developers.openai.com/codex/app-server",
@@ -21,8 +21,8 @@
     "app.md": {
       "original_url": "https://developers.openai.com/codex/app",
       "original_md_url": "https://developers.openai.com/codex/app.md",
-      "hash": "e94b4a911587e485249cb4f5e6c3cb0c0027de5d208ee147b819cad2acd0f368",
-      "last_updated": "2026-06-02T16:33:51.591062"
+      "hash": "e35c77bbc773fc60c54a7c6ce9b8623d4365a618d302f5d3171d17b047b1ae25",
+      "last_updated": "2026-06-02T21:59:38.208857"
     },
     "app__automations.md": {
       "original_url": "https://developers.openai.com/codex/app/automations",
@@ -105,8 +105,8 @@
     "auth.md": {
       "original_url": "https://developers.openai.com/codex/auth",
       "original_md_url": "https://developers.openai.com/codex/auth.md",
-      "hash": "8bf9adf2b8b637b1b5d8d1679328e553894f97b4d360c6945b90e7edfb53b1f8",
-      "last_updated": "2026-05-25T17:33:56.141171"
+      "hash": "766ea17ab851260976c1fd420ecb7206f46e9fcecac35dbd0c05f8a5de1bbbe3",
+      "last_updated": "2026-06-02T21:59:45.886007"
     },
     "cli.md": {
       "original_url": "https://developers.openai.com/codex/cli",
@@ -405,8 +405,8 @@
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "a98dc08aa59d07ae656fbb7962964413acc29523459f947fd4bb23ff2d773d98",
-      "last_updated": "2026-06-02T16:34:30.054499"
+      "hash": "f896d555ed2f4a39dbd5995649718c4aaf801404259ab22c40ea10a80618abe2",
+      "last_updated": "2026-06-02T22:00:13.215254"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
@@ -417,8 +417,8 @@
     "quickstart.md": {
       "original_url": "https://developers.openai.com/codex/quickstart",
       "original_md_url": "https://developers.openai.com/codex/quickstart.md",
-      "hash": "a38dce81b6801b044eead6a35c3d9ec378d6aeb6cb15c932485c5ac06f9a32d4",
-      "last_updated": "2026-05-29T21:38:06.129546"
+      "hash": "f3bacfa6984f839b82193d849492dd610b368d0271cb5943248b6a298c9c2bf0",
+      "last_updated": "2026-06-02T22:00:14.268480"
     },
     "remote-connections.md": {
       "original_url": "https://developers.openai.com/codex/remote-connections",
@@ -471,8 +471,8 @@
     "sites.md": {
       "original_url": "https://developers.openai.com/codex/sites",
       "original_md_url": "https://developers.openai.com/codex/sites.md",
-      "hash": "a62fef0324eabf745f8b6eff9d8686f4827a273af4671f3eb52d38684d8e1f7d",
-      "last_updated": "2026-06-02T16:34:36.659138"
+      "hash": "2a74fdcca90bb46b05416626518149134691f9b6b8193a5cdc09b36d61ee7500",
+      "last_updated": "2026-06-02T22:00:19.254540"
     },
     "skills.md": {
       "original_url": "https://developers.openai.com/codex/skills",
@@ -512,8 +512,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-02T19:16:26.440556",
-    "fetch_duration_seconds": 46.90414,
+    "last_fetch_completed": "2026-06-02T22:00:22.573436",
+    "fetch_duration_seconds": 46.331437,
     "total_pages_discovered": 85,
     "pages_fetched_successfully": 85,
     "pages_failed": 0,
@@ -523,7 +523,7 @@
     "total_files": 85,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-02T19:16:26.440596",
+  "last_updated": "2026-06-02T22:00:22.573465",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
