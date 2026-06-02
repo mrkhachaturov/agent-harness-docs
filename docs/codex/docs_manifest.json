@@ -21,8 +21,8 @@
     "app.md": {
       "original_url": "https://developers.openai.com/codex/app",
       "original_md_url": "https://developers.openai.com/codex/app.md",
-      "hash": "1d531c145833fb80217a7a920978ddb9d65b421a27bae95d18dbd833e1ffcac2",
-      "last_updated": "2026-05-25T17:33:47.827274"
+      "hash": "e94b4a911587e485249cb4f5e6c3cb0c0027de5d208ee147b819cad2acd0f368",
+      "last_updated": "2026-06-02T16:33:51.591062"
     },
     "app__automations.md": {
       "original_url": "https://developers.openai.com/codex/app/automations",
@@ -393,8 +393,8 @@
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
       "original_md_url": "https://developers.openai.com/codex/plugins.md",
-      "hash": "f8474ab5a5844c2c0a87e9227c3e2cd7345da4b580769b19ef63226cfa1b0979",
-      "last_updated": "2026-05-28T18:54:46.756213"
+      "hash": "cd9435bfedb45a45774721183c7475e143db478d9501623cbd1e0d85287d764e",
+      "last_updated": "2026-06-02T16:34:28.960557"
     },
     "plugins__build.md": {
       "original_url": "https://developers.openai.com/codex/plugins/build",
@@ -405,8 +405,8 @@
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "b5a2bd7782f58a0d499971ad481b3bf1df66962a5dbca464384b1e5edbf30249",
-      "last_updated": "2026-06-01T07:47:08.927495"
+      "hash": "a98dc08aa59d07ae656fbb7962964413acc29523459f947fd4bb23ff2d773d98",
+      "last_updated": "2026-06-02T16:34:30.054499"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
@@ -468,6 +468,12 @@
       "hash": "ec58c9916338b4c83202af986026e177b39deb9946117b504a5db9e6acebf90d",
       "last_updated": "2026-05-25T17:34:31.726413"
     },
+    "sites.md": {
+      "original_url": "https://developers.openai.com/codex/sites",
+      "original_md_url": "https://developers.openai.com/codex/sites.md",
+      "hash": "a62fef0324eabf745f8b6eff9d8686f4827a273af4671f3eb52d38684d8e1f7d",
+      "last_updated": "2026-06-02T16:34:36.659138"
+    },
     "skills.md": {
       "original_url": "https://developers.openai.com/codex/skills",
       "original_md_url": "https://developers.openai.com/codex/skills.md",
@@ -506,18 +512,18 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-02T13:17:38.392882",
-    "fetch_duration_seconds": 45.941472,
-    "total_pages_discovered": 84,
-    "pages_fetched_successfully": 84,
+    "last_fetch_completed": "2026-06-02T16:34:40.173602",
+    "fetch_duration_seconds": 50.77289,
+    "total_pages_discovered": 85,
+    "pages_fetched_successfully": 85,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 84,
+    "total_files": 85,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-02T13:17:38.392914",
+  "last_updated": "2026-06-02T16:34:40.173637",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
