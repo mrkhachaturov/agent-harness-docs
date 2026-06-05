@@ -634,8 +634,8 @@
     "quickstart.md": {
       "original_url": "https://code.claude.com/docs/en/quickstart",
       "original_md_url": "https://code.claude.com/docs/en/quickstart.md",
-      "hash": "aafc86695c617a74b9c162348be733ad167fbaa54bd43ec5e3313f7dcc0e70bf",
-      "last_updated": "2026-05-24T07:06:18.667397"
+      "hash": "2cc281137dbda4ccdd332a02b67ea64d8e666aa279aa1a7c2d412f7af784eff9",
+      "last_updated": "2026-06-05T18:41:44.934930"
     },
     "remote-control.md": {
       "original_url": "https://code.claude.com/docs/en/remote-control",
@@ -694,8 +694,8 @@
     "settings.md": {
       "original_url": "https://code.claude.com/docs/en/settings",
       "original_md_url": "https://code.claude.com/docs/en/settings.md",
-      "hash": "0021c65e35bc60cbe722522720ebab46aa18e10c72e1b0196b96178f1990a323",
-      "last_updated": "2026-06-03T22:00:18.363476"
+      "hash": "9206162e8520abd4a48080ab7eee42dd66164e64f3c29d7e10dcf7839a62512b",
+      "last_updated": "2026-06-05T18:41:54.566159"
     },
     "setup.md": {
       "original_url": "https://code.claude.com/docs/en/setup",
@@ -873,8 +873,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-05T16:02:38.843244",
-    "fetch_duration_seconds": 150.247686,
+    "last_fetch_completed": "2026-06-05T18:42:24.475471",
+    "fetch_duration_seconds": 196.357775,
     "total_pages_discovered": 145,
     "pages_fetched_successfully": 146,
     "pages_failed": 0,
@@ -884,7 +884,7 @@
     "total_files": 145,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-06-05T16:02:38.843272",
+  "last_updated": "2026-06-05T18:42:24.475497",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
