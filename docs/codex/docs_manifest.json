@@ -258,6 +258,12 @@
       "hash": "17bcd4cc13392e3dddc3b120673ee09afc63a72744ac4f4dada61a5b63c5b018",
       "last_updated": "2026-05-26T18:49:18.351157"
     },
+    "glossary.md": {
+      "original_url": "https://developers.openai.com/codex/glossary",
+      "original_md_url": "https://developers.openai.com/codex/glossary.md",
+      "hash": "76381daa0c52fe71f6e782f9581178a983720eeeb920b29c09fffb1e0514458a",
+      "last_updated": "2026-06-05T16:03:07.308995"
+    },
     "guides__agents-md.md": {
       "original_url": "https://developers.openai.com/codex/guides/agents-md",
       "original_md_url": "https://developers.openai.com/codex/guides/agents-md.md",
@@ -512,18 +518,18 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-05T13:02:32.491048",
-    "fetch_duration_seconds": 45.577016,
-    "total_pages_discovered": 85,
-    "pages_fetched_successfully": 85,
+    "last_fetch_completed": "2026-06-05T16:03:34.170761",
+    "fetch_duration_seconds": 55.153584,
+    "total_pages_discovered": 86,
+    "pages_fetched_successfully": 86,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 85,
+    "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-05T13:02:32.491086",
+  "last_updated": "2026-06-05T16:03:34.170793",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
