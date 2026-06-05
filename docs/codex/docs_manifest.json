@@ -201,8 +201,8 @@
     "config-reference.md": {
       "original_url": "https://developers.openai.com/codex/config-reference",
       "original_md_url": "https://developers.openai.com/codex/config-reference.md",
-      "hash": "5155620b21f0ed995c68e316ac9feda12fd6a2c97895b2921ca9f8558737da4a",
-      "last_updated": "2026-06-01T22:04:36.928486"
+      "hash": "24398608ceb76175103bedfb8189461c5ccea0e4d7eb5e4fcbd4b560eda02c3e",
+      "last_updated": "2026-06-05T21:33:28.362174"
     },
     "config-sample.md": {
       "original_url": "https://developers.openai.com/codex/config-sample",
@@ -507,8 +507,8 @@
     "windows.md": {
       "original_url": "https://developers.openai.com/codex/windows",
       "original_md_url": "https://developers.openai.com/codex/windows.md",
-      "hash": "3e9850a119f666f0ed76274fbb7cf31ce92c09f13efac4f8ade9ee11c6515cba",
-      "last_updated": "2026-05-26T18:49:40.499747"
+      "hash": "ba779986c6405ca414adf982dea6cefa6b7897aa2ca3cf61b00ebaec37b0d6a0",
+      "last_updated": "2026-06-05T21:33:58.171762"
     },
     "workflows.md": {
       "original_url": "https://developers.openai.com/codex/workflows",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-05T18:43:10.203815",
-    "fetch_duration_seconds": 45.570977,
+    "last_fetch_completed": "2026-06-05T21:33:58.713173",
+    "fetch_duration_seconds": 50.236761,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-05T18:43:10.203850",
+  "last_updated": "2026-06-05T21:33:58.713212",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
