@@ -201,8 +201,8 @@
     "config-reference.md": {
       "original_url": "https://developers.openai.com/codex/config-reference",
       "original_md_url": "https://developers.openai.com/codex/config-reference.md",
-      "hash": "24398608ceb76175103bedfb8189461c5ccea0e4d7eb5e4fcbd4b560eda02c3e",
-      "last_updated": "2026-06-05T21:33:28.362174"
+      "hash": "a1de587052cc72afb8158bde819fd973e50abdd7c51b0679a49416f077e21b24",
+      "last_updated": "2026-06-09T04:27:58.476506"
     },
     "config-sample.md": {
       "original_url": "https://developers.openai.com/codex/config-sample",
@@ -225,8 +225,8 @@
     "enterprise__admin-setup.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/admin-setup",
       "original_md_url": "https://developers.openai.com/codex/enterprise/admin-setup.md",
-      "hash": "d48736efa08e543d973d47a9d2da266019df82967ee2e75dec36bf851cd5d463",
-      "last_updated": "2026-06-03T22:01:07.732515"
+      "hash": "8ba87378b7c8a818d62e8537dd7a17df593141c51c0f714d2590d59fa2191373",
+      "last_updated": "2026-06-09T04:28:00.717956"
     },
     "enterprise__governance.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/governance",
@@ -237,8 +237,8 @@
     "enterprise__managed-configuration.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
       "original_md_url": "https://developers.openai.com/codex/enterprise/managed-configuration.md",
-      "hash": "ff8fe0c49f50f690d83a4f368b952e01f7fcd848d7fe7933b6faa4499dd9ed55",
-      "last_updated": "2026-05-26T18:49:17.185722"
+      "hash": "7d59dd9e0096413e77bb8a5568dcc2f4c1dea3e1a1a6d8fcf67e8ca775d2a6a8",
+      "last_updated": "2026-06-09T04:28:01.839788"
     },
     "environment-variables.md": {
       "original_url": "https://developers.openai.com/codex/environment-variables",
@@ -393,8 +393,8 @@
     "permissions.md": {
       "original_url": "https://developers.openai.com/codex/permissions",
       "original_md_url": "https://developers.openai.com/codex/permissions.md",
-      "hash": "6a3ffbe36e715c723ccdbd9a5f8014a5d1c2291512a990e603da018977220e05",
-      "last_updated": "2026-06-05T07:31:07.863564"
+      "hash": "258282918e37413182690eaec434e44044fc87409cb990daf725dea90aa5e676",
+      "last_updated": "2026-06-09T04:28:16.692719"
     },
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-09T00:39:35.528212",
-    "fetch_duration_seconds": 48.402888,
+    "last_fetch_completed": "2026-06-09T04:28:28.424033",
+    "fetch_duration_seconds": 49.227922,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-09T00:39:35.528250",
+  "last_updated": "2026-06-09T04:28:28.424059",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
