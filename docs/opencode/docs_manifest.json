@@ -183,8 +183,8 @@
     "troubleshooting.md": {
       "upstream_path": "packages/web/src/content/docs/troubleshooting.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/troubleshooting.mdx",
-      "hash": "1662087883c970538a20f6d09c09045ca7b609a151de164a5c5f0b044e54db15",
-      "last_updated": "2026-05-26T14:47:33.586020"
+      "hash": "4c21dafde9e5f92d485b41a5adc7435ba9b4bc0b874aadb9993a7dda95f82e08",
+      "last_updated": "2026-06-09T10:17:54.743372"
     },
     "tui.md": {
       "upstream_path": "packages/web/src/content/docs/tui.mdx",
@@ -212,8 +212,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-09T07:16:36.813178",
-    "fetch_duration_seconds": 9.787857,
+    "last_fetch_completed": "2026-06-09T10:17:55.753584",
+    "fetch_duration_seconds": 10.708052,
     "total_pages_discovered": 35,
     "pages_fetched_successfully": 35,
     "pages_failed": 0,
@@ -224,7 +224,7 @@
     "total_files": 35,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-09T07:16:36.813200",
+  "last_updated": "2026-06-09T10:17:55.753607",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
