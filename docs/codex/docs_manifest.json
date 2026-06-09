@@ -237,8 +237,8 @@
     "enterprise__managed-configuration.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
       "original_md_url": "https://developers.openai.com/codex/enterprise/managed-configuration.md",
-      "hash": "7d59dd9e0096413e77bb8a5568dcc2f4c1dea3e1a1a6d8fcf67e8ca775d2a6a8",
-      "last_updated": "2026-06-09T04:28:01.839788"
+      "hash": "04c1783bc1323fb8c71662421b1076b320fb41046fb01d9435cf6ad2d5953d91",
+      "last_updated": "2026-06-09T21:36:24.663173"
     },
     "environment-variables.md": {
       "original_url": "https://developers.openai.com/codex/environment-variables",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-09T18:51:38.837391",
-    "fetch_duration_seconds": 46.039039,
+    "last_fetch_completed": "2026-06-09T21:36:51.055375",
+    "fetch_duration_seconds": 49.417267,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-09T18:51:38.837422",
+  "last_updated": "2026-06-09T21:36:51.055408",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
