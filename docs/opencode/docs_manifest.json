@@ -138,6 +138,12 @@
       "hash": "ffa107aa7eb8522fb219a74ed9ca84c663ef9158c162132d9851a54621c1a319",
       "last_updated": "2026-06-05T04:33:38.981481"
     },
+    "references.md": {
+      "upstream_path": "packages/web/src/content/docs/references.mdx",
+      "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/references.mdx",
+      "hash": "b102af5e971a0ea9877d7d234b472dccbb845892cce53d297d90a1433613e1c1",
+      "last_updated": "2026-06-10T04:33:20.168300"
+    },
     "rules.md": {
       "upstream_path": "packages/web/src/content/docs/rules.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/rules.mdx",
@@ -189,8 +195,8 @@
     "tui.md": {
       "upstream_path": "packages/web/src/content/docs/tui.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/tui.mdx",
-      "hash": "eae8626c2442aaa5cff30d778b548244b0fe2c981808b126a11062f9111bc9be",
-      "last_updated": "2026-05-26T14:47:33.678689"
+      "hash": "61f2907135284ce6e9bbac961bb8006b11ac850062bc496c40f357857c51c86b",
+      "last_updated": "2026-06-10T04:33:22.354259"
     },
     "web.md": {
       "upstream_path": "packages/web/src/content/docs/web.mdx",
@@ -212,19 +218,19 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-10T00:45:46.263828",
-    "fetch_duration_seconds": 10.485162,
-    "total_pages_discovered": 35,
-    "pages_fetched_successfully": 35,
+    "last_fetch_completed": "2026-06-10T04:33:23.058737",
+    "fetch_duration_seconds": 9.331948,
+    "total_pages_discovered": 36,
+    "pages_fetched_successfully": 36,
     "pages_failed": 0,
     "failed_files": [],
     "upstream_repo": "https://github.com/anomalyco/opencode.git",
     "upstream_branch": "dev",
     "sparse_pattern": "/packages/web/src/content/docs/*.mdx",
-    "total_files": 35,
+    "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-10T00:45:46.263859",
+  "last_updated": "2026-06-10T04:33:23.058761",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
