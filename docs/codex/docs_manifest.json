@@ -87,8 +87,8 @@
     "app__windows.md": {
       "original_url": "https://developers.openai.com/codex/app/windows",
       "original_md_url": "https://developers.openai.com/codex/app/windows.md",
-      "hash": "52533f54f9e47d25bd6ffe3134709e1a94c7d5d385391cb1b2374b5402f3f505",
-      "last_updated": "2026-05-25T17:33:54.396322"
+      "hash": "e8084159c23b7f64492b1182aed598670e1ae6b0b33196ba5c05cbfcdd182ebd",
+      "last_updated": "2026-06-10T21:43:43.153856"
     },
     "app__worktrees.md": {
       "original_url": "https://developers.openai.com/codex/app/worktrees",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-10T18:55:51.489835",
-    "fetch_duration_seconds": 47.364587,
+    "last_fetch_completed": "2026-06-10T21:44:22.581029",
+    "fetch_duration_seconds": 47.37832,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-10T18:55:51.489865",
+  "last_updated": "2026-06-10T21:44:22.581066",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
