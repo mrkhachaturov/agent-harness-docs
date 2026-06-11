@@ -219,8 +219,8 @@
     "enterprise__access-tokens.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/access-tokens",
       "original_md_url": "https://developers.openai.com/codex/enterprise/access-tokens.md",
-      "hash": "9aaa7053615529c6f9a9aa6750c621ee4b17e624ff8d49773f28669531e4a696",
-      "last_updated": "2026-06-11T19:01:31.899629"
+      "hash": "67f5ac416505d1ba8f881e51d1615a3aab856ca6f9aab913e3bee8bb5bd4a330",
+      "last_updated": "2026-06-11T21:43:35.078937"
     },
     "enterprise__admin-setup.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/admin-setup",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-11T19:01:59.086195",
-    "fetch_duration_seconds": 47.874755,
+    "last_fetch_completed": "2026-06-11T21:44:02.142123",
+    "fetch_duration_seconds": 47.102938,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-11T19:01:59.086229",
+  "last_updated": "2026-06-11T21:44:02.142173",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

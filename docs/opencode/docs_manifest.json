@@ -99,8 +99,8 @@
     "mcp-servers.md": {
       "upstream_path": "packages/web/src/content/docs/mcp-servers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/mcp-servers.mdx",
-      "hash": "9a58e869c865474332912d7de4cd2086594f451baaa3fdcc425576bb9406b991",
-      "last_updated": "2026-05-26T14:47:32.389729"
+      "hash": "3acb1ba43ad8cec5cf6dbe7164c301b8ed0e9a97581a3fe951c30548a8d21d93",
+      "last_updated": "2026-06-11T21:44:08.759754"
     },
     "models.md": {
       "upstream_path": "packages/web/src/content/docs/models.mdx",
@@ -218,8 +218,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-11T19:02:08.577789",
-    "fetch_duration_seconds": 9.415492,
+    "last_fetch_completed": "2026-06-11T21:44:13.680834",
+    "fetch_duration_seconds": 11.454051,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-11T19:02:08.577818",
+  "last_updated": "2026-06-11T21:44:13.680898",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

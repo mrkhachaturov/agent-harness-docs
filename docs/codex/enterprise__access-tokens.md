@@ -11,6 +11,12 @@ If a Platform API key works for your automation, keep using API key auth. Use
   Codex access tokens when the workflow specifically needs ChatGPT workspace
   access, ChatGPT-managed Codex entitlements, or enterprise workspace controls.
 
+Need to trigger a published ChatGPT workspace agent from your own system? Use
+  a Workspace Agent access token for the Workspace Agents API instead. Codex
+  access tokens authenticate Codex local workflows; they do not authenticate
+  workspace agent trigger calls. See [Authenticate with Workspace Agent access
+  tokens](https://developers.openai.com/workspace-agents/authentication).
+
 ## How access tokens work
 
 Use an access token when Codex needs to run without a user completing a browser sign-in. The token represents the ChatGPT workspace user who created it, so runs can use that user's Codex access and appear in workspace governance data.
@@ -29,7 +35,7 @@ Main risks to avoid:
 - **Untrusted runners:** public CI, forked pull requests, or shared machines can expose tokens to people outside your workspace. Use access tokens only on trusted runners.
 - **Shared identities:** one person's token reused across unrelated teams makes ownership and audit trails harder to interpret. Create tokens for a specific workflow owner.
 - **Stale credentials:** long-lived tokens can remain active after the workflow changes. Prefer finite expirations and revoke tokens that are no longer used.
-- **Wrong credential type:** access tokens are for Codex local workflows. Use Platform API keys for general OpenAI API calls.
+- **Wrong credential type:** Codex access tokens are for Codex local workflows. Use Workspace Agent access tokens to trigger published ChatGPT workspace agents, and use Platform API keys for general OpenAI API calls.
 
 ## Enable access token creation
 
