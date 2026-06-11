@@ -1,6 +1,6 @@
 # Access tokens
 
-Codex access tokens let trusted automation run Codex local with a ChatGPT workspace identity. Use them when a script, scheduled job, or CI runner needs repeatable, non-interactive Codex access.
+Codex access tokens are ChatGPT access tokens scoped to Codex permissions that let trusted automation run Codex local with a ChatGPT workspace identity. Use them when a script, scheduled job, or CI runner needs repeatable, non-interactive Codex access.
 
 Codex access tokens are currently supported for ChatGPT Business and
   Enterprise workspaces.
@@ -33,7 +33,7 @@ Main risks to avoid:
 
 ## Enable access token creation
 
-Use the Codex Local controls in workspace settings to turn on access token creation for allowed members.
+Use the access token permission in workspace settings to turn on access token creation for allowed members.
 
 <CodexScreenshot
   alt="Access token access permission in ChatGPT workspace RBAC settings"
@@ -44,9 +44,8 @@ Use the Codex Local controls in workspace settings to turn on access token creat
 />
 
 1. Go to [Workspace Settings > Permissions & roles](https://chatgpt.com/admin/settings).
-2. In the Codex Local section, make sure **Allow members to use Codex Local** is turned on.
-3. Turn on **Allow members to use Codex access tokens** if all allowed members should be able to create access tokens.
-4. If you use custom roles for a narrower rollout, assign the access token permission only to groups that need to create tokens.
+2. In the **Access tokens** section, turn on **Allow users to create access tokens** if all allowed members should be able to create access tokens.
+3. If members need to use those tokens with the Codex app, CLI, or IDE extension, make sure **Allow members to use Codex Local** is also turned on in the **Codex Local** section.
 
 Keep access token creation limited to people or service owners who understand where the token will be stored, which automation will use it, and how it will be rotated.
 
@@ -127,7 +126,7 @@ From the Access tokens page, workspace owners and admins can revoke any workspac
 
 ## Permission model
 
-Access token permissions are separate from the general Codex local permission. A member can have access to the Codex app, CLI, or IDE extension without being allowed to create access tokens.
+Access token creation is controlled by the workspace's access token permission, which is separate from the general Codex local permission. A member can have access to the Codex app, CLI, or IDE extension without being allowed to create access tokens.
 
 | Capability                                                    | Workspace owners and admins                          | Member with access token permission           | Member without access token permission |
 | ------------------------------------------------------------- | ---------------------------------------------------- | --------------------------------------------- | -------------------------------------- |
@@ -144,7 +143,7 @@ In short: workspace owners and admins manage access at the workspace level. Memb
 
 ### The access tokens page returns 404 or forbidden
 
-Ask a workspace owner or admin to confirm that Codex access tokens are enabled and that your role includes the access token permission.
+Ask a workspace owner or admin to confirm that your role includes **Allow users to create access tokens** and that **Allow members to use Codex Local** is enabled if you plan to use the token with Codex.
 
 ### `codex login --with-access-token` fails
 
