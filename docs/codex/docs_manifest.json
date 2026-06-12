@@ -33,8 +33,8 @@
     "app__browser.md": {
       "original_url": "https://developers.openai.com/codex/app/browser",
       "original_md_url": "https://developers.openai.com/codex/app/browser.md",
-      "hash": "dbe9c28d75ba40b95d7e06282aa487b2fc2faf21cf6ca49b83854ec70e4a499e",
-      "last_updated": "2026-05-25T17:33:49.029139"
+      "hash": "5b478a969e6e661f880d0ea90912d3e337f207a99466580aa4b18987524dd21e",
+      "last_updated": "2026-06-12T00:47:13.370267"
     },
     "app__chrome-extension.md": {
       "original_url": "https://developers.openai.com/codex/app/chrome-extension",
@@ -45,14 +45,14 @@
     "app__commands.md": {
       "original_url": "https://developers.openai.com/codex/app/commands",
       "original_md_url": "https://developers.openai.com/codex/app/commands.md",
-      "hash": "060363b0829d152e98b2d1a3f59fb9ec5f9153f7e1842827e439e284d654e38d",
-      "last_updated": "2026-06-10T00:44:54.566413"
+      "hash": "dc5da232a1828fc4e6e6908412419e50809224fc83070a4a9c495348413a7857",
+      "last_updated": "2026-06-12T00:47:14.501403"
     },
     "app__computer-use.md": {
       "original_url": "https://developers.openai.com/codex/app/computer-use",
       "original_md_url": "https://developers.openai.com/codex/app/computer-use.md",
-      "hash": "b1d2aa21192a48b6022a3106a5ddbc461da207604ed4f4ac99e2ad894efbc870",
-      "last_updated": "2026-05-29T18:53:41.363097"
+      "hash": "de4b71d82b2c2ad82dbb4bdf4b71c52bf42750825f509e7f0e00569cf8099966",
+      "last_updated": "2026-06-12T00:47:15.089079"
     },
     "app__features.md": {
       "original_url": "https://developers.openai.com/codex/app/features",
@@ -75,8 +75,8 @@
     "app__settings.md": {
       "original_url": "https://developers.openai.com/codex/app/settings",
       "original_md_url": "https://developers.openai.com/codex/app/settings.md",
-      "hash": "20157b2b418b02eeb4fcc3dc1fe27539530b89ec729a191c2199ae00b4ec6e2b",
-      "last_updated": "2026-06-05T00:43:15.739129"
+      "hash": "637c1167ebf97ebec19e37584a10ad6e38171f51b960c407cded2a0532167269",
+      "last_updated": "2026-06-12T00:47:17.410601"
     },
     "app__troubleshooting.md": {
       "original_url": "https://developers.openai.com/codex/app/troubleshooting",
@@ -201,8 +201,8 @@
     "config-reference.md": {
       "original_url": "https://developers.openai.com/codex/config-reference",
       "original_md_url": "https://developers.openai.com/codex/config-reference.md",
-      "hash": "b9f1ccd9ad33b21bd536ddc604c0ea63ac02445f2166c5f0f077707e2325af61",
-      "last_updated": "2026-06-11T04:33:38.177849"
+      "hash": "7403e9eba34cf0907b4cdb67e6ed7357c155abb0b7cc18440265d064d2dbf67d",
+      "last_updated": "2026-06-12T00:47:29.442144"
     },
     "config-sample.md": {
       "original_url": "https://developers.openai.com/codex/config-sample",
@@ -237,8 +237,8 @@
     "enterprise__managed-configuration.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
       "original_md_url": "https://developers.openai.com/codex/enterprise/managed-configuration.md",
-      "hash": "04c1783bc1323fb8c71662421b1076b320fb41046fb01d9435cf6ad2d5953d91",
-      "last_updated": "2026-06-09T21:36:24.663173"
+      "hash": "bbc948953eeeb75fd6444730f367917630878de0147332f74eb160b9901bdfed",
+      "last_updated": "2026-06-12T00:47:33.171708"
     },
     "environment-variables.md": {
       "original_url": "https://developers.openai.com/codex/environment-variables",
@@ -411,8 +411,8 @@
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "771606e8b398f5cf02a5fb9717d7b0bb6bba316e7d2bd1c8fed41370a1b40504",
-      "last_updated": "2026-06-10T13:10:49.118151"
+      "hash": "ab560392dba61d5dc5cc0b941ace80d5fb0906b558aca1c2301cfd93a3a896d4",
+      "last_updated": "2026-06-12T00:47:50.455366"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-11T21:44:02.142123",
-    "fetch_duration_seconds": 47.102938,
+    "last_fetch_completed": "2026-06-12T00:48:00.421424",
+    "fetch_duration_seconds": 50.519152,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-11T21:44:02.142173",
+  "last_updated": "2026-06-12T00:48:00.421449",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
