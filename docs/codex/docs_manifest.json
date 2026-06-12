@@ -9,8 +9,8 @@
     "amazon-bedrock.md": {
       "original_url": "https://developers.openai.com/codex/amazon-bedrock",
       "original_md_url": "https://developers.openai.com/codex/amazon-bedrock.md",
-      "hash": "e7550a09f35a1e68db5e9d961b98b6b4b4caa696eca8a1be116d3d790b94def7",
-      "last_updated": "2026-06-02T21:59:37.148205"
+      "hash": "953a0ab0b034f1db642fef58bd0baf1c6f11bd6237369a79d73e74dbc9bbe769",
+      "last_updated": "2026-06-12T18:44:43.174526"
     },
     "app-server.md": {
       "original_url": "https://developers.openai.com/codex/app-server",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-12T16:09:16.567953",
-    "fetch_duration_seconds": 46.629993,
+    "last_fetch_completed": "2026-06-12T18:45:34.107749",
+    "fetch_duration_seconds": 51.912178,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-12T16:09:16.567989",
+  "last_updated": "2026-06-12T18:45:34.107780",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
