@@ -33,8 +33,8 @@
     "app__browser.md": {
       "original_url": "https://developers.openai.com/codex/app/browser",
       "original_md_url": "https://developers.openai.com/codex/app/browser.md",
-      "hash": "5b478a969e6e661f880d0ea90912d3e337f207a99466580aa4b18987524dd21e",
-      "last_updated": "2026-06-12T00:47:13.370267"
+      "hash": "2246979a5f947af722877a16f309c2d3adb85ff65535b86820a414136e42f6a1",
+      "last_updated": "2026-06-13T00:46:30.505924"
     },
     "app__chrome-extension.md": {
       "original_url": "https://developers.openai.com/codex/app/chrome-extension",
@@ -75,8 +75,8 @@
     "app__settings.md": {
       "original_url": "https://developers.openai.com/codex/app/settings",
       "original_md_url": "https://developers.openai.com/codex/app/settings.md",
-      "hash": "637c1167ebf97ebec19e37584a10ad6e38171f51b960c407cded2a0532167269",
-      "last_updated": "2026-06-12T00:47:17.410601"
+      "hash": "1aed65aca7b734f031466abcb3a528a68da761acbc88669561a95e1cfef843c0",
+      "last_updated": "2026-06-13T00:46:34.327245"
     },
     "app__troubleshooting.md": {
       "original_url": "https://developers.openai.com/codex/app/troubleshooting",
@@ -111,8 +111,8 @@
     "cli.md": {
       "original_url": "https://developers.openai.com/codex/cli",
       "original_md_url": "https://developers.openai.com/codex/cli.md",
-      "hash": "6332451a764206ecb6db0c57019ca45956976c4d208cf3fcede0f5c43b1fc7cb",
-      "last_updated": "2026-06-10T07:30:32.693810"
+      "hash": "64dc6e1619d24e7d4ff11b7f8490c48351e07627987e6fc8d8103070ae789091",
+      "last_updated": "2026-06-13T00:46:37.575317"
     },
     "cli__features.md": {
       "original_url": "https://developers.openai.com/codex/cli/features",
@@ -201,8 +201,8 @@
     "config-reference.md": {
       "original_url": "https://developers.openai.com/codex/config-reference",
       "original_md_url": "https://developers.openai.com/codex/config-reference.md",
-      "hash": "7403e9eba34cf0907b4cdb67e6ed7357c155abb0b7cc18440265d064d2dbf67d",
-      "last_updated": "2026-06-12T00:47:29.442144"
+      "hash": "7cf6b06163ba34adcf42c23d0a06ec667f0fdf7bbc2cfd4598ec3cc04903f8c4",
+      "last_updated": "2026-06-13T00:46:45.680219"
     },
     "config-sample.md": {
       "original_url": "https://developers.openai.com/codex/config-sample",
@@ -225,8 +225,8 @@
     "enterprise__admin-setup.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/admin-setup",
       "original_md_url": "https://developers.openai.com/codex/enterprise/admin-setup.md",
-      "hash": "f4d8b84e5a7c8c6cde2cf603fb0bfc33ddecd7086fc8d8adb338d3a57a0c26a2",
-      "last_updated": "2026-06-11T19:01:32.656556"
+      "hash": "cb31fccf386fa38461a21afb13a094e6bca96e94377e6194040cfa3f8ac7b273",
+      "last_updated": "2026-06-13T00:46:47.848525"
     },
     "enterprise__governance.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/governance",
@@ -237,8 +237,8 @@
     "enterprise__managed-configuration.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
       "original_md_url": "https://developers.openai.com/codex/enterprise/managed-configuration.md",
-      "hash": "bbc948953eeeb75fd6444730f367917630878de0147332f74eb160b9901bdfed",
-      "last_updated": "2026-06-12T00:47:33.171708"
+      "hash": "58873b0a724a0e13dbb2cdbaa408607552d50c0b197176b3d30ea253f514c7d3",
+      "last_updated": "2026-06-13T00:46:48.928335"
     },
     "environment-variables.md": {
       "original_url": "https://developers.openai.com/codex/environment-variables",
@@ -411,8 +411,8 @@
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "5c2fde691ffb8b6b79e72cbd5f1d1262e444e67d8221eabbf080097674a2e0dc",
-      "last_updated": "2026-06-12T04:33:55.368338"
+      "hash": "762ba72f62b6b8c006cbebeea457bc0c96eed41157a55bb8dd1b64686f213bea",
+      "last_updated": "2026-06-13T00:47:04.720003"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-12T21:36:15.879933",
-    "fetch_duration_seconds": 50.210357,
+    "last_fetch_completed": "2026-06-13T00:47:14.077105",
+    "fetch_duration_seconds": 46.481982,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-12T21:36:15.879970",
+  "last_updated": "2026-06-13T00:47:14.077128",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
