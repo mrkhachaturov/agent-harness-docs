@@ -318,6 +318,12 @@
       "hash": "70e2016ca0eb1d546c273f1f1b3f682574b9ff6e29185a082e328e56a017e02b",
       "last_updated": "2026-05-25T17:34:16.005268"
     },
+    "import.md": {
+      "original_url": "https://developers.openai.com/codex/import",
+      "original_md_url": "https://developers.openai.com/codex/import.md",
+      "hash": "6623a6c5eab0b76ddc6fd8309f5cd78352278de19fde1e56178fac90060b36e6",
+      "last_updated": "2026-06-14T18:31:56.289371"
+    },
     "integrations__github.md": {
       "original_url": "https://developers.openai.com/codex/integrations/github",
       "original_md_url": "https://developers.openai.com/codex/integrations/github.md",
@@ -359,12 +365,6 @@
       "original_md_url": "https://developers.openai.com/codex/memories/chronicle.md",
       "hash": "4088e18bdfd1c0cdb167dd07a6aeca8e5dafa57c8f3588ac89d39fd484a55928",
       "last_updated": "2026-05-25T17:34:20.108806"
-    },
-    "migrate.md": {
-      "original_url": "https://developers.openai.com/codex/migrate",
-      "original_md_url": "https://developers.openai.com/codex/migrate.md",
-      "hash": "03dbfdc3fc6328fbff6e8ac396536deaf9743a46149e089cadcf782002a5c171",
-      "last_updated": "2026-05-25T17:34:20.697791"
     },
     "models.md": {
       "original_url": "https://developers.openai.com/codex/models",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-14T15:36:51.211904",
-    "fetch_duration_seconds": 46.263446,
+    "last_fetch_completed": "2026-06-14T18:32:13.567428",
+    "fetch_duration_seconds": 46.651109,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-14T15:36:51.211950",
+  "last_updated": "2026-06-14T18:32:13.567452",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
