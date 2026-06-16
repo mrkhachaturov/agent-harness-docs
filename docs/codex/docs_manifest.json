@@ -411,8 +411,8 @@
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "762ba72f62b6b8c006cbebeea457bc0c96eed41157a55bb8dd1b64686f213bea",
-      "last_updated": "2026-06-13T00:47:04.720003"
+      "hash": "3fc09a1b48105ab1e0c77f8bf54f513b55db261c570597219ea7067580f3246c",
+      "last_updated": "2026-06-16T04:35:38.180290"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-16T00:52:52.389335",
-    "fetch_duration_seconds": 52.532008,
+    "last_fetch_completed": "2026-06-16T04:35:47.630996",
+    "fetch_duration_seconds": 47.822077,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-16T00:52:52.389365",
+  "last_updated": "2026-06-16T04:35:47.631023",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
