@@ -81,8 +81,8 @@
     "app__troubleshooting.md": {
       "original_url": "https://developers.openai.com/codex/app/troubleshooting",
       "original_md_url": "https://developers.openai.com/codex/app/troubleshooting.md",
-      "hash": "8179674c62009197319077263a78931f6f0590199e4f42793088516a718ed340",
-      "last_updated": "2026-05-25T17:33:53.793890"
+      "hash": "a7687a0511808bd5148f08dbb69f690c841410e7d5b4e66f92a22f0a559ef18a",
+      "last_updated": "2026-06-16T21:52:51.843413"
     },
     "app__windows.md": {
       "original_url": "https://developers.openai.com/codex/app/windows",
@@ -93,8 +93,8 @@
     "app__worktrees.md": {
       "original_url": "https://developers.openai.com/codex/app/worktrees",
       "original_md_url": "https://developers.openai.com/codex/app/worktrees.md",
-      "hash": "57c61a0096dbe302f5fe656f70b84a5fd4dc9374b27390474feb44b3bd99c03c",
-      "last_updated": "2026-05-25T17:33:54.990610"
+      "hash": "a47c4b7e4618a3d08869fc30cb044eddf503ef859e6fea8e25f6b3d416220aea",
+      "last_updated": "2026-06-16T21:52:52.918288"
     },
     "appshots.md": {
       "original_url": "https://developers.openai.com/codex/appshots",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-16T19:15:32.703954",
-    "fetch_duration_seconds": 46.366315,
+    "last_fetch_completed": "2026-06-16T21:53:32.407597",
+    "fetch_duration_seconds": 48.148604,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-16T19:15:32.703984",
+  "last_updated": "2026-06-16T21:53:32.407627",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
