@@ -225,8 +225,8 @@
     "enterprise__admin-setup.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/admin-setup",
       "original_md_url": "https://developers.openai.com/codex/enterprise/admin-setup.md",
-      "hash": "2ac37cbb8a31dd4cfe255e41f0e60c75f33c432932b664c9dab7154081c62795",
-      "last_updated": "2026-06-15T19:21:59.470522"
+      "hash": "edb1b0c5d19299007157bc447608483a49d265f5e773a9c79346bd658c923a25",
+      "last_updated": "2026-06-17T19:01:39.892589"
     },
     "enterprise__governance.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/governance",
@@ -237,8 +237,8 @@
     "enterprise__managed-configuration.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
       "original_md_url": "https://developers.openai.com/codex/enterprise/managed-configuration.md",
-      "hash": "86b08b7764f4b57d21b317daac13ef1031ef7e142acfe874aed653e1a66d6b48",
-      "last_updated": "2026-06-16T16:34:54.796300"
+      "hash": "9acb39ca0a54e754f73db45154226850cc732b36380fc62442d67833697af1fb",
+      "last_updated": "2026-06-17T19:01:40.981161"
     },
     "environment-variables.md": {
       "original_url": "https://developers.openai.com/codex/environment-variables",
@@ -518,8 +518,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-17T16:19:41.278098",
-    "fetch_duration_seconds": 45.228648,
+    "last_fetch_completed": "2026-06-17T19:02:07.659557",
+    "fetch_duration_seconds": 48.874356,
     "total_pages_discovered": 86,
     "pages_fetched_successfully": 86,
     "pages_failed": 0,
@@ -529,7 +529,7 @@
     "total_files": 86,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-17T16:19:41.278124",
+  "last_updated": "2026-06-17T19:02:07.659582",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
