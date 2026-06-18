@@ -429,8 +429,8 @@
     "record-and-replay.md": {
       "original_url": "https://developers.openai.com/codex/record-and-replay",
       "original_md_url": "https://developers.openai.com/codex/record-and-replay.md",
-      "hash": "e85ba94db1cb2d71da72c885b80186cee2e1bfc798f41c4ed73bab5e19a6fe7f",
-      "last_updated": "2026-06-18T18:58:29.235897"
+      "hash": "c8355eb6da553beb0490042104c7127ef24f1e015ad904212f1f2a2f2805532a",
+      "last_updated": "2026-06-18T21:44:10.398661"
     },
     "remote-connections.md": {
       "original_url": "https://developers.openai.com/codex/remote-connections",
@@ -524,8 +524,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-18T18:58:37.428244",
-    "fetch_duration_seconds": 48.458147,
+    "last_fetch_completed": "2026-06-18T21:44:18.557964",
+    "fetch_duration_seconds": 47.066899,
     "total_pages_discovered": 87,
     "pages_fetched_successfully": 87,
     "pages_failed": 0,
@@ -535,7 +535,7 @@
     "total_files": 87,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-18T18:58:37.428271",
+  "last_updated": "2026-06-18T21:44:18.557997",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -1,7 +1,8 @@
 # Record & Replay
 
 Record & Replay is available on macOS. Initial availability excludes the
-  European Union. Computer Use must also be available and enabled.
+  European Economic Area, the United Kingdom, and Switzerland. Computer Use must
+  also be available and enabled.
 
 Record & Replay lets you demonstrate a workflow on your
 Mac and turn it into a reusable skill. Use it when the workflow is repetitive,
@@ -39,7 +40,7 @@ on the task you want Codex to learn.
 
 After you stop recording, Codex inspects the captured workflow and drafts a
 skill. The skill explains when to use the workflow, what inputs it needs, what
-steps to follow, and how to verify the result. You can also ask Codex to 
+steps to follow, and how to verify the result. You can also ask Codex to
 refine the skill further.
 
 ## Replay the workflow
@@ -56,7 +57,7 @@ Computer Use, browser actions, and installed plugins.
 
 - Keep the demonstration short and complete.
 - Let Codex know your goal and any specific inputs that might vary between
-  skill uses before you start recording. 
+  skill uses before you start recording.
 - Use realistic inputs, but avoid secrets and sensitive data.
 - Refine the skill after recording to call out hidden preferences that matter,
   such as naming conventions, field defaults, or decision points.
