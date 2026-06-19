@@ -399,8 +399,8 @@
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
       "original_md_url": "https://developers.openai.com/codex/plugins.md",
-      "hash": "ebebf5c5a4eb913551e6d86022e430f535ad84e59b54c64ea783532374e3ed8b",
-      "last_updated": "2026-06-18T18:58:26.563420"
+      "hash": "9ea7d3e46a39de101afc60266f1bb10a6f483eeb65266062059fad307cc7733b",
+      "last_updated": "2026-06-19T00:52:06.474172"
     },
     "plugins__build.md": {
       "original_url": "https://developers.openai.com/codex/plugins/build",
@@ -453,8 +453,8 @@
     "security.md": {
       "original_url": "https://developers.openai.com/codex/security",
       "original_md_url": "https://developers.openai.com/codex/security.md",
-      "hash": "f790f0d2d9088e473ca0966988afdb9cb767b6b4fd9c6245466cb3d995cf2bf6",
-      "last_updated": "2026-05-28T18:54:51.319502"
+      "hash": "3a55a2b15c7be68c9538202fea463c419057a7d20f19f4037699efbd934e629b",
+      "last_updated": "2026-06-19T00:52:11.218941"
     },
     "security__faq.md": {
       "original_url": "https://developers.openai.com/codex/security/faq",
@@ -465,8 +465,50 @@
     "security__plugin.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin",
       "original_md_url": "https://developers.openai.com/codex/security/plugin.md",
-      "hash": "7a3bc745d2ef0bf455b6873a551e8056112efd1c5d2e16a5f3bb1cae6aacc2bd",
-      "last_updated": "2026-05-28T18:54:52.471692"
+      "hash": "7830569b007158c56f39a5c4ddfbf3bb2781609632fd162b7fc18296b079a982",
+      "last_updated": "2026-06-19T00:52:12.290139"
+    },
+    "security__plugin__changelog.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/changelog",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/changelog.md",
+      "hash": "55dbf45440042e2c273457c92e63afdc30a5d8c1163ef78fefc4db0d28e94000",
+      "last_updated": "2026-06-19T00:52:12.815853"
+    },
+    "security__plugin__code-changes.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/code-changes",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/code-changes.md",
+      "hash": "e80917ae71f95827d0d65d43636efabdcb2f21050a5d50674844bbf2c41db453",
+      "last_updated": "2026-06-19T00:52:13.333785"
+    },
+    "security__plugin__deep-scans.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/deep-scans",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/deep-scans.md",
+      "hash": "2951855662032a9e338d3d4f06f8ef761334fdc71a3f8a503321187ca812fe84",
+      "last_updated": "2026-06-19T00:52:13.869768"
+    },
+    "security__plugin__export-findings.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/export-findings",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/export-findings.md",
+      "hash": "e595e087e72b24a001fe96998b18f6f3cb8f466d1c85876bd061b2bc798b222f",
+      "last_updated": "2026-06-19T00:52:14.394799"
+    },
+    "security__plugin__fix-findings.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/fix-findings",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/fix-findings.md",
+      "hash": "fd58c57197fe2eddf9700aa44c3973ca40866d26440fadc60c8f80c14f5722f6",
+      "last_updated": "2026-06-19T00:52:14.920280"
+    },
+    "security__plugin__scans.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/scans",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/scans.md",
+      "hash": "e222d5d9ee7ac6a251769309e0955d0722b442260dc62f93d49878e2f7172384",
+      "last_updated": "2026-06-19T00:52:15.448939"
+    },
+    "security__plugin__triage-backlog.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/triage-backlog",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/triage-backlog.md",
+      "hash": "a62fe4ef1c1f7941879136855b4947435e2d53d5a7bdd3eaae6ef5d5b3bb8b54",
+      "last_updated": "2026-06-19T00:52:15.991758"
     },
     "security__setup.md": {
       "original_url": "https://developers.openai.com/codex/security/setup",
@@ -524,18 +566,18 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-18T21:44:18.557964",
-    "fetch_duration_seconds": 47.066899,
-    "total_pages_discovered": 87,
-    "pages_fetched_successfully": 87,
+    "last_fetch_completed": "2026-06-19T00:52:20.905313",
+    "fetch_duration_seconds": 50.088234,
+    "total_pages_discovered": 94,
+    "pages_fetched_successfully": 94,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 87,
+    "total_files": 94,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-18T21:44:18.557997",
+  "last_updated": "2026-06-19T00:52:20.905334",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
