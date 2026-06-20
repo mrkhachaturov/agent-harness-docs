@@ -435,8 +435,8 @@
     "remote-connections.md": {
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "original_md_url": "https://developers.openai.com/codex/remote-connections.md",
-      "hash": "eb19ad4748efdf83497252e2385c9968875185cb82506849cd7770f8710f02fc",
-      "last_updated": "2026-06-11T10:34:53.119195"
+      "hash": "317627fe8ef1709f66563a323f6c7d0a24be708d68cbeedb6182bf5a7d45356c",
+      "last_updated": "2026-06-20T00:42:50.211069"
     },
     "rules.md": {
       "original_url": "https://developers.openai.com/codex/rules",
@@ -566,8 +566,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-19T21:28:12.294967",
-    "fetch_duration_seconds": 49.577245,
+    "last_fetch_completed": "2026-06-20T00:43:02.767822",
+    "fetch_duration_seconds": 54.81322,
     "total_pages_discovered": 94,
     "pages_fetched_successfully": 94,
     "pages_failed": 0,
@@ -577,7 +577,7 @@
     "total_files": 94,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-19T21:28:12.295005",
+  "last_updated": "2026-06-20T00:43:02.767853",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
