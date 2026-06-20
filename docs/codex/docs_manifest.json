@@ -201,14 +201,14 @@
     "config-reference.md": {
       "original_url": "https://developers.openai.com/codex/config-reference",
       "original_md_url": "https://developers.openai.com/codex/config-reference.md",
-      "hash": "83fc8118aec5c739bf235014757b6ab3bfe729e9f117ff86eb81e1dd4f397c3b",
-      "last_updated": "2026-06-18T18:58:08.443098"
+      "hash": "bb7dade9a8b41b8761b169483bb2f650cf77187a2c59dc1e3d8ca9d6103f1d95",
+      "last_updated": "2026-06-20T04:31:35.832329"
     },
     "config-sample.md": {
       "original_url": "https://developers.openai.com/codex/config-sample",
       "original_md_url": "https://developers.openai.com/codex/config-sample.md",
-      "hash": "6c104ff4b4ff961b9326b9bf79a443ad9db3c2c6182f3b5213da1763b4b4121b",
-      "last_updated": "2026-06-18T18:58:09.021843"
+      "hash": "0bc5e2cc61081237ae84c2d5cb4d0b705600e62e13d23241d302d287fd61ce3c",
+      "last_updated": "2026-06-20T04:31:36.384827"
     },
     "custom-prompts.md": {
       "original_url": "https://developers.openai.com/codex/custom-prompts",
@@ -351,8 +351,8 @@
     "mcp.md": {
       "original_url": "https://developers.openai.com/codex/mcp",
       "original_md_url": "https://developers.openai.com/codex/mcp.md",
-      "hash": "9ba48227eae57b7aa39465127d3cb4474e98f36d1904ac206a042bf3e9f7433e",
-      "last_updated": "2026-05-27T00:39:50.810692"
+      "hash": "633b5b1eda2f038e70c8ebfee37e13c7762025bd22ab97046d9231de4ffaec3b",
+      "last_updated": "2026-06-20T04:31:50.467890"
     },
     "memories.md": {
       "original_url": "https://developers.openai.com/codex/memories",
@@ -566,8 +566,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-20T00:43:02.767822",
-    "fetch_duration_seconds": 54.81322,
+    "last_fetch_completed": "2026-06-20T04:32:11.684432",
+    "fetch_duration_seconds": 55.586867,
     "total_pages_discovered": 94,
     "pages_fetched_successfully": 94,
     "pages_failed": 0,
@@ -577,7 +577,7 @@
     "total_files": 94,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-20T00:43:02.767853",
+  "last_updated": "2026-06-20T04:32:11.684468",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
