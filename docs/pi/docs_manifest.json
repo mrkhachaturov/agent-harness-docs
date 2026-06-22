@@ -153,8 +153,8 @@
     "tui.md": {
       "upstream_path": "packages/coding-agent/docs/tui.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/tui.md",
-      "hash": "fd7dfdb3fdfa0b1f3323b0d3e661e7a85cade67f6619570c02347bcdeb055e9f",
-      "last_updated": "2026-06-18T10:35:23.284161"
+      "hash": "b44e41e07646e12992258fa272706b67fed1f69d12dc4108029253ad4c6cd0de",
+      "last_updated": "2026-06-22T08:02:12.978163"
     },
     "usage.md": {
       "upstream_path": "packages/coding-agent/docs/usage.md",
@@ -170,8 +170,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-22T04:35:38.719240",
-    "fetch_duration_seconds": 0.607875,
+    "last_fetch_completed": "2026-06-22T08:02:12.978459",
+    "fetch_duration_seconds": 1.390774,
     "total_pages_discovered": 28,
     "pages_fetched_successfully": 28,
     "pages_failed": 0,
@@ -182,7 +182,7 @@
     "total_files": 28,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-22T04:35:38.719290",
+  "last_updated": "2026-06-22T08:02:12.978470",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
