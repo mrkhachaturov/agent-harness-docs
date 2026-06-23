@@ -87,8 +87,8 @@
     "keybinds.md": {
       "upstream_path": "packages/web/src/content/docs/keybinds.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/keybinds.mdx",
-      "hash": "77c7f8eaa03c761e274cb412027d67df71deff2d29d4edfaefdca1b56da0357d",
-      "last_updated": "2026-05-26T14:47:32.214720"
+      "hash": "a6122b09d815db4d69491f482a43c36a1183cb9cf4290096c5530da4e0ff006c",
+      "last_updated": "2026-06-23T16:02:37.837580"
     },
     "lsp.md": {
       "upstream_path": "packages/web/src/content/docs/lsp.mdx",
@@ -218,8 +218,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-23T12:59:26.475916",
-    "fetch_duration_seconds": 9.183221,
+    "last_fetch_completed": "2026-06-23T16:02:42.148665",
+    "fetch_duration_seconds": 9.252709,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-23T12:59:26.475944",
+  "last_updated": "2026-06-23T16:02:42.148693",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
