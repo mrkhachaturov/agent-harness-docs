@@ -255,8 +255,8 @@
     "changelog.md": {
       "original_url": "https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md",
       "original_raw_url": "https://raw.githubusercontent.com/anthropics/claude-code/main/CHANGELOG.md",
-      "hash": "21244ba2860ec962969315881ac2eef2041419f4697e1f59decb39a8087ee9c5",
-      "last_updated": "2026-06-23T21:34:36.375733",
+      "hash": "6dad38202dba04a940c1d2cb7c78e0e486f14db72031f75b989c20caf8876112",
+      "last_updated": "2026-06-24T18:39:54.704753",
       "source": "claude-code-repository"
     },
     "channels.md": {
@@ -490,8 +490,8 @@
     "interactive-mode.md": {
       "original_url": "https://code.claude.com/docs/en/interactive-mode",
       "original_md_url": "https://code.claude.com/docs/en/interactive-mode.md",
-      "hash": "cb3f5019c75eadc9dd08575592dd2197e048cfe7020f7847d8aefbc1cda65075",
-      "last_updated": "2026-06-24T15:47:39.987006"
+      "hash": "8b50c5f185a0bd03f78e0254e002bf2f8fc59028f38c32f85646eafc28d07f0f",
+      "last_updated": "2026-06-24T18:38:12.282159"
     },
     "jetbrains.md": {
       "original_url": "https://code.claude.com/docs/en/jetbrains",
@@ -903,8 +903,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-24T15:48:49.282927",
-    "fetch_duration_seconds": 160.060979,
+    "last_fetch_completed": "2026-06-24T18:39:54.704795",
+    "fetch_duration_seconds": 265.135591,
     "total_pages_discovered": 150,
     "pages_fetched_successfully": 151,
     "pages_failed": 0,
@@ -914,7 +914,7 @@
     "total_files": 150,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-06-24T15:48:49.282954",
+  "last_updated": "2026-06-24T18:39:54.704818",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
