@@ -255,8 +255,8 @@
     "github-action.md": {
       "original_url": "https://developers.openai.com/codex/github-action",
       "original_md_url": "https://developers.openai.com/codex/github-action.md",
-      "hash": "17bcd4cc13392e3dddc3b120673ee09afc63a72744ac4f4dada61a5b63c5b018",
-      "last_updated": "2026-05-26T18:49:18.351157"
+      "hash": "63a723e2250bc0b6719b264bbd73557074bbff7c4e927f6509f75c7826d879dd",
+      "last_updated": "2026-06-25T00:42:48.899013"
     },
     "glossary.md": {
       "original_url": "https://developers.openai.com/codex/glossary",
@@ -477,8 +477,8 @@
     "security__plugin__code-changes.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/code-changes",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/code-changes.md",
-      "hash": "e80917ae71f95827d0d65d43636efabdcb2f21050a5d50674844bbf2c41db453",
-      "last_updated": "2026-06-19T00:52:13.333785"
+      "hash": "1eb4a0b534fa25f5552e1bfcd85ff521e2cfc768a61189135d99968363f7a55a",
+      "last_updated": "2026-06-25T00:43:08.374351"
     },
     "security__plugin__deep-scans.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/deep-scans",
@@ -495,8 +495,8 @@
     "security__plugin__fix-findings.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/fix-findings",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/fix-findings.md",
-      "hash": "fd58c57197fe2eddf9700aa44c3973ca40866d26440fadc60c8f80c14f5722f6",
-      "last_updated": "2026-06-19T00:52:14.920280"
+      "hash": "13e1157fa7470a8767e5a4cebd154d9b66f55efc29b7e122ac573e42eb440b48",
+      "last_updated": "2026-06-25T00:43:09.945361"
     },
     "security__plugin__scans.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/scans",
@@ -507,8 +507,8 @@
     "security__plugin__triage-backlog.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/triage-backlog",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/triage-backlog.md",
-      "hash": "a62fe4ef1c1f7941879136855b4947435e2d53d5a7bdd3eaae6ef5d5b3bb8b54",
-      "last_updated": "2026-06-19T00:52:15.991758"
+      "hash": "d9328de3bd32360b91edae1d25fefcc2a2f98c0d9d4f88bc2849caf6dfb1ed60",
+      "last_updated": "2026-06-25T00:43:10.991064"
     },
     "security__setup.md": {
       "original_url": "https://developers.openai.com/codex/security/setup",
@@ -566,8 +566,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-24T21:33:52.690314",
-    "fetch_duration_seconds": 52.898285,
+    "last_fetch_completed": "2026-06-25T00:43:15.828086",
+    "fetch_duration_seconds": 49.542989,
     "total_pages_discovered": 94,
     "pages_fetched_successfully": 94,
     "pages_failed": 0,
@@ -577,7 +577,7 @@
     "total_files": 94,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-24T21:33:52.690348",
+  "last_updated": "2026-06-25T00:43:15.828120",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
