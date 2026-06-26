@@ -1,6 +1,6 @@
 ---
 name: opencode-docs
-description: Look up OpenCode documentation in the local Miyo-indexed folder labeled `opencode` (resolved at runtime via Miyo — no hardcoded filesystem path, works on macOS/Windows/Linux). Use when answering questions about the OpenCode terminal UI, the `opencode` CLI, agents and subagents, opencode.json / opencode.jsonc config, skills, custom tools, plugins, MCP servers, providers and models, permissions, keybinds, themes, the SDK, share links, IDE integrations, GitHub/GitLab actions, ACP, or the LSP integration.
+description: Look up OpenCode documentation in the local Miyo-indexed folder labeled `opencode`. Use when answering questions about the OpenCode terminal UI, the `opencode` CLI, agents and subagents, opencode.json / opencode.jsonc config, skills, custom tools, plugins, MCP servers, providers and models, permissions, keybinds, themes, the SDK, share links, IDE integrations, GitHub/GitLab actions, ACP, or the LSP integration.
 disable-model-invocation: true
 ---
 
@@ -11,26 +11,16 @@ A local Markdown mirror of the official [OpenCode docs](https://opencode.ai/docs
 indexed in **Miyo** under the folder label **`opencode`**. The docs are in **English** —
 phrase Miyo queries in English for best recall.
 
-> This skill is **manual-only** (`disable-model-invocation: true`): nothing loads into
-> context until you invoke it with `/opencode-docs`. Drop a copy at
-> `~/.claude/skills/opencode-docs/SKILL.md` (or your harness's skills dir) for it to be
-> available in every chat at zero idle context cost. Remove that frontmatter line in a
-> project copy if you want the agent to auto-invoke it there.
+## Reach the docs through Miyo's folder label `opencode`
 
-## Access is portable — never hardcode a filesystem path
+Every Miyo call below uses the folder label `opencode`.
 
-This skill addresses the docs **only through Miyo's folder label `opencode`**, not
-through any absolute path. Miyo resolves the physical location on whatever machine it
-runs (macOS/Windows/Linux), so the skill is portable.
-
-- **Verify the folder exists** (and confirm its exact label) with
-  `mcp__miyo__list_folders` — you should see `opencode (… files, ready)`. If on some
-  machine it was indexed under a different label, use that label everywhere below.
-- **All file paths are Miyo-relative**, of the form `opencode/<file>.md` — exactly as
-  returned by `mcp__miyo__search` / `mcp__miyo__list_files`. Pass those same relative
-  paths straight to `mcp__miyo__read_file`; **do not** prepend a mirror root and **do
-  not** use the native `Read` tool (that would need an OS-specific absolute path and
-  break portability).
+- **Confirm the label** with `mcp__miyo__list_folders` — you should see
+  `opencode (… files, ready)`. If it was indexed under a different label, use that
+  one everywhere below.
+- **Paths are Miyo-relative**, of the form `opencode/<file>.md` — exactly as
+  `mcp__miyo__search` / `mcp__miyo__list_files` return them. Pass them straight to
+  `mcp__miyo__read_file`; the native `Read` tool can't open them.
 
 ## File naming
 
@@ -117,7 +107,7 @@ for `opencode.json`, full keybinds/theme table, precise CLI flag spelling, or th
 complete list of agent/skill/MCP frontmatter fields.
 
 Pass the **Miyo-relative path** that search/`list_files` returned straight to
-`mcp__miyo__read_file` — no path rewriting, fully portable:
+`mcp__miyo__read_file` — no path rewriting:
 
 ```
 mcp__miyo__read_file(file_path: "opencode/<file>.md")

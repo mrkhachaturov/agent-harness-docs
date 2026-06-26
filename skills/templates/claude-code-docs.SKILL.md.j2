@@ -1,6 +1,6 @@
 ---
 name: claude-code-docs
-description: Look up Claude Code documentation in the local Miyo-indexed folder labeled `claude-code` (resolved at runtime via Miyo — no hardcoded filesystem path, works on macOS/Windows/Linux). Use when answering questions about Claude Code — features, configuration, hooks, permissions, settings, MCP, plugins, skills, sub-agents, Agent SDK, CLI flags, slash commands, env vars, cloud providers, or IDE integrations.
+description: Look up Claude Code documentation in the local Miyo-indexed folder labeled `claude-code`. Use when answering questions about Claude Code — features, configuration, hooks, permissions, settings, MCP, plugins, skills, sub-agents, Agent SDK, CLI flags, slash commands, env vars, cloud providers, or IDE integrations.
 disable-model-invocation: true
 ---
 
@@ -11,26 +11,16 @@ A local Markdown mirror of the official [Claude Code docs](https://code.claude.c
 under the folder label **`claude-code`**. The docs are in **English** — phrase Miyo
 queries in English for best recall.
 
-> This skill is **manual-only** (`disable-model-invocation: true`): nothing loads into
-> context until you invoke it with `/claude-code-docs`. Drop a copy at
-> `~/.claude/skills/claude-code-docs/SKILL.md` for it to be available in every chat at
-> zero idle context cost. Remove that frontmatter line in a project copy if you want
-> Claude to auto-invoke it there.
+## Reach the docs through Miyo's folder label `claude-code`
 
-## Access is portable — never hardcode a filesystem path
+Every Miyo call below uses the folder label `claude-code`.
 
-This skill addresses the docs **only through Miyo's folder label `claude-code`**, not
-through any absolute path. Miyo resolves the physical location on whatever machine it
-runs (macOS/Windows/Linux), so the skill is portable.
-
-- **Verify the folder exists** (and confirm its exact label) with
-  `mcp__miyo__list_folders` — you should see `claude-code (… files, ready)`. If on some
-  machine it was indexed under a different label, use that label everywhere below.
-- **All file paths are Miyo-relative**, of the form `claude-code/<file>.md` — exactly as
-  returned by `mcp__miyo__search` / `mcp__miyo__list_files`. Pass those same relative
-  paths straight to `mcp__miyo__read_file`; **do not** prepend a mirror root and **do
-  not** use the native `Read` tool (that would need an OS-specific absolute path and
-  break portability).
+- **Confirm the label** with `mcp__miyo__list_folders` — you should see
+  `claude-code (… files, ready)`. If it was indexed under a different label, use that
+  one everywhere below.
+- **Paths are Miyo-relative**, of the form `claude-code/<file>.md` — exactly as
+  `mcp__miyo__search` / `mcp__miyo__list_files` return them. Pass them straight to
+  `mcp__miyo__read_file`; the native `Read` tool can't open them.
 
 ## File naming
 
@@ -112,7 +102,7 @@ YAML frontmatter, precise CLI flag spelling, or a full env-var / settings / hook
 reference table.
 
 Pass the **Miyo-relative path** that search/`list_files` returned straight to
-`mcp__miyo__read_file` — no path rewriting, fully portable:
+`mcp__miyo__read_file` — no path rewriting:
 
 ```
 mcp__miyo__read_file(file_path: "claude-code/<file>.md")

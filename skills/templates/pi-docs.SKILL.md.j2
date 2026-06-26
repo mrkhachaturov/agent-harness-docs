@@ -1,6 +1,6 @@
 ---
 name: pi-docs
-description: Look up Pi coding-agent documentation in the local Miyo-indexed folder labeled `pi` (resolved at runtime via Miyo — no hardcoded filesystem path, works on macOS/Windows/Linux). Use when answering questions about the Pi terminal coding harness, the `pi` CLI, extensions, skills, prompt templates, themes, pi packages, providers, models, settings, keybindings, sessions, compaction, the Pi SDK, RPC mode, JSON event stream, or TUI components.
+description: Look up Pi coding-agent documentation in the local Miyo-indexed folder labeled `pi`. Use when answering questions about the Pi terminal coding harness, the `pi` CLI, extensions, skills, prompt templates, themes, pi packages, providers, models, settings, keybindings, sessions, compaction, the Pi SDK, RPC mode, JSON event stream, or TUI components.
 disable-model-invocation: true
 ---
 
@@ -11,30 +11,16 @@ A local Markdown mirror of the official Pi coding-agent docs
 in **Miyo** under the folder label **`pi`**. The docs are in **English** — phrase Miyo
 queries in English for best recall.
 
-> This skill is **manual-only** (`disable-model-invocation: true`): nothing loads into
-> context until you invoke it with `/pi-docs`. Drop a copy at
-> `~/.claude/skills/pi-docs/SKILL.md` (or your harness's skills dir) for it to be
-> available in every chat at zero idle context cost. Remove that frontmatter line in a
-> project copy if you want the agent to auto-invoke it there.
->
-> **Note:** index the `pi` folder in Miyo first (`mcp__miyo__list_folders` should show
-> `pi (… files, ready)`); if it isn't indexed yet, point Miyo at this repo's `docs/pi/`
-> folder with the label `pi`.
+## Reach the docs through Miyo's folder label `pi`
 
-## Access is portable — never hardcode a filesystem path
+Every Miyo call below uses the folder label `pi`.
 
-This skill addresses the docs **only through Miyo's folder label `pi`**, not through any
-absolute path. Miyo resolves the physical location on whatever machine it runs
-(macOS/Windows/Linux), so the skill is portable.
-
-- **Verify the folder exists** (and confirm its exact label) with
-  `mcp__miyo__list_folders` — you should see `pi (… files, ready)`. If on some machine it
-  was indexed under a different label, use that label everywhere below.
-- **All file paths are Miyo-relative**, of the form `pi/<file>.md` — exactly as returned
-  by `mcp__miyo__search` / `mcp__miyo__list_files`. Pass those same relative paths
-  straight to `mcp__miyo__read_file`; **do not** prepend a mirror root and **do not** use
-  the native `Read` tool (that would need an OS-specific absolute path and break
-  portability).
+- **Confirm the label** with `mcp__miyo__list_folders` — you should see
+  `pi (… files, ready)`. If it was indexed under a different label, use that one
+  everywhere below.
+- **Paths are Miyo-relative**, of the form `pi/<file>.md` — exactly as
+  `mcp__miyo__search` / `mcp__miyo__list_files` return them. Pass them straight to
+  `mcp__miyo__read_file`; the native `Read` tool can't open them.
 
 ## File naming
 
@@ -111,7 +97,7 @@ for settings or extension manifests, full keybindings/theme table, precise CLI f
 spelling, or the complete provider/model configuration reference.
 
 Pass the **Miyo-relative path** that search/`list_files` returned straight to
-`mcp__miyo__read_file` — no path rewriting, fully portable:
+`mcp__miyo__read_file` — no path rewriting:
 
 ```
 mcp__miyo__read_file(file_path: "pi/<file>.md")
