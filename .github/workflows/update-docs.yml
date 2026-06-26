@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         ref: main
@@ -26,7 +26,7 @@ jobs:
     # installs the Python venv (uv pip) and node modules (npm ci) for scripts/.
     # `hk install` is wired to `enter` only, so no git hooks are installed in CI.
     - name: Set up mise toolchain
-      uses: jdx/mise-action@v2
+      uses: jdx/mise-action@v4
       with:
         cache: true
 
@@ -114,7 +114,7 @@ jobs:
 
     - name: Create issue on failure
       if: steps.fetch-claude.outputs.claude_failed == 'true' || steps.fetch-codex.outputs.codex_failed == 'true' || steps.fetch-opencode.outputs.opencode_failed == 'true' || steps.fetch-pi.outputs.pi_failed == 'true'
-      uses: actions/github-script@v7
+      uses: actions/github-script@v9
       with:
         script: |
           const date = new Date().toISOString().split('T')[0];
