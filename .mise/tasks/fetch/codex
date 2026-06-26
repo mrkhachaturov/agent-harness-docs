@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Fetch OpenAI Codex docs → docs/codex/"
+#MISE dir="{{config_root}}"
+set -eo pipefail
+
+exec python scripts/fetch_codex_docs.py

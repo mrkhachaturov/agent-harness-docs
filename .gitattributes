@@ -1,0 +1,12 @@
+# Reproducible line endings across macOS / Linux / Windows.
+# Text files are LF in the repo AND in the working tree (overrides core.autocrlf),
+# so bash scripts and mise file-tasks never get CRLF (a CR in the shebang breaks them).
+* text=auto eol=lf
+
+# Bash scripts and the extensionless mise file-tasks MUST stay LF.
+*.sh           text eol=lf
+.mise/tasks/** text eol=lf
+
+# Binary assets: never normalize.
+*.png binary
+*.ico binary

@@ -1,0 +1,48 @@
+/// hk.pkl — git-lifecycle quality + safety gate for agent-harness-docs.
+///
+/// Tools (hk, pkl, ruff, python…) are pinned in mise.toml; HK_MISE=1 runs hooks
+/// via `mise x` so pinned tools resolve for everyone. Hooks self-install through
+/// the mise [hooks] `enter` step (`hk install --mise`) — LOCAL repo entry only,
+/// so CI never installs them and the docs-bot's hourly auto-commits to `main`
+/// (non-conventional messages, direct to main) are never gated. That is also why
+/// this config intentionally omits `no-commit-to-main` and `check_conventional_commit`.
+///
+/// Bypass for a single command:
+///   HK=0 git commit ...        or    git commit --no-verify
+amends "package://github.com/jdx/hk/releases/download/v1.46.0/hk@1.46.0#/Config.pkl"
+import "package://github.com/jdx/hk/releases/download/v1.46.0/hk@1.46.0#/Builtins.pkl"
+
+// Shared gate: fast Rust-native safety checks + the project quality aggregate.
+// The lint step delegates to `mise run check` (ruff lint + fmt-check + render-check)
+// — the single source of truth, already parallelized by mise. Reused by
+// pre-commit, `hk check`, and `hk fix` so there is no drift.
+local gate = new Mapping<String, Step> {
+  ["detect-private-key"]      = Builtins.detect_private_key       // never commit keys/secrets
+  ["check-added-large-files"] = Builtins.check_added_large_files  // backstop for stray blobs
+  ["check-merge-conflict"]    = Builtins.check_merge_conflict
+  // docs/ is a verbatim upstream mirror — markdown there uses significant trailing
+  // whitespace (hard line breaks) and is owned by the fetchers, so the auto-fixers
+  // must never rewrite it. Exclude it from both.
+  ["trailing-whitespace"]     = (Builtins.trailing_whitespace) { exclude = "docs/**" }  // auto-fix
+  ["newlines"]                = (Builtins.newlines) { exclude = "docs/**" }             // EOF fixer (auto-fix)
+  ["lint"] = new Step {
+    check = "mise run check"
+    exclusive = true   // run the aggregate gate on its own, after the quick checks
+  }
+}
+
+hooks {
+  ["pre-commit"] {
+    fix = true          // apply available auto-fixes (whitespace, newlines), then re-stage
+    stash = "git"       // protect unstaged WIP with a 3-way-merge stash
+    steps = gate
+  }
+
+  // `hk check` / `hk fix` entrypoints (manual + optional CI). `check` is
+  // read-only; `fix` applies the auto-fixes.
+  ["check"] { steps = gate }
+  ["fix"] {
+    fix = true
+    steps = gate
+  }
+}

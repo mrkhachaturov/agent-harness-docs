@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#MISE description="Format Python sources (ruff)"
+#MISE dir="{{config_root}}"
+#USAGE flag "--check" help="Verify formatting without writing"
+set -eo pipefail
+
+args=()
+[[ "${usage_check:-false}" == "true" ]] && args+=(--check --diff)
+exec ruff format "${args[@]}" scripts

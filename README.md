@@ -1,195 +1,141 @@
 # Agent Harness Docs
 
 [![Last Update](https://img.shields.io/github/last-commit/mrkhachaturov/agent-harness-docs/main.svg?label=docs%20updated)](https://github.com/mrkhachaturov/agent-harness-docs/commits/main)
-[![Platform](https://img.shields.io/badge/platform-macOS-blue)](https://github.com/mrkhachaturov/agent-harness-docs)
+[![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-blue)](https://github.com/mrkhachaturov/agent-harness-docs)
 
-Local docs mirror for AI coding agents — auto-synced, indexer-agnostic.
+A local Markdown mirror of the docs for four AI coding-agent harnesses, kept
+fresh upstream and consumed through a small per-agent **skill** that searches
+the docs with [Miyo](https://miyo.md).
 
-Today this repo collects documentation for three coding-agent harnesses:
+| Docset | Source | Miyo folder label | ~pages |
+|---|---|---|---|
+| **Claude Code** | [code.claude.com](https://code.claude.com/docs/en/overview) | `claude-code` | ~150 |
+| **OpenAI Codex** | [developers.openai.com/codex](https://developers.openai.com/codex) | `codex` | ~90 |
+| **OpenCode** | [github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) (MDX → MD) | `opencode` | ~35 |
+| **Pi** | [github.com/earendil-works/pi](https://github.com/earendil-works/pi) | `pi` | ~27 |
 
-- **Claude Code** — from [code.claude.com](https://code.claude.com/docs/en/overview)
-- **OpenAI Codex** — from [developers.openai.com/codex](https://developers.openai.com/codex)
-- **OpenCode** — from [github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) (MDX → Markdown)
-
-More harnesses will be added over time (Cursor, Aider, etc.). The docs
-update upstream every 3 hours via GitHub Actions; an hourly launchd job
-mirrors them into flat folders under your home directory.
-
-You decide how to consume them: drop a semantic-search tool on top, grep
-the folder, or just let your agent read files directly. The installer
-ships a small skill that adapts to whichever indexing tool you have.
-
-> Originally [`claude-code-docs`](https://github.com/ericbuess/claude-code-docs).
 > Forked from [ericbuess/claude-code-docs](https://github.com/ericbuess/claude-code-docs)
-> and generalised to multiple harnesses + indexers.
+> and generalised to multiple harnesses.
 
-## What the installer sets up
+## How it works
 
-| Path | Contents |
-|---|---|
-| `~/claude-code-docs/` | Claude Code docs (~140 flat `.md` files) |
-| `~/codex-docs/` | Codex docs (~80 flat `.md` files) |
-| `~/opencode-docs/` | OpenCode docs (~34 flat `.md` files, MDX-converted) |
-| `~/Library/Caches/agent-harness-docs-mirror/` | Cache clone of this repo |
-| `~/Library/Application Support/agent-harness-docs/sync.sh` | Sync script |
-| `~/Library/LaunchAgents/com.mrkhachaturov.agent-harness-docs.plist` | Hourly launchd job |
-| `~/.claude/skills/claude-code-docs/SKILL.md` | Claude Code skill (variant picked by installer) |
-| `~/.claude/rules/claude-code-docs.md` | Always-on hint for Claude Code |
-| `~/.agents/skills/codex-docs/SKILL.md` | Codex skill (agentskills.io USER scope) |
-| `~/.agents/skills/opencode-docs/SKILL.md` | OpenCode-docs skill (shared across all three agents) |
-| `~/.claude/skills/opencode-docs` | Symlink → `~/.agents/skills/opencode-docs` (for Claude Code) |
-| `~/.config/opencode/opencode.json[c]` | Miyo MCP merged into the `mcp` block (when Miyo is detected) |
-
-## Skills adapt to your indexer
-
-At install time the script detects what's on your machine and installs the
-matching skill variant from `skills/<docset>/<indexer>/SKILL.md`:
-
-| Detected | Variant | What the skill tells the agent |
-|---|---|---|
-| [Miyo](https://miyo.md) CLI is on `$PATH` | `miyo` | Use `mcp__miyo__search` with `folder_path: "<docset>"` |
-| Nothing | `plain` | Use `ls` / `grep` / `Read` against the docs folder directly |
-
-If you install (or remove) an indexer later, just re-run `install.sh` —
-it's idempotent and will swap in the right variant.
-
-> **Want another indexer?** PR welcome — add `<indexer>` to `INDEXERS` in
-> [`scripts/render_skills.py`](scripts/render_skills.py) and extend the
-> Jinja2 templates in [`skills/templates/`](skills/templates/) with the
-> tool-specific blocks. Run `python scripts/render_skills.py` and commit
-> both the template change and the rendered output.
-
-## Install
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/install.sh | bash
+```
+CI (every 3h) ──fetch──▶ docs/<docset>/*.md ──git pull──▶ your clone
+                                                              │
+                                          you index folders in Miyo
+                                                              │
+            /claude-code-docs  ──skill──▶ mcp__miyo__search(folder_path: "claude-code")
 ```
 
-macOS only for now (uses launchd). Requires `git`, `rsync`, and `curl` —
-no Python or Node on your machine. The MDX → Markdown conversion for
-OpenCode runs in CI; you only receive pre-converted `.md` files.
+1. **Upstream**: a GitHub Actions job re-fetches all four sources every 3 hours
+   and commits the result to `docs/<docset>/`.
+2. **Local**: you `git pull` this repo whenever you want fresh docs, and point
+   [Miyo](https://miyo.md) at the four `docs/<docset>/` folders, labelling them
+   `claude-code`, `codex`, `opencode`, `pi`.
+3. **Skills**: each agent gets a small `SKILL.md` that, when you invoke it,
+   searches its docset via Miyo. The skills hold **no filesystem paths** — they
+   address docs purely by Miyo folder label, so they are portable across
+   macOS / Linux / Windows.
 
-> Linux / Windows installers are planned. For now, the doc-fetch and
-> render scripts work cross-platform; only `install.sh` is mac-specific.
+The skills are **manual-only** (`disable-model-invocation: true`): nothing loads
+into an agent's context until you invoke it with `/<name>`, so they cost zero
+idle context and never auto-trigger.
 
-After install, if you're on the `miyo` variant: open Miyo, add the three
-doc folders, label them `claude-code-docs`, `codex-docs`, and
-`opencode-docs`. Restart your agent so the skills/rules/MCP load.
+## Prerequisites
+
+- **[Miyo](https://miyo.md)** — the semantic-search layer the skills call. Index
+  each `docs/<docset>/` folder with the label from the table above.
+- **Node** (for `npx`) — only to run the skill installer below.
+
+## Install the skills
+
+Skills are installed with the cross-agent [`skills`](https://skills.sh) CLI.
+**Each docs skill goes to its own agent** — Claude Code doesn't need to know how
+to configure Codex, so `claude-code-docs` installs only into Claude Code, and so
+on:
+
+```bash
+# From GitHub (1:1 — each skill to its matching agent, global scope)
+npx skills add mrkhachaturov/agent-harness-docs -g -a claude-code --skill claude-code-docs
+npx skills add mrkhachaturov/agent-harness-docs -g -a codex        --skill codex-docs
+npx skills add mrkhachaturov/agent-harness-docs -g -a opencode     --skill opencode-docs
+npx skills add mrkhachaturov/agent-harness-docs -g -a pi           --skill pi-docs
+```
+
+- `-g` installs globally (available in every project); drop it to install into
+  the current project only.
+- `npx skills` symlinks by default (single source of truth — `npx skills update`
+  refreshes). Pass `--copy` if your platform can't symlink.
+- Install from a **local clone** (no GitHub push needed) by using `.` as the
+  source: `npx skills add . -g -a claude-code --skill claude-code-docs`.
+
+You only need the skill for an agent you actually use, and only for a docset
+you've indexed in Miyo. Cross-install on purpose when it helps — e.g. give
+Claude Code the `opencode-docs` skill while you're editing an `opencode.json`:
+
+```bash
+npx skills add mrkhachaturov/agent-harness-docs -g -a claude-code --skill opencode-docs
+```
+
+Manage later:
+
+```bash
+npx skills list -g                 # what's installed where
+npx skills update -g               # pull latest SKILL.md
+npx skills remove -g claude-code-docs
+```
 
 ## Use
 
-Claude Code:
+Invoke a skill with `/<name>` in its agent:
 
 ```text
 /claude-code-docs how do hooks interact with permissions?
 /claude-code-docs explain "sandbox environments"
-/claude-code-docs path "permissions" "sandboxing"
+/codex-docs        how do I configure AGENTS.md for nested directories?
+/opencode-docs     how do I add a custom MCP server?
+/pi-docs           how does session compaction work?
 ```
 
-Codex (skill is auto-discovered via metadata — no rule file needed):
+Each skill scopes its Miyo search to its own folder label, so results never
+cross-contaminate between docsets.
 
-```text
-/codex-docs how do I configure AGENTS.md for nested directories?
-/codex-docs explain "skills vs plugins"
-/codex-docs path "MCP" "hooks"
-```
-
-OpenCode (works in any of the three agents — opencode itself, Claude
-Code, or Codex — since the skill is shared):
-
-```text
-/opencode-docs how do I add a custom MCP server?
-/opencode-docs explain "primary agents vs subagents"
-/opencode-docs path "skills" "permissions"
-```
-
-Each skill scopes its search to its own indexed folder so results never
-cross-contaminate.
-
-## How it stays current
-
-- **Upstream** (this repo, GitHub Actions): every 3 hours, three fetchers
-  (`scripts/fetch_claude_docs.py`, `scripts/fetch_codex_docs.py`,
-  `scripts/fetch_opencode_docs.py`) read the upstream sources and update
-  `docs/claude-code/`, `docs/codex/`, and `docs/opencode/`. The OpenCode
-  fetcher additionally pipes each MDX file through a Node `remark-mdx`
-  converter so the result is plain Markdown.
-- **Local** (your machine, launchd): every hour, the sync script pulls
-  the latest cache clone and rsyncs all three subfolders into your home
-  folders.
-
-## Update
+## Refresh the docs
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/install.sh | bash
+git pull            # CI updates docs/ upstream every few hours
 ```
 
-Idempotent — re-running just re-pulls the cache, re-wires the launchd
-job, and re-picks the indexer variant. Docs themselves refresh every hour
-without manual action.
-
-## Uninstall
-
-```bash
-curl -fsSL https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/uninstall.sh | bash
-```
-
-Removes all installed files and the launchd job. **Does not** remove Miyo
-MCP registrations on agent CLIs / configs — those may be used for other
-things. To remove them too:
-
-```bash
-claude mcp remove miyo
-codex  mcp remove miyo
-# opencode: edit ~/.config/opencode/opencode.json[c] and delete the
-# "miyo" entry under the "mcp" object.
-```
-
-## Layout choice — three skills, two-and-a-half folders
-
-Each agent scans its own conventional skill locations:
-
-- **Claude Code** → `~/.claude/skills/`
-- **Codex** → `~/.agents/skills/` (per [agentskills.io](https://agentskills.io) USER scope)
-- **OpenCode** → `~/.config/opencode/skills/` (native), **plus** both
-  `~/.claude/skills/` and `~/.agents/skills/` (OpenCode reads all three)
-
-`claude-code-docs` and `codex-docs` live in each harness's native folder
-— automatic isolation, no leakage between agents.
-
-`opencode-docs` is **shared** across all three harnesses (any of them
-might be asked OpenCode questions). The canonical `SKILL.md` is at
-`~/.agents/skills/opencode-docs/` — read natively by OpenCode and Codex
-— and exposed to Claude Code via a symlink at
-`~/.claude/skills/opencode-docs`.
-
-This is the pattern future general-purpose skills should follow.
+**Miyo watches each indexed folder**, so it re-indexes the changed pages on its
+own after a pull — no manual step. Per-file SHA-256 hashes in each
+`docs/<docset>/docs_manifest.json` keep the re-embed diff small.
 
 ## Maintainer workflow
 
-To add/edit a skill variant: edit the Jinja2 template in
-`skills/templates/`, then:
+All tooling is pinned and orchestrated by [mise](https://mise.jdx.dev) — no
+manual `pip`/`npm` installs. Entering the repo (`cd` in under `mise activate`)
+installs the toolchain and project deps, and wires the local git hooks.
 
 ```bash
-python scripts/render_skills.py             # render all combinations
-python scripts/render_skills.py --check     # verify on-disk matches templates
+mise run fetch        # re-fetch all four docsets (or fetch:claude, fetch:codex, …)
+mise run render       # regenerate skills/<docset>/SKILL.md from templates
+mise run check        # quality gate: ruff lint + ruff format-check + render-check
+mise run ci           # render + full check
 ```
 
-Commit both the template change and the rendered output. CI runs
-`--check` and fails the build if they're out of sync.
-
-For the OpenCode pipeline (MDX → Markdown), Node deps live in
-`scripts/package.json` + `scripts/package-lock.json` (committed). CI
-runs `npm ci` inside `scripts/` before invoking
-`fetch_opencode_docs.py`. To test locally:
-
-```bash
-cd scripts && npm ci && cd ..
-python scripts/fetch_opencode_docs.py       # populates docs/opencode/
-```
+- **Skills** are rendered from Jinja2 templates in
+  [`skills/templates/`](skills/templates/) to `skills/<docset>/SKILL.md`. Edit a
+  template, run `mise run render`, and commit both. CI (and `mise run check`)
+  verify the rendered output is in sync.
+- **OpenCode** docs need a Node MDX → Markdown step
+  ([`scripts/mdx_to_md.mjs`](scripts/mdx_to_md.mjs)); `mise` provides Node and
+  `mise run deps` runs `npm ci`.
+- **Git hooks** ([`hk.pkl`](hk.pkl)) run safety checks plus `mise run check` on
+  commit. They install locally on repo entry only (never in CI). Bypass once
+  with `HK=0 git commit …`.
 
 ## License
 
-Documentation content belongs to its respective authors — Anthropic
-(Claude Code), OpenAI (Codex), and the OpenCode project (OpenCode).
-Installer, skills, fetchers, and renderer are open source.
+Documentation content belongs to its respective authors — Anthropic (Claude
+Code), OpenAI (Codex), the OpenCode project, and the Pi project. The fetchers,
+renderer, templates, and skills in this repo are open source.

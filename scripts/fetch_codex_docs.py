@@ -67,9 +67,7 @@ SKIP_URLS = {
     f"{BASE_URL}/codex/codex-manual.md",
 }
 
-URL_RE = re.compile(
-    r"https://developers\.openai\.com/codex/[A-Za-z0-9_\-./]+\.md"
-)
+URL_RE = re.compile(r"https://developers\.openai\.com/codex/[A-Za-z0-9_\-./]+\.md")
 
 
 def url_to_safe_filename(url: str) -> str:
@@ -116,8 +114,7 @@ def save_manifest(docs_dir: Path, manifest: dict) -> None:
     manifest["github_repository"] = github_repo
     manifest["github_ref"] = github_ref
     manifest["description"] = (
-        "Codex documentation manifest. Keys are filenames, "
-        "append to base_url for raw GitHub URLs."
+        "Codex documentation manifest. Keys are filenames, append to base_url for raw GitHub URLs."
     )
     manifest_path.write_text(json.dumps(manifest, indent=2))
 
@@ -162,10 +159,13 @@ def fetch_page(url: str, session: requests.Session) -> tuple[str, str]:
         except requests.exceptions.RequestException as exc:
             logger.warning(
                 "Attempt %d/%d failed for %s: %s",
-                attempt + 1, MAX_RETRIES, filename, exc,
+                attempt + 1,
+                MAX_RETRIES,
+                filename,
+                exc,
             )
             if attempt < MAX_RETRIES - 1:
-                delay = min(RETRY_DELAY * (2 ** attempt), MAX_RETRY_DELAY)
+                delay = min(RETRY_DELAY * (2**attempt), MAX_RETRY_DELAY)
                 time.sleep(delay * random.uniform(0.5, 1.0))
             else:
                 raise

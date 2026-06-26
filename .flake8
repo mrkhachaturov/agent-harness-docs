@@ -1,0 +1,10 @@
+# Flake8 config — only here to keep editor linting consistent with ruff.
+# Ruff (pinned in mise.toml, see ruff.toml) is the project's real linter/formatter;
+# this file just aligns any Flake8 an editor runs so it agrees on line length and
+# doesn't fight the formatter.
+[flake8]
+max-line-length = 100
+# E203 (whitespace before ':') and W503 (line break before binary operator)
+# conflict with the ruff/black formatter — disable them.
+extend-ignore = E203, W503
+exclude = .venv, .cache, scripts/node_modules, .git

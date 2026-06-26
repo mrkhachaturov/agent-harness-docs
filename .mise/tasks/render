@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+#MISE description="Render skill templates → skills/<docset>/SKILL.md"
+#MISE dir="{{config_root}}"
+#USAGE flag "--check" help="Verify rendered output is in sync with templates; don't write"
+set -eo pipefail
+
+args=()
+[[ "${usage_check:-false}" == "true" ]] && args+=(--check)
+exec python scripts/render_skills.py "${args[@]}"

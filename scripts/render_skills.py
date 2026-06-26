@@ -1,16 +1,18 @@
 #!/usr/bin/env python3
 """
-Render skill templates to per-indexer SKILL.md files.
+Render skill templates to one SKILL.md per docset.
 
 For each docset template at `skills/templates/<docset>.SKILL.md.j2`, render
-one output per supported indexer at `skills/<docset>/<indexer>/SKILL.md`.
+`skills/<docset>/SKILL.md`. The skills are Miyo-only (they address each docset
+through its Miyo folder label), so there is a single rendered output per docset
+— no per-indexer variants.
 
-Run this every time you edit a template. CI verifies the rendered output is
-in sync (renders, diffs, fails the build if it differs from what's committed).
+Run this every time you edit a template. CI verifies the rendered output is in
+sync (renders, diffs, fails the build if it differs from what's committed).
 
 Usage:
-    python scripts/render_skills.py
-    python scripts/render_skills.py --check   # exit 1 if any output differs
+    mise run render            # write SKILL.md files
+    mise run render --check    # exit 1 if any output differs (CI gate)
 """
 
 from __future__ import annotations
@@ -25,19 +27,17 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = REPO_ROOT / "skills" / "templates"
 SKILLS_DIR = REPO_ROOT / "skills"
 
-INDEXERS = ["plain", "miyo"]
-
 # Map template filename -> docset folder name under skills/
 TEMPLATES = {
     "claude-code-docs.SKILL.md.j2": "claude-code-docs",
-    "codex-docs.SKILL.md.j2":       "codex-docs",
-    "opencode-docs.SKILL.md.j2":    "opencode-docs",
-    "pi-docs.SKILL.md.j2":          "pi-docs",
+    "codex-docs.SKILL.md.j2": "codex-docs",
+    "opencode-docs.SKILL.md.j2": "opencode-docs",
+    "pi-docs.SKILL.md.j2": "pi-docs",
 }
 
 
 def render_all() -> list[tuple[Path, str]]:
-    """Render every template × indexer combination. Returns list of (path, content)."""
+    """Render every docset template. Returns list of (output_path, content)."""
     env = Environment(
         loader=FileSystemLoader(TEMPLATES_DIR),
         undefined=StrictUndefined,
@@ -49,17 +49,18 @@ def render_all() -> list[tuple[Path, str]]:
     rendered: list[tuple[Path, str]] = []
     for template_name, docset in TEMPLATES.items():
         template = env.get_template(template_name)
-        for indexer in INDEXERS:
-            out_path = SKILLS_DIR / docset / indexer / "SKILL.md"
-            content = template.render(indexer=indexer, docset=docset)
-            rendered.append((out_path, content))
+        out_path = SKILLS_DIR / docset / "SKILL.md"
+        content = template.render(docset=docset)
+        rendered.append((out_path, content))
     return rendered
 
 
 def write_outputs(rendered: list[tuple[Path, str]]) -> None:
     for path, content in rendered:
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(content, encoding="utf-8")
+        # newline="\n" keeps output LF on Windows too (matches .gitattributes),
+        # so re-rendering never introduces CRLF churn or trips the git hooks.
+        path.write_text(content, encoding="utf-8", newline="\n")
         print(f"wrote {path.relative_to(REPO_ROOT)}")
 
 
@@ -76,7 +77,7 @@ def check_outputs(rendered: list[tuple[Path, str]]) -> int:
             print(f"DRIFT:   {path.relative_to(REPO_ROOT)}")
             drift += 1
     if drift:
-        print(f"\n{drift} file(s) out of sync — re-run: python scripts/render_skills.py")
+        print(f"\n{drift} file(s) out of sync — re-run: mise run render")
         return 1
     print(f"All {len(rendered)} rendered files match templates.")
     return 0

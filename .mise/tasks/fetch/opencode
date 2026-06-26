@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Fetch OpenCode docs → docs/opencode/"
+#MISE dir="{{config_root}}"
+set -eo pipefail
+
+exec python scripts/fetch_opencode_docs.py

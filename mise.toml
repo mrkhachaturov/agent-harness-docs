@@ -1,0 +1,75 @@
+min_version = "2026.6.1"
+
+[settings]
+experimental = true   # required for [deps]
+lockfile = true       # maintain mise.lock for reproducible installs
+
+# --- Tools ------------------------------------------------------------------
+# Pinned toolchain — the single source of truth for what this repo needs.
+# Never `pip install` / `npm install -g` by hand; add it here and `mise install`.
+[tools]
+python = "3.14.5"      # fetchers + skill renderer (matches system install)
+uv = "latest"          # builds the venv; Python deps install via `uv pip`
+node = "24.18.0"       # MDX → Markdown converter (scripts/) (matches system install)
+ruff = "latest"        # Python lint + format
+hk = "latest"          # git-lifecycle hook manager (drives hk.pkl)
+pkl = "latest"         # config language hk.pkl is written in (hk evaluates it)
+
+[env]
+# Project venv: created with mise's python, activated on PATH for mise run/exec.
+# Python deps (Jinja2, requests) install into here via the [deps.python] step.
+_.python.venv = { path = ".venv", create = true }
+# Run hk git hooks via `mise x` so pinned tools (ruff, python…) resolve even for
+# contributors who haven't activated mise in their shell.
+HK_MISE = 1
+
+# --- Hooks ------------------------------------------------------------------
+# "Open the repo → everything ready." Entering the project (cd in under
+# `mise activate`) installs tools AND project deps. `postinstall` also drags
+# deps after any `mise install` (fresh clone / CI — no interactive enter there).
+# `hk install` is wired to `enter` ONLY (local repo entry), NOT postinstall — so CI's
+# `mise install` never installs git hooks and the docs-bot's auto-commits to main stay ungated.
+[hooks]
+enter = ["mise install", { run = "mise deps" }, "hk install --mise"]
+postinstall = [{ task = "setup" }]
+
+# --- Dependencies -----------------------------------------------------------
+# Replaces the manual `pip install -r requirements.txt` and `npm ci` steps.
+# Freshness-checked (blake3 on sources): each runs only when its inputs change.
+[deps.python]
+auto = true
+sources = ["scripts/requirements.txt"]
+run = "uv pip install -r scripts/requirements.txt"
+
+[deps.node]
+auto = true
+dir = "scripts"        # package.json / package-lock.json live here
+sources = ["scripts/package.json", "scripts/package-lock.json"]
+run = "npm ci"
+
+# --- Orchestration ----------------------------------------------------------
+# Aggregates fan out over leaf tasks in parallel. `check` is the quality gate
+# (shared by humans, agents, and CI); `ci` renders then gates.
+[tasks.setup]
+description = "Install project dependencies (Python venv + node modules)"
+run = "mise deps"
+
+# Leaf tasks live as scripts in .mise/tasks/ (auto-discovered): render, fmt,
+# lint/python, fetch/{claude,codex,opencode,pi}. The entries below are the
+# aggregates — parallel DAGs over those leaves.
+
+[tasks.fetch]
+description = "Fetch all four docsets (parallel)"
+depends = ["fetch:claude", "fetch:codex", "fetch:opencode", "fetch:pi"]
+
+[tasks.check]
+description = "All quality gates: lint + fmt-check + render-check (parallel)"
+depends = [
+  "lint:python",
+  { task = "fmt", args = ["--check"] },
+  { task = "render", args = ["--check"] },
+]
+
+[tasks.ci]
+description = "Full local CI: render then run all quality gates"
+depends = ["render", "check"]

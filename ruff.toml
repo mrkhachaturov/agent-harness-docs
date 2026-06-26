@@ -1,0 +1,18 @@
+# Ruff config for the maintainer Python scripts (fetchers + skill renderer).
+# Run via `mise run lint` / `mise run fmt`. Tooling is pinned in mise.toml.
+target-version = "py314"
+line-length = 100
+
+# Only the maintainer scripts are Python; docs/ and skills/ are data.
+include = ["scripts/**/*.py"]
+
+[format]
+# Normalize to LF on Windows checkouts too (matches .gitattributes), so the
+# formatter and hk's trailing-whitespace agree instead of fighting over `\r`.
+line-ending = "lf"
+
+[lint]
+# Pyflakes (F) + the pycodestyle error subset + import sorting (I) + line
+# length (E501, enforces the line-length above — the formatter can't break
+# every long line, e.g. URL f-strings, so lint guards the policy).
+select = ["E4", "E5", "E7", "E9", "F", "I"]

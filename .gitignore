@@ -42,6 +42,12 @@ claude-docs-helper.sh
 # Node deps for the MDX converter (lockfile IS committed for reproducible CI)
 scripts/node_modules/
 
+# Ruff lint/format cache
+.ruff_cache/
+
+# mise — local machine override (mise.lock IS committed for reproducible installs)
+mise.local.toml
+
 # Local exploration clones (user clones upstream repos here for inspection)
 tmp/
 

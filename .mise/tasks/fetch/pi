@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Fetch Pi docs → docs/pi/"
+#MISE dir="{{config_root}}"
+set -eo pipefail
+
+exec python scripts/fetch_pi_docs.py

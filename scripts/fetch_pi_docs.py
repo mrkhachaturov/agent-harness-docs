@@ -70,15 +70,20 @@ def setup_sparse_checkout(branch: str) -> Path:
         if CACHE_DIR.exists():
             shutil.rmtree(CACHE_DIR)
         CACHE_DIR.parent.mkdir(parents=True, exist_ok=True)
-        run([
-            "git", "clone",
-            "--filter=blob:none",
-            "--no-checkout",
-            "--depth", "1",
-            "--branch", branch,
-            REPO_URL,
-            str(CACHE_DIR),
-        ])
+        run(
+            [
+                "git",
+                "clone",
+                "--filter=blob:none",
+                "--no-checkout",
+                "--depth",
+                "1",
+                "--branch",
+                branch,
+                REPO_URL,
+                str(CACHE_DIR),
+            ]
+        )
         run(["git", "sparse-checkout", "init", "--no-cone"], cwd=CACHE_DIR)
         run(["git", "sparse-checkout", "set", SPARSE_PATTERN], cwd=CACHE_DIR)
         run(["git", "checkout", branch], cwd=CACHE_DIR)
@@ -118,9 +123,7 @@ def save_manifest(manifest: dict, branch: str) -> None:
     if not re.match(r"^[\w.-]+$", github_ref):
         github_ref = "main"
 
-    manifest["base_url"] = (
-        f"https://raw.githubusercontent.com/{github_repo}/{github_ref}/docs/pi/"
-    )
+    manifest["base_url"] = f"https://raw.githubusercontent.com/{github_repo}/{github_ref}/docs/pi/"
     manifest["github_repository"] = github_repo
     manifest["github_ref"] = github_ref
     manifest["upstream_repo"] = REPO_URL
@@ -207,9 +210,10 @@ def main() -> int:
                 logger.info("Unchanged: %s", out_name)
 
             upstream_path = f"{SPARSE_DOCS_REL.as_posix()}/{md_path.name}"
+            upstream_url = f"https://github.com/earendil-works/pi/blob/{branch}/{upstream_path}"
             new_manifest["files"][out_name] = {
                 "upstream_path": upstream_path,
-                "upstream_url": f"https://github.com/earendil-works/pi/blob/{branch}/{upstream_path}",
+                "upstream_url": upstream_url,
                 "hash": file_hash,
                 "last_updated": last_updated,
             }

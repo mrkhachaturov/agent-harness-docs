@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Fetch Claude Code docs → docs/claude-code/"
+#MISE dir="{{config_root}}"
+set -eo pipefail
+
+exec python scripts/fetch_claude_docs.py

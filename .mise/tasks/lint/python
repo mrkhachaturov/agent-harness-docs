@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#MISE description="Lint Python sources (ruff)"
+#MISE dir="{{config_root}}"
+#MISE sources=["scripts/**/*.py", "ruff.toml"]
+#MISE outputs={auto=true}
+set -eo pipefail
+
+exec ruff check scripts
