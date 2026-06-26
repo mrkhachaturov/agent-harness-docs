@@ -21,37 +21,30 @@ jobs:
         token: ${{ secrets.GITHUB_TOKEN }}
         ref: main
 
-    - name: Set up Python
-      uses: actions/setup-python@v5
+    # Installs the pinned toolchain from mise.toml (python, uv, node, ruff, hk,
+    # pkl) and runs the `postinstall` hook → `setup` task → `mise deps`, which
+    # installs the Python venv (uv pip) and node modules (npm ci) for scripts/.
+    # `hk install` is wired to `enter` only, so no git hooks are installed in CI.
+    - name: Set up mise toolchain
+      uses: jdx/mise-action@v2
       with:
-        python-version: '3.11'
+        cache: true
 
-    - name: Install Python dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install -r scripts/requirements.txt
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
-        cache: 'npm'
-        cache-dependency-path: scripts/package-lock.json
-
-    - name: Install Node dependencies (for MDX → MD conversion)
-      working-directory: scripts
-      run: npm ci
+    # Install project deps explicitly (Python venv via uv pip + node modules via
+    # npm ci). Doesn't rely on the postinstall hook, which a mise-action cache
+    # hit may skip.
+    - name: Install project dependencies
+      run: mise run setup
 
     - name: Verify skill renders are in sync with templates
-      run: python scripts/render_skills.py --check
+      run: mise run render --check
 
     - name: Fetch Claude Code documentation
       id: fetch-claude
       env:
         GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_REF_NAME: ${{ github.ref_name }}
-      run: |
-        python scripts/fetch_claude_docs.py || echo "claude_failed=true" >> $GITHUB_OUTPUT
+      run: mise run fetch:claude || echo "claude_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
 
     - name: Fetch Codex documentation
@@ -59,8 +52,7 @@ jobs:
       env:
         GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_REF_NAME: ${{ github.ref_name }}
-      run: |
-        python scripts/fetch_codex_docs.py || echo "codex_failed=true" >> $GITHUB_OUTPUT
+      run: mise run fetch:codex || echo "codex_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
 
     - name: Fetch OpenCode documentation
@@ -68,8 +60,7 @@ jobs:
       env:
         GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_REF_NAME: ${{ github.ref_name }}
-      run: |
-        python scripts/fetch_opencode_docs.py || echo "opencode_failed=true" >> $GITHUB_OUTPUT
+      run: mise run fetch:opencode || echo "opencode_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
 
     - name: Fetch Pi documentation
@@ -77,8 +68,7 @@ jobs:
       env:
         GITHUB_REPOSITORY: ${{ github.repository }}
         GITHUB_REF_NAME: ${{ github.ref_name }}
-      run: |
-        python scripts/fetch_pi_docs.py || echo "pi_failed=true" >> $GITHUB_OUTPUT
+      run: mise run fetch:pi || echo "pi_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
 
     - name: Check for changes
