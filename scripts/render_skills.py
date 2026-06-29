@@ -31,6 +31,7 @@ SKILLS_DIR = REPO_ROOT / "skills"
 TEMPLATES = {
     "claude-code-docs.SKILL.md.j2": "claude-code-docs",
     "codex-docs.SKILL.md.j2": "codex-docs",
+    "cursor-docs.SKILL.md.j2": "cursor-docs",
     "opencode-docs.SKILL.md.j2": "opencode-docs",
     "pi-docs.SKILL.md.j2": "pi-docs",
 }

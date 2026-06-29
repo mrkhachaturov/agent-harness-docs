@@ -55,6 +55,14 @@ jobs:
       run: mise run fetch:codex || echo "codex_failed=true" >> $GITHUB_OUTPUT
       continue-on-error: true
 
+    - name: Fetch Cursor documentation
+      id: fetch-cursor
+      env:
+        GITHUB_REPOSITORY: ${{ github.repository }}
+        GITHUB_REF_NAME: ${{ github.ref_name }}
+      run: mise run fetch:cursor || echo "cursor_failed=true" >> $GITHUB_OUTPUT
+      continue-on-error: true
+
     - name: Fetch OpenCode documentation
       id: fetch-opencode
       env:
@@ -85,6 +93,7 @@ jobs:
         # Per-docset change summaries
         claude_changes=$(git diff --name-status --cached -- docs/claude-code/ | wc -l | tr -d ' ')
         codex_changes=$(git diff --name-status --cached -- docs/codex/        | wc -l | tr -d ' ')
+        cursor_changes=$(git diff --name-status --cached -- docs/cursor/       | wc -l | tr -d ' ')
         opencode_changes=$(git diff --name-status --cached -- docs/opencode/  | wc -l | tr -d ' ')
         pi_changes=$(git diff --name-status --cached -- docs/pi/             | wc -l | tr -d ' ')
 
@@ -94,6 +103,9 @@ jobs:
         fi
         if [ "$codex_changes" != "0" ]; then
           COMMIT_MSG="$COMMIT_MSG | Codex: $codex_changes files changed"
+        fi
+        if [ "$cursor_changes" != "0" ]; then
+          COMMIT_MSG="$COMMIT_MSG | Cursor: $cursor_changes files changed"
         fi
         if [ "$opencode_changes" != "0" ]; then
           COMMIT_MSG="$COMMIT_MSG | OpenCode: $opencode_changes files changed"
@@ -113,18 +125,20 @@ jobs:
         git push
 
     - name: Create issue on failure
-      if: steps.fetch-claude.outputs.claude_failed == 'true' || steps.fetch-codex.outputs.codex_failed == 'true' || steps.fetch-opencode.outputs.opencode_failed == 'true' || steps.fetch-pi.outputs.pi_failed == 'true'
+      if: steps.fetch-claude.outputs.claude_failed == 'true' || steps.fetch-codex.outputs.codex_failed == 'true' || steps.fetch-cursor.outputs.cursor_failed == 'true' || steps.fetch-opencode.outputs.opencode_failed == 'true' || steps.fetch-pi.outputs.pi_failed == 'true'
       uses: actions/github-script@v9
       with:
         script: |
           const date = new Date().toISOString().split('T')[0];
           const claudeFailed   = '${{ steps.fetch-claude.outputs.claude_failed     }}' === 'true';
           const codexFailed    = '${{ steps.fetch-codex.outputs.codex_failed       }}' === 'true';
+          const cursorFailed   = '${{ steps.fetch-cursor.outputs.cursor_failed     }}' === 'true';
           const opencodeFailed = '${{ steps.fetch-opencode.outputs.opencode_failed }}' === 'true';
           const piFailed       = '${{ steps.fetch-pi.outputs.pi_failed             }}' === 'true';
           const which = [
             claudeFailed   ? 'Claude Code' : null,
             codexFailed    ? 'Codex'       : null,
+            cursorFailed   ? 'Cursor'      : null,
             opencodeFailed ? 'OpenCode'    : null,
             piFailed       ? 'Pi'          : null,
           ].filter(Boolean).join(' + ');

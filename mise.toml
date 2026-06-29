@@ -55,12 +55,12 @@ description = "Install project dependencies (Python venv + node modules)"
 run = "mise deps"
 
 # Leaf tasks live as scripts in .mise/tasks/ (auto-discovered): render, fmt,
-# lint/python, fetch/{claude,codex,opencode,pi}. The entries below are the
+# lint/python, fetch/{claude,codex,cursor,opencode,pi}. The entries below are the
 # aggregates — parallel DAGs over those leaves.
 
 [tasks.fetch]
-description = "Fetch all four docsets (parallel)"
-depends = ["fetch:claude", "fetch:codex", "fetch:opencode", "fetch:pi"]
+description = "Fetch all five docsets (parallel)"
+depends = ["fetch:claude", "fetch:codex", "fetch:cursor", "fetch:opencode", "fetch:pi"]
 
 [tasks.check]
 description = "All quality gates: lint + fmt-check + render-check (parallel)"

@@ -3,7 +3,7 @@
 [![Last Update](https://img.shields.io/github/last-commit/mrkhachaturov/agent-harness-docs/main.svg?label=docs%20updated)](https://github.com/mrkhachaturov/agent-harness-docs/commits/main)
 [![Platform](https://img.shields.io/badge/platform-macOS%20%7C%20Linux%20%7C%20Windows-blue)](https://github.com/mrkhachaturov/agent-harness-docs)
 
-A local Markdown mirror of the docs for four AI coding-agent harnesses, kept
+A local Markdown mirror of the docs for five AI coding-agent harnesses, kept
 fresh upstream and consumed through a small per-agent **skill** that searches
 the docs with [Miyo](https://miyo.md).
 
@@ -11,8 +11,14 @@ the docs with [Miyo](https://miyo.md).
 |---|---|---|---|
 | **Claude Code** | [code.claude.com](https://code.claude.com/docs/en/overview) | `claude-code` | ~150 |
 | **OpenAI Codex** | [developers.openai.com/codex](https://developers.openai.com/codex) | `codex` | ~90 |
+| **Cursor** | [cursor.com/docs](https://cursor.com/docs) | `cursor` | ~180 |
 | **OpenCode** | [github.com/anomalyco/opencode](https://github.com/anomalyco/opencode) (MDX → MD) | `opencode` | ~35 |
 | **Pi** | [github.com/earendil-works/pi](https://github.com/earendil-works/pi) | `pi` | ~27 |
+
+> **Cursor** uses a **nested layout** — its docs mirror the site's own category
+> hierarchy (`docs/cursor/agent/tools/terminal.md`) instead of the flat,
+> `__`-joined scheme the other four use today. This is the new convention the
+> others will migrate to.
 
 > Forked from [ericbuess/claude-code-docs](https://github.com/ericbuess/claude-code-docs)
 > and generalised to multiple harnesses.
@@ -27,11 +33,11 @@ CI (every 3h) ──fetch──▶ docs/<docset>/*.md ──git pull──▶ yo
             /claude-code-docs  ──skill──▶ mcp__miyo__search(folder_path: "claude-code")
 ```
 
-1. **Upstream**: a GitHub Actions job re-fetches all four sources every 3 hours
+1. **Upstream**: a GitHub Actions job re-fetches all five sources every 3 hours
    and commits the result to `docs/<docset>/`.
 2. **Local**: you `git pull` this repo whenever you want fresh docs, and point
-   [Miyo](https://miyo.md) at the four `docs/<docset>/` folders, labelling them
-   `claude-code`, `codex`, `opencode`, `pi`.
+   [Miyo](https://miyo.md) at the five `docs/<docset>/` folders, labelling them
+   `claude-code`, `codex`, `cursor`, `opencode`, `pi`.
 3. **Skills**: each agent gets a small `SKILL.md` that, when you invoke it,
    searches its docset via Miyo. The skills hold **no filesystem paths** — they
    address docs purely by Miyo folder label, so they are portable across
@@ -58,6 +64,7 @@ on:
 # From GitHub (1:1 — each skill to its matching agent, global scope)
 npx skills add mrkhachaturov/agent-harness-docs -g -a claude-code --skill claude-code-docs
 npx skills add mrkhachaturov/agent-harness-docs -g -a codex        --skill codex-docs
+npx skills add mrkhachaturov/agent-harness-docs -g -a cursor       --skill cursor-docs
 npx skills add mrkhachaturov/agent-harness-docs -g -a opencode     --skill opencode-docs
 npx skills add mrkhachaturov/agent-harness-docs -g -a pi           --skill pi-docs
 ```
@@ -93,6 +100,7 @@ Invoke a skill with `/<name>` in its agent:
 /claude-code-docs how do hooks interact with permissions?
 /claude-code-docs explain "sandbox environments"
 /codex-docs        how do I configure AGENTS.md for nested directories?
+/cursor-docs       agent "how do Plan and Debug modes differ?"
 /opencode-docs     how do I add a custom MCP server?
 /pi-docs           how does session compaction work?
 ```
@@ -117,7 +125,7 @@ manual `pip`/`npm` installs. Entering the repo (`cd` in under `mise activate`)
 installs the toolchain and project deps, and wires the local git hooks.
 
 ```bash
-mise run fetch        # re-fetch all four docsets (or fetch:claude, fetch:codex, …)
+mise run fetch        # re-fetch all five docsets (or fetch:claude, fetch:cursor, …)
 mise run render       # regenerate skills/<docset>/SKILL.md from templates
 mise run check        # quality gate: ruff lint + ruff format-check + render-check
 mise run ci           # render + full check
@@ -137,5 +145,6 @@ mise run ci           # render + full check
 ## License
 
 Documentation content belongs to its respective authors — Anthropic (Claude
-Code), OpenAI (Codex), the OpenCode project, and the Pi project. The fetchers,
-renderer, templates, and skills in this repo are open source.
+Code), OpenAI (Codex), Anysphere (Cursor), the OpenCode project, and the Pi
+project. The fetchers, renderer, templates, and skills in this repo are open
+source.

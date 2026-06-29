@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#MISE description="Fetch Cursor docs → docs/cursor/"
+#MISE dir="{{config_root}}"
+set -eo pipefail
+
+exec python scripts/fetch_cursor_docs.py
