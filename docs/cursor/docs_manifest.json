@@ -279,8 +279,8 @@
     "cloud-agent/mobile.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/mobile",
       "original_md_url": "https://cursor.com/docs/cloud-agent/mobile.md",
-      "hash": "34262695c90945c2e3f425d1470682367cb16f8949216fc4d2bb29b937bfea8b",
-      "last_updated": "2026-06-29T22:53:03.554668"
+      "hash": "46f6abd6b1b85eaf02090cedcc74b9cd3c66974f3b86516987a530eccc2c2ba3",
+      "last_updated": "2026-06-29T21:34:06.665843"
     },
     "cloud-agent/my-machines.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/my-machines",
@@ -621,8 +621,8 @@
     "help/ai-features/mobile-app.md": {
       "original_url": "https://cursor.com/help/ai-features/mobile-app",
       "original_md_url": "https://cursor.com/help/ai-features/mobile-app.md",
-      "hash": "2d37ca2e7b2228a9b20485f90ee98ee46924d672a3cd1d8ba276fced8c015663",
-      "last_updated": "2026-06-29T22:53:03.565994"
+      "hash": "9d69184961631d0ad4bf771ffd5c78758e6c35ed6b135599db78052acf5e5232",
+      "last_updated": "2026-06-29T21:34:06.666613"
     },
     "help/ai-features/multi-agent.md": {
       "original_url": "https://cursor.com/help/ai-features/multi-agent",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-29T22:53:03.580506",
-    "fetch_duration_seconds": 1.771461,
+    "last_fetch_completed": "2026-06-29T21:34:06.669651",
+    "fetch_duration_seconds": 1.735025,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-06-29T22:53:03.580525",
+  "last_updated": "2026-06-29T21:34:06.669663",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

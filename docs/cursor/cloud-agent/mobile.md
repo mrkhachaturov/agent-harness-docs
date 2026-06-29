@@ -85,6 +85,7 @@ Remote Control lets you take an agent you're running on your computer and keep d
 
 ### Before you start
 
+- **Use Cursor 3.9.8 or later.** Remote Control requires Cursor client version 3.9.8 or later on your computer. Older clients won't show the Remote Control setting under **Settings > Agents** or the `/remote-control` command.
 - **Use a supported account.** Remote Control is available on Pro, Pro+, Ultra, Teams, and Enterprise plans for users with Cloud Agents access. See [what's included](https://cursor.com/help/account-and-billing/pricing.md).
 - **Enable Remote Control in Cursor.** Turn it on under **Settings > Agents** before handing off a session.
 - **Enable it for your team.** On Teams and Enterprise plans, an admin must enable Remote Control from [Cursor Dashboard → Cloud Agents → Self-Hosted](https://cursor.com/dashboard/cloud-agents#self-hosted) before members can use it.
