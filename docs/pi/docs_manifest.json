@@ -27,8 +27,8 @@
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md",
-      "hash": "8cb5523e8b4a43e482904a86756c347b8b78cf441cd15db48d48608051cd8130",
-      "last_updated": "2026-06-22T10:57:00.341430"
+      "hash": "7cf63e265bda229ef4bf8fd67abd9d8f3446e231714ea14bf2421bb566afbe54",
+      "last_updated": "2026-06-30T10:16:48.271519"
     },
     "index.md": {
       "upstream_path": "packages/coding-agent/docs/index.md",
@@ -111,8 +111,8 @@
     "settings.md": {
       "upstream_path": "packages/coding-agent/docs/settings.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/settings.md",
-      "hash": "5031fc36222be80eff75d4d094ef95ca0ceb58d36937aca52f126ce10720e530",
-      "last_updated": "2026-06-28T00:42:24.124230"
+      "hash": "7f539267b05327fd9a8e10d58444801b88cb95fc305bf49abc07ac2523d1657e",
+      "last_updated": "2026-06-30T10:16:48.274055"
     },
     "shell-aliases.md": {
       "upstream_path": "packages/coding-agent/docs/shell-aliases.md",
@@ -170,8 +170,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-06-30T07:21:04.266327",
-    "fetch_duration_seconds": 1.819079,
+    "last_fetch_completed": "2026-06-30T10:16:48.275657",
+    "fetch_duration_seconds": 1.727915,
     "total_pages_discovered": 28,
     "pages_fetched_successfully": 28,
     "pages_failed": 0,
@@ -182,7 +182,7 @@
     "total_files": 28,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-06-30T07:21:04.266338",
+  "last_updated": "2026-06-30T10:16:48.275670",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
