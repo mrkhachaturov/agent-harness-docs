@@ -11,6 +11,10 @@ Cancel your plan in the dashboard. Keep access until your billing period ends.
 
 On an individual plan? You can [schedule a downgrade](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-downgrade-my-plan) instead of canceling.
 
+## What if I subscribed through the iOS app?
+
+In-app subscriptions are managed by Apple, not through cursor.com. Cursor can't cancel an in-app plan for you. See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md#how-do-i-manage-an-in-app-subscription) for how to cancel through Apple.
+
 ## What happens after I cancel my subscription?
 
 - You keep access to your paid plan features until the end of your current billing period
@@ -39,6 +43,7 @@ Yes. Sign in to your dashboard and select a new plan whenever you're ready. Your
 ## Related
 
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
+- [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md)
 - [Refunds](https://cursor.com/help/account-and-billing/refunds.md)
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)
 

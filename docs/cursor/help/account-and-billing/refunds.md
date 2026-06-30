@@ -48,6 +48,10 @@ On-demand and fast-request charges for usage you have already consumed are not r
 
 If you are unsure about a charge, email us at [hi@cursor.com](mailto:hi@cursor.com) and we can review it with you.
 
+## What if I subscribed through the iOS app?
+
+Apple is the merchant of record for in-app purchases, so Cursor can't issue refunds for them. For refunds on an in-app subscription, use [Apple's Subscriptions and billing support](https://support.apple.com/billing). See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md) for more details.
+
 ## I did not authorize this charge. What should I do?
 
 If you see a charge you do not recognize, email [hi@cursor.com](mailto:hi@cursor.com). Include the charge amount, date, and the last four digits of the card that was charged. We will investigate the account activity.
@@ -57,6 +61,7 @@ We encourage you to contact us first so we can resolve the issue directly. Filin
 ## Related
 
 - [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md)
+- [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md)
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)
 - [Invoices](https://cursor.com/help/account-and-billing/invoices.md)
 

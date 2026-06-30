@@ -71,6 +71,160 @@ Team members can override settings for their own PRs:
 
 ![Bugbot dashboard](/docs-static/images/bugbot/bugbot-dashboard.png)
 
+## API
+
+Enterprise teams can use the Bugbot API to trigger reviews and retrieve per-review analytics. Create an API key from [Cursor Dashboard → API Keys](https://cursor.com/dashboard/api) and authenticate with [Basic Authentication](https://cursor.com/docs/api.md#basic-authentication).
+
+### Trigger a review
+
+/bugbot/review
+
+Queue a Bugbot review for a pull request or merge request. The request returns when the review is queued; the review runs asynchronously.
+
+Requires an API key with `admin:*` scope. The endpoint is limited to 30 requests per minute per team.
+
+#### Request Body
+
+`prUrl` string (required)
+
+Full GitHub pull request or GitLab merge request URL.
+
+```bash
+curl --request POST \
+  --url https://api.cursor.com/bugbot/review \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "prUrl": "https://github.com/your-org/your-repo/pull/42"
+  }'
+```
+
+**Response:**
+
+```json
+{
+  "outcome": "success",
+  "message": "Bugbot review queued",
+  "request_id": "6e0d261c-86a2-4383-89f0-9162c1c10662"
+}
+```
+
+Save `request_id` so you can match the completed review in the analytics endpoint.
+
+If Bugbot cannot review the pull request, the endpoint returns `400 Bad Request` with the reason:
+
+```json
+{
+  "outcome": "error",
+  "message": "Bugbot is disabled for this repository"
+}
+```
+
+### Review analytics
+
+/analytics/team/bugbot-reviews
+
+Return one item per completed Bugbot review, including the reviewed commit, findings count, billed cost, and per-finding resolution data.
+
+Requires an API key with `read:*` scope.
+
+#### Query Parameters
+
+`startDate` string (optional)
+
+Start of the analytics range. Defaults to 7 days ago. See [Date Formats](https://cursor.com/docs/account/teams/analytics-api.md#date-formats).
+
+`endDate` string (optional)
+
+End of the analytics range. Defaults to now. See [Date Formats](https://cursor.com/docs/account/teams/analytics-api.md#date-formats).
+
+`repo` string (optional)
+
+Repository filter in `host/owner/repo` form. Protocol and `.git` suffix are optional.
+
+`prNumber` number (optional)
+
+Pull request or merge request number.
+
+`page` number (optional)
+
+Page number for pagination. Default: `1`.
+
+`pageSize` number (optional)
+
+Number of reviews per page. Default: `100`, max: `250`.
+
+```bash
+curl --get https://api.cursor.com/analytics/team/bugbot-reviews \
+  -u YOUR_API_KEY: \
+  --data-urlencode 'startDate=2026-06-01' \
+  --data-urlencode 'endDate=2026-06-29' \
+  --data-urlencode 'repo=github.com/your-org/your-repo' \
+  --data-urlencode 'prNumber=42' \
+  --data-urlencode 'page=1' \
+  --data-urlencode 'pageSize=100'
+```
+
+**Response:**
+
+```json
+{
+  "data": [
+    {
+      "request_id": "6e0d261c-86a2-4383-89f0-9162c1c10662",
+      "timestamp": "2026-06-29T19:42:18.000Z",
+      "repo": "github.com/your-org/your-repo",
+      "repo_node_id": "R_kgDOABCDEF",
+      "pr_number": 42,
+      "commit_sha": "9f3c2a1b7d8e4f5061728394a5b6c7d8e9f0a1b2",
+      "bugs_found": 2,
+      "cost_cents": 42.5,
+      "bugs": [
+        {
+          "comment_id": "2147483999",
+          "resolution_status": "resolved",
+          "severity": "high"
+        },
+        {
+          "comment_id": "2147484000",
+          "resolution_status": "unresolved",
+          "severity": "medium"
+        }
+      ]
+    }
+  ],
+  "pagination": {
+    "page": 1,
+    "pageSize": 100,
+    "totalItems": 1,
+    "totalPages": 1,
+    "hasNextPage": false,
+    "hasPreviousPage": false
+  },
+  "params": {
+    "metric": "bugbot-reviews",
+    "teamId": 12345,
+    "startDate": "2026-06-01",
+    "endDate": "2026-06-29",
+    "repo": "github.com/your-org/your-repo",
+    "prNumber": 42,
+    "page": 1,
+    "pageSize": 100
+  }
+}
+```
+
+`repo_node_id`, `pr_number`, `commit_sha`, `cost_cents`, `bugs[].comment_id`, `bugs[].resolution_status`, and `bugs[].severity` may be `null` when unavailable. `cost_cents` is `null` when the review is not billed separately.
+
+### Trigger and retrieve a review
+
+1. Call `POST /bugbot/review` with the pull request URL.
+2. Save the returned `request_id`.
+3. Poll `GET /analytics/team/bugbot-reviews`, filtering by `repo` and `prNumber`.
+4. Find the item whose `request_id` matches the trigger response.
+
+Analytics may take a short time to become available after a review is queued.
+
 ## Incremental reviews
 
 By default, Bugbot reviews the full pull request diff on every push. Turn on **Incremental Review** from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) to review only the changes since the previous Bugbot review.
@@ -313,7 +467,8 @@ curl -X POST https://api.cursor.com/bugbot/repo/update \
   -H "Content-Type: application/json" \
   -d '{
     "repoUrl": "https://github.com/your-org/your-repo",
-    "enabled": true
+    "enabled": true,
+    "manualTriggerOnly": false
   }'
 ```
 
@@ -321,6 +476,7 @@ curl -X POST https://api.cursor.com/bugbot/repo/update \
 
 - `repoUrl` (string, required): The full URL of the repository
 - `enabled` (boolean, required): `true` to enable Bugbot, `false` to disable it
+- `manualTriggerOnly` (boolean, optional): When `true`, Bugbot won't run automatically on PR updates for this repository. Manual triggers, such as commenting `cursor review` or `bugbot run`, still work.
 
 The dashboard UI may take a moment to reflect changes made through the API due to caching. The API response shows the current state in the database.
 

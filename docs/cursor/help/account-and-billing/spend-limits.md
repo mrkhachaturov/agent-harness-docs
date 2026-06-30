@@ -29,7 +29,7 @@ Limit changes take effect immediately. Setting a limit to "No Limit" removes it.
 2. Group overrides in the [Groups tab](https://cursor.com/dashboard/members?subtab=active-directory)
 3. Team general spend limit in the [Spending tab](https://cursor.com/dashboard/spending)
 
-Cursor honors the most specific limit. Enterprise admins can also manage limits through the [Admin API](https://cursor.com/docs/account/teams/admin-api.md#set-user-spend-limit).
+When a user has limits from multiple sources, Cursor applies the highest applicable limit. Enterprise admins can also manage limits through the [Admin API](https://cursor.com/docs/account/teams/admin-api.md#set-user-spend-limit).
 
 ## Does changing the team spend limit update existing member overrides?
 

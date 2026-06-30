@@ -18,17 +18,18 @@ Before anyone can start a cloud agent from a repository, a Cursor account admin 
 
 You can kick off cloud agents from wherever you work:
 
-1. **Cursor Web**: Start and manage agents from [cursor.com/agents](https://cursor.com/agents) on any device
-2. **Cursor Desktop**: Select **Cloud** in the dropdown under the agent input
-3. **Slack**: Use the @cursor command to kick off an agent
-4. **GitHub or Bitbucket**: Comment `@cursor` on a GitHub PR or issue, or on a Bitbucket PR, to kick off an agent
-5. **Linear**: Use the @cursor command to kick off an agent
-6. **API**: Use the API to kick off an agent
+1. **Cursor for iOS**: Start and manage agents from the [Cursor iOS app](https://cursor.com/docs/cloud-agent/mobile.md)
+2. **Cursor Web**: Start and manage agents from [cursor.com/agents](https://cursor.com/agents) on any device
+3. **Cursor Desktop**: Select **Cloud** in the dropdown under the agent input
+4. **Slack**: Use the @cursor command to kick off an agent
+5. **GitHub or Bitbucket**: Comment `@cursor` on a GitHub PR or issue, or on a Bitbucket PR, to kick off an agent
+6. **Linear**: Use the @cursor command to kick off an agent
+7. **API**: Use the API to kick off an agent
 
-For a native-feeling mobile experience, install Cursor as a Progressive Web
-App (PWA). On **iOS**, open [cursor.com/agents](https://cursor.com/agents) in
-Safari, tap the share button, then "Add to Home Screen". On **Android**, open
-the URL in Chrome, tap the menu, then "Install App".
+On **Android**, use [cursor.com/agents](https://cursor.com/agents) in Chrome
+and tap **Install App** for a Progressive Web App (PWA). See [Cursor for
+iOS](https://cursor.com/docs/cloud-agent/mobile.md) for the native iPhone app and more mobile
+options.
 
 ### Use Cursor in Slack
 
