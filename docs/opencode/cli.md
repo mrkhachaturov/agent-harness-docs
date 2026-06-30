@@ -34,6 +34,7 @@ opencode [project]
 |      |       | Prompt to use                                                           |
 |      | `-m`  | Model to use in the form of provider/model                              |
 |      |       | Agent to use                                                            |
+|      |       | Auto-approve permissions that are not explicitly denied                 |
 |      |       | Port to listen on                                                       |
 |      |       | Hostname to listen on                                                   |
 |      |       | Enable mDNS discovery                                                   |
@@ -377,7 +378,7 @@ opencode run --attach http://localhost:4096 "Explain async/await in JavaScript"
 |      |       | Port for the local server (defaults to random port)                                        |
 |      |       | Model variant (provider-specific reasoning effort)                                         |
 |      |       | Show thinking blocks                                                                       |
-|      |       | Auto-approve permissions that are not explicitly denied (dangerous!)                       |
+|      |       | Auto-approve permissions that are not explicitly denied                                    |
 
 ---
 
