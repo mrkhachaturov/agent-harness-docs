@@ -1,6 +1,3 @@
-Anthropic has removed access to this model for all customers.
-[Read More](https://www.anthropic.com/news/fable-mythos-access)
-
 Claude Fable 5 is Anthropic's most capable generally available model for autonomous knowledge work and coding. It is a Mythos-class model with strong safeguards, built to handle long-running, complex, and asynchronous tasks where earlier models needed more frequent check-ins.
 
 Fable 5 also leads every other model on [CursorBench](https://cursor.com/evals), our benchmark for real-world coding work. It costs about twice as much as Claude Opus 4.8, so it's a strong fit for your team's most complex agentic work.
