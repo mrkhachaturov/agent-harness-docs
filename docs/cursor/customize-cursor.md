@@ -9,6 +9,7 @@ Open **Customize** from the sidebar in Cursor to add and manage extensions at th
 From the Customize page, you can:
 
 - **Browse and install** plugins, skills, and MCPs from the [Cursor Marketplace](/marketplace) with one click
+- **Install Team MCP servers** shared through your team's [Default marketplace](https://cursor.com/docs/plugins.md#default-team-marketplace)
 - **See your team leaderboard** of the most popular plugins, skills, and MCPs across your team and the community
 - **Add and manage** plugins, skills, MCPs, subagents, rules, commands, and hooks without switching between separate settings pages
 - **Filter by scope** to see what is installed for you, your workspace, or your team

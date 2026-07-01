@@ -93,7 +93,9 @@ By default, Agent asks for your approval before using an MCP tool. In Cursor 3.6
 
 ## Do MCP servers work with Cloud Agents?
 
-Yes. Cloud Agents support MCP servers configured in the [Cloud Agents dashboard](https://cursor.com/agents). On a Team plan, you can also configure shared MCP servers for your team under [Settings > Integrations](https://cursor.com/dashboard?tab=integrations). See [Cloud Agent MCP tools](https://cursor.com/docs/cloud-agent/capabilities.md#mcp-tools) for more details.
+Yes. Cloud Agents support MCP servers configured in the [Cloud Agents dashboard](https://cursor.com/agents). On a Team plan, admins can configure shared servers under [Dashboard -> Integrations & MCP](https://cursor.com/dashboard/integrations).
+
+Admins can select **Add to Team Marketplace** under **Team MCP Servers** to make the same servers available in the Agent Window, IDE, and CLI. This keeps them available to Cloud Agents. See [Cloud Agent MCP tools](https://cursor.com/docs/cloud-agent/capabilities.md#mcp-tools) and [Migrate existing Team MCPs](https://cursor.com/docs/plugins.md#migrate-existing-team-mcps) for details.
 
 ## Where can I find MCP servers to install?
 
