@@ -225,8 +225,8 @@
     "artifacts.md": {
       "original_url": "https://code.claude.com/docs/en/artifacts",
       "original_md_url": "https://code.claude.com/docs/en/artifacts.md",
-      "hash": "7936991f2f736dae71eddcbbf002aeea292b14b9e1c6e79d2d3c27f09556c1c0",
-      "last_updated": "2026-06-26T21:29:42.232287"
+      "hash": "a74bbb121d5db8022cd6fbe3739b22160f34eeee8544736ba864745807a46518",
+      "last_updated": "2026-07-02T00:39:31.413447"
     },
     "authentication.md": {
       "original_url": "https://code.claude.com/docs/en/authentication",
@@ -981,8 +981,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-01T21:33:32.335648",
-    "fetch_duration_seconds": 110.270054,
+    "last_fetch_completed": "2026-07-02T00:42:32.508546",
+    "fetch_duration_seconds": 219.526223,
     "total_pages_discovered": 163,
     "pages_fetched_successfully": 164,
     "pages_failed": 0,
@@ -992,7 +992,7 @@
     "total_files": 163,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-07-01T21:33:32.335661",
+  "last_updated": "2026-07-02T00:42:32.508563",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
