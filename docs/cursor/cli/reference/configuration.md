@@ -45,7 +45,7 @@ Override with environment variables:
 | `display.showThinkingBlocks`          | boolean | Render model thinking blocks when available                             |
 | `display.showStatusIndicators`        | boolean | Enable terminal title status indicators                                 |
 | `display.showStatusLineRunningTime`   | boolean | Show elapsed running time in the status line                            |
-| `approvalMode`                        | string  | Approval mode: `allowlist` or `unrestricted`                            |
+| `approvalMode`                        | string  | Approval mode: `allowlist`, `auto-review`, or `unrestricted`            |
 | `sandbox.mode`                        | string  | Sandbox mode override                                                   |
 | `sandbox.networkAccess`               | string  | Network access setting for sandbox mode                                 |
 | `network.useHttp1ForAgent`            | boolean | Use HTTP/1.1 instead of HTTP/2 for agent connections (default: `false`) |
