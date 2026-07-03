@@ -24,6 +24,14 @@ For example, at Cursor our agents.md lists tips for running and debugging the mo
 
 The skills contain in-depth details, such as how to debug a specific microservice or how to set up a third-party dependency when needed for testing.
 
+## Use rules to enforce conventions
+
+Cloud Agents can read and follow [Rules](https://cursor.com/docs/rules.md) at three levels:
+
+- **User rules**: Set in Cursor Settings, these apply to your sessions across all repositories. Best for rules you only want to apply to you personally.
+- **Team rules**: Set in the [Rules, Commands, Hooks dashboard](https://cursor.com/dashboard/team-content), these apply to all team members across every repository. Best for org-wide conventions.
+- **Repo rules**: `.cursor/rules/*.mdc` files committed to the repository, these apply to all agents using that repository. Best for repo/project-specific conventions.
+
 ## Give the agent the tools it needs
 
 We have often found that agents are limited by the tools they have access to. We recommend using MCP and creating custom tools so that the agent has access to the same systems a human developer would.

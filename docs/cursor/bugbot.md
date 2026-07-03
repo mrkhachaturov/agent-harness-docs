@@ -20,7 +20,7 @@ Connect your repositories through the Cursor dashboard to start using Bugbot.
 
 - **GitHub** (including GitHub Enterprise Server): See the [GitHub integration page](https://cursor.com/docs/integrations/github.md)
 - **GitLab** (including GitLab Self-Hosted): See the [GitLab integration page](https://cursor.com/docs/integrations/gitlab.md)
-- **Bitbucket Cloud**: See the [Bitbucket integration page](https://cursor.com/docs/integrations/bitbucket.md)
+- **Bitbucket** (including Bitbucket Data Center): See the [Bitbucket integration page](https://cursor.com/docs/integrations/bitbucket.md)
 
 After connecting, return to the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) to enable Bugbot on specific repositories.
 
@@ -628,12 +628,13 @@ Yes, Bugbot follows the same privacy compliance as Cursor and processes data ide
 
 When you use all included Bugbot usage, additional Bugbot reviews bill from on-demand spend.
 
-### How do I give Bugbot access to my GitLab or GitHub Enterprise Server instance?
+### How do I give Bugbot access to a self-hosted source control instance?
 
 See the setup and networking guides on the respective integration pages:
 
 - [GitHub Enterprise Server](https://cursor.com/docs/integrations/github.md#setup)
 - [GitLab Self-Hosted](https://cursor.com/docs/integrations/gitlab.md#setup)
+- [Bitbucket Data Center](https://cursor.com/docs/integrations/bitbucket.md#setup)
 
 
 ---

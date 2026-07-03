@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "abe4832aad2153d05f22cea6c9d04516ec9656f6159959770e548ddbb043907a",
-      "last_updated": "2026-06-30T15:55:23.029418"
+      "hash": "e9ce5ad1055226d83081cc39aad8ddb31715b07844960c8f8763ff0c48de9ae5",
+      "last_updated": "2026-07-03T02:27:31.252314"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -261,8 +261,8 @@
     "cloud-agent/best-practices.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/best-practices",
       "original_md_url": "https://cursor.com/docs/cloud-agent/best-practices.md",
-      "hash": "d8ffc2bd98e07eb4721d84f28cbf6fe05de5230bcece728047f90fec2879ec5e",
-      "last_updated": "2026-06-29T22:53:03.554025"
+      "hash": "48ef5015212118c04321179198abc37119c5792b6b26af8d8e0032f51bcde8cc",
+      "last_updated": "2026-07-03T02:27:31.252799"
     },
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
@@ -381,8 +381,8 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "5442cde4845c91277ab21e7785d94758f577069946fde8ea9c3773f9f9bb9a3a",
-      "last_updated": "2026-06-29T22:53:03.558536"
+      "hash": "ecb533133b8debde090854640e05fd2c3f42148bdf2b505ada4ab2106f954578",
+      "last_updated": "2026-07-03T02:27:31.253336"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -411,8 +411,8 @@
     "enterprise/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/enterprise/private-connectivity",
       "original_md_url": "https://cursor.com/docs/enterprise/private-connectivity.md",
-      "hash": "de497aa7b63413215198c80b3edb1a750fb04a7a85d19315e5bb9a9ebeeb1afe",
-      "last_updated": "2026-06-29T22:53:03.559317"
+      "hash": "6daff250a424991a36100a66b9c5402f7a660edabc59b2770c9df158c33f86d7",
+      "last_updated": "2026-07-03T02:27:31.253565"
     },
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
@@ -765,8 +765,8 @@
     "help/integrations/github-gitlab.md": {
       "original_url": "https://cursor.com/help/integrations/github-gitlab",
       "original_md_url": "https://cursor.com/help/integrations/github-gitlab.md",
-      "hash": "08e306c813f7c4a9f51606e35c1bc490ee11a86ee3fa91f05657511d1962ebfd",
-      "last_updated": "2026-06-29T22:53:03.569152"
+      "hash": "93de54257bcd93540fd669becb27c9f0c69b7ada23b6bd7d72256386d840f868",
+      "last_updated": "2026-07-03T02:27:31.254038"
     },
     "help/integrations/third-party.md": {
       "original_url": "https://cursor.com/help/integrations/third-party",
@@ -897,8 +897,8 @@
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
       "original_md_url": "https://cursor.com/docs/integrations/bitbucket.md",
-      "hash": "f6597c89944e4acfbfb968c24d29a5e887bb255bd78d33fc6f0ec1d2b5defb9b",
-      "last_updated": "2026-06-29T22:53:03.572047"
+      "hash": "22d44b6e5f2ebf7db30ba859221f8573463cc84bc90194314e3e8fb9a441d48c",
+      "last_updated": "2026-07-03T02:27:31.254480"
     },
     "integrations/cursor-blame.md": {
       "original_url": "https://cursor.com/docs/integrations/cursor-blame",
@@ -963,8 +963,8 @@
     "mcp.md": {
       "original_url": "https://cursor.com/docs/mcp",
       "original_md_url": "https://cursor.com/docs/mcp.md",
-      "hash": "ebb0c6a842c31f49b918d10bf2b441a38d8fbbd173884bdf94871f546565f270",
-      "last_updated": "2026-07-01T00:48:32.051998"
+      "hash": "af142f86d4a64bd91e0669c9bc4565df7ffdfd69b1084b5375f04df964476f59",
+      "last_updated": "2026-07-03T02:27:31.254820"
     },
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-02T22:05:37.012355",
-    "fetch_duration_seconds": 2.289509,
+    "last_fetch_completed": "2026-07-03T02:27:31.257635",
+    "fetch_duration_seconds": 1.590024,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-02T22:05:37.012369",
+  "last_updated": "2026-07-03T02:27:31.257648",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
