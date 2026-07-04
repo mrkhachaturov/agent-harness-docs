@@ -162,6 +162,8 @@ const agent = await Agent.create({
 
 These values are encrypted at rest, injected into the cloud agent's shell, and deleted with the agent. `envVars` can't be used with a caller-supplied `agentId`; omit `agentId` and read the server-minted ID from `agent.agentId`. Variable names can't start with `CURSOR_`.
 
+For values that should only exist during a single run, pass them on `agent.send()` instead. See [Per-run environment variables](https://cursor.com/docs/sdk/typescript.md#per-run-environment-variables).
+
 ### Model parameters
 
 Use `model.params` to pass per-model options such as reasoning effort. Parameter ids and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/typescript.md#cursormodelslist) to discover supported parameters and preset variants for your account.
@@ -460,6 +462,26 @@ console.log(agent.model);  // updated to the override after the send succeeds
 
 `run.model` and `result.model` reflect the selection that this specific run actually used and are immutable once the run starts.
 
+### Per-run environment variables
+
+Cloud agents can also take environment variables for a single run. Pass `cloud.envVars` on `agent.send()` and the values are injected into the agent's shell for that run only — when the run finishes, they're removed from the VM and the next run doesn't see them. This is the right shape for credentials that rotate between turns, like a short-lived deploy token you mint right before asking the agent to use it.
+
+```typescript
+const run = await agent.send("Deploy the preview environment", {
+  cloud: {
+    envVars: {
+      DEPLOY_TOKEN: await mintShortLivedToken(),
+    },
+  },
+});
+```
+
+If a run-scoped variable has the same name as an agent-scoped one from [`cloud.envVars` on `Agent.create()`](https://cursor.com/docs/sdk/typescript.md#session-environment-variables), the run-scoped value wins for that run, then the agent-scoped value comes back on the next run.
+
+Per-run variables work on the first send too. The SDK passes them along with agent creation, scoped to the initial run, so they aren't persisted on the agent. Like agent-scoped variables, they're encrypted at rest and names can't start with `CURSOR_`.
+
+Per-run environment variables are cloud agents only, and they aren't available for agents running against public repositories. For local agents, the agent process inherits your own environment, so set variables on the process before calling `send()`.
+
 ### Conversation mode
 
 Pass `mode: "plan"` or `mode: "agent"` to control whether a run explores and plans first or implements changes directly. See [Plan mode](https://cursor.com/help/ai-features/plan-mode.md) for what plan mode does in the product.
@@ -500,16 +522,17 @@ The callbacks are awaited before the next update is processed, so you can apply 
 
 ### Per-send options
 
-| Property            | Type                                          | Description                                                                                                                                                                  |
-| :------------------ | :-------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `model`             | `ModelSelection`                              | Per-send model override. If omitted, uses `agent.model`. Sticky: a successful send updates `agent.model`.                                                                    |
-| `mode`              | `"agent" \| "plan"`                           | Per-send conversation mode override. If omitted on follow-ups, keeps the conversation's current mode.                                                                        |
-| `mcpServers`        | `Record<string, McpServerConfig>`             | Inline MCP server definitions. Fully replaces creation-time servers for this run.                                                                                            |
-| `onStep`            | `(args: { step }) => void \| Promise<void>`   | Callback after each completed conversation step (text, thinking, or tool batch).                                                                                             |
-| `onDelta`           | `(args: { update }) => void \| Promise<void>` | Callback per raw `InteractionUpdate`.                                                                                                                                        |
-| `idempotencyKey`    | `string`                                      | Optional client-generated idempotency key for the send.                                                                                                                      |
-| `local.force`       | `boolean`                                     | Local agents only. Defaults to `false`. Expire a stuck active run before starting this message. Cloud returns `409 agent_busy` server-side, so no equivalent is needed.      |
-| `local.customTools` | `Record<string, SDKCustomTool>`               | Local agents only. [Custom tools](https://cursor.com/docs/sdk/typescript.md#custom-tools) for this run. Replaces the agent's creation-time `local.customTools` for that run. |
+| Property            | Type                                          | Description                                                                                                                                                                                                                                       |
+| :------------------ | :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `model`             | `ModelSelection`                              | Per-send model override. If omitted, uses `agent.model`. Sticky: a successful send updates `agent.model`.                                                                                                                                         |
+| `mode`              | `"agent" \| "plan"`                           | Per-send conversation mode override. If omitted on follow-ups, keeps the conversation's current mode.                                                                                                                                             |
+| `mcpServers`        | `Record<string, McpServerConfig>`             | Inline MCP server definitions. Fully replaces creation-time servers for this run.                                                                                                                                                                 |
+| `onStep`            | `(args: { step }) => void \| Promise<void>`   | Callback after each completed conversation step (text, thinking, or tool batch).                                                                                                                                                                  |
+| `onDelta`           | `(args: { update }) => void \| Promise<void>` | Callback per raw `InteractionUpdate`.                                                                                                                                                                                                             |
+| `idempotencyKey`    | `string`                                      | Optional client-generated idempotency key for the send.                                                                                                                                                                                           |
+| `cloud.envVars`     | `Record<string, string>`                      | Cloud agents only. [Per-run environment variables](https://cursor.com/docs/sdk/typescript.md#per-run-environment-variables) injected for this run and removed when it finishes. Overrides agent-scoped `cloud.envVars` by name for this run only. |
+| `local.force`       | `boolean`                                     | Local agents only. Defaults to `false`. Expire a stuck active run before starting this message. Cloud returns `409 agent_busy` server-side, so no equivalent is needed.                                                                           |
+| `local.customTools` | `Record<string, SDKCustomTool>`               | Local agents only. [Custom tools](https://cursor.com/docs/sdk/typescript.md#custom-tools) for this run. Replaces the agent's creation-time `local.customTools` for that run.                                                                      |
 
 ***
 

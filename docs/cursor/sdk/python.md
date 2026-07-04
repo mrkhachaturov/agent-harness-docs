@@ -182,6 +182,8 @@ agent = Agent.create(
 
 These values are encrypted at rest, injected into the cloud agent's shell, and deleted with the agent. `env_vars` can't be used with a caller-supplied `agent_id`; omit `agent_id` and read the server-minted ID from `agent.agent_id`. Variable names can't start with `CURSOR_`.
 
+For values that should only exist during a single run, pass them on `agent.send()` instead. See [Per-run environment variables](https://cursor.com/docs/sdk/python.md#per-run-environment-variables).
+
 ### Model parameters
 
 Use `ModelSelection.params` to pass per-model options such as reasoning effort or max mode. Parameter IDs and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover supported parameters and preset variants for your account.
@@ -657,6 +659,27 @@ run = agent.send(
 
 `run.model` and `result.model` reflect the selection this run used and are immutable once the run starts.
 
+### Per-run environment variables
+
+Cloud agents can also take environment variables for a single run. Pass `cloud.env_vars` in `SendOptions` and the values are injected into the agent's shell for that run only — when the run finishes, they're removed from the VM and the next run doesn't see them. This is the right shape for credentials that rotate between turns, like a short-lived deploy token you mint right before asking the agent to use it.
+
+```python
+from cursor_sdk import CloudSendOptions, SendOptions
+
+run = agent.send(
+    "Deploy the preview environment",
+    SendOptions(
+        cloud=CloudSendOptions(env_vars={"DEPLOY_TOKEN": mint_short_lived_token()}),
+    ),
+)
+```
+
+If a run-scoped variable has the same name as an agent-scoped one from [`env_vars` on `CloudAgentOptions`](https://cursor.com/docs/sdk/python.md#session-environment-variables), the run-scoped value wins for that run, then the agent-scoped value comes back on the next run.
+
+Per-run variables work on the first send too. The SDK passes them along with agent creation, scoped to the initial run, so they aren't persisted on the agent. Like agent-scoped variables, they're encrypted at rest and names can't start with `CURSOR_`.
+
+Per-run environment variables are cloud agents only, and they aren't available for agents running against public repositories. For local agents, the agent process inherits your own environment, so set variables on the process before calling `send()`.
+
 ### Conversation mode
 
 Pass `mode="plan"` or `mode="agent"` to control whether a run explores and plans first or implements changes directly. See [Plan mode](https://cursor.com/help/ai-features/plan-mode.md) for what plan mode does in the product.
@@ -713,15 +736,16 @@ They remain importable from `cursor_sdk` for backward compatibility, but new cod
 
 ### SendOptions
 
-| Property          | Type                                         | Description                                                                                                                                                             |
-| :---------------- | :------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `model`           | `str \| ModelSelection \| Mapping[str, Any]` | Per-send model override. If omitted, uses `agent.model`. Sticky after a successful send.                                                                                |
-| `mode`            | `"agent" \| "plan"`                          | Per-send conversation mode override. If omitted on follow-ups, keeps the conversation's current mode.                                                                   |
-| `mcp_servers`     | `Mapping[str, McpServerConfig]`              | Inline MCP server definitions. Fully replaces creation-time servers for this run.                                                                                       |
-| `local.force`     | `bool`                                       | Local agents only. Defaults to `False`. Expire a stuck active run before starting this message. Cloud returns `409 agent_busy` server-side, so no equivalent is needed. |
-| `idempotency_key` | `str`                                        | Optional client-generated idempotency key for the send.                                                                                                                 |
-| `on_step`         | `Callable[[ConversationStep], Any]`          | Callback after each completed conversation step (text, thinking, or tool batch).                                                                                        |
-| `on_delta`        | `Callable[[InteractionUpdate], Any]`         | Callback per raw `InteractionUpdate`.                                                                                                                                   |
+| Property          | Type                                         | Description                                                                                                                                                                                                                              |
+| :---------------- | :------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `model`           | `str \| ModelSelection \| Mapping[str, Any]` | Per-send model override. If omitted, uses `agent.model`. Sticky after a successful send.                                                                                                                                                 |
+| `mode`            | `"agent" \| "plan"`                          | Per-send conversation mode override. If omitted on follow-ups, keeps the conversation's current mode.                                                                                                                                    |
+| `mcp_servers`     | `Mapping[str, McpServerConfig]`              | Inline MCP server definitions. Fully replaces creation-time servers for this run.                                                                                                                                                        |
+| `cloud.env_vars`  | `Mapping[str, str]`                          | Cloud agents only. [Per-run environment variables](https://cursor.com/docs/sdk/python.md#per-run-environment-variables) injected for this run and removed when it finishes. Overrides agent-scoped `env_vars` by name for this run only. |
+| `local.force`     | `bool`                                       | Local agents only. Defaults to `False`. Expire a stuck active run before starting this message. Cloud returns `409 agent_busy` server-side, so no equivalent is needed.                                                                  |
+| `idempotency_key` | `str`                                        | Optional client-generated idempotency key for the send.                                                                                                                                                                                  |
+| `on_step`         | `Callable[[ConversationStep], Any]`          | Callback after each completed conversation step (text, thinking, or tool batch).                                                                                                                                                         |
+| `on_delta`        | `Callable[[InteractionUpdate], Any]`         | Callback per raw `InteractionUpdate`.                                                                                                                                                                                                    |
 
 ***
 

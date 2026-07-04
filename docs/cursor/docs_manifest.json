@@ -267,8 +267,8 @@
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
       "original_md_url": "https://cursor.com/docs/cloud-agent/capabilities.md",
-      "hash": "a5aa6cd893e3c3a11599514d538dd3595d4e09e53f3a51fe1dee2906f2db9e90",
-      "last_updated": "2026-07-01T00:48:32.049477"
+      "hash": "635a85c2edb778d7cbb559c2d48496f9b59e8dee6119cf224082b7ad613d004a",
+      "last_updated": "2026-07-04T02:25:21.252579"
     },
     "cloud-agent/choose-runtime.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/choose-runtime",
@@ -1047,14 +1047,14 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "e3e7b0b3be7f65f372e84817613a50baa7c14dfaf9c640de4545557cdb22f5ec",
-      "last_updated": "2026-07-02T13:48:33.222681"
+      "hash": "f3e14e5c9b8317fbf350d109ea1d1432fbc65489b412cb01a93c7995ccc25a26",
+      "last_updated": "2026-07-04T02:25:21.254343"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "fd45e13f6b262f26f48ffe742205865f1623a7208adee55525acd5cad31d1cfd",
-      "last_updated": "2026-07-02T13:48:33.223217"
+      "hash": "da6aa1314197dc881ab3725d3c48b876d90ba2c0beca82668c3dd609be6cbd40",
+      "last_updated": "2026-07-04T02:25:21.254874"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-03T22:04:03.629799",
-    "fetch_duration_seconds": 4.191285,
+    "last_fetch_completed": "2026-07-04T02:25:21.257264",
+    "fetch_duration_seconds": 2.576665,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-03T22:04:03.629812",
+  "last_updated": "2026-07-04T02:25:21.257277",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
