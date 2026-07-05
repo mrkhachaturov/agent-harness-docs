@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-05T06:38:15.178301",
-    "fetch_duration_seconds": 2.788362,
+    "last_fetch_completed": "2026-07-05T11:03:55.606676",
+    "fetch_duration_seconds": 1.997339,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-05T06:38:15.178319",
+  "last_updated": "2026-07-05T11:03:55.606692",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
