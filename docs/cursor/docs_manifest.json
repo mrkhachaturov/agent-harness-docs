@@ -27,8 +27,8 @@
     "account/teams/dashboard.md": {
       "original_url": "https://cursor.com/docs/account/teams/dashboard",
       "original_md_url": "https://cursor.com/docs/account/teams/dashboard.md",
-      "hash": "9aa3ab1aab174f9eac2235983443f7b9d3d9713761226e4c946f5f4f5e0a243b",
-      "last_updated": "2026-07-01T00:48:32.048616"
+      "hash": "a7da95add8fc913ef055f2a71dee3f3d74fae6d333264d78c064f5ab8ebb5a4a",
+      "last_updated": "2026-07-06T17:41:37.427665"
     },
     "account/teams/members.md": {
       "original_url": "https://cursor.com/docs/account/teams/members",
@@ -897,8 +897,8 @@
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
       "original_md_url": "https://cursor.com/docs/integrations/bitbucket.md",
-      "hash": "22d44b6e5f2ebf7db30ba859221f8573463cc84bc90194314e3e8fb9a441d48c",
-      "last_updated": "2026-07-03T02:27:31.254480"
+      "hash": "0a83a45c1d924505c15556bcea87db79e6a80f41ab6cffcc894d0696382bc7de",
+      "last_updated": "2026-07-06T17:41:37.429385"
     },
     "integrations/cursor-blame.md": {
       "original_url": "https://cursor.com/docs/integrations/cursor-blame",
@@ -1053,8 +1053,8 @@
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "da6aa1314197dc881ab3725d3c48b876d90ba2c0beca82668c3dd609be6cbd40",
-      "last_updated": "2026-07-04T02:25:21.254874"
+      "hash": "b58c3b1a2a0345962a0bf42f994b2cd9c6ad2bad872c35c41fa4052f911a2aa9",
+      "last_updated": "2026-07-06T17:41:37.430325"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-06T12:44:16.179813",
-    "fetch_duration_seconds": 2.91227,
+    "last_fetch_completed": "2026-07-06T17:41:37.432786",
+    "fetch_duration_seconds": 1.859182,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-06T12:44:16.179828",
+  "last_updated": "2026-07-06T17:41:37.432799",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
