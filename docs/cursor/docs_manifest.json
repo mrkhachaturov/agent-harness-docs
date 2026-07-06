@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "e9ce5ad1055226d83081cc39aad8ddb31715b07844960c8f8763ff0c48de9ae5",
-      "last_updated": "2026-07-03T02:27:31.252314"
+      "hash": "a5acc69831c30da4a4acac933677b2347d07645eb045535a7337a9cb9fcb17fa",
+      "last_updated": "2026-07-06T19:50:37.616026"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -417,8 +417,8 @@
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
       "original_md_url": "https://cursor.com/docs/enterprise/security-hardening.md",
-      "hash": "fb8774c1964d11732fbb3180061455298cd1d4f77f9e88c9308972ede9a18df8",
-      "last_updated": "2026-06-29T22:53:03.559818"
+      "hash": "dde9ad72eb0a8cc5736b652dde239b1eac2fbe6185647579cd36c60bbaea9c63",
+      "last_updated": "2026-07-06T19:50:37.617054"
     },
     "get-started/quickstart.md": {
       "original_url": "https://cursor.com/docs/get-started/quickstart",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-06T17:41:37.432786",
-    "fetch_duration_seconds": 1.859182,
+    "last_fetch_completed": "2026-07-06T19:50:37.620732",
+    "fetch_duration_seconds": 1.828225,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-06T17:41:37.432799",
+  "last_updated": "2026-07-06T19:50:37.620747",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
