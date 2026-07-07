@@ -1,6 +1,6 @@
 # Worktrees
 
-The UI-native worktrees feature described on this page is only available in the Agents Window. In the Editor Window, use the Worktree Skills commands below.
+The UI-native worktrees feature described on this page is only available in the Agents Window. In the IDE, use the Worktree Skills commands below.
 
 [Media](/docs-static/images/configuration/worktrees/cursor-worktrees-2.mp4)
 
@@ -16,7 +16,7 @@ After the agent finishes, review the result in the Agents Window. You can keep w
 
 ## How does worktree setup work?
 
-You can customize worktree setup with `.cursor/worktrees.json`. Cursor checks this file when it creates a worktree in the Agents Window, the Editor Window, or the [Cursor CLI](https://cursor.com/docs/cli/using.md#cli-worktrees).
+You can customize worktree setup with `.cursor/worktrees.json`. Cursor checks this file when it creates a worktree in the Agents Window, the IDE, or the [Cursor CLI](https://cursor.com/docs/cli/using.md#cli-worktrees).
 
 Cursor looks for `.cursor/worktrees.json` in this order:
 
@@ -186,9 +186,9 @@ Use these machine-scoped settings to control cleanup:
 
 Cursor re-discovers the worktree root on every cleanup pass, so worktrees created outside the manager (for example, worktrees created by `/worktree` skills or `git worktree add`) are eligible for deletion. When creating a worktree would exceed the cap, Cursor debounces bursts of events and starts an immediate cleanup instead of waiting for the next interval.
 
-## Worktree Skills in Editor Window
+## Worktree Skills in IDE
 
-In the editor window, you can use the `/worktree` and `/best-of-n` commands to run tasks in isolated worktrees.
+In the IDE, you can use the `/worktree` and `/best-of-n` commands to run tasks in isolated worktrees.
 
 ### Use `/worktree` for one isolated run
 

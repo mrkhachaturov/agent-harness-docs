@@ -69,8 +69,8 @@
     "agent/agents-window.md": {
       "original_url": "https://cursor.com/docs/agent/agents-window",
       "original_md_url": "https://cursor.com/docs/agent/agents-window.md",
-      "hash": "aaf48e56abb073ca29024d0720479b70ff5bca6e860757ce2439841b7f5a4d3b",
-      "last_updated": "2026-06-29T22:53:03.545217"
+      "hash": "e9dba4de79bf5dd69f8c7ce6ddbd553fe175f72b34a38f5758b99e63b9c31af3",
+      "last_updated": "2026-07-07T06:43:17.495020"
     },
     "agent/debug-mode.md": {
       "original_url": "https://cursor.com/docs/agent/debug-mode",
@@ -321,8 +321,8 @@
     "configuration/worktrees.md": {
       "original_url": "https://cursor.com/docs/configuration/worktrees",
       "original_md_url": "https://cursor.com/docs/configuration/worktrees.md",
-      "hash": "777fc60bba4e25d55d9db5a0c8307d21c8aef39f8042f6d0eccc8d21ad62fa86",
-      "last_updated": "2026-06-29T22:53:03.556000"
+      "hash": "cc4e372cea406d6f15d4bbfc1a7cc6b680781163fa1d6ed680b34fb52ab4e79d",
+      "last_updated": "2026-07-07T06:43:17.495813"
     },
     "customize-cursor.md": {
       "original_url": "https://cursor.com/docs/customize-cursor",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-07T02:35:36.198554",
-    "fetch_duration_seconds": 1.45999,
+    "last_fetch_completed": "2026-07-07T06:43:17.499450",
+    "fetch_duration_seconds": 1.576581,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-07T02:35:36.198568",
+  "last_updated": "2026-07-07T06:43:17.499462",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
