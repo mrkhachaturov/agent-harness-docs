@@ -47,8 +47,8 @@ Include any relevant details: dates of suspicious activity, unexpected charges, 
 
 Review your account for signs of misuse:
 
-1. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
-2. Check **Billing and Invoices** for unexpected charges
+1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
+2. Check your invoices for unexpected charges
 3. Review usage patterns for unusual activity
 4. For team admins: check the member list for unfamiliar users
 

@@ -15,7 +15,6 @@
 | `/resume`                              | Open recent chats and resume one                                                                                       |
 | `/fork`                                | Fork the current chat into a new session                                                                               |
 | `/summarize`                           | Summarize the conversation to reduce context. `/compress` is an alias.                                                 |
-| `/context`                             | Show what's consuming the context window, broken down by category                                                      |
 | `/rewind`                              | Jump back to a previous message                                                                                        |
 | `/vim`                                 | Toggle Vim keys                                                                                                        |
 | `/line-numbers`                        | Toggle line numbers in code blocks                                                                                     |

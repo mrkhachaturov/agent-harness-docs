@@ -10,6 +10,8 @@ To configure Agent Review:
 2. Go to **Agents**
 3. Find **Agent Review** and configure your preferences
 
+Starting in Cursor 3.11, this setting moves to **Git & PRs** > **Pull Requests**.
+
 Agent Review also reads repository rules from `BUGBOT.md` files. To set up these rule files, see [BugBot docs](https://cursor.com/docs/bugbot.md).
 
 You can set it to run automatically after every agent task, or leave it manual and trigger it yourself.

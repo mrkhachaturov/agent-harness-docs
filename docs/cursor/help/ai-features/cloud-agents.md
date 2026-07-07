@@ -50,7 +50,7 @@ Cloud Agents are available on all paid Cursor plans.
 
 ## How do I set up Cloud Agents?
 
-Create a new environment in your [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#environments). You'll connect your GitHub, GitLab, Azure DevOps, or Bitbucket account, select one or more repositories, add secrets or environment variables, and verify the setup. See the [full setup guide](https://cursor.com/docs/cloud-agent/setup.md) for multi-repo environments, environment-scoped secrets, network access, and Dockerfiles.
+Create a new environment in your [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#environments). You'll connect your GitHub, GitLab, Azure DevOps, or Bitbucket Cloud account, select one or more repositories, add secrets or environment variables, and verify the setup. See the [full setup guide](https://cursor.com/docs/cloud-agent/setup.md) for multi-repo environments, environment-scoped secrets, network access, and Dockerfiles.
 
 ## How do I start a Cloud Agent task?
 
@@ -58,7 +58,7 @@ Create a new environment in your [Cloud Agents dashboard](https://cursor.com/das
 - **On the web**: Go to [cursor.com/agents](https://cursor.com/agents)
 - **Via Slack**: Use **@Cursor**
 - **On GitHub**: Comment **@cursor** on a PR or issue
-- **On Bitbucket**: Comment **@cursor** on a PR
+- **On Bitbucket Cloud**: Comment **@cursor** on a PR
 - **In Linear**: Use **@Cursor** on an issue
 - **Via API**: Use the [Cloud Agent API](https://cursor.com/docs/cloud-agent/api/endpoints.md)
 

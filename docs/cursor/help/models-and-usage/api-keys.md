@@ -7,10 +7,9 @@ You can add your own API keys so Cursor uses your preferred AI models. This lets
 1. Open **Cursor Settings** > **Models**
 2. Find the provider you want (OpenAI, Anthropic, Google, Azure, or AWS Bedrock)
 3. Paste your API key into the text field
-4. Click **Verify** to confirm the key works
-5. Click **Save**
+4. Click **Save**
 
-Cursor now uses your key for that provider's models. They appear in the model picker.
+Cursor now uses your key for that provider's models. They appear in the model picker. If a key is invalid or rejected by the provider, requests using that provider fail until you update or remove the key.
 
 ## What providers are supported?
 

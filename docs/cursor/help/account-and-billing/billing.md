@@ -36,10 +36,9 @@ Cursor bills teams per active paid seat, not pre-allocated seats. Seat price dep
 
 ## How do I update my payment method?
 
-1. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
-2. Open **Billing and Invoices**
-3. Click **Manage Subscription**
-4. Update your card in the Stripe billing portal
+1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
+2. Click **Manage Subscription** to open the Stripe billing portal
+3. Update your card in the Stripe billing portal
 
 ## How do I update billing details for invoices?
 
@@ -47,11 +46,11 @@ Update your company name, address, and tax details in the Stripe billing portal.
 
 ## Where do I find invoices and receipts?
 
-Open **Billing and Invoices** in your dashboard, then click **Manage Subscription**. In the Stripe portal, open any invoice to view or download the PDF.
+Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) and click **Manage Subscription**. In the Stripe portal, open any invoice to view or download the PDF. See [Invoices](https://cursor.com/help/account-and-billing/invoices.md) for details.
 
 ## What if I still need billing help?
 
-Email [hi@cursor.com](mailto:hi@cursor.com) from the account email and include invoice IDs, dates, and a short issue description.
+[Contact support](https://cursor.com/help.md) while signed in to your Cursor account and include invoice IDs, dates, and a short issue description.
 
 ## Related
 

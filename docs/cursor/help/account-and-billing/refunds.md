@@ -25,7 +25,7 @@ This policy does not limit any rights you may have under applicable consumer pro
 
 ## Which details should I include in a refund request?
 
-Email [hi@cursor.com](mailto:hi@cursor.com) from your account email. Include these details so we can verify your account quickly:
+[Contact support](https://cursor.com/help.md) while signed in to your Cursor account. Include these details so we can verify your account quickly:
 
 - The email on your Cursor account
 - The charge amount and date
@@ -46,7 +46,7 @@ Yes. You can cancel to stop future renewal charges. Cancellation keeps paid acce
 
 On-demand and fast-request charges for usage you have already consumed are not refundable. This is separate from the subscription refund above.
 
-If you are unsure about a charge, email us at [hi@cursor.com](mailto:hi@cursor.com) and we can review it with you.
+If you are unsure about a charge, [contact support](https://cursor.com/help.md) and we can review it with you.
 
 ## What if I subscribed through the iOS app?
 
@@ -54,7 +54,7 @@ Apple is the merchant of record for in-app purchases, so Cursor can't issue refu
 
 ## I did not authorize this charge. What should I do?
 
-If you see a charge you do not recognize, email [hi@cursor.com](mailto:hi@cursor.com). Include the charge amount, date, and the last four digits of the card that was charged. We will investigate the account activity.
+If you see a charge you do not recognize, [contact support](https://cursor.com/help.md). Include the charge amount, date, and the last four digits of the card that was charged. We will investigate the account activity.
 
 We encourage you to contact us first so we can resolve the issue directly. Filing a chargeback with your bank may result in delays and could affect your account status while the dispute is under review.
 

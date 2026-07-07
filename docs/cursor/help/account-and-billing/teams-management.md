@@ -24,7 +24,7 @@ Team members cannot leave a team on their own. They need to ask an admin to remo
 
 ## What if my team admin has left?
 
-Check if there are other admins on the team who can help. If not, email [hi@cursor.com](mailto:hi@cursor.com) for help recovering admin access.
+Check if there are other admins on the team who can help. If not, [contact support](https://cursor.com/help.md) for help recovering admin access.
 
 ## How do I view team usage?
 

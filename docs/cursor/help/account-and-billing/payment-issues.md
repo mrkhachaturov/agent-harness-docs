@@ -4,18 +4,17 @@ Troubleshoot failed payments and card issues during billing checkout.
 
 ## How do I troubleshoot a failed payment?
 
-1. Retry from [cursor.com/dashboard](https://cursor.com/dashboard) under **Billing and Invoices**
+1. Retry from [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
 2. Open **Manage Subscription** and confirm your card number, expiry, CVC, and billing address
 3. Try a different credit or debit card
 4. Contact your bank to confirm online charges are enabled for this transaction
 
 ## How do I update my payment method before retrying?
 
-1. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
-2. Open **Billing and Invoices**
-3. Click **Manage Subscription**
-4. Update the default card in the Stripe billing portal
-5. Retry the payment
+1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
+2. Click **Manage Subscription**
+3. Update the default card in the Stripe billing portal
+4. Retry the payment
 
 ## What if payment succeeds but my plan is still unchanged?
 
@@ -23,7 +22,7 @@ Use [payment completed but plan not updated](https://cursor.com/help/account-and
 
 ## What details should I send support for payment issues?
 
-Email [hi@cursor.com](mailto:hi@cursor.com) from your account email and include:
+[Contact support](https://cursor.com/help.md) while signed in to your Cursor account and include:
 
 - The account email used for purchase
 - The charge amount and date

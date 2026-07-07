@@ -50,7 +50,7 @@ You keep your current plan until the end of your billing period. This applies to
 
 ## Where do I manage my subscription?
 
-Use [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) to adjust individual plans. Use **Billing and Invoices** in [cursor.com/dashboard](https://cursor.com/dashboard) for payment method updates, invoices, and cancellation flows.
+Use [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) for plan changes, payment method updates, invoices, and cancellation. Click **Manage Subscription** there to open the Stripe billing portal.
 
 ## What if I move from an individual plan to a Teams plan?
 

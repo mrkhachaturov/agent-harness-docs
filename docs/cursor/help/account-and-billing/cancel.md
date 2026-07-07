@@ -4,10 +4,9 @@ Cancel your plan in the dashboard. Keep access until your billing period ends.
 
 ## How do I cancel my subscription?
 
-1. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
-2. Click **Billing and Invoices** in the left sidebar
-3. Click **Manage Subscription**
-4. Click **Cancel Subscription** and confirm
+1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
+2. Click **Manage Subscription** to open the Stripe billing portal
+3. Click **Cancel Subscription** and confirm
 
 On an individual plan? You can [schedule a downgrade](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-downgrade-my-plan) instead of canceling.
 
@@ -24,17 +23,28 @@ In-app subscriptions are managed by Apple, not through cursor.com. Cursor can't 
 
 ## How do Teams or Enterprise admins cancel?
 
-Team admins can cancel through the same billing page.
+Team admins can cancel through the same billing page. Team members won't see billing options; ask a team admin to make plan changes.
 
 If there is an unpaid invoice or an account-state mismatch, cancellation can be blocked until billing is resolved.
+
+## What if I don't see a cancel option?
+
+A few account states hide the cancel button:
+
+- **Your plan already lapsed.** If your account shows the free Hobby plan, there's no active subscription to cancel and subscription controls won't appear.
+- **You have an unpaid invoice.** Billing must be resolved before you can make subscription changes. See the steps below.
+- **You're on a Teams plan without admin access.** Only team admins can cancel.
+- **You subscribed through the iOS app.** Apple manages the subscription; see the section above.
+
+If none of these apply and you still can't cancel, [contact support](https://cursor.com/help.md) with a screenshot of your billing page.
 
 ## What if I cannot cancel because billing shows an issue?
 
 Use these steps:
 
-1. Open **Billing and Invoices** and check for unpaid invoices
+1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) and check for unpaid invoices
 2. Complete payment or retry from **Manage Subscription**
-3. If the issue persists, contact [hi@cursor.com](mailto:hi@cursor.com) from your account email with your workspace name and a screenshot
+3. If the issue persists, [contact support](https://cursor.com/help.md) with your workspace name and a screenshot
 
 ## Can I resubscribe later?
 

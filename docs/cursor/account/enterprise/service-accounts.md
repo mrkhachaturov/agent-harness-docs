@@ -53,7 +53,7 @@ Repository access is governed by the permissions configured for your team's GitH
 
 Admins can create and manage service accounts from the [Cursor Dashboard](https://cursor.com/dashboard).
 
-1. Navigate to **Dashboard** → **Settings** → **Service Accounts**
+1. Navigate to **Dashboard** → **Settings** → **API Keys** → **Service Accounts**
 2. Click **New Service Account**
 3. Enter a name and optional description for the service account
 4. Click **Create**
@@ -74,7 +74,7 @@ Each service account can have API keys associated with it. You can:
 
 To rotate an API key:
 
-1. Navigate to **Dashboard** → **Settings** → **Service Accounts**
+1. Navigate to **Dashboard** → **Settings** → **API Keys** → **Service Accounts**
 2. Find the service account and click the rotate icon next to its API key
 3. Copy the new key immediately
 
@@ -127,7 +127,7 @@ Archiving a service account:
 
 To archive a service account:
 
-1. Navigate to **Dashboard** → **Settings** → **Service Accounts**
+1. Navigate to **Dashboard** → **Settings** → **API Keys** → **Service Accounts**
 2. Click the archive icon next to the service account
 3. Confirm the archive action
 

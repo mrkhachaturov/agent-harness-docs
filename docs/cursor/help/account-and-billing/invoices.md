@@ -4,10 +4,9 @@ Access invoice history, download PDFs, and gather billing records.
 
 ## How do I open my invoice history?
 
-1. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
-2. Open **Billing and Invoices**
-3. Click **Manage Subscription**
-4. In the Stripe billing portal, scroll to billing history
+1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
+2. Click **Manage Subscription** to open the Stripe billing portal
+3. Scroll to billing history
 
 ## How do I download invoice PDFs?
 
@@ -17,9 +16,17 @@ Access invoice history, download PDFs, and gather billing records.
 
 Invoices are manual download for now.
 
+## Who can see invoices on a Teams plan?
+
+Only team admins can open billing and invoices for a Teams or Enterprise plan. If you're a team member and need an invoice, ask a team admin to download it for you.
+
+## How do I get invoices after my subscription ends?
+
+When a subscription lapses or your account reverts to the free plan, subscription controls no longer appear on the billing page. [Contact support](https://cursor.com/help.md) with the invoice date range you need and we can send you copies.
+
 ## What if I cannot find the invoice I need?
 
-If a specific invoice is missing, contact [hi@cursor.com](mailto:hi@cursor.com) from your account email. Include:
+If a specific invoice is missing, [contact support](https://cursor.com/help.md) while signed in to your Cursor account. Include:
 
 - Your account email
 - The invoice date range you need

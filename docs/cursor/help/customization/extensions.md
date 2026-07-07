@@ -68,7 +68,7 @@ To request verification:
 1. Add a link to your OpenVSX listing on your public website (such as in the installation section). This must be a website with its own domain name; a GitHub readme is not supported.
 2. Update the "homepage" link on your OpenVSX listing to point to this website.
 3. If your extension is published on multiple marketplaces, use the same extension ID on OpenVSX as you do elsewhere.
-4. Create a post in the [Extension Verification category](https://cursor.com/help/customization/extensions/\[REDACTED]/c/showcase/extension-verification/23.md) on the Cursor forum with your extension name and a link to your website where we can verify the OpenVSX registry link.
+4. Create a post in the [Extension Verification category](https://forum.cursor.com/c/showcase/extension-verification/23) on the Cursor forum with your extension name and a link to your website where we can verify the OpenVSX registry link.
 
 We'll verify the link and add the verification badge to your publisher name once approved.
 

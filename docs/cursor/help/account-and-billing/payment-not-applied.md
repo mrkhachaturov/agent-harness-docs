@@ -15,7 +15,7 @@ A short sync delay can happen between payment confirmation and plan activation. 
 
 ## What if the plan still shows free after I complete the checklist?
 
-Contact [hi@cursor.com](mailto:hi@cursor.com) and include:
+[Contact support](https://cursor.com/help.md) and include:
 
 - The email on your Cursor account
 - The payment amount and date
