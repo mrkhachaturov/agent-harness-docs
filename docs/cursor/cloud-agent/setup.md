@@ -273,8 +273,11 @@ Here is a sample `.cursor/environment.json` referencing a `.cursor/Dockerfile` (
 
 ### Important path behavior
 
-The `dockerfile` and `context` paths in `build` are relative to `.cursor`.
-The `install` command runs from your project root.
+The `dockerfile` and `context` paths in `build` are relative to `.cursor`. When
+you omit `context`, it defaults to `.cursor`. The values `.`, `./`, and `..` are
+special-cased to mean the repository root rather than `.cursor`, so to `COPY`
+files that live in `.cursor` with bare filenames, omit `context`. The `install`
+command runs from your project root.
 
 The full schema is [defined here](https://www.cursor.com/schemas/environment.schema.json).
 
