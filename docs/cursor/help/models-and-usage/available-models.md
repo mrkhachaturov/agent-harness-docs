@@ -8,7 +8,7 @@ Open the model selector in your chat or agent panel and choose the model you wan
 
 ## Which models are available?
 
-Cursor offers its own in-house model (Composer) alongside frontier models from OpenAI, Anthropic, Google, and xAI. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
+Cursor offers its own in-house model (Composer) alongside frontier models from OpenAI, Anthropic, Google, and SpaceXAI. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the complete list, context window sizes, and capabilities.
 

@@ -1,4 +1,4 @@
-Grok Build 0.1 is xAI's fast coding model trained specifically for agentic coding. It supports a 256k context window with no Max Mode extension to 1M tokens.
+Grok Build 0.1 is SpaceXAI's fast coding model trained specifically for agentic coding. It supports a 256k context window with no Max Mode extension to 1M tokens.
 
 ## Strengths
 
