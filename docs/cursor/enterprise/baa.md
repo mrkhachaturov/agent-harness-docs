@@ -37,6 +37,7 @@ The listed Eligible Services are covered for Enterprise customers with Privacy M
 
 - Desktop IDE, including Agent, Tab, Edit, local agent mode, and inline edit
 - Cloud Agents and self-hosted Cloud Agents
+- Cursor for iOS
 - CLI
 - Tab
 - BugBot

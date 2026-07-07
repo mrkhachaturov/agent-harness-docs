@@ -136,6 +136,8 @@ Team and Enterprise admins control Remote Control access from [Cursor Dashboard 
 
 You can use the app on any plan that includes cloud agents: Pro, Pro+, Ultra, Teams, and Enterprise. If your organization requires SSO, you'll sign in through it first.
 
+For HIPAA BAA details, including Eligible Services and implementation requirements, see [HIPAA Business Associate Agreements](https://cursor.com/docs/enterprise/baa.md).
+
 Cursor for iOS relies on [Cloud Agents](https://cursor.com/docs/cloud-agent.md), which need cloud data storage to run. If you're on Privacy Mode (Legacy), switch to Privacy Mode before using the app. You won't be able to start agents on mobile until you do. We never train on your code and only retain code for running the agent. [Learn more about Privacy mode](https://www.cursor.com/privacy-overview).
 
 When you try to use Cloud Agents, Cursor prompts you to opt in to Privacy Mode. Tap **Update**, then confirm **Switch to Privacy Mode** in the dialog. Your code still won't be used for training, but you can't switch back to Legacy Privacy Mode afterward. See [Security and network](https://cursor.com/docs/cloud-agent/security-network.md) for how Cloud Agents store and retain data.

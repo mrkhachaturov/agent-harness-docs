@@ -28,15 +28,16 @@ Once connected, mention `@Cursor` in any Slack channel with a prompt to start a 
 
 Notion is a Cloud Agent integration in beta. To set it up:
 
-1. In Notion, open a custom agent and go to **Settings → Tools & access**
-2. Click **Add connection** and select **Cursor**
-3. Create a Cursor User API Key from the **Integrations** tab in your [Cursor dashboard](https://cursor.com/dashboard/integrations), then paste it into Notion
+1. In Notion, go to **Agents** in the sidebar → **New Agent** → **Cursor**
+2. Pick a starting point (template or from scratch)
+3. Create a Cursor User API Key from your [Cursor dashboard](https://cursor.com/dashboard/api) and enter it into Notion
+4. Share the pages and databases the agent needs
 
-You need a Cursor **Business+** plan and GitHub connected to your Cursor account. Once set up, @mention the agent in comments or assign tasks to Cursor from a task board.
+You need a Notion Business or Enterprise plan and GitHub connected to your Cursor account. The integration is available to all Cursor users at no extra cost; usage is billed like Cloud Agent usage. Once set up, @mention the agent in comments or assign tasks to Cursor from a task board.
 
 ## How do I connect other tools?
 
-Most third-party integrations work through MCP. Browse available servers in Cursor Settings under **Features > Model Context Protocol**, or visit the [Marketplace](/marketplace). You can also build custom MCP servers for tools that don't have one yet.
+Most third-party integrations work through MCP. Browse available servers in **Customize** in the sidebar, or visit the [Marketplace](/marketplace). You can also build custom MCP servers for tools that don't have one yet.
 
 ## Related
 

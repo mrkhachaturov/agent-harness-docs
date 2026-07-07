@@ -35,25 +35,27 @@ Repository settings control whether the agent has code access:
 
 ## Which triggers are available?
 
-| Trigger                              | Fires when                                          |
-| ------------------------------------ | --------------------------------------------------- |
-| **Scheduled**                        | A recurring schedule or cron expression matches     |
-| **GitHub or GitLab: PR opened**      | A non-draft PR is created or marked ready           |
-| **GitHub or GitLab: PR pushed**      | New commits are pushed to an existing PR            |
-| **GitHub or GitLab: PR merged**      | A PR is merged                                      |
-| **GitHub or GitLab: PR commented**   | Someone comments on a PR                            |
-| **GitHub or GitLab: Push to branch** | Commits are pushed to a specific branch             |
-| **GitHub or GitLab: CI completed**   | A GitHub or GitLab check finishes                   |
-| **GitHub or GitLab: Draft opened**   | A draft PR is created                               |
-| **Slack: New message**               | A message is sent to a connected public channel     |
-| **Slack: Channel created**           | A new public channel is created                     |
-| **Linear: Issue created**            | A new Linear issue is created                       |
-| **Linear: Status changed**           | An issue's status changes                           |
-| **Linear: End of cycle**             | A Linear cycle completes                            |
-| **PagerDuty**                        | An incident is triggered, acknowledged, or resolved |
-| **Webhook**                          | An HTTP POST is sent to the automation's endpoint   |
+| Trigger                                        | Fires when                                          |
+| ---------------------------------------------- | --------------------------------------------------- |
+| **Scheduled**                                  | A recurring schedule or cron expression matches     |
+| **Source control: Draft opened**               | A draft PR is created                               |
+| **Source control: PR opened**                  | A non-draft PR is created or marked ready           |
+| **Source control: PR pushed**                  | New commits are pushed to an existing PR            |
+| **Source control: PR merged**                  | A PR is merged                                      |
+| **Source control: Push to branch**             | Commits are pushed to a specific branch             |
+| **GitHub, GitLab, or Bitbucket: PR commented** | Someone leaves a top-level comment on a PR          |
+| **GitHub: CI completed**                       | A GitHub check finishes                             |
+| **Slack: New message**                         | A message is sent to a connected public channel     |
+| **Slack: Channel created**                     | A new public channel is created                     |
+| **Linear: Issue created**                      | A new Linear issue is created                       |
+| **Linear: Status changed**                     | An issue's status changes                           |
+| **Linear: End of cycle**                       | A Linear cycle completes                            |
+| **PagerDuty**                                  | An incident is triggered, acknowledged, or resolved |
+| **Webhook**                                    | An HTTP POST is sent to the automation's endpoint   |
 
 An automation can have more than one trigger. It runs when any of the triggers fire.
+
+Source control triggers work with GitHub, GitLab, and Bitbucket Cloud. Provider support varies; GitHub supports the full set, and other providers support the core triggers plus a few extras. See the [automations reference](https://cursor.com/docs/cloud-agent/automations.md#source-control-triggers) for the per-provider breakdown.
 
 ## Which tools can automations use?
 
