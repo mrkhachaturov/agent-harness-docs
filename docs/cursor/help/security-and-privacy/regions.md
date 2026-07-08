@@ -14,11 +14,18 @@ Some AI model providers have location-based restrictions, which means certain mo
 - [OpenAI (GPT)](https://help.openai.com/articles/5347006-openai-api-supported-countries-and-territories)
 - [Google (Gemini)](https://ai.google.dev/gemini-api/docs/available-regions)
 
+## Can I use Grok 4.5 in the EU?
+
+At launch, [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) is available in every country Cursor normally supports, except the EU. The EU AI Act requires notifying regulators before releasing powerful new AI models, so EU availability follows in the coming weeks.
+
+While you wait, use Auto or pick another model from the model picker.
+
 ## Related
 
 - [Regions reference](https://cursor.com/docs/account/regions.md)
 - [Privacy and data](https://cursor.com/help/security-and-privacy/privacy.md)
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
+- [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 
 
 ---

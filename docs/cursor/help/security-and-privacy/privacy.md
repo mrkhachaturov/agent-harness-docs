@@ -36,6 +36,12 @@ With Privacy Mode enabled, your code is never used for training.
 
 Privacy Mode is on by default for Enterprise teams. Teams and Enterprise admins can enforce it organization-wide so members cannot disable it.
 
+## Does Privacy Mode apply to Grok 4.5?
+
+Yes. Privacy Mode works the same for [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) as for every other model. With Privacy Mode enabled, your code is never used for training.
+
+Like other models, Grok 4.5 is hosted on US, Canada, and Iceland based infrastructure by the model's provider, a trusted partner, or Cursor directly. See the list of [sub-processors](https://trust.cursor.com/subprocessors) for details.
+
 ## Are there exceptions to zero data retention?
 
 ZDR doesn't apply when you use your own API keys. In that case, your data handling follows your provider's privacy policy.

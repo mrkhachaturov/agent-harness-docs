@@ -1,4 +1,4 @@
-Composer 2.5 is Cursor's own agentic model. It builds on [Composer 2](https://cursor.com/docs/models/cursor-composer-2.md) with stronger intelligence on long agentic tasks, better effort calibration, tool selection, intent understanding, and reliability.
+Composer 2.5 is Cursor's own agentic model. It builds on [Composer 2](/blog/composer-2) with stronger intelligence on long agentic tasks, better effort calibration, tool selection, intent understanding, and reliability.
 
 ## Strengths
 
@@ -16,7 +16,7 @@ Learn more about [how tools work](https://cursor.com/docs/agent/overview.md#tool
 
 A **faster variant** with the same intelligence is also available at $3/M input and $15/M output tokens. Fast is the default in the product and is priced lower than other fast models at similar speeds.
 
-On individual plans, Composer draws from a **standalone Composer usage pool** with generous included usage. On team and enterprise plans, the API price below is charged directly. All prices are per million tokens.
+On individual and team plans, Composer 2.5 draws from the **First-party models pool** with Auto and Grok 4.5. On-demand usage is charged at the rates below. All prices are per million tokens.
 
 
 ---

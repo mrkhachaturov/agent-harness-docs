@@ -8,7 +8,7 @@ Open the model selector in your chat or agent panel and choose the model you wan
 
 ## Which models are available?
 
-Cursor offers its own in-house model (Composer) alongside frontier models from OpenAI, Anthropic, Google, and SpaceXAI. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
+Cursor offers its own first-party models ([Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) and Composer) alongside frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the complete list, context window sizes, and capabilities.
 
@@ -16,9 +16,10 @@ See the [models reference](https://cursor.com/docs/models-and-pricing.md) for th
 
 - **Auto** selects models that balance intelligence, cost, and reliability. Good for everyday tasks.
 - **Premium** selects the most capable models for you. Recommended for complex tasks.
-- **Composer** is Cursor's in-house model. Fast, capable for most tasks, and built for interactive coding.
+- **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)** is Cursor's flagship model. The smartest model Cursor has trained, built for the hardest tasks.
+- **Composer** is Cursor's fast, cost-efficient model. Capable for most tasks, and built for interactive coding.
 - **Claude Opus** and **GPT Codex** handle complex, multi-step tasks well.
-- Some users also prefer **Gemini Pro** and **Grok** models.
+- Some users also prefer **Gemini Pro** models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the full list.
 
@@ -29,6 +30,15 @@ Auto has fixed token rates regardless of which model Cursor selects behind the s
 - **Input + Cache Write**: $1.25 per 1M tokens
 - **Output**: $6.00 per 1M tokens
 - **Cache Read**: $0.25 per 1M tokens
+
+## How much does Grok 4.5 cost?
+
+Grok 4.5 has two speeds, each with its own token rates:
+
+- **Standard**: $2.00 per 1M input tokens, $6.00 per 1M output tokens, $0.50 per 1M cache read tokens
+- **Fast**: $4.00 per 1M input tokens, $18.00 per 1M output tokens, $1.00 per 1M cache read tokens
+
+Grok 4.5 draws from the First-Party Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
 
 ## How much does Premium cost?
 
@@ -66,6 +76,7 @@ See the [regions reference](https://cursor.com/docs/account/regions.md) for prov
 
 ## Related
 
+- [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 - [API keys](https://cursor.com/help/models-and-usage/api-keys.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md)
