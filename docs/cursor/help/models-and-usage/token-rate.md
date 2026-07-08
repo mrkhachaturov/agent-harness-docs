@@ -4,7 +4,7 @@ Teams plan users pay a Cursor Token Rate of $0.25 per million tokens on all non-
 
 ## What does the Cursor Token Rate cover?
 
-- Semantic search and codebase indexing infrastructure
+- Search infrastructure
 - Custom model execution and routing
 - Processing and infrastructure costs
 

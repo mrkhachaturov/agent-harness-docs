@@ -100,10 +100,8 @@ Not all files in your repositories should be accessible to AI. Configuration fil
 
 The `.cursorignore` file works like `.gitignore` but controls what Cursor can access. Files matching patterns in `.cursorignore` are excluded from:
 
-- [Semantic search](https://cursor.com/docs/agent/tools/search.md)
 - Agent file reading
 - Context selection
-- Semantic search
 
 `.cursorignore` is not a security boundary. It's a convenience feature to exclude files from AI processing, but:
 

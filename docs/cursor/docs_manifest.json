@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "58dc65e0ebd73673f660302e9b593be64938d3ea1d9542b17acc614a9de55c56",
-      "last_updated": "2026-07-07T14:19:05.864606"
+      "hash": "6bea2cbe59657d3c3c2f2348616757a948533eb44e9f05125e52acac92b8fb53",
+      "last_updated": "2026-07-08T02:09:33.200895"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -87,8 +87,8 @@
     "agent/overview.md": {
       "original_url": "https://cursor.com/docs/agent/overview",
       "original_md_url": "https://cursor.com/docs/agent/overview.md",
-      "hash": "87ed6500533feacada5b0bbfd908d25be97a426d17ed1a8c2b003f05e252c9eb",
-      "last_updated": "2026-06-29T22:53:03.546006"
+      "hash": "200ac95ea6bcb9ec61c65efd53eff388c1b5f3620b9420f9fc0953f0b2279ac4",
+      "last_updated": "2026-07-08T02:09:33.201194"
     },
     "agent/plan-mode.md": {
       "original_url": "https://cursor.com/docs/agent/plan-mode",
@@ -369,8 +369,8 @@
     "enterprise/llm-safety-and-controls.md": {
       "original_url": "https://cursor.com/docs/enterprise/llm-safety-and-controls",
       "original_md_url": "https://cursor.com/docs/enterprise/llm-safety-and-controls.md",
-      "hash": "c1f190033f54f17281d45d9e5ccb8cb8ffee4c9d924ee6083b7e88864a7d93f6",
-      "last_updated": "2026-07-07T14:19:05.865710"
+      "hash": "9301c7356685c2e133a35845c83b1788e857f344f07510ca7c95599cba207812",
+      "last_updated": "2026-07-08T02:09:33.202125"
     },
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
@@ -405,8 +405,8 @@
     "enterprise/privacy-and-data-governance.md": {
       "original_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
       "original_md_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance.md",
-      "hash": "c331c38c06e8e5d5ac9ef210614a2dc18bb2c08619b6fe79585c9e990bc3f3f6",
-      "last_updated": "2026-06-29T22:53:03.559155"
+      "hash": "fc7818f48e003495986a1951eb59d112523ba218fc04753c345ef98b5b3bdda3",
+      "last_updated": "2026-07-08T02:09:33.202413"
     },
     "enterprise/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/enterprise/private-connectivity",
@@ -681,8 +681,8 @@
     "help/customization/indexing.md": {
       "original_url": "https://cursor.com/help/customization/indexing",
       "original_md_url": "https://cursor.com/help/customization/indexing.md",
-      "hash": "814b52d88e6ef516b55b70d7364d366c29aee3c7dda395b05c68370909d8e97a",
-      "last_updated": "2026-06-29T22:53:03.567325"
+      "hash": "253603fc4455ae2f2ecb500c143e62fc37d857faff981139c23d1017f0cd69ce",
+      "last_updated": "2026-07-08T02:09:33.202919"
     },
     "help/customization/keyboard-shortcuts.md": {
       "original_url": "https://cursor.com/help/customization/keyboard-shortcuts",
@@ -789,8 +789,8 @@
     "help/models-and-usage/token-rate.md": {
       "original_url": "https://cursor.com/help/models-and-usage/token-rate",
       "original_md_url": "https://cursor.com/help/models-and-usage/token-rate.md",
-      "hash": "4a2e62f68f8f3a903ea2b7a68318f59508a0931c24d7c89fd8a2a052e9629362",
-      "last_updated": "2026-06-29T22:53:03.569664"
+      "hash": "c7b5f7043f2496f54bd0bf95005e02432c73cf9be622b53781e0b6686b300b4b",
+      "last_updated": "2026-07-08T02:09:33.203263"
     },
     "help/models-and-usage/usage-limits.md": {
       "original_url": "https://cursor.com/help/models-and-usage/usage-limits",
@@ -837,8 +837,8 @@
     "help/troubleshooting/agent-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/agent-issues",
       "original_md_url": "https://cursor.com/help/troubleshooting/agent-issues.md",
-      "hash": "d2cc99703013d60081129d7b1abf11541d0075b546dea59f22f0d350a407691c",
-      "last_updated": "2026-06-29T22:53:03.570692"
+      "hash": "0eeed885d38316d536b5c792a7c41ef5a812cb90cf85db40f8c5a9a32131b037",
+      "last_updated": "2026-07-08T02:09:33.203530"
     },
     "help/troubleshooting/extensions.md": {
       "original_url": "https://cursor.com/help/troubleshooting/extensions",
@@ -921,8 +921,8 @@
     "integrations/jetbrains.md": {
       "original_url": "https://cursor.com/docs/integrations/jetbrains",
       "original_md_url": "https://cursor.com/docs/integrations/jetbrains.md",
-      "hash": "541923271c2a3b0e2d2fdbc7e6cb4b399058750131137a0c3e68b8a52d305212",
-      "last_updated": "2026-06-29T22:53:03.572555"
+      "hash": "088e79280216081e3ff4af6fe92db294633268912f6efd22f5575c68bf46a18f",
+      "last_updated": "2026-07-08T02:09:33.203976"
     },
     "integrations/jira.md": {
       "original_url": "https://cursor.com/docs/integrations/jira",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-07T22:10:30.976619",
-    "fetch_duration_seconds": 1.734975,
+    "last_fetch_completed": "2026-07-08T02:09:33.207022",
+    "fetch_duration_seconds": 2.948141,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-07T22:10:30.976634",
+  "last_updated": "2026-07-08T02:09:33.207035",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

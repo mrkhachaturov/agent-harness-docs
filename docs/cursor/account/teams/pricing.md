@@ -61,7 +61,7 @@ On-demand usage is enabled by default for the Teams plan.
 
 All non-Auto agent requests include a **Cursor Token Rate of $0.25 per million tokens**. This covers:
 
-- [Semantic search](https://cursor.com/docs/agent/tools/search.md)
+- [Codebase search](https://cursor.com/docs/agent/tools/search.md)
 - Custom model execution (Tab, Apply, etc.)
 - Infrastructure and processing costs
 

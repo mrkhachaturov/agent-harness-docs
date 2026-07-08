@@ -22,10 +22,6 @@ To understand how tool calling works under the hood, see our [tool calling funda
 
 There is no limit on the number of tool calls Agent can make during a task.
 
-### Semantic search
-
-Perform semantic searches within your [indexed codebase](https://cursor.com/docs/agent/tools/search.md). Finds code by meaning, not just exact matches.
-
 ### Search files and folders
 
 Search for files by name, read directory structures, and find exact keywords or patterns within files.

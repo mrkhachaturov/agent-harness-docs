@@ -12,7 +12,7 @@ Fixes for common Agent issues with file access, rules, terminal commands, and mo
 
 ## What if Agent doesn't pick up my files?
 
-1. Check your `.cursorignore` file in the project root. Files listed there are blocked from Agent, semantic search, and `@` mentions.
+1. Check your `.cursorignore` file in the project root. Files listed there are blocked from Agent, codebase search, and `@` mentions.
 2. Check `.gitignore`. Patterns there can also prevent Agent from discovering files.
 3. Reindex your project: open the command palette and search for "Reindex."
 4. Attach files directly by typing `@` followed by the filename in the chat input.

@@ -4,7 +4,7 @@ Cursor indexes your codebase so Agent can find relevant code quickly. Code index
 
 ## How does codebase indexing work?
 
-When you open a project, Cursor scans and indexes your source files. This enables semantic search and gives Agent better context about your codebase. The index syncs periodically (roughly every five minutes) to pick up changes.
+When you open a project, Cursor scans and indexes your source files. This gives Agent better context about your codebase. The index syncs periodically (roughly every five minutes) to pick up changes.
 
 ## How do I check codebase indexing status?
 
@@ -23,7 +23,6 @@ For large repositories, indexing can take time. To speed it up:
 
 ## Related
 
-- [Semantic search reference](https://cursor.com/docs/agent/tools/search.md)
 - [Ignore files](https://cursor.com/help/customization/ignore-files.md)
 
 
