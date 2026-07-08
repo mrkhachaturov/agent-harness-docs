@@ -969,8 +969,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "7a7ca876381a178198b319d68678b938418bb2c867bb001b93a5c4fb60c05176",
-      "last_updated": "2026-07-07T14:19:05.867398"
+      "hash": "b334e691311589ea959c97bc75484edd21a04eb2b0e21c3ad2624a35b86a81a4",
+      "last_updated": "2026-07-08T13:52:19.874033"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-08T11:01:36.521320",
-    "fetch_duration_seconds": 1.520172,
+    "last_fetch_completed": "2026-07-08T13:52:19.877160",
+    "fetch_duration_seconds": 1.568795,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-08T11:01:36.521333",
+  "last_updated": "2026-07-08T13:52:19.877174",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -29,7 +29,7 @@ Composer 2.5 is Cursor's own model, trained to be highly capable for agentic cod
 
 ## API pool
 
-When you select a specific model (or use Premium routing), usage is drawn from the API pool at that model's API rate.
+When you select a specific model, usage is drawn from the API pool at that model's API rate.
 
 ### Model pricing
 
@@ -78,12 +78,6 @@ All prices are per million tokens, sourced from each provider's API pricing:
 | [Grok 4.3](https://docs.x.ai/docs/models#models-and-pricing)                                  | SpaceXAI  | $1.25 | -           | $0.2       | $2.5   | Hidden by default; Requires Max Mode on request-based plans                                                                                                                                                                                                                                                                                                                                                                              |
 | [Grok Build 0.1](https://docs.x.ai/developers/models/grok-build-0.1)                          | SpaceXAI  | $1    | -           | $0.2       | $2     | The cost is 2x when the input exceeds 200k tokens; No user-configurable reasoning effort                                                                                                                                                                                                                                                                                                                                                 |
 | Kimi K2.7 Code                                                                                | Moonshot  | $0.95 | -           | $0.19      | $4     | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                        |
-
-### Premium routing
-
-Premium allows Cursor to select the most capable models for you, recommended for the most complex tasks. The Cursor team selects Premium models based on internal benchmarks, evaluations, and user feedback.
-
-Premium pricing is based on the selected model's API rate. Check your [usage page](https://cursor.com/dashboard/usage) to see cost and model selection at the request level.
 
 ## Plans
 
