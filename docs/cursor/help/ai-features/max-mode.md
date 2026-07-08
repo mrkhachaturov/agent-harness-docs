@@ -14,7 +14,7 @@ Max Mode is available on all models. It's most impactful on models with context 
 
 Max Mode uses token-based pricing, so a single request can use significantly more of your usage budget than a normal request.
 
-On current individual plans, Max Mode is billed at the model's API rate. On Teams plans, non-Auto requests include the Cursor Token Rate. On legacy request-based plans, Max Mode adds a 20% surcharge.
+On current individual plans, Max Mode is billed at the model's API rate. On Teams plans, Max Mode includes the Cursor Token Rate only for non-Auto third-party model requests. On legacy request-based plans, Max Mode adds a 20% surcharge.
 
 If you're watching your usage carefully, use Max Mode selectively for tasks that benefit from the larger context window.
 

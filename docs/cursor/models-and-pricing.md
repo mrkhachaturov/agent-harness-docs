@@ -121,13 +121,13 @@ Learn more about [Teams pricing](https://cursor.com/docs/account/teams/pricing.m
 
 ## Cursor Token Rate
 
-On Teams plans, non-Auto agent requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage. Auto is exempt from the Cursor Token Rate.
+On Teams and Enterprise plans, non-Auto third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage. Auto requests and all first-party models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
 
 ## Max Mode
 
 Max Mode extends the context window to the maximum a model supports. More context gives models deeper understanding of your codebase, leading to better results on complex tasks. The models table above shows each model's maximum context size.
 
-Max Mode uses token-based pricing at the model's API rate, so it consumes usage faster than the default context window. On current individual plans, Max Mode is billed at the model's API rate. On Teams plans, non-Auto requests include the Cursor Token Rate. On legacy request-based plans, Max Mode adds a 20% surcharge.
+Max Mode uses token-based pricing at the model's API rate, so it consumes usage faster than the default context window. On current individual plans, Max Mode is billed at the model's API rate. On Teams plans, Max Mode includes the Cursor Token Rate only for non-Auto third-party model requests. On legacy request-based plans, Max Mode adds a 20% surcharge.
 
 ## FAQ
 

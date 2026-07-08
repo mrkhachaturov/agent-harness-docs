@@ -21,8 +21,8 @@
     "account/teams/analytics.md": {
       "original_url": "https://cursor.com/docs/account/teams/analytics",
       "original_md_url": "https://cursor.com/docs/account/teams/analytics.md",
-      "hash": "ca8fe641c3226ce22b83a1d8624f727cb0bcce8ff03e5062ae4ce1191186be5c",
-      "last_updated": "2026-06-29T22:53:03.542098"
+      "hash": "d40f675fe20bd0b9cb0defc145eb7d17afc481d3052a44783df24163efc1e649",
+      "last_updated": "2026-07-08T22:07:34.192794"
     },
     "account/teams/dashboard.md": {
       "original_url": "https://cursor.com/docs/account/teams/dashboard",
@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "5cc021ddba48f7faac47ab433ce7813d05d53020a0bf043177bfcdd86976042f",
-      "last_updated": "2026-07-08T19:18:21.207696"
+      "hash": "7e1d91854ab0344a12ed653de0b8fe56e9031af87e2a82cce2c8f603f36257ee",
+      "last_updated": "2026-07-08T22:07:34.193177"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -477,8 +477,8 @@
     "help/account-and-billing/overages.md": {
       "original_url": "https://cursor.com/help/account-and-billing/overages",
       "original_md_url": "https://cursor.com/help/account-and-billing/overages.md",
-      "hash": "21ef8e119827461728ef1f791ddda44917e47376a3065ce50b1d11255d4ebc62",
-      "last_updated": "2026-06-29T22:53:03.561931"
+      "hash": "abb407c971b7ac20d037c6e068e66e4a562fc6d83f0462baa9af387d462e8489",
+      "last_updated": "2026-07-08T22:07:34.194585"
     },
     "help/account-and-billing/payment-issues.md": {
       "original_url": "https://cursor.com/help/account-and-billing/payment-issues",
@@ -615,8 +615,8 @@
     "help/ai-features/max-mode.md": {
       "original_url": "https://cursor.com/help/ai-features/max-mode",
       "original_md_url": "https://cursor.com/help/ai-features/max-mode.md",
-      "hash": "580b7fc66abb67e6ad213c5951b01a9800f8f74da8047a112515e66d1d8554b1",
-      "last_updated": "2026-06-29T22:53:03.565865"
+      "hash": "b7c889bb64f29df3f81ac59ffd41cbc9b92e701e436787aebf5b86abd5995126",
+      "last_updated": "2026-07-08T22:07:34.194950"
     },
     "help/ai-features/mobile-app.md": {
       "original_url": "https://cursor.com/help/ai-features/mobile-app",
@@ -795,8 +795,8 @@
     "help/models-and-usage/token-rate.md": {
       "original_url": "https://cursor.com/help/models-and-usage/token-rate",
       "original_md_url": "https://cursor.com/help/models-and-usage/token-rate.md",
-      "hash": "c7b5f7043f2496f54bd0bf95005e02432c73cf9be622b53781e0b6686b300b4b",
-      "last_updated": "2026-07-08T02:09:33.203263"
+      "hash": "b3ceff79de7344d9fc14f5c9c267bf2544e08a1285e26ff597d4be51130c28af",
+      "last_updated": "2026-07-08T22:07:34.195325"
     },
     "help/models-and-usage/usage-limits.md": {
       "original_url": "https://cursor.com/help/models-and-usage/usage-limits",
@@ -975,8 +975,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "bdd9e19b086def69a2a39cd2bfd0ef6a69c8cc383116aa6d9cccbc7e66267ec4",
-      "last_updated": "2026-07-08T19:18:21.211299"
+      "hash": "b94d47b7c51b7e9a54f462f83dbee0e468da79f9c57da8cb26692b965f155db2",
+      "last_updated": "2026-07-08T22:07:34.196037"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1082,8 +1082,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-08T19:18:21.214633",
-    "fetch_duration_seconds": 1.729414,
+    "last_fetch_completed": "2026-07-08T22:07:34.198565",
+    "fetch_duration_seconds": 2.907853,
     "total_pages_discovered": 180,
     "pages_fetched_successfully": 180,
     "pages_failed": 0,
@@ -1096,7 +1096,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-08T19:18:21.214646",
+  "last_updated": "2026-07-08T22:07:34.198581",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

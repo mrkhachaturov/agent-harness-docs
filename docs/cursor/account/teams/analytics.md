@@ -166,7 +166,7 @@ All classification runs on-device. Default classifiers ensure no PII or sensitiv
 
 ### Pricing
 
-Conversation Insights is free during the preview period. Starting January 1st, 2026, customers will be charged for inference plus the Cursor Token Rate.
+Conversation Insights is free during the preview period. Starting January 1st, 2026, customers will be charged for inference. The Cursor Token Rate applies only when the underlying request is a non-Auto third-party model request.
 
 ## Cloud Agent Usage
 
