@@ -32,9 +32,9 @@ Cloud agents support HTTP and stdio servers, plus OAuth for servers that need it
 
 Yes. Cloud Agents run command-based hooks from `.cursor/hooks.json` in your repository. On Enterprise plans, they also run team hooks and enterprise-managed hooks.
 
-Supported hooks include `beforeShellExecution`, `afterShellExecution`, `beforeReadFile`, `afterFileEdit`, `preToolUse`, `postToolUse`, `postToolUseFailure`, `subagentStart`, `subagentStop`, and `preCompact`.
+Supported hooks include tool and file hooks (`beforeShellExecution`, `afterShellExecution`, `beforeReadFile`, `afterFileEdit`, `preToolUse`, `postToolUse`, `postToolUseFailure`) and lifecycle hooks (`subagentStart`, `subagentStop`, `beforeSubmitPrompt`, `preCompact`, `afterAgentResponse`, `afterAgentThought`, and `stop`).
 
-Some hooks are not available in cloud agents. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. Hooks tied to session lifecycle (`sessionStart`, `sessionEnd`, `beforeSubmitPrompt`) can't run because the cloud VM doesn't exist when the session begins on [cursor.com/agents](https://cursor.com/agents). Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
+Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply because cloud agents have no editor-lifetime session boundary. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
 
 See the [full hooks support matrix](https://cursor.com/docs/hooks.md#cloud-agent-support) for details.
 

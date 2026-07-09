@@ -80,9 +80,9 @@ Cloud Agents also include a built-in [Cursor Cloud MCP](https://cursor.com/docs/
 
 Cloud agents run command-based hooks from `.cursor/hooks.json` in your repository. On Enterprise plans, they also run team hooks and enterprise-managed hooks.
 
-This keeps formatters, audit scripts, and policy checks active when work runs in the cloud. Hooks like `beforeShellExecution`, `afterFileEdit`, `preToolUse`, and `subagentStart` all work in cloud agents.
+This keeps formatters, audit scripts, and policy checks active when work runs in the cloud. Supported hooks include tool and file hooks (`preToolUse`, `beforeShellExecution`, `afterFileEdit`), plus lifecycle hooks (`beforeSubmitPrompt`, `subagentStart` / `subagentStop`, `preCompact`, `afterAgentResponse` / `afterAgentThought`, and `stop`).
 
-Some hooks are IDE-specific (Tab hooks, `workspaceOpen`) or depend on client-side wiring (`sessionStart`, `beforeSubmitPrompt`, prompt-based hooks) and don't run in cloud agents. User-level hooks from `~/.cursor/hooks.json` are also not available since cloud VMs don't have access to your local home directory.
+Hooks do not run during early exploratory turns in a read-only environment; they start once the agent has a writable environment. Some hooks are IDE-specific (Tab hooks, `workspaceOpen`). User-level hooks from `~/.cursor/hooks.json` are also not available since cloud VMs don't have access to your local home directory.
 
 See [Hooks: Cloud agent support](https://cursor.com/docs/hooks.md#cloud-agent-support) for the full support matrix and details.
 

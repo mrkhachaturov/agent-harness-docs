@@ -243,8 +243,8 @@
     "cloud-agent.md": {
       "original_url": "https://cursor.com/docs/cloud-agent",
       "original_md_url": "https://cursor.com/docs/cloud-agent.md",
-      "hash": "3f2dacefb7c4be0979bdd533b441f0382c1d20481c2b142b325d024ec90b2ca2",
-      "last_updated": "2026-06-30T15:55:23.029876"
+      "hash": "33919f13b1d2d24799bcdb5480c0d4b55abe3237156e6fbbfbf282094968f3d3",
+      "last_updated": "2026-07-09T19:36:10.443012"
     },
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
@@ -591,8 +591,8 @@
     "help/ai-features/cloud-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/cloud-agents",
       "original_md_url": "https://cursor.com/help/ai-features/cloud-agents.md",
-      "hash": "e122b2c5e0d2792d76566dc1b407e36c78b72a3c5e02f2fafa7143019c57b7ed",
-      "last_updated": "2026-07-07T17:11:37.448829"
+      "hash": "36c7e0e2a633b4d472372862db79965dd0ce4cf72025c9e8d76c8487efb67927",
+      "last_updated": "2026-07-09T19:36:10.443961"
     },
     "help/ai-features/coding-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/coding-agents",
@@ -885,8 +885,8 @@
     "hooks.md": {
       "original_url": "https://cursor.com/docs/hooks",
       "original_md_url": "https://cursor.com/docs/hooks.md",
-      "hash": "d3130030d3e80caea4202ac09f5cd91146ab8a12e8870ef2cc45450d88e2b5b7",
-      "last_updated": "2026-06-29T22:53:03.571627"
+      "hash": "cfc732d8d2f210cc34f5eb060eba7fd65a891159dc1cdb228f6171fb9cd1018a",
+      "last_updated": "2026-07-09T19:36:10.444611"
     },
     "index.md": {
       "original_url": "https://cursor.com/docs",
@@ -1088,8 +1088,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-09T17:20:57.577537",
-    "fetch_duration_seconds": 2.532666,
+    "last_fetch_completed": "2026-07-09T19:36:10.447586",
+    "fetch_duration_seconds": 2.103378,
     "total_pages_discovered": 181,
     "pages_fetched_successfully": 181,
     "pages_failed": 0,
@@ -1102,7 +1102,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-09T17:20:57.577549",
+  "last_updated": "2026-07-09T19:36:10.447598",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
