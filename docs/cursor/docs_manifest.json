@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "7e1d91854ab0344a12ed653de0b8fe56e9031af87e2a82cce2c8f603f36257ee",
-      "last_updated": "2026-07-08T22:07:34.193177"
+      "hash": "d415bbbc0263fce5b39b2840b9c30673c6780bdb9be4b4606b3f6303897ac072",
+      "last_updated": "2026-07-09T17:20:57.571669"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -891,8 +891,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "47b02c4923784ccdd4c033980257850d2ed29bc9b9dd82cb46af2118200d96a8",
-      "last_updated": "2026-07-09T14:47:37.913624"
+      "hash": "9146fb2e31d804627f1ce397081fc563c8c4cf403251920993d8ae7c903c9ef4",
+      "last_updated": "2026-07-09T17:20:57.573260"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -933,8 +933,8 @@
     "integrations/jira.md": {
       "original_url": "https://cursor.com/docs/integrations/jira",
       "original_md_url": "https://cursor.com/docs/integrations/jira.md",
-      "hash": "16ad0f2e7fe0b11f2d8dc62dc5c58fc0a5bdc9e5ac5f7bf9479a4a17c43ea3c5",
-      "last_updated": "2026-06-29T22:53:03.572703"
+      "hash": "ebae347e791364d2022a8d62937671b81504eb5bfd7222af8ec2846fa3a2fe72",
+      "last_updated": "2026-07-09T17:20:57.573526"
     },
     "integrations/linear.md": {
       "original_url": "https://cursor.com/docs/integrations/linear",
@@ -975,8 +975,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "b94d47b7c51b7e9a54f462f83dbee0e468da79f9c57da8cb26692b965f155db2",
-      "last_updated": "2026-07-08T22:07:34.196037"
+      "hash": "c3f4d679360722ee9891a95b6b5834b9d1295f02c09c9aed756cc9a4f805051d",
+      "last_updated": "2026-07-09T17:20:57.573907"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1014,17 +1014,23 @@
       "hash": "0e0483bae40bdb56b577082920786131ef6f8108aa36db2ef898d89f2abddcea",
       "last_updated": "2026-06-29T22:53:03.574330"
     },
-    "models/gpt-5-3-codex.md": {
-      "original_url": "https://cursor.com/docs/models/gpt-5-3-codex",
-      "original_md_url": "https://cursor.com/docs/models/gpt-5-3-codex.md",
-      "hash": "24d9eb400eb9bfcfbf9e01b944e48db712740e6944577afbae15e9922082ad33",
-      "last_updated": "2026-06-29T22:53:03.574440"
+    "models/gpt-5-6-luna.md": {
+      "original_url": "https://cursor.com/docs/models/gpt-5-6-luna",
+      "original_md_url": "https://cursor.com/docs/models/gpt-5-6-luna.md",
+      "hash": "a1b4e773054ca23270a1671b757d8d2b28d4da91c5ada5fd12b0470c411453a0",
+      "last_updated": "2026-07-09T17:20:57.574103"
     },
-    "models/gpt-5-5.md": {
-      "original_url": "https://cursor.com/docs/models/gpt-5-5",
-      "original_md_url": "https://cursor.com/docs/models/gpt-5-5.md",
-      "hash": "5c609168e25ff4588ec1f90e3d04371fb8124c3e518737f9da4901a32dd9ed7b",
-      "last_updated": "2026-06-29T22:53:03.574544"
+    "models/gpt-5-6-sol.md": {
+      "original_url": "https://cursor.com/docs/models/gpt-5-6-sol",
+      "original_md_url": "https://cursor.com/docs/models/gpt-5-6-sol.md",
+      "hash": "2b6c3fc0abd84c6a967a1de052deaf64e189de69513ad22d6b2ea5c92114d2bc",
+      "last_updated": "2026-07-09T17:20:57.574279"
+    },
+    "models/gpt-5-6-terra.md": {
+      "original_url": "https://cursor.com/docs/models/gpt-5-6-terra",
+      "original_md_url": "https://cursor.com/docs/models/gpt-5-6-terra.md",
+      "hash": "a26cf7e3835fad9443eae90cec101c2fa584d53e1761248e2c6d10d5618d1166",
+      "last_updated": "2026-07-09T17:20:57.574422"
     },
     "models/grok-4-5.md": {
       "original_url": "https://cursor.com/docs/models/grok-4-5",
@@ -1077,26 +1083,26 @@
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
       "original_md_url": "https://cursor.com/docs/subagents.md",
-      "hash": "18e9d77d904d1f12f71285dc2ff3f72885b04aae35c7982a5183459035d23b21",
-      "last_updated": "2026-07-07T19:58:23.242745"
+      "hash": "20689c5a050ba6d7a08e9e838ba976a5045c620a32216a8c90092085b19f29a0",
+      "last_updated": "2026-07-09T17:20:57.575007"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-09T14:47:37.916865",
-    "fetch_duration_seconds": 2.014333,
-    "total_pages_discovered": 180,
-    "pages_fetched_successfully": 180,
+    "last_fetch_completed": "2026-07-09T17:20:57.577537",
+    "fetch_duration_seconds": 2.532666,
+    "total_pages_discovered": 181,
+    "pages_fetched_successfully": 181,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 180,
+    "total_files": 181,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-09T14:47:37.916879",
+  "last_updated": "2026-07-09T17:20:57.577549",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

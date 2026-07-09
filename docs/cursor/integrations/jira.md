@@ -91,7 +91,7 @@ Examples:
 
 - `@Cursor please investigate this regression`
 - `@Cursor repo=acme/backend branch=release fix this before the release cut`
-- `@Cursor model=gpt-5.5 and update the related tests`
+- `@Cursor model=gpt-5.6-sol and update the related tests`
 
 ### Follow-up instructions
 
