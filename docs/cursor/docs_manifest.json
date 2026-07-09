@@ -891,8 +891,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "5b281c28bb129992f7fce2f3085b1ff70d964956eeaac0ccce6bb91696743e68",
-      "last_updated": "2026-07-08T19:18:21.210846"
+      "hash": "47b02c4923784ccdd4c033980257850d2ed29bc9b9dd82cb46af2118200d96a8",
+      "last_updated": "2026-07-09T14:47:37.913624"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -1082,8 +1082,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-09T11:55:02.963103",
-    "fetch_duration_seconds": 2.40553,
+    "last_fetch_completed": "2026-07-09T14:47:37.916865",
+    "fetch_duration_seconds": 2.014333,
     "total_pages_discovered": 180,
     "pages_fetched_successfully": 180,
     "pages_failed": 0,
@@ -1096,7 +1096,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-09T11:55:02.963116",
+  "last_updated": "2026-07-09T14:47:37.916879",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
