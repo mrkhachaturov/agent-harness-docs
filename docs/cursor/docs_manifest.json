@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "d415bbbc0263fce5b39b2840b9c30673c6780bdb9be4b4606b3f6303897ac072",
-      "last_updated": "2026-07-09T17:20:57.571669"
+      "hash": "650c081cf598b0345ee60e61b61e4bd69a92d0d8dcad8c0d08f65b986db462be",
+      "last_updated": "2026-07-10T02:30:01.157464"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -891,8 +891,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "9146fb2e31d804627f1ce397081fc563c8c4cf403251920993d8ae7c903c9ef4",
-      "last_updated": "2026-07-09T17:20:57.573260"
+      "hash": "d8f5bb78fc1107ed59d05cf7cd64805963c6a03bb185078e21a47488eb4fda47",
+      "last_updated": "2026-07-10T02:30:01.159216"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -975,8 +975,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "c3f4d679360722ee9891a95b6b5834b9d1295f02c09c9aed756cc9a4f805051d",
-      "last_updated": "2026-07-09T17:20:57.573907"
+      "hash": "608f89839de515953578b0af7cd264211b704ade4968b444e3fece19641c3fab",
+      "last_updated": "2026-07-10T02:30:01.159669"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1088,8 +1088,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-09T22:20:50.721013",
-    "fetch_duration_seconds": 2.735886,
+    "last_fetch_completed": "2026-07-10T02:30:01.161769",
+    "fetch_duration_seconds": 2.528109,
     "total_pages_discovered": 181,
     "pages_fetched_successfully": 181,
     "pages_failed": 0,
@@ -1102,7 +1102,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-09T22:20:50.721027",
+  "last_updated": "2026-07-10T02:30:01.161787",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
