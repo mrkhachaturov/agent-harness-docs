@@ -32,7 +32,9 @@ Cloud agents support HTTP and stdio servers, plus OAuth for servers that need it
 
 Yes. Cloud Agents run command-based hooks from `.cursor/hooks.json` in your repository. On Enterprise plans, they also run team hooks and enterprise-managed hooks.
 
-Supported hooks include tool and file hooks (`beforeShellExecution`, `afterShellExecution`, `beforeReadFile`, `afterFileEdit`, `preToolUse`, `postToolUse`, `postToolUseFailure`) and lifecycle hooks (`subagentStart`, `subagentStop`, `beforeSubmitPrompt`, `preCompact`, `afterAgentResponse`, `afterAgentThought`, and `stop`).
+Supported hooks include tool and file hooks (`beforeShellExecution`, `afterShellExecution`, `beforeReadFile`, `afterFileEdit`, `preToolUse`, `postToolUse`, `postToolUseFailure`) and conversation-level lifecycle hooks such as `beforeSubmitPrompt`, `afterAgentResponse`, `afterAgentThought`, `stop`, `subagentStart`, `subagentStop`, and `preCompact`.
+
+Conversation-level hooks let you observe prompts, responses, and thinking; control subagents; react to compaction; and run logic when a turn completes. You can use them to build self-correcting loops around agent output and reasoning.
 
 Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply because cloud agents have no editor-lifetime session boundary. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
 
@@ -51,6 +53,17 @@ Cloud Agents are available on all paid Cursor plans.
 ## How do I set up Cloud Agents?
 
 Create a new environment in your [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#environments). You'll connect your GitHub, GitLab, Azure DevOps, or Bitbucket Cloud account, select one or more repositories, add secrets or environment variables, and verify the setup. See the [full setup guide](https://cursor.com/docs/cloud-agent/setup.md) for multi-repo environments, environment-scoped secrets, network access, and Dockerfiles.
+
+## How do I use the redesigned project and repo picker?
+
+The project picker keeps common setup steps in one place. You can:
+
+- Create a project without leaving the picker
+- Connect GitHub, GitLab, or Azure DevOps inline
+- Search projects scoped by location: **This Computer**, **Cloud**, or a remote machine
+- Remove a project from **Recents** with one click
+
+Remote Machines are consolidated in the same picker flow so you can open local, cloud, and remote work from one place.
 
 ## How do I start a Cloud Agent task?
 

@@ -543,8 +543,8 @@
     "help/ai-features/agent.md": {
       "original_url": "https://cursor.com/help/ai-features/agent",
       "original_md_url": "https://cursor.com/help/ai-features/agent.md",
-      "hash": "2076815372c00f6f665a1aa84cd6157751ceb690c7c936fcab3a5772535856ed",
-      "last_updated": "2026-06-29T22:53:03.563882"
+      "hash": "4c78d130263ba4225dfac1025e24e5107fbd9f6c674b771a4a6f5cdead9a5198",
+      "last_updated": "2026-07-10T21:59:44.434289"
     },
     "help/ai-features/agentic-coding.md": {
       "original_url": "https://cursor.com/help/ai-features/agentic-coding",
@@ -591,14 +591,20 @@
     "help/ai-features/cloud-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/cloud-agents",
       "original_md_url": "https://cursor.com/help/ai-features/cloud-agents.md",
-      "hash": "36c7e0e2a633b4d472372862db79965dd0ce4cf72025c9e8d76c8487efb67927",
-      "last_updated": "2026-07-09T19:36:10.443961"
+      "hash": "3c1354e9d491d4ceb99a7dd8356fbe9e14222b2f4af49926cb412d9c28e8f18a",
+      "last_updated": "2026-07-10T21:59:44.434552"
     },
     "help/ai-features/coding-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/coding-agents",
       "original_md_url": "https://cursor.com/help/ai-features/coding-agents.md",
       "hash": "c4753e05ed814fc238da30ad473243469eff6e9c01aa2769ff7b61470817a583",
       "last_updated": "2026-06-29T22:53:03.565457"
+    },
+    "help/ai-features/conversation-search.md": {
+      "original_url": "https://cursor.com/help/ai-features/conversation-search",
+      "original_md_url": "https://cursor.com/help/ai-features/conversation-search.md",
+      "hash": "425d024438525355a9797f05aeb649200386bb6058325d73050c75b5b6d4a7f5",
+      "last_updated": "2026-07-10T21:59:44.434730"
     },
     "help/ai-features/debug-mode.md": {
       "original_url": "https://cursor.com/help/ai-features/debug-mode",
@@ -641,6 +647,12 @@
       "original_md_url": "https://cursor.com/help/ai-features/shared-transcripts.md",
       "hash": "33c4cdfe78922d1e1e4098068d3b9d92bc4d2b0d772cc4eacfba77d8620bd84a",
       "last_updated": "2026-06-29T22:53:03.566386"
+    },
+    "help/ai-features/side-chats.md": {
+      "original_url": "https://cursor.com/help/ai-features/side-chats",
+      "original_md_url": "https://cursor.com/help/ai-features/side-chats.md",
+      "hash": "ace24b666a347064e1009119ee5ae55b7be1c880edaf6235ee2b650b1b39ec2a",
+      "last_updated": "2026-07-10T21:59:44.434912"
     },
     "help/ai-features/tab.md": {
       "original_url": "https://cursor.com/help/ai-features/tab",
@@ -1088,21 +1100,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-10T19:25:37.811699",
-    "fetch_duration_seconds": 1.805705,
-    "total_pages_discovered": 181,
-    "pages_fetched_successfully": 181,
+    "last_fetch_completed": "2026-07-10T21:59:44.438565",
+    "fetch_duration_seconds": 1.641776,
+    "total_pages_discovered": 183,
+    "pages_fetched_successfully": 183,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 181,
+    "total_files": 183,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-10T19:25:37.811741",
+  "last_updated": "2026-07-10T21:59:44.438578",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

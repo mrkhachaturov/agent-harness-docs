@@ -41,6 +41,10 @@ Yes. Agent can create images from text descriptions or reference images. This is
 
 Yes. Submit your next instruction while Agent is busy. Your message waits in a queue and runs automatically when the current task finishes. You can drag to reorder queued messages.
 
+## Can Agent search my past conversations for context?
+
+Yes. Conversation search is available as an agent tool. When Agent needs context from something you discussed before, it can query your past conversations on its own. You don't need to remember which chat it was in.
+
 ## Which mode should I use?
 
 | Mode      | Best for                                                     | Can edit files?                  |
@@ -68,6 +72,8 @@ Yes. Project rules, user rules, and team rules apply in Agent, Ask, Plan, and De
 - [Ask mode](https://cursor.com/help/ai-features/ask-mode.md)
 - [Plan mode](https://cursor.com/help/ai-features/plan-mode.md)
 - [Debug mode](https://cursor.com/help/ai-features/debug-mode.md)
+- [Side chats](https://cursor.com/help/ai-features/side-chats.md)
+- [Conversation search](https://cursor.com/help/ai-features/conversation-search.md)
 - [What are coding agents?](https://cursor.com/help/ai-features/coding-agents.md)
 - [What is agentic coding?](https://cursor.com/help/ai-features/agentic-coding.md)
 - [What is multi-agent coding?](https://cursor.com/help/ai-features/multi-agent.md)
