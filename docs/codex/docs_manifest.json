@@ -651,8 +651,8 @@
     "sites.md": {
       "original_url": "https://developers.openai.com/codex/sites",
       "original_md_url": "https://developers.openai.com/codex/sites.md",
-      "hash": "041c2cc10b1d89f44bb52d9d8f7621d00f2dffdde07fc99450d3c7ebd93be7f1",
-      "last_updated": "2026-07-09T17:20:41.050096"
+      "hash": "6ed7af9134f0de7f7c0691d27a639e06ac999f2d90ae182ebfef3a1415515231",
+      "last_updated": "2026-07-11T07:49:11.950720"
     },
     "skills-and-plugins.md": {
       "original_url": "https://developers.openai.com/codex/skills-and-plugins",
@@ -734,8 +734,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-11T05:38:01.852285",
-    "fetch_duration_seconds": 92.709148,
+    "last_fetch_completed": "2026-07-11T07:49:25.793213",
+    "fetch_duration_seconds": 102.681587,
     "total_pages_discovered": 128,
     "pages_fetched_successfully": 122,
     "pages_failed": 6,
@@ -752,7 +752,7 @@
     "total_files": 122,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-11T05:38:01.852300",
+  "last_updated": "2026-07-11T07:49:25.793228",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
