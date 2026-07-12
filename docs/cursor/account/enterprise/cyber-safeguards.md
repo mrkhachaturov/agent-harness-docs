@@ -56,7 +56,7 @@ Read the **Apply for Cyber Verification Program** dialog. Click **I understand**
 
 ## Anthropic Approval Process
 
-Anthropic reviews your application directly and contacts you about the outcome. Cursor rechecks your status every two hours, so the dashboard updates on its own and shows **Approved** once you're cleared.
+Anthropic reviews your application directly and contacts you about the outcome. Cursor rechecks your status every two hours, so the dashboard updates on its own and shows **Approved** once you're cleared. Cursor is not responsible for the status of your application or for tracking its progress. If you'd like to see your status in real time, check the [Anthropic portal](https://portal.anthropic.com).
 
 ## Enabling Cyber on a specific model
 
@@ -84,7 +84,7 @@ Anthropic sets the policy for cyber-verified models. Today, zero data retention 
 
 ### I applied for the CVP but don't see approval?
 
-Approval is not instant. After you apply for the CVP, Cursor checks for your approval every two hours.
+Approval is not instant. After you apply for the CVP, Cursor checks for your approval every two hours. Cursor is not responsible for the status of your application or for tracking its progress. If you'd like to see your status in real time, check the [Anthropic portal](https://portal.anthropic.com).
 
 ### Is Mythos included as a part of the CVP?
 
