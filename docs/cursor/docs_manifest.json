@@ -981,8 +981,8 @@
     "mcp.md": {
       "original_url": "https://cursor.com/docs/mcp",
       "original_md_url": "https://cursor.com/docs/mcp.md",
-      "hash": "af142f86d4a64bd91e0669c9bc4565df7ffdfd69b1084b5375f04df964476f59",
-      "last_updated": "2026-07-03T02:27:31.254820"
+      "hash": "1bbd67fb28afd37b34ac961d63c0e1577f3ec4fe94ecab08b1bdefa4c751715d",
+      "last_updated": "2026-07-13T17:13:41.836499"
     },
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
@@ -1100,8 +1100,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-13T14:26:05.720046",
-    "fetch_duration_seconds": 2.229622,
+    "last_fetch_completed": "2026-07-13T17:13:41.839620",
+    "fetch_duration_seconds": 1.614387,
     "total_pages_discovered": 183,
     "pages_fetched_successfully": 183,
     "pages_failed": 0,
@@ -1114,7 +1114,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-13T14:26:05.720060",
+  "last_updated": "2026-07-13T17:13:41.839635",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
