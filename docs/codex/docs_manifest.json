@@ -734,8 +734,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-12T21:46:01.013168",
-    "fetch_duration_seconds": 101.308512,
+    "last_fetch_completed": "2026-07-13T02:13:42.990456",
+    "fetch_duration_seconds": 106.960008,
     "total_pages_discovered": 128,
     "pages_fetched_successfully": 122,
     "pages_failed": 6,
@@ -752,7 +752,7 @@
     "total_files": 122,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-12T21:46:01.013188",
+  "last_updated": "2026-07-13T02:13:42.990475",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
