@@ -375,8 +375,8 @@
     "feature-maturity.md": {
       "original_url": "https://developers.openai.com/codex/feature-maturity",
       "original_md_url": "https://developers.openai.com/codex/feature-maturity.md",
-      "hash": "be70000019e4410c6df2f57a689e2db679d904cd73cfb14545c1ead595caf658",
-      "last_updated": "2026-05-25T17:34:10.104273"
+      "hash": "015a68276e2414872f5ab18034a3b412314ec9f3967510bb3b678c92a9f3eae9",
+      "last_updated": "2026-07-13T14:25:00.762520"
     },
     "features.md": {
       "original_url": "https://developers.openai.com/codex/features",
@@ -734,8 +734,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-13T12:01:24.712555",
-    "fetch_duration_seconds": 97.54398,
+    "last_fetch_completed": "2026-07-13T14:26:03.326767",
+    "fetch_duration_seconds": 101.357052,
     "total_pages_discovered": 128,
     "pages_fetched_successfully": 122,
     "pages_failed": 6,
@@ -752,7 +752,7 @@
     "total_files": 122,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-13T12:01:24.712576",
+  "last_updated": "2026-07-13T14:26:03.326784",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
