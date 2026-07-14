@@ -111,14 +111,14 @@
     "build-plugins.md": {
       "original_url": "https://developers.openai.com/codex/build-plugins",
       "original_md_url": "https://developers.openai.com/codex/build-plugins.md",
-      "hash": "0716a152e825974373acec8efd0b5fd2900a71e70650d322398b4e4b577573c6",
-      "last_updated": "2026-07-09T17:19:25.087192"
+      "hash": "71d34334545be1dcbf5e3dd81195b722ac030840ec61a057a7fc5e68fcef79cc",
+      "last_updated": "2026-07-14T19:11:25.718283"
     },
     "build-skills.md": {
       "original_url": "https://developers.openai.com/codex/build-skills",
       "original_md_url": "https://developers.openai.com/codex/build-skills.md",
-      "hash": "fd6df9feb02d02f17af9c8c180125955c5fc68f8d34d3c552209521963c84e1a",
-      "last_updated": "2026-07-09T17:19:25.700227"
+      "hash": "9ff1734f399f7819c293dfb0caf60efd2faae45b63624c6ff8270cbf3a528e0d",
+      "last_updated": "2026-07-14T19:11:26.296510"
     },
     "chrome-extension.md": {
       "original_url": "https://developers.openai.com/codex/chrome-extension",
@@ -519,8 +519,8 @@
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
       "original_md_url": "https://developers.openai.com/codex/plugins.md",
-      "hash": "a2eeb539e60d0db00761881921235915a8ec71692cabe771034d13d3ea14b6ad",
-      "last_updated": "2026-07-09T17:20:23.347962"
+      "hash": "94526e3b6e3c91709a7947ba39e07681f6fd893ce8c5e8a07f678c3449073dda",
+      "last_updated": "2026-07-14T19:12:20.291401"
     },
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
@@ -734,8 +734,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-14T16:13:48.558217",
-    "fetch_duration_seconds": 96.767925,
+    "last_fetch_completed": "2026-07-14T19:12:51.495797",
+    "fetch_duration_seconds": 97.30068,
     "total_pages_discovered": 128,
     "pages_fetched_successfully": 122,
     "pages_failed": 6,
@@ -752,7 +752,7 @@
     "total_files": 122,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-14T16:13:48.558231",
+  "last_updated": "2026-07-14T19:12:51.495817",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
