@@ -3,8 +3,8 @@
     "administration.md": {
       "original_url": "https://developers.openai.com/codex/administration",
       "original_md_url": "https://developers.openai.com/codex/administration.md",
-      "hash": "0aa13ef903df8e74bee31d0a20b8c0c96a6cc34a9edb4b21474d2e2b970994e2",
-      "last_updated": "2026-07-09T17:19:13.800059"
+      "hash": "0e24eeb3532b65aad63db00f853823c4f87c2a21e35c03a4c0b1d7766229b3b2",
+      "last_updated": "2026-07-15T05:26:53.699762"
     },
     "agent-approvals-security.md": {
       "original_url": "https://developers.openai.com/codex/agent-approvals-security",
@@ -69,8 +69,8 @@
     "app__windows.md": {
       "original_url": "https://developers.openai.com/codex/app/windows",
       "original_md_url": "https://developers.openai.com/codex/app/windows.md",
-      "hash": "968b51dcd23b8ad4aa69d9a5ecd3740a74a90a461f03276391b90f8d644acc56",
-      "last_updated": "2026-07-09T17:19:20.743203"
+      "hash": "cb405c21979828306ef3d10be38e9da18b39c978039bc640d0021040937dd771",
+      "last_updated": "2026-07-15T05:26:59.657483"
     },
     "appshots.md": {
       "original_url": "https://developers.openai.com/codex/appshots",
@@ -317,6 +317,12 @@
       "original_md_url": "https://developers.openai.com/codex/enterprise/usage-limits.md",
       "hash": "65e456540ef50366b99bf6131ec3f1163c3a3b845c780f6773d23f72b3b95647",
       "last_updated": "2026-07-09T17:19:46.398372"
+    },
+    "enterprise__windows-deployment.md": {
+      "original_url": "https://developers.openai.com/codex/enterprise/windows-deployment",
+      "original_md_url": "https://developers.openai.com/codex/enterprise/windows-deployment.md",
+      "hash": "7ab811999f26d7f55aba1c859167311790161866445139739edf616d0a558d92",
+      "last_updated": "2026-07-15T05:27:23.078803"
     },
     "enterprise__work-admin-faq.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/work-admin-faq",
@@ -717,8 +723,8 @@
     "windows__windows-app.md": {
       "original_url": "https://developers.openai.com/codex/windows/windows-app",
       "original_md_url": "https://developers.openai.com/codex/windows/windows-app.md",
-      "hash": "968b51dcd23b8ad4aa69d9a5ecd3740a74a90a461f03276391b90f8d644acc56",
-      "last_updated": "2026-07-09T17:20:53.638920"
+      "hash": "cb405c21979828306ef3d10be38e9da18b39c978039bc640d0021040937dd771",
+      "last_updated": "2026-07-15T05:28:25.324302"
     },
     "windows__windows-sandbox.md": {
       "original_url": "https://developers.openai.com/codex/windows/windows-sandbox",
@@ -734,10 +740,10 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-15T01:55:07.868887",
-    "fetch_duration_seconds": 99.379318,
-    "total_pages_discovered": 128,
-    "pages_fetched_successfully": 122,
+    "last_fetch_completed": "2026-07-15T05:28:26.406680",
+    "fetch_duration_seconds": 92.849089,
+    "total_pages_discovered": 129,
+    "pages_fetched_successfully": 123,
     "pages_failed": 6,
     "failed_urls": [
       "https://developers.openai.com/codex/community/codex-for-oss.md",
@@ -749,10 +755,10 @@
     ],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 122,
+    "total_files": 123,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-15T01:55:07.868907",
+  "last_updated": "2026-07-15T05:28:26.406698",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
