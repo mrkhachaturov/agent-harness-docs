@@ -27,8 +27,8 @@
     "agent-configuration__speed.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/speed",
       "original_md_url": "https://developers.openai.com/codex/agent-configuration/speed.md",
-      "hash": "3133e3b2af07b339f2cb6640495963e0897175bdc7b06ff871e104afc602f5b0",
-      "last_updated": "2026-07-09T17:19:16.272950"
+      "hash": "b5d971ca460539450d7daa45ea90496dcb32bde73c1f6fbe6211599395481d4c",
+      "last_updated": "2026-07-15T21:57:11.285612"
     },
     "agent-configuration__subagents.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/subagents",
@@ -746,8 +746,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-15T19:14:15.721908",
-    "fetch_duration_seconds": 107.525145,
+    "last_fetch_completed": "2026-07-15T21:58:43.800857",
+    "fetch_duration_seconds": 95.066723,
     "total_pages_discovered": 130,
     "pages_fetched_successfully": 124,
     "pages_failed": 6,
@@ -764,7 +764,7 @@
     "total_files": 124,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-15T19:14:15.721925",
+  "last_updated": "2026-07-15T21:58:43.800877",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

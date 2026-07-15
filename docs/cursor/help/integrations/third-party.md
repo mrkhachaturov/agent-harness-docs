@@ -22,7 +22,7 @@ Slack is also a Cloud Agent integration. To set it up:
 3. Install the Cursor app in your Slack workspace
 4. Complete Cloud Agent setup (connect a repository provider, enable usage-based pricing, confirm privacy settings)
 
-Once connected, mention `@Cursor` in any Slack channel with a prompt to start a Cloud Agent. Run `@Cursor help` for a full list of commands.
+Once connected, mention `@Cursor` in any Slack channel with a prompt to start a Cloud Agent. In a thread that already has an agent, ask for a new one in natural language (for example, `@Cursor start a new agent to fix the login bug`) or use `@Cursor agent [prompt]`. Run `@Cursor help` for a full list of commands.
 
 ## How do I connect Notion?
 

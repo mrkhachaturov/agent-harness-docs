@@ -783,8 +783,8 @@
     "help/integrations/third-party.md": {
       "original_url": "https://cursor.com/help/integrations/third-party",
       "original_md_url": "https://cursor.com/help/integrations/third-party.md",
-      "hash": "2bf18bc6050f04acae56bf3cde91b5ece7b6bbb0ee5946aad40e6a36668ab1dd",
-      "last_updated": "2026-07-07T19:58:23.241354"
+      "hash": "661350e52740d27ad5672f2b299b0723976fd9614dd0d3922abde7f5db955851",
+      "last_updated": "2026-07-15T21:58:45.689475"
     },
     "help/models-and-usage/api-keys.md": {
       "original_url": "https://cursor.com/help/models-and-usage/api-keys",
@@ -969,8 +969,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "2e91e9b2763e17975f559535b19dc5b078b3665ca6b0509a3bc93c86d0208722",
-      "last_updated": "2026-07-07T19:58:23.241964"
+      "hash": "e0453db5608c0a578d1ca28435db16987a20f841743d903f6bd3f41fc51f97e8",
+      "last_updated": "2026-07-15T21:58:45.690054"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1100,8 +1100,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-15T19:14:17.344594",
-    "fetch_duration_seconds": 1.444006,
+    "last_fetch_completed": "2026-07-15T21:58:45.692957",
+    "fetch_duration_seconds": 1.693747,
     "total_pages_discovered": 183,
     "pages_fetched_successfully": 183,
     "pages_failed": 0,
@@ -1114,7 +1114,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-15T19:14:17.344608",
+  "last_updated": "2026-07-15T21:58:45.692970",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
