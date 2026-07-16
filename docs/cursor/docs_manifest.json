@@ -405,8 +405,8 @@
     "enterprise/privacy-and-data-governance.md": {
       "original_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
       "original_md_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance.md",
-      "hash": "fc7818f48e003495986a1951eb59d112523ba218fc04753c345ef98b5b3bdda3",
-      "last_updated": "2026-07-08T02:09:33.202413"
+      "hash": "cf38fee054c8293c51975ec740fe6d00c8ebc94408c1af3782252c282343a168",
+      "last_updated": "2026-07-16T13:33:44.449770"
     },
     "enterprise/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/enterprise/private-connectivity",
@@ -843,8 +843,8 @@
     "help/security-and-privacy/regions.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/regions",
       "original_md_url": "https://cursor.com/help/security-and-privacy/regions.md",
-      "hash": "07e5d22481d5574d4ee37c516a7c16aa25b4900fe6c766a8d87ee55bf4990c18",
-      "last_updated": "2026-07-08T19:18:21.210382"
+      "hash": "bf5e3730ca66cc53030ab02bdd114c7c7a980b21418a0d37aad0452dfbe67886",
+      "last_updated": "2026-07-16T13:33:44.450445"
     },
     "help/security-and-privacy/sso.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/sso",
@@ -987,8 +987,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "608f89839de515953578b0af7cd264211b704ade4968b444e3fece19641c3fab",
-      "last_updated": "2026-07-10T02:30:01.159669"
+      "hash": "155f6287bef2ab51f4d77b66c31b8325a7d17bf696636d6513cdc7d54e35997c",
+      "last_updated": "2026-07-16T13:33:44.451037"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1100,8 +1100,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-16T10:56:30.174770",
-    "fetch_duration_seconds": 2.626895,
+    "last_fetch_completed": "2026-07-16T13:33:44.453215",
+    "fetch_duration_seconds": 3.585785,
     "total_pages_discovered": 183,
     "pages_fetched_successfully": 183,
     "pages_failed": 0,
@@ -1114,7 +1114,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-16T10:56:30.174786",
+  "last_updated": "2026-07-16T13:33:44.453229",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

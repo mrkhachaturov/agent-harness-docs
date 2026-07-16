@@ -20,9 +20,14 @@ At launch, [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) is a
 
 While you wait, use Auto or pick another model from the model picker.
 
+## Does Cursor offer data residency controls?
+
+Enterprise customers can enroll in US-only data residency so inference, processing, and storage for supported features stay in the US. See [Privacy and Data Governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md#data-residency) for supported models, exclusions, pricing, and how to enable it.
+
 ## Related
 
 - [Regions reference](https://cursor.com/docs/account/regions.md)
+- [Privacy and Data Governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md#data-residency)
 - [Privacy and data](https://cursor.com/help/security-and-privacy/privacy.md)
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
 - [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
