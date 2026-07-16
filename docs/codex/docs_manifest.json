@@ -123,8 +123,8 @@
     "chrome-extension.md": {
       "original_url": "https://developers.openai.com/codex/chrome-extension",
       "original_md_url": "https://developers.openai.com/codex/chrome-extension.md",
-      "hash": "9dd1783b8c870b73b5674d78f5acad454b9455767615353a0ac70c15c916d583",
-      "last_updated": "2026-07-09T17:19:26.312616"
+      "hash": "0ad55e07177cec00a5f8f1957ed5574f84cd4ed19a18f3a3538d1c00f82d44ee",
+      "last_updated": "2026-07-16T22:01:53.307794"
     },
     "cli-customization.md": {
       "original_url": "https://developers.openai.com/codex/cli-customization",
@@ -746,8 +746,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-16T19:16:41.779667",
-    "fetch_duration_seconds": 100.243721,
+    "last_fetch_completed": "2026-07-16T22:03:16.815430",
+    "fetch_duration_seconds": 94.962598,
     "total_pages_discovered": 130,
     "pages_fetched_successfully": 124,
     "pages_failed": 6,
@@ -764,7 +764,7 @@
     "total_files": 124,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-16T19:16:41.779687",
+  "last_updated": "2026-07-16T22:03:16.815457",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
