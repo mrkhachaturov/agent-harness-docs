@@ -39,8 +39,8 @@
     "amazon-bedrock.md": {
       "original_url": "https://developers.openai.com/codex/amazon-bedrock",
       "original_md_url": "https://developers.openai.com/codex/amazon-bedrock.md",
-      "hash": "a2bc7163e482890aef6ec56f2a9bc938e2e2f23357434905cfe0bf1bd622b9e8",
-      "last_updated": "2026-07-17T05:38:11.809498"
+      "hash": "8b68032a9e21eb35e0a54119bd76d86ee2305f2dc9005cca831b3c6c78fb372c",
+      "last_updated": "2026-07-17T21:46:45.562338"
     },
     "app-server.md": {
       "original_url": "https://developers.openai.com/codex/app-server",
@@ -183,8 +183,8 @@
     "config-file__config-advanced.md": {
       "original_url": "https://developers.openai.com/codex/config-file/config-advanced",
       "original_md_url": "https://developers.openai.com/codex/config-file/config-advanced.md",
-      "hash": "c9703f7d2d82c4f3628728974e8069ce10a1ec985de833e9f3fca7d547518f28",
-      "last_updated": "2026-07-09T17:19:32.627643"
+      "hash": "9b6da0d047be8f708878589f909a82d75f20b503ae993ac06734b5d0c16e2668",
+      "last_updated": "2026-07-17T21:46:59.886185"
     },
     "config-file__config-basic.md": {
       "original_url": "https://developers.openai.com/codex/config-file/config-basic",
@@ -758,8 +758,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-17T19:02:49.794674",
-    "fetch_duration_seconds": 105.19199,
+    "last_fetch_completed": "2026-07-17T21:48:20.943389",
+    "fetch_duration_seconds": 100.161329,
     "total_pages_discovered": 132,
     "pages_fetched_successfully": 126,
     "pages_failed": 6,
@@ -776,7 +776,7 @@
     "total_files": 126,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-17T19:02:49.794692",
+  "last_updated": "2026-07-17T21:48:20.943406",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
