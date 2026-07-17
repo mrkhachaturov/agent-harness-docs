@@ -36,7 +36,7 @@ Grok 4.5 is available everywhere you use Cursor:
 
 ## Which regions support Grok 4.5?
 
-Grok 4.5 is available in every country where Cursor normally offers models, except the EU at launch. EU availability is planned in the coming weeks. See [regions and model availability](https://cursor.com/help/security-and-privacy/regions.md) for what to do while a model is unavailable in your region.
+Grok 4.5 is available in every country where Cursor normally offers models. See [regions and model availability](https://cursor.com/help/security-and-privacy/regions.md) for what to do if a model is unavailable in your region.
 
 ## Is Composer being deprecated?
 
