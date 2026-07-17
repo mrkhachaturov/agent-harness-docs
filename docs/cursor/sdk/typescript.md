@@ -167,7 +167,7 @@ For values that should only exist during a single run, pass them on `agent.send(
 
 Use `model.params` to pass per-model options such as reasoning effort. Parameter ids and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/typescript.md#cursormodelslist) to discover supported parameters and preset variants for your account.
 
-When a selected model requires [Max Mode](https://cursor.com/help/ai-features/max-mode.md), Cursor enables it automatically for the SDK request.
+On legacy request-based plans, Cursor enables [Max Mode](https://cursor.com/help/ai-features/max-mode.md) automatically when the selected model requires it.
 
 ### Composer 2 reroutes to Composer 2.5
 

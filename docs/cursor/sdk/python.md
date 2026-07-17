@@ -171,7 +171,7 @@ For values that should only exist during a single run, pass them on `agent.send(
 
 ### Model parameters
 
-Use `ModelSelection.params` to pass per-model options such as reasoning effort or max mode. Parameter IDs and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover supported parameters and preset variants for your account.
+Use `ModelSelection.params` to pass per-model options such as reasoning effort. Parameter IDs and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover supported parameters and preset variants for your account.
 
 ```python
 from cursor_sdk import Agent, LocalAgentOptions, ModelParameterValue, ModelSelection
@@ -1025,7 +1025,7 @@ models = await AsyncCursor.models.list(client=client)
 repositories = await AsyncCursor.repositories.list(client=client)
 ```
 
-Use `Cursor.models.list()` to discover valid model IDs and per-model parameters before calling `Agent.create()` or `agent.send()`. Parameters are model-specific. Common examples include reasoning effort and max mode.
+Use `Cursor.models.list()` to discover valid model IDs and per-model parameters before calling `Agent.create()` or `agent.send()`. Parameters are model-specific. Common examples are reasoning effort and context window size.
 
 ```python
 models = Cursor.models.list()

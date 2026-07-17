@@ -1,9 +1,9 @@
-Gemini 3.1 Pro is Google's latest model. It processes images alongside code, making it strong for UI/UX work from design mockups. The context window stretches to 1M tokens in Max Mode for whole-codebase analysis.
+Gemini 3.1 Pro is Google's latest model. It processes images alongside code, making it strong for UI/UX work from design mockups. It supports context windows up to 1M tokens.
 
 ## Strengths
 
 - Processes images alongside code. Strong for UI/UX coding from design mockups, frontend development, and visual code understanding.
-- Up to 1M tokens in Max Mode for whole-codebase analysis.
+- Up to 1M tokens of context for whole-codebase analysis.
 - Strong capabilities at $2/1M input tokens.
 
 ## Tools

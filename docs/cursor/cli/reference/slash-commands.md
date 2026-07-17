@@ -9,7 +9,7 @@
 | `/debug [prompt]`                      | Toggle Debug mode or submit a prompt in Debug mode                                                                     |
 | `/logs`                                | Show the debug log path and copy it to the clipboard                                                                   |
 | `/update`                              | Update Cursor Agent to the latest version                                                                              |
-| `/max-mode`                            | Toggle max mode on the selected model                                                                                  |
+| `/max-mode`                            | Toggle Max Mode on legacy request-based plans                                                                          |
 | `/rename <name>`                       | Rename the current chat session                                                                                        |
 | `/clear`                               | Start a new chat session. `/new`, `/new-chat`, and `/newchat` are aliases.                                             |
 | `/resume`                              | Open recent chats and resume one                                                                                       |

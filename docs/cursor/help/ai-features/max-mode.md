@@ -1,31 +1,22 @@
-# Max Mode
+# Max Mode on legacy plans
 
-Max Mode extends the context window to the maximum a model supports, giving it a deeper understanding of your codebase for more accurate edits across large files and complex projects.
+Max Mode is available only on legacy request-based plans. It extends a model's context window beyond the default limit.
 
 ## How do I enable Max Mode?
 
-Open the model selector in your chat or agent panel and toggle Max Mode on. It's a global setting that stays on across conversations. Some models are Max Mode-only and enable it automatically when selected.
-
-## Which models support Max Mode?
-
-Max Mode is available on all models. It's most impactful on models with context windows larger than the default \~200k tokens. Open the model selector to toggle it on for any model.
+If you're on a legacy request-based plan, open the model selector in your chat or agent panel and toggle Max Mode on. The setting stays on across conversations. Models that require Max Mode enable it automatically when selected.
 
 ## How does Max Mode affect my usage?
 
-Max Mode uses token-based pricing, so a single request can use significantly more of your usage budget than a normal request.
-
-On current individual plans, Max Mode is billed at the model's API rate. On Teams plans, Max Mode includes the Cursor Token Rate only for non-Auto third-party model requests. On legacy request-based plans, Max Mode adds a 20% surcharge.
-
-If you're watching your usage carefully, use Max Mode selectively for tasks that benefit from the larger context window.
+On legacy request-based plans, Max Mode is billed at the model's API rate plus 20%. A larger context window can increase the tokens used by a request.
 
 ## When should I use Max Mode?
 
-Max Mode is for when you want the best possible experience from a model, regardless of cost. It's most impactful on models with context windows larger than the default 200k.
-
-For most coding tasks, the default context window works well.
+On a legacy request-based plan, use Max Mode when a task needs more context than the model's default window. The default context window works well for most coding tasks.
 
 ## Related
 
+- [Legacy request-based pricing](https://cursor.com/docs/account/pricing/request-based-legacy.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
 

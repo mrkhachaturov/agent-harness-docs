@@ -86,12 +86,6 @@ Configure command execution settings with `/sandbox` or the `--sandbox <mode>` f
 
 [Media](https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/sandox.mp4)
 
-## Max mode
-
-Toggle [Max Mode](https://cursor.com/help/ai-features/max-mode.md) on models that support it using `/max-mode`.
-
-[Media](https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/uploads/max-mode.mp4)
-
 ## Sudo password prompting
 
 Run commands requiring elevated privileges without leaving the CLI. When a command needs `sudo`, Cursor displays a secure, masked password prompt. Your password flows directly to `sudo` via a secure IPC channel; the AI model never sees it.

@@ -62,9 +62,7 @@ See [Cloud Agent security and network](https://cursor.com/docs/cloud-agent/secur
 
 ## Models
 
-Cloud Agents use a curated selection of models that always run in [Max Mode](https://cursor.com/docs/models-and-pricing.md#max-mode).
-
-There is no toggle to turn Max Mode off for Cloud Agents.
+Cloud Agents use a curated selection of models. You can select the context window size for supported models.
 
 ## MCP support
 
@@ -102,7 +100,7 @@ See [Cloud agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.
 
 ## Billing
 
-Cloud Agents are charged at API pricing for the selected [model](https://cursor.com/docs/models-and-pricing.md#model-pricing). You'll be asked to set a spend limit when you first start using them.
+Cloud Agents are charged at API pricing for the selected [model](https://cursor.com/docs/models-and-pricing.md#model-pricing). You can select the context window size, and a larger context window can increase token usage and costs. You'll be asked to set a spend limit when you first start using them.
 
 ## Troubleshooting
 

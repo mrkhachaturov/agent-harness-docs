@@ -77,7 +77,7 @@ Remote Machines are consolidated in the same picker flow so you can open local, 
 
 ## How is Cloud Agent usage priced?
 
-Cloud Agents are charged at [API pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for the selected model. Only Max Mode-compatible models are available.
+Cloud Agents are charged at [API pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for the selected model. You can select the context window size for supported models. A larger context window can increase token usage and costs.
 
 ## Can I run Cloud Agents automatically or on a cron?
 

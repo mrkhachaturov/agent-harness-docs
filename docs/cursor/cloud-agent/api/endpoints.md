@@ -48,7 +48,7 @@ An explicit model ID returned by `GET /v1/models` (for example, `claude-4-sonnet
 
 `model.params` array (optional)
 
-Per-model parameters to apply to the run, such as reasoning effort or max mode. Each item has an `id` and `value`. Use only parameters supported by the selected model — call `GET /v1/models` to discover the valid `id`/`params` combinations.
+Per-model parameters to apply to the run, such as reasoning effort or context window size. Each item has an `id` and `value`. Use only parameters supported by the selected model — call `GET /v1/models` to discover the valid `id`/`params` combinations.
 
 `name` string (optional)
 

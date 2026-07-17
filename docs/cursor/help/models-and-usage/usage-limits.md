@@ -10,7 +10,7 @@ Each Cursor plan includes a monthly API usage budget charged at model provider p
 
 Your model selection affects how quickly your included usage is consumed. You can view usage and token breakdowns on [your dashboard](https://cursor.com/dashboard/usage).
 
-On current individual plans, Max Mode is billed at the model's API rate. On legacy request-based plans, Max Mode adds a 20% surcharge.
+Current usage-based plans don't include Max Mode. On legacy request-based plans, [Max Mode](https://cursor.com/help/ai-features/max-mode.md) is billed at the model's API rate plus 20%.
 
 ## How do I check my usage?
 

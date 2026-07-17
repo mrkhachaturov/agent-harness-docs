@@ -19,7 +19,7 @@ Use **Update with Agent** when you want Cursor to inspect the current environmen
 
 ## Default settings
 
-- **Default model** – the model used when a run does not specify one. Pick any model that supports Max Mode.
+- **Default model** – the model used when a run does not specify one. Pick any model available for cloud agents.
 - **Default repository** – when empty, agents ask the user to choose a repo. Supplying a repo here lets users skip that step.
 - **Base branch** – the branch agents fork from when creating pull requests. Leave blank to use the repository’s default branch.
 

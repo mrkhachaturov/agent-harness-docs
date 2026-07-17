@@ -27,7 +27,7 @@ Cursor [plans](https://cursor.com/docs/models-and-pricing.md) include two usage 
 
 A **Fast mode** tier (`gpt-5.6-sol-fast`) is available for priority processing at 2x the standard rates.
 
-When input exceeds 272k tokens (long context / Max Mode), input pricing doubles and output pricing is 1.5x the standard rate.
+When input exceeds 272k tokens (long context), input pricing doubles and output pricing is 1.5x the standard rate.
 
 
 ---
