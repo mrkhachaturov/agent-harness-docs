@@ -36,7 +36,7 @@ Run `@Cursor help` for an up-to-date command list.
 | :--------------------------- | :------------------------------------------------------------------------------------- |
 | `@Cursor [prompt]`           | Start a Cloud Agent. In threads with existing agents, adds followup instructions       |
 | `@Cursor settings`           | Configure defaults and channel's default repository                                    |
-| `@Cursor [options] [prompt]` | Set the repository, model, branch, PR behavior, or worker for a run                    |
+| `@Cursor [options] [prompt]` | Set the target, model, branch, PR behavior, worker, or output channel for a run        |
 | `@Cursor agent [prompt]`     | Force create a new agent in a thread (e.g. `@Cursor start a new agent to fix billing`) |
 | `@Cursor list my agents`     | Show your running agents                                                               |
 
@@ -44,12 +44,17 @@ Run `@Cursor help` for an up-to-date command list.
 
 Customize Cloud Agent behavior with these options:
 
-| Option   | Description                             | Natural language example   | Inline example      |
-| :------- | :-------------------------------------- | :------------------------- | :------------------ |
-| `repo`   | Use a specific repository               | `in acme/backend`          | `repo=acme/backend` |
-| `branch` | Use a specific base branch              | `work from the dev branch` | `branch=dev`        |
-| `model`  | Use a specific model                    | `with opus`                | `model=opus`        |
-| `autopr` | Enable or disable automatic PR creation | Inline option required     | `autopr=false`      |
+| Option                | Description                                                                                                              | Natural language example       | Inline example      |
+| :-------------------- | :----------------------------------------------------------------------------------------------------------------------- | :----------------------------- | :------------------ |
+| `repo`                | Use a specific repository                                                                                                | `in acme/backend`              | `repo=acme/backend` |
+| `env` / `environment` | Use a named [cloud agent environment](https://cursor.com/docs/cloud-agent/setup.md)                                      | `use the Platform environment` | `env=Platform`      |
+| `branch`              | Use a specific base branch                                                                                               | `work from the dev branch`     | `branch=dev`        |
+| `model`               | Use a specific model                                                                                                     | `with opus`                    | `model=opus`        |
+| `autopr`              | Enable or disable automatic PR creation                                                                                  | Inline option required         | `autopr=false`      |
+| `worker` / `machine`  | Run on a named [My Machine](https://cursor.com/docs/cloud-agent/my-machines.md#trigger-this-machine-from-a-chat-surface) | Inline option required         | `worker=my-devbox`  |
+| `pool`                | Run on a named [self-hosted pool](https://cursor.com/docs/cloud-agent/self-hosted-pool.md#triggering-pool-agents)        | Inline option required         | `pool=gpu`          |
+| `self_hosted`         | Run on your team's self-hosted pool                                                                                      | Inline option required         | `self_hosted=true`  |
+| `channel`             | Post agent updates in another channel you and Cursor can access                                                          | Inline option required         | `channel=#eng-bots` |
 
 #### Syntax formats
 
@@ -62,7 +67,13 @@ Natural:
 Inline:
 
 ```bash
-@Cursor repo=acme/backend branch=dev model=opus autopr=false Fix the login bug
+@Cursor env=Platform branch=dev model=opus autopr=false Fix the login bug
+```
+
+Use quotes for environment names with spaces:
+
+```bash
+@Cursor env="Platform Services" Update the shared API
 ```
 
 #### Option precedence
@@ -72,6 +83,7 @@ When combining options:
 - **Explicit values** override defaults
 - **Later values** override earlier ones if duplicated
 - **Inline options** take precedence over settings modal defaults
+- **`env`** takes precedence over `repo` when both are present
 
 The bot parses options from anywhere in the message, allowing natural command writing.
 

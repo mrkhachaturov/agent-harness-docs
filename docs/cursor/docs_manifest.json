@@ -933,8 +933,8 @@
     "integrations/microsoft-teams.md": {
       "original_url": "https://cursor.com/docs/integrations/microsoft-teams",
       "original_md_url": "https://cursor.com/docs/integrations/microsoft-teams.md",
-      "hash": "78375aef26cc24aaf731cf2f21d418f9dadce261e91e74460615b246971557ab",
-      "last_updated": "2026-06-29T22:53:03.572946"
+      "hash": "16629cc44d62859376b1a5e3e5ceabc723f8e72fb152f73efaf5ced3914c6a53",
+      "last_updated": "2026-07-17T16:14:12.064470"
     },
     "integrations/notion.md": {
       "original_url": "https://cursor.com/docs/integrations/notion",
@@ -945,8 +945,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "27dc4befeccda633522c23403e01b944db4b0806331eaf7cda290727647beda5",
-      "last_updated": "2026-07-17T05:39:54.351669"
+      "hash": "438c215193eba4a1a4b62971d11a7bdeb985532365740f2654ce6faa5bea4c11",
+      "last_updated": "2026-07-17T16:14:12.064806"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1023,8 +1023,8 @@
     "models/grok-4-5.md": {
       "original_url": "https://cursor.com/docs/models/grok-4-5",
       "original_md_url": "https://cursor.com/docs/models/grok-4-5.md",
-      "hash": "b0c11201abf5aa9a0a82992e9b26541a3e93b4164c9ac70b114b9b0e385ba7d7",
-      "last_updated": "2026-07-17T10:45:40.708338"
+      "hash": "7a39929bf367c2160f45ecb903e2208d18874e0da1a5c170f8ca80d5b2fd1f14",
+      "last_updated": "2026-07-17T16:14:12.065184"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-17T13:18:25.682278",
-    "fetch_duration_seconds": 1.70322,
+    "last_fetch_completed": "2026-07-17T16:14:12.068067",
+    "fetch_duration_seconds": 1.453037,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-17T13:18:25.682292",
+  "last_updated": "2026-07-17T16:14:12.068081",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
