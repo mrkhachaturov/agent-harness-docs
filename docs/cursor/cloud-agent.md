@@ -54,13 +54,11 @@ You can configure environments with agent-led setup, a saved snapshot, or a Dock
 
 The Cloud Agents dashboard shows which environment an agent used, along with environment details and version history. On the agent page, hover over the repository name at the top of the page to inspect the environment used for that run. See [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md) for configuration details.
 
-### Managed and self-hosted runtimes
+### Runtime and environment controls
 
-Cursor-managed Cloud Agents are the default path for most teams. You can add secrets, restrict outbound domains, connect to private networks with Tailscale or a similar client, and use private connectivity for supported source control paths.
+Cursor manages VM provisioning, isolation, snapshots, startup, artifacts, and capacity for every Cloud Agent. You can add secrets, restrict outbound domains, connect to private networks with Tailscale or a similar client, and use private connectivity for supported source control paths.
 
-Use [My Machines](https://cursor.com/docs/cloud-agent/my-machines.md) or [Self-Hosted Pool](https://cursor.com/docs/cloud-agent/self-hosted-pool.md) when you want to own the machine that executes terminal commands, file edits, browser actions, and other tool calls. In both modes, the agent loop still runs in Cursor's cloud.
-
-See [Choose where Cloud Agents run](https://cursor.com/docs/cloud-agent/choose-runtime.md) for the [decision guide](https://cursor.com/docs/cloud-agent/choose-runtime.md#self-hosted-or-cursor-hosted-which-is-right-for-you) and full comparison.
+See [Cloud Agent security and network](https://cursor.com/docs/cloud-agent/security-network.md) for the full set of environment and network controls. If you're weighing whether to self-host, see [why most teams start with Cursor Cloud](https://cursor.com/docs/cloud-agent/self-hosted.md).
 
 ## Models
 
@@ -99,7 +97,6 @@ See [Cloud agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.
 
 - Learn more about [Cloud agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md).
 - Learn more about [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md).
-- Learn how to [choose where Cloud Agents run](https://cursor.com/docs/cloud-agent/choose-runtime.md).
 - Learn more about [Cloud agent security](https://cursor.com/docs/cloud-agent/security-network.md).
 - Learn more about [Cloud agent settings](https://cursor.com/docs/cloud-agent/settings.md).
 

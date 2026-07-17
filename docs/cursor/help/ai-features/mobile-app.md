@@ -44,7 +44,6 @@ Everywhere. Agents you start in the app appear at [cursor.com/agents](https://cu
 Yes. Besides cloud agents, you can run agents on your own computer and steer them from your phone:
 
 - **Remote Control.** Hand off an agent you're running on your computer, then keep directing it from your phone. Remote Control requires Cursor client version 3.9.8 or later on your computer. It's only available in the [Agents Window](https://cursor.com/docs/agent/agents-window.md). Turn on Remote Control in **Settings > Agents**, run `/remote-control` in the agent's input, and open the session in the app. The agent loop moves to the cloud while its tools keep running on your machine. Remote Control is in beta and needs a paid plan.
-- **My Machines.** Register your Mac as a worker, then choose it when you start an agent on mobile. The agent runs in the cloud while commands, edits, and tests run on your machine.
 
 Keep your computer awake, connected, and with the workspace open while a session runs. On Teams and Enterprise plans, an admin enables Remote Control before you can use it. See the [Cursor for iOS reference](https://cursor.com/docs/cloud-agent/mobile.md#remote-control) for the full setup.
 

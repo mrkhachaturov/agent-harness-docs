@@ -158,7 +158,7 @@ Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
               },
             },
             {
-              name: "ChatGPT desktop app for local tasks",
+              name: "ChatGPT desktop app for local chats",
               href: "/codex/app",
               availability: {
                 bedrock: "available",
@@ -419,8 +419,8 @@ Fast Mode isn't available with Amazon Bedrock. Fast Mode uses priority
           title: "Cloud and integrations",
           features: [
             {
-              name: "Codex cloud tasks",
-              shortName: "Cloud tasks",
+              name: "Codex cloud chats",
+              shortName: "Cloud chats",
               href: "/codex/cloud",
               availability: {
                 bedrock: "unavailable",

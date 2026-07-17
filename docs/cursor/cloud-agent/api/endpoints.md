@@ -867,7 +867,7 @@ curl --request DELETE \
 
 /v1/sub-tokens
 
-Create a one-hour user-scoped token for a [My Machines](https://cursor.com/docs/cloud-agent/my-machines.md) worker to run as an active team member.
+Create a one-hour user-scoped token for a self-hosted worker to run as an active team member.
 
 Requires an agent-scoped team service account API key. User-scoped tokens can't mint other user-scoped tokens.
 
@@ -922,7 +922,7 @@ curl --request POST \
 
 ## Fleet Management
 
-Monitor pool worker utilization and build autoscaling against self-hosted Cloud Agent pools. See [Self-Hosted Pool](https://cursor.com/docs/cloud-agent/self-hosted-pool.md#fleet-management-api) for background.
+Monitor pool worker utilization and build autoscaling against self-hosted Cloud Agent pools.
 
 Authenticate with the pool's service account API key via Basic auth or Bearer token. Other API key types are rejected.
 

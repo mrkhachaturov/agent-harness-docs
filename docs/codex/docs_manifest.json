@@ -3,14 +3,14 @@
     "administration.md": {
       "original_url": "https://developers.openai.com/codex/administration",
       "original_md_url": "https://developers.openai.com/codex/administration.md",
-      "hash": "0e24eeb3532b65aad63db00f853823c4f87c2a21e35c03a4c0b1d7766229b3b2",
-      "last_updated": "2026-07-15T05:26:53.699762"
+      "hash": "79db5b2e8402889728af57a8476f5a43d098c9047a98ebee530949ef18ae3879",
+      "last_updated": "2026-07-17T05:38:08.164064"
     },
     "agent-approvals-security.md": {
       "original_url": "https://developers.openai.com/codex/agent-approvals-security",
       "original_md_url": "https://developers.openai.com/codex/agent-approvals-security.md",
-      "hash": "7e328870a3e387b7df113cee80f8ac14b809ae995612637b03c3293bf8048c24",
-      "last_updated": "2026-07-09T17:19:14.456224"
+      "hash": "cdb29e33f1e593b6d9545ced77a6d61811c37060c72e95ead5a4738425443ee4",
+      "last_updated": "2026-07-17T05:38:08.815009"
     },
     "agent-configuration__agents-md.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/agents-md",
@@ -27,20 +27,20 @@
     "agent-configuration__speed.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/speed",
       "original_md_url": "https://developers.openai.com/codex/agent-configuration/speed.md",
-      "hash": "b5d971ca460539450d7daa45ea90496dcb32bde73c1f6fbe6211599395481d4c",
-      "last_updated": "2026-07-15T21:57:11.285612"
+      "hash": "63fdd8fe1049ec4f423aec4319d975a24826a4c7416811c7891a967a9eafa559",
+      "last_updated": "2026-07-17T05:38:10.609292"
     },
     "agent-configuration__subagents.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/subagents",
       "original_md_url": "https://developers.openai.com/codex/agent-configuration/subagents.md",
-      "hash": "7aa3bc269b0027df6055f2e04d0e8e23e963ff9e62cfc83f8bf0a1923d6debca",
-      "last_updated": "2026-07-09T17:19:16.907115"
+      "hash": "5fd3518e0d6361afae1b63847159b91f8ee335629f394e25f0f5e30c44b6e567",
+      "last_updated": "2026-07-17T05:38:11.214341"
     },
     "amazon-bedrock.md": {
       "original_url": "https://developers.openai.com/codex/amazon-bedrock",
       "original_md_url": "https://developers.openai.com/codex/amazon-bedrock.md",
-      "hash": "de7491eb3f927fd3a5524ab149e91a6448f8c7636f973e2d1566c08b013fe410",
-      "last_updated": "2026-07-09T17:19:17.512902"
+      "hash": "a2bc7163e482890aef6ec56f2a9bc938e2e2f23357434905cfe0bf1bd622b9e8",
+      "last_updated": "2026-07-17T05:38:11.809498"
     },
     "app-server.md": {
       "original_url": "https://developers.openai.com/codex/app-server",
@@ -57,32 +57,32 @@
     "app__commands.md": {
       "original_url": "https://developers.openai.com/codex/app/commands",
       "original_md_url": "https://developers.openai.com/codex/app/commands.md",
-      "hash": "fe54279b31f74b0bde8a0373d2678d162bd9cbd217d42b6982194d5fd0211569",
-      "last_updated": "2026-07-13T21:52:55.001184"
+      "hash": "b233fd7b764be329f535b51ae8d755cc489d1b5c7cef5622276a58d909f6574a",
+      "last_updated": "2026-07-17T05:38:13.706369"
     },
     "app__settings.md": {
       "original_url": "https://developers.openai.com/codex/app/settings",
       "original_md_url": "https://developers.openai.com/codex/app/settings.md",
-      "hash": "452268af2407084ffb46b67974dd4a029a739de5d5b7949c9963a615cc1c9001",
-      "last_updated": "2026-07-09T17:19:20.127427"
+      "hash": "19b166f87e55b4bfa5b436295f8f4c25ed66582e91593dbd4823167946f08221",
+      "last_updated": "2026-07-17T05:38:14.388683"
     },
     "app__windows.md": {
       "original_url": "https://developers.openai.com/codex/app/windows",
       "original_md_url": "https://developers.openai.com/codex/app/windows.md",
-      "hash": "cb405c21979828306ef3d10be38e9da18b39c978039bc640d0021040937dd771",
-      "last_updated": "2026-07-15T05:26:59.657483"
+      "hash": "ade5467121727c8dc1682110b5f399729000dee239d697015df9fa3ee3bdfd89",
+      "last_updated": "2026-07-17T05:38:15.047053"
     },
     "appshots.md": {
       "original_url": "https://developers.openai.com/codex/appshots",
       "original_md_url": "https://developers.openai.com/codex/appshots.md",
-      "hash": "60e1f4bb67419a7a61c9cc033aa400690db3c20eebcf65157caf08d2a181937f",
-      "last_updated": "2026-07-09T17:19:21.354780"
+      "hash": "670f38ab51a436b53962596b6becece0c26f2157e6b69cb8ff497d03df12d12b",
+      "last_updated": "2026-07-17T05:38:15.651156"
     },
     "artifacts-viewer.md": {
       "original_url": "https://developers.openai.com/codex/artifacts-viewer",
       "original_md_url": "https://developers.openai.com/codex/artifacts-viewer.md",
-      "hash": "893c04c1cc4008ee33883c4956f40837d82d8fcbc9646206d7b98ee953d5c739",
-      "last_updated": "2026-07-09T17:19:21.971674"
+      "hash": "908767d445aed3ee970b16ea340f8d066270311bf5cf2e17dc1748787035ecec",
+      "last_updated": "2026-07-17T05:38:16.369493"
     },
     "auth.md": {
       "original_url": "https://developers.openai.com/codex/auth",
@@ -93,14 +93,14 @@
     "automations.md": {
       "original_url": "https://developers.openai.com/codex/automations",
       "original_md_url": "https://developers.openai.com/codex/automations.md",
-      "hash": "d6485eb99210ba25437c25be4896c50dbd3e9f9b94f59ffb8384578d37ad6def",
-      "last_updated": "2026-07-14T07:54:42.612789"
+      "hash": "bc6952f35e7a10fd7c6aa61f9c24d3a1d7c331c586ed1551169ed19e85369128",
+      "last_updated": "2026-07-17T05:38:17.684255"
     },
     "browser.md": {
       "original_url": "https://developers.openai.com/codex/browser",
       "original_md_url": "https://developers.openai.com/codex/browser.md",
-      "hash": "ca16e927ac8d6b24e822afc9587fa10534999fd34718ae4e5b981855b3e54e76",
-      "last_updated": "2026-07-09T17:19:23.791193"
+      "hash": "1ba81abb96a39979ee8e6211b044478cc205e5e6f32d42786603bbf565330332",
+      "last_updated": "2026-07-17T05:38:18.286073"
     },
     "build-app.md": {
       "original_url": "https://developers.openai.com/codex/build-app",
@@ -111,20 +111,20 @@
     "build-plugins.md": {
       "original_url": "https://developers.openai.com/codex/build-plugins",
       "original_md_url": "https://developers.openai.com/codex/build-plugins.md",
-      "hash": "71d34334545be1dcbf5e3dd81195b722ac030840ec61a057a7fc5e68fcef79cc",
-      "last_updated": "2026-07-14T19:11:25.718283"
+      "hash": "3a68dd74d1d8f5432c00624038c3614df1a1fe08a13b94caf0fd42adf5725418",
+      "last_updated": "2026-07-17T05:38:19.487153"
     },
     "build-skills.md": {
       "original_url": "https://developers.openai.com/codex/build-skills",
       "original_md_url": "https://developers.openai.com/codex/build-skills.md",
-      "hash": "9ff1734f399f7819c293dfb0caf60efd2faae45b63624c6ff8270cbf3a528e0d",
-      "last_updated": "2026-07-14T19:11:26.296510"
+      "hash": "863525c62d216bfc53fd616838b656bdd24017408171080fce25f91b6a35dc4c",
+      "last_updated": "2026-07-17T05:38:20.259893"
     },
     "chrome-extension.md": {
       "original_url": "https://developers.openai.com/codex/chrome-extension",
       "original_md_url": "https://developers.openai.com/codex/chrome-extension.md",
-      "hash": "0ad55e07177cec00a5f8f1957ed5574f84cd4ed19a18f3a3538d1c00f82d44ee",
-      "last_updated": "2026-07-16T22:01:53.307794"
+      "hash": "42508121d9e93f6f596c1a24d06eec36de29cebaa56c76e68e67a0dcef0a6ec5",
+      "last_updated": "2026-07-17T05:38:20.893360"
     },
     "cli-customization.md": {
       "original_url": "https://developers.openai.com/codex/cli-customization",
@@ -141,20 +141,20 @@
     "cli__reference.md": {
       "original_url": "https://developers.openai.com/codex/cli/reference",
       "original_md_url": "https://developers.openai.com/codex/cli/reference.md",
-      "hash": "7adf709ba674152311de75a31ede5d2dc8e7aad1e758c80b44dfb8d1054af6c6",
-      "last_updated": "2026-07-09T17:19:28.284087"
+      "hash": "10fe7d880c2d802a365df79c570226b3e68bc9257dd4a805ad20ba4f0dcb399b",
+      "last_updated": "2026-07-17T05:38:22.696903"
     },
     "cli__slash-commands.md": {
       "original_url": "https://developers.openai.com/codex/cli/slash-commands",
       "original_md_url": "https://developers.openai.com/codex/cli/slash-commands.md",
-      "hash": "7adf709ba674152311de75a31ede5d2dc8e7aad1e758c80b44dfb8d1054af6c6",
-      "last_updated": "2026-07-09T17:19:28.882584"
+      "hash": "10fe7d880c2d802a365df79c570226b3e68bc9257dd4a805ad20ba4f0dcb399b",
+      "last_updated": "2026-07-17T05:38:23.309928"
     },
     "cloud.md": {
       "original_url": "https://developers.openai.com/codex/cloud",
       "original_md_url": "https://developers.openai.com/codex/cloud.md",
-      "hash": "06fb07b2188f8e5b1a961f0f10f7e3931d7b9f70ae5c5db836354160df6885bd",
-      "last_updated": "2026-07-09T17:19:29.482170"
+      "hash": "f18f03fe59def08cd7194d8bc64f692f1ca55a72566478a3f55144a7599d9fee",
+      "last_updated": "2026-07-17T05:38:23.909125"
     },
     "cloud__internet-access.md": {
       "original_url": "https://developers.openai.com/codex/cloud/internet-access",
@@ -165,8 +165,8 @@
     "code-review.md": {
       "original_url": "https://developers.openai.com/codex/code-review",
       "original_md_url": "https://developers.openai.com/codex/code-review.md",
-      "hash": "5093fb4588ffe60796ed2e8ec1bd2d167f622a3b65469566e7b617af6c72a4d1",
-      "last_updated": "2026-07-09T17:19:30.718051"
+      "hash": "293e81ed0379e3d1932801b69c72f690bb234c9cd0120ea927622353f739ed32",
+      "last_updated": "2026-07-17T05:38:25.115234"
     },
     "codex-sdk.md": {
       "original_url": "https://developers.openai.com/codex/codex-sdk",
@@ -177,8 +177,8 @@
     "computer-use.md": {
       "original_url": "https://developers.openai.com/codex/computer-use",
       "original_md_url": "https://developers.openai.com/codex/computer-use.md",
-      "hash": "e4efde22834673074688c4d2c4e2541728c1037223f816cfbdd441ca9881677f",
-      "last_updated": "2026-07-09T17:19:32.021474"
+      "hash": "f17959075ca3f63b6dcd9568e637be54f0ce2c0886ed1a247ff572b76855160a",
+      "last_updated": "2026-07-17T05:38:26.370071"
     },
     "config-file__config-advanced.md": {
       "original_url": "https://developers.openai.com/codex/config-file/config-advanced",
@@ -189,8 +189,8 @@
     "config-file__config-basic.md": {
       "original_url": "https://developers.openai.com/codex/config-file/config-basic",
       "original_md_url": "https://developers.openai.com/codex/config-file/config-basic.md",
-      "hash": "c79ef43e4f2b53781478357a0b80ac39965b59a860c22bd1d1d1261170a4b0e1",
-      "last_updated": "2026-07-09T17:19:33.249378"
+      "hash": "c42d9b2235057850c714fff07a93e3d5358d55b814859fb2b0f9b4059227da81",
+      "last_updated": "2026-07-17T05:38:27.633768"
     },
     "config-file__config-reference.md": {
       "original_url": "https://developers.openai.com/codex/config-file/config-reference",
@@ -213,32 +213,32 @@
     "configuration.md": {
       "original_url": "https://developers.openai.com/codex/configuration",
       "original_md_url": "https://developers.openai.com/codex/configuration.md",
-      "hash": "b1c1c0bd8aaec83173f449ec76561d83a31cdfb99d7c294dc83da2459d575e30",
-      "last_updated": "2026-07-09T17:19:35.957223"
+      "hash": "e747c7c1ed74a0935a0ffe405eaf64c102f4f96d849817531fe2d34c1ce6d310",
+      "last_updated": "2026-07-17T05:38:30.096025"
     },
     "custom-prompts.md": {
       "original_url": "https://developers.openai.com/codex/custom-prompts",
       "original_md_url": "https://developers.openai.com/codex/custom-prompts.md",
-      "hash": "98b181c3d5fecb14b462675de2ac85e25b8d33adaf92242e1746e45291a2b105",
-      "last_updated": "2026-07-09T17:19:36.571399"
+      "hash": "575c9349eb433572dfe018106feb2f9e0aaed8dce05ec211eac1950032700335",
+      "last_updated": "2026-07-17T05:38:30.722529"
     },
     "customization__chronicle.md": {
       "original_url": "https://developers.openai.com/codex/customization/chronicle",
       "original_md_url": "https://developers.openai.com/codex/customization/chronicle.md",
-      "hash": "47d52cc2223183e8a4469342ec08cf05d9a3fcfb96872cf97cf9c87fce9807c6",
-      "last_updated": "2026-07-09T17:19:37.213568"
+      "hash": "7a0a847a85a144b94ccd98722f0469cd0f896300bd8e88a77b7767ab0746714b",
+      "last_updated": "2026-07-17T05:38:31.325454"
     },
     "customization__memories.md": {
       "original_url": "https://developers.openai.com/codex/customization/memories",
       "original_md_url": "https://developers.openai.com/codex/customization/memories.md",
-      "hash": "e6d50d95f022285eceea26eb9e13440b65dae5230288322d5136736c741ddafc",
-      "last_updated": "2026-07-09T17:19:37.821033"
+      "hash": "97be33a499ff0344f904d78b789d6be21fe2110bdbe90cd2d9098e0c635ecd22",
+      "last_updated": "2026-07-17T05:38:31.936930"
     },
     "customization__overview.md": {
       "original_url": "https://developers.openai.com/codex/customization/overview",
       "original_md_url": "https://developers.openai.com/codex/customization/overview.md",
-      "hash": "6a855feec1361a881613e5fa780dd778c5df5415f7cd4c78555fc0a23edd2d70",
-      "last_updated": "2026-07-09T17:19:38.459251"
+      "hash": "499593c606b9cb5a33f6fdbf936bf583c617b92dcd3e6f0ea5f71255b5170151",
+      "last_updated": "2026-07-17T05:38:32.550237"
     },
     "cyber-safety.md": {
       "original_url": "https://developers.openai.com/codex/cyber-safety",
@@ -249,8 +249,8 @@
     "developers.md": {
       "original_url": "https://developers.openai.com/codex/developers",
       "original_md_url": "https://developers.openai.com/codex/developers.md",
-      "hash": "e1d9118f7f0c60d1da45213edf884fa57badac522a21fc33f64a1f077dfc5912",
-      "last_updated": "2026-07-09T17:19:39.688464"
+      "hash": "8a8e54468ced46c3548fa6f26272104005d1b365017bbb7c325bafb8d4c8232d",
+      "last_updated": "2026-07-17T05:38:33.769873"
     },
     "enterprise__access-tokens.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/access-tokens",
@@ -261,8 +261,8 @@
     "enterprise__admin-setup.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/admin-setup",
       "original_md_url": "https://developers.openai.com/codex/enterprise/admin-setup.md",
-      "hash": "141d54f5a4ca733d70b1744ee110add12a4ff2917d85eec86561b39068acf8e6",
-      "last_updated": "2026-07-09T17:19:40.896886"
+      "hash": "8c56c0122d7bc975c31f7a98d3fa40a8d4e51b8ad9e754435983b7c6a7f5ff97",
+      "last_updated": "2026-07-17T05:38:34.976038"
     },
     "enterprise__analytics-api.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/analytics-api",
@@ -273,8 +273,8 @@
     "enterprise__apps-and-connectors.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/apps-and-connectors",
       "original_md_url": "https://developers.openai.com/codex/enterprise/apps-and-connectors.md",
-      "hash": "f873a11176fce480bf615989498646d002886a0fae2a6c79050cdca49c68102d",
-      "last_updated": "2026-07-09T17:19:42.098801"
+      "hash": "33fd5a8dc8237a16b0de3596bbaac04b23a3249216402354cd72d57990d25cdf",
+      "last_updated": "2026-07-17T05:38:36.504991"
     },
     "enterprise__compliance-api.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/compliance-api",
@@ -297,20 +297,20 @@
     "enterprise__managed-configuration.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/managed-configuration",
       "original_md_url": "https://developers.openai.com/codex/enterprise/managed-configuration.md",
-      "hash": "be413d71c18d29a56694dba696c2bf80d17363e7937d4581bafa04d6ae2d7066",
-      "last_updated": "2026-07-09T17:19:44.573367"
+      "hash": "23674462096daba9f50b45042c6a2400b616e671dbd6ee2cd5d69179ac26d01d",
+      "last_updated": "2026-07-17T05:38:39.106107"
     },
     "enterprise__roles-and-workspace-permissions.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/roles-and-workspace-permissions",
       "original_md_url": "https://developers.openai.com/codex/enterprise/roles-and-workspace-permissions.md",
-      "hash": "ad5c39f7048c8067adb5cc6cf135dfb107fdfd1cad053ea93f371f3325ad6e17",
-      "last_updated": "2026-07-09T17:19:45.194612"
+      "hash": "0ecce6f4a14fe2ebd8c1a7aa335ab7aa7aa363cedeb17c9d9b4561bc6728eead",
+      "last_updated": "2026-07-17T05:38:39.704256"
     },
     "enterprise__skills.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/skills",
       "original_md_url": "https://developers.openai.com/codex/enterprise/skills.md",
-      "hash": "628051a01b638116e3bd1fa05bf9b18e9c5e51cf3f090b33053091724ac6c451",
-      "last_updated": "2026-07-09T17:19:45.802958"
+      "hash": "af1641a97838d316d7790908154d9cc55763a3c4e1ea0c24a8812e59d93b66c9",
+      "last_updated": "2026-07-17T05:38:40.312836"
     },
     "enterprise__usage-limits.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/usage-limits",
@@ -321,14 +321,14 @@
     "enterprise__windows-deployment.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/windows-deployment",
       "original_md_url": "https://developers.openai.com/codex/enterprise/windows-deployment.md",
-      "hash": "7ab811999f26d7f55aba1c859167311790161866445139739edf616d0a558d92",
-      "last_updated": "2026-07-15T05:27:23.078803"
+      "hash": "985daf4363ccf35c74544b8c8a8b62b6d96a982aafcf90dd523867e51b367a45",
+      "last_updated": "2026-07-17T05:38:41.529458"
     },
     "enterprise__work-admin-faq.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/work-admin-faq",
       "original_md_url": "https://developers.openai.com/codex/enterprise/work-admin-faq.md",
-      "hash": "ac1ea36afdef8daf30ba52e7efa561c2f53135bad0502c6159a8d3dcca73ce7e",
-      "last_updated": "2026-07-09T17:19:47.035475"
+      "hash": "177c60e2d008c78e2f5c662b277f628fe209ba91a744b79eaab92e9cf13a8171",
+      "last_updated": "2026-07-17T05:38:42.291383"
     },
     "enterprise__workspace-analytics.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/workspace-analytics",
@@ -345,26 +345,26 @@
     "environments__cloud-environment.md": {
       "original_url": "https://developers.openai.com/codex/environments/cloud-environment",
       "original_md_url": "https://developers.openai.com/codex/environments/cloud-environment.md",
-      "hash": "9708c02ccba68b2cdba5b627fc8068800f7a22409f803a68bd04dc59c041054b",
-      "last_updated": "2026-07-09T17:19:48.847881"
+      "hash": "db7851c593d3dc5eb1c5e3aaba0bf375709f88707cf31fa849a4dcc8c9d59f80",
+      "last_updated": "2026-07-17T05:38:44.103101"
     },
     "environments__git-worktrees.md": {
       "original_url": "https://developers.openai.com/codex/environments/git-worktrees",
       "original_md_url": "https://developers.openai.com/codex/environments/git-worktrees.md",
-      "hash": "4f021a7a5c3896253727f5d7ee162140510115fb08b8080416c1907c02235de5",
-      "last_updated": "2026-07-09T17:19:49.466874"
+      "hash": "76a384b885392dae4a624d49c484c6c7861b52d2f0d19965f166689c7bee0ed4",
+      "last_updated": "2026-07-17T05:38:44.702207"
     },
     "environments__local-environment.md": {
       "original_url": "https://developers.openai.com/codex/environments/local-environment",
       "original_md_url": "https://developers.openai.com/codex/environments/local-environment.md",
-      "hash": "951c7a05ea4bcdc1204799a184c56c4ffc16cb22e6dc708db3684671fec29734",
-      "last_updated": "2026-07-09T17:19:50.079262"
+      "hash": "6fc01551245c99fade13d05298c92e228e66928f2db96d8840e8ccca3b11c9dc",
+      "last_updated": "2026-07-17T05:38:45.296097"
     },
     "environments__modes.md": {
       "original_url": "https://developers.openai.com/codex/environments/modes",
       "original_md_url": "https://developers.openai.com/codex/environments/modes.md",
-      "hash": "a7526f40e0f70a6f5db1d472af2e45558f07f473706df06f287f99cdaecc70ec",
-      "last_updated": "2026-07-09T17:19:50.694899"
+      "hash": "b01430feb0a2dde89025bcb5fb09915d1a64b04eb5e5db55f5268f46bdac20fb",
+      "last_updated": "2026-07-17T05:38:45.896685"
     },
     "extend__mcp.md": {
       "original_url": "https://developers.openai.com/codex/extend/mcp",
@@ -375,8 +375,8 @@
     "extend__record-and-replay.md": {
       "original_url": "https://developers.openai.com/codex/extend/record-and-replay",
       "original_md_url": "https://developers.openai.com/codex/extend/record-and-replay.md",
-      "hash": "4a8cd047dae8f7cab7b9549c62a9d78eff3ce76e4d4b6864bf6bbfcef9ce57b2",
-      "last_updated": "2026-07-09T17:19:51.931083"
+      "hash": "0310c51c665b65d21c8525060d4b0df7ae9981be5f69621e0c4391bece5d03f1",
+      "last_updated": "2026-07-17T05:38:47.104977"
     },
     "feature-maturity.md": {
       "original_url": "https://developers.openai.com/codex/feature-maturity",
@@ -387,20 +387,20 @@
     "features.md": {
       "original_url": "https://developers.openai.com/codex/features",
       "original_md_url": "https://developers.openai.com/codex/features.md",
-      "hash": "dd694bde133ebb363a6f5cfe7a0cbf2b6ca8c3cf9b33acb21a8a30f3e03d414b",
-      "last_updated": "2026-07-15T19:13:07.854847"
+      "hash": "6574a77897de772e660c288890eebbbb39f4afd33992e0aa21a04855ed8b0bfc",
+      "last_updated": "2026-07-17T05:38:48.292626"
     },
     "features__codex-micro.md": {
       "original_url": "https://developers.openai.com/codex/features/codex-micro",
       "original_md_url": "https://developers.openai.com/codex/features/codex-micro.md",
-      "hash": "1362fb0b1a0c727929a26a389475cb225ba146c5a2615ab8529f7c7e4383411b",
-      "last_updated": "2026-07-15T19:13:08.448163"
+      "hash": "6a71aea47513a344efe2c38742b299e0efe2b559e02875001bf78eeab1a58802",
+      "last_updated": "2026-07-17T05:38:48.898425"
     },
     "get-started-with-work.md": {
       "original_url": "https://developers.openai.com/codex/get-started-with-work",
       "original_md_url": "https://developers.openai.com/codex/get-started-with-work.md",
-      "hash": "a177aded51c999d0561e7216eda65702d7b6b484d4e7a8f4b9e0c405769df5b2",
-      "last_updated": "2026-07-09T17:19:53.779212"
+      "hash": "07032995c4582fd7385ccf344d05b3b516658aa80a764e9c68954074fa67fa77",
+      "last_updated": "2026-07-17T05:38:49.487801"
     },
     "github-action.md": {
       "original_url": "https://developers.openai.com/codex/github-action",
@@ -411,14 +411,14 @@
     "glossary.md": {
       "original_url": "https://developers.openai.com/codex/glossary",
       "original_md_url": "https://developers.openai.com/codex/glossary.md",
-      "hash": "b3c83f2ef7ef1f8e7b72afe008d71473e2aecf8846eb4947bb7652f7c8dc930d",
-      "last_updated": "2026-07-09T17:19:55.004890"
+      "hash": "7d372ca03c1aea120cb426c041713ecf8bde21961addc6853fd4f1fb7938e7a0",
+      "last_updated": "2026-07-17T05:38:50.731326"
     },
     "hooks.md": {
       "original_url": "https://developers.openai.com/codex/hooks",
       "original_md_url": "https://developers.openai.com/codex/hooks.md",
-      "hash": "16e52897120f1207d57104a02acec0ddff4d91369452b170686aacb33815d09f",
-      "last_updated": "2026-07-09T17:20:00.900965"
+      "hash": "ef4d6f00c7bc38b259c79a52e0b8a143684003a1908e089d3830394eba687385",
+      "last_updated": "2026-07-17T05:38:57.835041"
     },
     "ide.md": {
       "original_url": "https://developers.openai.com/codex/ide",
@@ -429,26 +429,26 @@
     "ide__commands.md": {
       "original_url": "https://developers.openai.com/codex/ide/commands",
       "original_md_url": "https://developers.openai.com/codex/ide/commands.md",
-      "hash": "85acc9055808b1f15a1fb72ad82a89de629fb1547e9d84f2b10a52bcf6f3a7ac",
-      "last_updated": "2026-07-09T17:20:02.134129"
+      "hash": "52539ee0e0c4539760a78911f2b9bf3eeb2c7735e5447aca3fc67825a982036d",
+      "last_updated": "2026-07-17T05:38:59.048867"
     },
     "ide__settings.md": {
       "original_url": "https://developers.openai.com/codex/ide/settings",
       "original_md_url": "https://developers.openai.com/codex/ide/settings.md",
-      "hash": "f35db38129996d1457ea90c5b88c648c481ab89aa56ff9422756ba79e8200671",
-      "last_updated": "2026-07-09T17:20:02.759600"
+      "hash": "d15b5db89056dd4b4c13178f9253682b8321bbbe1fd26d587fbb0c2ae32833b6",
+      "last_updated": "2026-07-17T05:38:59.636107"
     },
     "ide__slash-commands.md": {
       "original_url": "https://developers.openai.com/codex/ide/slash-commands",
       "original_md_url": "https://developers.openai.com/codex/ide/slash-commands.md",
-      "hash": "85acc9055808b1f15a1fb72ad82a89de629fb1547e9d84f2b10a52bcf6f3a7ac",
-      "last_updated": "2026-07-09T17:20:03.369928"
+      "hash": "52539ee0e0c4539760a78911f2b9bf3eeb2c7735e5447aca3fc67825a982036d",
+      "last_updated": "2026-07-17T05:39:00.301081"
     },
     "image-generation.md": {
       "original_url": "https://developers.openai.com/codex/image-generation",
       "original_md_url": "https://developers.openai.com/codex/image-generation.md",
-      "hash": "2937b29ec5d5d543d6ece11e97f0c755798ae3f42c57aa125d5bb01f4ff26f41",
-      "last_updated": "2026-07-09T17:20:03.985456"
+      "hash": "a699121323e5291ba45834680814202871c9d063be6b4e682932af68f6dffdb8",
+      "last_updated": "2026-07-17T05:39:00.916523"
     },
     "image-inputs.md": {
       "original_url": "https://developers.openai.com/codex/image-inputs",
@@ -459,20 +459,20 @@
     "import.md": {
       "original_url": "https://developers.openai.com/codex/import",
       "original_md_url": "https://developers.openai.com/codex/import.md",
-      "hash": "034671294e30b8d1a0de80477e8db3c46e877ad431fc8409581ec0bbee966eac",
-      "last_updated": "2026-07-09T17:20:05.223413"
+      "hash": "4edf1236ff52f8b2aa01f422333983fbb9905adaaa8e75b9cd3718f18e89f7df",
+      "last_updated": "2026-07-17T05:39:02.116378"
     },
     "integrated-terminal.md": {
       "original_url": "https://developers.openai.com/codex/integrated-terminal",
       "original_md_url": "https://developers.openai.com/codex/integrated-terminal.md",
-      "hash": "e9f164761ad8b123b6e325a305fd96f579fd73c86b48168bf1f0a554b7dba59f",
-      "last_updated": "2026-07-09T17:20:05.863002"
+      "hash": "7df26cdab269ff4110b837cd0098b45133a6bdf1e3856319bf7eab4b5d3c6470",
+      "last_updated": "2026-07-17T05:39:02.717535"
     },
     "long-running-work.md": {
       "original_url": "https://developers.openai.com/codex/long-running-work",
       "original_md_url": "https://developers.openai.com/codex/long-running-work.md",
-      "hash": "08a52ae956e7e67256345a1e4de7c27e2b68eaa9091b017cd94c4874658435fe",
-      "last_updated": "2026-07-09T17:20:11.228652"
+      "hash": "5e3342498961a37f29a39859da37a0f5f7f70f0894ac224dd872e7600193a60c",
+      "last_updated": "2026-07-17T05:39:08.865121"
     },
     "mcp-server.md": {
       "original_url": "https://developers.openai.com/codex/mcp-server",
@@ -483,8 +483,8 @@
     "models.md": {
       "original_url": "https://developers.openai.com/codex/models",
       "original_md_url": "https://developers.openai.com/codex/models.md",
-      "hash": "c59b3eb884393a953f9b71912d2117ef92c04ad0286f3659dd900350feec8f06",
-      "last_updated": "2026-07-12T08:10:06.205217"
+      "hash": "7227dacf181553effa3d3cb2d8653f8f4fafc7dad7b74b47895272f563c7162b",
+      "last_updated": "2026-07-17T05:39:10.070326"
     },
     "non-interactive-mode.md": {
       "original_url": "https://developers.openai.com/codex/non-interactive-mode",
@@ -495,8 +495,8 @@
     "notifications.md": {
       "original_url": "https://developers.openai.com/codex/notifications",
       "original_md_url": "https://developers.openai.com/codex/notifications.md",
-      "hash": "099fe6d2cca018c08aea5479fd7718f3b854be35f9d2fe870063eac7e731f40d",
-      "last_updated": "2026-07-09T17:20:13.757821"
+      "hash": "3856fffb2b2de0f439ab39dbdd536e009ef0325e2b07cf81f1e0c2b030babe85",
+      "last_updated": "2026-07-17T05:39:11.273514"
     },
     "open-source.md": {
       "original_url": "https://developers.openai.com/codex/open-source",
@@ -507,128 +507,128 @@
     "permission-modes.md": {
       "original_url": "https://developers.openai.com/codex/permission-modes",
       "original_md_url": "https://developers.openai.com/codex/permission-modes.md",
-      "hash": "5a27fb4238677197984a55669af5b29d134b8118c42880c13876ce751e33b9a9",
-      "last_updated": "2026-07-09T17:20:20.906449"
+      "hash": "a4cbadea9cb1fbe75d2473d8690706a6df625fbaac7397c2c79bad2fe3f90cae",
+      "last_updated": "2026-07-17T05:39:17.721100"
     },
     "permissions.md": {
       "original_url": "https://developers.openai.com/codex/permissions",
       "original_md_url": "https://developers.openai.com/codex/permissions.md",
-      "hash": "88eb3863e80f394e0614c77af02d1b5695b35edf1daf03c80dae68468bc2a465",
-      "last_updated": "2026-07-09T17:20:21.524473"
+      "hash": "53ad27b2eb09a16f2311324770497331e82acb1b291e292eddbf5cb53390578d",
+      "last_updated": "2026-07-17T05:39:18.368235"
     },
     "personalize.md": {
       "original_url": "https://developers.openai.com/codex/personalize",
       "original_md_url": "https://developers.openai.com/codex/personalize.md",
-      "hash": "ba1ceadbc8b89536d2e049da8e1c1b98031a2949fb6d06d849945de472d2979c",
-      "last_updated": "2026-07-09T17:20:22.124339"
+      "hash": "8598c73d2061740ca52e1bd0d6eee33b2d3b007908b02e9fab65f458f08f305d",
+      "last_updated": "2026-07-17T05:39:18.962385"
     },
     "pets.md": {
       "original_url": "https://developers.openai.com/codex/pets",
       "original_md_url": "https://developers.openai.com/codex/pets.md",
-      "hash": "14315cd3c484d0cfb0cf2a0c6663194304a674ce3734a01540bf05dd869310c2",
-      "last_updated": "2026-07-09T17:20:22.735779"
+      "hash": "25ff5fbaef560c46af59370aeaf1ba8c65f3746672d14634d69c3c2341302a6b",
+      "last_updated": "2026-07-17T05:39:19.571358"
     },
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
       "original_md_url": "https://developers.openai.com/codex/plugins.md",
-      "hash": "94526e3b6e3c91709a7947ba39e07681f6fd893ce8c5e8a07f678c3449073dda",
-      "last_updated": "2026-07-14T19:12:20.291401"
+      "hash": "de11cfe81d9615606c0092366d4d5b2ee01748d809567bb46fb9bf7305b8a22d",
+      "last_updated": "2026-07-17T05:39:20.167590"
     },
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "fac94c2dee6558c2d9ff2308f5640ed9c0d4b2db2968f45dddee46c9a8741700",
-      "last_updated": "2026-07-10T06:41:46.809026"
+      "hash": "31384544bb74e72c24451d3d4eaabcbd44547f18ec4342eb8d9cc679dbf240ce",
+      "last_updated": "2026-07-17T05:39:20.766193"
     },
     "projects.md": {
       "original_url": "https://developers.openai.com/codex/projects",
       "original_md_url": "https://developers.openai.com/codex/projects.md",
-      "hash": "57e92f150b30154f51efcf4b66170de85318640fcef51d0431db883d90704f04",
-      "last_updated": "2026-07-09T17:20:24.547140"
+      "hash": "3fe2ed058ea6dffeded6c86dc434c06d406f3bfea1f95c08a2e9bb925d0f5854",
+      "last_updated": "2026-07-17T05:39:21.373998"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
       "original_md_url": "https://developers.openai.com/codex/prompting.md",
-      "hash": "8505f605c086c3d6a5f400afb4e5b4bf2e1d6be131d1fd38b5aee31fb555168c",
-      "last_updated": "2026-07-09T17:20:25.157447"
+      "hash": "44a3a7ddbba86d59601c2f660774822c242b1d6b6c4ff21e83256e4ad4703f64",
+      "last_updated": "2026-07-17T05:39:21.969172"
     },
     "quickstart.md": {
       "original_url": "https://developers.openai.com/codex/quickstart",
       "original_md_url": "https://developers.openai.com/codex/quickstart.md",
-      "hash": "64ebe4d9d9f90b28b2c9624a153fb0ef6f600ebf60f03bd53772a332b30a45e8",
-      "last_updated": "2026-07-12T08:10:18.435556"
+      "hash": "b1ececbcb3b3f4bf4fdcf4b471e81b4ec38ffa356eafce03b0f83b659bac573a",
+      "last_updated": "2026-07-17T05:39:22.575600"
     },
     "reference__troubleshooting.md": {
       "original_url": "https://developers.openai.com/codex/reference/troubleshooting",
       "original_md_url": "https://developers.openai.com/codex/reference/troubleshooting.md",
-      "hash": "5083c2d622a196dea2d1d4460428214eb9354f6d0688d2d272d1f8f9ca747625",
-      "last_updated": "2026-07-09T17:20:26.473018"
+      "hash": "e2a52759916484b6dd4a3437497f99ff16387b8f7e6242d1cce2f9cf6d1af2f5",
+      "last_updated": "2026-07-17T05:39:23.167267"
     },
     "remote-connections.md": {
       "original_url": "https://developers.openai.com/codex/remote-connections",
       "original_md_url": "https://developers.openai.com/codex/remote-connections.md",
-      "hash": "621dd8af085d117f44000159339929e3f368f27991328ec88ccb8fa05d62358f",
-      "last_updated": "2026-07-09T17:20:27.096537"
+      "hash": "9a87f95bef295af9fe91c5042d68d3dcef08cd54b64bd5f569e6fc17c6987e1b",
+      "last_updated": "2026-07-17T05:39:23.770215"
     },
     "sandboxing.md": {
       "original_url": "https://developers.openai.com/codex/sandboxing",
       "original_md_url": "https://developers.openai.com/codex/sandboxing.md",
-      "hash": "56d07e0a9d6d85eca6bb7858d58677a27b5199b7b3013ac92ac13ddd015b31be",
-      "last_updated": "2026-07-09T17:20:31.838727"
+      "hash": "3434a5e7497608a82946b3dcf87f88065bc016b8ebb986d6e8698daa8e68c4ba",
+      "last_updated": "2026-07-17T05:39:29.142908"
     },
     "sandboxing__auto-review.md": {
       "original_url": "https://developers.openai.com/codex/sandboxing/auto-review",
       "original_md_url": "https://developers.openai.com/codex/sandboxing/auto-review.md",
-      "hash": "a907f54a8fae6cb46032310a838bdc8e2cb9d4b6c0badbf91d4d7a88b17ad8c1",
-      "last_updated": "2026-07-09T17:20:32.445276"
+      "hash": "5edad773dfcf9ff4a6fa98ea3e6822f8ed20878be38eafe1242fc2671d27ffdb",
+      "last_updated": "2026-07-17T05:39:29.776938"
     },
     "security-administration.md": {
       "original_url": "https://developers.openai.com/codex/security-administration",
       "original_md_url": "https://developers.openai.com/codex/security-administration.md",
-      "hash": "617f2f7f0f3ab5b2c24fdcc5f85c32d408dfed4fdd2c43ca85a3c9b4695196c8",
-      "last_updated": "2026-07-09T17:20:33.046732"
+      "hash": "cd6cfe828f5c74c8bdd308a8a198caf571d4d5d06c07ddc18eacab02b13b7168",
+      "last_updated": "2026-07-17T05:39:30.383295"
     },
     "security.md": {
       "original_url": "https://developers.openai.com/codex/security",
       "original_md_url": "https://developers.openai.com/codex/security.md",
-      "hash": "88d9463c572118b73fbdc4aca02f17a31746c34a31e2a5e960ee7289db9c66a4",
-      "last_updated": "2026-07-09T17:20:33.645182"
+      "hash": "7663ac19b2fdb12d2092f1d02e5035f86a4bbb32bd174a4157b908dd69d328a8",
+      "last_updated": "2026-07-17T05:39:30.979760"
     },
     "security__faq.md": {
       "original_url": "https://developers.openai.com/codex/security/faq",
       "original_md_url": "https://developers.openai.com/codex/security/faq.md",
-      "hash": "e52de26125a57b67cf46015afef6ab3e8d40efc80cd8bc8d7be2847fc42195b7",
-      "last_updated": "2026-07-09T17:20:34.267707"
+      "hash": "7657502c6224361595eaee82ff86b33c2a736d92e44853a7a449ea2b42019c7c",
+      "last_updated": "2026-07-17T05:39:31.584039"
     },
     "security__plugin.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin",
       "original_md_url": "https://developers.openai.com/codex/security/plugin.md",
-      "hash": "ad49d175d9b736eb744b308a481782545abd0afb2de56f4750843946c0846fd2",
-      "last_updated": "2026-07-15T19:13:55.552692"
+      "hash": "7747f49d7a38de89ed6d4f7e24aa7615c1eb2a76d9b51d4a25ebbd6b041a75a6",
+      "last_updated": "2026-07-17T05:39:32.179168"
     },
     "security__plugin__changelog.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/changelog",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/changelog.md",
-      "hash": "55dbf45440042e2c273457c92e63afdc30a5d8c1163ef78fefc4db0d28e94000",
-      "last_updated": "2026-06-19T00:52:12.815853"
+      "hash": "f12615dd7de84073cb9b6047798086fe666d3a9d0ad96fcd8ad94d771afefb56",
+      "last_updated": "2026-07-17T05:39:32.768666"
     },
     "security__plugin__code-changes.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/code-changes",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/code-changes.md",
-      "hash": "62af3b1a6349723f70c18e89ef5ded339ee44dcfe14b11d31de88aee3aca2e39",
-      "last_updated": "2026-07-15T19:13:56.884626"
+      "hash": "76b997cf0212401bae322ab9a8b93e2d624cfcb26b2f8c9048b1e86df97c3de7",
+      "last_updated": "2026-07-17T05:39:33.362708"
     },
     "security__plugin__deep-scans.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/deep-scans",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/deep-scans.md",
-      "hash": "ff2937f288a1bea8fb8287a1e1d342dea58066fadccb35ef938ee697da49c145",
-      "last_updated": "2026-07-09T17:20:36.752124"
+      "hash": "94e410dd60d1e87cab81d4f7984f5fb4016bbba0aa0ce8b4652ea2cc473b3c1c",
+      "last_updated": "2026-07-17T05:39:33.966068"
     },
     "security__plugin__export-findings.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/export-findings",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/export-findings.md",
-      "hash": "aabbf6a189fb1e19e38bc42795579287a7d8d92c46d4daafbc77df10615244da",
-      "last_updated": "2026-07-09T17:20:37.360373"
+      "hash": "7a3301d715df16361b4b7d5078ee10cf0e36f66881b2c5158771a79d0696b8be",
+      "last_updated": "2026-07-17T05:39:34.552726"
     },
     "security__plugin__fix-findings.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/fix-findings",
@@ -639,8 +639,14 @@
     "security__plugin__scans.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/scans",
       "original_md_url": "https://developers.openai.com/codex/security/plugin/scans.md",
-      "hash": "de3b93e2b9ae86ac4c6a43473c0f028e14ebc1dc17fc8e81e02bdeccab611d8a",
-      "last_updated": "2026-07-09T17:20:38.590384"
+      "hash": "40bc84e2556003a662aeb8baba723257f600a7746545deadfe6a269a07074b48",
+      "last_updated": "2026-07-17T05:39:35.769722"
+    },
+    "security__plugin__security-hardening.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/security-hardening",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/security-hardening.md",
+      "hash": "1333a83be0ddf7cb723cb031ea86e32d296fbc04b4c2920cbe2143d6e2b96386",
+      "last_updated": "2026-07-17T05:39:36.378392"
     },
     "security__plugin__triage-backlog.md": {
       "original_url": "https://developers.openai.com/codex/security/plugin/triage-backlog",
@@ -648,71 +654,77 @@
       "hash": "e012fcd9665d39d29f38b4d3ba4f721f21057f21c9439bdbf5fadd0dd2a1180a",
       "last_updated": "2026-07-09T17:20:39.207008"
     },
+    "security__plugin__vulnerability-reports.md": {
+      "original_url": "https://developers.openai.com/codex/security/plugin/vulnerability-reports",
+      "original_md_url": "https://developers.openai.com/codex/security/plugin/vulnerability-reports.md",
+      "hash": "477bcd1d22c4f6d208acd4fb181a3879dc8b454b73bdf0330171b5803d8083e8",
+      "last_updated": "2026-07-17T05:39:37.601493"
+    },
     "security__setup.md": {
       "original_url": "https://developers.openai.com/codex/security/setup",
       "original_md_url": "https://developers.openai.com/codex/security/setup.md",
-      "hash": "bd1347cade64432d800ea321f0b961766a4e6ff139489f492f5e977b67de025d",
-      "last_updated": "2026-07-09T17:20:39.833807"
+      "hash": "f19dc631f27d2c0007c5b839094330d644f4a8dbe74c83cabc0f9f462652164e",
+      "last_updated": "2026-07-17T05:39:38.204450"
     },
     "security__threat-model.md": {
       "original_url": "https://developers.openai.com/codex/security/threat-model",
       "original_md_url": "https://developers.openai.com/codex/security/threat-model.md",
-      "hash": "4b54bd6e5ace4a2b6045b3b8053542ebd7942b76963666886550ad83bcae4e18",
-      "last_updated": "2026-07-09T17:20:40.434254"
+      "hash": "2117ce01b3420f738ace3e99ff5d591fa7a23b7e4d4fc12172679bdae7e2017c",
+      "last_updated": "2026-07-17T05:39:38.802774"
     },
     "sites.md": {
       "original_url": "https://developers.openai.com/codex/sites",
       "original_md_url": "https://developers.openai.com/codex/sites.md",
-      "hash": "57d719913eb64cb8f87ae77b389475d54b5a1dd77a11acd3dec53dd81ab4bdcb",
-      "last_updated": "2026-07-17T02:08:58.835708"
+      "hash": "77349dbeb02cdd86b1fb8c56796a22f199faa6c8ba692d2b8205506f0d5c5d17",
+      "last_updated": "2026-07-17T05:39:39.408162"
     },
     "skills-and-plugins.md": {
       "original_url": "https://developers.openai.com/codex/skills-and-plugins",
       "original_md_url": "https://developers.openai.com/codex/skills-and-plugins.md",
-      "hash": "b57b007db6adc876a0bb13022bc31133327487fd26bddc6a592bf2776a979ff6",
-      "last_updated": "2026-07-09T17:20:41.656984"
+      "hash": "ff56a3db52138c8d40ead9530982d744035658f58d5160ced53af5e9e510f5e0",
+      "last_updated": "2026-07-17T05:39:39.999000"
     },
     "submit-plugins.md": {
       "original_url": "https://developers.openai.com/codex/submit-plugins",
       "original_md_url": "https://developers.openai.com/codex/submit-plugins.md",
-      "hash": "525ada97e3391d42ec8b9236264428628b488b38ee94ba127489e7bc62912cdf",
-      "last_updated": "2026-07-14T16:13:36.994153"
+      "hash": "6419a1562a35a96eddc9e4cc202fb539e80665cbe589067b104080d3ba9c01f8",
+      "last_updated": "2026-07-17T05:39:40.589614"
     },
     "third-party__github.md": {
       "original_url": "https://developers.openai.com/codex/third-party/github",
       "original_md_url": "https://developers.openai.com/codex/third-party/github.md",
-      "hash": "7abe7bdd78451379c36153fb4a1884b36ac0acde477fe1bc72ef2f8bee99c302",
-      "last_updated": "2026-07-09T17:20:42.898896"
+      "hash": "ab9b99857017e933dc6eb0db4148f33a3c1928c8d50f4278b7ebdf323fa6246f",
+      "last_updated": "2026-07-17T05:39:41.212573"
     },
     "third-party__linear.md": {
       "original_url": "https://developers.openai.com/codex/third-party/linear",
       "original_md_url": "https://developers.openai.com/codex/third-party/linear.md",
-      "hash": "30d2d5f2a7de037e19612601bd176f088e7b67af279fa380a079a21bf2dac2d1",
-      "last_updated": "2026-07-09T17:20:43.528011"
+      "hash": "8aea4ba1fda192cd9d63b77f6fc10370cdefcc55679a246cfa2f1626991b522d",
+      "last_updated": "2026-07-17T05:39:41.821486"
     },
     "third-party__slack.md": {
       "original_url": "https://developers.openai.com/codex/third-party/slack",
       "original_md_url": "https://developers.openai.com/codex/third-party/slack.md",
-      "hash": "bae9bb9b39f08a686bbb357502a6240df992da4f79087741c6796130a6e4d794",
-      "last_updated": "2026-07-09T17:20:44.170407"
+      "hash": "1b7460944f8910bedbed7d1281b4115d7da75f32dfd4e829fe85a570f9d8fa29",
+      "last_updated": "2026-07-17T05:39:42.430686"
     },
     "use-chatgpt.md": {
       "original_url": "https://developers.openai.com/codex/use-chatgpt",
       "original_md_url": "https://developers.openai.com/codex/use-chatgpt.md",
-      "hash": "c7e28976f50489e41a4b186526a3f1e5cf36ac3ed7acfc78eccaca61511afe1c",
-      "last_updated": "2026-07-09T17:20:44.767136"
+      "hash": "6c8f5991b4142993a99150b26b6b8f3c4e041b3eebfee206e7d4dbbc20317696",
+      "last_updated": "2026-07-17T05:39:43.028484"
     },
     "visualizations.md": {
       "original_url": "https://developers.openai.com/codex/visualizations",
       "original_md_url": "https://developers.openai.com/codex/visualizations.md",
-      "hash": "532637e22c46773a11ba25fdcf644e3177a2f3878ac421b69a4741b3cd9f6a3e",
-      "last_updated": "2026-07-09T17:20:50.979633"
+      "hash": "394942f10ad72331210b6c28f62970969922fcbc2a62bd0c62f7725637b2325a",
+      "last_updated": "2026-07-17T05:39:48.158392"
     },
     "web-search.md": {
       "original_url": "https://developers.openai.com/codex/web-search",
       "original_md_url": "https://developers.openai.com/codex/web-search.md",
-      "hash": "0575a78d7950a082f2f460a1a3f97aeddc4c2524ec71587124dd4806b4d2d883",
-      "last_updated": "2026-07-09T17:20:51.602762"
+      "hash": "f3826200a9c6b80569b1625cf527d1aea4b6b687a1419c224ac5affebf805259",
+      "last_updated": "2026-07-17T05:39:48.761023"
     },
     "web.md": {
       "original_url": "https://developers.openai.com/codex/web",
@@ -723,20 +735,20 @@
     "whats-new.md": {
       "original_url": "https://developers.openai.com/codex/whats-new",
       "original_md_url": "https://developers.openai.com/codex/whats-new.md",
-      "hash": "e4195b604d284f0edd6eeb5932e8c7ef1c94444717ab4809d5137015ad2bf022",
-      "last_updated": "2026-07-09T17:20:52.858062"
+      "hash": "a8dd6d8f3cff44c24c14147e5cbe286abfff5feea50999eb4b1b420a8f408dfe",
+      "last_updated": "2026-07-17T05:39:50.054716"
     },
     "windows__windows-app.md": {
       "original_url": "https://developers.openai.com/codex/windows/windows-app",
       "original_md_url": "https://developers.openai.com/codex/windows/windows-app.md",
-      "hash": "cb405c21979828306ef3d10be38e9da18b39c978039bc640d0021040937dd771",
-      "last_updated": "2026-07-15T05:28:25.324302"
+      "hash": "ade5467121727c8dc1682110b5f399729000dee239d697015df9fa3ee3bdfd89",
+      "last_updated": "2026-07-17T05:39:50.665842"
     },
     "windows__windows-sandbox.md": {
       "original_url": "https://developers.openai.com/codex/windows/windows-sandbox",
       "original_md_url": "https://developers.openai.com/codex/windows/windows-sandbox.md",
-      "hash": "a4879c313b3a181df6447321c62129e29d9a30d2f53a456792c8cdcf2bedf68f",
-      "last_updated": "2026-07-09T17:20:54.240503"
+      "hash": "d36b10fbe856eb2996c370d0be28e767e874292c9c6650268afe20dfb605dcb9",
+      "last_updated": "2026-07-17T05:39:51.257560"
     },
     "windows__wsl.md": {
       "original_url": "https://developers.openai.com/codex/windows/wsl",
@@ -746,10 +758,10 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-17T02:09:10.198045",
-    "fetch_duration_seconds": 95.666672,
-    "total_pages_discovered": 130,
-    "pages_fetched_successfully": 124,
+    "last_fetch_completed": "2026-07-17T05:39:51.862450",
+    "fetch_duration_seconds": 103.859607,
+    "total_pages_discovered": 132,
+    "pages_fetched_successfully": 126,
     "pages_failed": 6,
     "failed_urls": [
       "https://developers.openai.com/codex/community/codex-for-oss.md",
@@ -761,10 +773,10 @@
     ],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 124,
+    "total_files": 126,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-17T02:09:10.198063",
+  "last_updated": "2026-07-17T05:39:51.862463",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

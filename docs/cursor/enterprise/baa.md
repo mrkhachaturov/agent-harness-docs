@@ -36,7 +36,7 @@ Third-party services and integrations are not automatically covered by Cursor's 
 The listed Eligible Services are covered for Enterprise customers with Privacy Mode enabled and locked organization-wide:
 
 - Desktop IDE, including Agent, Tab, Edit, local agent mode, and inline edit
-- Cloud Agents and self-hosted Cloud Agents
+- Cloud Agents
 - Cursor for iOS
 - CLI
 - Tab

@@ -44,15 +44,12 @@ Run `@Cursor help` for an up-to-date command list.
 
 Customize Cloud Agent behavior with these options:
 
-| Option               | Description                                                                                                              | Natural language example   | Inline example      |
-| :------------------- | :----------------------------------------------------------------------------------------------------------------------- | :------------------------- | :------------------ |
-| `repo`               | Use a specific repository                                                                                                | `in acme/backend`          | `repo=acme/backend` |
-| `branch`             | Use a specific base branch                                                                                               | `work from the dev branch` | `branch=dev`        |
-| `model`              | Use a specific model                                                                                                     | `with opus`                | `model=opus`        |
-| `autopr`             | Enable or disable automatic PR creation                                                                                  | Inline option required     | `autopr=false`      |
-| `worker` / `machine` | Run on a named [My Machine](https://cursor.com/docs/cloud-agent/my-machines.md#trigger-this-machine-from-a-chat-surface) | Inline option required     | `worker=my-devbox`  |
-| `pool`               | Run on a named [self-hosted pool](https://cursor.com/docs/cloud-agent/self-hosted-pool.md#triggering-pool-agents)        | Inline option required     | `pool=gpu`          |
-| `self_hosted`        | Run on your team's self-hosted pool                                                                                      | Inline option required     | `self_hosted=true`  |
+| Option   | Description                             | Natural language example   | Inline example      |
+| :------- | :-------------------------------------- | :------------------------- | :------------------ |
+| `repo`   | Use a specific repository               | `in acme/backend`          | `repo=acme/backend` |
+| `branch` | Use a specific base branch              | `work from the dev branch` | `branch=dev`        |
+| `model`  | Use a specific model                    | `with opus`                | `model=opus`        |
+| `autopr` | Enable or disable automatic PR creation | Inline option required     | `autopr=false`      |
 
 #### Syntax formats
 
@@ -66,12 +63,6 @@ Inline:
 
 ```bash
 @Cursor repo=acme/backend branch=dev model=opus autopr=false Fix the login bug
-```
-
-To run on a named self-hosted pool:
-
-```bash
-@Cursor repo=acme/backend pool=gpu Fix the login bug
 ```
 
 #### Option precedence

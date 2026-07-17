@@ -83,10 +83,6 @@ Cloud Agents are charged at [API pricing](https://cursor.com/docs/models-and-pri
 
 Yes. Use [Automations](https://cursor.com/help/ai-features/automations.md) to run Cloud Agents on a schedule or from events in GitHub, Slack, Linear, PagerDuty, or webhooks. Set them up at [cursor.com/automations](https://cursor.com/automations). See the [automations docs](https://cursor.com/docs/cloud-agent/automations.md) for trigger types and templates.
 
-## Should I use managed Cloud Agents, My Machines, or a self-hosted pool?
-
-Start with Cursor-managed Cloud Agents unless a written policy, network constraint, or hardware requirement forces customer-owned execution. The [decision guide](https://cursor.com/docs/cloud-agent/choose-runtime.md#self-hosted-or-cursor-hosted-which-is-right-for-you) walks through three questions in order and points you to [My Machines](https://cursor.com/docs/cloud-agent/my-machines.md) or [Self-Hosted Pool](https://cursor.com/docs/cloud-agent/self-hosted-pool.md) when needed.
-
 ## Does Privacy Mode work with Cloud Agents?
 
 Yes. Cloud Agents are available with Privacy Mode. See the [Cloud Agent security page](https://cursor.com/docs/cloud-agent/security-network.md) for details.

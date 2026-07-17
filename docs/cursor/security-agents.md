@@ -47,7 +47,7 @@ Use tools and MCPs to connect Security Agents to the systems where your team tra
 
 Security Agents run on Cloud Agents.
 
-You can use Cursor's cloud with no additional setup, or configure [self-hosted Cloud Agents](https://cursor.com/docs/cloud-agent/self-hosted-pool.md) to run reviews in your own environment.
+You can use Cursor's cloud with no additional setup.
 
 ## Run in your agent
 
