@@ -128,7 +128,7 @@ When US-only data residency is enabled for a team, the following stay on US-base
 
 #### Pricing
 
-US-only data residency incurs a 10% uplift on Model pricing for eligible Models. Enterprise pricing can be discussed with your account team.
+US-only data residency incurs a 10% uplift on Model pricing for eligible Models.
 
 #### How to enable
 

@@ -387,8 +387,8 @@
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
       "original_md_url": "https://cursor.com/docs/enterprise/organization-groups.md",
-      "hash": "cff7ca82e79c207a3865601cc98caaf8b2aff29d87e1f5d08270c74749409343",
-      "last_updated": "2026-07-01T00:48:32.050869"
+      "hash": "6a1d623ee1aa74630049ad9776b4d7ecec92889eeeaf41e1dc37c0ff93ec8f94",
+      "last_updated": "2026-07-17T02:09:11.807137"
     },
     "enterprise/organizations.md": {
       "original_url": "https://cursor.com/docs/enterprise/organizations",
@@ -405,8 +405,8 @@
     "enterprise/privacy-and-data-governance.md": {
       "original_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
       "original_md_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance.md",
-      "hash": "cf38fee054c8293c51975ec740fe6d00c8ebc94408c1af3782252c282343a168",
-      "last_updated": "2026-07-16T13:33:44.449770"
+      "hash": "ddf44e5f9e7907717769712c4c9344ff855a3a93a27669d3d70e4f58cd0c6625",
+      "last_updated": "2026-07-17T02:09:11.807428"
     },
     "enterprise/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/enterprise/private-connectivity",
@@ -1100,8 +1100,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-16T22:03:18.617261",
-    "fetch_duration_seconds": 1.613667,
+    "last_fetch_completed": "2026-07-17T02:09:11.810992",
+    "fetch_duration_seconds": 1.429145,
     "total_pages_discovered": 183,
     "pages_fetched_successfully": 183,
     "pages_failed": 0,
@@ -1114,7 +1114,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-16T22:03:18.617275",
+  "last_updated": "2026-07-17T02:09:11.811005",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

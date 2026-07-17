@@ -62,6 +62,22 @@ Group model settings combine with team settings using a permissive model: set re
 
 Organization Groups can also carry group-level agent and model-routing controls, including auto-run and Smart Auto settings where available.
 
+When the same Auto-run setting is defined at both the team level and the Organization Group level, Cursor merges each field independently. Inactive Auto-run policies do not participate. If the team Auto-run policy is disabled and the Organization Group policy is active, Cursor uses the Organization Group policy.
+
+| Setting                    | How team and Organization Group settings combine                                                                                               |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
+| Run modes                  | Union. A mode is available if either level enables it: Allowlist, Auto-review, or Run Everything.                                              |
+| Terminal command allowlist | Union with deduplication. Commands allowed by either level are allowed.                                                                        |
+| Delete File Protection     | Enabled if either level enables it.                                                                                                            |
+| Browser Protection         | Enabled if either level enables it.                                                                                                            |
+| Sandboxing Mode            | Loosest setting wins. `disabled` beats `enabled`, so sandboxing is enabled only when both levels enable it.                                    |
+| Sandbox Networking         | Loosest setting wins. `user_controlled` beats `always_disabled`, so networking is always disabled only when both levels set `always_disabled`. |
+| Sandbox Git Access         | Same as Sandbox Networking: `user_controlled` beats `always_disabled`.                                                                         |
+
+When multiple Organization Groups apply to the same user, Cursor applies the same field-wise merge rules across those groups.
+
+Auto-review instructions have separate precedence. If an Organization Group defines instructions, they replace the team-level instructions for that user.
+
 Because groups can include users from multiple teams, team-level restrictions still matter. If a user's team blocks a model required by a group setting, that team-level restriction can affect the user's experience.
 
 ### Team marketplace access
