@@ -417,8 +417,8 @@
     "hooks.md": {
       "original_url": "https://developers.openai.com/codex/hooks",
       "original_md_url": "https://developers.openai.com/codex/hooks.md",
-      "hash": "ef4d6f00c7bc38b259c79a52e0b8a143684003a1908e089d3830394eba687385",
-      "last_updated": "2026-07-17T05:38:57.835041"
+      "hash": "c2a29dc717985236028e2d3cc3af42cc39814a56cc52c0d20b1a9a9fa1060d19",
+      "last_updated": "2026-07-18T01:57:01.755084"
     },
     "ide.md": {
       "original_url": "https://developers.openai.com/codex/ide",
@@ -711,8 +711,8 @@
     "use-chatgpt.md": {
       "original_url": "https://developers.openai.com/codex/use-chatgpt",
       "original_md_url": "https://developers.openai.com/codex/use-chatgpt.md",
-      "hash": "6c8f5991b4142993a99150b26b6b8f3c4e041b3eebfee206e7d4dbbc20317696",
-      "last_updated": "2026-07-17T05:39:43.028484"
+      "hash": "55c89c6ca919e7e9e902dd61c48b29f80b51ade168304bb5319effb183394ec0",
+      "last_updated": "2026-07-18T01:57:46.681708"
     },
     "visualizations.md": {
       "original_url": "https://developers.openai.com/codex/visualizations",
@@ -758,8 +758,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-17T21:48:20.943389",
-    "fetch_duration_seconds": 100.161329,
+    "last_fetch_completed": "2026-07-18T01:57:56.119887",
+    "fetch_duration_seconds": 102.304177,
     "total_pages_discovered": 132,
     "pages_fetched_successfully": 126,
     "pages_failed": 6,
@@ -776,7 +776,7 @@
     "total_files": 126,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-17T21:48:20.943406",
+  "last_updated": "2026-07-18T01:57:56.119909",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
