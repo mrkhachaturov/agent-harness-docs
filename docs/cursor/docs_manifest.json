@@ -117,8 +117,8 @@
     "agent/tools/browser.md": {
       "original_url": "https://cursor.com/docs/agent/tools/browser",
       "original_md_url": "https://cursor.com/docs/agent/tools/browser.md",
-      "hash": "286de9a859388efb59a0638672d4c55f5c3bda2d93bb47b364e3ea323433c5ea",
-      "last_updated": "2026-06-29T22:53:03.548417"
+      "hash": "f15beb6863ede9e7ded065608130956d47c6274b6e358f5e00183a3e2946d60b",
+      "last_updated": "2026-07-18T15:54:18.416347"
     },
     "agent/tools/canvas.md": {
       "original_url": "https://cursor.com/docs/agent/tools/canvas",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-18T13:04:21.622586",
-    "fetch_duration_seconds": 2.13775,
+    "last_fetch_completed": "2026-07-18T15:54:18.420486",
+    "fetch_duration_seconds": 2.321736,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-18T13:04:21.622599",
+  "last_updated": "2026-07-18T15:54:18.420498",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
