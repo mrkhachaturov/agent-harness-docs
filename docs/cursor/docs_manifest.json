@@ -45,8 +45,8 @@
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
       "original_md_url": "https://cursor.com/docs/account/teams/scim.md",
-      "hash": "b81969aa508d7a0ea8c3c85b56e0a32358292d878212e2529d4b920d0363191d",
-      "last_updated": "2026-06-29T22:53:03.543995"
+      "hash": "1a2b0b287551e8280d2826f4585459b0094c30c406ce603f78931ad3aa9b87c2",
+      "last_updated": "2026-07-19T21:47:45.574602"
     },
     "account/teams/setup.md": {
       "original_url": "https://cursor.com/docs/account/teams/setup",
@@ -339,8 +339,8 @@
     "enterprise/identity-and-access-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/identity-and-access-management",
       "original_md_url": "https://cursor.com/docs/enterprise/identity-and-access-management.md",
-      "hash": "0056ecda7c0184844cae556ab8c505104c89b20c178713ddcfec6a3f0f557e72",
-      "last_updated": "2026-06-29T22:53:03.557956"
+      "hash": "57bee7c663325de9d1d2aa3f3676825d00bd404b3b3e197abe1e851e243cfcdb",
+      "last_updated": "2026-07-19T21:47:45.575479"
     },
     "enterprise/llm-safety-and-controls.md": {
       "original_url": "https://cursor.com/docs/enterprise/llm-safety-and-controls",
@@ -363,14 +363,14 @@
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
       "original_md_url": "https://cursor.com/docs/enterprise/organization-groups.md",
-      "hash": "6a1d623ee1aa74630049ad9776b4d7ecec92889eeeaf41e1dc37c0ff93ec8f94",
-      "last_updated": "2026-07-17T02:09:11.807137"
+      "hash": "ad22816612bf97edbb9dc58b705129f7ee5cd0b8a628d6e2139cd037bbcfe27e",
+      "last_updated": "2026-07-19T21:47:45.575778"
     },
     "enterprise/organizations.md": {
       "original_url": "https://cursor.com/docs/enterprise/organizations",
       "original_md_url": "https://cursor.com/docs/enterprise/organizations.md",
-      "hash": "217994d88f4a85b2802b40d22d099a98d9dea792c005131137b8cb8875c4600e",
-      "last_updated": "2026-06-29T22:53:03.558847"
+      "hash": "94fb0e0f3dd7e25c9566a6000492eee8d79df6d14d48c7c9c837f49601ca5a19",
+      "last_updated": "2026-07-19T21:47:45.576001"
     },
     "enterprise/pooled-usage.md": {
       "original_url": "https://cursor.com/docs/enterprise/pooled-usage",
@@ -1076,8 +1076,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-19T19:01:45.000143",
-    "fetch_duration_seconds": 2.185911,
+    "last_fetch_completed": "2026-07-19T21:47:45.579436",
+    "fetch_duration_seconds": 1.61998,
     "total_pages_discovered": 179,
     "pages_fetched_successfully": 179,
     "pages_failed": 0,
@@ -1090,7 +1090,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-19T19:01:45.000157",
+  "last_updated": "2026-07-19T21:47:45.579448",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
