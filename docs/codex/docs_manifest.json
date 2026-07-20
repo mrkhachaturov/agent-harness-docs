@@ -459,8 +459,8 @@
     "import.md": {
       "original_url": "https://developers.openai.com/codex/import",
       "original_md_url": "https://developers.openai.com/codex/import.md",
-      "hash": "4edf1236ff52f8b2aa01f422333983fbb9905adaaa8e75b9cd3718f18e89f7df",
-      "last_updated": "2026-07-17T05:39:02.116378"
+      "hash": "acfbeec54bcca69f3ece6c5b16b015df53fe58ee36dcf41bd0a31408a32c65ee",
+      "last_updated": "2026-07-20T06:15:36.306794"
     },
     "integrated-terminal.md": {
       "original_url": "https://developers.openai.com/codex/integrated-terminal",
@@ -758,8 +758,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-20T02:29:32.195863",
-    "fetch_duration_seconds": 97.670285,
+    "last_fetch_completed": "2026-07-20T06:16:25.105677",
+    "fetch_duration_seconds": 100.482206,
     "total_pages_discovered": 132,
     "pages_fetched_successfully": 126,
     "pages_failed": 6,
@@ -776,7 +776,7 @@
     "total_files": 126,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-20T02:29:32.195883",
+  "last_updated": "2026-07-20T06:16:25.105698",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
