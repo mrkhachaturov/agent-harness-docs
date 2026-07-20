@@ -1,6 +1,8 @@
-# Security & Network
+# Secrets & Network
 
 Cloud Agents are available in Privacy Mode. We never train on your code and only retain code for running the agent. [Learn more about Privacy mode](https://www.cursor.com/privacy-overview).
+
+For a walkthrough of how Cloud Agents are architected and secured, including the run lifecycle, access model, isolation, encryption, and data handling, see the [Security overview](https://cursor.com/docs/cloud-agent/security.md). This page is the configuration reference for the controls it describes.
 
 **Privacy Mode (Legacy)** is not supported. Legacy privacy mode blocks cloud
 data storage, and Cloud Agents need to store code and environment data in the
