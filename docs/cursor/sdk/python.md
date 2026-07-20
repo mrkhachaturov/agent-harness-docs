@@ -450,6 +450,7 @@ class Run:
     created_at: str | None
     usage: TokenUsage | None  # cumulative; property on the live handle
 
+    def stream(self) -> Iterator[SDKMessage]: ...
     def messages(self) -> Iterator[SDKMessage]: ...
     def events(self) -> Iterator[RunStreamEvent]: ...
     def iter_text(self) -> Iterator[str]: ...
@@ -469,7 +470,7 @@ class Run:
 
 `run.stream()` is an alias for `run.messages()`. Iterating `run` directly yields `RunStreamEvent` envelopes, the same as `run.events()`.
 
-`AsyncRun` exposes the same state fields, including `usage`. Methods that do I/O are async: `async for message in run.messages()`, `async for event in run.events()`, `async for text in run.iter_text()`, `await run.text()`, `await run.wait()`, `await run.cancel()`, `await run.conversation()`, `await run.conversation_json()`, and `async for event in run.observe()`.
+`AsyncRun` exposes the same state fields, including `usage`. Methods that do I/O are async: `async for message in run.stream()`, `async for message in run.messages()`, `async for event in run.events()`, `async for text in run.iter_text()`, `await run.text()`, `await run.wait()`, `await run.cancel()`, `await run.conversation()`, `await run.conversation_json()`, and `async for event in run.observe()`.
 
 ### Streaming
 
