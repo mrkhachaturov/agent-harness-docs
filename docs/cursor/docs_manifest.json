@@ -333,8 +333,8 @@
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
       "original_md_url": "https://cursor.com/docs/enterprise/deployment-patterns.md",
-      "hash": "d77172ee574eeebdd965e9d68498330b5f78b100055f51b97ab7f8092929c1b0",
-      "last_updated": "2026-06-29T22:53:03.557553"
+      "hash": "2dcbc9ea29a94a14e4a3663bd2f063397f6a0ca15f89d56692e80d3c52e0fb6b",
+      "last_updated": "2026-07-21T19:14:14.738267"
     },
     "enterprise/endpoint-security.md": {
       "original_url": "https://cursor.com/docs/enterprise/endpoint-security",
@@ -1088,8 +1088,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-21T16:24:30.539533",
-    "fetch_duration_seconds": 2.496012,
+    "last_fetch_completed": "2026-07-21T19:14:14.741870",
+    "fetch_duration_seconds": 2.205768,
     "total_pages_discovered": 181,
     "pages_fetched_successfully": 181,
     "pages_failed": 0,
@@ -1102,7 +1102,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-21T16:24:30.539545",
+  "last_updated": "2026-07-21T19:14:14.741882",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

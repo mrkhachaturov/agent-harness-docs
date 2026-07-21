@@ -15,8 +15,8 @@
     "agent-configuration__agents-md.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/agents-md",
       "original_md_url": "https://developers.openai.com/codex/agent-configuration/agents-md.md",
-      "hash": "c052de1065d48ea3bf17c7ddc404c5e144f687dd5a93a871d3f734fbdf3efac9",
-      "last_updated": "2026-07-09T17:19:15.072405"
+      "hash": "962db3148053d4038c8469ba36e1374b13ce72c3b39e6aa6272731e116d34995",
+      "last_updated": "2026-07-21T19:12:26.749493"
     },
     "agent-configuration__rules.md": {
       "original_url": "https://developers.openai.com/codex/agent-configuration/rules",
@@ -249,8 +249,8 @@
     "developers.md": {
       "original_url": "https://developers.openai.com/codex/developers",
       "original_md_url": "https://developers.openai.com/codex/developers.md",
-      "hash": "8a8e54468ced46c3548fa6f26272104005d1b365017bbb7c325bafb8d4c8232d",
-      "last_updated": "2026-07-17T05:38:33.769873"
+      "hash": "a2e060c3d235e89ea7417c3e6894d49c0f7cd7021fa49fa1b2a7a068862e119c",
+      "last_updated": "2026-07-21T19:12:52.160766"
     },
     "enterprise__access-tokens.md": {
       "original_url": "https://developers.openai.com/codex/enterprise/access-tokens",
@@ -528,6 +528,12 @@
       "hash": "25ff5fbaef560c46af59370aeaf1ba8c65f3746672d14634d69c3c2341302a6b",
       "last_updated": "2026-07-17T05:39:19.571358"
     },
+    "plugin-submission-errors.md": {
+      "original_url": "https://developers.openai.com/codex/plugin-submission-errors",
+      "original_md_url": "https://developers.openai.com/codex/plugin-submission-errors.md",
+      "hash": "c3a8c57e2a40a3c9f02b0a533624f77aefc2bd35a7a2718378095f0bb1a1ba1e",
+      "last_updated": "2026-07-21T19:13:37.821490"
+    },
     "plugins.md": {
       "original_url": "https://developers.openai.com/codex/plugins",
       "original_md_url": "https://developers.openai.com/codex/plugins.md",
@@ -687,14 +693,14 @@
     "submit-plugins.md": {
       "original_url": "https://developers.openai.com/codex/submit-plugins",
       "original_md_url": "https://developers.openai.com/codex/submit-plugins.md",
-      "hash": "6419a1562a35a96eddc9e4cc202fb539e80665cbe589067b104080d3ba9c01f8",
-      "last_updated": "2026-07-17T05:39:40.589614"
+      "hash": "5273d79059992a1820827858a94440e1123b57e5047e8156fdac936deb50bd3d",
+      "last_updated": "2026-07-21T19:14:00.022823"
     },
     "third-party__github.md": {
       "original_url": "https://developers.openai.com/codex/third-party/github",
       "original_md_url": "https://developers.openai.com/codex/third-party/github.md",
-      "hash": "ab9b99857017e933dc6eb0db4148f33a3c1928c8d50f4278b7ebdf323fa6246f",
-      "last_updated": "2026-07-17T05:39:41.212573"
+      "hash": "a5b643c9e82ea758e241bc182b481d973002677242d59975cdb0aa02adfb787e",
+      "last_updated": "2026-07-21T19:14:00.670822"
     },
     "third-party__linear.md": {
       "original_url": "https://developers.openai.com/codex/third-party/linear",
@@ -758,10 +764,10 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-21T16:24:27.870599",
-    "fetch_duration_seconds": 111.275075,
-    "total_pages_discovered": 132,
-    "pages_fetched_successfully": 126,
+    "last_fetch_completed": "2026-07-21T19:14:12.347238",
+    "fetch_duration_seconds": 107.316071,
+    "total_pages_discovered": 133,
+    "pages_fetched_successfully": 127,
     "pages_failed": 6,
     "failed_urls": [
       "https://developers.openai.com/codex/community/codex-for-oss.md",
@@ -773,10 +779,10 @@
     ],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 126,
+    "total_files": 127,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-21T16:24:27.870617",
+  "last_updated": "2026-07-21T19:14:12.347261",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
