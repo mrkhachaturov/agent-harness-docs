@@ -6,7 +6,7 @@ A coding agent is an AI system that writes and changes software on its own. You 
 
 An AI coding agent uses large language models (LLMs) to build software and accomplish tasks for you. It runs [tools in a loop](https://cursor.com/learn/agents.md): instead of always returning a single answer, it works through a series of tool calls, deciding what to do next based on the result of each action. You set the goal and review the output. Cursor built one of the first coding agents in late 2024, and agents have now become the main way people write software.
 
-The quality of the output depends on the model, the [harness](https://cursor.com/learn/working-with-agents.md), and the context you provide. Cursor works with every [frontier model](https://cursor.com/docs/models-and-pricing.md) and tunes its harness to each one to get the most out of every model when building software. You can compare model results on the [evals page](/evals).
+The quality of the output depends on the model, the [harness](https://cursor.com/learn/working-with-agents.md), and the context you provide. Cursor works with every [frontier model](https://cursor.com/docs/models-and-pricing.md) and tunes its harness to each one to get the most out of every model when building software. You can compare model results on the [CursorBench page](/cursorbench).
 
 ## What is inside a coding agent?
 

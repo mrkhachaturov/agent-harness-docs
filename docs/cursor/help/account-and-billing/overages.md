@@ -6,7 +6,7 @@ If you see charges beyond your base subscription, you likely have on-demand usag
 
 Each plan includes a monthly usage budget. If you exceed your included usage, additional requests are billed at API rates with no markup.
 
-On Teams and Enterprise plans, non-Auto third-party model requests also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). Auto requests and first-party models, including Composer 2.5 and Grok 4.5, are exempt.
+On Teams and Enterprise plans, third-party model requests also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). This includes when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and first-party models, including Composer 2.5 and Grok 4.5, are exempt.
 
 - On-demand usage must be explicitly enabled in your settings
 - On-demand usage has its own invoices and line items, distinct from your subscription

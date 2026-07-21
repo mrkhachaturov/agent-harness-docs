@@ -19,12 +19,12 @@ See [cursor.com/pricing](https://cursor.com/pricing) for the full feature compar
 
 ## What are Auto and Premium?
 
-**Auto** and **Premium** are model routers that pick models for you.
+Auto and Premium are model routers that pick models for you.
 
-- **Auto** balances intelligence, cost, and reliability. It has fixed token rates ($1.25/1M input, $6.00/1M output, $0.25/1M cache read) regardless of which model it selects.
-- **Premium** picks the most capable model available. It's billed at the selected model's API rate and is best for complex tasks.
+- Auto has three modes. Auto Cost pricing is set per million tokens, regardless of which model is used ($1.25/1M input, $6.00/1M output, $0.25/1M cache read). Auto Balance and Auto Intelligence are charged at Model API rates for the model used, based on actual usage. Third-party models also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md).
+- Premium picks the most capable model available. It's billed at the selected model's API rate and is best for complex tasks.
 
-You can switch between Auto, Premium, and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) for details.
+You can switch between Auto, Premium, and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) and [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for details.
 
 ## What's included in the free Hobby plan?
 

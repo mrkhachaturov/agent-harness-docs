@@ -1,6 +1,6 @@
 # Usage and limits
 
-Each Cursor plan includes a monthly API usage budget charged at model provider prices, plus a First-party models pool for Auto, Composer 2.5, and Grok 4.5.
+Each Cursor plan includes a monthly API usage budget charged at model provider prices, plus a First-party models pool for Composer 2.5 and Grok 4.5.
 
 ## How much usage does each plan include?
 
@@ -30,7 +30,7 @@ For teams, all members' usage resets at the same time based on the team billing 
 
 ## How do I get more usage?
 
-- **Use First-Party Models**: Auto, Composer, and Grok 4.5 draw from the First-Party Models pool (formerly Auto + Composer), tracked separately and included with your plan
+- **Use First-Party Models**: Composer and Grok 4.5 draw from the First-Party Models pool, tracked separately and included with your plan
 - **Enable on-demand usage**: Pay for additional requests at the same API rates
 - **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Higher-tier plans include more usage
 

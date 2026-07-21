@@ -32,10 +32,10 @@ Seat type is separate from role. Members and Admins can have either a Standard o
 
 Each paid seat comes with included usage across two pools:
 
-- First-party models (Auto, Composer 2.5, and Grok 4.5)
+- First-party models (Composer 2.5 and Grok 4.5)
 - Third-party API models
 
-Usage is allocated per user based on seat type, does not transfer between team members, and resets at the start of each billing cycle. Third-party API model usage is charged at public list API prices plus the Cursor Token Rate. First-party models, including Auto, Composer 2.5, and Grok 4.5, are exempt from the Cursor Token Rate.
+Usage is allocated per user based on seat type, does not transfer between team members, and resets at the start of each billing cycle. Third-party API model usage is charged at public list API prices plus the Cursor Token Rate. This includes when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and first-party models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
 
 The [usage dashboard](https://cursor.com/dashboard/usage) tracks included usage separately for:
 
@@ -51,7 +51,8 @@ On-demand usage allows you to continue using models after included usage is cons
 When a team member consumes all of their included third-party API model usage, Cursor switches them to the First-party models pool. If they continue using third-party API models, or if they fully consume their First-party models pool usage, they continue with **on-demand usage** if it is enabled.
 
 - Third-party API models are billed monthly at public list API prices plus the Cursor Token Rate
-- First-party models, including Auto, Composer 2.5, and Grok 4.5, are billed monthly at their token rates with no Cursor Token Rate
+- First-party models, including Composer 2.5 and Grok 4.5, are billed monthly at their token rates with no Cursor Token Rate
+- Auto Cost pricing is set per million tokens, regardless of which model is used, with no Cursor Token Rate. Auto Balance and Auto Intelligence are billed at Model API rates for the model used; third-party models also incur the Cursor Token Rate
 - No interruption in service or quality
 - Tracked per user in your admin dashboard (see [spending data API](https://cursor.com/docs/account/teams/admin-api.md#get-spending-data))
 - Can be controlled with spending limits
@@ -60,12 +61,14 @@ On-demand usage is enabled by default for the Teams plan.
 
 ### Cursor Token Rate
 
-The Cursor Token Rate is **$0.25 per million tokens** and is charged only on non-Auto, third-party model requests. This covers:
+The Cursor Token Rate is $0.25 per million tokens and is charged on third-party model requests. This covers:
 
 - Custom model execution (Tab, Apply, etc.)
 - Infrastructure and processing costs
 
-The Cursor Token Rate applies to input tokens, output tokens, and cached tokens on eligible third-party model requests. This applies to [BYOK](https://cursor.com/help/models-and-usage/api-keys.md) as well. Auto requests and all first-party models, including Composer 2.5 and Grok 4.5, are exempt.
+The Cursor Token Rate applies to input tokens, output tokens, and cached tokens on eligible third-party model requests. This includes when Auto Balance or Auto Intelligence routes to a third-party model. This applies to [BYOK](https://cursor.com/help/models-and-usage/api-keys.md) as well. Auto Cost and all first-party models, including Composer 2.5 and Grok 4.5, are exempt.
+
+See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for Auto Cost, Auto Balance, and Auto Intelligence pricing.
 
 ## Active seats
 
@@ -84,7 +87,7 @@ Contact `enterprise@cursor.com` for volume discounts on larger teams.
 
 ## Model Pricing
 
-All prices are per million tokens. Teams are charged at public list API prices plus [Cursor Token Rate](https://cursor.com/docs/account/teams/pricing.md#cursor-token-rate) only for non-Auto third-party model requests.
+All prices are per million tokens. Teams are charged at public list API prices plus [Cursor Token Rate](https://cursor.com/docs/account/teams/pricing.md#cursor-token-rate) for third-party model requests, including when Auto Balance or Auto Intelligence routes to a third-party model.
 
 | Model                                                                                         | Provider  | Input | Cache write | Cache read | Output | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | --------------------------------------------------------------------------------------------- | --------- | ----- | ----------- | ---------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |

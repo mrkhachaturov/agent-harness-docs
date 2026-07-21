@@ -25,11 +25,12 @@ See the [models reference](https://cursor.com/docs/models-and-pricing.md) for th
 
 ## How much does Auto cost?
 
-Auto has fixed token rates regardless of which model Cursor selects behind the scenes:
+Auto has three modes with different pricing:
 
-- **Input + Cache Write**: $1.25 per 1M tokens
-- **Output**: $6.00 per 1M tokens
-- **Cache Read**: $0.25 per 1M tokens
+- Auto Cost pricing is set per million tokens, regardless of which model is used: $1.25 per 1M input + cache write, $6.00 per 1M output, and $0.25 per 1M cache read.
+- Auto Balance and Auto Intelligence are charged at Model API rates for the model used, based on actual usage. Third-party models also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md).
+
+See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) on Models & Pricing for details.
 
 ## How much does Grok 4.5 cost?
 

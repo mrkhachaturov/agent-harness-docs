@@ -4,7 +4,7 @@ AI pair programming puts you and a coding agent together on the same task. You d
 
 ## What is an AI coding assistant?
 
-An AI coding assistant is software that helps you build software using large language models (LLMs). In Cursor, the assistant is an agent. You give it a goal, and it plans and carries out the work, rather than only answering questions. Cursor works with every [frontier model](https://cursor.com/docs/models-and-pricing.md) and tunes its [harness](https://cursor.com/learn/working-with-agents.md) to each one to get the most out of every model. You can compare model results on the [evals page](/evals).
+An AI coding assistant is software that helps you build software using large language models (LLMs). In Cursor, the assistant is an agent. You give it a goal, and it plans and carries out the work, rather than only answering questions. Cursor works with every [frontier model](https://cursor.com/docs/models-and-pricing.md) and tunes its [harness](https://cursor.com/learn/working-with-agents.md) to each one to get the most out of every model. You can compare model results on the [CursorBench page](/cursorbench).
 
 ## How do I pair program with Cursor?
 

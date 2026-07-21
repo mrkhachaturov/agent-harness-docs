@@ -6,24 +6,14 @@ Cursor supports frontier models from OpenAI, Anthropic, Google, SpaceXAI, and mo
 
 There are two separate usage pools for individual plans, each resetting with your monthly billing cycle:
 
-- **First-party models**: Significantly more included usage with Auto, Composer 2.5, and Grok 4.5.
+- **First-party models**: Significantly more included usage with Composer 2.5 and Grok 4.5.
 - **API**: Charged at the model's API price. Individual plans include at least $20 of API usage each month (more on higher tiers) with the option to pay for additional usage as needed.
 
 Both pools are visible in your editor settings and on your [usage dashboard](https://cursor.com/dashboard/usage).
 
 ## First-party models pool
 
-Auto allows Cursor to select models that balance intelligence, cost efficiency, and reliability. It is useful for everyday tasks.
-
-The First-party models pool includes Auto, Composer 2.5, and Grok 4.5.
-
-### Auto pricing
-
-| Token type          | Price per 1M tokens |
-| :------------------ | :------------------ |
-| Input + Cache Write | $1.25               |
-| Output              | $6.00               |
-| Cache Read          | $0.25               |
+The First-party models pool includes Composer 2.5 and Grok 4.5.
 
 ### Composer pricing
 
@@ -127,7 +117,27 @@ Learn more about [Teams pricing](https://cursor.com/docs/account/teams/pricing.m
 
 ## Cursor Token Rate
 
-On Teams and Enterprise plans, non-Auto third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage. Auto requests and all first-party models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
+On Teams and Enterprise plans, third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage.
+
+The Cursor Token Rate applies when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and all first-party models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
+
+## Auto modes
+
+Auto has three modes: Auto Cost, Auto Balance, and Auto Intelligence.
+
+### Auto Cost
+
+Auto Cost pricing is set per million tokens, regardless of which model is used.
+
+| Token type          | Price per 1M tokens |
+| :------------------ | :------------------ |
+| Input + Cache Write | $1.25               |
+| Output              | $6.00               |
+| Cache Read          | $0.25               |
+
+### Auto Balance and Auto Intelligence
+
+Auto Balance and Auto Intelligence are charged at Model API rates for the model used, based on actual usage. Third-party models also incur the Cursor Token Rate. See [Model pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for per-model rates.
 
 ## Legacy request-based pricing
 

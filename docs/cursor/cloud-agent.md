@@ -91,6 +91,14 @@ Cloud agents produce merge-ready PRs with artifacts to demo their changes. You c
 
 See [Cloud agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md) for details on artifacts, computer use, and remote desktop control.
 
+## Share agents with your team
+
+Send an agent's URL to a teammate and they can open the run to see the conversation, the code changes, and the artifacts the agent produced.
+
+Agents are visible to members of the Cursor team they were started under. Cursor also verifies each viewer's repository access: to open a teammate's agent, connect your own source control account under [Integrations](https://cursor.com/dashboard/integrations) and make sure you have access to the repository the agent worked in. Team membership alone doesn't grant access.
+
+Viewing is read-only. To let teammates send follow-up messages and continue the work, a team admin can enable [team follow-ups](https://cursor.com/docs/cloud-agent/settings.md#team-follow-ups).
+
 ## Related pages
 
 - Learn more about [Cloud agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md).
@@ -125,6 +133,12 @@ Cloud Agents are charged at API pricing for the selected [model](https://cursor.
 Snapshots save your base environment configuration (installed packages, system dependencies, etc.).
 If you include `.env.local` files during snapshot creation, they will be saved. However, using the Secrets tab
 in Cursor Settings is the recommended approach for managing environment variables.
+
+### A teammate can't open my agent
+
+- The teammate must belong to the same Cursor team as you.
+- They need to connect their own source control account under [Integrations](https://cursor.com/dashboard/integrations) and have access to the repository the agent worked in.
+- See [Share agents with your team](https://cursor.com/docs/cloud-agent.md#share-agents-with-your-team) for details.
 
 ### Slack integration not working
 
