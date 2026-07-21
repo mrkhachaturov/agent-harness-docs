@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "7e5c16835bad206342e4c2bb80b6a029e16a1a8d89c6c854113df9a4d6029316",
-      "last_updated": "2026-07-17T19:02:52.232294"
+      "hash": "4f91fc94e3318e3a8672ec93bb6e5a25cabae8859591ecb89ee791caa16e4a76",
+      "last_updated": "2026-07-21T16:24:30.534337"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -885,8 +885,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "79ddd23563ccc773392b1095b9e769092fce05a7e98141792888464f83bfcc0a",
-      "last_updated": "2026-07-17T19:02:52.236001"
+      "hash": "b96875503735c8e3b3852a3a063b6749877155344189cd29e799c327defa7e88",
+      "last_updated": "2026-07-21T16:24:30.535826"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -969,8 +969,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "621f4f4e3666f1431ec1b4133586471e1ef0481303aac7937e21861d53bb9ca4",
-      "last_updated": "2026-07-17T19:02:52.236432"
+      "hash": "8c19e0e36fc9a2adb00b4c531161372857a39b324a2826d3d3ed8d150543f5d8",
+      "last_updated": "2026-07-21T16:24:30.536307"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1002,11 +1002,11 @@
       "hash": "f0876d4a78caf5ab0083b7b6fa3ccd2e5d5bb84f9466e83fdcda144f947e24e2",
       "last_updated": "2026-07-17T19:02:52.236930"
     },
-    "models/gemini-3-5-flash.md": {
-      "original_url": "https://cursor.com/docs/models/gemini-3-5-flash",
-      "original_md_url": "https://cursor.com/docs/models/gemini-3-5-flash.md",
-      "hash": "0e0483bae40bdb56b577082920786131ef6f8108aa36db2ef898d89f2abddcea",
-      "last_updated": "2026-06-29T22:53:03.574330"
+    "models/gemini-3-6-flash.md": {
+      "original_url": "https://cursor.com/docs/models/gemini-3-6-flash",
+      "original_md_url": "https://cursor.com/docs/models/gemini-3-6-flash.md",
+      "hash": "4960680f6c9be321fd400d34f42b51cdcf561b78ba28610aa9cdaf164f5eebbe",
+      "last_updated": "2026-07-21T16:24:30.536530"
     },
     "models/gpt-5-6-luna.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-luna",
@@ -1050,6 +1050,12 @@
       "hash": "cf6fc312cacbdab72daca7d7661b762f263662fcdeec58b0e11c6ed0ff78f7c3",
       "last_updated": "2026-06-29T22:53:03.575517"
     },
+    "sdk/changelog.md": {
+      "original_url": "https://cursor.com/docs/sdk/changelog",
+      "original_md_url": "https://cursor.com/docs/sdk/changelog.md",
+      "hash": "91e9839d184610337a17445d2bb7627d5fd200ea4015235d55017b3539728882",
+      "last_updated": "2026-07-21T16:24:30.536768"
+    },
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
@@ -1082,21 +1088,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-21T13:29:12.575201",
-    "fetch_duration_seconds": 2.130409,
-    "total_pages_discovered": 180,
-    "pages_fetched_successfully": 180,
+    "last_fetch_completed": "2026-07-21T16:24:30.539533",
+    "fetch_duration_seconds": 2.496012,
+    "total_pages_discovered": 181,
+    "pages_fetched_successfully": 181,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 180,
+    "total_files": 181,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-21T13:29:12.575215",
+  "last_updated": "2026-07-21T16:24:30.539545",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

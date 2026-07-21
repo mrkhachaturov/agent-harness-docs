@@ -39,8 +39,8 @@
     "json.md": {
       "upstream_path": "packages/coding-agent/docs/json.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/json.md",
-      "hash": "b166c616e45554db782e68a584c77f265166d0d9959e0b54f0961a3184c83426",
-      "last_updated": "2026-05-28T03:22:00.697073"
+      "hash": "276ecd8d2cc71bf36ced4ea0764b2c7d0b108de801dd9f59108e814c0978058e",
+      "last_updated": "2026-07-21T16:24:42.045994"
     },
     "keybindings.md": {
       "upstream_path": "packages/coding-agent/docs/keybindings.md",
@@ -87,14 +87,14 @@
     "rpc.md": {
       "upstream_path": "packages/coding-agent/docs/rpc.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/rpc.md",
-      "hash": "e18093b6c12edd458e6d990c0cb72bdc01a53e579e8bb241c4bc02a7039d99b2",
-      "last_updated": "2026-07-20T16:25:13.007948"
+      "hash": "62613aca20bbeb7cad8e7778b74f3c0d9b817e1575e813c421df97de00662275",
+      "last_updated": "2026-07-21T16:24:42.047529"
     },
     "sdk.md": {
       "upstream_path": "packages/coding-agent/docs/sdk.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/sdk.md",
-      "hash": "3fc83f660ccd37d392256cd894c390c84ad3386f5be76db316b1553ab99040d3",
-      "last_updated": "2026-07-15T13:26:58.821738"
+      "hash": "c34060ea771ebd782067539cd40d7020a5781761b6179759b1a537a46413af21",
+      "last_updated": "2026-07-21T16:24:42.047932"
     },
     "security.md": {
       "upstream_path": "packages/coding-agent/docs/security.md",
@@ -176,8 +176,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-21T13:29:24.405950",
-    "fetch_duration_seconds": 1.79124,
+    "last_fetch_completed": "2026-07-21T16:24:42.050005",
+    "fetch_duration_seconds": 1.77494,
     "total_pages_discovered": 29,
     "pages_fetched_successfully": 29,
     "pages_failed": 0,
@@ -188,7 +188,7 @@
     "total_files": 29,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-21T13:29:24.405965",
+  "last_updated": "2026-07-21T16:24:42.050018",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
