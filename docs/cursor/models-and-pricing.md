@@ -6,14 +6,14 @@ Cursor supports frontier models from OpenAI, Anthropic, Google, SpaceXAI, and mo
 
 There are two separate usage pools for individual plans, each resetting with your monthly billing cycle:
 
-- **Cursor Models**: Significantly more included usage for Auto, Cursor Grok 4.5, and Composer 2.5.
+- **Cursor Models**: Significantly more included usage for Cursor Grok 4.5 and Composer 2.5.
 - **Other Models**: The pool for third-party models, charged at the model's API price. Individual plans include at least $20 of third-party model usage each month (more on higher tiers) with the option to pay for additional usage as needed.
 
 Both pools are visible in your editor settings and on your [usage dashboard](https://cursor.com/dashboard/usage).
 
 ## Cursor Models
 
-The Cursor Models pool includes Auto, Cursor Grok 4.5, and Composer 2.5.
+The Cursor Models pool includes Cursor Grok 4.5 and Composer 2.5.
 
 On Teams and Enterprise plans, [Cursor Router](https://cursor.com/docs/cursor-router.md) picks the model for each Auto request based on your optimization mode.
 

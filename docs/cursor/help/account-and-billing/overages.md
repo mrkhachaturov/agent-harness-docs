@@ -24,8 +24,17 @@ Go to [cursor.com/dashboard](https://cursor.com/dashboard) and click **Billing &
 - **Set a spend limit**: Cap how much on-demand usage you're willing to pay
 - **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Pro+ ($60/mo, $70 included) or Ultra ($200/mo, $400 included) give you a larger budget
 
+## Why did my usage costs increase after the Cursor Router launch?
+
+Cursor Router introduced new Auto optimization modes. **Balance** and **Intelligence** cost about twice as much as the previous Auto mode on average, and up to two to four times as much depending on the mode you select. They bill at the routed model's rate instead of bundled Auto pricing.
+
+If you were using the former Auto mode before the launch, you will be defaulted to Auto **Cost** mode.
+
+See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for mode details and [pricing and plans](https://cursor.com/help/account-and-billing/pricing.md#why-is-the-old-auto-mode-now-called-cost-mode) for the Cost rename.
+
 ## Related
 
+- [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)

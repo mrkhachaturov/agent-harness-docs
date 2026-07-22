@@ -14,7 +14,7 @@ See the [models reference](https://cursor.com/docs/models-and-pricing.md) for th
 
 ## Which model should I use?
 
-- **Auto** selects models that balance intelligence, cost, and reliability. Good for everyday tasks.
+- **Auto** selects models that balance intelligence, cost, and reliability. Good for everyday tasks. See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for Cost, Balance, and Intelligence modes.
 - **Premium** selects the most capable models for you. Recommended for complex tasks.
 - **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)** is Cursor's flagship model. The smartest model Cursor has trained, built for the hardest tasks.
 - **Composer** is Cursor's fast, cost-efficient model. Capable for most tasks, and built for interactive coding.
@@ -22,6 +22,30 @@ See the [models reference](https://cursor.com/docs/models-and-pricing.md) for th
 - Some users also prefer **Gemini Pro** models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the full list.
+
+## Which models does Cursor Router route across?
+
+Cursor Router routes across these models:
+
+- **[Composer 2.5](https://cursor.com/docs/models/cursor-composer-2-5.md)** (fast and standard variants)
+- **[GPT-5.5](https://cursor.com/docs/models/gpt-5-5.md)**
+- **[Claude Opus 4.8](https://cursor.com/docs/models/claude-opus-4-8.md)**
+- **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)**
+- **[Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md)**
+
+**Required:** Composer 2.5. Blocking it disables the router.
+
+**Recommended:** GPT-5.5 and Claude Opus 4.8. Blocking one reduces routing quality. Blocking both disables the router.
+
+Blocked models (enterprise plans) are skipped and the router falls back to an allowlisted alternative when possible.
+
+Team admins manage model access from [Team Settings > Models](https://cursor.com/dashboard/team-settings/models). See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for routing details.
+
+## Can I see which model Cursor Router used for my request?
+
+By default, the routed model identity is hidden so you judge results on merit. Team admins can change this to **Displayed** in the admin dashboard so members see which model handled each request.
+
+If model visibility is set to Displayed, check the model picker or request details in your chat after each turn. See [manage your team](https://cursor.com/help/account-and-billing/teams-management.md#how-do-admins-enable-disable-or-configure-cursor-router-for-their-team) for admin controls.
 
 ## How much does Auto cost?
 
@@ -31,6 +55,8 @@ Auto has three modes with different pricing:
 - Auto Balance and Auto Intelligence are charged at Model API rates for the model used, based on actual usage. Third-party models also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md).
 
 See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) on Models & Pricing for details.
+
+**Balance** and **Intelligence** bill at the routed model's rate instead. See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for mode details.
 
 ## How much does Grok 4.5 cost?
 
@@ -55,7 +81,11 @@ For the full pricing table, see [model pricing](https://cursor.com/docs/models-a
 
 ## What model am I talking to?
 
-The active model is shown in the model picker at the top of the chat panel. If you selected **Auto**, Cursor picks the model for each request and the specific model used can vary between conversations. You can click the model picker at any time to see or change your selection.
+The active model is shown in the model picker at the top of the chat panel. If you selected **Auto**, Cursor Router picks the model for each request and the specific model can vary between turns.
+
+When your team admin sets model visibility to **Displayed**, you can see which routed model handled each request. Otherwise the routed model stays hidden. See [manage your team](https://cursor.com/help/account-and-billing/teams-management.md#how-do-admins-enable-disable-or-configure-cursor-router-for-their-team) for admin controls.
+
+You can click the model picker at any time to see or change your selection.
 
 ## What models do subagents use?
 
@@ -77,6 +107,7 @@ See the [regions reference](https://cursor.com/docs/account/regions.md) for prov
 
 ## Related
 
+- [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
 - [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 - [API keys](https://cursor.com/help/models-and-usage/api-keys.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)

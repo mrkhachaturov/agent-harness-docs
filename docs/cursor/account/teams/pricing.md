@@ -32,7 +32,7 @@ Seat type is separate from role. Members and Admins can have either a Standard o
 
 Each paid seat comes with included usage across two pools:
 
-- Cursor Models (Auto, Cursor Grok 4.5, and Composer 2.5)
+- Cursor Models (Cursor Grok 4.5 and Composer 2.5)
 - Other Models (third-party models)
 
 Usage is allocated per user based on seat type, does not transfer between team members, and resets at the start of each billing cycle. Third-party Other Models usage is charged at public list API prices plus the Cursor Token Rate. This includes when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and Cursor Models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.

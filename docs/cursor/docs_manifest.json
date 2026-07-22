@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "9983a32dca156a7e13801a01408d07619d612517b239ae08e6472f085b0d1c1b",
-      "last_updated": "2026-07-22T19:11:14.387332"
+      "hash": "56f039930157de9922dd3e3668db3c5e0f3ec9cba1f990500a258de2b68212f6",
+      "last_updated": "2026-07-22T22:05:20.903441"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -465,8 +465,8 @@
     "help/account-and-billing/overages.md": {
       "original_url": "https://cursor.com/help/account-and-billing/overages",
       "original_md_url": "https://cursor.com/help/account-and-billing/overages.md",
-      "hash": "52d56a78f8f10554deb9dae6496085ce323dfcd0932a8386072f29f2c397c826",
-      "last_updated": "2026-07-22T19:11:14.389089"
+      "hash": "84cfaff07ed48e540265629cc7fc1cf1bc07ca77c8beedd91c720a920726ff87",
+      "last_updated": "2026-07-22T22:05:20.904570"
     },
     "help/account-and-billing/payment-issues.md": {
       "original_url": "https://cursor.com/help/account-and-billing/payment-issues",
@@ -483,8 +483,8 @@
     "help/account-and-billing/pricing.md": {
       "original_url": "https://cursor.com/help/account-and-billing/pricing",
       "original_md_url": "https://cursor.com/help/account-and-billing/pricing.md",
-      "hash": "eb0359b25aeb63f018c8822d1bcf0768df4ec9a52d18a8af398ed4622787cccc",
-      "last_updated": "2026-07-22T19:11:14.389312"
+      "hash": "a79aad9a1860975ee3953016e9a149c6bc736436c81e11aa55007dc22dd2a2ba",
+      "last_updated": "2026-07-22T22:05:20.904743"
     },
     "help/account-and-billing/profiles.md": {
       "original_url": "https://cursor.com/help/account-and-billing/profiles",
@@ -519,8 +519,8 @@
     "help/account-and-billing/teams-management.md": {
       "original_url": "https://cursor.com/help/account-and-billing/teams-management",
       "original_md_url": "https://cursor.com/help/account-and-billing/teams-management.md",
-      "hash": "e0c8cf47e8bb447c04c093b9bc299aaae6f529c2059ae8152038949f6578cc96",
-      "last_updated": "2026-07-07T17:11:37.448545"
+      "hash": "74828f433bfe104d49509cedef2322834e311a859dc2ea32d5756098bc49614b",
+      "last_updated": "2026-07-22T22:05:20.904884"
     },
     "help/account-and-billing/teams-setup.md": {
       "original_url": "https://cursor.com/help/account-and-billing/teams-setup",
@@ -783,8 +783,14 @@
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
       "original_md_url": "https://cursor.com/help/models-and-usage/available-models.md",
-      "hash": "7d7c5489b3d7c2518e441f97b354c4df50505b26d1d11785035bb07d925f3e92",
-      "last_updated": "2026-07-22T19:11:14.390252"
+      "hash": "084cd081646e28b3f6e1b9f68f7874f3eded4972d353aca5cc28001547abdb1b",
+      "last_updated": "2026-07-22T22:05:20.905251"
+    },
+    "help/models-and-usage/cursor-router.md": {
+      "original_url": "https://cursor.com/help/models-and-usage/cursor-router",
+      "original_md_url": "https://cursor.com/help/models-and-usage/cursor-router.md",
+      "hash": "1ee95f2e86ab1fab384dfc12aaa7f270e9d80a8eeeef66b4eedaf9f748fc7432",
+      "last_updated": "2026-07-22T22:05:20.905361"
     },
     "help/models-and-usage/grok-4-5.md": {
       "original_url": "https://cursor.com/help/models-and-usage/grok-4-5",
@@ -801,8 +807,8 @@
     "help/models-and-usage/usage-limits.md": {
       "original_url": "https://cursor.com/help/models-and-usage/usage-limits",
       "original_md_url": "https://cursor.com/help/models-and-usage/usage-limits.md",
-      "hash": "625d66509d92f959169758554ce08aff9947fa17b9b629b3df68ebfa9f3bc31a",
-      "last_updated": "2026-07-22T19:11:14.390636"
+      "hash": "3b07a81341b7deffcfa8786078f9d360cfa82cabec997d2a0effc793cec439bb",
+      "last_updated": "2026-07-22T22:05:20.905472"
     },
     "help/security-and-privacy/account-compromised.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/account-compromised",
@@ -975,8 +981,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "cd4695d431c0cbf4f5ac069b487e8f48fa222e5db61c86ca153c81c1eee6bcaf",
-      "last_updated": "2026-07-22T19:11:14.391559"
+      "hash": "3e72f9e501a513888cacea6d4df28de3ad0425b464efff933c869daca2c6eaa6",
+      "last_updated": "2026-07-22T22:05:20.906006"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -999,8 +1005,8 @@
     "models/cursor-composer-2-5.md": {
       "original_url": "https://cursor.com/docs/models/cursor-composer-2-5",
       "original_md_url": "https://cursor.com/docs/models/cursor-composer-2-5.md",
-      "hash": "7a60c33275ef927aedf4f25a1a49f147d63bc3ea3921a3c06bd73a3fbd6d27b4",
-      "last_updated": "2026-07-22T19:11:14.392306"
+      "hash": "66a7bb6b01e08b683644e27ed417a1b501ebc94270304c0c69dec764493a4062",
+      "last_updated": "2026-07-22T22:05:20.906148"
     },
     "models/gemini-3-1-pro.md": {
       "original_url": "https://cursor.com/docs/models/gemini-3-1-pro",
@@ -1035,8 +1041,8 @@
     "models/grok-4-5.md": {
       "original_url": "https://cursor.com/docs/models/grok-4-5",
       "original_md_url": "https://cursor.com/docs/models/grok-4-5.md",
-      "hash": "681d153df140c313ab91d87a3da13d1ece3410c9b59212e2234848ec260fa4eb",
-      "last_updated": "2026-07-22T19:11:14.393351"
+      "hash": "dd969efe66d73b88e9d1dd95e1c03348b7c8055fe1173723fac9f355f74f07d0",
+      "last_updated": "2026-07-22T22:05:20.906287"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1094,21 +1100,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-22T19:11:14.396334",
-    "fetch_duration_seconds": 2.474641,
-    "total_pages_discovered": 182,
-    "pages_fetched_successfully": 182,
+    "last_fetch_completed": "2026-07-22T22:05:20.908212",
+    "fetch_duration_seconds": 2.074133,
+    "total_pages_discovered": 183,
+    "pages_fetched_successfully": 183,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 182,
+    "total_files": 183,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-22T19:11:14.396347",
+  "last_updated": "2026-07-22T22:05:20.908225",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

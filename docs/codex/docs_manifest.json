@@ -237,8 +237,8 @@
     "customization__overview.md": {
       "original_url": "https://developers.openai.com/codex/customization/overview",
       "original_md_url": "https://developers.openai.com/codex/customization/overview.md",
-      "hash": "499593c606b9cb5a33f6fdbf936bf583c617b92dcd3e6f0ea5f71255b5170151",
-      "last_updated": "2026-07-17T05:38:32.550237"
+      "hash": "be0e079a355e212d6f8f77d896e0173f0ffae739c8fb431edba7fd49e9e6000f",
+      "last_updated": "2026-07-22T22:03:54.196155"
     },
     "cyber-safety.md": {
       "original_url": "https://developers.openai.com/codex/cyber-safety",
@@ -764,8 +764,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-22T19:11:11.737696",
-    "fetch_duration_seconds": 104.083091,
+    "last_fetch_completed": "2026-07-22T22:05:18.673694",
+    "fetch_duration_seconds": 110.742827,
     "total_pages_discovered": 133,
     "pages_fetched_successfully": 127,
     "pages_failed": 6,
@@ -782,7 +782,7 @@
     "total_files": 127,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-22T19:11:11.737712",
+  "last_updated": "2026-07-22T22:05:18.673713",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
