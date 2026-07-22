@@ -40,7 +40,7 @@ Privacy Mode is on by default for Enterprise teams. Teams and Enterprise admins 
 
 Yes. Privacy Mode works the same for [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) as for every other model. With Privacy Mode enabled, your code is never used for training.
 
-Like other models, Grok 4.5 is hosted on US, Canada, and Iceland based infrastructure by the model's provider, a trusted partner, or Cursor directly. See the list of [sub-processors](https://trust.cursor.com/subprocessors) for details.
+Like other models, Grok 4.5 is hosted by the model provider, a trusted partner, or Cursor. See the list of [sub-processors](https://trust.cursor.com/subprocessors) for details.
 
 ## Are there exceptions to zero data retention?
 

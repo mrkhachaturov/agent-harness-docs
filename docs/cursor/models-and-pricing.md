@@ -33,6 +33,7 @@ All prices are per million tokens:
 
 | Model                                                                                         | Provider  | Input | Cache write | Cache read | Output | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 | --------------------------------------------------------------------------------------------- | --------- | ----- | ----------- | ---------- | ------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Auto Cost                                                                                     | Cursor    | $1.25 | $1.25       | $0.25      | $6     | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                               |
 | [Claude 4 Sonnet](https://www.anthropic.com/claude/sonnet)                                    | Anthropic | $3    | $3.75       | $0.3       | $15    | Hidden by default; Thinking variant counts as 2 requests in legacy pricing                                                                                                                                                                                                                                                                                                                                                                      |
 | [Claude 4 Sonnet 1M](https://www.anthropic.com/claude/sonnet)                                 | Anthropic | $6    | $7.5        | $0.6       | $22.5  | Hidden by default; Thinking variant counts as 2 requests in legacy pricing; This model can be very expensive due to the large context window; The cost is 2x when the input exceeds 200k tokens                                                                                                                                                                                                                                                 |
 | [Claude 4.5 Haiku](https://www.anthropic.com/claude/haiku)                                    | Anthropic | $1    | $1.25       | $0.1       | $5     | Hidden by default; Bedrock/Vertex: regional endpoints +10% surcharge; Cache: writes 1.25x, reads 0.1x                                                                                                                                                                                                                                                                                                                                           |
@@ -129,12 +130,6 @@ Auto has three modes: Auto Cost, Auto Balance, and Auto Intelligence.
 
 Auto Cost pricing is set per million tokens, regardless of which model is used.
 
-| Token type          | Price per 1M tokens |
-| :------------------ | :------------------ |
-| Input + Cache Write | $1.25               |
-| Output              | $6.00               |
-| Cache Read          | $0.25               |
-
 ### Auto Balance and Auto Intelligence
 
 Auto Balance and Auto Intelligence are charged at Model API rates for the model used, based on actual usage. Third-party models also incur the Cursor Token Rate. See [Model pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for per-model rates.
@@ -149,7 +144,7 @@ Max Mode is available only on legacy request-based plans. It extends a model's c
 
 ### Where are models hosted?
 
-Models are hosted on US, Canada, & Iceland based infrastructure by the model's provider, a trusted partner, or Cursor directly. For details, see our list of [sub-processors](https://trust.cursor.com/subprocessors).
+Models are hosted by the model provider, a trusted partner, or Cursor. See our list of [sub-processors](https://trust.cursor.com/subprocessors) for details.
 
 ### Where can I find pricing terms?
 
