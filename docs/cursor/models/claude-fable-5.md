@@ -50,7 +50,7 @@ Learn more about [how tools work](https://cursor.com/docs/agent/overview.md#tool
 
 ## Pricing
 
-Cursor [plans](https://cursor.com/docs/models-and-pricing.md) include two usage pools. Fable 5 draws from the **API** pool, which charges at the rates below. All prices are per million tokens.
+Cursor [plans](https://cursor.com/docs/models-and-pricing.md) include two usage pools. Fable 5 draws from the third-party **Other Models** pool, which charges at the rates below. All prices are per million tokens.
 
 Fable 5 costs about twice as much as Claude Opus 4.8, at $10 per million input tokens and $50 per million output tokens.
 

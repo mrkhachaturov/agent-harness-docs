@@ -8,7 +8,7 @@ Open the model selector in your chat or agent panel and choose the model you wan
 
 ## Which models are available?
 
-Cursor offers its own first-party models ([Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) and Composer) alongside frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
+Cursor offers its own models ([Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) and [Composer](https://cursor.com/docs/models/cursor-composer-2-5.md)) in the Cursor Models pool alongside other frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the complete list, context window sizes, and capabilities.
 
@@ -39,7 +39,7 @@ Grok 4.5 has two speeds, each with its own token rates:
 - **Standard**: $2.00 per 1M input tokens, $6.00 per 1M output tokens, $0.50 per 1M cache read tokens
 - **Fast**: $4.00 per 1M input tokens, $18.00 per 1M output tokens, $1.00 per 1M cache read tokens
 
-Grok 4.5 draws from the First-Party Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
+Grok 4.5 draws from the Cursor Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
 
 ## How much does Premium cost?
 

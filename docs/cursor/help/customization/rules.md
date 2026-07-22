@@ -32,10 +32,8 @@ Project rules live in your codebase and are version-controlled. Your whole team 
 
 User rules are global preferences that apply across all your projects.
 
-1. Open Cursor Settings:
-   - **Mac**: Click **Cursor** > **Settings** in the menu bar
-   - **Windows/Linux**: Click **File** > **Preferences** > **Settings**
-2. Click **Rules** in the sidebar
+1. Open **Customize** in the sidebar
+2. Click **Rules**
 3. Add your preferences. For example: "Reply in a concise style. Avoid unnecessary repetition."
 
 ## How do I use AGENTS.md?
@@ -78,7 +76,7 @@ User rules and team rules are not included in profile exports. If you switch mac
 Team and [Enterprise](https://cursor.com/docs/enterprise.md) plans can create and enforce rules across the entire organization from the [Cursor dashboard](https://cursor.com/dashboard/team-content).
 
 - **Enforced rules** are required for all members and can't be turned off in their settings.
-- **Optional rules** are enabled by default but members can disable them in **Cursor Settings > Rules**.
+- **Optional rules** are enabled by default but members can disable them in **Customize** > **Rules**.
 - Team rules support glob patterns (e.g., `**/*.py`) to scope a rule to specific file types.
 - When rules conflict, precedence is: Team Rules > Project Rules > User Rules.
 

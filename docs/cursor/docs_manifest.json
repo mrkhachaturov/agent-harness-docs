@@ -27,8 +27,8 @@
     "account/teams/dashboard.md": {
       "original_url": "https://cursor.com/docs/account/teams/dashboard",
       "original_md_url": "https://cursor.com/docs/account/teams/dashboard.md",
-      "hash": "a7da95add8fc913ef055f2a71dee3f3d74fae6d333264d78c064f5ab8ebb5a4a",
-      "last_updated": "2026-07-06T17:41:37.427665"
+      "hash": "bcb42cd72ab0c9506e1607d638e97fc3795f50b2af705978f4cbcf2556ac81be",
+      "last_updated": "2026-07-22T19:11:14.387015"
     },
     "account/teams/members.md": {
       "original_url": "https://cursor.com/docs/account/teams/members",
@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "6f9f6e1802cb6806cb9ca22192109479271b0adf923807c381edc120300fce7f",
-      "last_updated": "2026-07-22T02:07:00.893395"
+      "hash": "9983a32dca156a7e13801a01408d07619d612517b239ae08e6472f085b0d1c1b",
+      "last_updated": "2026-07-22T19:11:14.387332"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -159,8 +159,8 @@
     "cli/changelog.md": {
       "original_url": "https://cursor.com/docs/cli/changelog",
       "original_md_url": "https://cursor.com/docs/cli/changelog.md",
-      "hash": "f2f6f5b5863a01d595acc714beaef5badcfbfe4aab550830706465556644dd21",
-      "last_updated": "2026-07-21T02:09:30.087283"
+      "hash": "479615e9c14c1155294ab54a05f3af8b1fcff640bac90036ad3fe5ba4ab39697",
+      "last_updated": "2026-07-22T19:11:14.387961"
     },
     "cli/github-actions.md": {
       "original_url": "https://cursor.com/docs/cli/github-actions",
@@ -305,6 +305,12 @@
       "original_md_url": "https://cursor.com/docs/configuration/worktrees.md",
       "hash": "cc4e372cea406d6f15d4bbfc1a7cc6b680781163fa1d6ed680b34fb52ab4e79d",
       "last_updated": "2026-07-07T06:43:17.495813"
+    },
+    "cursor-router.md": {
+      "original_url": "https://cursor.com/docs/cursor-router",
+      "original_md_url": "https://cursor.com/docs/cursor-router.md",
+      "hash": "4b3d9f5903dd56a1c672610937706196a285b554478592ac3f9196181742a0f4",
+      "last_updated": "2026-07-22T19:11:14.388557"
     },
     "customize-cursor.md": {
       "original_url": "https://cursor.com/docs/customize-cursor",
@@ -459,8 +465,8 @@
     "help/account-and-billing/overages.md": {
       "original_url": "https://cursor.com/help/account-and-billing/overages",
       "original_md_url": "https://cursor.com/help/account-and-billing/overages.md",
-      "hash": "7ea93bf3f5916154cd7ba5360cea00208772d7d9989e4c3d743255ad034154de",
-      "last_updated": "2026-07-21T22:06:01.660006"
+      "hash": "52d56a78f8f10554deb9dae6496085ce323dfcd0932a8386072f29f2c397c826",
+      "last_updated": "2026-07-22T19:11:14.389089"
     },
     "help/account-and-billing/payment-issues.md": {
       "original_url": "https://cursor.com/help/account-and-billing/payment-issues",
@@ -477,8 +483,8 @@
     "help/account-and-billing/pricing.md": {
       "original_url": "https://cursor.com/help/account-and-billing/pricing",
       "original_md_url": "https://cursor.com/help/account-and-billing/pricing.md",
-      "hash": "72f11de75e9ff55805079acf42992170040464605acc7f3a31f18701d2b0e9b4",
-      "last_updated": "2026-07-21T22:06:01.660222"
+      "hash": "eb0359b25aeb63f018c8822d1bcf0768df4ec9a52d18a8af398ed4622787cccc",
+      "last_updated": "2026-07-22T19:11:14.389312"
     },
     "help/account-and-billing/profiles.md": {
       "original_url": "https://cursor.com/help/account-and-billing/profiles",
@@ -687,8 +693,8 @@
     "help/customization/mcp.md": {
       "original_url": "https://cursor.com/help/customization/mcp",
       "original_md_url": "https://cursor.com/help/customization/mcp.md",
-      "hash": "932c12854b115fed5b5227a7a820441535fa4a5cb63937d45834c5a27de8026d",
-      "last_updated": "2026-07-01T00:48:32.051343"
+      "hash": "8d55bd5060e3290ce39bfebecba40a5f6fa0d9ace102c5c23b47ab6fd5f61e3a",
+      "last_updated": "2026-07-22T19:11:14.389724"
     },
     "help/customization/plugins.md": {
       "original_url": "https://cursor.com/help/customization/plugins",
@@ -699,8 +705,8 @@
     "help/customization/rules.md": {
       "original_url": "https://cursor.com/help/customization/rules",
       "original_md_url": "https://cursor.com/help/customization/rules.md",
-      "hash": "c25f066e94bd57bc4d2b3654922184f7c4995be97d0979b1f8d328c63d74a3cc",
-      "last_updated": "2026-06-29T22:53:03.567846"
+      "hash": "19f49effabf778db5f86a2ef12b1b9ee4d84837e2e750067efe7be916314d567",
+      "last_updated": "2026-07-22T19:11:14.389955"
     },
     "help/customization/skills.md": {
       "original_url": "https://cursor.com/help/customization/skills",
@@ -777,14 +783,14 @@
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
       "original_md_url": "https://cursor.com/help/models-and-usage/available-models.md",
-      "hash": "79f1d156750e496bd753ac121c6b2f31b17b7c7cf297000758283c86bf93ccda",
-      "last_updated": "2026-07-21T22:06:01.661096"
+      "hash": "7d7c5489b3d7c2518e441f97b354c4df50505b26d1d11785035bb07d925f3e92",
+      "last_updated": "2026-07-22T19:11:14.390252"
     },
     "help/models-and-usage/grok-4-5.md": {
       "original_url": "https://cursor.com/help/models-and-usage/grok-4-5",
       "original_md_url": "https://cursor.com/help/models-and-usage/grok-4-5.md",
-      "hash": "886571dc42c538ba3bbd297530f0ea4691e344622706ec87089306df504a54c4",
-      "last_updated": "2026-07-21T22:06:01.661316"
+      "hash": "432170ef23e479b3df89ef55403aa00e3f3dbe129e29dcb2e3973f80b3a37b32",
+      "last_updated": "2026-07-22T19:11:14.390446"
     },
     "help/models-and-usage/token-rate.md": {
       "original_url": "https://cursor.com/help/models-and-usage/token-rate",
@@ -795,8 +801,8 @@
     "help/models-and-usage/usage-limits.md": {
       "original_url": "https://cursor.com/help/models-and-usage/usage-limits",
       "original_md_url": "https://cursor.com/help/models-and-usage/usage-limits.md",
-      "hash": "308dbe43b1e0bfd77ce888bbcd323b1fce678dd602a6c8adfc143a7ea01ffdd4",
-      "last_updated": "2026-07-21T22:06:01.661658"
+      "hash": "625d66509d92f959169758554ce08aff9947fa17b9b629b3df68ebfa9f3bc31a",
+      "last_updated": "2026-07-22T19:11:14.390636"
     },
     "help/security-and-privacy/account-compromised.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/account-compromised",
@@ -957,8 +963,8 @@
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
       "original_md_url": "https://cursor.com/docs/integrations/xcode.md",
-      "hash": "c35b2f74950108a8172f3609567143760f007b4d0948ab09fc2d9c8ad3af93a1",
-      "last_updated": "2026-06-29T22:53:03.573330"
+      "hash": "04775562c95a29b505552f09515150ddf019f11e4bfe93ed46ca81e5ce97a25b",
+      "last_updated": "2026-07-22T19:11:14.391223"
     },
     "mcp.md": {
       "original_url": "https://cursor.com/docs/mcp",
@@ -969,68 +975,68 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "1c025efa3e079e50a1e12b6ca3b4923ebd74c65facf5a16ec1a87de97a21766c",
-      "last_updated": "2026-07-22T02:07:00.896154"
+      "hash": "cd4695d431c0cbf4f5ac069b487e8f48fa222e5db61c86ca153c81c1eee6bcaf",
+      "last_updated": "2026-07-22T19:11:14.391559"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
       "original_md_url": "https://cursor.com/docs/models/claude-fable-5.md",
-      "hash": "bbb71fbfc0d897697766a12f788c42d2bcc288ab1298edbf0ad05c43f4af9523",
-      "last_updated": "2026-07-21T22:06:01.662555"
+      "hash": "a877687d0ab4f4c0db92a7d15071d0d4bef9ec3a19a20962c9410b614bc52c78",
+      "last_updated": "2026-07-22T19:11:14.391747"
     },
     "models/claude-opus-4-8.md": {
       "original_url": "https://cursor.com/docs/models/claude-opus-4-8",
       "original_md_url": "https://cursor.com/docs/models/claude-opus-4-8.md",
-      "hash": "1911a0bdaed64d8ca40a8c61b163dbffeed022aa86fb2b3abdc63bb816bd2ff2",
-      "last_updated": "2026-07-17T19:02:52.236593"
+      "hash": "a232f92a3de6fe8855d7ee7b77a1e8f46fffc2ca546a29b6aaf01b1af4ee20b4",
+      "last_updated": "2026-07-22T19:11:14.391945"
     },
     "models/claude-sonnet-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-sonnet-5",
       "original_md_url": "https://cursor.com/docs/models/claude-sonnet-5.md",
-      "hash": "239ccd1ac04a900ca586ea1d5a76eede7c129d19254ad8281955da1d1db2768b",
-      "last_updated": "2026-07-17T19:02:52.236749"
+      "hash": "23fcf2d53f73db9bd3584a19d8f55a42986b49f477ad5b8dccd2993d111dda9d",
+      "last_updated": "2026-07-22T19:11:14.392126"
     },
     "models/cursor-composer-2-5.md": {
       "original_url": "https://cursor.com/docs/models/cursor-composer-2-5",
       "original_md_url": "https://cursor.com/docs/models/cursor-composer-2-5.md",
-      "hash": "633900b1eaa49ad62d6838413970e6cce42b26b0587894bfc9802c4ce94e6bb9",
-      "last_updated": "2026-07-21T22:06:01.662736"
+      "hash": "7a60c33275ef927aedf4f25a1a49f147d63bc3ea3921a3c06bd73a3fbd6d27b4",
+      "last_updated": "2026-07-22T19:11:14.392306"
     },
     "models/gemini-3-1-pro.md": {
       "original_url": "https://cursor.com/docs/models/gemini-3-1-pro",
       "original_md_url": "https://cursor.com/docs/models/gemini-3-1-pro.md",
-      "hash": "f0876d4a78caf5ab0083b7b6fa3ccd2e5d5bb84f9466e83fdcda144f947e24e2",
-      "last_updated": "2026-07-17T19:02:52.236930"
+      "hash": "2aa3bdcf5c3e63a8e697f8a5ab71e64953ce4e38080050aa25e6c1af5e3fd2d7",
+      "last_updated": "2026-07-22T19:11:14.392479"
     },
     "models/gemini-3-6-flash.md": {
       "original_url": "https://cursor.com/docs/models/gemini-3-6-flash",
       "original_md_url": "https://cursor.com/docs/models/gemini-3-6-flash.md",
-      "hash": "4960680f6c9be321fd400d34f42b51cdcf561b78ba28610aa9cdaf164f5eebbe",
-      "last_updated": "2026-07-21T16:24:30.536530"
+      "hash": "3ea0c8c52264bd9b079a0b44a1ec74459706221cb3b867f2a5e86cb7df1348de",
+      "last_updated": "2026-07-22T19:11:14.392649"
     },
     "models/gpt-5-6-luna.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-luna",
       "original_md_url": "https://cursor.com/docs/models/gpt-5-6-luna.md",
-      "hash": "a1b4e773054ca23270a1671b757d8d2b28d4da91c5ada5fd12b0470c411453a0",
-      "last_updated": "2026-07-09T17:20:57.574103"
+      "hash": "19415d1f0f43c2c92bee8ab87a26321375bb390856b351b1d503b51593ceacc5",
+      "last_updated": "2026-07-22T19:11:14.392819"
     },
     "models/gpt-5-6-sol.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-sol",
       "original_md_url": "https://cursor.com/docs/models/gpt-5-6-sol.md",
-      "hash": "7e398df9c95fc699b7f647161350c39834d326c1eb117b9e815a038e30370bd4",
-      "last_updated": "2026-07-17T19:02:52.237105"
+      "hash": "270139a697d2c11c5d42a4ccfe80d61dcd72bbccf515acde5911046d7f2f10d7",
+      "last_updated": "2026-07-22T19:11:14.393008"
     },
     "models/gpt-5-6-terra.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-terra",
       "original_md_url": "https://cursor.com/docs/models/gpt-5-6-terra.md",
-      "hash": "a26cf7e3835fad9443eae90cec101c2fa584d53e1761248e2c6d10d5618d1166",
-      "last_updated": "2026-07-09T17:20:57.574422"
+      "hash": "777305bf4809e1a9a0235fba318e680d1eaee9d1058230500421f87a8546b8be",
+      "last_updated": "2026-07-22T19:11:14.393182"
     },
     "models/grok-4-5.md": {
       "original_url": "https://cursor.com/docs/models/grok-4-5",
       "original_md_url": "https://cursor.com/docs/models/grok-4-5.md",
-      "hash": "4471d8f5febcc79f165ecb0682823f1b2501e7f25ca9359d206f418f42e4fc09",
-      "last_updated": "2026-07-21T22:06:01.662931"
+      "hash": "681d153df140c313ab91d87a3da13d1ece3410c9b59212e2234848ec260fa4eb",
+      "last_updated": "2026-07-22T19:11:14.393351"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1088,21 +1094,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-22T16:21:53.587785",
-    "fetch_duration_seconds": 2.551485,
-    "total_pages_discovered": 181,
-    "pages_fetched_successfully": 181,
+    "last_fetch_completed": "2026-07-22T19:11:14.396334",
+    "fetch_duration_seconds": 2.474641,
+    "total_pages_discovered": 182,
+    "pages_fetched_successfully": 182,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 181,
+    "total_files": 182,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-22T16:21:53.587800",
+  "last_updated": "2026-07-22T19:11:14.396347",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

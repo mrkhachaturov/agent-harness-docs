@@ -32,15 +32,15 @@ Seat type is separate from role. Members and Admins can have either a Standard o
 
 Each paid seat comes with included usage across two pools:
 
-- First-party models (Composer 2.5 and Grok 4.5)
-- Third-party API models
+- Cursor Models (Auto, Cursor Grok 4.5, and Composer 2.5)
+- Other Models (third-party models)
 
-Usage is allocated per user based on seat type, does not transfer between team members, and resets at the start of each billing cycle. Third-party API model usage is charged at public list API prices plus the Cursor Token Rate. This includes when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and first-party models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
+Usage is allocated per user based on seat type, does not transfer between team members, and resets at the start of each billing cycle. Third-party Other Models usage is charged at public list API prices plus the Cursor Token Rate. This includes when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and Cursor Models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
 
 The [usage dashboard](https://cursor.com/dashboard/usage) tracks included usage separately for:
 
-- First-party models
-- Third-party API models
+- Cursor Models
+- Other Models (third-party models)
 
 Our [Enterprise plan](https://cursor.com/docs/enterprise.md) offers pooled usage shared between all users in a team. [Get in touch](https://cursor.com/contact-sales?source=docs-teams-pricing) with our team to learn more.
 
@@ -48,10 +48,10 @@ Our [Enterprise plan](https://cursor.com/docs/enterprise.md) offers pooled usage
 
 On-demand usage allows you to continue using models after included usage is consumed, billed in arrears.
 
-When a team member consumes all of their included third-party API model usage, Cursor switches them to the First-party models pool. If they continue using third-party API models, or if they fully consume their First-party models pool usage, they continue with **on-demand usage** if it is enabled.
+When a team member consumes all of their included third-party Other Models usage, Cursor switches them to the Cursor Models pool. If they continue using third-party Other Models, or if they fully consume their Cursor Models pool usage, they continue with **on-demand usage** if it is enabled.
 
-- Third-party API models are billed monthly at public list API prices plus the Cursor Token Rate
-- First-party models, including Composer 2.5 and Grok 4.5, are billed monthly at their token rates with no Cursor Token Rate
+- Third-party models are billed monthly at public list API prices plus the Cursor Token Rate
+- First-party Cursor models, including Composer 2.5 and Grok 4.5, are billed monthly at their token rates with no Cursor Token Rate
 - Auto Cost pricing is set per million tokens, regardless of which model is used, with no Cursor Token Rate. Auto Balance and Auto Intelligence are billed at Model API rates for the model used; third-party models also incur the Cursor Token Rate
 - No interruption in service or quality
 - Tracked per user in your admin dashboard (see [spending data API](https://cursor.com/docs/account/teams/admin-api.md#get-spending-data))
@@ -66,7 +66,7 @@ The Cursor Token Rate is $0.25 per million tokens and is charged on third-party 
 - Custom model execution (Tab, Apply, etc.)
 - Infrastructure and processing costs
 
-The Cursor Token Rate applies to input tokens, output tokens, and cached tokens on eligible third-party model requests. This includes when Auto Balance or Auto Intelligence routes to a third-party model. This applies to [BYOK](https://cursor.com/help/models-and-usage/api-keys.md) as well. Auto Cost and all first-party models, including Composer 2.5 and Grok 4.5, are exempt.
+The Cursor Token Rate applies to input tokens, output tokens, and cached tokens on eligible third-party model requests. This includes when Auto Balance or Auto Intelligence routes to a third-party model. This applies to [BYOK](https://cursor.com/help/models-and-usage/api-keys.md) as well. Auto Cost and all first-party Cursor models, including Composer 2.5 and Grok 4.5, are exempt.
 
 See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for Auto Cost, Auto Balance, and Auto Intelligence pricing.
 

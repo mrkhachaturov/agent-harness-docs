@@ -30,7 +30,7 @@ Pick whichever method suits your workflow.
 
 ### Open MCP settings
 
-Go to **Cursor Settings > Features > MCP**.
+Go to **Customize** > **MCPs**.
 
 ### Add the server
 

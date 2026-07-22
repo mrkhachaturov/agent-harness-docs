@@ -6,14 +6,16 @@ Cursor supports frontier models from OpenAI, Anthropic, Google, SpaceXAI, and mo
 
 There are two separate usage pools for individual plans, each resetting with your monthly billing cycle:
 
-- **First-party models**: Significantly more included usage with Composer 2.5 and Grok 4.5.
-- **API**: Charged at the model's API price. Individual plans include at least $20 of API usage each month (more on higher tiers) with the option to pay for additional usage as needed.
+- **Cursor Models**: Significantly more included usage for Auto, Cursor Grok 4.5, and Composer 2.5.
+- **Other Models**: The pool for third-party models, charged at the model's API price. Individual plans include at least $20 of third-party model usage each month (more on higher tiers) with the option to pay for additional usage as needed.
 
 Both pools are visible in your editor settings and on your [usage dashboard](https://cursor.com/dashboard/usage).
 
-## First-party models pool
+## Cursor Models
 
-The First-party models pool includes Composer 2.5 and Grok 4.5.
+The Cursor Models pool includes Auto, Cursor Grok 4.5, and Composer 2.5.
+
+On Teams and Enterprise plans, [Cursor Router](https://cursor.com/docs/cursor-router.md) picks the model for each Auto request based on your optimization mode.
 
 ### Composer pricing
 
@@ -23,9 +25,9 @@ Composer 2.5 is Cursor's own model, trained to be highly capable for agentic cod
 
 Grok 4.5 is jointly trained by Cursor and SpaceXAI for long-running coding and knowledge work.
 
-## API pool
+## Other Models
 
-When you select a specific model, usage is drawn from the API pool at that model's API rate.
+When you select a specific third-party model, usage is drawn from the **Other Models** pool at that model's API rate.
 
 ### Model pricing
 
@@ -82,11 +84,11 @@ Opting in to regional data residency incurs a 10% uplift on Model pricing for el
 
 All individual plans include unlimited tab completions, extended agent usage limits on all models, access to Bugbot, and access to Cloud Agents.
 
-| Plan         | Price   | API usage included | First-party models pool |
-| :----------- | :------ | :----------------- | :---------------------- |
-| **Pro**      | $20/mo  | $20                | Generous included usage |
-| **Pro Plus** | $60/mo  | $70                | Generous included usage |
-| **Ultra**    | $200/mo | $400               | Generous included usage |
+| Plan         | Price   | Other Models usage included | Cursor Models           |
+| :----------- | :------ | :-------------------------- | :---------------------- |
+| **Pro**      | $20/mo  | $20                         | Generous included usage |
+| **Pro Plus** | $60/mo  | $70                         | Generous included usage |
+| **Ultra**    | $200/mo | $400                        | Generous included usage |
 
 Since different models have different API costs, your model selection affects how quickly your included usage is consumed.
 
@@ -120,7 +122,7 @@ Learn more about [Teams pricing](https://cursor.com/docs/account/teams/pricing.m
 
 On Teams and Enterprise plans, third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage.
 
-The Cursor Token Rate applies when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and all first-party models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
+The Cursor Token Rate applies when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and all first-party Cursor models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
 
 ## Auto modes
 

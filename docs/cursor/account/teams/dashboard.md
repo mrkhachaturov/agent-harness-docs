@@ -25,6 +25,12 @@ Control data sharing preferences for your team. Configure whether your data can 
 Enable usage-based pricing and set spending limits. Configure monthly team
 spending limits. Control whether only admins can modify these settings.
 
+### Cursor Router
+
+Enable model routing for Auto, choose which optimization modes team members
+can select, control routed model visibility, and set Auto as the team
+default. Learn more in [Cursor Router](https://cursor.com/docs/cursor-router.md).
+
 ### Team Marketplaces
 
 Import private marketplaces from GitHub or use the Default marketplace to

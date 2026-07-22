@@ -14,10 +14,8 @@ If app UI is unavailable, the same tool still works through normal MCP responses
 
 ## How do I install an MCP server (one-click)?
 
-1. Open Cursor Settings:
-   - **Mac**: Press Cmd + Shift + J
-   - **Windows/Linux**: Press Ctrl + Shift + J
-2. Click **Tools & MCP** in the sidebar
+1. Open **Customize** in the sidebar
+2. Click **MCPs**
 3. Browse available servers or search for the one you want
 4. Click **Add to Cursor** next to the server
 5. Follow the authentication prompts if required
@@ -87,8 +85,8 @@ By default, Agent asks for your approval before using an MCP tool. In Cursor 3.6
 ## How do I troubleshoot MCP servers?
 
 - **View logs**: Open the Output panel (Cmd + Shift + U on Mac, Ctrl + Shift + U on Windows/Linux) and select **MCP Logs**
-- **Toggle servers**: Open Settings (Cmd + Shift + J) > **Tools & MCP**. Click the toggle next to any server.
-- **Restart**: Remove the server from settings, then re-add it
+- **Toggle servers**: Open **Customize** > **MCPs**. Click the toggle next to any server.
+- **Restart**: Remove the server from **Customize** > **MCPs**, then re-add it
 - **Environment variables**: If your server relies on environment variables set in your shell profile, make sure those variables are available to Cursor. Restart Cursor after updating your shell profile.
 
 ## Do MCP servers work with Cloud Agents?

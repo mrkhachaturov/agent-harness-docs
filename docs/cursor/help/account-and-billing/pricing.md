@@ -4,14 +4,16 @@ Compare plans and manage subscription changes from your billing dashboard.
 
 ## What plans are available?
 
-| Plan           | Price        | Included API usage         |
-| -------------- | ------------ | -------------------------- |
-| Hobby          | Free         | Limited                    |
-| Pro            | $20/mo       | $20                        |
-| Pro+           | $60/mo       | $70                        |
-| Ultra          | $200/mo      | $400                       |
-| Teams Standard | $40/user/mo  | Standard team allowance    |
-| Teams Premium  | $120/user/mo | 5x Standard team allowance |
+| Plan           | Price        | Included Other Models usage |
+| -------------- | ------------ | --------------------------- |
+| Hobby          | Free         | Limited                     |
+| Pro            | $20/mo       | $20                         |
+| Pro+           | $60/mo       | $70                         |
+| Ultra          | $200/mo      | $400                        |
+| Teams Standard | $40/user/mo  | Standard team allowance     |
+| Teams Premium  | $120/user/mo | 5x Standard team allowance  |
+
+Included Other Models usage covers third-party models. See [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for both usage pools.
 
 **Enterprise** plans include pooled usage, SCIM provisioning, audit logs, advanced admin controls, and invoice billing. [Contact sales](https://cursor.com/contact-sales?source=docs-help-pricing) to get started.
 

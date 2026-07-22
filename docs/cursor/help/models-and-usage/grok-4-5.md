@@ -21,7 +21,7 @@ Grok 4.5 costs more than Composer. See [how much Grok 4.5 costs](https://cursor.
 
 ## Which plans include Grok 4.5?
 
-Every plan includes access to Grok 4.5: Pro, Pro+, Ultra, Teams, and Enterprise. Grok 4.5 draws from the First-Party Models usage pool included with your plan.
+Every plan includes access to Grok 4.5: Pro, Pro+, Ultra, Teams, and Enterprise. Grok 4.5 draws from the Cursor Models usage pool included with your plan.
 
 ## Where can I use Grok 4.5?
 
