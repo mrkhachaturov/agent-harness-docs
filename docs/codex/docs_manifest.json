@@ -387,14 +387,20 @@
     "features.md": {
       "original_url": "https://developers.openai.com/codex/features",
       "original_md_url": "https://developers.openai.com/codex/features.md",
-      "hash": "6574a77897de772e660c288890eebbbb39f4afd33992e0aa21a04855ed8b0bfc",
-      "last_updated": "2026-07-17T05:38:48.292626"
+      "hash": "63a8824e7f37fd56a553b9959fc8e7604378f50f6ac844dec49cc6d9ddd7adfe",
+      "last_updated": "2026-07-23T22:03:57.592094"
     },
     "features__codex-micro.md": {
       "original_url": "https://developers.openai.com/codex/features/codex-micro",
       "original_md_url": "https://developers.openai.com/codex/features/codex-micro.md",
       "hash": "6a71aea47513a344efe2c38742b299e0efe2b559e02875001bf78eeab1a58802",
       "last_updated": "2026-07-17T05:38:48.898425"
+    },
+    "features__voice.md": {
+      "original_url": "https://developers.openai.com/codex/features/voice",
+      "original_md_url": "https://developers.openai.com/codex/features/voice.md",
+      "hash": "a2bc43f57fdc4d8279f216ac75987006abc7fb0b7c0cd791a94e6c863530966c",
+      "last_updated": "2026-07-23T22:03:58.809801"
     },
     "get-started-with-work.md": {
       "original_url": "https://developers.openai.com/codex/get-started-with-work",
@@ -417,8 +423,8 @@
     "hooks.md": {
       "original_url": "https://developers.openai.com/codex/hooks",
       "original_md_url": "https://developers.openai.com/codex/hooks.md",
-      "hash": "c2a29dc717985236028e2d3cc3af42cc39814a56cc52c0d20b1a9a9fa1060d19",
-      "last_updated": "2026-07-18T01:57:01.755084"
+      "hash": "8641a9346857f956da7135df11e1ceae64f9f11bf1bf9e43ae32d86a1082cda8",
+      "last_updated": "2026-07-23T22:04:07.169443"
     },
     "ide.md": {
       "original_url": "https://developers.openai.com/codex/ide",
@@ -543,14 +549,14 @@
     "pricing.md": {
       "original_url": "https://developers.openai.com/codex/pricing",
       "original_md_url": "https://developers.openai.com/codex/pricing.md",
-      "hash": "3972d776e692fdd33fd57baacd5d9de6e5de8af99ee24da945279513c608aa57",
-      "last_updated": "2026-07-23T11:08:29.554082"
+      "hash": "cb72222e1cee7a9a6bb290f62ae4b9f7d71b590c59cb864765403eae86761edc",
+      "last_updated": "2026-07-23T22:04:31.186946"
     },
     "projects.md": {
       "original_url": "https://developers.openai.com/codex/projects",
       "original_md_url": "https://developers.openai.com/codex/projects.md",
-      "hash": "3fe2ed058ea6dffeded6c86dc434c06d406f3bfea1f95c08a2e9bb925d0f5854",
-      "last_updated": "2026-07-17T05:39:21.373998"
+      "hash": "d4876a350c0a0e0465417b0520ea071b7b6f50b4f278657cbc235a9a34834ca2",
+      "last_updated": "2026-07-23T22:04:31.869526"
     },
     "prompting.md": {
       "original_url": "https://developers.openai.com/codex/prompting",
@@ -741,8 +747,8 @@
     "whats-new.md": {
       "original_url": "https://developers.openai.com/codex/whats-new",
       "original_md_url": "https://developers.openai.com/codex/whats-new.md",
-      "hash": "f561717a83c262b07ee27755c2a2be44a802a48ddb0d06411a63efaf83a0ff50",
-      "last_updated": "2026-07-23T11:09:03.289109"
+      "hash": "d2047a86b3f411ed2657a4a4849c4ef9a0bc5aa3ff7c7fb895be1cc510f6b9c1",
+      "last_updated": "2026-07-23T22:05:01.714230"
     },
     "windows__windows-app.md": {
       "original_url": "https://developers.openai.com/codex/windows/windows-app",
@@ -764,10 +770,10 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-23T19:16:46.426033",
-    "fetch_duration_seconds": 108.976518,
-    "total_pages_discovered": 133,
-    "pages_fetched_successfully": 127,
+    "last_fetch_completed": "2026-07-23T22:05:03.514983",
+    "fetch_duration_seconds": 105.113371,
+    "total_pages_discovered": 134,
+    "pages_fetched_successfully": 128,
     "pages_failed": 6,
     "failed_urls": [
       "https://developers.openai.com/codex/community/codex-for-oss.md",
@@ -779,10 +785,10 @@
     ],
     "index_url": "https://developers.openai.com/codex/llms.txt",
     "base_url": "https://developers.openai.com",
-    "total_files": 127,
+    "total_files": 128,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-23T19:16:46.426049",
+  "last_updated": "2026-07-23T22:05:03.515001",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/codex/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
