@@ -163,6 +163,33 @@ These values are encrypted at rest, injected into the cloud agent's shell, and d
 
 For values that should only exist during a single run, pass them on `agent.send()` instead. See [Per-run environment variables](https://cursor.com/docs/sdk/typescript.md#per-run-environment-variables).
 
+### Agent metadata
+
+Use `cloud.metadata` to attach your own identifiers to a cloud agent when you create it. Metadata can link an agent to a user, tenant, workflow, or ticket in your system.
+
+```typescript
+const agent = await Agent.create({
+  apiKey: process.env.CURSOR_API_KEY!,
+  cloud: {
+    repos: [{ url: "https://github.com/your-org/your-repo" }],
+    metadata: {
+      end_user_id: "user-123",
+      ticket_id: "ENG-456",
+    },
+  },
+});
+
+const info = await Agent.get(agent.agentId);
+console.log(info.metadata?.end_user_id);
+```
+
+Metadata is available for cloud agents at creation time. You can attach up to 50 key-value pairs. Keys must be non-empty and no more than 255 characters. Values must be strings no larger than 4096 bytes. Empty string values are allowed, and an empty object is treated as no metadata.
+
+`Agent.list()` and `Agent.get()` return the persisted map on `SDKAgentInfo.metadata`. To change the metadata, create a new agent.
+
+If metadata isn't enabled for the API key's account, creating an agent with a
+non-empty map returns `403 feature_unavailable`.
+
 ### Model parameters
 
 Use `model.params` to pass per-model options such as reasoning effort. Parameter ids and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/typescript.md#cursormodelslist) to discover supported parameters and preset variants for your account.
@@ -1001,6 +1028,7 @@ type SDKAgentInfo = {
       runtime: "cloud";
       env?: { type: "cloud" | "pool" | "machine"; name?: string };
       repos?: string[];
+      metadata?: Record<string, string>;
     }
 );
 ```
@@ -1674,6 +1702,7 @@ Config for local agents, passed as `local` on `Agent.create()`. Also exported as
 | `workOnCurrentBranch` | `boolean`                                                                                                   | `false`             | Push commits to the existing branch instead of a new one.                                                                                                                                                                                                                                                                                            |
 | `autoCreatePR`        | `boolean`                                                                                                   | `false`             | Open a PR when the run finishes.                                                                                                                                                                                                                                                                                                                     |
 | `skipReviewerRequest` | `boolean`                                                                                                   | `false`             | Skip requesting the calling user as a reviewer on the PR.                                                                                                                                                                                                                                                                                            |
+| `metadata`            | `Record<string, string>`                                                                                    |                     | Caller-defined identifiers attached when the agent is created. See [Agent metadata](https://cursor.com/docs/sdk/typescript.md#agent-metadata).                                                                                                                                                                                                       |
 
 ### AgentDefinition
 

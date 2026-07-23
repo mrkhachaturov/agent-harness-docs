@@ -492,6 +492,12 @@
       "hash": "b4ba979324200e1a44a624d5a0165bdd3a297d55962ee280424163f017106039",
       "last_updated": "2026-06-29T22:53:03.562859"
     },
+    "help/account-and-billing/referral-program.md": {
+      "original_url": "https://cursor.com/help/account-and-billing/referral-program",
+      "original_md_url": "https://cursor.com/help/account-and-billing/referral-program.md",
+      "hash": "9a1bcb37c7fd94d8350df172cb317de47c8bf286ce35c9739d758aa31f9cd9c3",
+      "last_updated": "2026-07-23T19:16:49.592513"
+    },
     "help/account-and-billing/refunds.md": {
       "original_url": "https://cursor.com/help/account-and-billing/refunds",
       "original_md_url": "https://cursor.com/help/account-and-billing/refunds.md",
@@ -1071,14 +1077,14 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "cf58b4c9fd195948d287606b3e5c1af11af7bbeb1e3c7f1cbe8523b3d28a4fb3",
-      "last_updated": "2026-07-20T13:57:21.294124"
+      "hash": "fd26186b795a9ae16619c71ab50e41f776381dbbf9cac9a755667601731f2f84",
+      "last_updated": "2026-07-23T19:16:49.593776"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "03444b296f445d0eadf10c0c4f6c6f9e9e9dd85c8bc42e874baf78e6ac01414d",
-      "last_updated": "2026-07-20T13:57:21.294692"
+      "hash": "a079078f0b7f954cbf21791889e782cd8183b7ae0699b39d67a02b0e218c39d6",
+      "last_updated": "2026-07-23T19:16:49.594337"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1100,21 +1106,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-23T16:27:27.463391",
-    "fetch_duration_seconds": 2.102028,
-    "total_pages_discovered": 183,
-    "pages_fetched_successfully": 183,
+    "last_fetch_completed": "2026-07-23T19:16:49.596795",
+    "fetch_duration_seconds": 2.993004,
+    "total_pages_discovered": 184,
+    "pages_fetched_successfully": 184,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 183,
+    "total_files": 184,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-23T16:27:27.463406",
+  "last_updated": "2026-07-23T19:16:49.596808",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
