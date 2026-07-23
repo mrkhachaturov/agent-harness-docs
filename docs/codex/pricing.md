@@ -1,6 +1,6 @@
 # Pricing
 
-<strong>Work mode and Codex share usage.</strong> Work mode usage inside
+<strong>ChatGPT Work and Codex share usage.</strong> ChatGPT Work usage inside
   ChatGPT uses the same pricing, credits, and usage limits as Codex.
 
 <h2 class="sr-only">Pricing options</h2>
@@ -896,7 +896,7 @@ efficiently](https://learn.chatgpt.com/docs/prompting#use-work-efficiently).
             },
           },
           {
-            name: "Work mode in ChatGPT on the web",
+            name: "ChatGPT Work on the web",
             href: "/codex/get-started-with-work",
             availability: {
               plus: "available",
