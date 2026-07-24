@@ -19,16 +19,12 @@ Included Other Models usage covers third-party models. See [Models & Pricing](ht
 
 See [cursor.com/pricing](https://cursor.com/pricing) for the full feature comparison.
 
-## What are Auto and Premium?
+## What is Auto?
 
-Auto and Premium are model routers that pick models for you.
+**Auto** balances intelligence, cost, and reliability through [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md). It has fixed token rates ($1.25/1M input, $6.00/1M output, $0.25/1M cache read) when you use **Cost** mode.
+**Balance** and **Intelligence** modes bill at the routed model's rate. For example, if your request is routed to Opus 4.8, you will be billed at Opus 4.8 pricing for that request.
 
-- **Auto** balances intelligence, cost, and reliability through [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md). It has fixed token rates ($1.25/1M input, $6.00/1M output, $0.25/1M cache read) when you use **Cost** mode.
-  **Balance** and **Intelligence** modes bill at the routed model's rate. For example, if your request is routed to Opus 4.8, you will be billed at Opus 4.8 pricing for that request.
-
-- **Premium** picks the most capable model available. It's billed at the selected model's API rate and is best for complex tasks.
-
-You can switch between Auto, Premium, and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) and [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for details.
+You can switch between Auto and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) and [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for details.
 
 ## Is Cursor Router available on my plan?
 

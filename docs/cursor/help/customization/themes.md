@@ -2,7 +2,7 @@
 
 Customize how Cursor looks with themes, font settings, and editor preferences.
 
-Theme controls and the Extensions view are part of the [editor](https://cursor.com/docs/agent/agents-window.md#switch-back-to-the-editor). If you're in the Agents Window and don't see the steps below, open the command palette and run **Open Editor Window**, then continue.
+Theme controls and the Extensions view are part of the [IDE](https://cursor.com/docs/agent/agents-window.md#switch-back-to-the-ide). If you're in the Agents Window and don't see the steps below, open the command palette and run **Open IDE**, then continue.
 
 ## How do I switch to light mode or dark mode?
 
@@ -32,7 +32,7 @@ You can also set Cursor to follow your OS appearance: open Settings (Cmd + , on 
 2. Search for `theme`
 3. Click **Install** on a theme extension
 
-If the Extensions view doesn't open, switch to the editor with **Open Editor Window**, then try the shortcut again. See [Extensions](https://cursor.com/help/customization/extensions.md) for more on installing and managing extensions.
+If the Extensions view doesn't open, switch to the IDE with **Open IDE**, then try the shortcut again. See [Extensions](https://cursor.com/help/customization/extensions.md) for more on installing and managing extensions.
 
 ## How do I change font size?
 

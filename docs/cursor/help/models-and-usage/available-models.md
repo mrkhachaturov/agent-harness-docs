@@ -15,10 +15,9 @@ See the [models reference](https://cursor.com/docs/models-and-pricing.md) for th
 ## Which model should I use?
 
 - **Auto** selects models that balance intelligence, cost, and reliability. Good for everyday tasks. See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for Cost, Balance, and Intelligence modes.
-- **Premium** selects the most capable models for you. Recommended for complex tasks.
 - **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)** is Cursor's flagship model. The smartest model Cursor has trained, built for the hardest tasks.
 - **Composer** is Cursor's fast, cost-efficient model. Capable for most tasks, and built for interactive coding.
-- **Claude Opus** and **GPT Codex** handle complex, multi-step tasks well.
+- **Claude Opus** and **GPT-5.6 Sol** handle complex, multi-step tasks well.
 - Some users also prefer **Gemini Pro** models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the full list.
@@ -66,12 +65,6 @@ Grok 4.5 has two speeds, each with its own token rates:
 - **Fast**: $4.00 per 1M input tokens, $18.00 per 1M output tokens, $1.00 per 1M cache read tokens
 
 Grok 4.5 draws from the Cursor Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
-
-## How much does Premium cost?
-
-Premium pricing is based on the selected model's API rate. The Cursor team selects Premium models based on internal benchmarks, evaluations, and user feedback on model quality.
-
-Check the [model pricing table](https://cursor.com/docs/models-and-pricing.md#model-pricing) for per-model rates, and your [usage page](https://cursor.com/dashboard/usage) for cost and model selection at the request level.
 
 ## How much do models cost?
 
