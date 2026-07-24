@@ -9,8 +9,8 @@
     "account/enterprise/cyber-safeguards.md": {
       "original_url": "https://cursor.com/docs/account/enterprise/cyber-safeguards",
       "original_md_url": "https://cursor.com/docs/account/enterprise/cyber-safeguards.md",
-      "hash": "f402a34ceeda03d67526025aa6fdb9bcecaa00a282fc086356a1ea551b12d959",
-      "last_updated": "2026-07-12T19:00:13.922486"
+      "hash": "0e7b18545e2358af09f47d484de37c541f96f4d593b436231d452d2e2b08baf5",
+      "last_updated": "2026-07-24T19:21:36.614739"
     },
     "account/enterprise/service-accounts.md": {
       "original_url": "https://cursor.com/docs/account/enterprise/service-accounts",
@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "56f039930157de9922dd3e3668db3c5e0f3ec9cba1f990500a258de2b68212f6",
-      "last_updated": "2026-07-22T22:05:20.903441"
+      "hash": "40a4ee5e4a03109219896fa61ceebf23d50b3d99238da8a8b859dbc05ad12ad8",
+      "last_updated": "2026-07-24T19:21:36.615215"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -129,8 +129,8 @@
     "agent/tools/search.md": {
       "original_url": "https://cursor.com/docs/agent/tools/search",
       "original_md_url": "https://cursor.com/docs/agent/tools/search.md",
-      "hash": "9cb9a868f0461477a94f1edf97354034bae049ab5795fb879202b45dccad6f07",
-      "last_updated": "2026-06-29T22:53:03.548772"
+      "hash": "97d822cf751e3e955be23604e3850e0eb98afd9cb91a54e8dddd75252bb25a83",
+      "last_updated": "2026-07-24T19:21:36.615546"
     },
     "agent/tools/terminal.md": {
       "original_url": "https://cursor.com/docs/agent/tools/terminal",
@@ -483,8 +483,8 @@
     "help/account-and-billing/pricing.md": {
       "original_url": "https://cursor.com/help/account-and-billing/pricing",
       "original_md_url": "https://cursor.com/help/account-and-billing/pricing.md",
-      "hash": "661a86406784f6bb8b84d4fd445d84eb3086d32e86b79301fd160f6b22302ecd",
-      "last_updated": "2026-07-24T16:40:34.195727"
+      "hash": "522be7a23da6443acf2449fb9ae131067e2db3960bbaf1677a25fa513df533d2",
+      "last_updated": "2026-07-24T19:21:36.616454"
     },
     "help/account-and-billing/profiles.md": {
       "original_url": "https://cursor.com/help/account-and-billing/profiles",
@@ -789,8 +789,8 @@
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
       "original_md_url": "https://cursor.com/help/models-and-usage/available-models.md",
-      "hash": "c2c74667105fa477da1d3cb1e8f67baf8a86cc75242bc834b9fb4d31a5749690",
-      "last_updated": "2026-07-24T16:40:34.196273"
+      "hash": "aee07399fc983c6a6fb8ad155f6cbafef5448936ebc4b085a86cc06e6831babe",
+      "last_updated": "2026-07-24T19:21:36.616875"
     },
     "help/models-and-usage/cursor-router.md": {
       "original_url": "https://cursor.com/help/models-and-usage/cursor-router",
@@ -903,8 +903,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "0dae87c3ca9ce3a2fa208f61c29ad73808d8a77ed7cac0eb66943917c75fab0e",
-      "last_updated": "2026-07-22T02:07:00.895651"
+      "hash": "a4c711eab392635b47cf53c5050dd440b5de74110aae530e7a4625faa5b921d6",
+      "last_updated": "2026-07-24T19:21:36.617213"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -987,26 +987,26 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "3e72f9e501a513888cacea6d4df28de3ad0425b464efff933c869daca2c6eaa6",
-      "last_updated": "2026-07-22T22:05:20.906006"
+      "hash": "9dc1a7bbbba250b5f5f84f8e3535da88dd788ad79b0b026256ffbda9aba17996",
+      "last_updated": "2026-07-24T19:21:36.617601"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
       "original_md_url": "https://cursor.com/docs/models/claude-fable-5.md",
-      "hash": "a877687d0ab4f4c0db92a7d15071d0d4bef9ec3a19a20962c9410b614bc52c78",
-      "last_updated": "2026-07-22T19:11:14.391747"
+      "hash": "37cb245b16ae8834222bed9e1ebb8b05978f3329fd05672a8616daf6548ea9ee",
+      "last_updated": "2026-07-24T19:21:36.617735"
     },
-    "models/claude-opus-4-8.md": {
-      "original_url": "https://cursor.com/docs/models/claude-opus-4-8",
-      "original_md_url": "https://cursor.com/docs/models/claude-opus-4-8.md",
-      "hash": "a232f92a3de6fe8855d7ee7b77a1e8f46fffc2ca546a29b6aaf01b1af4ee20b4",
-      "last_updated": "2026-07-22T19:11:14.391945"
+    "models/claude-opus-5.md": {
+      "original_url": "https://cursor.com/docs/models/claude-opus-5",
+      "original_md_url": "https://cursor.com/docs/models/claude-opus-5.md",
+      "hash": "484e1e7f726475aea33dfc155562599e15b28b54fed4a74e612995fcf7bf088d",
+      "last_updated": "2026-07-24T19:21:36.617853"
     },
     "models/claude-sonnet-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-sonnet-5",
       "original_md_url": "https://cursor.com/docs/models/claude-sonnet-5.md",
-      "hash": "23fcf2d53f73db9bd3584a19d8f55a42986b49f477ad5b8dccd2993d111dda9d",
-      "last_updated": "2026-07-22T19:11:14.392126"
+      "hash": "210e597025274e6c77a2772dc4f24c672265e6faaf94681ae5ea06306112aa16",
+      "last_updated": "2026-07-24T19:21:36.617944"
     },
     "models/cursor-composer-2-5.md": {
       "original_url": "https://cursor.com/docs/models/cursor-composer-2-5",
@@ -1101,13 +1101,13 @@
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
       "original_md_url": "https://cursor.com/docs/subagents.md",
-      "hash": "f0aba02b9f9e12f96e5e93865a1010576f6d1e3fd33167e26b57e15fa10a0e94",
-      "last_updated": "2026-07-17T19:02:52.238497"
+      "hash": "bdb16d67cd9b2df83410ff8dffb109f0341925f92b1093d6efe0452ff25257ad",
+      "last_updated": "2026-07-24T19:21:36.631759"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-24T16:40:34.198409",
-    "fetch_duration_seconds": 1.595126,
+    "last_fetch_completed": "2026-07-24T19:21:36.633650",
+    "fetch_duration_seconds": 2.339958,
     "total_pages_discovered": 184,
     "pages_fetched_successfully": 184,
     "pages_failed": 0,
@@ -1120,7 +1120,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-24T16:40:34.198422",
+  "last_updated": "2026-07-24T19:21:36.633665",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -1,15 +1,15 @@
-Claude Sonnet 5 is Anthropic's latest medium-tier model and replaces Sonnet 4.6. It pushes quality close to Opus 4.8 while keeping Sonnet's lower per-token price. It supports thinking mode and context windows up to 1M tokens, making it a strong default for everyday coding when you want frontier reasoning without Opus pricing.
+Claude Sonnet 5 is Anthropic's latest medium-tier model and replaces Sonnet 4.6. It pushes quality close to Opus while keeping Sonnet's lower per-token price. It supports thinking mode and context windows up to 1M tokens, making it a strong default for everyday coding when you want frontier reasoning without Opus pricing.
 
 ## Strengths
 
-- Near-Opus quality. Sonnet 5 closes most of the gap to Opus 4.8 on real coding work while staying far cheaper per token.
+- Near-Opus quality. Sonnet 5 closes most of the gap to Opus 5 on real coding work while staying far cheaper per token.
 - Strong reasoning. Thinking mode handles multi-step tasks, planning, and debugging with depth.
 - Reliable tool use. It calls tools purposefully and chains results into follow-up actions.
 - Same provider and style as Opus at a lower price point.
 
 ## Limitations
 
-- For peak quality on the hardest tasks, Opus 4.8 remains the stronger choice.
+- For peak quality on the hardest tasks, [Opus 5](https://cursor.com/docs/models/claude-opus-5.md) remains the stronger choice.
 - The updated tokenizer maps the same input to more tokens, so token counts run higher than older Sonnet models.
 
 ## Tools

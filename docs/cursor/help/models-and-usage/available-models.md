@@ -28,13 +28,13 @@ Cursor Router routes across these models:
 
 - **[Composer 2.5](https://cursor.com/docs/models/cursor-composer-2-5.md)** (fast and standard variants)
 - **[GPT-5.5](https://cursor.com/docs/models/gpt-5-5.md)**
-- **[Claude Opus 4.8](https://cursor.com/docs/models/claude-opus-4-8.md)**
+- **[Claude Opus 5](https://cursor.com/docs/models/claude-opus-5.md)**
 - **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)**
 - **[Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md)**
 
 **Required:** Composer 2.5. Blocking it disables the router.
 
-**Recommended:** GPT-5.5 and Claude Opus 4.8. Blocking one reduces routing quality. Blocking both disables the router.
+**Recommended:** GPT-5.5 and Claude Opus 5. Blocking one reduces routing quality. Blocking both disables the router.
 
 Blocked models (enterprise plans) are skipped and the router falls back to an allowlisted alternative when possible.
 

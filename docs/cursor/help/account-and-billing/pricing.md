@@ -22,7 +22,7 @@ See [cursor.com/pricing](https://cursor.com/pricing) for the full feature compar
 ## What is Auto?
 
 **Auto** balances intelligence, cost, and reliability through [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md). It has fixed token rates ($1.25/1M input, $6.00/1M output, $0.25/1M cache read) when you use **Cost** mode.
-**Balance** and **Intelligence** modes bill at the routed model's rate. For example, if your request is routed to Opus 4.8, you will be billed at Opus 4.8 pricing for that request.
+**Balance** and **Intelligence** modes bill at the routed model's rate. For example, if your request is routed to Opus 5, you will be billed at Opus 5 pricing for that request.
 
 You can switch between Auto and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) and [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for details.
 
