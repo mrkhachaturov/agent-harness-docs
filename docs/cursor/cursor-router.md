@@ -37,6 +37,25 @@ Admins configure Cursor Router from the [team dashboard](https://cursor.com/docs
 - **Underlying model**: Display which model Auto routed to at the start of each response, or keep it hidden. Hidden is the default and recommended, so results are judged on their own merit rather than by model name. Applies to Balance and Intelligence modes.
 - **Impose Auto**: Make Auto the default model for everyone on the team. **Soft** defaults each new chat to Auto; members can still switch models. **Hard** locks the model picker to Auto. Both are off by default.
 
+## Use Router through the SDK
+
+The [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) exposes Cursor Router as model id `auto-smart` with parameter `optimize_for` (`cost`, `balanced`, or `intelligence`). Call `Cursor.models.list()` to confirm Router is available for the API key's team before you hard-code a selection.
+
+```typescript
+import { Agent } from "@cursor/sdk";
+
+await using agent = await Agent.create({
+  apiKey: process.env.CURSOR_API_KEY!,
+  model: {
+    id: "auto-smart",
+    params: [{ id: "optimize_for", value: "balanced" }],
+  },
+  local: { cwd: process.cwd() },
+});
+```
+
+The SDK runs Cursor agent workflows. It is not a standalone chat-completions or raw inference API. See [Cursor Router in the TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) for catalog discovery, per-run mode overrides, and troubleshooting.
+
 
 ---
 

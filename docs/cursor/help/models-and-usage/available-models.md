@@ -32,13 +32,15 @@ Cursor Router routes across these models:
 - **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)**
 - **[Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md)**
 
-**Required:** Composer 2.5. Blocking it disables the router.
+**Required:** [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md). The router needs a powerful, cost-efficient model in the pool; blocking Grok 4.5 disables the router.
 
 **Recommended:** GPT-5.5 and Claude Opus 5. Blocking one reduces routing quality. Blocking both disables the router.
 
 Blocked models (enterprise plans) are skipped and the router falls back to an allowlisted alternative when possible.
 
 Team admins manage model access from [Team Settings > Models](https://cursor.com/dashboard/team-settings/models). See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for routing details.
+
+To use Router from code, call `Cursor.models.list()` in the [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) and look for model id `auto-smart` with parameter `optimize_for`.
 
 ## Can I see which model Cursor Router used for my request?
 

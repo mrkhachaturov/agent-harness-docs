@@ -755,7 +755,7 @@ They remain importable from `cursor_sdk` for backward compatibility, but new cod
 | `mode`            | `"agent" \| "plan"`                          | Per-send conversation mode override. If omitted on follow-ups, keeps the conversation's current mode.                                                                                                                                    |
 | `mcp_servers`     | `Mapping[str, McpServerConfig]`              | Inline MCP server definitions. Fully replaces creation-time servers for this run.                                                                                                                                                        |
 | `cloud.env_vars`  | `Mapping[str, str]`                          | Cloud agents only. [Per-run environment variables](https://cursor.com/docs/sdk/python.md#per-run-environment-variables) injected for this run and removed when it finishes. Overrides agent-scoped `env_vars` by name for this run only. |
-| `local.force`     | `bool`                                       | Local agents only. Defaults to `False`. Expire a stuck active run before starting this message. Cloud returns `409 agent_busy` server-side, so no equivalent is needed.                                                                  |
+| `local.force`     | `bool`                                       | Local agents only. Defaults to `None` (unset). Set `True` to expire a stuck active run before starting this message. Cloud returns `409 agent_busy` server-side, so no equivalent is needed.                                             |
 | `idempotency_key` | `str`                                        | Optional client-generated idempotency key for the send.                                                                                                                                                                                  |
 | `on_step`         | `Callable[[ConversationStep], Any]`          | Callback after each completed conversation step (text, thinking, or tool batch).                                                                                                                                                         |
 | `on_delta`        | `Callable[[InteractionUpdate], Any]`         | Callback per raw `InteractionUpdate`.                                                                                                                                                                                                    |
@@ -1330,18 +1330,18 @@ The Python SDK accepts helper dataclasses and raw dictionaries. Dataclasses use 
 
 ### AgentOptions
 
-| Property          | Type                                                 | Default                                                             | Description                                                                                                                            |
-| :---------------- | :--------------------------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------- |
-| `model`           | `str \| ModelSelection \| Mapping[str, Any]`         | Required for local; cloud falls back to the server-resolved default | Model to use. See [`ModelSelection`](https://cursor.com/docs/sdk/python.md#modelselection).                                            |
-| `api_key`         | `str`                                                | `CURSOR_API_KEY` env                                                | User API key or service account key. Team Admin keys are not yet supported.                                                            |
-| `name`            | `str`                                                | Auto-generated                                                      | Human-readable agent name surfaced in `client.agents.list()` / `client.agents.get()`.                                                  |
-| `local`           | `LocalAgentOptions \| Mapping[str, Any]`             | `None`                                                              | Local agent config. Pass to create a local agent.                                                                                      |
-| `cloud`           | `CloudAgentOptions \| Mapping[str, Any]`             | `None`                                                              | Cloud agent config. Pass to create a cloud agent.                                                                                      |
-| `mcp_servers`     | `Mapping[str, McpServerConfig]`                      | `None`                                                              | Inline MCP server definitions.                                                                                                         |
-| `agents`          | `Mapping[str, AgentDefinition \| Mapping[str, Any]]` | `None`                                                              | Subagent definitions.                                                                                                                  |
-| `agent_id`        | `str`                                                | Auto-generated                                                      | Durable agent ID. Pass to keep a stable ID across invocations.                                                                         |
-| `idempotency_key` | `str`                                                | Auto-generated for cloud                                            | Optional client-generated idempotency key. Cloud only.                                                                                 |
-| `mode`            | `"agent" \| "plan"`                                  | `"agent"`                                                           | Initial conversation mode for the agent's first run. See [Conversation mode](https://cursor.com/docs/sdk/python.md#conversation-mode). |
+| Property          | Type                                                 | Default                                                             | Description                                                                                                                                                                           |
+| :---------------- | :--------------------------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `model`           | `str \| ModelSelection \| Mapping[str, Any]`         | Required for local; cloud falls back to the server-resolved default | Model to use. See [`ModelSelection`](https://cursor.com/docs/sdk/python.md#modelselection).                                                                                           |
+| `api_key`         | `str`                                                | `CURSOR_API_KEY` env                                                | User API key or service account key. Team Admin keys are not yet supported.                                                                                                           |
+| `name`            | `str`                                                | Auto-generated                                                      | Human-readable agent name surfaced in `client.agents.list()` / `client.agents.get()`.                                                                                                 |
+| `local`           | `LocalAgentOptions \| Mapping[str, Any]`             | `None`                                                              | Local agent config. Pass to create a local agent.                                                                                                                                     |
+| `cloud`           | `CloudAgentOptions \| Mapping[str, Any]`             | `None`                                                              | Cloud agent config. Pass to create a cloud agent.                                                                                                                                     |
+| `mcp_servers`     | `Mapping[str, McpServerConfig]`                      | `None`                                                              | Inline MCP server definitions.                                                                                                                                                        |
+| `agents`          | `Mapping[str, AgentDefinition \| Mapping[str, Any]]` | `None`                                                              | Subagent definitions.                                                                                                                                                                 |
+| `agent_id`        | `str`                                                | Auto-generated                                                      | Durable agent ID. Pass to keep a stable ID across invocations.                                                                                                                        |
+| `idempotency_key` | `str`                                                | Auto-generated for cloud                                            | Optional client-generated idempotency key. Cloud only.                                                                                                                                |
+| `mode`            | `"agent" \| "plan"`                                  | `None`                                                              | Initial conversation mode for the agent's first run. When omitted, the server starts in agent mode. See [Conversation mode](https://cursor.com/docs/sdk/python.md#conversation-mode). |
 
 ### LocalAgentOptions
 
@@ -1356,23 +1356,23 @@ The Python SDK accepts helper dataclasses and raw dictionaries. Dataclasses use 
 
 ### CloudAgentOptions
 
-| Property                 | Type                                             | Default             | Description                                                                                                                                                                                |
-| :----------------------- | :----------------------------------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `env`                    | `CloudEnvironment \| Mapping[str, Any]`          | `{ type: "cloud" }` | Execution environment. `cloud` uses Cursor-hosted VMs; `pool` and `machine` target self-hosted workers you run.                                                                            |
-| `repos`                  | `Sequence[CloudRepository \| Mapping[str, Any]]` | `None`              | Repositories to clone into the VM. Omit `repos` and leave `env` at the default for a no-repo agent with an empty workspace. Pass `pr_url` on a repo to attach the agent to an existing PR. |
-| `work_on_current_branch` | `bool`                                           | `False`             | Push commits to the existing branch instead of a new one.                                                                                                                                  |
-| `auto_create_pr`         | `bool`                                           | `False`             | Open a PR when the run finishes.                                                                                                                                                           |
-| `skip_reviewer_request`  | `bool`                                           | `False`             | Skip requesting the calling user as a reviewer on the PR.                                                                                                                                  |
-| `env_vars`               | `Mapping[str, str]`                              | `None`              | Session-scoped environment variables for cloud agents.                                                                                                                                     |
+| Property                 | Type                                             | Default | Description                                                                                                                                                                |
+| :----------------------- | :----------------------------------------------- | :------ | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `env`                    | `CloudEnvironment \| Mapping[str, Any]`          | `None`  | Execution environment. When omitted, the server uses Cursor-hosted cloud VMs. `pool` and `machine` target self-hosted workers you run.                                     |
+| `repos`                  | `Sequence[CloudRepository \| Mapping[str, Any]]` | `None`  | Repositories to clone into the VM. Omit both `repos` and `env` for a no-repo agent with an empty workspace. Pass `pr_url` on a repo to attach the agent to an existing PR. |
+| `work_on_current_branch` | `bool`                                           | `None`  | Push commits to the existing branch instead of a new one. The server treats an omitted value as `False`.                                                                   |
+| `auto_create_pr`         | `bool`                                           | `None`  | Open a PR when the run finishes. The server treats an omitted value as `False`.                                                                                            |
+| `skip_reviewer_request`  | `bool`                                           | `None`  | Skip requesting the calling user as a reviewer on the PR. The server treats an omitted value as `False`.                                                                   |
+| `env_vars`               | `Mapping[str, str]`                              | `None`  | Session-scoped environment variables for cloud agents.                                                                                                                     |
 
 ### AgentDefinition
 
-| Property      | Type                                                             | Default     | Description                                                                                      |
-| :------------ | :--------------------------------------------------------------- | :---------- | :----------------------------------------------------------------------------------------------- |
-| `description` | `str`                                                            | *required*  | When to use this subagent. Shown to the parent agent so it knows when to spawn.                  |
-| `prompt`      | `str`                                                            | *required*  | System prompt for the subagent.                                                                  |
-| `model`       | `str \| ModelSelection \| Mapping[str, Any] \| "inherit"`        | `"inherit"` | Model override. Pass `"inherit"` to use the parent's selection.                                  |
-| `mcp_servers` | `Sequence[str \| AgentDefinitionMcpServer \| Mapping[str, Any]]` | `None`      | MCP servers available to this subagent. Names reference servers from the parent's `mcp_servers`. |
+| Property      | Type                                                             | Default    | Description                                                                                      |
+| :------------ | :--------------------------------------------------------------- | :--------- | :----------------------------------------------------------------------------------------------- |
+| `description` | `str`                                                            | *required* | When to use this subagent. Shown to the parent agent so it knows when to spawn.                  |
+| `prompt`      | `str`                                                            | *required* | System prompt for the subagent.                                                                  |
+| `model`       | `str \| ModelSelection \| Mapping[str, Any] \| "inherit"`        | `None`     | Model override. `None` and `"inherit"` both use the parent's selection.                          |
+| `mcp_servers` | `Sequence[str \| AgentDefinitionMcpServer \| Mapping[str, Any]]` | `None`     | MCP servers available to this subagent. Names reference servers from the parent's `mcp_servers`. |
 
 ### CustomTool
 
@@ -1406,12 +1406,7 @@ class ModelParameterValue:
 ### McpServerConfig
 
 ```python
-McpServerConfig = (
-    HttpMcpServerConfig
-    | SseMcpServerConfig
-    | StdioMcpServerConfig
-    | Mapping[str, Any]
-)
+from cursor_sdk.types import McpServerConfig
 
 @dataclass(frozen=True)
 class HttpMcpServerConfig:
@@ -1481,8 +1476,10 @@ Pass either a remote `url` or base64 `data` with a `mime_type`. `from_data()` ac
 
 ### SettingSource
 
+`SettingSource` is available from `cursor_sdk.types`.
+
 ```python
-SettingSource = Literal["project", "user", "team", "mdm", "plugins", "all"]
+from cursor_sdk.types import SettingSource
 ```
 
 Controls which on-disk settings layers a local agent loads. Cloud agents always load `project`, `team`, and `plugins` and ignore this field.
@@ -1544,7 +1541,7 @@ class CursorAgentError(Exception):
 | `APITimeoutError`              | Request timed out.                                                                                                      |
 | `InternalServerError`          | Cursor service returned a server error.                                                                                 |
 | `NotFoundError`                | Requested resource was not found.                                                                                       |
-| `UnknownAgentError`            | Agent was not found or cannot be read.                                                                                  |
+| `AgentNotFoundError`           | Agent does not exist or isn't visible under the current working directory.                                              |
 | `UnsupportedRunOperationError` | Run operation is not supported for the current run state.                                                               |
 
 ### Retrying with backoff

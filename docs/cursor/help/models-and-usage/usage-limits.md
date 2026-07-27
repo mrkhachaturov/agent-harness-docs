@@ -33,13 +33,13 @@ For teams, all members' usage resets at the same time based on the team billing 
 
 ## How does Cursor Router interact with my plan's usage pools and limits?
 
-Cursor Router requests are billed at the routed model's cost and can draw from both the First-party models pool and the API (third-party) pool, depending on which model handles the request.
+Cursor Router requests are billed at the routed model's cost and can draw from both the Cursor Models pool and the third-party Other Models pool, depending on which model handles the request.
 
 - **Composer 2.5** requests carry no [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) on any plan
 - **Cost** mode (legacy Auto) keeps bundled Auto pricing
 - **Balance** and **Intelligence** bill at the selected model's rate under your plan
 
-When included usage runs out, on-demand charges apply if you have on-demand usage enabled. Check your [usage dashboard](https://cursor.com/dashboard/usage) for request-level cost and pool details.
+When included usage runs out, on-demand charges apply if you have on-demand usage enabled. Check your [Spending dashboard](https://cursor.com/dashboard/spending) for request-level cost and pool details.
 
 See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for mode details.
 
