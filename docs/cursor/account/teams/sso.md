@@ -14,7 +14,7 @@ SAML 2.0 SSO is available at no additional cost on Teams and Enterprise plans. U
 
 ### Sign in to your Cursor account
 
-Navigate to [cursor.com/dashboard/settings](https://www.cursor.com/dashboard/settings) with an admin account.
+Navigate to the [Single Sign-On (SSO) settings](https://cursor.com/dashboard/team-settings#single-sign-on-sso) with an admin account.
 
 ### Locate the SSO configuration
 
@@ -22,7 +22,7 @@ Find the "Single Sign-On (SSO)" section and expand it.
 
 ### Begin the setup process
 
-Click the "SSO Provider Connection settings" button to start SSO setup and follow the wizard.
+Click "Configure" next to "SSO-Provider Connection Settings" to start SSO setup and follow the wizard.
 
 ### Configure your identity provider
 
@@ -34,7 +34,17 @@ In your identity provider (e.g., Okta):
 
 ### Verify domain
 
-Verify the domain of your users in Cursor by clicking the "Domain verification settings" button.
+Click "Configure" next to "Domain Verification Settings" to verify your users' domain.
+
+## View your SSO configuration
+
+Admins can review an existing SSO connection and its domains at any time:
+
+1. Go to [Single Sign-On (SSO) settings](https://cursor.com/dashboard/team-settings#single-sign-on-sso) with an admin account.
+2. Click "Configure" next to "SSO-Provider Connection Settings" to view the provider connection details.
+3. Click "Configure" next to "Domain Verification Settings" to view or manage verified domains.
+
+These settings are available to team admins.
 
 ### Identity Provider Setup Guides
 

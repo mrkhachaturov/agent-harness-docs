@@ -10,7 +10,7 @@ Open an environment to review:
 
 - The repositories it applies to
 - Whether it uses a snapshot or `.cursor/environment.json`
-- The update script that runs before an agent starts
+- The install script that runs before an agent starts
 - Runtime secrets and build secrets
 - Network access settings
 - Version history and setup runs

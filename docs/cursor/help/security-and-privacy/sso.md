@@ -16,6 +16,10 @@ Follow the step-by-step guide in the [SSO setup reference](https://cursor.com/do
 
 Yes, on Enterprise plans with SSO enabled. SCIM automatically manages team members through your identity provider, keeping your Cursor team in sync with your organization.
 
+## How do I view my SSO configuration and domains?
+
+Team admins can review the connection status and its domain in [Single Sign-On (SSO) settings](https://cursor.com/dashboard/team-settings#single-sign-on-sso). Click "Configure" next to "SSO-Provider Connection Settings" to view the provider connection details. Click "Configure" next to "Domain Verification Settings" to view or manage verified domains.
+
 ## Why do team members see "Not assigned to this application"?
 
 This means the team member hasn't been assigned to the Cursor application in your identity provider's admin console. Add them to the Cursor app in your IdP to fix this.
