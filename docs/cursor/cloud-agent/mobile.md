@@ -11,7 +11,7 @@ Cursor for iOS is a native mobile app for controlling agents running [in the clo
 The app runs on iPhone with iOS 26.0 or later, in English.
 Android is planned.
 
-Cursor for iOS is available on the Pro, Pro+, Ultra, Teams, and Enterprise plans. Learn
+Cursor for iOS is available on the Start, Pro, Pro+, Ultra, Teams, and Enterprise plans. Learn
 more about [what's included](https://cursor.com/help/account-and-billing/pricing.md).
 
 ## Getting started

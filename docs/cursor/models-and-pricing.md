@@ -1,13 +1,13 @@
 # Models & Pricing
 
-Cursor supports frontier models from OpenAI, Anthropic, Google, SpaceXAI, and more. Every individual plan includes two usage pools so you can pick the right balance of intelligence, speed, and cost.
+Cursor supports frontier models from OpenAI, Anthropic, Google, SpaceXAI, and more. Pro, Pro Plus, and Ultra include two usage pools so you can pick the right balance of intelligence, speed, and cost. Start, our plan for developers in India, covers the Cursor Models pool.
 
 ## Usage pools
 
-There are two separate usage pools for individual plans, each resetting with your monthly billing cycle:
+There are two separate usage pools, each resetting with your monthly billing cycle:
 
 - **Cursor Models**: Significantly more included usage for Cursor Grok 4.5 and Composer 2.5.
-- **Other Models**: The pool for third-party models, charged at the model's API price. Individual plans include at least $20 of third-party model usage each month (more on higher tiers) with the option to pay for additional usage as needed.
+- **Other Models**: The pool for third-party models, charged at the model's API price. Pro, Pro Plus, and Ultra include at least $20 of third-party model usage each month (more on higher tiers) with the option to pay for additional usage as needed. The Start plan does not include this pool.
 
 Both pools are visible in your editor settings and on your [usage dashboard](https://cursor.com/dashboard/usage).
 
@@ -17,13 +17,13 @@ The Cursor Models pool includes Cursor Grok 4.5 and Composer 2.5.
 
 On Teams and Enterprise plans, [Cursor Router](https://cursor.com/docs/cursor-router.md) picks the model for each Auto request based on your optimization mode.
 
-### Composer pricing
-
-Composer 2.5 is Cursor's own model, trained to be highly capable for agentic coding.
-
 ### Grok 4.5 pricing
 
 Grok 4.5 is jointly trained by Cursor and SpaceXAI for long-running coding and knowledge work.
+
+### Composer pricing
+
+Composer 2.5 is Cursor's own model, trained to be highly capable for agentic coding.
 
 ## Other Models
 
@@ -35,7 +35,6 @@ All prices are per million tokens:
 
 | Model                                                                                         | Provider  | Input | Cache write | Cache read | Output | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 | --------------------------------------------------------------------------------------------- | --------- | ----- | ----------- | ---------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Auto Cost                                                                                     | Cursor    | $1.25 | $1.25       | $0.25      | $6     | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [Claude 4 Sonnet](https://www.anthropic.com/claude/sonnet)                                    | Anthropic | $3    | $3.75       | $0.3       | $15    | Hidden by default; Thinking variant counts as 2 requests in legacy pricing                                                                                                                                                                                                                                                                                                                                                                    |
 | [Claude 4 Sonnet 1M](https://www.anthropic.com/claude/sonnet)                                 | Anthropic | $6    | $7.5        | $0.6       | $22.5  | Hidden by default; Thinking variant counts as 2 requests in legacy pricing; This model can be very expensive due to the large context window; The cost is 2x when the input exceeds 200k tokens                                                                                                                                                                                                                                               |
 | [Claude 4.5 Haiku](https://www.anthropic.com/claude/haiku)                                    | Anthropic | $1    | $1.25       | $0.1       | $5     | Hidden by default; Bedrock/Vertex: regional endpoints +10% surcharge; Cache: writes 1.25x, reads 0.1x                                                                                                                                                                                                                                                                                                                                         |
@@ -49,8 +48,6 @@ All prices are per million tokens:
 | [Claude Opus 4.8](https://www.anthropic.com/claude/opus)                                      | Anthropic | $5    | $6.25       | $0.5       | $25    | Hidden by default; Requires Max Mode on legacy request-based plans; Fast mode (\`claude-opus-4-8-fast\`) requires Max Mode on legacy request-based plans; Fast mode is 3x lower per-token pricing than Opus 4.7 fast mode; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge)                                                                                                                      |
 | [Claude Opus 5](https://www.anthropic.com/claude/opus)                                        | Anthropic | $5    | $6.25       | $0.5       | $25    | Requires Max Mode on legacy request-based plans; Fast mode (\`claude-opus-5-fast\`) requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge)                                                                                                                                                                                                            |
 | [Claude Sonnet 5](https://www.anthropic.com/claude/sonnet)                                    | Anthropic | $3    | $3.75       | $0.3       | $15    | Launch promotion: $2/M input and $10/M output through August 31, 2026; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge); Uses an updated tokenizer, so the same input can map to more tokens                                                                                                                                                    |
-| [Composer 1](https://cursor.com)                                                              | Cursor    | $1.25 | -           | $0.125     | $10    | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| [Composer 2.5](https://cursor.com/blog/composer-2-5)                                          | Cursor    | $0.5  | -           | $0.2       | $2.5   | -                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [Gemini 2.5 Flash](https://developers.googleblog.com/en/start-building-with-gemini-25-flash/) | Google    | $0.3  | -           | $0.03      | $2.5   | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [Gemini 3 Flash](https://ai.google.dev/gemini-api/docs)                                       | Google    | $0.5  | -           | $0.05      | $3     | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [Gemini 3 Pro](https://ai.google.dev/gemini-api/docs)                                         | Google    | $2    | -           | $0.2       | $12    | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                             |
@@ -76,7 +73,6 @@ All prices are per million tokens:
 | [GPT-5.6 Luna](https://openai.com/index/previewing-gpt-5-6-sol/)                              | OpenAI    | $1    | $1.25       | $0.1       | $6     | Smallest GPT-5.6 variant, optimized for cost and speed; Agentic and reasoning capabilities; Fast mode is available at 2x pricing; Cache writes are billed at 1.25x the uncached input rate                                                                                                                                                                                                                                                    |
 | [GPT-5.6 Sol](https://openai.com/index/previewing-gpt-5-6-sol/)                               | OpenAI    | $5    | $6.25       | $0.5       | $30    | Requires Max Mode on legacy request-based plans; Agentic and reasoning capabilities; Fast mode is available at 2x pricing; Long context supports up to 1M tokens with 2x input pricing; Cache writes are billed at 1.25x the uncached input rate                                                                                                                                                                                              |
 | [GPT-5.6 Terra](https://openai.com/index/previewing-gpt-5-6-sol/)                             | OpenAI    | $2.5  | $3.125      | $0.25      | $15    | Mid-tier GPT-5.6 variant between Sol and Luna; Agentic and reasoning capabilities; Fast mode is available at 2x pricing; Cache writes are billed at 1.25x the uncached input rate                                                                                                                                                                                                                                                             |
-| Grok 4.5                                                                                      | Cursor    | $2    | -           | $0.5       | $6     | Jointly trained by Cursor and SpaceXAI                                                                                                                                                                                                                                                                                                                                                                                                        |
 | Kimi K2.7 Code                                                                                | Moonshot  | $0.95 | -           | $0.19      | $4     | Hidden by default                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | [Kimi K3](https://www.moonshot.ai)                                                            | Moonshot  | $3    | -           | $0.3       | $15    | Hidden by default; Requires Max Mode on legacy request-based plans; Up to 1M tokens with extended context at the same per-token rates (no long-context surcharge); No separate cache-write fee                                                                                                                                                                                                                                                |
 
@@ -84,15 +80,24 @@ Opting in to regional data residency incurs a 10% uplift on Model pricing for el
 
 ## Plans
 
-All individual plans include unlimited tab completions, extended agent usage limits on all models, access to Bugbot, and access to Cloud Agents.
+Pro, Pro Plus, and Ultra include unlimited tab completions, extended agent usage limits on all models, access to Bugbot, and access to Cloud Agents. Start is a lower-priced plan for developers in India that covers the Cursor Models pool and Cloud Agents.
 
-| Plan         | Price   | Other Models usage included | Cursor Models           |
-| :----------- | :------ | :-------------------------- | :---------------------- |
-| **Pro**      | $20/mo  | $20                         | Generous included usage |
-| **Pro Plus** | $60/mo  | $70                         | Generous included usage |
-| **Ultra**    | $200/mo | $400                        | Generous included usage |
+| Plan                   | Price                  | Other Models usage included | Cursor Models           |
+| :--------------------- | :--------------------- | :-------------------------- | :---------------------- |
+| **Start** (India only) | ₹649/mo, tax inclusive | $0                          | Generous included usage |
+| **Pro**                | $20/mo                 | $20                         | Generous included usage |
+| **Pro Plus**           | $60/mo                 | $70                         | Generous included usage |
+| **Ultra**              | $200/mo                | $400                        | Generous included usage |
 
 Since different models have different API costs, your model selection affects how quickly your included usage is consumed.
+
+### Start (India only)
+
+Start is available to developers in India. It costs ₹649 per month, tax inclusive, billed monthly in INR with UPI, credit card, or debit card. Every other individual plan displays its price before tax.
+
+Start includes generous usage of the Cursor Models pool, so you can run Grok 4.5 and Composer 2.5 for daily building. It also includes [Cloud Agents](https://cursor.com/docs/cloud-agent.md), [Cursor for iOS](https://cursor.com/docs/cloud-agent/mobile.md), and plugins, MCP servers, hooks, and skills.
+
+Start does not include the Other Models pool, on-demand usage, Bugbot, Auto, Automations, or the Cursor SDK. Upgrade to Pro for those. Read the [Cursor Start announcement](https://cursor.com/blog/cursor-start-india) for more detail.
 
 ### How much usage do I need?
 
@@ -124,7 +129,7 @@ Learn more about [Teams pricing](https://cursor.com/docs/account/teams/pricing.m
 
 On Teams and Enterprise plans, third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage.
 
-The Cursor Token Rate applies when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and all first-party Cursor models, including Composer 2.5 and Grok 4.5, are exempt from the Cursor Token Rate.
+The Cursor Token Rate applies when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and all first-party Cursor models, including Grok 4.5 and Composer 2.5, are exempt from the Cursor Token Rate.
 
 ## Auto modes
 
