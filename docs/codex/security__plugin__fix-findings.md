@@ -1,5 +1,7 @@
 # Fix and verify security findings
 
+> For the complete documentation index, see [llms.txt](https://learn.chatgpt.com/llms.txt). Markdown versions of documentation pages are available by appending `.md` to the page URL.
+
 Use Codex Security to turn an accepted security finding into a focused,
 verified patch. You can work in the findings workspace or run the remediation
 workflow from a prompt, the command line, or CI/CD. Codex validates the issue
@@ -58,13 +60,15 @@ and verify its patch.
 </WorkflowSteps>
 
 <figure className="not-prose my-8">
-  <div className="overflow-hidden rounded-xl border border-subtle bg-surface">
+  
+
     <img
       src={fixFindingPatch.src}
       alt="Codex Security proposed patch for an accepted finding"
       className="block h-auto w-full"
     />
-  </div>
+  
+
   <figcaption className="mt-3 text-sm text-secondary">
     Review the proposed source and test changes before applying the patch
     locally.

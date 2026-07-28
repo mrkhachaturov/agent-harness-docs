@@ -36,12 +36,13 @@ Team admins can limit which modes members see and set the team default. See [man
 
 ## Can I use Cursor Router from the SDK?
 
-Yes. In the [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router), Router is model id `auto-smart` with parameter `optimize_for` set to `cost`, `balanced`, or `intelligence`. Call `Cursor.models.list()` first to confirm Router is available for the API key's team.
+Yes. In the [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) and [Python SDK](https://cursor.com/docs/sdk/python.md#cursor-router), Router is model id `auto-smart` with parameter `optimize_for` set to `cost`, `balanced`, or `intelligence`. Call `Cursor.models.list()` first to confirm Router is available for the API key's team.
 
 ## Related
 
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
 - [TypeScript SDK: Cursor Router](https://cursor.com/docs/sdk/typescript.md#cursor-router)
+- [Python SDK: Cursor Router](https://cursor.com/docs/sdk/python.md#cursor-router)
 - [Manage your team](https://cursor.com/help/account-and-billing/teams-management.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)

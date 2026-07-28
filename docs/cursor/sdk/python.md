@@ -198,7 +198,7 @@ for the API key's account, creating an agent with a non-empty map returns
 
 ### Model parameters
 
-Use `ModelSelection.params` to pass per-model options such as reasoning effort. Parameter IDs and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover supported parameters and preset variants for your account.
+Use `ModelSelection.params` to pass per-model options such as reasoning effort or Cursor Router's `optimize_for`. Parameter IDs and values vary by model. Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover supported parameters and preset variants for your account.
 
 ```python
 from cursor_sdk import Agent, LocalAgentOptions, ModelParameterValue, ModelSelection
@@ -212,7 +212,133 @@ agent = Agent.create(
 )
 ```
 
-Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover the parameter IDs and preset variants for a given model.
+Use [`Cursor.models.list()`](https://cursor.com/docs/sdk/python.md#the-cursor-namespace) to discover the parameter IDs and preset variants for a given model. See [Cursor Router](https://cursor.com/docs/sdk/python.md#cursor-router) for the `auto-smart` selection contract.
+
+### Cursor Router
+
+[Cursor Router](https://cursor.com/docs/cursor-router.md) selects a model for each Auto request. In the SDK, Router is the `auto-smart` model with an `optimize_for` parameter. It is available on Teams and Enterprise. Enterprise admins must enable Router for the team before `auto-smart` appears in the catalog.
+
+The Cursor SDK is an agent SDK, not a standalone model-inference or chat-completions API. Router picks models for Cursor agent runs that can reason over a workspace, call tools, run commands, and edit files. Cursor does not currently document a raw Router endpoint for arbitrary model calls.
+
+#### Select Cost, Balance, or Intelligence
+
+Pass `auto-smart` and set `optimize_for` explicitly:
+
+| Product label | SDK value      |
+| :------------ | :------------- |
+| Cost          | `cost`         |
+| Balance       | `balanced`     |
+| Intelligence  | `intelligence` |
+
+Use **Balance** in product copy. Use `balanced` only as the SDK wire value.
+
+```python
+import os
+
+from cursor_sdk import Agent, LocalAgentOptions, ModelParameterValue, ModelSelection
+
+with Agent.create(
+    model=ModelSelection(
+        id="auto-smart",
+        params=[ModelParameterValue(id="optimize_for", value="balanced")],
+    ),
+    local=LocalAgentOptions(cwd=os.getcwd()),
+) as agent:
+    run = agent.send("Find and fix the failing authentication test")
+    result = run.wait()
+
+    print(result.status)
+```
+
+Always pass `optimize_for`. Do not omit it and do not send a legacy `default` value; discovery through the catalog is the supported contract.
+
+#### Discover Router in the model catalog
+
+`Cursor.models.list()` returns the models, parameter definitions, and preset variants available to the API key's current account and team. Cursor Router appears as `auto-smart` when Router is available. Team administrators can disable Router or restrict which optimization modes members may select.
+
+Treat the catalog as the source of truth before hard-coding a selection:
+
+```python
+from cursor_sdk import Cursor, ModelParameterValue, ModelSelection
+
+models = Cursor.models.list()
+router = next((model for model in models if model.id == "auto-smart"), None)
+optimize_for = next(
+    (
+        parameter
+        for parameter in (router.parameters if router else [])
+        if parameter.id == "optimize_for"
+    ),
+    None,
+)
+
+if router is None or optimize_for is None:
+    raise RuntimeError(
+        "Cursor Router is not available for this API key. "
+        "Verify that Router is enabled for the key's team."
+    )
+
+requested_mode = "balanced"
+allowed_values = {entry.value for entry in optimize_for.values}
+
+if requested_mode not in allowed_values:
+    raise RuntimeError(
+        f'Router mode "{requested_mode}" is not enabled for this team.'
+    )
+
+model = ModelSelection(
+    id=router.id,
+    params=[ModelParameterValue(id=optimize_for.id, value=requested_mode)],
+)
+```
+
+#### Switch modes per run
+
+Override the model on `agent.send()` to change Router mode for a run:
+
+```python
+from cursor_sdk import ModelParameterValue, ModelSelection, SendOptions
+
+run = agent.send(
+    "Handle this complex migration",
+    SendOptions(
+        model=ModelSelection(
+            id="auto-smart",
+            params=[ModelParameterValue(id="optimize_for", value="intelligence")],
+        ),
+    ),
+)
+```
+
+Per-run model overrides are sticky. Later sends without an override keep using the new selection. See [Per-run model override](https://cursor.com/docs/sdk/python.md#per-run-model-override).
+
+#### Model ids: `auto-smart`, `auto`, and `default`
+
+| Selection                                     | Meaning                                                                                                                                     |
+| :-------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------ |
+| `auto-smart` with `optimize_for`              | Cursor Router. Use this when you want Cost, Balance, or Intelligence.                                                                       |
+| `ModelSelection(id="auto")`                   | Server-selected Auto fallback when a specific model is missing from the catalog. Prefer `auto-smart` when you need an explicit Router mode. |
+| Omitting `optimize_for`, or sending `default` | Not a supported Router contract. Always discover allowed values and pass `cost`, `balanced`, or `intelligence`.                             |
+
+#### Billing and routing pool
+
+- **Cost** follows classic Auto behavior and bundled Auto pricing.
+- **Balance** and **Intelligence** use Cursor Router and bill at the routed model's rate under your plan or contract.
+- The underlying model can change between requests. Prefer a fixed model id when you need reproducible comparisons.
+- Enterprise model allowlists shape the routing pool. Blocking required models can disable Router.
+
+For current rates and the routing pool, see [Cursor Router](https://cursor.com/docs/cursor-router.md) and [Models & Pricing](https://cursor.com/docs/models-and-pricing.md).
+
+#### Troubleshooting missing Router
+
+If `auto-smart` is missing or an optimization mode is rejected:
+
+1. Call `Cursor.models.list()`.
+2. Confirm `auto-smart` is in the result.
+3. Confirm `optimize_for` includes the value you want (`cost`, `balanced`, or `intelligence`).
+4. Confirm Router is enabled for the team tied to the API key.
+5. If you belong to multiple teams, confirm the key is operating in the intended team context.
+6. Check team model-access policy if Router is unavailable or cannot choose a valid underlying model.
 
 ### Raw dictionaries
 
@@ -1053,7 +1179,9 @@ models = await AsyncCursor.models.list(client=client)
 repositories = await AsyncCursor.repositories.list(client=client)
 ```
 
-Use `Cursor.models.list()` to discover valid model IDs and per-model parameters before calling `Agent.create()` or `agent.send()`. Parameters are model-specific. Common examples are reasoning effort and context window size.
+Use `Cursor.models.list()` to discover valid model IDs and per-model parameters before calling `Agent.create()` or `agent.send()`. Parameters are model-specific. Common examples are reasoning effort and Cursor Router's `optimize_for` on `auto-smart`.
+
+The catalog is account- and team-specific. Cursor Router only appears as `auto-smart` when Router is available for the API key's team. See [Cursor Router](https://cursor.com/docs/sdk/python.md#cursor-router).
 
 ```python
 models = Cursor.models.list()
@@ -1073,6 +1201,8 @@ print(composer.parameters if composer else [])
 ```
 
 Preset `variants` on each `SDKModel` already contain valid `params`, so you can copy them into a `ModelSelection`.
+
+Prefer an explicit Router selection (`auto-smart` + `optimize_for`) when a target model is missing and you want Cost, Balance, or Intelligence. Fall back to `ModelSelection(id="auto")` only when you want server-selected Auto without choosing a Router mode. For Cursor Router, always pass `optimize_for` explicitly.
 
 `Cursor.repositories.list()` returns the SCM repositories (GitHub, GitLab, Bitbucket, Azure DevOps, depending on what's connected) available for cloud agents on the calling account or team. Each item exposes a `url`. Use these to populate `CloudAgentOptions.repos`.
 
@@ -1401,7 +1531,7 @@ class ModelParameterValue:
     value: str
 ```
 
-`id` is the model identifier (for example, `"composer-2.5"`). `params` carries per-model parameters such as reasoning effort. Use `Cursor.models.list()` to discover valid IDs, parameter definitions, and preset variants for your account.
+`id` is the model identifier (for example, `"composer-2.5"` or `"auto-smart"`). `params` carries per-model parameters such as reasoning effort or Router's `optimize_for`. Use `Cursor.models.list()` to discover valid IDs, parameter definitions, and preset variants for your account. See [Cursor Router](https://cursor.com/docs/sdk/python.md#cursor-router) for the Router selection contract.
 
 ### McpServerConfig
 

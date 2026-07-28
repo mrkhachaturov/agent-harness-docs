@@ -39,7 +39,9 @@ Admins configure Cursor Router from the [team dashboard](https://cursor.com/docs
 
 ## Use Router through the SDK
 
-The [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) exposes Cursor Router as model id `auto-smart` with parameter `optimize_for` (`cost`, `balanced`, or `intelligence`). Call `Cursor.models.list()` to confirm Router is available for the API key's team before you hard-code a selection.
+The [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) and [Python SDK](https://cursor.com/docs/sdk/python.md#cursor-router) expose Cursor Router as model id `auto-smart` with parameter `optimize_for` (`cost`, `balanced`, or `intelligence`). Call `Cursor.models.list()` to confirm Router is available for the API key's team before you hard-code a selection.
+
+### TypeScript
 
 ```typescript
 import { Agent } from "@cursor/sdk";
@@ -54,7 +56,24 @@ await using agent = await Agent.create({
 });
 ```
 
-The SDK runs Cursor agent workflows. It is not a standalone chat-completions or raw inference API. See [Cursor Router in the TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) for catalog discovery, per-run mode overrides, and troubleshooting.
+### Python
+
+```python
+import os
+
+from cursor_sdk import Agent, LocalAgentOptions, ModelParameterValue, ModelSelection
+
+with Agent.create(
+    model=ModelSelection(
+        id="auto-smart",
+        params=[ModelParameterValue(id="optimize_for", value="balanced")],
+    ),
+    local=LocalAgentOptions(cwd=os.getcwd()),
+) as agent:
+    ...
+```
+
+The SDK runs Cursor agent workflows. It is not a standalone chat-completions or raw inference API. See [Cursor Router in the TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) or [Python SDK](https://cursor.com/docs/sdk/python.md#cursor-router) for catalog discovery, per-run mode overrides, and troubleshooting.
 
 
 ---

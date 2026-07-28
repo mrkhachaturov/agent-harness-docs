@@ -40,7 +40,7 @@ Blocked models (enterprise plans) are skipped and the router falls back to an al
 
 Team admins manage model access from [Team Settings > Models](https://cursor.com/dashboard/team-settings/models). See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for routing details.
 
-To use Router from code, call `Cursor.models.list()` in the [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) and look for model id `auto-smart` with parameter `optimize_for`.
+To use Router from code, call `Cursor.models.list()` in the [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) or [Python SDK](https://cursor.com/docs/sdk/python.md#cursor-router) and look for model id `auto-smart` with parameter `optimize_for`.
 
 ## Can I see which model Cursor Router used for my request?
 
