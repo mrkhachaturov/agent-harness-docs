@@ -337,6 +337,10 @@ Team admins can create rules from the [Bugbot dashboard](https://cursor.com/dash
 
 When Team Rules, repository rules, and project rule files all apply, Bugbot merges them. Order of application: Team Rules → repository rules (learned and manual) → project BUGBOT.md (including nested files) → User Rules.
 
+## Rule limits
+
+Each rule is truncated at 30,000 characters when included in a review. The combined rules Bugbot includes for a review are capped at 100,000 characters. If you exceed that combined cap, some rules may be omitted. Required team rules are prioritized over non-required rules.
+
 ## Repository rules
 
 ### Project rules

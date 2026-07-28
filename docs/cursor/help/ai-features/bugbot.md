@@ -32,6 +32,8 @@ Create `.cursor/BUGBOT.md` files in your repository to give Bugbot project-speci
 
 Team admins can also create organization-wide rules from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot).
 
+Rules are limited to 30,000 characters each, and 100,000 characters combined per review. See [Bugbot](https://cursor.com/docs/bugbot.md#rule-limits) for details.
+
 ## What does Bugbot include?
 
 Bugbot includes reviews on all PRs across your repositories, access to Bugbot rules, and the ability to set the effort level Bugbot uses for reviews.

@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "a5acc69831c30da4a4acac933677b2347d07645eb045535a7337a9cb9fcb17fa",
-      "last_updated": "2026-07-06T19:50:37.616026"
+      "hash": "d661b40fac68aa1dba9e2bf360f2ce50b641b63d7f7ca9510157d3965acafa36",
+      "last_updated": "2026-07-28T16:32:14.756049"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -585,8 +585,8 @@
     "help/ai-features/bugbot.md": {
       "original_url": "https://cursor.com/help/ai-features/bugbot",
       "original_md_url": "https://cursor.com/help/ai-features/bugbot.md",
-      "hash": "48b3610426dde496287dfb7a43a83b1bfcc8bfddec856c54be00712de86fe8f0",
-      "last_updated": "2026-06-29T22:53:03.565182"
+      "hash": "6a9a692c8016f39de66f3fb80ceff22a3055d8ff9d9a2eaa073b532583ad8d98",
+      "last_updated": "2026-07-28T16:32:14.757124"
     },
     "help/ai-features/cloud-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/cloud-agents",
@@ -1112,8 +1112,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-28T13:53:13.441805",
-    "fetch_duration_seconds": 1.830295,
+    "last_fetch_completed": "2026-07-28T16:32:14.759789",
+    "fetch_duration_seconds": 2.10639,
     "total_pages_discovered": 185,
     "pages_fetched_successfully": 185,
     "pages_failed": 0,
@@ -1126,7 +1126,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-28T13:53:13.441817",
+  "last_updated": "2026-07-28T16:32:14.759804",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
