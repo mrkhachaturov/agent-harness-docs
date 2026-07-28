@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "d661b40fac68aa1dba9e2bf360f2ce50b641b63d7f7ca9510157d3965acafa36",
-      "last_updated": "2026-07-28T16:32:14.756049"
+      "hash": "40e7d18283afca1979730556485c1b49bf6857509791a01bf8b06c9da29725cf",
+      "last_updated": "2026-07-28T22:00:43.420688"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -447,8 +447,8 @@
     "help/account-and-billing/cursor-start.md": {
       "original_url": "https://cursor.com/help/account-and-billing/cursor-start",
       "original_md_url": "https://cursor.com/help/account-and-billing/cursor-start.md",
-      "hash": "107b2140107fd6aad072e86fa26b8c669fe87addfba8f658d61531d132c669e8",
-      "last_updated": "2026-07-28T05:45:06.061230"
+      "hash": "dfea3bd907527eb1c0a5740ac252408bf015a6ab6491e9bc59df0878735f3b4f",
+      "last_updated": "2026-07-28T22:00:43.421687"
     },
     "help/account-and-billing/delete-account.md": {
       "original_url": "https://cursor.com/help/account-and-billing/delete-account",
@@ -807,8 +807,8 @@
     "help/models-and-usage/grok-4-5.md": {
       "original_url": "https://cursor.com/help/models-and-usage/grok-4-5",
       "original_md_url": "https://cursor.com/help/models-and-usage/grok-4-5.md",
-      "hash": "8fb9bba11d9b29ed13fedb3261d8b92abe9ee600ab6127092bd0dfad065b2217",
-      "last_updated": "2026-07-28T05:45:06.061708"
+      "hash": "523bd91c84ec6cf963247a0abec0a4c8aae320c48890b52e31adf275c557584d",
+      "last_updated": "2026-07-28T22:00:43.422196"
     },
     "help/models-and-usage/token-rate.md": {
       "original_url": "https://cursor.com/help/models-and-usage/token-rate",
@@ -993,8 +993,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "a1d55bad622889ebb4bcf814933cc0fc213ae36b2a91eb391f2d97221c6c8eeb",
-      "last_updated": "2026-07-28T05:45:06.062729"
+      "hash": "0f0c440c725675e65281403b8ec433c4f7870078870bbc252543b642ef89fb01",
+      "last_updated": "2026-07-28T22:00:43.422840"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1053,8 +1053,8 @@
     "models/grok-4-5.md": {
       "original_url": "https://cursor.com/docs/models/grok-4-5",
       "original_md_url": "https://cursor.com/docs/models/grok-4-5.md",
-      "hash": "f0360d3fe5fa4b74b736e7e9bafc3a6f1b01b8e96c8c0a1dece0ea8de698c132",
-      "last_updated": "2026-07-27T22:04:50.305663"
+      "hash": "be898050ce16c8e59d566bd68d57d60be70a1dffb377fd719ef7592d6ac500f0",
+      "last_updated": "2026-07-28T22:00:43.423101"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1112,8 +1112,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-28T19:27:27.105327",
-    "fetch_duration_seconds": 1.839375,
+    "last_fetch_completed": "2026-07-28T22:00:43.426200",
+    "fetch_duration_seconds": 1.863671,
     "total_pages_discovered": 185,
     "pages_fetched_successfully": 185,
     "pages_failed": 0,
@@ -1126,7 +1126,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-28T19:27:27.105341",
+  "last_updated": "2026-07-28T22:00:43.426215",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

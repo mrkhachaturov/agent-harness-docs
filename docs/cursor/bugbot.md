@@ -321,7 +321,7 @@ By default, Bugbot reviews the full pull request diff on every push. Turn on **I
 
 ## Effort Levels
 
-Effort levels control how much time Bugbot spends reasoning during a review. Higher effort levels can find more bugs, but each review may take longer and take more up usage.
+Effort levels control how much time Bugbot spends reasoning during a review. Higher effort levels can find more bugs, but each review may take longer and take up more usage.
 
 Choose from these effort levels:
 

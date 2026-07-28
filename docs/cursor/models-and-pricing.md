@@ -95,7 +95,9 @@ Since different models have different API costs, your model selection affects ho
 
 Start is available to developers in India. It costs ₹649 per month, tax inclusive, billed monthly in INR with UPI, credit card, or debit card. Every other individual plan displays its price before tax.
 
-Start includes generous usage of the Cursor Models pool, so you can run Grok 4.5 and Composer 2.5 for daily building. It also includes [Cloud Agents](https://cursor.com/docs/cloud-agent.md), [Cursor for iOS](https://cursor.com/docs/cloud-agent/mobile.md), and plugins, MCP servers, hooks, and skills.
+Start includes generous usage of the Cursor Models pool, so you can run Grok 4.5 and Composer 2.5 for daily building. On Start, both models run in non-fast mode, and Grok 4.5 uses a fixed medium effort level. You cannot change effort levels or enable Fast mode on Start. Upgrade to Pro or higher to choose effort levels and Fast mode.
+
+Start also includes [Cloud Agents](https://cursor.com/docs/cloud-agent.md), [Cursor for iOS](https://cursor.com/docs/cloud-agent/mobile.md), and plugins, MCP servers, hooks, and skills.
 
 Start does not include the Other Models pool, on-demand usage, Bugbot, Auto, Automations, or the Cursor SDK. Upgrade to Pro for those. Read the [Cursor Start announcement](https://cursor.com/blog/cursor-start-india) for more detail.
 

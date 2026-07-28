@@ -25,6 +25,10 @@ Cursor Start includes access to Cursor models only:
 
 Auto mode and third-party models (OpenAI, Anthropic, Google, and others) are not available on Cursor Start.
 
+## Can I change Grok 4.5 effort levels on Cursor Start?
+
+No. On Cursor Start, Grok 4.5 runs at a fixed medium effort level in non-fast mode. You cannot switch between low, medium, and high effort, or turn on Fast mode. Upgrade to Pro or a higher plan to choose effort levels and Fast mode.
+
 ## What features are included in and excluded from Cursor Start?
 
 | Feature                    | Cursor Start |

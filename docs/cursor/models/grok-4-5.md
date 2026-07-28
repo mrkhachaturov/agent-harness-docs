@@ -10,6 +10,8 @@ Grok 4.5 is a joint model from Cursor and SpaceXAI for long-running tasks across
 
 Grok 4.5 supports three effort levels: high (the default), medium, and low. Higher effort gives the model more time to think through difficult tasks. Use high for the hardest work; drop to medium or low when you want faster, cheaper responses on simpler tasks.
 
+On the [Start plan](https://cursor.com/docs/models-and-pricing.md#start-india-only) (India only), Grok 4.5 is fixed at medium effort in non-fast mode. Effort switching and Fast mode are available on Pro and higher plans.
+
 ## Tools
 
 Grok 4.5 has access to all agent tools when used with Cursor, including:
