@@ -1,16 +1,20 @@
 # Cursor for iOS
 
-Cursor for iOS is the Cursor mobile app for controlling agents running [in the cloud](https://cursor.com/help/ai-features/cloud-agents.md) and on your own computer. You start agents, watch them work in real time, and review and merge their pull requests from your iPhone. See the [Cursor for iOS reference](https://cursor.com/docs/cloud-agent/mobile.md) for a full feature tour.
+Cursor for iOS is the Cursor mobile app for controlling agents running [in the cloud](https://cursor.com/help/ai-features/cloud-agents.md) and on your own computer. You start agents, watch them work in real time, and review and merge their pull requests from your iPhone or iPad. See the [Cursor for iOS reference](https://cursor.com/docs/cloud-agent/mobile.md) for a full feature tour.
 
 The app is in beta, so features can change before general availability.
 
 ## Is there an Android app?
 
-Not yet. The app runs on iPhone only. An Android version is planned, but there's no release date.
+Not yet. The native app runs on iPhone and iPad. An Android version is planned, but there's no release date.
 
 ## Which devices and versions are supported?
 
-iPhones running iOS 26.0 or later.
+iPhones running iOS 26.0 or later and iPads running iPadOS 26.0 or later.
+
+## What is different on iPad?
+
+The iPad layout keeps chats in a sidebar, lets you open a review next to a chat, and gives file diffs more space. You can also attach a screenshot and draw on it with Apple Pencil.
 
 ## Which countries and languages does the app support?
 
