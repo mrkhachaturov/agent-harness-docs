@@ -22,7 +22,6 @@ Disable extensions one at a time to identify the cause. You can also run `cursor
 
 ## Related
 
-- [Codebase indexing](https://cursor.com/help/customization/indexing.md)
 - [Ignore files](https://cursor.com/help/customization/ignore-files.md)
 - [Installation and startup](https://cursor.com/help/troubleshooting/install-issues.md)
 

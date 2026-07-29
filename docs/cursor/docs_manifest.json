@@ -690,12 +690,6 @@
       "hash": "93720fd8dbcb5fdd324357386d7f9d7bd2cefe89a9a52e91e4d73758b01296ae",
       "last_updated": "2026-06-29T22:53:03.567197"
     },
-    "help/customization/indexing.md": {
-      "original_url": "https://cursor.com/help/customization/indexing",
-      "original_md_url": "https://cursor.com/help/customization/indexing.md",
-      "hash": "253603fc4455ae2f2ecb500c143e62fc37d857faff981139c23d1017f0cd69ce",
-      "last_updated": "2026-07-08T02:09:33.202919"
-    },
     "help/customization/keyboard-shortcuts.md": {
       "original_url": "https://cursor.com/help/customization/keyboard-shortcuts",
       "original_md_url": "https://cursor.com/help/customization/keyboard-shortcuts.md",
@@ -885,8 +879,8 @@
     "help/troubleshooting/performance.md": {
       "original_url": "https://cursor.com/help/troubleshooting/performance",
       "original_md_url": "https://cursor.com/help/troubleshooting/performance.md",
-      "hash": "c4ad92d047ed1bef839c3e980dd183ec5b7c9a2b65f814e773da1249947b5d30",
-      "last_updated": "2026-06-29T22:53:03.571165"
+      "hash": "250e773f09db708b46394e7fe5450a00e01eefdae157196477850d400eeae360",
+      "last_updated": "2026-07-29T05:47:37.478825"
     },
     "help/troubleshooting/reporting-bugs.md": {
       "original_url": "https://cursor.com/help/troubleshooting/reporting-bugs",
@@ -1112,21 +1106,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-29T02:03:20.407747",
-    "fetch_duration_seconds": 1.863515,
-    "total_pages_discovered": 185,
-    "pages_fetched_successfully": 185,
+    "last_fetch_completed": "2026-07-29T05:47:37.481638",
+    "fetch_duration_seconds": 2.381476,
+    "total_pages_discovered": 184,
+    "pages_fetched_successfully": 184,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 185,
+    "total_files": 184,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-29T02:03:20.407763",
+  "last_updated": "2026-07-29T05:47:37.481650",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
