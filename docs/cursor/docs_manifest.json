@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "ffa0b11ccdc08df7b1b134cb1edf0c3f8a85a1e5f768b5de9f083d286fcc1e26",
-      "last_updated": "2026-07-27T22:04:50.302085"
+      "hash": "d7b17ec1ba1708fa5ec861d62b23a86c6a9a10b502da62b19e26e7d11337dae4",
+      "last_updated": "2026-07-30T22:11:05.001606"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "40e7d18283afca1979730556485c1b49bf6857509791a01bf8b06c9da29725cf",
-      "last_updated": "2026-07-28T22:00:43.420688"
+      "hash": "e486a7fba33b9153c3aed200f5fe9b49af13e951cb054abc6702d6b4ff02b695",
+      "last_updated": "2026-07-30T22:11:05.002032"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -585,8 +585,8 @@
     "help/ai-features/bugbot.md": {
       "original_url": "https://cursor.com/help/ai-features/bugbot",
       "original_md_url": "https://cursor.com/help/ai-features/bugbot.md",
-      "hash": "6a9a692c8016f39de66f3fb80ceff22a3055d8ff9d9a2eaa073b532583ad8d98",
-      "last_updated": "2026-07-28T16:32:14.757124"
+      "hash": "283edd83eaf98932c7b326c7bcaa67d15cac083b798dfc4df820fe9dab19d2b1",
+      "last_updated": "2026-07-30T22:11:05.003052"
     },
     "help/ai-features/cloud-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/cloud-agents",
@@ -711,8 +711,8 @@
     "help/customization/rules.md": {
       "original_url": "https://cursor.com/help/customization/rules",
       "original_md_url": "https://cursor.com/help/customization/rules.md",
-      "hash": "19f49effabf778db5f86a2ef12b1b9ee4d84837e2e750067efe7be916314d567",
-      "last_updated": "2026-07-22T19:11:14.389955"
+      "hash": "332892614521ff90a64b984b0f41b31fbf469da385d2956f75b35616bbb09a00",
+      "last_updated": "2026-07-30T22:11:05.003399"
     },
     "help/customization/skills.md": {
       "original_url": "https://cursor.com/help/customization/skills",
@@ -987,8 +987,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "0f0c440c725675e65281403b8ec433c4f7870078870bbc252543b642ef89fb01",
-      "last_updated": "2026-07-28T22:00:43.422840"
+      "hash": "dc6047420cf40f5dbd8b1bba85ef385c74eec182c26a00a41007e9abb01be06e",
+      "last_updated": "2026-07-30T22:11:05.004081"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1041,8 +1041,8 @@
     "models/gpt-5-6-terra.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-terra",
       "original_md_url": "https://cursor.com/docs/models/gpt-5-6-terra.md",
-      "hash": "777305bf4809e1a9a0235fba318e680d1eaee9d1058230500421f87a8546b8be",
-      "last_updated": "2026-07-22T19:11:14.393182"
+      "hash": "d7c9f08c0b4dd13dda55f11ea4e506ff239e2cf5ceca3bbbef82f300da6eef47",
+      "last_updated": "2026-07-30T22:11:05.004304"
     },
     "models/grok-4-5.md": {
       "original_url": "https://cursor.com/docs/models/grok-4-5",
@@ -1106,8 +1106,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-30T19:18:32.428230",
-    "fetch_duration_seconds": 1.989536,
+    "last_fetch_completed": "2026-07-30T22:11:05.007075",
+    "fetch_duration_seconds": 1.857747,
     "total_pages_discovered": 184,
     "pages_fetched_successfully": 184,
     "pages_failed": 0,
@@ -1120,7 +1120,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-30T19:18:32.428242",
+  "last_updated": "2026-07-30T22:11:05.007088",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

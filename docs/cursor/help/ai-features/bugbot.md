@@ -32,7 +32,13 @@ Create `.cursor/BUGBOT.md` files in your repository to give Bugbot project-speci
 
 Team admins can also create organization-wide rules from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot).
 
+Cursor [project rules](https://cursor.com/docs/rules.md) (`*.mdc` files in `.cursor/rules/`) do not apply to Bugbot runs. Use `.cursor/BUGBOT.md` or dashboard rules instead.
+
 Rules are limited to 30,000 characters each, and 100,000 characters combined per review. See [Bugbot](https://cursor.com/docs/bugbot.md#rule-limits) for details.
+
+## How do I check which rules Bugbot used?
+
+Comment `bugbot run debug=true` or `cursor review debug=true` on the pull request. Bugbot replies with a table of the rules included in that review and flags any that were truncated or omitted. See [Bugbot](https://cursor.com/docs/bugbot.md#see-which-rules-a-review-used) for details.
 
 ## What does Bugbot include?
 
@@ -44,7 +50,7 @@ See the [full pricing details](https://cursor.com/docs/bugbot.md#pricing).
 
 ## How do I fix Bugbot not reviewing my PRs?
 
-1. Comment `cursor review verbose=true` on the PR for detailed logs and a request ID
+1. Comment `cursor review verbose=true` or `bugbot run verbose=true` on the PR for detailed logs, which Bugbot rules loaded, and a request ID
 2. Check that Bugbot has repository access in your [dashboard](https://cursor.com/dashboard/bugbot)
 3. Verify your repository provider integration is installed and enabled for the repository
 

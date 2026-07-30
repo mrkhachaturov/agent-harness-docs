@@ -105,7 +105,7 @@ Cursor identifies rules by their full file path, not their name alone. Two rules
 
 Check the rule type. For `Apply Intelligently`, make sure you've added a description so Agent knows when it's relevant. For `Apply to Specific Files`, verify the file pattern matches the files you're working with.
 
-Rules only apply to Agent (Chat). They do not apply to Tab completion or Inline Edit.
+Rules only apply to Agent (Chat). They do not apply to Tab completion, Inline Edit, or [Bugbot](https://cursor.com/docs/bugbot.md#rules) PR reviews.
 
 ## Related
 
