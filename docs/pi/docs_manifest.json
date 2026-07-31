@@ -51,8 +51,8 @@
     "keybindings.md": {
       "upstream_path": "packages/coding-agent/docs/keybindings.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/keybindings.md",
-      "hash": "0f4ae5200d7d9e603d806ad542056d8e8868588801a32b6a4662272c05815275",
-      "last_updated": "2026-07-30T11:09:02.169578"
+      "hash": "415bb14d0ce83caf8bd8cccb10b07ea04e0acfcea81ee0d714548c76fdb4eabd",
+      "last_updated": "2026-07-31T11:27:49.332214"
     },
     "llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/llama-cpp.md",
@@ -171,8 +171,8 @@
     "usage.md": {
       "upstream_path": "packages/coding-agent/docs/usage.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/usage.md",
-      "hash": "a0fa14dc8da287322b35c0beed98e404164191066a6d02f39c3c806f1f153a3d",
-      "last_updated": "2026-07-30T11:09:02.172514"
+      "hash": "3b80cee2c6b82850596adbd45762ca1a721f6063c6d930168e90905fc2d9a4d1",
+      "last_updated": "2026-07-31T11:27:49.335637"
     },
     "windows.md": {
       "upstream_path": "packages/coding-agent/docs/windows.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-31T06:06:26.432460",
-    "fetch_duration_seconds": 0.94737,
+    "last_fetch_completed": "2026-07-31T11:27:49.335842",
+    "fetch_duration_seconds": 1.620494,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-07-31T06:06:26.432471",
+  "last_updated": "2026-07-31T11:27:49.335855",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
