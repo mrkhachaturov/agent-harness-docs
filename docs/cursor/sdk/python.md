@@ -32,7 +32,7 @@ export CURSOR_API_KEY="your-key"
 
 SDK runs follow the same pricing, request pools, and Privacy Mode rules as runs from the IDE and Cloud Agents. Spend shows up in your team's [usage dashboard](https://cursor.com/dashboard/usage) under the SDK tag.
 
-To read per-run token counts in code, see [Token usage](https://cursor.com/docs/sdk/python.md#token-usage).
+To read per-run token counts in code, see [Token usage](https://cursor.com/docs/sdk/python.md#token-usage). To fetch billed usage and dollar cost for a cloud agent's runs, see [`agent.get_usage()`](https://cursor.com/docs/sdk/python.md#agentget_usage).
 
 ## Core concepts
 
@@ -721,6 +721,8 @@ Async equivalent: `async for message in run.messages()` and `await run.wait()`. 
 
 `TokenUsage` is exported from `cursor_sdk` (plus `to_token_usage` / `sum_token_usage` for advanced callers). Wire JSON is camelCase (`inputTokens`, …); the Python dataclasses use snake\_case.
 
+Token counts are what the runtime reports; they say nothing about cost. For billed usage and the dollar cost of a cloud agent's runs, call [`agent.get_usage()`](https://cursor.com/docs/sdk/python.md#agentget_usage).
+
 ### Reading text output
 
 `iter_text()` yields assistant text as it streams. `text()` returns the final terminal text, blocking on `wait()` if the run is still running.
@@ -1148,6 +1150,43 @@ agent.delete()
 `archive` soft-deletes the agent so the transcript stays readable. `unarchive` restores it. `delete` is permanent; subsequent reads return `NotFoundError`.
 
 Async lifecycle methods use the same names and are awaitable.
+
+### agent.get\_usage()
+
+Fetch billed token usage and dollar cost for a cloud agent's runs. Pass `run_id` to restrict the result to a single run.
+
+```python
+usage = agent.get_usage()
+
+print(f"tokens: {usage.usage.total_tokens}")
+if usage.cost is not None:
+    print(f"charged: ${usage.cost.charged_cents / 100:.2f}")
+for run in usage.runs:
+    print(run.run_id, run.usage.total_tokens)
+```
+
+```python
+@dataclass(frozen=True)
+class AgentUsage:
+    usage: TokenUsage              # summed across `runs`
+    runs: Sequence[RunUsage] = ()
+    cost: UsageCost | None = None  # summed across `runs`
+
+@dataclass(frozen=True)
+class RunUsage:
+    run_id: str
+    usage: TokenUsage
+    cost: UsageCost | None = None
+
+@dataclass(frozen=True)
+class UsageCost:
+    raw_cost_cents: float  # undiscounted model token cost; 0 for request-priced usage
+    charged_cents: float   # amount charged, discounts and the Cursor Token Rate included
+```
+
+Cost includes discounts and can take a moment to settle after a run ends; `cost` is `None` until it does. `charged_cents` is `0.0` for plan-included, BYOK, and credit-grant usage.
+
+This is a different view than [Token usage](https://cursor.com/docs/sdk/python.md#token-usage): `run.usage` is the live token count for one run, while `get_usage()` is the billed record across the agent's runs. Cloud agents only for now; local agents raise `ConfigurationError`. On async agents, `await agent.get_usage()` matches. `AgentUsage`, `RunUsage`, and `UsageCost` are exported from `cursor_sdk`.
 
 ## The Cursor namespace
 
@@ -1765,6 +1804,7 @@ cursor-sdk-bridge --help
 - Tool-call payload schemas are intentionally not strongly typed.
 - Inline MCP servers are not persisted across `Agent.resume()`. Pass them again on resume if needed.
 - Custom tools (`local.custom_tools`) are local agents only.
+- `agent.get_usage()` is cloud agents only for now. Local agents raise `ConfigurationError`.
 - Artifact download is not implemented for local agents.
 - `local.setting_sources` (and the file-based MCP and subagent paths it gates) does not apply to cloud agents. Cloud always loads `project`, `team`, and `plugins`.
 - Hooks are file-based only (`.cursor/hooks.json`). No programmatic callbacks.

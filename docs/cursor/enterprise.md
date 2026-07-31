@@ -19,6 +19,7 @@ Our certifications include SOC2 Type II, and we maintain GDPR compliance. Visit 
 
 Learn how to deploy, configure, and manage Cursor for your organization. This documentation covers:
 
+- [Admin Setup Guide](https://cursor.com/docs/enterprise/admin-setup-guide.md) - Short checklist of what admins should plan when rolling out Cursor
 - [Security and Privacy Hardening](https://cursor.com/docs/enterprise/security-hardening.md) - One-page checklist of security and privacy controls with links to configure each one
 - [Organizations](https://cursor.com/docs/enterprise/organizations.md) - Org-wide team membership sync and organization groups
 - [Identity & access](https://cursor.com/docs/enterprise/identity-and-access-management.md) - SSO, SCIM, RBAC, and MDM policies
@@ -77,6 +78,8 @@ Learn how to deploy, configure, and manage Cursor for your organization. This do
 - [HIPAA Business Associate Agreements](https://cursor.com/docs/enterprise/baa.md) - BAA support for Enterprise customers
 
 ## Getting started
+
+Start with the [Admin Setup Guide](https://cursor.com/docs/enterprise/admin-setup-guide.md) for a short rollout checklist. In short:
 
 1. Review the [Trust Center](https://trust.cursor.com/) and [Security page](https://cursor.com/security) for your security assessment
 2. Read through the [enterprise documentation](https://cursor.com/docs/enterprise.md) to understand deployment options

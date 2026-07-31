@@ -55,7 +55,7 @@ SDK runs follow the same pricing, request pools, and Privacy Mode rules as runs 
 
 Service account API keys bill to the team that owns the service account. User API keys bill to that user's plan.
 
-To read per-run token counts in code, see [Token usage](https://cursor.com/docs/sdk/typescript.md#token-usage).
+To read per-run token counts in code, see [Token usage](https://cursor.com/docs/sdk/typescript.md#token-usage). To fetch billed usage and dollar cost for a cloud agent's runs, see [`Agent.getUsage()`](https://cursor.com/docs/sdk/typescript.md#agentgetusage).
 
 ## Core concepts
 
@@ -560,6 +560,8 @@ for await (const event of run.stream()) {
   }
 }
 ```
+
+Token counts are what the runtime reports; they say nothing about cost. For billed usage and the dollar cost of a cloud agent's runs, call [`agent.getUsage()`](https://cursor.com/docs/sdk/typescript.md#agentgetusage).
 
 ### Run correlation with requestId
 
@@ -1095,6 +1097,55 @@ interface GetAgentMessagesOptions {
 
 Returns the stored user and assistant messages for a local agent.
 
+### Agent.getUsage()
+
+Fetch billed token usage and dollar cost for a cloud agent's runs. Call it on a handle, or statically by ID when you don't have one. Pass `runId` to restrict the result to a single run.
+
+```typescript
+agent.getUsage(options?: GetUsageOptions): Promise<AgentUsage>;
+function Agent.getUsage(
+  agentId: string,
+  options?: GetUsageOptions & { apiKey?: string }
+): Promise<AgentUsage>;
+
+interface GetUsageOptions {
+  runId?: string;
+}
+
+interface AgentUsage {
+  usage: TokenUsage;   // summed across `runs`
+  cost?: UsageCost;    // summed across `runs`
+  runs: RunUsage[];
+}
+
+interface RunUsage {
+  runId: string;
+  usage: TokenUsage;
+  cost?: UsageCost;
+}
+
+interface UsageCost {
+  rawCostCents: number;   // undiscounted model token cost; 0 for request-priced usage
+  chargedCents: number;   // amount charged, discounts and the Cursor Token Rate included
+}
+```
+
+```typescript
+const { usage, cost, runs } = await agent.getUsage();
+
+console.log(`tokens: ${usage.totalTokens}`);
+if (cost) {
+  console.log(`charged: $${(cost.chargedCents / 100).toFixed(2)}`);
+}
+for (const run of runs) {
+  console.log(run.runId, run.usage.totalTokens, run.cost?.chargedCents);
+}
+```
+
+Cost includes discounts and can take a moment to settle after a run ends; `cost` is absent until it does. `chargedCents` is `0` for plan-included, BYOK, and credit-grant usage.
+
+This is a different view than [Token usage](https://cursor.com/docs/sdk/typescript.md#token-usage): `run.usage` is the live token count for one run, while `getUsage()` is the billed record across the agent's runs. Cloud agents only for now; local agents throw a `ConfigurationError`.
+
 ### Cloud agent lifecycle
 
 Cloud agents stay in your team's workspace until you archive or delete them. `Agent.list({ runtime: "cloud" })` hides archived agents by default; pass `includeArchived: true` to see them. Filter by `prUrl` to find the agent that opened a specific pull request.
@@ -1154,16 +1205,18 @@ interface CursorConfigureOptions {
   local?: {
     store?: LocalAgentStore | null;
     useHttp1ForAgent?: boolean | null;
+    workspaceScanCacheTtlMs?: number | null;
   };
 }
 ```
 
 Set defaults for local agents that apply to later `Agent.*` calls. Fields on an individual call override these values; pass `null` to clear a previous default.
 
-| Option                   | Description                                                                                                                                                                                                                                     |
-| :----------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `local.store`            | Default [local agent store](https://cursor.com/docs/sdk/typescript.md#local-agent-stores) when a call omits `local.store`. The SDK uses on-disk SQLite when the SQLite backend is available and falls back to `JsonlLocalAgentStore` otherwise. |
-| `local.useHttp1ForAgent` | Force local agent backend streams to use HTTP/1.1 with SSE instead of HTTP/2. Useful behind proxies or on fetch stacks that don't support HTTP/2.Bun defaults to HTTP/1.1 due to upstream HTTP/2 compatibility issues.                          |
+| Option                          | Description                                                                                                                                                                                                                                                                                                                                                                               |
+| :------------------------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `local.store`                   | Default [local agent store](https://cursor.com/docs/sdk/typescript.md#local-agent-stores) when a call omits `local.store`. The SDK uses on-disk SQLite when the SQLite backend is available and falls back to `JsonlLocalAgentStore` otherwise.                                                                                                                                           |
+| `local.useHttp1ForAgent`        | Force local agent backend streams to use HTTP/1.1 with SSE instead of HTTP/2. Useful behind proxies or on fetch stacks that don't support HTTP/2.Bun defaults to HTTP/1.1 due to upstream HTTP/2 compatibility issues.                                                                                                                                                                    |
+| `local.workspaceScanCacheTtlMs` | How long the SDK reuses a workspace scan (rules, skills, `AGENTS.md`, ignore files), in milliseconds. Defaults to 20 seconds. Raise it in a long-lived host serving a checkout that only changes on deploy; the trade is freshness, since a rule added after the process started can go unseen for this long. The `CURSOR_RIPWALK_CACHE_TTL_MS` environment variable sets the same value. |
 
 ```typescript
 import { Cursor, JsonlLocalAgentStore } from "@cursor/sdk";
@@ -1440,7 +1493,7 @@ Subagents can spawn their own subagents, within a nesting limit. When a subagent
 
 ## Custom tools
 
-Custom tools let you expose your own functions to the agent without standing up a separate MCP server. Pass them on `local.customTools` and the SDK registers them as an MCP server named `custom-user-tools`. The agent discovers and calls them through the same MCP path as any other server, under the same [permission gate](https://cursor.com/docs/agent/tools/terminal.md#run-mode). Custom tools reach [subagents](https://cursor.com/docs/sdk/typescript.md#subagents) (including nested ones) too.
+Custom tools let you expose your own functions to the agent without standing up a separate MCP server. Pass them on `local.customTools` and the SDK registers them as an MCP server named `custom-user-tools`. The agent discovers and calls them through the same MCP path as any other server. Deny rules and [sandbox](https://cursor.com/docs/sdk/typescript.md#sandbox-options) limits still apply, but custom tools skip interactive approval, so [sandboxed](https://cursor.com/docs/sdk/typescript.md#sandbox-options) and [auto-review](https://cursor.com/docs/sdk/typescript.md#auto-review) runs call them without prompting. Custom tools reach [subagents](https://cursor.com/docs/sdk/typescript.md#subagents) (including nested ones) too.
 
 Custom tools are local agents only. Passing `local.customTools` to a cloud agent throws a `ConfigurationError`.
 
@@ -1632,6 +1685,26 @@ await agent[Symbol.asyncDispose]();
 `agent.close()` is the documented way to start disposal without awaiting. `Symbol.asyncDispose` works (`await using` is built on it) but `close()` is the path you should reach for in code that doesn't use the `await using` syntax. `agent.reload()` picks up filesystem config changes (hooks, project MCP, subagents) without disposing.
 
 ## Agent lifecycle
+
+### Prewarm a local workspace
+
+Resolving a local workspace (rules, skills, MCP servers, ignore files) is the slowest part of a local agent's first turn, and on a large repo it can dominate it. By default that cost lands inside the first `send()`. A host that knows where its agents will run can pay it earlier with `prewarmLocalWorkspace()`:
+
+```typescript
+import { createAgentPlatform } from "@cursor/sdk";
+
+const platform = await createAgentPlatform();
+const release = await platform.prewarmLocalWorkspace({
+  apiKey: process.env.CURSOR_API_KEY!,
+  local: { cwd: "/srv/checkout", settingSources: ["project"] },
+});
+
+// The first send() against this workspace starts immediately.
+
+await release(); // on shutdown
+```
+
+Pass the same `AgentOptions` your agents will use; prewarming only helps sends whose workspace options match. Call the returned release function when the host shuts down.
 
 ### Reattach to an existing agent
 
@@ -2039,6 +2112,7 @@ Thrown when a `Run` operation isn't available on the current runtime. Use `run.s
 - Inline `mcpServers` are not persisted across `Agent.resume()`. Pass them again on resume if needed.
 - Custom tools (`local.customTools`), Auto-review (`local.autoReview`), and custom stores (`local.store`) are local agents only. Cloud agents reject `local.customTools` and persist server-side.
 - Artifact download is not implemented for local agents (`agent.listArtifacts()` returns an empty list and `agent.downloadArtifact()` throws).
+- `agent.getUsage()` is cloud agents only for now. Local agents throw `ConfigurationError`.
 - `local.settingSources` (and the file-based MCP / subagent paths it gates) does not apply to cloud agents. Cloud always loads `project` / `team` / `plugins`.
 - Hooks are file-based only (`.cursor/hooks.json`). No programmatic callbacks.
 - The SDK doesn't auto-discover credentials from a local Cursor app installation. Set `CURSOR_API_KEY` (or pass `apiKey`) explicitly.

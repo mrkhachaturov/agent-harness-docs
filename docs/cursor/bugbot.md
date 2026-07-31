@@ -339,7 +339,7 @@ Guide reviews with team rules, repository rules, and project `.cursor/BUGBOT.md`
 
 Team admins can create rules from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) that apply to all repositories in the team. These rules are available to every enabled repository, making it easy to enforce organization-wide standards.
 
-When Team Rules, repository rules, and project rule files all apply, Bugbot merges them. Order of application: Team Rules → repository rules (learned and manual) → project BUGBOT.md (including nested files) → User Rules.
+When Team Rules, repository rules, and project rule files all apply, Bugbot merges them into one review-rules block. Order of inclusion: Team Rules → project .cursor/BUGBOT.md (including nested files) → learned rules → manual rules.
 
 ### Rule limits
 

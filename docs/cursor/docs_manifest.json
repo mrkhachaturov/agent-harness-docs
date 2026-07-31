@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "e486a7fba33b9153c3aed200f5fe9b49af13e951cb054abc6702d6b4ff02b695",
-      "last_updated": "2026-07-30T22:11:05.002032"
+      "hash": "39b5b5f72cd2d093fc6570f990a1eefa3fbb69810b72baa71a6d2815a0da54a4",
+      "last_updated": "2026-07-31T19:30:40.224625"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -321,8 +321,14 @@
     "enterprise.md": {
       "original_url": "https://cursor.com/docs/enterprise",
       "original_md_url": "https://cursor.com/docs/enterprise.md",
-      "hash": "6cb5f452f3cd184a3b80ac599e47759f939f718ac9a86cb0b8a4091ac81a995b",
-      "last_updated": "2026-06-29T22:53:03.556952"
+      "hash": "2beefa30943f773c2ea2f75cd8862ff42f2c73b9ca75d670e553126787d15c55",
+      "last_updated": "2026-07-31T19:30:40.225665"
+    },
+    "enterprise/admin-setup-guide.md": {
+      "original_url": "https://cursor.com/docs/enterprise/admin-setup-guide",
+      "original_md_url": "https://cursor.com/docs/enterprise/admin-setup-guide.md",
+      "hash": "f457ce2d46a41c7f81f78fcc61067ce3dc0ec959e5c761259a9838066dc7b189",
+      "last_updated": "2026-07-31T19:30:40.225890"
     },
     "enterprise/baa.md": {
       "original_url": "https://cursor.com/docs/enterprise/baa",
@@ -1071,20 +1077,20 @@
     "sdk/changelog.md": {
       "original_url": "https://cursor.com/docs/sdk/changelog",
       "original_md_url": "https://cursor.com/docs/sdk/changelog.md",
-      "hash": "91e9839d184610337a17445d2bb7627d5fd200ea4015235d55017b3539728882",
-      "last_updated": "2026-07-21T16:24:30.536768"
+      "hash": "168689fbd6079863b028d7c16ecd4aaa95f8b7ca2dea8df86ae93195d7628b47",
+      "last_updated": "2026-07-31T19:30:40.227729"
     },
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "852c3803e038676db725727e85267c669fb2f9e4b1efc37db609ed3a1cb69533",
-      "last_updated": "2026-07-28T02:02:05.733195"
+      "hash": "78eb2a8284b048b4a3f4d59b90a1d2086e577b78f26b45187573444564233b3c",
+      "last_updated": "2026-07-31T19:30:40.228482"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "4922576d3b235f61412298afa87b03fccb274f6cae2fa8b887859f8455e69446",
-      "last_updated": "2026-07-27T22:04:50.306879"
+      "hash": "97d27b16419a7c184617a71dd4898cc859ce9c93d22b48924de2335f552d4177",
+      "last_updated": "2026-07-31T19:30:40.229335"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1106,21 +1112,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-07-31T16:43:50.970558",
-    "fetch_duration_seconds": 3.72299,
-    "total_pages_discovered": 184,
-    "pages_fetched_successfully": 184,
+    "last_fetch_completed": "2026-07-31T19:30:40.232942",
+    "fetch_duration_seconds": 1.704427,
+    "total_pages_discovered": 185,
+    "pages_fetched_successfully": 185,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 184,
+    "total_files": 185,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-07-31T16:43:50.970573",
+  "last_updated": "2026-07-31T19:30:40.232958",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
