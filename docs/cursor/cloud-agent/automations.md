@@ -18,6 +18,12 @@ For any path:
 4. Choose whether the automation needs a repository, multiple repositories, or no repository at all.
 5. Save and activate the automation.
 
+The Automations page also includes three Cursor-managed agents:
+
+- [Bugbot](https://cursor.com/docs/bugbot.md) reviews pull requests for bugs and code quality issues.
+- [Security Agents](https://cursor.com/docs/security-agents.md) review pull requests and scan codebases for vulnerabilities.
+- [PR Routing & Approval](https://cursor.com/docs/approval-agents.md) routes pull requests to reviewers and can approve low-risk changes.
+
 ## Billing
 
 Automations create cloud agents and are billed based on cloud agent usage. See [cloud agent pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for details.

@@ -1,47 +1,47 @@
-# Approval Agents
+# PR Routing & Approval
 
-Approval Agents auto-approve pull requests and assigns reviewers.
+PR Routing & Approval routes pull requests to the right reviewers and can approve low-risk changes.
+
+Configure PR Routing & Approval in [Automations](https://cursor.com/automations/from-cursor/pr-routing-and-approval).
 
 ## How it works
 
-Approval agents run on top of your pull requests. They approve PRs when your criteria are met, or routes PRs to reviewers when more review is needed.
+PR Routing & Approval runs on your pull requests. It assigns reviewers based on code ownership and commit history, and can approve low-risk PRs when your criteria are met.
 
-These agents do not replace a full code review. They use configured instructions, approval policy files, AI review agent findings, and risk thresholds to decide whether approval is safe.
-
-Get started by configuring in the [Approval Agents dashboard](https://cursor.com/dashboard/approval-agents).
+It does not replace a full code review. It uses risk scoring, approval policy files, AI review agent findings, and your configuration to decide whether to route or approve.
 
 ## Core capabilities
 
-### Auto-approval
-
-Approval Agents can auto-approve pull requests when your approval criteria are met.
-
-Use approval criteria to describe the conditions a PR must meet before the agent approves it. The agent also considers applicable policy files, risk settings, AI reviewer findings, and the current review state.
-
 ### Reviewer assignment
 
-Approval Agents can assign reviewers to pull requests when more review is needed.
+PR Routing & Approval can assign reviewers to pull requests based on code ownership and commit history.
 
-Use reviewer assignment to describe the conditions a PR must meet before the agent assigns reviewers. The agent also considers applicable policy files, risk settings, AI reviewer findings, and the current review state.
+Use reviewer assignment to describe when the agent should request reviewers. The agent also considers applicable policy files, risk settings, AI reviewer findings, and the current review state.
+
+### Risk-based approval
+
+PR Routing & Approval can approve low-risk pull requests when your approval criteria are met.
+
+Use approval criteria to describe the conditions a PR must meet before the agent approves it. The agent also considers applicable policy files, risk settings, AI reviewer findings, and the current review state.
 
 ## Core features
 
 ### AI reviewer awareness
 
-Approval Agents can use findings from other Cursor review systems:
+PR Routing & Approval can use findings from other Cursor review systems:
 
-- **Bugbot Review Context** utilizes Bugbot findings in the approval decision.
-- **Security Review Context** utilizes Security Agent findings in the approval decision.
+- **Bugbot Review Context** uses Bugbot findings in the approval decision.
+- **Security Review Context** uses Security Agent findings in the approval decision.
 
 When these contexts are enabled, the agent waits for the relevant agentic reviewer checks to finish and uses their findings as approval signals.
 
-If Bugbot or Security Agents report findings that need human review, the Approval Agent will not approve the PR.
+If Bugbot or Security Agents report findings that need human review, PR Routing & Approval will not approve the PR.
 
 Security Agents require a team or enterprise plan.
 
 ### Risk scoring
 
-Approval Agents can classify a PR by risk and enforce a maximum approval threshold.
+PR Routing & Approval can classify a PR by risk and enforce a maximum approval threshold.
 
 - **Use Risk Score** enables risk classification which can be customized further with prompting.
 - **Maximum Risk Threshold** sets the highest risk level the agent may approve.
@@ -50,7 +50,7 @@ If a PR exceeds the configured threshold, the agent will not approve it.
 
 ### Approval policy files
 
-Approval Agents can discover repository policy files and apply them before deciding whether to approve.
+PR Routing & Approval can discover repository policy files and apply them before deciding whether to approve.
 
 For each changed file, the agent checks the file's directory and each ancestor directory for this exact filename:
 
@@ -64,7 +64,7 @@ The closest applicable `APPROVAL_POLICY.md` has the highest priority for files u
 
 ### Routing policies
 
-Approval Agents also check for a top-level routing file:
+PR Routing & Approval also checks for a top-level routing file:
 
 ```text
 .cursor/approval-policies/ROUTING.md
@@ -88,17 +88,20 @@ If a PR changes an approval policy, routing file, routed policy file, or reviewe
 
 ## Setup
 
-To configure Approval Agents, open the [Approval Agents Dashboard](https://cursor.com/dashboard/approval-agents) and create your first agent.
+Open [PR Routing & Approval in Automations](https://cursor.com/automations/from-cursor/pr-routing-and-approval) to configure it.
 
-### Create an agent
+### Enable routing and approval
 
-Choose **New Agent**, or use the onboarding card to create a **Pull Request Approver**.
+Turn on the capabilities you want:
 
-New agents start with default pull request triggers and approval behavior. You can then tune triggers, approval criteria, reviewer routing, AI context, and notification tools.
+- **Enable PR Routing and Requests for Review** assigns reviewers based on code ownership and commit history.
+- **Automatically Approve PRs** approves low-risk PRs after you configure approval criteria.
+
+Choose the organizations and repositories where the agent should run.
 
 ### Configure triggers
 
-Triggers decide when the agent runs. Approval Agents support pull request events such as:
+Triggers decide when the agent runs. PR Routing & Approval supports pull request events such as:
 
 - **PR opened** runs the agent when a pull request is created.
 - **PR pushed / updated** runs the agent when new commits are pushed to an existing PR.
@@ -117,7 +120,7 @@ In **Configuration**, choose which signals the agent should use:
 
 Use these signals to decide whether the agent should rely on AI reviewer output, security findings, and risk thresholds before approving.
 
-### Write a custom prompt
+### Customize approval rules
 
 Use the **Custom Prompt** to add approval criteria for your team. You can describe local review expectations, examples of PRs that are safe to approve, or cases that require human review.
 
@@ -129,8 +132,8 @@ If the custom prompt is not set, the agent will use the default Cursor managed c
 
 The agent must have at least one primary action enabled:
 
-- **Approve PR**
 - **Request Reviewers**
+- **Approve PR**
 
 Optional integrations can include:
 
@@ -144,7 +147,7 @@ Use the custom prompt to guide how the agent should use MCP tools.
 
 After configuring, save the agent. Existing agents can be enabled or disabled from the detail page.
 
-Team members without admin permission can view Approval Agents but cannot edit them.
+Team members without admin permission can view PR Routing & Approval but cannot edit it.
 
 
 ---

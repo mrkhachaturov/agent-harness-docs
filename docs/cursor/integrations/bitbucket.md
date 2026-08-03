@@ -116,7 +116,7 @@ For instances without public inbound access, see [Advanced networking](https://c
 5. If API traffic uses a different hostname, enter it as the **External Host**
 6. Enter the **Service Account Token**
 7. Click **Register**
-8. Return to the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) to enable Bugbot on repositories from the instance
+8. Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to enable it on repositories from the instance
 
 Cursor uses the service account identity for Bugbot review comments, inline findings, webhooks, and build statuses.
 

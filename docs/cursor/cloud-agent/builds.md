@@ -2,6 +2,12 @@
 
 Builds prepare your Cloud Agent environment in the background. Each agent starts from a pre-built machine with your repositories, tools, and dependencies ready.
 
+With Builds, you get:
+
+- **Faster starts**: Clone, install, and dependency work happen ahead of time, so agents boot from a ready environment instead of waiting on every start.
+- **Reliable starts**: Agents always start from the latest successful Build. A failed install or bad config doesn't replace the working one.
+- **Observable environments**: You can see every Build, inspect its logs and commits, and trace which Build each agent used.
+
 ## Opt an existing environment into Builds
 
 New environments use Builds by default. To enable Builds for an existing environment:
@@ -9,13 +15,13 @@ New environments use Builds by default. To enable Builds for an existing environ
 1. Open **Environments** in the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#environments).
 2. Select an environment and open its **Builds** tab.
 3. Choose one of these setup paths:
-   - Select **Run set up check first** to let an agent inspect your environment, test a Build, and propose any needed changes.
+   - Select **Run setup agent** to let an agent inspect your environment, test a Build, and propose any needed changes.
    - Select **Enable Builds** to enable Builds and create one with your current configuration.
 4. Confirm the first Build succeeds before using it for agent runs.
 
 The setup agent checks which commands should run during a Build and which need to run when an agent starts. For dashboard-managed environments, it proposes an updated configuration for you to review and save. For environments defined in `.cursor/environment.json`, it can open a pull request with the changes.
 
-You can select **Run test Build** from the Builds tab to test your configuration without enabling Builds for all agent runs. The setup agent doesn't enable Builds for you. Select **Enable Builds** when you're ready.
+You can select **Test build** from the Builds tab to test your configuration without enabling Builds for all agent runs. The setup agent doesn't enable Builds for you. Select **Enable Builds** when you're ready.
 
 ## How Builds work
 
@@ -26,7 +32,7 @@ Each Build follows this lifecycle:
 1. **Trigger**: A Build starts on a schedule, after you save an environment version, from a manual request, or at an agent's request.
 2. **Prepare**: Cursor starts from your base image, clones every repository in the environment at its default branch, and runs the `install` command to completion.
 3. **Snapshot**: Cursor saves the machine's disk state with the environment version and exact commit SHA for each repository.
-4. **Activate**: A successful Build becomes active unless the environment is pinned to another Build.
+4. **Activate**: A successful Build becomes active.
 5. **Start agents**: New agents, automations, and code reviews start from the active Build.
 
 Cursor keeps pre-warmed copies of active Builds ready. This removes repository cloning and dependency installation from the agent startup path.
@@ -55,7 +61,7 @@ Your existing environment inputs still apply. Builds use saved snapshots, `.curs
 
 A Build records the commit checked out for each repository when it runs.
 
-- **Default branch runs** start from the commit recorded in the active Build. Scheduled Builds run hourly by default, and you can change the frequency. Fetch or fast-forward from `start` if every run needs the latest default branch commit.
+- **Default branch runs** start from the commit recorded in the active Build. Scheduled Builds refresh that commit in the background. When **Update stale builds** is on and a Build is older than your **Staleness threshold**, agents pull the latest default-branch code at start. When that setting is off, agents use the Build's recorded commit as-is. The default threshold is 24 hours. Set it to `0` to always pull.
 - **Feature branch runs** start from the active Build's prepared disk, then Cursor checks out the requested branch. The source code matches the branch you selected while reusing dependencies from the Build.
 - **Multi-repo environments** record one commit per repository and prepare the complete workspace together.
 
@@ -73,14 +79,13 @@ Saving environment configuration or changing its secrets triggers a new Build.
 
 Open an environment's **Builds** tab to:
 
-- See every Build's status, trigger, duration, environment version, and repository commits
-- Open a Build to inspect its events and logs
-- Run a Build on demand
-- Choose the active Build
-- Pin an environment to a Build so newer successful Builds don't activate automatically
-- Invalidate a Build so it can't become active
-- Change the scheduled Build frequency
+- See every Build's type, status, and start time
+- Open a Build to inspect its details and logs
+- Select **Trigger build** (or **Test build** when Builds are off) to run a Build on demand
+- Activate a draft Build or deactivate a Build
+- Cancel an in-progress Build
 - Start an agent from a specific Build
+- Configure **Update stale builds** and the **Staleness threshold**
 
 Every agent run records the Build it started from. Use this provenance to compare environment behavior with the exact configuration and repository commits in the Build.
 
@@ -102,7 +107,7 @@ install and start commands.
 
 ### Which Build does an agent use?
 
-By default, an agent uses the latest successful active Build for its environment. A pinned environment continues to use the pinned Build until you remove the pin or select another one.
+By default, an agent uses the latest successful active Build for its environment.
 
 You can also start an agent from a specific Build when testing or debugging.
 
@@ -112,15 +117,11 @@ Agents use the standard environment startup flow until the first Build completes
 
 ### How fresh is the source code?
 
-Feature branch runs check out the requested branch after the Build starts. Default branch runs begin at the commit recorded by the active Build, which is usually no more than one scheduled Build interval old.
+Feature branch runs check out the requested branch after the Build starts. Default branch runs begin at the commit recorded by the active Build. If **Update stale builds** is on and the Build is older than your **Staleness threshold**, agents pull the latest default-branch code at start.
 
 ### Do Builds replace snapshots or Dockerfiles?
 
 No. A saved snapshot or Dockerfile defines the base machine used to create a Build. Cursor then clones the repositories, runs `install`, and creates a fresh bootable snapshot.
-
-### Do Builds expire?
-
-Active healthy Builds don't expire. Cursor may clean up older inactive Builds.
 
 ### Do Builds support multiple repositories?
 

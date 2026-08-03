@@ -2,6 +2,8 @@
 
 Bugbot reviews pull requests and identifies bugs, security issues, and code quality problems.
 
+Configure Bugbot in [Automations](https://cursor.com/automations/from-cursor/bugbot).
+
 [Bugbot leaving comments on a PR](/docs-static/images/bugbot/bugbot-report-cropped.mp4)
 
 ## How it works
@@ -22,7 +24,7 @@ Connect your repositories through the Cursor dashboard to start using Bugbot.
 - **GitLab** (including GitLab Self-Hosted): See the [GitLab integration page](https://cursor.com/docs/integrations/gitlab.md)
 - **Bitbucket** (including Bitbucket Data Center): See the [Bitbucket integration page](https://cursor.com/docs/integrations/bitbucket.md)
 
-After connecting, return to the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) to enable Bugbot on specific repositories.
+After connecting, open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to enable it on specific repositories.
 
 ## CI check statuses
 
@@ -53,7 +55,7 @@ Enable or disable Bugbot per repository from your installations list. Bugbot run
 
 ### Repository settings
 
-Team admins can enable Bugbot per repository, configure allow/deny lists for reviewers, and set:
+Team users and admins can enable Bugbot per repository, configure allow/deny lists for reviewers, and set:
 
 - Run **only once** per PR per installation, skipping subsequent commits
 
@@ -67,9 +69,27 @@ Team members can override settings for their own PRs:
 - Run **only once** per PR, skipping subsequent commits
 - **Enable reviews on draft PRs** to include draft pull requests in automatic reviews
 
+### Enterprise
+
+### Repository settings
+
+Enterprise admins can enable Bugbot per repository, configure allow/deny lists for reviewers, and set:
+
+- Run **only once** per PR per installation, skipping subsequent commits
+
+Bugbot runs for all contributors to enabled repositories, regardless of team membership.
+
+### Personal settings
+
+Enterprise users can override settings for their own PRs:
+
+- Run **only when mentioned** by commenting `cursor review` or `bugbot run`
+- Run **only once** per PR, skipping subsequent commits
+- **Enable reviews on draft PRs** to include draft pull requests in automatic reviews
+
 ## Analytics
 
-![Bugbot dashboard](/docs-static/images/bugbot/bugbot-dashboard.png)
+Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to view review activity and outcomes.
 
 ## API
 
@@ -315,9 +335,9 @@ Analytics may take a short time to become available after a review is queued.
 
 ## Incremental reviews
 
-By default, Bugbot reviews the full pull request diff on every push. Turn on **Incremental Review** from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) to review only the changes since the previous Bugbot review.
+By default, Bugbot reviews the full pull request diff on every push. Turn on **Incremental Review** in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot) to review only the changes since the previous Bugbot review.
 
-![Incremental Review setting in the Bugbot dashboard](/docs-static/images/bugbot/incremental-review-setting.png)
+![Incremental Review setting in Bugbot Automations](/docs-static/images/bugbot/incremental-review-setting.png)
 
 ## Effort Levels
 
@@ -337,7 +357,7 @@ Guide reviews with team rules, repository rules, and project `.cursor/BUGBOT.md`
 
 ### Team rules
 
-Team admins can create rules from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot) that apply to all repositories in the team. These rules are available to every enabled repository, making it easy to enforce organization-wide standards.
+Team admins can create rules in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot) that apply to all repositories in the team. These rules are available to every enabled repository, making it easy to enforce organization-wide standards.
 
 When Team Rules, repository rules, and project rule files all apply, Bugbot merges them into one review-rules block. Order of inclusion: Team Rules → project .cursor/BUGBOT.md (including nested files) → learned rules → manual rules.
 
@@ -370,7 +390,7 @@ Cursor [project rules](https://cursor.com/docs/rules.md) (`*.mdc` files in `.cur
 
 #### Learned rules
 
-In the [Bugbot dashboard](https://cursor.com/dashboard/bugbot/repository-rules), enable learning for your organizations and repositories.
+In [Bugbot repository rules](https://cursor.com/dashboard/bugbot/repository-rules), enable learning for your organizations and repositories.
 
 Rules are generated automatically from your team's activity on GitHub for that repository or by manually backfilling from the history of the repository.
 
@@ -386,7 +406,7 @@ Cursor will automatically enable or disable rules as it learns more about your t
 
 #### Manual rules
 
-In the [Bugbot dashboard](https://cursor.com/dashboard/bugbot/repository-rules), you can create manual rules for individual repositories.
+In [Bugbot repository rules](https://cursor.com/dashboard/bugbot/repository-rules), you can create manual rules for individual repositories.
 
 | Field            | Description                                                                                                    |
 | :--------------- | :------------------------------------------------------------------------------------------------------------- |
@@ -492,7 +512,7 @@ When Bugbot finds bugs during a PR review, it can automatically:
 
 ### Configuration
 
-Configure autofix behavior from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot).
+Configure autofix behavior in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot).
 
 ### Individual
 
@@ -535,7 +555,7 @@ Bugbot is integrated with your [MCP servers](https://cursor.com/docs/mcp.md) so 
 To get started:
 
 1. Follow the [MCP documentation](https://cursor.com/docs/mcp.md) for MCP server setup instructions.
-2. Add the tools to Bugbot in the [Bugbot dashboard](https://cursor.com/dashboard/bugbot).
+2. Add the tools to [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot).
 
 MCP support is available on Team and Enterprise plans only.
 
@@ -580,7 +600,7 @@ curl -X POST https://api.cursor.com/bugbot/repo/update \
 - `enabled` (boolean, required): `true` to enable Bugbot, `false` to disable it
 - `manualTriggerOnly` (boolean, optional): When `true`, Bugbot won't run automatically on PR updates for this repository. Manual triggers, such as commenting `cursor review` or `bugbot run`, still work.
 
-The dashboard UI may take a moment to reflect changes made through the API due to caching. The API response shows the current state in the database.
+The Automations UI may take a moment to reflect changes made through the API due to caching. The API response shows the current state in the database.
 
 ### Listing repositories
 
@@ -599,7 +619,7 @@ Use the `/bugbot/user/update` endpoint to control which GitHub, GitLab, or Bitbu
 
 #### Prerequisites
 
-Before calling this endpoint, enable an allowlist or blocklist mode in your [team Bugbot settings](https://cursor.com/dashboard/bugbot):
+Before calling this endpoint, enable an allowlist or blocklist mode in your [team Bugbot settings](https://cursor.com/automations/from-cursor/bugbot):
 
 - **Allowlist mode ("Only...")**: Only users on the list can use Bugbot
 - **Blocklist mode ("Everyone but...")**: All users can use Bugbot except those on the list
@@ -696,7 +716,7 @@ Subscribe through your account settings.
 Bugbot Teams includes:
 
 - Code reviews on all PRs
-- Analytics and reporting dashboard
+- Analytics and reporting
 - The ability to set the effort level Bugbot uses for reviews
 - Advanced rules and settings
 

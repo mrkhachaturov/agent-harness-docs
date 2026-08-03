@@ -18,7 +18,7 @@ Some Teams and Individual plans include monthly Bugbot usage. You can enable usa
 2. Navigate to the **Integrations** tab
 3. Connect your repository provider
 4. Follow the provider setup flow
-5. Return to the dashboard to enable Bugbot on specific repositories
+5. Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to enable it on specific repositories
 
 For setup details, see the [GitHub](https://cursor.com/docs/integrations/github.md), [GitLab](https://cursor.com/docs/integrations/gitlab.md), or [Bitbucket](https://cursor.com/docs/integrations/bitbucket.md) integration pages.
 
@@ -30,9 +30,9 @@ Bugbot runs automatically when a PR is created or updated. To trigger a review m
 
 Create `.cursor/BUGBOT.md` files in your repository to give Bugbot project-specific review guidelines. Bugbot always includes the root file and traverses upward from changed files to find relevant context.
 
-Team admins can also create organization-wide rules from the [Bugbot dashboard](https://cursor.com/dashboard/bugbot).
+Team admins can also create organization-wide rules in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot).
 
-Cursor [project rules](https://cursor.com/docs/rules.md) (`*.mdc` files in `.cursor/rules/`) do not apply to Bugbot runs. Use `.cursor/BUGBOT.md` or dashboard rules instead.
+Cursor [project rules](https://cursor.com/docs/rules.md) (`*.mdc` files in `.cursor/rules/`) do not apply to Bugbot runs. Use `.cursor/BUGBOT.md` or rules configured in Automations instead.
 
 Rules are limited to 30,000 characters each, and 100,000 characters combined per review. See [Bugbot](https://cursor.com/docs/bugbot.md#rule-limits) for details.
 
@@ -51,7 +51,7 @@ See the [full pricing details](https://cursor.com/docs/bugbot.md#pricing).
 ## How do I fix Bugbot not reviewing my PRs?
 
 1. Comment `cursor review verbose=true` or `bugbot run verbose=true` on the PR for detailed logs, which Bugbot rules loaded, and a request ID
-2. Check that Bugbot has repository access in your [dashboard](https://cursor.com/dashboard/bugbot)
+2. Check that Bugbot has repository access in [Automations](https://cursor.com/automations/from-cursor/bugbot)
 3. Verify your repository provider integration is installed and enabled for the repository
 
 Include the request ID from verbose mode when reporting issues to support.

@@ -23,6 +23,12 @@ Create a new automation in the [Agents Window](https://cursor.com/docs/agent/age
 4. Choose whether the automation needs a repository, multiple repositories, or no repository at all
 5. Save and activate the automation
 
+The Automations page also includes three Cursor-managed agents:
+
+- [Bugbot](https://cursor.com/docs/bugbot.md) reviews pull requests for bugs and code quality issues.
+- [Security Agents](https://cursor.com/docs/security-agents.md) review pull requests and scan codebases for vulnerabilities.
+- [PR Routing & Approval](https://cursor.com/docs/approval-agents.md) routes pull requests to reviewers and can approve low-risk changes.
+
 ## Can I create automations without connecting a repository?
 
 Yes. Automations can run without any attached repos. These automations do not clone code. They work well for workflows that only use Slack, MCP, webhooks, Linear, or PagerDuty.

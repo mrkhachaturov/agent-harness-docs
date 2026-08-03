@@ -31,7 +31,7 @@ Alongside usage-based billing, Bugbot supports configurable effort levels for re
 - **High:** Bugbot spends more time reasoning. Reviews are more expensive and take longer, but Bugbot may find more bugs.
 - **Custom:** Describe in natural language when Bugbot should use default or high effort. Cursor will dynamically set effort levels based on your instructions.
 
-You can configure effort levels from **Settings** in the [Bugbot dashboard](https://cursor.com/dashboard/bugbot).
+You can configure effort levels from **Settings** in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot).
 
 ## How to switch to usage-based Bugbot early
 
