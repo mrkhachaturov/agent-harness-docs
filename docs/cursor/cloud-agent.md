@@ -50,9 +50,9 @@ Agents are only as capable as the environments they run in. An agent that can wr
 
 Not setting up a development environment for your cloud agents is like not giving your engineers a computer. This is why environment setup is the most important step to improve the effectiveness of cloud agents. It lets cloud agents work like engineers do: write code, test and verify work, and ship software.
 
-You can configure environments with agent-led setup, a saved snapshot, or a Dockerfile in `.cursor/environment.json`. See [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md) to get started. Each cloud agent then starts from an environment selected for the repo or multi-repo group.
+You can configure environments with agent-led setup, a saved snapshot, or a Dockerfile in `.cursor/environment.json`. See [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md) to get started. [Builds](https://cursor.com/docs/cloud-agent/builds.md) prepare each environment in the background so agents start with repositories and dependencies ready.
 
-The Cloud Agents dashboard shows which environment an agent used, along with environment details and version history. On the agent page, hover over the repository name at the top of the page to inspect the environment used for that run. See [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md) for configuration details.
+The Cloud Agents dashboard shows which environment and Build an agent used, along with environment details and version history. On the agent page, hover over the repository name at the top of the page to inspect the environment used for that run. See [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md) for configuration details.
 
 ### Runtime and environment controls
 
@@ -103,6 +103,7 @@ Viewing is read-only. To let teammates send follow-up messages and continue the 
 
 - Learn more about [Cloud agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md).
 - Learn more about [Cloud agent setup](https://cursor.com/docs/cloud-agent/setup.md).
+- Learn more about [Cloud Agent Builds](https://cursor.com/docs/cloud-agent/builds.md).
 - Learn more about [Cloud agent security](https://cursor.com/docs/cloud-agent/security-network.md).
 - Learn more about [Cloud agent settings](https://cursor.com/docs/cloud-agent/settings.md).
 
