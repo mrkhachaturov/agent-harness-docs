@@ -347,7 +347,7 @@ Each rule is truncated at 30,000 characters when included in a review. The combi
 
 ### See which rules a review used
 
-Comment `bugbot run debug=true` or `cursor review debug=true` on a pull request. Bugbot posts a table of every rule included in that run and flags any that were truncated or omitted.
+Comment `bugbot run verbose=true` or `cursor review verbose=true` on a pull request. Bugbot posts a table of every rule included in that run and flags any that were truncated or omitted.
 
 ### Repository rules
 
@@ -724,7 +724,7 @@ Yes. Bugbot reads both top-level and inline pull request comments from connected
 
 ### How do I see which rules Bugbot used?
 
-Comment `bugbot run debug=true` or `cursor review debug=true` on the pull request. Bugbot posts a table of every rule included in that run and flags any that were truncated or omitted. See [Rule limits](https://cursor.com/docs/bugbot.md#rule-limits) if a rule is missing or cut off.
+Comment `bugbot run verbose=true` or `cursor review verbose=true` on the pull request. Bugbot posts a table of every rule included in that run and flags any that were truncated or omitted. See [Rule limits](https://cursor.com/docs/bugbot.md#rule-limits) if a rule is missing or cut off.
 
 ### Is Bugbot privacy-mode compliant?
 

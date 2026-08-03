@@ -38,7 +38,7 @@ Rules are limited to 30,000 characters each, and 100,000 characters combined per
 
 ## How do I check which rules Bugbot used?
 
-Comment `bugbot run debug=true` or `cursor review debug=true` on the pull request. Bugbot replies with a table of the rules included in that review and flags any that were truncated or omitted. See [Bugbot](https://cursor.com/docs/bugbot.md#see-which-rules-a-review-used) for details.
+Comment `bugbot run verbose=true` or `cursor review verbose=true` on the pull request. Bugbot replies with a table of the rules included in that review and flags any that were truncated or omitted. See [Bugbot](https://cursor.com/docs/bugbot.md#see-which-rules-a-review-used) for details.
 
 ## What does Bugbot include?
 
