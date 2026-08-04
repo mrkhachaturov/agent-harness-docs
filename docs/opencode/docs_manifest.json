@@ -135,8 +135,8 @@
     "providers.md": {
       "upstream_path": "packages/web/src/content/docs/providers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/providers.mdx",
-      "hash": "8fa6fb363e106d286f2b47ab59d36de1f1c5af562d5793f699fc1afe743beb5d",
-      "last_updated": "2026-07-30T19:18:39.041649"
+      "hash": "d29868ec90f7cbba8dd6f5045c1d6648ae5b2b1630ea6569be070b695ab564f6",
+      "last_updated": "2026-08-04T13:58:37.071452"
     },
     "references.md": {
       "upstream_path": "packages/web/src/content/docs/references.mdx",
@@ -218,8 +218,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-04T11:22:42.983158",
-    "fetch_duration_seconds": 8.01971,
+    "last_fetch_completed": "2026-08-04T13:58:39.666267",
+    "fetch_duration_seconds": 9.648138,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-04T11:22:42.983179",
+  "last_updated": "2026-08-04T13:58:39.666291",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
