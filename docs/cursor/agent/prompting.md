@@ -7,7 +7,6 @@ Direct Agent with text prompts in the chat input. You can attach context, images
 Type `@` in the chat input to attach specific context to your prompt. Start typing after `@` and Cursor shows matching suggestions.
 
 - **Files & Folders**: `@auth.ts` or `@src/components/` to include files or folders (type `/` after selecting a folder to navigate deeper)
-- **Docs**: `@Docs` to search indexed documentation, including your own (add via `@Docs > Add new doc`)
 - **Terminals**: `@Terminals` to include terminal output as context
 - **Past Chats**: `@Past Chats` to reference context from a previous conversation
 - **Git diffs**: `@Commit (Diff of Working State)` for uncommitted changes, or `@Branch (Diff with Main)` for your full branch diff

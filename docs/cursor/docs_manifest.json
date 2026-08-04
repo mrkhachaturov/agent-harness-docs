@@ -99,8 +99,8 @@
     "agent/prompting.md": {
       "original_url": "https://cursor.com/docs/agent/prompting",
       "original_md_url": "https://cursor.com/docs/agent/prompting.md",
-      "hash": "8186199d62ea102ef1a135ff29d7157e7f04bbcce6ad9aeca4bcd96b7699c699",
-      "last_updated": "2026-06-29T22:53:03.546738"
+      "hash": "c5167a5e2cf5e62b556b6949413338ed73ba73c9aa4d8a2e9991894c2e6a4b0a",
+      "last_updated": "2026-08-04T16:50:36.267436"
     },
     "agent/security.md": {
       "original_url": "https://cursor.com/docs/agent/security",
@@ -405,8 +405,8 @@
     "enterprise/privacy-and-data-governance.md": {
       "original_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
       "original_md_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance.md",
-      "hash": "ddf44e5f9e7907717769712c4c9344ff855a3a93a27669d3d70e4f58cd0c6625",
-      "last_updated": "2026-07-17T02:09:11.807428"
+      "hash": "1c4696d06e389ca6a64b532f012163c826bbcde3b98d5db3cbc5b36948adcda7",
+      "last_updated": "2026-08-04T16:50:36.268367"
     },
     "enterprise/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/enterprise/private-connectivity",
@@ -687,8 +687,8 @@
     "help/customization/context.md": {
       "original_url": "https://cursor.com/help/customization/context",
       "original_md_url": "https://cursor.com/help/customization/context.md",
-      "hash": "cafc3c39fee5b75d3f90a0560129baed62efaf48c3c6dedfa5d8b8e3e755d2f5",
-      "last_updated": "2026-06-29T22:53:03.566929"
+      "hash": "7460ce2b70df73dcf04dbaa73a803912595014d2b0eec09b965fe4dd991d8104",
+      "last_updated": "2026-08-04T16:50:36.268822"
     },
     "help/customization/extensions.md": {
       "original_url": "https://cursor.com/help/customization/extensions",
@@ -1118,8 +1118,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-04T13:58:29.892487",
-    "fetch_duration_seconds": 2.041544,
+    "last_fetch_completed": "2026-08-04T16:50:36.272122",
+    "fetch_duration_seconds": 2.44709,
     "total_pages_discovered": 186,
     "pages_fetched_successfully": 186,
     "pages_failed": 0,
@@ -1132,7 +1132,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-04T13:58:29.892501",
+  "last_updated": "2026-08-04T16:50:36.272134",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
