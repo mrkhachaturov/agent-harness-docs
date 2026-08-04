@@ -70,7 +70,7 @@ Self-hosted instances support multiple connection methods beyond IP whitelisting
 
 ### AWS PrivateLink or Cloudflare Tunnel
 
-Available for Enterprise customers. Allow Cursor to access your instance over a private network connection. See [Private Connectivity](https://cursor.com/docs/enterprise/private-connectivity.md) or [contact your Cursor representative](https://cursor.com/contact-sales?source=docs-bugbot-private-network) for setup.
+Available for Enterprise customers. Allow Cursor to access your instance over a private network connection. See [Private Connectivity](https://cursor.com/docs/cloud-agent/private-connectivity.md) or [contact your Cursor representative](https://cursor.com/contact-sales?source=docs-bugbot-private-network) for setup.
 
 **Best for:** Instances behind a firewall on a private network, including AWS-hosted instances and environments that can run `cloudflared`
 

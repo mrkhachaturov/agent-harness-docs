@@ -92,7 +92,7 @@ If your organization uses IdP-defined allowlists in GitHub or otherwise cannot u
 
 ## Advanced networking
 
-Self-hosted instances support multiple connection methods beyond IP whitelisting. For setup details and supported private networking options, see [Private Connectivity](https://cursor.com/docs/enterprise/private-connectivity.md).
+Self-hosted instances support multiple connection methods beyond IP whitelisting. For setup details and supported private networking options, see [Private Connectivity](https://cursor.com/docs/cloud-agent/private-connectivity.md).
 
 ### AWS PrivateLink
 

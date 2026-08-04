@@ -282,11 +282,17 @@
       "hash": "cb405008d8e403633bd43d89556e48d60a81c6a9003bd175343dbcaa53420b13",
       "last_updated": "2026-07-29T16:22:32.909993"
     },
+    "cloud-agent/private-connectivity.md": {
+      "original_url": "https://cursor.com/docs/cloud-agent/private-connectivity",
+      "original_md_url": "https://cursor.com/docs/cloud-agent/private-connectivity.md",
+      "hash": "bf9df972c14680e46affb6e47443ce32d2cb98e110f22cbd8a110b3a0073963a",
+      "last_updated": "2026-08-04T22:08:38.552438"
+    },
     "cloud-agent/security-network.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security-network",
       "original_md_url": "https://cursor.com/docs/cloud-agent/security-network.md",
-      "hash": "9fb636e0d9a2a3b6e1bfa44cfca65c85dc6a1ae99707a105228a26e4e6957aad",
-      "last_updated": "2026-07-20T16:25:03.788788"
+      "hash": "e909afe385802f6bef7af984d6f9d93cf111f2c97ff0cf99052a91969664af08",
+      "last_updated": "2026-08-04T22:08:38.552758"
     },
     "cloud-agent/security.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security",
@@ -327,8 +333,8 @@
     "enterprise.md": {
       "original_url": "https://cursor.com/docs/enterprise",
       "original_md_url": "https://cursor.com/docs/enterprise.md",
-      "hash": "2beefa30943f773c2ea2f75cd8862ff42f2c73b9ca75d670e553126787d15c55",
-      "last_updated": "2026-07-31T19:30:40.225665"
+      "hash": "9c09cd8f02ffe0b2e870306f3879770b2335073d67283518baf0cf1cc213d7f8",
+      "last_updated": "2026-08-04T22:08:38.553137"
     },
     "enterprise/admin-setup-guide.md": {
       "original_url": "https://cursor.com/docs/enterprise/admin-setup-guide",
@@ -381,8 +387,8 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "ecb533133b8debde090854640e05fd2c3f42148bdf2b505ada4ab2106f954578",
-      "last_updated": "2026-07-03T02:27:31.253336"
+      "hash": "1bc163bb7c4c60af684a1f1edccb61647b2f71092bb16acacd2c6b6be7d9f48f",
+      "last_updated": "2026-08-04T22:08:38.553512"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -408,17 +414,11 @@
       "hash": "1c4696d06e389ca6a64b532f012163c826bbcde3b98d5db3cbc5b36948adcda7",
       "last_updated": "2026-08-04T16:50:36.268367"
     },
-    "enterprise/private-connectivity.md": {
-      "original_url": "https://cursor.com/docs/enterprise/private-connectivity",
-      "original_md_url": "https://cursor.com/docs/enterprise/private-connectivity.md",
-      "hash": "6daff250a424991a36100a66b9c5402f7a660edabc59b2770c9df158c33f86d7",
-      "last_updated": "2026-07-03T02:27:31.253565"
-    },
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
       "original_md_url": "https://cursor.com/docs/enterprise/security-hardening.md",
-      "hash": "dde9ad72eb0a8cc5736b652dde239b1eac2fbe6185647579cd36c60bbaea9c63",
-      "last_updated": "2026-07-06T19:50:37.617054"
+      "hash": "e70e0543f7aaf821f8509301a6f71b7ff542d4df14ce89799cb90958c4ae9057",
+      "last_updated": "2026-08-04T22:08:38.553880"
     },
     "get-started/quickstart.md": {
       "original_url": "https://cursor.com/docs/get-started/quickstart",
@@ -927,8 +927,8 @@
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
       "original_md_url": "https://cursor.com/docs/integrations/bitbucket.md",
-      "hash": "491c97f332cda47b3a4170a8f55ffc721f9f6928f4ce7e678e410c186d77f75c",
-      "last_updated": "2026-08-03T19:27:09.532901"
+      "hash": "ba92765d52e4263f46f68240873317fb237fd921cfb91a664c250f7eb1c74952",
+      "last_updated": "2026-08-04T22:08:38.554704"
     },
     "integrations/cursor-blame.md": {
       "original_url": "https://cursor.com/docs/integrations/cursor-blame",
@@ -939,14 +939,14 @@
     "integrations/github.md": {
       "original_url": "https://cursor.com/docs/integrations/github",
       "original_md_url": "https://cursor.com/docs/integrations/github.md",
-      "hash": "7df97c6bf74d57a6c09b088d586c7f41e4d1349eec9a0cedd6a83190e4f5492c",
-      "last_updated": "2026-06-29T22:53:03.572327"
+      "hash": "b664f11223a906137374bdb3328538b8eb15ef71f766b939c8dc3fd99bdbd62e",
+      "last_updated": "2026-08-04T22:08:38.554944"
     },
     "integrations/gitlab.md": {
       "original_url": "https://cursor.com/docs/integrations/gitlab",
       "original_md_url": "https://cursor.com/docs/integrations/gitlab.md",
-      "hash": "d8e9c2a9cbc05fbfb3d2c8781722c658852b92634332ee11b2923db95ab8eeb6",
-      "last_updated": "2026-06-29T22:53:03.572444"
+      "hash": "4f850145a7e6e0bfeffdcb0c9cb9d49081fa339dfe22ce65f539bbf72efbca24",
+      "last_updated": "2026-08-04T22:08:38.555158"
     },
     "integrations/jetbrains.md": {
       "original_url": "https://cursor.com/docs/integrations/jetbrains",
@@ -1118,8 +1118,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-04T19:24:57.691574",
-    "fetch_duration_seconds": 2.429291,
+    "last_fetch_completed": "2026-08-04T22:08:38.558690",
+    "fetch_duration_seconds": 1.883691,
     "total_pages_discovered": 186,
     "pages_fetched_successfully": 186,
     "pages_failed": 0,
@@ -1132,7 +1132,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-04T19:24:57.691590",
+  "last_updated": "2026-08-04T22:08:38.558705",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

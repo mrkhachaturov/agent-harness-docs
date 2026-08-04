@@ -1,6 +1,6 @@
 # Private Connectivity
 
-Cursor supports private network connectivity for Enterprise teams that need Cursor to work with systems that are not reachable from the public internet. This includes self-hosted GitHub Enterprise Server, GitLab Enterprise, Bitbucket Data Center, private source control APIs, and webhook traffic from those systems back to Cursor.
+Cursor supports private network connectivity for Enterprise teams that need Cursor to work with systems that are not reachable from the public internet. This includes self-hosted GitHub Enterprise Server, GitLab Enterprise, Bitbucket Data Center, Artifactory, Nexus, private source control APIs, and webhook traffic from those systems back to Cursor.
 
 The same private connectivity setup is used across Cursor services that need access to your source control system, including [Cloud Agents](https://cursor.com/docs/cloud-agent.md), [Bugbot](https://cursor.com/docs/bugbot.md), and Cursor backend services.
 
@@ -8,14 +8,14 @@ To set up private connectivity, contact [hi@cursor.com](mailto:hi@cursor.com) or
 
 ## Supported options
 
-| Option            | Best for                                                                                            | Cloud provider                             | Status    |
-| :---------------- | :-------------------------------------------------------------------------------------------------- | :----------------------------------------- | :-------- |
-| AWS PrivateLink   | Private connectivity between Cursor and your Git provider, including webhook traffic back to Cursor | AWS                                        | Supported |
-| Cloudflare Tunnel | Cursor accessing a private origin when AWS PrivateLink is not practical                             | Any environment that can run `cloudflared` | Supported |
+| Option            | Best for                                                                                                                | Cloud provider                             | Status    |
+| :---------------- | :---------------------------------------------------------------------------------------------------------------------- | :----------------------------------------- | :-------- |
+| AWS PrivateLink   | Private connectivity between Cursor and your Git provider or package registry, including webhook traffic back to Cursor | AWS                                        | Supported |
+| Cloudflare Tunnel | Cursor accessing a private origin when AWS PrivateLink is not practical                                                 | Any environment that can run `cloudflared` | Supported |
 
 ## How to choose
 
-Use AWS PrivateLink when your private Git provider is in AWS or can sit behind an AWS Network Load Balancer. This is the preferred path for self-hosted GitHub Enterprise Server and GitLab Enterprise.
+Use AWS PrivateLink when your private Git provider or package registry is in AWS or can sit behind an AWS Network Load Balancer. This is the preferred path for self-hosted GitHub Enterprise Server and GitLab Enterprise.
 
 AWS PrivateLink can cover two traffic directions:
 
@@ -31,9 +31,9 @@ If your team requires Google Private Service Connect (PSC), contact Cursor. Curs
 Before starting, make sure you have:
 
 - A Cursor Enterprise workspace
-- A self-hosted GitHub Enterprise Server or GitLab Enterprise instance reachable over HTTPS on port 443
-- A publicly trusted TLS certificate for the Git hostname
-- DNS ownership for the Git hostname
+- A self-hosted GitHub Enterprise Server, GitLab Enterprise, Bitbucket Data Center, or private package registry (such as Artifactory or Nexus) reachable over HTTPS on port 443
+- A publicly trusted TLS certificate for the Git or registry hostname
+- DNS ownership for that hostname
 - AWS permissions to create endpoint services or interface VPC endpoints, if using AWS PrivateLink
 - Permission to run `cloudflared`, if using Cloudflare Tunnel
 
@@ -43,21 +43,21 @@ If you run a proxy in front of GitHub Enterprise Server, make sure it allows Cur
 
 ## AWS PrivateLink
 
-AWS PrivateLink supports private traffic in either direction between Cursor and your Git provider. You may need one direction or both, depending on your network policy.
+AWS PrivateLink supports private traffic in either direction between Cursor and your Git provider or package registry. You may need one direction or both, depending on your network policy.
 
-### Direction 1: Cursor to your Git provider
+### Direction 1: Cursor to your Git provider or package registry
 
-Use this option when Cursor needs to clone repositories or call APIs on your private GitHub Enterprise Server or GitLab Enterprise host.
+Use this option when Cursor needs to clone repositories, call Git APIs, or reach a private package registry such as Artifactory or Nexus.
 
 #### 1. Create an AWS endpoint service
 
-Create a Network Load Balancer in front of your Git provider's HTTPS endpoint. Publish that load balancer as an AWS VPC endpoint service.
+Create a Network Load Balancer in front of your Git provider or package registry HTTPS endpoint. Publish that load balancer as an AWS VPC endpoint service.
 
 Send Cursor:
 
 - Endpoint service name, for example `com.amazonaws.vpce.us-east-1.vpce-svc-0123456789abcdef0`
 - AWS region
-- Git hostname, for example `github.example.com`
+- Git or registry hostname, for example `github.example.com` or `artifactory.example.com`
 - Whether your endpoint service has AWS-managed private DNS enabled
 - Whether your Network Load Balancer preserves client IPs or your backend filters source IPs
 
@@ -87,9 +87,9 @@ After Cursor creates the interface endpoint, accept the endpoint connection in y
 
 #### 4. Configure DNS
 
-If your endpoint service exposes AWS-managed private DNS for your Git hostname, Cursor enables private DNS on its interface endpoint.
+If your endpoint service exposes AWS-managed private DNS for your Git or registry hostname, Cursor enables private DNS on its interface endpoint.
 
-If your endpoint service does not expose private DNS, Cursor creates private DNS on its side and maps your Git hostname to the endpoint DNS name.
+If your endpoint service does not expose private DNS, Cursor creates private DNS on its side and maps that hostname to the endpoint DNS name.
 
 Use the same hostname in Cursor that appears on the TLS certificate and in DNS.
 
@@ -210,7 +210,7 @@ After private networking is configured, complete the source control setup in Cur
 - For GitLab Enterprise, follow the [GitLab integration setup](https://cursor.com/docs/integrations/gitlab.md#setup).
 - For Bitbucket Data Center, follow the [Bitbucket integration setup](https://cursor.com/docs/integrations/bitbucket.md#setup).
 - Use the same hostname that is covered by your TLS certificate and private DNS configuration.
-- If a proxy sits in front of your Git provider, make sure it allows the authenticated API traffic described in [Prerequisites](https://cursor.com/docs/enterprise/private-connectivity.md#prerequisites).
+- If a proxy sits in front of your Git provider, make sure it allows the authenticated API traffic described in [Prerequisites](https://cursor.com/docs/cloud-agent/private-connectivity.md#prerequisites).
 
 Cursor uses the connected source control integration for Cloud Agents, Bugbot, and other Cursor services that need repository access.
 
@@ -250,11 +250,11 @@ If you need private connectivity from a GCP VPC to Cursor services, or from Curs
 
 ## What to send Cursor
 
-For AWS PrivateLink to your Git provider:
+For AWS PrivateLink to your Git provider or package registry:
 
 - Endpoint service name
 - AWS region
-- Git hostname
+- Git or registry hostname
 - Whether private DNS is enabled
 - Whether your load balancer preserves client IPs or filters source IPs
 

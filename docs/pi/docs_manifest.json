@@ -51,8 +51,8 @@
     "keybindings.md": {
       "upstream_path": "packages/coding-agent/docs/keybindings.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/keybindings.md",
-      "hash": "561274ffdea8d70b03865423427fb57ec21e94b46498929c1e1f83ee29a2006c",
-      "last_updated": "2026-07-31T16:44:03.436792"
+      "hash": "6b1937de3df821284a6c849a6aaf62a09cc250bb1eeda07e791bde64aa1186a0",
+      "last_updated": "2026-08-04T22:08:47.477170"
     },
     "llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/llama-cpp.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-04T19:25:07.485066",
-    "fetch_duration_seconds": 1.029393,
+    "last_fetch_completed": "2026-08-04T22:08:47.479581",
+    "fetch_duration_seconds": 0.769412,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-04T19:25:07.485076",
+  "last_updated": "2026-08-04T22:08:47.479594",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

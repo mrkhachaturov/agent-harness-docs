@@ -98,7 +98,7 @@ Cloudflare Tunnel is a good fit when the agent can reach the private service thr
 
 For TCP targets such as private databases, use a tunnel client that exposes a local TCP listener in the agent environment. The agent then connects to `localhost`, while the tunnel forwards traffic to the private origin.
 
-For private GitHub Enterprise Server, GitLab Enterprise, source control APIs, and related webhook traffic, Enterprise teams can use [private connectivity](https://cursor.com/docs/enterprise/private-connectivity.md) with AWS PrivateLink or Cloudflare Tunnel.
+For private GitHub Enterprise Server, GitLab Enterprise, source control APIs, package registries such as Artifactory or Nexus, and related webhook traffic, Enterprise teams can use [private connectivity](https://cursor.com/docs/cloud-agent/private-connectivity.md) with AWS PrivateLink or Cloudflare Tunnel.
 
 ### Access modes
 
@@ -246,7 +246,7 @@ If your team uses Cloud Agents alongside [Cursor Review](https://cursor.com/docs
 These IP addresses are stable. If the list ever changes, teams using IP allow
 lists will get advance notice before any address is added or removed.
 
-Enterprise customers with private GitHub Enterprise Server or GitLab Enterprise deployments can use [private connectivity options](https://cursor.com/docs/enterprise/private-connectivity.md), so Cloud Agents and Bugbot can access private source control systems.
+Enterprise customers with private GitHub Enterprise Server or GitLab Enterprise deployments can use [private connectivity options](https://cursor.com/docs/cloud-agent/private-connectivity.md), so Cloud Agents and Bugbot can access private source control systems.
 
 
 ---
