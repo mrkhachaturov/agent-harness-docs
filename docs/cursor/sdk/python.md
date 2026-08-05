@@ -2,7 +2,7 @@
 
 The `cursor-sdk` package lets you call Cursor's agent from your own Python code. The same agent that runs in the Cursor IDE, CLI, and web app is scriptable from Python with sync and async clients, typed dataclasses, and ordinary iteration for streams and pages. Run the `/sdk` skill inside Cursor to get started.
 
-For the REST API, see the [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints.md). For other languages, pin a release of the open [SDK Bridge](https://github.com/cursor/sdk-bridge) and point an agent at the repo to build a thin adapter.
+For the REST API, see the [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints.md). For other languages, see the [SDK Bridge](https://cursor.com/docs/sdk/bridge.md).
 
 ## Overview
 

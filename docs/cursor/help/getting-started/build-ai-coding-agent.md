@@ -34,12 +34,13 @@ for await (const event of run.stream()) {
 
 ## What can I build with the Cursor SDK?
 
-You can run agents on your machine or on Cursor's cloud against a dedicated VM, with any frontier model. Teams kick off agents from CI/CD to summarize changes and fix failures, build internal tools, and embed an agent experience inside their own products. See the [TypeScript](https://cursor.com/docs/sdk/typescript.md) and [Python](https://cursor.com/docs/sdk/python.md) SDK docs to start, or explore our [cookbook of examples](https://github.com/cursor/cookbook).
+You can run agents on your machine or on Cursor's cloud against a dedicated VM, with any frontier model. Teams kick off agents from CI/CD to summarize changes and fix failures, build internal tools, and embed an agent experience inside their own products. See the [TypeScript](https://cursor.com/docs/sdk/typescript.md) and [Python](https://cursor.com/docs/sdk/python.md) SDK docs to start, the [SDK Bridge](https://cursor.com/docs/sdk/bridge.md) for other languages, or explore our [cookbook of examples](https://github.com/cursor/cookbook).
 
 ## Related
 
 - [Cursor SDK (TypeScript)](https://cursor.com/docs/sdk/typescript.md)
 - [Cursor SDK (Python)](https://cursor.com/docs/sdk/python.md)
+- [SDK Bridge](https://cursor.com/docs/sdk/bridge.md)
 - [What are coding agents?](https://cursor.com/help/ai-features/coding-agents.md)
 - [Automations](https://cursor.com/help/ai-features/automations.md)
 - [Build programmatic agents with the Cursor SDK](/blog/typescript-sdk)

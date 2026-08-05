@@ -34,7 +34,7 @@ Cursor environment. The model itself is hosted in either case.
 
 Runtime is picked by which key you pass to `Agent.create()` (`local` or `cloud`). Use the same `CURSOR_API_KEY` for either.
 
-For the REST API, see the [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints.md). For other languages, pin a release of the open [SDK Bridge](https://github.com/cursor/sdk-bridge) and point an agent at the repo to build a thin adapter.
+For the REST API, see the [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints.md). For other languages, see the [SDK Bridge](https://cursor.com/docs/sdk/bridge.md).
 
 ## Authentication
 

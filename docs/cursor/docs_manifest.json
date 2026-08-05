@@ -741,8 +741,8 @@
     "help/getting-started/build-ai-coding-agent.md": {
       "original_url": "https://cursor.com/help/getting-started/build-ai-coding-agent",
       "original_md_url": "https://cursor.com/help/getting-started/build-ai-coding-agent.md",
-      "hash": "47555a495ebc9156acfc1a9b1d0e8e0d57e2739fde858683d5224386456c46e3",
-      "last_updated": "2026-07-27T22:04:50.303705"
+      "hash": "34711e3803466767e1d113c277e4c2ff7ec39d68b09f93280eb79b39f1ee737e",
+      "last_updated": "2026-08-05T13:54:45.926746"
     },
     "help/getting-started/first-project.md": {
       "original_url": "https://cursor.com/help/getting-started/first-project",
@@ -1080,6 +1080,12 @@
       "hash": "cf6fc312cacbdab72daca7d7661b762f263662fcdeec58b0e11c6ed0ff78f7c3",
       "last_updated": "2026-06-29T22:53:03.575517"
     },
+    "sdk/bridge.md": {
+      "original_url": "https://cursor.com/docs/sdk/bridge",
+      "original_md_url": "https://cursor.com/docs/sdk/bridge.md",
+      "hash": "a957ad3ee422ec1c76297eb88b347936f9c0d7f868fd82104b8f68992a95a923",
+      "last_updated": "2026-08-05T13:54:45.927539"
+    },
     "sdk/changelog.md": {
       "original_url": "https://cursor.com/docs/sdk/changelog",
       "original_md_url": "https://cursor.com/docs/sdk/changelog.md",
@@ -1089,14 +1095,14 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "d08a79de086671fab881e7353faf565b09c354120dc3b6273ee4f838cc182a90",
-      "last_updated": "2026-08-05T11:17:29.120784"
+      "hash": "4afdfd0693018a7386645e23a955c327f0abca228ae85ab66a52345808ff28e9",
+      "last_updated": "2026-08-05T13:54:45.928069"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "eb178bd3602b5cf5222a798ad656318a9af2f0811a8f0ff45396eaa4830c8510",
-      "last_updated": "2026-08-05T11:17:29.121423"
+      "hash": "fe43d674c43a3970597cc493050152e9ea0e1e06e52ef014974734687d06d101",
+      "last_updated": "2026-08-05T13:54:45.928652"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1118,21 +1124,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-05T11:17:29.124191",
-    "fetch_duration_seconds": 2.907646,
-    "total_pages_discovered": 186,
-    "pages_fetched_successfully": 186,
+    "last_fetch_completed": "2026-08-05T13:54:45.931317",
+    "fetch_duration_seconds": 2.419866,
+    "total_pages_discovered": 187,
+    "pages_fetched_successfully": 187,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 186,
+    "total_files": 187,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-05T11:17:29.124208",
+  "last_updated": "2026-08-05T13:54:45.931332",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
