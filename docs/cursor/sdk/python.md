@@ -2,7 +2,7 @@
 
 The `cursor-sdk` package lets you call Cursor's agent from your own Python code. The same agent that runs in the Cursor IDE, CLI, and web app is scriptable from Python with sync and async clients, typed dataclasses, and ordinary iteration for streams and pages. Run the `/sdk` skill inside Cursor to get started.
 
-For the REST API, see the [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints.md).
+For the REST API, see the [Cloud Agents API](https://cursor.com/docs/cloud-agent/api/endpoints.md). For other languages, pin a release of the open [SDK Bridge](https://github.com/cursor/sdk-bridge) and point an agent at the repo to build a thin adapter.
 
 ## Overview
 
@@ -504,27 +504,6 @@ async with await AsyncClient.launch_bridge(
 ```
 
 `DefaultHttpxClient` and `DefaultAsyncHttpxClient` keep the SDK's default timeout and redirect behavior. Plain `httpx.Client` and `httpx.AsyncClient` use httpx defaults instead.
-
-### Connecting to a running bridge
-
-If you already have a bridge endpoint (for example, a sidecar managed by your platform), use `connect(...)` to attach without spawning a new process:
-
-```python
-from cursor_sdk import CursorClient, LocalAgentOptions
-
-with CursorClient.connect(
-    base_url="http://127.0.0.1:8765",
-    auth_token="bridge_token",
-) as client:
-    with client.agents.create(
-        model="composer-2.5",
-        api_key="crsr_key",
-        local=LocalAgentOptions(cwd="."),
-    ) as agent:
-        ...
-```
-
-Async equivalent uses `AsyncClient.connect(...)` and `await client.aclose()`. Both forms default to `allow_api_key_env_fallback=False`; pass `api_key=` on each call or opt into env fallback when constructing the client.
 
 ### Configuring timeouts and retries
 
@@ -1044,18 +1023,6 @@ await run.wait()
 ```
 
 `agent.model` is `None` on resume unless you pass `model` again. Inline MCP servers are not persisted across resume; they often carry secrets and live in memory only. Pass them again on resume, or use file-based MCP config (`.cursor/mcp.json` plus `local.setting_sources`) for servers that should survive.
-
-When you resume a cloud agent through a caller-supplied bridge (`CursorClient.connect(...)` or `AsyncClient.connect(...)`), the SDK requires an explicit `api_key` so the bridge can authenticate downstream agent calls. Pass it through `AgentOptions`:
-
-```python
-from cursor_sdk import AgentOptions
-
-agent = Agent.resume(
-    "bc-abc123",
-    AgentOptions(api_key="crsr_key"),
-    client=client,
-)
-```
 
 ### Local persistence
 

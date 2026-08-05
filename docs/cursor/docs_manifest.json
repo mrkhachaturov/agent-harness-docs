@@ -1089,14 +1089,14 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "78eb2a8284b048b4a3f4d59b90a1d2086e577b78f26b45187573444564233b3c",
-      "last_updated": "2026-07-31T19:30:40.228482"
+      "hash": "d08a79de086671fab881e7353faf565b09c354120dc3b6273ee4f838cc182a90",
+      "last_updated": "2026-08-05T11:17:29.120784"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "97d27b16419a7c184617a71dd4898cc859ce9c93d22b48924de2335f552d4177",
-      "last_updated": "2026-07-31T19:30:40.229335"
+      "hash": "eb178bd3602b5cf5222a798ad656318a9af2f0811a8f0ff45396eaa4830c8510",
+      "last_updated": "2026-08-05T11:17:29.121423"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1118,8 +1118,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-05T08:27:54.149302",
-    "fetch_duration_seconds": 2.021993,
+    "last_fetch_completed": "2026-08-05T11:17:29.124191",
+    "fetch_duration_seconds": 2.907646,
     "total_pages_discovered": 186,
     "pages_fetched_successfully": 186,
     "pages_failed": 0,
@@ -1132,7 +1132,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-05T08:27:54.149318",
+  "last_updated": "2026-08-05T11:17:29.124208",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
