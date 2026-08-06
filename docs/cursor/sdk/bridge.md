@@ -74,6 +74,8 @@ Confirm a fresh binary before you debug adapter code:
 cursor-sdk-bridge --help
 ```
 
+When an RPC fails and your adapter can't see why, run the bridge with `--verbose` (or set `CURSOR_SDK_BRIDGE_LOG=1`) to log each RPC's name, outcome, duration, and full error to stderr. Request and response payloads are never logged.
+
 The repo also has a [curl-only smoke test](https://github.com/cursor/sdk-bridge/blob/main/docs/smoke-test.md) that exercises spawn, `Ping`, `Me`, `CreateAgent`, and `Send` with no adapter code.
 
 ## Adapter shape

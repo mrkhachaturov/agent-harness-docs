@@ -26,7 +26,6 @@ See the [models reference](https://cursor.com/docs/models-and-pricing.md) for th
 
 Cursor Router routes across these models:
 
-- **[Composer 2.5](https://cursor.com/docs/models/cursor-composer-2-5.md)** (fast and standard variants)
 - **[GPT-5.5](https://cursor.com/docs/models/gpt-5-5.md)**
 - **[Claude Opus 5](https://cursor.com/docs/models/claude-opus-5.md)**
 - **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)**

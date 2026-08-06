@@ -1,24 +1,24 @@
 # Plugins
 
-Plugins give your agent new tools and capabilities, ready to use out of the box.
+Plugins give your agent reusable tools and capabilities.
 
 ## What are plugins?
 
-A plugin is a set of:
+A plugin packages one or more components:
 
-- **Rules**: persistent AI guidance and coding standards
-- **Skills**: specialized agent capabilities for complex tasks
-- **Commands**: agent-executable command files
-- **MCP servers**: Model Context Protocol integrations
-- **Hooks**: automation scripts triggered by events
+- **Skills** and **MCP servers**, supported by Agent Plugins and Cursor Plugins
+- **Rules**, **commands**, and **hooks**, available in Cursor Plugins
 
-Plugins work across Cursor desktop, web, and CLI. Browse official plugins in the [Cursor Marketplace](/marketplace). For community plugins and MCP servers, browse [cursor.directory](https://cursor.directory). You can also [build your own](https://cursor.com/docs/reference/plugins.md).
+Plugins work across Cursor desktop, web, and CLI. Cursor also supports [Agent Plugins](https://agent-plugins.org), the open standard for packaging skills and MCP servers, so spec-conformant plugins load in Cursor without changes. Browse official plugins in the [Cursor Marketplace](/marketplace). For community plugins and MCP servers, browse [cursor.directory](https://cursor.directory). You can also [build your own](https://cursor.com/docs/reference/plugins.md).
 
 ## How do I install a plugin?
 
-Browse the [Cursor Marketplace](/marketplace) or search by keyword in the marketplace panel inside Cursor. Plugins can be scoped to a project or installed at the user level.
+Browse the [Cursor Marketplace](/marketplace) or search by keyword in the
+marketplace panel inside Cursor. Agent Plugins and Cursor Plugins use the same
+installation flow. Install either format at the project or user level.
 
-Every plugin is a Git repository. All plugins are open source and [manually reviewed](https://cursor.com/help/security-and-privacy/marketplace-security.md) before listing.
+Marketplace plugins are distributed as Git repositories. All listed plugins are
+open source and [manually reviewed](https://cursor.com/help/security-and-privacy/marketplace-security.md).
 
 ## Are plugins reviewed for security?
 

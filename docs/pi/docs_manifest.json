@@ -33,8 +33,8 @@
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md",
-      "hash": "6dd163b7ad688e39b41bd54bc65ff5621f9869f7bd316429b6df5d8663727a73",
-      "last_updated": "2026-08-03T22:04:34.063781"
+      "hash": "2d186190be6fdebfcf23188f73f0819daa34b7496c95e590289b9f93d9e6a87b",
+      "last_updated": "2026-08-06T23:54:45.999455"
     },
     "index.md": {
       "upstream_path": "packages/coding-agent/docs/index.md",
@@ -51,8 +51,8 @@
     "keybindings.md": {
       "upstream_path": "packages/coding-agent/docs/keybindings.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/keybindings.md",
-      "hash": "bc8e11ee80a85531e8b58256019588027fc82617b27b84d26c5242d35769ba7d",
-      "last_updated": "2026-08-05T22:09:33.226917"
+      "hash": "bc83dc4ae51ea3015e3fd616f5eb5d117f0a068d3d77181a453cdc3b00c612ce",
+      "last_updated": "2026-08-06T23:54:46.000040"
     },
     "llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/llama-cpp.md",
@@ -81,8 +81,8 @@
     "providers.md": {
       "upstream_path": "packages/coding-agent/docs/providers.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/providers.md",
-      "hash": "a774be2244170fa2df6c4ce9b6c3e6e14e36d62a4aa6303d4db2f8eb3dcc409a",
-      "last_updated": "2026-08-03T17:09:10.494468"
+      "hash": "3644ff28ca832b5575595e26120b07c2843a32ca0cee4c66e541b490c2ff3a38",
+      "last_updated": "2026-08-06T23:54:46.000920"
     },
     "quickstart.md": {
       "upstream_path": "packages/coding-agent/docs/quickstart.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-06T13:52:44.206613",
-    "fetch_duration_seconds": 1.213537,
+    "last_fetch_completed": "2026-08-06T23:54:46.002904",
+    "fetch_duration_seconds": 0.998145,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-06T13:52:44.206630",
+  "last_updated": "2026-08-06T23:54:46.002919",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
