@@ -1,6 +1,6 @@
 # Cursor SDK Bridge
 
-The SDK Bridge is a small local server that embeds the TypeScript SDK and exposes the same agent surface over a stable Connect/protobuf protocol. Use it to script Cursor agents from any language.
+The SDK Bridge is a small local server that embeds the TypeScript SDK and exposes the same agent surface over a stable Connect/protobuf protocol. Use it to script Cursor agents from languages without a first-party SDK.
 
 If you write TypeScript or Python, install the first-party [TypeScript](https://cursor.com/docs/sdk/typescript.md) or [Python](https://cursor.com/docs/sdk/python.md) SDK instead. Python already talks to a bundled copy of the bridge.
 
