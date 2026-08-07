@@ -16,9 +16,7 @@ Some AI model providers have location-based restrictions, which means certain mo
 
 ## Can I use Grok 4.5 in the EU?
 
-At launch, [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) is available in every country Cursor normally supports, except the EU. The EU AI Act requires notifying regulators before releasing powerful new AI models, so EU availability follows in the coming weeks.
-
-While you wait, use Auto or pick another model from the model picker.
+Yes. [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) is available in every country where Cursor normally offers models, including the EU.
 
 ## Is Cursor Start available outside India?
 

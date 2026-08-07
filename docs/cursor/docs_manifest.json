@@ -855,8 +855,8 @@
     "help/security-and-privacy/regions.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/regions",
       "original_md_url": "https://cursor.com/help/security-and-privacy/regions.md",
-      "hash": "866866a9ae2407f55b234bc4e40bb2b6597b23149374a2fdbd96ca1ae0207ebc",
-      "last_updated": "2026-07-28T05:45:06.062130"
+      "hash": "9502d7d4e981185387d979a775b04abe6118d771359d86e13db385f76b364d96",
+      "last_updated": "2026-08-07T18:46:49.348053"
     },
     "help/security-and-privacy/sso.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/sso",
@@ -1124,8 +1124,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-07T15:52:04.195297",
-    "fetch_duration_seconds": 2.255086,
+    "last_fetch_completed": "2026-08-07T18:46:49.351384",
+    "fetch_duration_seconds": 2.717939,
     "total_pages_discovered": 187,
     "pages_fetched_successfully": 187,
     "pages_failed": 0,
@@ -1138,7 +1138,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-07T15:52:04.195314",
+  "last_updated": "2026-08-07T18:46:49.351396",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
