@@ -6,7 +6,7 @@ Type `@` in the chat input to attach specific context to your conversation. This
 
 - **Files & Folders**: `@auth.ts` or `@src/components/` to include files or folders (type `/` after selecting a folder to navigate deeper)
 - **Terminals**: `@Terminals` to include terminal output as context
-- **Past Chats**: `@Past Chats` to reference context from a previous conversation
+- **Chats**: `@Chats` to reference context from a previous conversation
 - **Git diffs**: `@Commit (Diff of Working State)` for uncommitted changes, or `@Branch (Diff with Main)` for your full branch diff
 - **Browser**: `@Browser` to attach context from the built-in browser
 
