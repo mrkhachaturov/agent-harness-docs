@@ -111,8 +111,8 @@
     "agent/security/run-modes.md": {
       "original_url": "https://cursor.com/docs/agent/security/run-modes",
       "original_md_url": "https://cursor.com/docs/agent/security/run-modes.md",
-      "hash": "39be7a456a1768299424cb185c90ba864b0d6cbc7a228df18eb00959c911db3a",
-      "last_updated": "2026-06-29T22:53:03.548084"
+      "hash": "556b501c270e1f906eb30930e4d7d52782a1019dd872420cb1f305edfe416206",
+      "last_updated": "2026-08-07T21:35:34.285364"
     },
     "agent/tools/browser.md": {
       "original_url": "https://cursor.com/docs/agent/tools/browser",
@@ -333,8 +333,8 @@
     "enterprise.md": {
       "original_url": "https://cursor.com/docs/enterprise",
       "original_md_url": "https://cursor.com/docs/enterprise.md",
-      "hash": "9c09cd8f02ffe0b2e870306f3879770b2335073d67283518baf0cf1cc213d7f8",
-      "last_updated": "2026-08-04T22:08:38.553137"
+      "hash": "9b80abb9921c6dc4c65ad8a652bfd8e1d59a53beceaefff68d4e74c524c32cba",
+      "last_updated": "2026-08-07T21:35:34.286161"
     },
     "enterprise/admin-setup-guide.md": {
       "original_url": "https://cursor.com/docs/enterprise/admin-setup-guide",
@@ -351,8 +351,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "a70bbc0a4fa40981d57436ce4b04c2d4895ea6e3f5d20b9a6f41305fa20f0b43",
-      "last_updated": "2026-06-29T22:53:03.557362"
+      "hash": "567f8abbc2ecdcc798672334b9ddf2bd5ece1208cb175652ba70c769ef46528c",
+      "last_updated": "2026-08-07T21:35:34.286315"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -381,14 +381,26 @@
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
       "original_md_url": "https://cursor.com/docs/enterprise/model-and-integration-management.md",
-      "hash": "35b93a3b426af50f02433e16c8c9e527d86b8f0ac3064d78fa3e87387fe38ba3",
-      "last_updated": "2026-08-06T23:54:36.559106"
+      "hash": "fb44ba8204f085af931e514520bfa6e53fb9dd6fe016e395001d066573dc4160",
+      "last_updated": "2026-08-07T21:35:34.286527"
     },
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
       "hash": "1bc163bb7c4c60af684a1f1edccb61647b2f71092bb16acacd2c6b6be7d9f48f",
       "last_updated": "2026-08-04T22:08:38.553512"
+    },
+    "enterprise/opentelemetry-export.md": {
+      "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
+      "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
+      "hash": "d4855344906825d3523a2778ef284b2d5d05e6ab5c3444d8b765bffefb885eeb",
+      "last_updated": "2026-08-07T21:35:34.286658"
+    },
+    "enterprise/opentelemetry-export/wire.md": {
+      "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
+      "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
+      "hash": "88a55a72c271a4c6f4774cfdc2625e35e0b5220d75cf42717a8266df5427d53e",
+      "last_updated": "2026-08-07T21:35:34.286780"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1124,21 +1136,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-07T18:46:49.351384",
-    "fetch_duration_seconds": 2.717939,
-    "total_pages_discovered": 187,
-    "pages_fetched_successfully": 187,
+    "last_fetch_completed": "2026-08-07T21:35:34.289779",
+    "fetch_duration_seconds": 2.59293,
+    "total_pages_discovered": 189,
+    "pages_fetched_successfully": 189,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 187,
+    "total_files": 189,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-07T18:46:49.351396",
+  "last_updated": "2026-08-07T21:35:34.289793",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

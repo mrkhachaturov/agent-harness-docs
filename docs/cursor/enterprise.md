@@ -32,6 +32,7 @@ Learn how to deploy, configure, and manage Cursor for your organization. This do
 - [Cyber Safeguards](https://cursor.com/docs/account/enterprise/cyber-safeguards.md) - Apply for Anthropic's Cyber Verification Program (CVP) to use eligible Claude models without cyber safeguards
 - [Spend Limits](https://cursor.com/help/account-and-billing/spend-limits.md) - Configure spending limits to control costs
 - [Compliance & monitoring](https://cursor.com/docs/enterprise/compliance-and-monitoring.md) - Audit logs and tracking
+- [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md) - Usage metrics and logs delivered to your observability stack over OTLP
 - [HIPAA Business Associate Agreements](https://cursor.com/docs/enterprise/baa.md) - Request BAA support for Enterprise customers
 - [Deployment patterns](https://cursor.com/docs/enterprise/deployment-patterns.md) - MDM-managed editor vs self-hosted CLI
 
@@ -75,6 +76,7 @@ Learn how to deploy, configure, and manage Cursor for your organization. This do
 
 - Audit logs - Track authentication, user management, and administrative actions (Enterprise only)
 - SIEM integration - Stream audit logs to your security tools
+- [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md) - Stream usage metrics and logs to your observability stack over OTLP (Enterprise only)
 - [HIPAA Business Associate Agreements](https://cursor.com/docs/enterprise/baa.md) - BAA support for Enterprise customers
 
 ## Getting started

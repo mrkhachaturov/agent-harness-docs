@@ -33,6 +33,10 @@ Instead, Enterprise teams can opt in to new models for their organization.
 
 See [Models](https://cursor.com/docs/models-and-pricing.md) for the current list of available models.
 
+### Auto-review and model access
+
+[Auto-review](https://cursor.com/docs/agent/security/run-modes.md#run-mode) uses a background classifier that runs on [Claude 4.5 Haiku](https://cursor.com/docs/models/claude-4-5-haiku.md) or [GPT-5.4 Mini](https://cursor.com/docs/models/gpt-5-4-mini.md). Blocking all of them disables Auto-review in the IDE, even when team Run Modes includes it. See [Auto-review classifier requirements](https://cursor.com/docs/agent/security/run-modes.md#auto-review-model-requirements).
+
 ## Restrict personal API keys (BYOK controls)
 
 Enterprise teams can prevent team members from using their own API keys with third-party providers (OpenAI, Anthropic, Azure, AWS Bedrock) in Cursor. All usage goes through Cursor's included models and usage pool.
