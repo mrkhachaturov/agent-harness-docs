@@ -3,8 +3,8 @@
     "compaction.md": {
       "upstream_path": "packages/coding-agent/docs/compaction.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/compaction.md",
-      "hash": "c8ef30d39a4521308ff128208425d3bba2410ec81a4ac1d0bb8a0b27ce298b9c",
-      "last_updated": "2026-08-03T12:19:46.634462"
+      "hash": "2a01aeabdd530d58f42b796a4fc1560ed479220e470af0e6f733c16306d8abf5",
+      "last_updated": "2026-08-08T12:37:09.019564"
     },
     "containerization.md": {
       "upstream_path": "packages/coding-agent/docs/containerization.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-08T09:33:14.347406",
-    "fetch_duration_seconds": 0.73754,
+    "last_fetch_completed": "2026-08-08T12:37:09.024389",
+    "fetch_duration_seconds": 1.900571,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-08T09:33:14.347419",
+  "last_updated": "2026-08-08T12:37:09.024404",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
