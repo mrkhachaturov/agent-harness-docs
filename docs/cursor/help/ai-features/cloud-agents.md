@@ -87,6 +87,10 @@ Yes. Use [Automations](https://cursor.com/help/ai-features/automations.md) to ru
 
 Yes. Cloud Agents are available with Privacy Mode. See the [Cloud Agent security page](https://cursor.com/docs/cloud-agent/security-network.md) for details.
 
+## Can Cloud Agents federate into AWS or other clouds without long-lived keys?
+
+Yes. Cursor-managed Cloud Agent VMs can mint short-lived [OIDC JWTs](https://cursor.com/docs/cloud-agent/identity.md) from a local socket. Verifiers use Cursor's public discovery and JWKS endpoints to check the signature and authorize on claims such as `sub`, `team_id`, and `cloud_agent_id`.
+
 ## Related
 
 - [Automations](https://cursor.com/help/ai-features/automations.md)
@@ -95,6 +99,7 @@ Yes. Cloud Agents are available with Privacy Mode. See the [Cloud Agent security
 - [Cloud Agent reference](https://cursor.com/docs/cloud-agent.md)
 - [Cloud Agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md)
 - [Cloud Agent setup](https://cursor.com/docs/cloud-agent/setup.md)
+- [OIDC tokens](https://cursor.com/docs/cloud-agent/identity.md)
 - [Automations](https://cursor.com/docs/cloud-agent/automations.md)
 
 
