@@ -6,7 +6,7 @@ Some AI model providers have location-based restrictions, which means certain mo
 
 1. **Use Auto**: Auto selects an available model for each request
 2. **Pick a different model**: Manually select any model that remains enabled in your account
-3. **Bring your own API key**: If your provider serves your region, add your key in **Cursor Settings** > **Models**. Calls may still fail if the provider blocks your region even with your own key.
+3. **Bring your own API key**: If your provider serves your region, add your key in **Cursor Settings > Models**. Calls may still fail if the provider blocks your region even with your own key.
 
 ## Which regions does each provider support?
 
