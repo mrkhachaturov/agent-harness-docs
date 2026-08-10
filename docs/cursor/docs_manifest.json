@@ -147,8 +147,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "7fdf80a534aeaef58cd5a457c04d115191bd0b337270406bedaae9ecac927857",
-      "last_updated": "2026-08-03T19:27:09.531027"
+      "hash": "4e7061ce98c5d7d37105b25733e72439e6b9f3e58cf7de73bfc3e2d7f8a2b038",
+      "last_updated": "2026-08-10T21:37:37.116817"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -939,8 +939,8 @@
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
       "original_md_url": "https://cursor.com/docs/integrations/azure-devops.md",
-      "hash": "5cf07e370f5ba7b7408b8e8688c3330a5fec36ee3638b380069ad7231250f384",
-      "last_updated": "2026-06-30T15:55:23.032257"
+      "hash": "04db0f8be1ecf58069d264fe47ad8571dcee399abab769e151c922b8417c9b56",
+      "last_updated": "2026-08-10T21:37:37.118305"
     },
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
@@ -1142,8 +1142,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-10T18:49:53.069144",
-    "fetch_duration_seconds": 2.672189,
+    "last_fetch_completed": "2026-08-10T21:37:37.121389",
+    "fetch_duration_seconds": 3.551914,
     "total_pages_discovered": 190,
     "pages_fetched_successfully": 190,
     "pages_failed": 0,
@@ -1156,7 +1156,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-10T18:49:53.069160",
+  "last_updated": "2026-08-10T21:37:37.121401",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
