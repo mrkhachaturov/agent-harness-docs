@@ -27,8 +27,8 @@
     "environment-variables.md": {
       "upstream_path": "packages/coding-agent/docs/environment-variables.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/environment-variables.md",
-      "hash": "66df6d3749416f90dcf4f4b7faac907608a716cfb3f68ae901d94bcba2927078",
-      "last_updated": "2026-08-11T09:57:33.052529"
+      "hash": "453858e845e8eb99d109cbbc627138de7de1ac15bf91c1e501e76c40ef3ad343",
+      "last_updated": "2026-08-11T12:52:18.903788"
     },
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-11T09:57:33.058496",
-    "fetch_duration_seconds": 1.776086,
+    "last_fetch_completed": "2026-08-11T12:52:18.908707",
+    "fetch_duration_seconds": 1.995476,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-11T09:57:33.058508",
+  "last_updated": "2026-08-11T12:52:18.908720",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
