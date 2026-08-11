@@ -399,14 +399,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "d4855344906825d3523a2778ef284b2d5d05e6ab5c3444d8b765bffefb885eeb",
-      "last_updated": "2026-08-07T21:35:34.286658"
+      "hash": "47b07490baa4e2279706cec50645ce60a167595047ca0650edd250a1e64614ef",
+      "last_updated": "2026-08-11T01:14:55.095049"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "88a55a72c271a4c6f4774cfdc2625e35e0b5220d75cf42717a8266df5427d53e",
-      "last_updated": "2026-08-07T21:35:34.286780"
+      "hash": "c45fbd1814f9004cfdf292403fc005224b3b59aa2f2c049b83debea1bc7b3765",
+      "last_updated": "2026-08-11T01:14:55.095285"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1142,8 +1142,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-10T21:37:37.121389",
-    "fetch_duration_seconds": 3.551914,
+    "last_fetch_completed": "2026-08-11T01:14:55.099141",
+    "fetch_duration_seconds": 2.867934,
     "total_pages_discovered": 190,
     "pages_fetched_successfully": 190,
     "pages_failed": 0,
@@ -1156,7 +1156,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-10T21:37:37.121401",
+  "last_updated": "2026-08-11T01:14:55.099154",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
