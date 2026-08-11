@@ -81,6 +81,41 @@ Importing `@cursor/sdk` does not eagerly load the local agent stack. The local e
 
 `@cursor/sdk` publishes self-contained `.d.ts` files, so types resolve without pulling in unpublished workspace packages. After upgrading, re-run your typecheck. Stream types such as `TurnEndedUpdate` resolve to real types instead of `any`.
 
+### Single-file bundles and compiled executables
+
+`@cursor/sdk/bundled` is a self-contained, single-file build of the SDK with the same public API as `@cursor/sdk`. Use it when your app ships as one file: a standalone binary from `bun build --compile`, or a single-file bundle from esbuild.
+
+The default build loads parts of itself lazily at runtime. Single-file bundlers can't follow those loads, so a compiled app fails on the first `Agent.create()` with an error like `Cannot find module './986.js'`. The bundled entries put everything in one file, so your bundler embeds the whole SDK up front.
+
+| Entry                        | Contents                                                |
+| :--------------------------- | :------------------------------------------------------ |
+| `@cursor/sdk/bundled`        | Everything `@cursor/sdk` exports.                       |
+| `@cursor/sdk/bundled/sqlite` | `SqliteLocalAgentStore`, matching `@cursor/sdk/sqlite`. |
+
+```typescript
+import { Agent } from "@cursor/sdk/bundled";
+
+const agent = await Agent.create({
+  apiKey: process.env.CURSOR_API_KEY!,
+  model: { id: "composer-2.5" },
+  local: { cwd: process.cwd() },
+});
+```
+
+Compile with Bun as usual:
+
+```bash
+bun build --compile main.ts --outfile my-agent
+```
+
+A few things to know:
+
+- **The bundled entries run on Bun**, including executables from `bun build --compile`. They load on Node too, but the SQLite store is unavailable there, so the default [local agent store](https://cursor.com/docs/sdk/typescript.md#local-agent-stores) falls back to JSONL. Keep importing `@cursor/sdk` in Node apps that don't ship as one file.
+- **`zod`, `@bufbuild/protobuf`, and the `@connectrpc/*` packages resolve from your own install.** They come with `@cursor/sdk`, and your bundler embeds one shared copy, so Zod schemas you pass to [custom tools](https://cursor.com/docs/sdk/typescript.md#custom-tools) keep working.
+- **Native binaries can't live inside a JavaScript bundle.** Sandboxing and the built-in ripgrep ship in the per-platform `@cursor/sdk-<os>-<arch>` packages. Place `node_modules/@cursor/sdk-<os>-<arch>/` next to your compiled executable and the SDK finds it there. Without it, search falls back to `rg` on `PATH`, and enabling [`sandboxOptions`](https://cursor.com/docs/sdk/typescript.md#sandbox-options) throws a `ConfigurationError`.
+
+Types resolve for the bundled entries the same way they do for `@cursor/sdk`. No TypeScript config changes needed.
+
 ## Quick start
 
 The fastest way in: a local agent against your current working tree, streaming events as they come in. Cloud setup is in [Creating agents](https://cursor.com/docs/sdk/typescript.md#creating-agents) below.
@@ -142,6 +177,24 @@ const agent = await Agent.create({
 
 Cloud agents started by the SDK are filtered out of the default agent list. To
 view them in Cursor Web or a Cursor window, click **Filter > Source > SDK**.
+
+### No-repo cloud agents
+
+Cloud agents can run on an empty VM with no repository. Pass `cloud` with an empty `repos` list, or omit `repos` entirely. Omitting `cloud` selects the local runtime instead.
+
+```typescript
+const agent = await Agent.create({
+  apiKey: process.env.CURSOR_API_KEY!,
+  cloud: { repos: [] },
+});
+
+const run = await agent.send(
+  "Research the top 3 TypeScript testing frameworks and summarize."
+);
+console.log((await run.wait()).result);
+```
+
+No-repo agents must be enabled for your account or team. Repository-scoped API keys can't create them; use an unrestricted service account key or a user API key instead.
 
 ### Session environment variables
 
@@ -1974,16 +2027,16 @@ Config for local agents, passed as `local` on `Agent.create()`. Also exported as
 
 ### CloudAgentOptions
 
-| Property                | Type                                                                                                        | Default                                                | Description                                                                                                                                                                                                                                                                                                                                          |
-| :---------------------- | :---------------------------------------------------------------------------------------------------------- | :----------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `env`                   | `{ type: "cloud"; name?: string } \| { type: "pool"; name?: string } \| { type: "machine"; name?: string }` | `{ type: "cloud" }`                                    | Execution environment target. `cloud` uses Cursor-hosted VMs; set `name` to use a saved Cursor-hosted environment. `pool` and `machine` route to self-hosted workers you run. Omit `repos` and leave `env` at the default for a no-repo agent with an empty workspace. Named Cursor-hosted environments and explicit `repos` are mutually exclusive. |
-| `repos`                 | `Array<{ url: string; startingRef?: string; prUrl?: string }>`                                              |                                                        | Repositories to clone into the VM. Pass one entry for a single-repo agent, or up to 20 for a multi-repo agent. Mutually exclusive with a named `env.name` for Cursor-hosted environments. Pass `prUrl` to attach the agent to an existing PR.                                                                                                        |
-| `workOnCurrentBranch`   | `boolean`                                                                                                   | `false`                                                | Push commits to the existing branch instead of a new one.                                                                                                                                                                                                                                                                                            |
-| `autoCreatePR`          | `boolean`                                                                                                   | `false`                                                | Open a PR when the run finishes.                                                                                                                                                                                                                                                                                                                     |
-| `openAsCursorGithubApp` | `boolean`                                                                                                   | `true` for service-account keys, `false` for user keys | Open PRs as the Cursor GitHub App instead of the API key's owner. The resolved value is echoed on create, get, and list.                                                                                                                                                                                                                             |
-| `skipReviewerRequest`   | `boolean`                                                                                                   | `false`                                                | Skip requesting the calling user as a reviewer on the PR.                                                                                                                                                                                                                                                                                            |
-| `envVars`               | `Record<string, string>`                                                                                    |                                                        | Session-scoped environment variables for cloud agents.                                                                                                                                                                                                                                                                                               |
-| `metadata`              | `Record<string, string>`                                                                                    |                                                        | Caller-owned string tags persisted on the cloud agent. See [Agent metadata](https://cursor.com/docs/sdk/typescript.md#agent-metadata).                                                                                                                                                                                                               |
+| Property                | Type                                                                                                        | Default                                                | Description                                                                                                                                                                                                                                                                                                                                            |
+| :---------------------- | :---------------------------------------------------------------------------------------------------------- | :----------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `env`                   | `{ type: "cloud"; name?: string } \| { type: "pool"; name?: string } \| { type: "machine"; name?: string }` | `{ type: "cloud" }`                                    | Execution environment target. `cloud` uses Cursor-hosted VMs; set `name` to use a saved Cursor-hosted environment. `pool` and `machine` route to self-hosted workers you run. Omit `repos` and leave `env` at the default for a no-repo agent with an empty workspace. Named Cursor-hosted environments and explicit `repos` are mutually exclusive.   |
+| `repos`                 | `Array<{ url: string; startingRef?: string; prUrl?: string }>`                                              |                                                        | Repositories to clone into the VM. Pass one entry for a single-repo agent, or up to 20 for a multi-repo agent. Omit or pass `[]` for a [no-repo agent](https://cursor.com/docs/sdk/typescript.md#no-repo-cloud-agents). Mutually exclusive with a named `env.name` for Cursor-hosted environments. Pass `prUrl` to attach the agent to an existing PR. |
+| `workOnCurrentBranch`   | `boolean`                                                                                                   | `false`                                                | Push commits to the existing branch instead of a new one.                                                                                                                                                                                                                                                                                              |
+| `autoCreatePR`          | `boolean`                                                                                                   | `false`                                                | Open a PR when the run finishes.                                                                                                                                                                                                                                                                                                                       |
+| `openAsCursorGithubApp` | `boolean`                                                                                                   | `true` for service-account keys, `false` for user keys | Open PRs as the Cursor GitHub App instead of the API key's owner. The resolved value is echoed on create, get, and list.                                                                                                                                                                                                                               |
+| `skipReviewerRequest`   | `boolean`                                                                                                   | `false`                                                | Skip requesting the calling user as a reviewer on the PR.                                                                                                                                                                                                                                                                                              |
+| `envVars`               | `Record<string, string>`                                                                                    |                                                        | Session-scoped environment variables for cloud agents.                                                                                                                                                                                                                                                                                                 |
+| `metadata`              | `Record<string, string>`                                                                                    |                                                        | Caller-owned string tags persisted on the cloud agent. See [Agent metadata](https://cursor.com/docs/sdk/typescript.md#agent-metadata).                                                                                                                                                                                                                 |
 
 ### AgentDefinition
 
