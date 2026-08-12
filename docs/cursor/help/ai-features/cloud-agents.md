@@ -91,6 +91,10 @@ Yes. Cloud Agents are available with Privacy Mode. See the [Cloud Agent security
 
 Yes. Cursor-managed Cloud Agent VMs can mint short-lived [OIDC JWTs](https://cursor.com/docs/cloud-agent/identity.md) from a local socket. Verifiers use Cursor's public discovery and JWKS endpoints to check the signature and authorize on claims such as `sub`, `team_id`, and `cloud_agent_id`.
 
+## Can Cloud Agents read their own id, owner, or current turn from the VM?
+
+Yes. Cursor-managed Cloud Agent VMs serve an [agent metadata](https://cursor.com/docs/cloud-agent/metadata.md) API on the same local socket as [OIDC tokens](https://cursor.com/docs/cloud-agent/identity.md). A `GET` of a path such as `/v1/meta-data/agent/id` returns the bare value as text.
+
 ## Related
 
 - [Automations](https://cursor.com/help/ai-features/automations.md)
@@ -100,6 +104,7 @@ Yes. Cursor-managed Cloud Agent VMs can mint short-lived [OIDC JWTs](https://cur
 - [Cloud Agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md)
 - [Cloud Agent setup](https://cursor.com/docs/cloud-agent/setup.md)
 - [OIDC tokens](https://cursor.com/docs/cloud-agent/identity.md)
+- [Agent metadata](https://cursor.com/docs/cloud-agent/metadata.md)
 - [Automations](https://cursor.com/docs/cloud-agent/automations.md)
 
 

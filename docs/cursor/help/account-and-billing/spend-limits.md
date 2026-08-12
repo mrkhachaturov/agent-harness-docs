@@ -10,6 +10,22 @@ Set spending limits to prevent unexpected on-demand charges. When a limit is rea
 
 Limit changes take effect immediately. Setting a limit to "No Limit" removes it.
 
+## Who can change spend limits?
+
+On Teams and Enterprise plans, whether team members can enable or disable on-demand usage and change the team-level spend limit depends on the **Only Admins Can Edit Usage Settings** toggle under **Permissions** in the [Spending tab](https://cursor.com/dashboard/spending):
+
+- **When the toggle is off**, any team member can change these settings.
+- **When the toggle is on**, only team admins can.
+
+To restrict these controls to admins:
+
+1. As a team admin, go to the [Spending tab](https://cursor.com/dashboard/spending)
+2. Under **Permissions**, enable **Only Admins Can Edit Usage Settings**
+
+Once enabled, team members can still view the Spending tab, but only admins can change on-demand usage and team-level limits. Member-level and group-level overrides on Enterprise plans are always admin-only.
+
+Enterprise admins can review changes to this setting in the [audit log](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#audit-logs) under the `admin_only_usage_pricing` event.
+
 ## What happens when a spend limit is reached?
 
 - AI features stop working for that specific user
