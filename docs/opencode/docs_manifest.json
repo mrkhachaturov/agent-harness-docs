@@ -213,13 +213,13 @@
     "zen.md": {
       "upstream_path": "packages/web/src/content/docs/zen.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/zen.mdx",
-      "hash": "0337c1f03297c119fbd1eb304df36957d88bafd3cbd2ab73c56d9bbcaa671837",
-      "last_updated": "2026-08-11T18:56:17.238943"
+      "hash": "b6a8331bca20c9790fa77f4b3368d23e35ba76077ebde33fedb2b414e4ede952",
+      "last_updated": "2026-08-12T04:45:34.611180"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-12T01:22:58.806049",
-    "fetch_duration_seconds": 9.018977,
+    "last_fetch_completed": "2026-08-12T04:45:34.611321",
+    "fetch_duration_seconds": 6.940895,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-12T01:22:58.806072",
+  "last_updated": "2026-08-12T04:45:34.611338",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
