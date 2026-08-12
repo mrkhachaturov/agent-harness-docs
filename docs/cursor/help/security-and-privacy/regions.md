@@ -32,6 +32,7 @@ Enterprise customers can enroll in US-only data residency so inference, processi
 - [Privacy and Data Governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md#data-residency)
 - [Privacy and data](https://cursor.com/help/security-and-privacy/privacy.md)
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
+- [Grok 4.6](https://cursor.com/help/models-and-usage/grok-4-6.md)
 - [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 
 

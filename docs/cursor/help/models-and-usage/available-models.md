@@ -102,6 +102,7 @@ See the [regions reference](https://cursor.com/docs/account/regions.md) for prov
 ## Related
 
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
+- [Grok 4.6](https://cursor.com/help/models-and-usage/grok-4-6.md)
 - [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 - [API keys](https://cursor.com/help/models-and-usage/api-keys.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)

@@ -4,7 +4,7 @@ Cursor Start is a paid plan for developers who want Cursor's AI coding agent at 
 
 ## What is Cursor Start?
 
-Cursor Start is launching as an India-specific subscription that gives you access to Cursor's agentic coding features: plan work, research your codebase, and run longer agents in Agent, Plan, and Ask modes. The plan includes access to Cursor models (Grok 4.5 and Composer 2.5) with a larger monthly usage pool than the free Hobby plan, plus Cloud Agents.
+Cursor Start is launching as an India-specific subscription that gives you access to Cursor's agentic coding features: plan work, research your codebase, and run longer agents in Agent, Plan, and Ask modes. The plan includes access to Cursor models (Grok 4.6, Grok 4.5, and Composer 2.5) with a larger monthly usage pool than the free Hobby plan, plus Cloud Agents.
 
 ## How much does Cursor Start cost?
 
@@ -20,27 +20,28 @@ Cursor Start includes access to Cursor models only:
 
 | Model            | On Cursor Start                         |
 | ---------------- | --------------------------------------- |
+| **Grok 4.6**     | Yes, fixed medium effort, non-fast mode |
 | **Grok 4.5**     | Yes, fixed medium effort, non-fast mode |
 | **Composer 2.5** | Yes, non-fast mode                      |
 
 Auto mode and third-party models (OpenAI, Anthropic, Google, and others) are not available on Cursor Start.
 
-## Can I change Grok 4.5 effort levels on Cursor Start?
+## Can I change Grok effort levels on Cursor Start?
 
-No. On Cursor Start, Grok 4.5 runs at a fixed medium effort level in non-fast mode. You cannot switch between low, medium, and high effort, or turn on Fast mode. Upgrade to Pro or a higher plan to choose effort levels and Fast mode.
+No. On Cursor Start, Grok 4.6 and Grok 4.5 both run at a fixed medium effort level in non-fast mode. You cannot switch between low, medium, and high effort, or turn on Fast mode. Upgrade to Pro or a higher plan to choose effort levels and Fast mode.
 
 ## What features are included in and excluded from Cursor Start?
 
-| Feature                    | Cursor Start |
-| -------------------------- | ------------ |
-| Agent, Plan, and Ask modes | Included     |
-| Cloud Agents               | Included     |
-| Grok 4.5 and Composer 2.5  | Included     |
-| Bugbot                     | Not included |
-| Cursor SDK                 | Not included |
-| Automations                | Not included |
-| Third-party models         | Not included |
-| On-demand spend            | Not included |
+| Feature                              | Cursor Start |
+| ------------------------------------ | ------------ |
+| Agent, Plan, and Ask modes           | Included     |
+| Cloud Agents                         | Included     |
+| Grok 4.6, Grok 4.5, and Composer 2.5 | Included     |
+| Bugbot                               | Not included |
+| Cursor SDK                           | Not included |
+| Automations                          | Not included |
+| Third-party models                   | Not included |
+| On-demand spend                      | Not included |
 
 ## How does usage work on Cursor Start?
 
@@ -48,7 +49,7 @@ Cursor Start includes a monthly usage pool for Cursor models. Requests in Cursor
 
 Usage resets each billing cycle. Unused usage does not roll over.
 
-**Grok 4.5 vs Composer 2.5:** Grok 4.5 draws from the same monthly pool but consumes usage about **3×** faster than Composer.
+**Grok models vs Composer 2.5:** Grok 4.6 and Grok 4.5 draw from the same monthly pool as Composer 2.5, but consume usage faster. Grok 4.5 consumes usage about **3×** faster than Composer 2.5.
 
 Check your remaining usage on [cursor.com/dashboard](https://cursor.com/dashboard).
 
