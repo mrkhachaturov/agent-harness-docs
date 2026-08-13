@@ -39,8 +39,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "8af63c55c5230a7a311011fd431c951ad7cffbf0041a3c6ddd78041c1c266f32",
-      "last_updated": "2026-08-13T15:55:21.927235"
+      "hash": "9af3acf50d3f33710f46b8c3dcf42dcdfd760f8df3ce78ed341edc56791543d8",
+      "last_updated": "2026-08-13T18:56:51.476303"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -267,8 +267,8 @@
     "cloud-agent/builds.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/builds",
       "original_md_url": "https://cursor.com/docs/cloud-agent/builds.md",
-      "hash": "0ef90fb6dbad5641b415ab0537851af888734d823ceb1b8a56711d9fe53d8375",
-      "last_updated": "2026-08-03T19:27:09.531579"
+      "hash": "f2ca7465f7952c2123d8414f314a5d613bb6fefa92ddb9deaafa32d7d1842fe2",
+      "last_updated": "2026-08-13T18:56:51.477105"
     },
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
@@ -999,8 +999,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "aac3aaafa2e68f1570b544a4021cb55052ff8da245fd5e900d2b49b02cdb48ee",
-      "last_updated": "2026-08-13T15:55:21.929062"
+      "hash": "0886048256bbb2a79b9ee103d5109ef56391a890c4216a426e6f96e2b05f577f",
+      "last_updated": "2026-08-13T18:56:51.478398"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -1083,8 +1083,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "0881b0285d9db49183ecf1d66b2af64194f9c3f5d8f3af64df4fbd6286231fed",
-      "last_updated": "2026-08-13T15:55:21.929527"
+      "hash": "97524ba2f2826d386a8340c562702c4d618d8602feeef343835a5e0d63213cf2",
+      "last_updated": "2026-08-13T18:56:51.478900"
     },
     "models/claude-fable-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5",
@@ -1116,11 +1116,11 @@
       "hash": "2aa3bdcf5c3e63a8e697f8a5ab71e64953ce4e38080050aa25e6c1af5e3fd2d7",
       "last_updated": "2026-07-22T19:11:14.392479"
     },
-    "models/gemini-3-6-flash.md": {
-      "original_url": "https://cursor.com/docs/models/gemini-3-6-flash",
-      "original_md_url": "https://cursor.com/docs/models/gemini-3-6-flash.md",
-      "hash": "3ea0c8c52264bd9b079a0b44a1ec74459706221cb3b867f2a5e86cb7df1348de",
-      "last_updated": "2026-07-22T19:11:14.392649"
+    "models/gemini-3-7-flash.md": {
+      "original_url": "https://cursor.com/docs/models/gemini-3-7-flash",
+      "original_md_url": "https://cursor.com/docs/models/gemini-3-7-flash.md",
+      "hash": "5c98bf86a320a9b3d84a5ba4644fc15fe2273e55673dbc9b3cb033c5e0bd6fa1",
+      "last_updated": "2026-08-13T18:56:51.479121"
     },
     "models/gpt-5-6-luna.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-luna",
@@ -1214,8 +1214,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-13T15:55:21.933144",
-    "fetch_duration_seconds": 1.980158,
+    "last_fetch_completed": "2026-08-13T18:56:51.482446",
+    "fetch_duration_seconds": 1.680256,
     "total_pages_discovered": 202,
     "pages_fetched_successfully": 202,
     "pages_failed": 0,
@@ -1228,7 +1228,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-13T15:55:21.933157",
+  "last_updated": "2026-08-13T18:56:51.482459",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
