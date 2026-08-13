@@ -850,8 +850,8 @@
     "self-hosted-environments-configuration.md": {
       "original_url": "https://code.claude.com/docs/en/self-hosted-environments-configuration",
       "original_md_url": "https://code.claude.com/docs/en/self-hosted-environments-configuration.md",
-      "hash": "913bf0891a25ed02e9fd037b304b4acb50a59859530feb138486c004bf64ec70",
-      "last_updated": "2026-08-13T01:24:03.176119"
+      "hash": "c6b12f510c2627accc943085c1f90227034a187d197a183838eab9f889bf52e2",
+      "last_updated": "2026-08-13T15:54:43.814806"
     },
     "self-hosted-environments-deploy.md": {
       "original_url": "https://code.claude.com/docs/en/self-hosted-environments-deploy",
@@ -874,8 +874,8 @@
     "self-hosted-environments-reference.md": {
       "original_url": "https://code.claude.com/docs/en/self-hosted-environments-reference",
       "original_md_url": "https://code.claude.com/docs/en/self-hosted-environments-reference.md",
-      "hash": "6ddfb34196e06d173cc953c107fde3571cd6d246c0a80d565d16df5889763125",
-      "last_updated": "2026-08-13T01:24:06.651734"
+      "hash": "abeacfd00187b2adbbc398c1de12ae7a7c6d3d0e5cfd08f91ce626b0c70f785f",
+      "last_updated": "2026-08-13T15:54:47.256554"
     },
     "self-hosted-environments-testing.md": {
       "original_url": "https://code.claude.com/docs/en/self-hosted-environments-testing",
@@ -1125,8 +1125,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-13T12:57:14.547738",
-    "fetch_duration_seconds": 145.260734,
+    "last_fetch_completed": "2026-08-13T15:55:19.235619",
+    "fetch_duration_seconds": 158.515826,
     "total_pages_discovered": 187,
     "pages_fetched_successfully": 188,
     "pages_failed": 0,
@@ -1136,7 +1136,7 @@
     "total_files": 187,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-08-13T12:57:14.547754",
+  "last_updated": "2026-08-13T15:55:19.235638",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
