@@ -843,8 +843,8 @@
     "help/grok-bot/supergrok-heavy.md": {
       "original_url": "https://cursor.com/help/grok-bot/supergrok-heavy",
       "original_md_url": "https://cursor.com/help/grok-bot/supergrok-heavy.md",
-      "hash": "a4fc970d541facc4d1f505afb760685d7fffb710665c023b745e50d5782e8314",
-      "last_updated": "2026-08-12T15:56:33.544185"
+      "hash": "d5a179654feded84a96b0764dad46826a8b660ea704c3c41f95d2b02f26c6bef",
+      "last_updated": "2026-08-14T04:46:23.087454"
     },
     "help/integrations/cli.md": {
       "original_url": "https://cursor.com/help/integrations/cli",
@@ -1214,8 +1214,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-14T01:23:53.431841",
-    "fetch_duration_seconds": 1.906518,
+    "last_fetch_completed": "2026-08-14T04:46:23.091178",
+    "fetch_duration_seconds": 3.223382,
     "total_pages_discovered": 202,
     "pages_fetched_successfully": 202,
     "pages_failed": 0,
@@ -1228,7 +1228,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-14T01:23:53.431855",
+  "last_updated": "2026-08-14T04:46:23.091189",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
