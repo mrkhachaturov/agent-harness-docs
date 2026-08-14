@@ -57,8 +57,8 @@
     "account/teams/sso.md": {
       "original_url": "https://cursor.com/docs/account/teams/sso",
       "original_md_url": "https://cursor.com/docs/account/teams/sso.md",
-      "hash": "8bf3173932c1e9e2305618510d39ebc55fb21cb47ba900b025162e65cffbd279",
-      "last_updated": "2026-07-27T17:00:09.866128"
+      "hash": "0c25172812c693d01b5049e645c8fcfecc375b034bed1f51a947b2e6815a8a96",
+      "last_updated": "2026-08-14T01:23:53.426016"
     },
     "agent/agent-review.md": {
       "original_url": "https://cursor.com/docs/agent/agent-review",
@@ -243,8 +243,8 @@
     "cloud-agent.md": {
       "original_url": "https://cursor.com/docs/cloud-agent",
       "original_md_url": "https://cursor.com/docs/cloud-agent.md",
-      "hash": "a071a60c38cc214582e86bea632c31178cca6ebf393bdba96bf67e4c32142e28",
-      "last_updated": "2026-08-12T21:41:02.487922"
+      "hash": "8ff480c6e6e713ee1a23f7a2cdcf2e5f9bc36e76f758c5cb63d99f96b21308d4",
+      "last_updated": "2026-08-14T01:23:53.426655"
     },
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
@@ -315,8 +315,8 @@
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
       "original_md_url": "https://cursor.com/docs/cloud-agent/settings.md",
-      "hash": "ff1eb7f7ca99d39d68fc552bd2e656b5fc0b12207f3cfbba22620e26b8a14e4d",
-      "last_updated": "2026-08-03T17:09:00.593878"
+      "hash": "bd74a5c2285b9486ef091cd3c5bb69da2b8efedcf17c38e9ed12520117870a77",
+      "last_updated": "2026-08-14T01:23:53.427117"
     },
     "cloud-agent/setup.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/setup",
@@ -1023,8 +1023,8 @@
     "integrations/github.md": {
       "original_url": "https://cursor.com/docs/integrations/github",
       "original_md_url": "https://cursor.com/docs/integrations/github.md",
-      "hash": "b664f11223a906137374bdb3328538b8eb15ef71f766b939c8dc3fd99bdbd62e",
-      "last_updated": "2026-08-04T22:08:38.554944"
+      "hash": "a85477de53c40647cdf29cbfe0ad7f6c9016fc07ae22a1b1eede67dd43faf37f",
+      "last_updated": "2026-08-14T01:23:53.428335"
     },
     "integrations/gitlab.md": {
       "original_url": "https://cursor.com/docs/integrations/gitlab",
@@ -1065,8 +1065,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "438c215193eba4a1a4b62971d11a7bdeb985532365740f2654ce6faa5bea4c11",
-      "last_updated": "2026-07-17T16:14:12.064806"
+      "hash": "a8dda2d49215942a3fb8a4039a3307a1212db52a126a7be882a2daaa7a8defa5",
+      "last_updated": "2026-08-14T01:23:53.428646"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1214,8 +1214,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-13T21:40:44.545424",
-    "fetch_duration_seconds": 2.67717,
+    "last_fetch_completed": "2026-08-14T01:23:53.431841",
+    "fetch_duration_seconds": 1.906518,
     "total_pages_discovered": 202,
     "pages_fetched_successfully": 202,
     "pages_failed": 0,
@@ -1228,7 +1228,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-13T21:40:44.545437",
+  "last_updated": "2026-08-14T01:23:53.431855",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
