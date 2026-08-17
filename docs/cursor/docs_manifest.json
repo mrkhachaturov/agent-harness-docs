@@ -747,8 +747,8 @@
     "help/customization/rules.md": {
       "original_url": "https://cursor.com/help/customization/rules",
       "original_md_url": "https://cursor.com/help/customization/rules.md",
-      "hash": "332892614521ff90a64b984b0f41b31fbf469da385d2956f75b35616bbb09a00",
-      "last_updated": "2026-07-30T22:11:05.003399"
+      "hash": "19e6d1c01e6cf141af61ce29b98baf8ad4aeda8d01b9055715b20d243c8d98c9",
+      "last_updated": "2026-08-17T15:22:43.184423"
     },
     "help/customization/skills.md": {
       "original_url": "https://cursor.com/help/customization/skills",
@@ -1214,8 +1214,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-17T12:33:18.902800",
-    "fetch_duration_seconds": 1.533241,
+    "last_fetch_completed": "2026-08-17T15:22:43.188076",
+    "fetch_duration_seconds": 1.701731,
     "total_pages_discovered": 202,
     "pages_fetched_successfully": 202,
     "pages_failed": 0,
@@ -1228,7 +1228,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-17T12:33:18.902813",
+  "last_updated": "2026-08-17T15:22:43.188088",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -30,7 +30,7 @@ Project rules live in your codebase and are version-controlled. Your whole team 
 
 ## How do I set up user rules?
 
-User rules are global preferences that apply across all your projects.
+User rules are global preferences that apply across all your projects. They sync with your Cursor account across devices.
 
 1. Open **Customize** in the sidebar
 2. Click **Rules**
@@ -66,10 +66,11 @@ For large projects, split rules into focused files instead of one long rule. Eac
 ## Where are rules stored?
 
 - **Project rules** are stored in `.cursor/rules/` inside your project folder. They're version-controlled with git.
-- **User rules** are stored locally in your Cursor settings, not in any project directory. They apply across all your projects on that machine.
+- **User rules** in Cursor Settings are stored on your Cursor account. They apply across all your projects and sync when you sign in on another machine.
+- **User rule files** in `~/.cursor/rules` (Windows: `%USERPROFILE%\.cursor\rules`) stay on the machine and do not sync.
 - **Team rules** are stored on Cursor's servers and managed from the team dashboard. They sync automatically to all team members. Team rules support glob patterns, so you can scope a rule to specific file types (e.g., `**/*.py`).
 
-User rules and team rules are not included in profile exports. If you switch machines, re-enter user rules manually or move them into a project rule file.
+User rules and team rules are not included in profile exports. Signing in on a new machine syncs your account user rules.
 
 ## How do team rules work?
 
