@@ -267,8 +267,8 @@
     "cloud-agent/builds.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/builds",
       "original_md_url": "https://cursor.com/docs/cloud-agent/builds.md",
-      "hash": "f2ca7465f7952c2123d8414f314a5d613bb6fefa92ddb9deaafa32d7d1842fe2",
-      "last_updated": "2026-08-13T18:56:51.477105"
+      "hash": "4a376bce7f9ef99451200bfb4d8756e25b29ebc45bc6b2a65b93f6e5b14fedea",
+      "last_updated": "2026-08-18T00:54:09.299254"
     },
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
@@ -1286,8 +1286,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-17T21:22:04.404045",
-    "fetch_duration_seconds": 1.667433,
+    "last_fetch_completed": "2026-08-18T00:54:09.303850",
+    "fetch_duration_seconds": 2.400585,
     "total_pages_discovered": 214,
     "pages_fetched_successfully": 214,
     "pages_failed": 0,
@@ -1300,7 +1300,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-17T21:22:04.404059",
+  "last_updated": "2026-08-18T00:54:09.303865",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
