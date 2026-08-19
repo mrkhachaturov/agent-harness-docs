@@ -18,6 +18,12 @@ Plugins let agents talk to external services. Plugin connections belong to the *
 
 If you use Grok Bot through a Cursor team, your Cursor team admin controls which marketplace plugins are available. If a plugin is disabled, ask your admin to enable it.
 
+## Why does connecting to Zoom fail with error 4700 during authorization?
+
+This is a known issue, and our engineers are working on a fix. Zoom authorization from the Grok Bot desktop app currently fails with error 4700 (Invalid redirect), and no change on your end will resolve it.
+
+There is no workaround for now. We will update this article once Zoom can be connected.
+
 ## Related
 
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)

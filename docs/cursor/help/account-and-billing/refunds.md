@@ -23,6 +23,17 @@ Outside the 14-day window, or with usage during the period, that payment is gene
 
 This policy does not limit any rights you may have under applicable consumer protection laws.
 
+## Can I get a prorated refund or credit if I downgrade mid-cycle?
+
+No. Cursor does not issue prorated refunds when you downgrade an active subscription that already has usage during the current billing period.
+
+If you downgrade or cancel after using part of your plan, these are your self-serve options:
+
+- **Cancel:** Stops future renewal charges. You keep paid access until the current billing period ends. See [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md).
+- **Schedule a downgrade:** Keeps your current plan until the period ends, then switches to the lower plan at the next renewal. See [How do I downgrade my plan?](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-downgrade-my-plan).
+
+Refund reviews still follow the [14-day eligibility rules](https://cursor.com/help/account-and-billing/refunds.md#when-am-i-eligible-for-a-refund-individual-plans) above. A downgrade alone does not qualify for a partial credit on the current cycle.
+
 ## Which details should I include in a refund request?
 
 [Contact support](https://cursor.com/help.md) while signed in to your Cursor account. Include these details so we can verify your account quickly:

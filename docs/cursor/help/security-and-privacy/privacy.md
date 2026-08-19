@@ -42,6 +42,24 @@ Yes. Privacy Mode works the same for [Grok 4.5](https://cursor.com/help/models-a
 
 Like other models, Grok 4.5 is hosted by the model provider, a trusted partner, or Cursor. See the list of [sub-processors](https://trust.cursor.com/subprocessors) for details.
 
+## Does Cursor's DPA cover Grok Bot?
+
+Cursor's [Data Processing Agreement](https://cursor.com/terms/dpa) governs how Cursor processes personal data under enterprise contracts. For Teams and Enterprise customers, the DPA and [privacy and data governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md) docs describe processor commitments and sub-processor coverage.
+
+Current sub-processors are listed at [trust.cursor.com/subprocessors](https://trust.cursor.com/subprocessors). If you are on an individual plan, the DPA does not apply; your data handling follows the [Privacy Policy](https://cursor.com/privacy).
+
+## Does Privacy Mode prevent xAI from training on my Grok Bot data?
+
+Privacy Mode in the Cursor editor prevents your code from being used for training by Cursor or model providers. Grok Bot runs on a separate product surface with its own data flows.
+
+For how your data is handled across Cursor products, see [How your data is used](https://cursor.com/data-use) and the [sub-processor list](https://trust.cursor.com/subprocessors).
+
+## Where is Grok Bot computer data stored, how long is it kept, and how do I delete it?
+
+Grok Bot can copy or create files on a cloud computer during agent runs. Storage location, retention period, and deletion options for that data depend on your account type and how the files were created.
+
+To request deletion of files that contain personal data, [contact support](https://cursor.com/help.md) with your account email, the agent name, and a description of the files. This follows the same data-deletion process as the rest of Cursor; see [How your data is used](https://cursor.com/data-use).
+
 ## Are there exceptions to zero data retention?
 
 ZDR doesn't apply when you use your own API keys. In that case, your data handling follows your provider's privacy policy.
