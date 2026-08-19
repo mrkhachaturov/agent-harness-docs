@@ -87,8 +87,8 @@
     "agent/overview.md": {
       "original_url": "https://cursor.com/docs/agent/overview",
       "original_md_url": "https://cursor.com/docs/agent/overview.md",
-      "hash": "200ac95ea6bcb9ec61c65efd53eff388c1b5f3620b9420f9fc0953f0b2279ac4",
-      "last_updated": "2026-07-08T02:09:33.201194"
+      "hash": "7bf55b82e7dd3a8e32225c2b00147d14ee28019c44d04a4fa55f8cb2eb3db343",
+      "last_updated": "2026-08-19T18:27:28.228407"
     },
     "agent/plan-mode.md": {
       "original_url": "https://cursor.com/docs/agent/plan-mode",
@@ -99,8 +99,8 @@
     "agent/prompting.md": {
       "original_url": "https://cursor.com/docs/agent/prompting",
       "original_md_url": "https://cursor.com/docs/agent/prompting.md",
-      "hash": "eb67e2ef35e1a7e10b1c500a1dcc338bdb460585742c4226b56787ca96ebfa10",
-      "last_updated": "2026-08-07T15:52:04.189679"
+      "hash": "5dfbedd4ca7815126c9cd3f4f0e1967c991ff4320a583f6fa362485be1d9f7b2",
+      "last_updated": "2026-08-19T18:27:28.228671"
     },
     "agent/security.md": {
       "original_url": "https://cursor.com/docs/agent/security",
@@ -219,8 +219,8 @@
     "cli/reference/slash-commands.md": {
       "original_url": "https://cursor.com/docs/cli/reference/slash-commands",
       "original_md_url": "https://cursor.com/docs/cli/reference/slash-commands.md",
-      "hash": "76389688bd520a359b304880d6b34372275e89ed1a74bcbfb9bfe54507d2ea31",
-      "last_updated": "2026-07-17T19:02:52.233100"
+      "hash": "a39f8c0086b6ca6e2bfde6c3595142987cdef4489ad0c0e213510bb746947111",
+      "last_updated": "2026-08-19T18:27:28.229221"
     },
     "cli/reference/terminal-setup.md": {
       "original_url": "https://cursor.com/docs/cli/reference/terminal-setup",
@@ -237,8 +237,8 @@
     "cli/using.md": {
       "original_url": "https://cursor.com/docs/cli/using",
       "original_md_url": "https://cursor.com/docs/cli/using.md",
-      "hash": "f61dc3ecf537c503064a33e9c40789ade8f3f05998953b954dc0032d8f3a95f8",
-      "last_updated": "2026-06-29T22:53:03.553050"
+      "hash": "4ddc7b0aaef3c271bf86e234901b7cbe027e16b240d67fbf8e4933a7399676e1",
+      "last_updated": "2026-08-19T18:27:28.229461"
     },
     "cloud-agent.md": {
       "original_url": "https://cursor.com/docs/cloud-agent",
@@ -273,8 +273,8 @@
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
       "original_md_url": "https://cursor.com/docs/cloud-agent/capabilities.md",
-      "hash": "125c25f08af1528689befdbea38a913c521ce66fc0e207aa53c417575dfb47d0",
-      "last_updated": "2026-08-12T21:41:02.488268"
+      "hash": "a1e1fbcb58ed413efbef0adae6c07321484f9233a469b1f37ee0521275624859",
+      "last_updated": "2026-08-19T18:27:28.229884"
     },
     "cloud-agent/identity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/identity",
@@ -1281,19 +1281,19 @@
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
       "original_md_url": "https://cursor.com/docs/skills.md",
-      "hash": "32d6836220da99f9f851a39031a188a887b6ea038a2730a288e8a3b820ca4064",
-      "last_updated": "2026-06-30T15:55:23.033301"
+      "hash": "17cebe1e48a1cea983d4080bf3592e57548f3444b938f498d91cce981626b46b",
+      "last_updated": "2026-08-19T18:27:28.231869"
     },
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
       "original_md_url": "https://cursor.com/docs/subagents.md",
-      "hash": "bdb16d67cd9b2df83410ff8dffb109f0341925f92b1093d6efe0452ff25257ad",
-      "last_updated": "2026-07-24T19:21:36.631759"
+      "hash": "03e3f64e0bb55ae1ce3c2eaf11669254192a6d8f681a72258b4dd5ed03efbd5c",
+      "last_updated": "2026-08-19T18:27:28.232130"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-19T15:27:45.982093",
-    "fetch_duration_seconds": 1.76734,
+    "last_fetch_completed": "2026-08-19T18:27:28.234848",
+    "fetch_duration_seconds": 3.299447,
     "total_pages_discovered": 215,
     "pages_fetched_successfully": 215,
     "pages_failed": 0,
@@ -1306,7 +1306,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-19T15:27:45.982106",
+  "last_updated": "2026-08-19T18:27:28.234860",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
