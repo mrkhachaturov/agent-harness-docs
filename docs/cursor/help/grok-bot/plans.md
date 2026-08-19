@@ -15,7 +15,7 @@ Learn how plans, usage, and billing work with Grok Bot.
 
 Cursor Pro and Pro+ do not include Grok Bot access. For ongoing access, use Cursor Ultra or an eligible Premium team seat.
 
-If you have SuperGrok Heavy, read [Get access with SuperGrok Heavy](https://cursor.com/help/grok-bot/supergrok-heavy.md) before claiming the offer because different plan-transition rules apply.
+If you have SuperGrok Heavy, read [Get access with SuperGrok Heavy](https://cursor.com/help/grok-bot/supergrok-heavy.md) before claiming the offer. Claiming can cancel an existing Stripe-billed Pro or Pro+ plan.
 
 ## Do I need a separate Grok Bot subscription?
 

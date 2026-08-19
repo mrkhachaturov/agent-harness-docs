@@ -21,6 +21,14 @@ No Cursor payment card is required.
 3. Sign into the **Grok account that has SuperGrok Heavy**.
 4. Return to Grok Bot and confirm you have access.
 
+## How does the SuperGrok Heavy offer affect Cursor Pro or Pro+?
+
+**Read this before you claim:** if you have a Stripe-billed Cursor Pro or Pro+ subscription and claim free Ultra through SuperGrok Heavy, Cursor cancels your current Pro or Pro+ plan and replaces it with free Ultra.
+
+If the free Ultra later ends, your old Pro or Pro+ plan does **not** return automatically.
+
+Apple-billed Pro or Pro+ subscriptions cannot be transitioned automatically, so the promotion may be declined rather than stacking Ultra on top.
+
 ## Which accounts are not eligible for the SuperGrok Heavy offer?
 
 - **Already on Ultra:** linking SuperGrok Heavy does not add extra Ultra access. You already have Grok Bot through Ultra.
