@@ -23,7 +23,7 @@ No. Paid access is included with Cursor Ultra or an eligible Premium team seat.
 
 ## How does Grok Bot usage work?
 
-Paid Grok Bot access includes usage that resets weekly.
+Paid Grok Bot access includes usage that resets weekly. When that weekly included usage runs out, extra Grok Bot usage can continue on your account's shared on-demand spend if on-demand is enabled.
 
 ## How does the Grok Bot free trial work and how do I use it efficiently?
 
