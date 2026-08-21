@@ -831,8 +831,8 @@
     "help/grok-bot/plans.md": {
       "original_url": "https://cursor.com/help/grok-bot/plans",
       "original_md_url": "https://cursor.com/help/grok-bot/plans.md",
-      "hash": "3a7043fa6d7e3c420cbecef567b41cf6ea2e2398ffddc73662aedad4b10075bf",
-      "last_updated": "2026-08-21T18:31:39.622395"
+      "hash": "9f07edf1ddfd527a816797f20ca10b250d2e6aec1798f9e342bebb7a4e2c1311",
+      "last_updated": "2026-08-21T21:20:19.324866"
     },
     "help/grok-bot/secrets.md": {
       "original_url": "https://cursor.com/help/grok-bot/secrets",
@@ -849,8 +849,8 @@
     "help/grok-bot/supergrok-heavy.md": {
       "original_url": "https://cursor.com/help/grok-bot/supergrok-heavy",
       "original_md_url": "https://cursor.com/help/grok-bot/supergrok-heavy.md",
-      "hash": "b7a5d11962420699179703f166f10ad304b7a7ac22c6946d12d10f3cdda99fa8",
-      "last_updated": "2026-08-21T18:31:39.622863"
+      "hash": "f94f21dfd1d0229aa3d5f3135310a9a2677038c3a6054a915c81fdfe804cf898",
+      "last_updated": "2026-08-21T21:20:19.325050"
     },
     "help/integrations/cli.md": {
       "original_url": "https://cursor.com/help/integrations/cli",
@@ -1292,8 +1292,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-21T18:31:39.626820",
-    "fetch_duration_seconds": 2.278956,
+    "last_fetch_completed": "2026-08-21T21:20:19.328375",
+    "fetch_duration_seconds": 2.048678,
     "total_pages_discovered": 215,
     "pages_fetched_successfully": 215,
     "pages_failed": 0,
@@ -1306,7 +1306,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-21T18:31:39.626832",
+  "last_updated": "2026-08-21T21:20:19.328386",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

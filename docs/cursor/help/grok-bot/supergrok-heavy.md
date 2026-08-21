@@ -23,6 +23,8 @@ No. Your existing Cursor plan stays in place. Linking SuperGrok doesn't cancel a
 
 If you have both a paid Cursor plan that includes Grok Bot and a SuperGrok link, both apply to the same Cursor account. Your Cursor plan continues to bill and renew independently of the link.
 
+If you already have Grok Bot on Pro+, Ultra, or a self-serve Teams plan, you can keep using it by signing in. Linking SuperGrok does not swap you to Ultra, cancel that plan, or add a second Grok Bot meter. It does not change how that Cursor plan bills.
+
 ## How do I link my Grok account?
 
 1. On the Grok Bot plan screen, click **Link Grok Account**.

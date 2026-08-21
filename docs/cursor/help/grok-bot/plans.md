@@ -42,7 +42,7 @@ Grok Bot usage draws from the Teams plan's usage allowance for that seat. See [T
 
 Paid Grok Bot access includes usage that resets weekly. When your weekly included usage runs out, extra Grok Bot usage can continue on your account's shared on-demand spend if on-demand is enabled.
 
-Grok Bot usage is metered on your **Cursor account**, not on your Grok account. Sign into Grok Bot with the Cursor account that should hold the usage and quota. A linked SuperGrok subscription contributes usage to the same Grok Bot bucket on that Cursor account while the SuperGrok subscription stays active.
+Grok Bot usage is metered on your Cursor account, not on Grok. A SuperGrok link grants Grok Bot usage on that same Cursor account while SuperGrok stays active. It does not create a second meter on Grok, and it does not change your Cursor plan.
 
 ## How does the Grok Bot free trial work and how do I use it efficiently?
 
