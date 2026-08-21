@@ -6,11 +6,18 @@ Use Grok Bot on your phone with the same account and cloud computer as desktop. 
 
 1. Install the current **Grok Bot** mobile app from the App Store.
 2. Sign in on mobile with the **same Cursor account** you use on desktop or web.
-3. If you don't already have access, a Cursor Ultra plan is required. See [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md).
+3. If your Cursor account doesn't already include Grok Bot, subscribe from the mobile app. See [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md).
 
-## Do I need to buy again on mobile if I already have Ultra?
+## Do I need to buy again on mobile if my Cursor account already includes Grok Bot?
 
-No. Existing **Cursor Ultra** carries into mobile when you sign in with the same Cursor account. You should not purchase Ultra again through Apple in that case.
+No. Grok Bot access carries into mobile when you sign in with the same Cursor account. This includes:
+
+- **Cursor Ultra**
+- **Cursor Pro+**
+- **Cursor Teams** (self-serve) seats
+- **SuperGrok Plus** or **SuperGrok Heavy** account links
+
+You should not purchase a second subscription through Apple in these cases.
 
 ## Can I update the Grok Bot computer from my phone?
 
@@ -25,7 +32,7 @@ Try desktop once. If the problem continues, [contact support](https://cursor.com
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
 - [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
-- [Get access with SuperGrok Heavy](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 
 

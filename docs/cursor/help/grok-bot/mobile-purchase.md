@@ -1,23 +1,31 @@
 # Subscribe from the mobile app
 
-How to subscribe to Grok Bot from the mobile app.
+Grok Bot mobile signs in with the same Cursor account you use on desktop. If your Cursor account already has Grok Bot access, that access carries over to mobile without a second purchase.
 
-## What if I already have Ultra?
+## Which plans carry over to mobile?
 
-1. Install Grok Bot mobile.
-2. Sign in with the **same account**.
-3. Access should open without a second Apple purchase.
+Sign in to Grok Bot mobile with the **same Cursor account** you use on desktop, and access carries over for:
 
-See [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md).
+- **Cursor Ultra**
+- **Cursor Pro+**
+- **Cursor Teams** (self-serve) seats
+- **SuperGrok Plus** or **SuperGrok Heavy** account links
 
-## How do I subscribe to Cursor Ultra from the mobile app?
+You should not buy a second subscription on Apple in these cases.
 
-1. Choose **Ultra** in the Grok Bot mobile app.
-2. Complete the Apple in-app purchase.
+## How do I subscribe to Grok Bot from the mobile app?
 
-## How do I use SuperGrok Heavy on mobile?
+If your Cursor account doesn't already include Grok Bot, subscribe from the mobile app:
 
-You still need to [link your Grok account](https://cursor.com/help/grok-bot/supergrok-heavy.md).
+1. Open Grok Bot on iOS.
+2. Choose a plan on the paywall screen.
+3. Complete the Apple in-app purchase.
+
+Only monthly individual plans are available through the mobile app. For yearly billing, Teams, or Enterprise plans, subscribe on [cursor.com](https://cursor.com/dashboard/billing). See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md) for how Apple handles in-app subscriptions.
+
+## How do I use SuperGrok Plus or SuperGrok Heavy on mobile?
+
+You still need to [link your Grok account](https://cursor.com/help/grok-bot/supergrok-heavy.md). Complete the link on desktop, then sign in to Grok Bot mobile with the same Cursor account.
 
 ## How do I manage or cancel an Apple subscription?
 
@@ -27,7 +35,8 @@ Apple handles in-app subscriptions. Cancel or change the plan in **Apple ID → 
 
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
-- [Get access with SuperGrok Heavy](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 
 
