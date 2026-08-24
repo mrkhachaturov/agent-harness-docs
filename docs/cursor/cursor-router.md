@@ -24,7 +24,7 @@ Balance and Intelligence use your usage limits faster than Cost. You can switch 
 
 ## Pricing
 
-**Cost** uses its own bundled Auto pricing, billed per million tokens regardless of which model handles the request. See [Auto pricing](https://cursor.com/docs/models-and-pricing.md#auto-pricing) for token rates.
+**Cost** uses its own bundled Auto pricing, billed per million tokens regardless of which model handles the request. See [Auto pricing](https://cursor.com/docs/models-and-pricing.md#auto-modes) for token rates.
 
 **Balance** and **Intelligence** bill per request at the routed model's rate, under the terms of your plan or contract. On average they cost about twice as much as Cost, and up to two to four times as much depending on the mode you select.
 

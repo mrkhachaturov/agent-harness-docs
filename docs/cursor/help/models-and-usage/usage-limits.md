@@ -1,17 +1,11 @@
 # Usage and limits
 
-Each Cursor plan includes two monthly usage pools:
+Most Cursor plans include two monthly usage pools:
 
 - **Cursor Models**: Cursor Grok 4.6, Cursor Grok 4.5, and Composer 2.5
 - **Other Models**: Third-party models, charged at model provider prices
 
-| Plan                  | Included usage (summary)                                         |
-| --------------------- | ---------------------------------------------------------------- |
-| **Pro** ($20/mo)      | $20 of API agent usage + generous First-party models pool usage  |
-| **Pro Plus** ($60/mo) | $70 of API agent usage + generous First-party models pool usage  |
-| **Ultra** ($200/mo)   | $400 of API agent usage + generous First-party models pool usage |
-
-See [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) for India plan details.
+Pro, Pro Plus, and Ultra include both pools. The Start plan covers the Cursor Models pool only. See [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) for India plan details.
 
 Your model selection affects how quickly your included usage is consumed.
 

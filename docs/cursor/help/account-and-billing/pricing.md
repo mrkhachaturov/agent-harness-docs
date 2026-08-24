@@ -4,16 +4,17 @@ Compare plans and manage subscription changes from your billing dashboard.
 
 ## What plans are available?
 
-| Plan           | Price        | Included Other Models usage |
-| -------------- | ------------ | --------------------------- |
-| Hobby          | Free         | Limited                     |
-| Pro            | $20/mo       | $20                         |
-| Pro+           | $60/mo       | $70                         |
-| Ultra          | $200/mo      | $400                        |
-| Teams Standard | $40/user/mo  | Standard team allowance     |
-| Teams Premium  | $120/user/mo | 5x Standard team allowance  |
+| Plan               | Price                  |
+| ------------------ | ---------------------- |
+| Hobby              | Free                   |
+| Start (India only) | ₹649/mo, tax inclusive |
+| Pro                | $20/mo                 |
+| Pro+               | $60/mo                 |
+| Ultra              | $200/mo                |
+| Teams Standard     | $40/user/mo            |
+| Teams Premium      | $120/user/mo           |
 
-Included Other Models usage covers third-party models. See [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for both usage pools.
+See [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for usage pools and [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) for the India plan.
 
 **Enterprise** plans include pooled usage, SCIM provisioning, audit logs, advanced admin controls, and invoice billing. [Contact sales](https://cursor.com/contact-sales?source=docs-help-pricing) to get started.
 
@@ -80,6 +81,7 @@ There is no way to switch mid-plan. Use the [Adjust plan](https://cursor.com/hel
 ## Related
 
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)
+- [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md)
 - [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md)
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)

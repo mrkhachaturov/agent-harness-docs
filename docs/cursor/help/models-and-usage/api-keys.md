@@ -23,7 +23,7 @@ Custom API keys only work with chat models. Tab completion continues using Curso
 
 ## Does Cursor's Zero Data Retention policy apply when using my own API keys?
 
-No. Cursor's [Zero Data Retention policy](https://cursor.com/docs/account/teams/dashboard.md#privacy-settings) does not apply when you use your own API keys. Your data handling follows the privacy policy of your chosen provider (OpenAI, Anthropic, Google, Azure, or AWS).
+No. Cursor's [Zero Data Retention policy](https://cursor.com/docs/account/teams/dashboard.md#settings) does not apply when you use your own API keys. Your data handling follows the privacy policy of your chosen provider (OpenAI, Anthropic, Google, Azure, or AWS).
 
 If your team relies on Zero Data Retention, use Cursor's built-in models instead.
 

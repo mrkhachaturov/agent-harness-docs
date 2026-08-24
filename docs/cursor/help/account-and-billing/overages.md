@@ -22,7 +22,7 @@ Go to [cursor.com/dashboard](https://cursor.com/dashboard) and click **Billing &
 
 - **Disable on-demand usage**: Turn it off in your dashboard settings to stop requests once your included usage runs out
 - **Set a spend limit**: Cap how much on-demand usage you're willing to pay
-- **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Pro+ ($60/mo, $70 included) or Ultra ($200/mo, $400 included) give you a larger budget
+- **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Pro+ or Ultra give you higher included usage limits for Cursor Models and Other Models.
 
 ## Why did my usage costs increase after the Cursor Router launch?
 

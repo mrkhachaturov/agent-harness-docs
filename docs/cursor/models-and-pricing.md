@@ -7,7 +7,7 @@ Cursor supports frontier models from OpenAI, Anthropic, Google, SpaceXAI, and mo
 There are two separate usage pools, each resetting with your monthly billing cycle:
 
 - **Cursor Models**: Significantly more included usage for Cursor Grok 4.6, Grok 4.5, and Composer 2.5.
-- **Other Models**: The pool for third-party models, charged at the model's API price. Pro, Pro Plus, and Ultra include at least $20 of third-party model usage each month (more on higher tiers) with the option to pay for additional usage as needed. The Start plan does not include this pool.
+- **Other Models**: The pool for third-party models, charged at the model's API price. Pro, Pro Plus, and Ultra include this pool, with the option to pay for additional usage as needed. The Start plan does not include this pool.
 
 Both pools are visible in your editor settings and on your [usage dashboard](https://cursor.com/dashboard/usage).
 
@@ -84,12 +84,12 @@ Opting in to regional data residency incurs a 10% uplift on Model pricing for el
 
 Pro, Pro Plus, and Ultra include unlimited tab completions, extended agent usage limits on all models, access to Bugbot, and access to Cloud Agents. Start is a lower-priced plan for developers in India that covers the Cursor Models pool and Cloud Agents.
 
-| Plan                   | Price                  | Other Models usage included | Cursor Models           |
-| :--------------------- | :--------------------- | :-------------------------- | :---------------------- |
-| **Start** (India only) | ₹649/mo, tax inclusive | $0                          | Generous included usage |
-| **Pro**                | $20/mo                 | $20                         | Generous included usage |
-| **Pro Plus**           | $60/mo                 | $70                         | Generous included usage |
-| **Ultra**              | $200/mo                | $400                        | Generous included usage |
+| Plan                   | Price                  | Cursor Models | Other Models |
+| :--------------------- | :--------------------- | :------------ | :----------- |
+| **Start** (India only) | ₹649/mo, tax inclusive | Included      | Not included |
+| **Pro**                | $20/mo                 | Included      | Included     |
+| **Pro Plus**           | $60/mo                 | Included      | Included     |
+| **Ultra**              | $200/mo                | Included      | Included     |
 
 Since different models have different API costs, your model selection affects how quickly your included usage is consumed.
 
@@ -105,8 +105,8 @@ Start does not include the Other Models pool, on-demand usage, Bugbot, Auto, Aut
 
 ### How much usage do I need?
 
-- **Daily Tab users**: Always stay within $20
-- **Limited Agent users**: Often stay within the included $20
+- **Daily Tab users**: Typically stay within included usage
+- **Limited Agent users**: Often stay within included usage
 - **Daily Agent users**: Typically $60–$100/mo total usage
 - **Power users (multiple agents/automation)**: Often $200+/mo total usage
 
