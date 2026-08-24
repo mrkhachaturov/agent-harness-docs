@@ -51,8 +51,8 @@
     "keybindings.md": {
       "upstream_path": "packages/coding-agent/docs/keybindings.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/keybindings.md",
-      "hash": "d62a425e9d2f17437ea262f0fc1d33acb65ad7b19e6f69d4d3dc612cf8a97491",
-      "last_updated": "2026-08-11T15:57:44.131133"
+      "hash": "be53735f8f273972162a627fdf90b746ac4d9492b7cb2939c6967c0b250217ba",
+      "last_updated": "2026-08-24T00:57:54.106151"
     },
     "llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/llama-cpp.md",
@@ -141,8 +141,8 @@
     "terminal-setup.md": {
       "upstream_path": "packages/coding-agent/docs/terminal-setup.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/terminal-setup.md",
-      "hash": "8fb37062c6202a312b3eb52df4464870afdffcc85d5639a722918278692dc489",
-      "last_updated": "2026-08-11T15:57:44.132724"
+      "hash": "7ff1a9095e0592a613079c7889a7603da510e2504509def56a69dc4dfc280d9d",
+      "last_updated": "2026-08-24T00:57:54.108396"
     },
     "termux.md": {
       "upstream_path": "packages/coding-agent/docs/termux.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-23T21:17:46.149008",
-    "fetch_duration_seconds": 0.814546,
+    "last_fetch_completed": "2026-08-24T00:57:54.109235",
+    "fetch_duration_seconds": 0.890714,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-23T21:17:46.149023",
+  "last_updated": "2026-08-24T00:57:54.109247",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
