@@ -3,8 +3,8 @@
     "acp.md": {
       "upstream_path": "packages/web/src/content/docs/acp.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/acp.mdx",
-      "hash": "247e01d7017064bfb4cf3b5cd3682902077375b43e85ad0e7454b34eb9f75483",
-      "last_updated": "2026-05-26T14:47:30.957477"
+      "hash": "52113f6c06ebf7f70a2055dd049ffb1dbc7af9676e7ad61f4a6f5496d7f0fefa",
+      "last_updated": "2026-08-24T12:40:05.327271"
     },
     "agents.md": {
       "upstream_path": "packages/web/src/content/docs/agents.mdx",
@@ -69,8 +69,8 @@
     "go.md": {
       "upstream_path": "packages/web/src/content/docs/go.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/go.mdx",
-      "hash": "65c796051458d1f5a2e91c7f677c812e65e75acab035815419954be5a212c3bf",
-      "last_updated": "2026-08-24T09:42:56.444307"
+      "hash": "3fa9c6282dc5d0cffad9ffb997aeac0b79dee20c3650a358492d9a919161f689",
+      "last_updated": "2026-08-24T12:40:07.496449"
     },
     "ide.md": {
       "upstream_path": "packages/web/src/content/docs/ide.mdx",
@@ -218,8 +218,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-24T09:43:00.639311",
-    "fetch_duration_seconds": 8.53334,
+    "last_fetch_completed": "2026-08-24T12:40:12.156777",
+    "fetch_duration_seconds": 7.980751,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-08-24T09:43:00.639333",
+  "last_updated": "2026-08-24T12:40:12.156800",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
