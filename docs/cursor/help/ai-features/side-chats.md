@@ -39,7 +39,7 @@ Click the **X** (close) button on a side chat to archive it. Closing archives th
 
 ## Is a side chat the same thing as forking a conversation?
 
-No. Forking creates a full copy of the parent conversation, including all messages and subagents. A side chat only seeds the model with the parent history as hidden context. It does not reproduce the parent transcript. A side chat is a parallel thread, not a fork.
+No. Forking copies the parent conversation into a new chat. What gets copied depends on where you fork from. Forking the whole chat, from the tab menu, sidebar, or command palette, copies every message and subagent. Forking from a specific message copies the conversation through that message and drops everything after it, including subagents attached to later messages. A side chat only seeds the model with the parent history as hidden context. It does not reproduce the parent transcript. A side chat is a parallel thread, not a fork.
 
 ## Can I create a side chat inside another side chat?
 

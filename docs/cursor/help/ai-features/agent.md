@@ -27,7 +27,7 @@ Agent's edits are applied as it works. Review them in the diff view and reject a
 
 ## How do I undo Agent changes?
 
-Hover over a previous message and click **Restore Checkpoint** in the bottom right to roll back all changes Agent made after that point.
+Hover over a previous message and click **Restore Checkpoint** in the bottom right to roll back all changes Agent made after that point. Restoring reverts files only; it does not remove messages from the conversation. To shorten the conversation itself, fork the chat from an earlier message.
 
 ## Can Agent delegate tasks to subagents?
 
