@@ -763,6 +763,10 @@ See the setup and networking guides on the respective integration pages:
 - [GitLab Self-Hosted](https://cursor.com/docs/integrations/gitlab.md#setup)
 - [Bitbucket Data Center](https://cursor.com/docs/integrations/bitbucket.md#setup)
 
+## Related
+
+- [Bugbot help](https://cursor.com/help/ai-features/bugbot.md)
+
 
 ---
 

@@ -16,7 +16,7 @@ On Enterprise plans, Cursor Router respects your team's model access controls. I
 
 Open the model picker, select **Auto**, and pick a mode under **Optimize For**:
 
-- **Cost**: Uses the previous Auto routing logic. It optimizes token spend and keeps bundled Auto pricing.
+- **Cost**: Uses the previous Auto routing logic. It optimizes token spend.
 - **Balance**: Optimizes for intelligence, speed, and cost.
 - **Intelligence**: Routes to the most capable models for harder tasks, at a lower cost than running a single frontier model.
 
@@ -24,9 +24,9 @@ Balance and Intelligence use your usage limits faster than Cost. You can switch 
 
 ## Pricing
 
-**Cost** uses its own bundled Auto pricing, billed per million tokens regardless of which model handles the request. See [Auto pricing](https://cursor.com/docs/models-and-pricing.md#auto-modes) for token rates.
+All Auto modes bill at the list price of the model each request is routed to. Third-party models also incur the Cursor Token Rate.
 
-**Balance** and **Intelligence** bill per request at the routed model's rate, under the terms of your plan or contract. On average they cost about twice as much as Cost, and up to two to four times as much depending on the mode you select.
+Until September 7, 2026, Enterprise Auto Cost pricing is set per million tokens, regardless of which model is used ($1.25/1M input and cache write, $0.25/1M cache read, $6.00/1M output).
 
 ## Team settings
 
@@ -74,6 +74,10 @@ with Agent.create(
 ```
 
 The SDK runs Cursor agent workflows. It is not a standalone chat-completions or raw inference API. See [Cursor Router in the TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-router) or [Python SDK](https://cursor.com/docs/sdk/python.md#cursor-router) for catalog discovery, per-run mode overrides, and troubleshooting.
+
+## Related
+
+- [Cursor Router help](https://cursor.com/help/models-and-usage/cursor-router.md)
 
 
 ---

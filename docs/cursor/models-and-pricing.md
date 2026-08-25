@@ -133,19 +133,17 @@ Learn more about [Teams pricing](https://cursor.com/docs/account/teams/pricing.m
 
 On Teams and Enterprise plans, third-party model requests include a Cursor Token Rate of $0.25 per million tokens. This rate applies on top of model API pricing for included usage, on-demand usage, and BYOK usage.
 
-The Cursor Token Rate applies when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model. Auto Cost and all first-party Cursor models, including Grok 4.6, Grok 4.5, and Composer 2.5, are exempt from the Cursor Token Rate.
+The Cursor Token Rate applies when you select a third-party model directly, and when Auto routes to a third-party model. First-party Cursor models, including Grok and Composer, are exempt from the Cursor Token Rate.
 
 ## Auto modes
 
-Auto has three modes: Auto Cost, Auto Balance, and Auto Intelligence.
+Auto has three modes: Cost, Balance, and Intelligence.
 
-### Auto Cost
+All Auto modes bill at the list price of the model each request is routed to. See [Model pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for per-model rates. Third-party models also incur the [Cursor Token Rate](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate).
 
-Auto Cost pricing is set per million tokens, regardless of which model is used.
+### Legacy Enterprise Auto
 
-### Auto Balance and Auto Intelligence
-
-Auto Balance and Auto Intelligence are charged at Model API rates for the model used, based on actual usage. Third-party models also incur the Cursor Token Rate. See [Model pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for per-model rates.
+Until September 7, 2026, Enterprise Auto pricing is set per million tokens, regardless of which model is used.
 
 ## Legacy request-based pricing
 

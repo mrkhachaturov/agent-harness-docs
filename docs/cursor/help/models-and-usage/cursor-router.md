@@ -12,7 +12,7 @@ Compared with the previous Auto mode:
 
 - Legacy Auto is now called **Cost** in the Auto selection menu
 - **Balance** is the default mode for new users
-- Balance and Intelligence bill at the routed model's cost, while Cost keeps the previous bundled Auto pricing
+- All Auto modes bill at the routed model's list price
 
 See [available models](https://cursor.com/help/models-and-usage/available-models.md#which-models-does-cursor-router-route-across) for the current routing pool.
 
@@ -28,7 +28,7 @@ If a model is blocked on your team, the router skips it and falls back to an all
 
 Open the model picker, select **Auto**, then choose an optimization mode:
 
-- **Cost**: Equivalent to the legacy Auto mode. Keeps bundled Auto pricing unchanged. Choose this when you want spend closer to earlier Auto levels.
+- **Cost**: Optimizes token spend.
 - **Balance**: The default mode for new users. Aims for strong results while controlling cost across the model pool.
 - **Intelligence**: Routes to more capable models. Recommended for complex, multi-step work. Delivers about 20 to 30% higher quality by picking among first-party models in the pool.
 
@@ -48,6 +48,7 @@ Yes. In the [TypeScript SDK](https://cursor.com/docs/sdk/typescript.md#cursor-ro
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)
 - [Models & Pricing](https://cursor.com/docs/models-and-pricing.md)
 - [Teams pricing](https://cursor.com/docs/account/teams/pricing.md)
+- [Cursor Router reference](https://cursor.com/docs/cursor-router.md)
 
 
 ---

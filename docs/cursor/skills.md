@@ -295,6 +295,10 @@ Rules with `alwaysApply: true` or specific `globs` patterns are not migrated, as
 
 Agent Skills is an open standard. Learn more at [agentskills.io](https://agentskills.io).
 
+## Related
+
+- [Skills help](https://cursor.com/help/customization/skills.md)
+
 
 ---
 

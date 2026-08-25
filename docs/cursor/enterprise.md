@@ -31,6 +31,7 @@ Learn how to deploy, configure, and manage Cursor for your organization. This do
 - [Models & integrations](https://cursor.com/docs/enterprise/model-and-integration-management.md) - Model controls, MCP, and third-party integrations
 - [Cyber Safeguards](https://cursor.com/docs/account/enterprise/cyber-safeguards.md) - Apply for Anthropic's Cyber Verification Program (CVP) to use eligible Claude models without cyber safeguards
 - [Spend Limits](https://cursor.com/help/account-and-billing/spend-limits.md) - Configure spending limits to control costs
+- [Enterprise help articles](https://cursor.com/help/account-and-billing/enterprise.md) - Common questions about enterprise plans
 - [Compliance & monitoring](https://cursor.com/docs/enterprise/compliance-and-monitoring.md) - Audit logs and tracking
 - [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md) - Usage metrics and logs delivered to your observability stack over OTLP
 - [HIPAA Business Associate Agreements](https://cursor.com/docs/enterprise/baa.md) - Request BAA support for Enterprise customers

@@ -42,6 +42,7 @@ Spend extra time making the plan precise for larger changes. The hard part is fi
 
 - [Agent mode](https://cursor.com/help/ai-features/agent.md)
 - [Agent reference](https://cursor.com/docs/agent/overview.md)
+- [Plan mode reference](https://cursor.com/docs/agent/plan-mode.md)
 
 
 ---

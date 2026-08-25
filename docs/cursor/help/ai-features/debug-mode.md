@@ -23,6 +23,7 @@ Use Agent mode when you know what to build. Use Debug mode when something isn't 
 
 - [Agent mode](https://cursor.com/help/ai-features/agent.md)
 - [Agent reference](https://cursor.com/docs/agent/overview.md)
+- [Debug mode reference](https://cursor.com/docs/agent/debug-mode.md)
 
 
 ---

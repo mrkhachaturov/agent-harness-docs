@@ -1,8 +1,8 @@
 # Cursor Token Rate
 
-Teams and Enterprise plan customers pay a Cursor Token Rate of $0.25 per million tokens on third-party model requests. This includes when you select a third-party model directly, and when Auto Balance or Auto Intelligence routes to a third-party model.
+Teams and Enterprise plan customers pay a Cursor Token Rate of $0.25 per million tokens on third-party model requests. This includes when you pick a third-party model directly and when Auto routes to a third-party model.
 
-Auto Cost and all first-party models, including Composer 2.5 and Grok 4.5, are exempt.
+First-party Cursor models, including Grok and Composer, are exempt.
 
 This applies to included usage, on-demand usage, and BYOK usage when the request uses a third-party model that is subject to the Cursor Token Rate.
 
@@ -18,7 +18,7 @@ For eligible third-party model requests, the rate applies to input tokens, outpu
 
 ## How do I avoid the Cursor Token Rate?
 
-Use Auto Cost or a first-party model, including Composer 2.5 or Grok 4.5. These requests are exempt from the Cursor Token Rate.
+Use a first-party model, including Grok or Composer.
 
 ## Related
 

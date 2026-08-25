@@ -22,10 +22,9 @@ See [cursor.com/pricing](https://cursor.com/pricing) for the full feature compar
 
 ## What is Auto?
 
-**Auto** balances intelligence, cost, and reliability through [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md). It has fixed token rates ($1.25/1M input, $6.00/1M output, $0.25/1M cache read) when you use **Cost** mode.
-**Balance** and **Intelligence** modes bill at the routed model's rate. For example, if your request is routed to Opus 5, you will be billed at Opus 5 pricing for that request.
+**Auto** balances intelligence, cost, and reliability through [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md). All Auto modes bill at the list price of the model each request is routed to. For example, if your request is routed to Opus 5, you are billed at Opus 5 pricing for that request. Third-party models also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for current rates.
 
-You can switch between Auto and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) and [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for details.
+You can switch between Auto and specific models in the model picker. See [available models](https://cursor.com/help/models-and-usage/available-models.md) for details.
 
 ## Is Cursor Router available on my plan?
 
@@ -35,7 +34,7 @@ It is available across the Agents window, editor, CLI, Cursor SDK, and the iOS a
 
 ## Why is the old Auto mode now called Cost mode?
 
-The old Auto mode was split into 3 new modes: **Cost**, **Balance** and **Intelligence**. The default **Cost** mode optimises for cost and keeps the same functionality and pricing as the old Auto mode.
+The old Auto mode was split into 3 new modes: **Cost**, **Balance** and **Intelligence**.
 
 ## What's included in the free Hobby plan?
 

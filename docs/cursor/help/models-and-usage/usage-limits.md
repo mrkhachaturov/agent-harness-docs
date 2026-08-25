@@ -36,8 +36,7 @@ For teams, all members' usage resets at the same time based on the team billing 
 Cursor Router requests are billed at the routed model's cost and can draw from both the Cursor Models pool and the third-party Other Models pool, depending on which model handles the request.
 
 - **Composer 2.5** requests carry no [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) on any plan
-- **Cost** mode (legacy Auto) keeps bundled Auto pricing
-- **Balance** and **Intelligence** bill at the selected model's rate under your plan
+- All Auto modes bill at the routed model's list price. Third-party models also incur the Cursor Token Rate
 
 When included usage runs out, on-demand charges apply if you have on-demand usage enabled. Check your [Spending dashboard](https://cursor.com/dashboard/spending) for request-level cost and pool details.
 

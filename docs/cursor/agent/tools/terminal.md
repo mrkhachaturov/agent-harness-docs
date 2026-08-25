@@ -33,6 +33,10 @@ if [[ -n "$CURSOR_AGENT" ]]; then
 fi
 ```
 
+## Related
+
+- [Terminal help](https://cursor.com/help/ai-features/terminal.md)
+
 
 ---
 
