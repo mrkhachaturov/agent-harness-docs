@@ -177,8 +177,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "c46b9d5098f0f66c0fe0b5cb7e7e943199f5bb395ce3b51377331fd88660a7a5",
-      "last_updated": "2026-08-25T00:57:12.642867"
+      "hash": "28736bc68ba52012586c42ae5357e64383b502b44e09bc759034b8fee57fe379",
+      "last_updated": "2026-08-25T06:37:44.435390"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -1035,8 +1035,8 @@
     "hooks.md": {
       "original_url": "https://cursor.com/docs/hooks",
       "original_md_url": "https://cursor.com/docs/hooks.md",
-      "hash": "cfc732d8d2f210cc34f5eb060eba7fd65a891159dc1cdb228f6171fb9cd1018a",
-      "last_updated": "2026-07-09T19:36:10.444611"
+      "hash": "1ef2eaf7426588d708837c4829b80f54e12d0201c219b4d357a1be5caa2739a0",
+      "last_updated": "2026-08-25T06:37:44.437286"
     },
     "index.md": {
       "original_url": "https://cursor.com/docs",
@@ -1328,8 +1328,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-25T03:45:03.946107",
-    "fetch_duration_seconds": 1.751789,
+    "last_fetch_completed": "2026-08-25T06:37:44.441274",
+    "fetch_duration_seconds": 2.728961,
     "total_pages_discovered": 221,
     "pages_fetched_successfully": 221,
     "pages_failed": 0,
@@ -1342,7 +1342,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-25T03:45:03.946124",
+  "last_updated": "2026-08-25T06:37:44.441289",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
