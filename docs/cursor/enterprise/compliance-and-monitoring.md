@@ -109,7 +109,7 @@ Export filtered results to CSV for analysis or compliance reports.
 
 ## Usage telemetry over OpenTelemetry
 
-Audit logs cover administrative and security events. If you want usage data instead, such as token, tool call, and cost metrics plus API request and cloud agent logs delivered over OTLP to your own collector, use [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md). It's a separate pipeline from audit-log SIEM streaming and is available in beta on the Enterprise plan.
+Audit logs cover administrative and security events. If you want usage data instead, such as token, tool call, and cost metrics plus API request and cloud agent logs delivered over OTLP to your own collector, use [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md). It's a separate pipeline from audit-log SIEM streaming and is available on the Enterprise plan.
 
 ## Using hooks for compliance logging
 

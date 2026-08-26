@@ -1,9 +1,5 @@
 # OpenTelemetry Export Wire Reference
 
-### Beta
-
-OpenTelemetry Export is in beta, as is the companion [setup page](https://cursor.com/docs/enterprise/opentelemetry-export.md). This wire surface may change before general availability.
-
 Companion to [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md). Full wire surface: every metric, log event, attribute, enum, and presence rule.
 
 The surface is additive. Tolerate unknown attributes, events, and enum values. Renames and removals get explicit notice.
