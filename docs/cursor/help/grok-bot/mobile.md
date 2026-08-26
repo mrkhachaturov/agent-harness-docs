@@ -14,8 +14,9 @@ No. Grok Bot access carries into mobile when you sign in with the same Cursor ac
 
 - **Cursor Ultra**
 - **Cursor Pro+**
+- **Cursor Pro**
 - **Cursor Teams** (self-serve) seats
-- **SuperGrok Plus** or **SuperGrok Heavy** account links
+- **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 
 You should not purchase a second subscription through Apple in these cases.
 
@@ -33,6 +34,7 @@ Try desktop once. If the problem continues, [contact support](https://cursor.com
 - [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 
 

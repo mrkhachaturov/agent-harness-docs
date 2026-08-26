@@ -22,6 +22,7 @@ Email [**hi@cursor.com**](mailto:hi@cursor.com) and provide a quick summary of t
 
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
+- [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)
 
 
 ---

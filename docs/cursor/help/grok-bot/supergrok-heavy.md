@@ -1,10 +1,10 @@
 # Link SuperGrok for Grok Bot
 
-Link your Grok account to grant Grok Bot usage on your Cursor account. Only individual SuperGrok Plus and SuperGrok Heavy qualify.
+Link your Grok account to grant Grok Bot usage on your Cursor account. Individual SuperGrok, SuperGrok Plus, and SuperGrok Heavy qualify.
 
 ## What do I need before linking SuperGrok?
 
-You need an active **individual SuperGrok Plus** or **SuperGrok Heavy** subscription on the Grok account you will link, and a Cursor or Grok Bot account to receive the usage grant.
+You need an active **individual SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** subscription on the Grok account you will link, and a Cursor or Grok Bot account to receive the usage grant.
 
 Linking pairs one Cursor account with one Grok account. The link itself is not a Cursor payment. Sign in with the Cursor account that should hold the usage grant, because a SuperGrok link **can't be unlinked or moved** to a different Cursor account once created.
 
@@ -14,6 +14,7 @@ Linking is a **usage grant**, not a Cursor plan. It grants Grok Bot usage on the
 
 - **SuperGrok Heavy** grants the highest linked Grok Bot usage.
 - **SuperGrok Plus** grants generous linked Grok Bot usage, below the Heavy tier.
+- **SuperGrok** grants linked Grok Bot usage, below the Plus tier.
 
 Cursor re-checks your SuperGrok status at each renewal.
 
@@ -23,21 +24,21 @@ No. Your existing Cursor plan stays in place. Linking SuperGrok doesn't cancel a
 
 If you have both a paid Cursor plan that includes Grok Bot and a SuperGrok link, both apply to the same Cursor account. Your Cursor plan continues to bill and renew independently of the link.
 
-If you already have Grok Bot on Pro+, Ultra, or a self-serve Teams plan, you can keep using it by signing in. Linking SuperGrok does not swap you to Ultra, cancel that plan, or add a second Grok Bot meter. It does not change how that Cursor plan bills.
+If you already have Grok Bot on Pro, Pro+, Ultra, or a self-serve Teams plan, you can keep using it by signing in. Linking SuperGrok does not swap you to Ultra, cancel that plan, or add a second Grok Bot meter. It does not change how that Cursor plan bills.
 
 ## How do I link my Grok account?
 
 1. On the Grok Bot plan screen, click **Link Grok Account**.
-2. Sign into the **Grok account with individual SuperGrok Plus or Heavy**.
+2. Sign into the **Grok account with individual SuperGrok, SuperGrok Plus, or SuperGrok Heavy**.
 3. Return to Grok Bot and confirm you have access.
 
 ## Which SuperGrok tiers grant Grok Bot?
 
-Only **individual SuperGrok Plus** and **individual SuperGrok Heavy** grant Grok Bot usage. SuperGrok Team and SuperGrok Enterprise plans are not supported.
+**Individual SuperGrok**, **individual SuperGrok Plus**, and **individual SuperGrok Heavy** grant Grok Bot usage. SuperGrok Team and SuperGrok Enterprise plans are not supported.
 
 These do not qualify:
 
-- **Basic SuperGrok**
+- **SuperGrok Lite**
 - **SuperGrok Team**
 - **SuperGrok Enterprise**
 
@@ -68,9 +69,9 @@ If linking didn't grant Grok Bot usage, applied to the wrong account, or your us
 
 **Confirm the basics:**
 
-- You linked the **Grok account with an active SuperGrok Plus or Heavy subscription**. The grant is tied to that specific Grok account.
+- You linked the **Grok account with an active SuperGrok, SuperGrok Plus, or SuperGrok Heavy subscription**. The grant is tied to that specific Grok account.
 - You're signed into Grok Bot with the **same Cursor account** you linked.
-- Your SuperGrok Plus or Heavy subscription is still active at renewal.
+- Your SuperGrok, SuperGrok Plus, or SuperGrok Heavy subscription is still active at renewal.
 
 **Common failure modes:**
 
@@ -78,7 +79,7 @@ If linking didn't grant Grok Bot usage, applied to the wrong account, or your us
 | ------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Linking fails partway through sign-in      | Fully quit Grok Bot (on Mac, choose **Quit** from the menu bar), reopen, and link again from the **Get Started** screen.                                                                                                         |
 | Access applied to the wrong Cursor account | A SuperGrok link can't be unlinked or moved on your own. [Contact support](https://cursor.com/help/grok-bot/get-help.md) with the Cursor account email that received the grant and the Cursor account email that should hold it. |
-| Usage didn't reset after linking           | Confirm your SuperGrok Plus or Heavy subscription is active, then allow up to 24 hours after a successful link for usage to refresh.                                                                                             |
+| Usage didn't reset after linking           | Confirm your SuperGrok, SuperGrok Plus, or SuperGrok Heavy subscription is active, then allow up to 24 hours after a successful link for usage to refresh.                                                                       |
 
 If your access, email, or usage still looks wrong, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the email on your Cursor account, the Grok account email you linked, and a screenshot of your plan screen.
 

@@ -279,8 +279,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "f2f7fa4b5f3aff37bcc79c7926bead8b6c7eb5c3984bd5c15de34ce6f1c9f1cd",
-      "last_updated": "2026-08-26T00:57:44.394539"
+      "hash": "c23de9e023ce28a9f5d7ddd692b289df6edf04755e3d4d31bb51974dca13b123",
+      "last_updated": "2026-08-26T19:43:26.771879"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -327,8 +327,8 @@
     "cloud-agent/mobile.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/mobile",
       "original_md_url": "https://cursor.com/docs/cloud-agent/mobile.md",
-      "hash": "f79fd3a533589fb594fd2cc45b5a33e6eca37c7f2f5b466fc4ab6a74b2ff03ba",
-      "last_updated": "2026-08-24T21:24:42.908295"
+      "hash": "82fd0125a5399d1ee37d4b03d8d6e278e0f447a46ef5767fcc558324a3ac9eee",
+      "last_updated": "2026-08-26T19:43:26.772245"
     },
     "cloud-agent/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/private-connectivity",
@@ -525,8 +525,8 @@
     "help/account-and-billing/delete-account.md": {
       "original_url": "https://cursor.com/help/account-and-billing/delete-account",
       "original_md_url": "https://cursor.com/help/account-and-billing/delete-account.md",
-      "hash": "44815623a2d328776d85a52f1f341866eedcfd39ff93926bbb76563bdcea8b8a",
-      "last_updated": "2026-06-29T22:53:03.561478"
+      "hash": "9c27475568462993af61ec29069929afaaec2d0420410b3a275cdc0e069d4aeb",
+      "last_updated": "2026-08-26T19:43:26.772909"
     },
     "help/account-and-billing/enterprise.md": {
       "original_url": "https://cursor.com/help/account-and-billing/enterprise",
@@ -840,35 +840,41 @@
       "hash": "6d898ca28e1f796944ab9e7d6990b88253a85bc89b184bc791d10fbf824bb6c7",
       "last_updated": "2026-08-19T09:29:53.120623"
     },
+    "help/grok-bot/delete-account.md": {
+      "original_url": "https://cursor.com/help/grok-bot/delete-account",
+      "original_md_url": "https://cursor.com/help/grok-bot/delete-account.md",
+      "hash": "c3f23ff97e647d2a594d2017fa1eab7307ff0cf0a113004f2443e27cadfc2359",
+      "last_updated": "2026-08-26T19:43:26.773393"
+    },
     "help/grok-bot/get-help.md": {
       "original_url": "https://cursor.com/help/grok-bot/get-help",
       "original_md_url": "https://cursor.com/help/grok-bot/get-help.md",
-      "hash": "029ce53261e383db70548ff7c71fac3495dc6f044435d520685f6e44d0b7b9b9",
-      "last_updated": "2026-08-12T15:56:33.543548"
+      "hash": "10f5209ff2cccf0ad19630857f88c455e980d320fd9c322c21d490acdf924b7a",
+      "last_updated": "2026-08-26T19:43:26.773578"
     },
     "help/grok-bot/getting-started.md": {
       "original_url": "https://cursor.com/help/grok-bot/getting-started",
       "original_md_url": "https://cursor.com/help/grok-bot/getting-started.md",
-      "hash": "e895d9b9d1dd14de04eb95266a91d6b165c391a59c1b682b62b1f60a98e6fdea",
-      "last_updated": "2026-08-21T18:31:39.621771"
+      "hash": "9291d08ba82572633334e1272222c3dcf1ce02fb3b6c8a41f607da1e826fead9",
+      "last_updated": "2026-08-26T19:43:26.773775"
     },
     "help/grok-bot/mobile-purchase.md": {
       "original_url": "https://cursor.com/help/grok-bot/mobile-purchase",
       "original_md_url": "https://cursor.com/help/grok-bot/mobile-purchase.md",
-      "hash": "ac47fee534116c1775980757794e31f9bd41e249d7465cfec2e5c5cf74166f3d",
-      "last_updated": "2026-08-21T18:31:39.621998"
+      "hash": "25ba3c33bdeb28187f9d93631b8c49a4f20d20b50e92cf0e7f38cf71676605b4",
+      "last_updated": "2026-08-26T19:43:26.773955"
     },
     "help/grok-bot/mobile.md": {
       "original_url": "https://cursor.com/help/grok-bot/mobile",
       "original_md_url": "https://cursor.com/help/grok-bot/mobile.md",
-      "hash": "1c04888ed6426c19893a8f1d19fa2bdae6ff9fe2897a7d80cab4e36e0e66b47f",
-      "last_updated": "2026-08-21T18:31:39.622193"
+      "hash": "f18e3a7d459fd983a58b7f6dcadcf8f1766a1ddb3c340a291c6312afdfb843f6",
+      "last_updated": "2026-08-26T19:43:26.774131"
     },
     "help/grok-bot/plans.md": {
       "original_url": "https://cursor.com/help/grok-bot/plans",
       "original_md_url": "https://cursor.com/help/grok-bot/plans.md",
-      "hash": "9f07edf1ddfd527a816797f20ca10b250d2e6aec1798f9e342bebb7a4e2c1311",
-      "last_updated": "2026-08-21T21:20:19.324866"
+      "hash": "b82dea36a9e59035ed5d0e365c3122ce6912f181fedfeda85f3454bdfd6095f6",
+      "last_updated": "2026-08-26T19:43:26.774380"
     },
     "help/grok-bot/secrets.md": {
       "original_url": "https://cursor.com/help/grok-bot/secrets",
@@ -879,14 +885,14 @@
     "help/grok-bot/sign-in.md": {
       "original_url": "https://cursor.com/help/grok-bot/sign-in",
       "original_md_url": "https://cursor.com/help/grok-bot/sign-in.md",
-      "hash": "64ae9a3de5a60d7741051fa2d16378ace22fc588262662cd00a34dbe13b9ad17",
-      "last_updated": "2026-08-21T18:31:39.622646"
+      "hash": "5c42730f390671893b63752b883da5d0121b97a87b8cfd43e8c17f67dac58676",
+      "last_updated": "2026-08-26T19:43:26.774590"
     },
     "help/grok-bot/supergrok-heavy.md": {
       "original_url": "https://cursor.com/help/grok-bot/supergrok-heavy",
       "original_md_url": "https://cursor.com/help/grok-bot/supergrok-heavy.md",
-      "hash": "f94f21dfd1d0229aa3d5f3135310a9a2677038c3a6054a915c81fdfe804cf898",
-      "last_updated": "2026-08-21T21:20:19.325050"
+      "hash": "ed5783b227143c5c45726d466f135bf7d64ca1ff8c79e3736588f9667da68b2f",
+      "last_updated": "2026-08-26T19:43:26.774783"
     },
     "help/integrations/cli.md": {
       "original_url": "https://cursor.com/help/integrations/cli",
@@ -1328,21 +1334,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-26T16:15:33.647031",
-    "fetch_duration_seconds": 6.056806,
-    "total_pages_discovered": 221,
-    "pages_fetched_successfully": 221,
+    "last_fetch_completed": "2026-08-26T19:43:26.778770",
+    "fetch_duration_seconds": 2.324345,
+    "total_pages_discovered": 222,
+    "pages_fetched_successfully": 222,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 221,
+    "total_files": 222,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-26T16:15:33.647045",
+  "last_updated": "2026-08-26T19:43:26.778785",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
