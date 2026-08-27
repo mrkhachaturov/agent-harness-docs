@@ -279,8 +279,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "c23de9e023ce28a9f5d7ddd692b289df6edf04755e3d4d31bb51974dca13b123",
-      "last_updated": "2026-08-26T19:43:26.771879"
+      "hash": "28eed16fcdb8f76a06d98acbdcc7364bd7e44deff759f0ffc42881010188b9d0",
+      "last_updated": "2026-08-27T13:34:27.007788"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -327,8 +327,8 @@
     "cloud-agent/mobile.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/mobile",
       "original_md_url": "https://cursor.com/docs/cloud-agent/mobile.md",
-      "hash": "82fd0125a5399d1ee37d4b03d8d6e278e0f447a46ef5767fcc558324a3ac9eee",
-      "last_updated": "2026-08-26T19:43:26.772245"
+      "hash": "e2c359ac7add4c183901e75a04e273fe1511f5f2745e142c2e810093467438ba",
+      "last_updated": "2026-08-27T13:34:27.008211"
     },
     "cloud-agent/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/private-connectivity",
@@ -789,8 +789,8 @@
     "help/customization/skills.md": {
       "original_url": "https://cursor.com/help/customization/skills",
       "original_md_url": "https://cursor.com/help/customization/skills.md",
-      "hash": "d0b82958b084361c8d6f31a31347026f1d05adac79731bf48ce45c1701a174b7",
-      "last_updated": "2026-08-27T00:25:58.410655"
+      "hash": "6da74bfb50a847dc2f77b69524840197334a0c40b5dddc64c4916fed88d395b0",
+      "last_updated": "2026-08-27T13:34:27.009283"
     },
     "help/customization/themes.md": {
       "original_url": "https://cursor.com/help/customization/themes",
@@ -1113,8 +1113,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "ab59ad688f4207c2e0ffc10c967611d175622a039b96ce3094f3636fd4cee251",
-      "last_updated": "2026-08-24T21:24:42.911428"
+      "hash": "55fb0cef4eb22f65b6c5805dbe7455cb8830faf9517c75312dc8732b0f04b814",
+      "last_updated": "2026-08-27T13:34:27.010113"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1323,8 +1323,8 @@
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
       "original_md_url": "https://cursor.com/docs/skills.md",
-      "hash": "bae0214273351b24f9a040d431fc3959c6ff6bb5e85ecc17a27962de15f41ad6",
-      "last_updated": "2026-08-27T00:25:58.412272"
+      "hash": "2587ac7166d70713733870a1215b203fd283d5f8274eef9a2ee1503734a3a195",
+      "last_updated": "2026-08-27T13:34:27.011153"
     },
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
@@ -1334,8 +1334,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-27T00:25:58.415162",
-    "fetch_duration_seconds": 2.64711,
+    "last_fetch_completed": "2026-08-27T13:34:27.013210",
+    "fetch_duration_seconds": 2.992393,
     "total_pages_discovered": 222,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1348,7 +1348,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-27T00:25:58.415175",
+  "last_updated": "2026-08-27T13:34:27.013224",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
