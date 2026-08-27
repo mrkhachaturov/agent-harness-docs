@@ -459,8 +459,8 @@
     "enterprise/organizations.md": {
       "original_url": "https://cursor.com/docs/enterprise/organizations",
       "original_md_url": "https://cursor.com/docs/enterprise/organizations.md",
-      "hash": "3eae8528ce68138436f28844a7829547ada87afdd9f1780f3cad723f19cf3780",
-      "last_updated": "2026-07-22T02:07:00.894459"
+      "hash": "1de58fb2788c8fa17fbac2dccd2618d5bf8133071bd8b9cc25e642af8232a9ed",
+      "last_updated": "2026-08-27T00:25:58.410122"
     },
     "enterprise/pooled-usage.md": {
       "original_url": "https://cursor.com/docs/enterprise/pooled-usage",
@@ -789,8 +789,8 @@
     "help/customization/skills.md": {
       "original_url": "https://cursor.com/help/customization/skills",
       "original_md_url": "https://cursor.com/help/customization/skills.md",
-      "hash": "65b210456d1a87965db3fe7a181bb881cf852ba215131faf41aa8cff84bc4d2e",
-      "last_updated": "2026-06-29T22:53:03.567981"
+      "hash": "d0b82958b084361c8d6f31a31347026f1d05adac79731bf48ce45c1701a174b7",
+      "last_updated": "2026-08-27T00:25:58.410655"
     },
     "help/customization/themes.md": {
       "original_url": "https://cursor.com/help/customization/themes",
@@ -1275,8 +1275,8 @@
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
       "original_md_url": "https://cursor.com/docs/plugins.md",
-      "hash": "1312a86b22c8fcbdae8748988099868d8f76d61512c382379d359336ddffcc54",
-      "last_updated": "2026-08-25T00:57:12.646221"
+      "hash": "4e264117ec2359445a066f8186e2115c1117262746b3b435389d4564cd1c737a",
+      "last_updated": "2026-08-27T00:25:58.411554"
     },
     "reference/deeplinks.md": {
       "original_url": "https://cursor.com/docs/reference/deeplinks",
@@ -1323,8 +1323,8 @@
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
       "original_md_url": "https://cursor.com/docs/skills.md",
-      "hash": "e21e4fbea12acfa92529f397196ba87c496b8cbb5defcfaa6f84e6f4da1cf523",
-      "last_updated": "2026-08-25T00:57:12.647303"
+      "hash": "bae0214273351b24f9a040d431fc3959c6ff6bb5e85ecc17a27962de15f41ad6",
+      "last_updated": "2026-08-27T00:25:58.412272"
     },
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
@@ -1334,8 +1334,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-26T19:43:26.778770",
-    "fetch_duration_seconds": 2.324345,
+    "last_fetch_completed": "2026-08-27T00:25:58.415162",
+    "fetch_duration_seconds": 2.64711,
     "total_pages_discovered": 222,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1348,7 +1348,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-26T19:43:26.778785",
+  "last_updated": "2026-08-27T00:25:58.415175",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

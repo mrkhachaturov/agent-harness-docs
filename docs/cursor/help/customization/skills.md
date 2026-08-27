@@ -23,7 +23,11 @@ To create one manually, add a `SKILL.md` file in `.cursor/skills/your-skill-name
 
 You can also organize skills into subfolders, like `.cursor/skills/shipping/deploy-staging/SKILL.md`. Cursor walks the skills root recursively, so category folders work for grouping related skills. The skill's name comes from the folder that contains `SKILL.md`, not the category above it.
 
-Skills are automatically loaded from `.agents/skills/`, `.cursor/skills/`, `~/.agents/skills/` (global), and `~/.cursor/skills/` (global), including nested project subdirectories such as `apps/web/.cursor/skills/` in a monorepo. Skills in a nested project directory are automatically scoped to files inside that directory — for example, skills under `apps/web/.cursor/skills/` are only surfaced when the agent works with files in `apps/web/`, similar to the [`paths` frontmatter field](https://cursor.com/help/customization/skills.md#how-do-i-scope-a-skill-to-specific-files). For compatibility, Cursor also loads skills from Claude and Codex directories: `.claude/skills/`, `.codex/skills/`, `~/.claude/skills/`, and `~/.codex/skills/`.
+Skills are automatically loaded from `.agents/skills/`, `.cursor/skills/`, `~/.agents/skills/` (global on the local machine), and `~/.cursor/skills/` (global on the local machine), including nested project subdirectories such as `apps/web/.cursor/skills/` in a monorepo. Skills in a nested project directory are automatically scoped to files inside that directory. For example, skills under `apps/web/.cursor/skills/` are only surfaced when the agent works with files in `apps/web/`, similar to the [`paths` frontmatter field](https://cursor.com/help/customization/skills.md#how-do-i-scope-a-skill-to-specific-files). For compatibility, Cursor also loads skills from Claude and Codex directories: `.claude/skills/`, `.codex/skills/`, `~/.claude/skills/`, and `~/.codex/skills/`.
+
+## Are user-level skills available on Cloud Agents and remote workers?
+
+Cursor loads `~/.cursor/skills/` and `~/.agents/skills/` on the local machine. Those folders are not copied to Cloud Agents, Agents Window remote SSH, or [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted-guides/pool.md). On those surfaces, use project skills in the repo, or bake skills into the worker image.
 
 ## How do I scope a skill to specific files?
 
@@ -80,6 +84,7 @@ Rules with `alwaysApply: true` or specific `globs` patterns are not migrated, as
 
 - [Skills reference](https://cursor.com/docs/skills.md)
 - [Rules](https://cursor.com/help/customization/rules.md)
+- [Self-hosted worker pool](https://cursor.com/docs/cloud-agent/self-hosted-guides/pool.md)
 
 
 ---
