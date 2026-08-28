@@ -1,6 +1,6 @@
 # Spend limits
 
-Set spending limits to prevent unexpected on-demand charges. When a limit is reached, AI features stop for that user until the next billing cycle.
+Set spending limits to cap how much on-demand usage you're willing to pay that billing cycle. When a limit is reached, on-demand usage stops for that user until the spend limit is increased or the next billing cycle starts.
 
 ## How do I set a spend limit?
 
@@ -8,7 +8,7 @@ Set spending limits to prevent unexpected on-demand charges. When a limit is rea
 2. On-demand usage must be enabled to view and set spend limits
 3. Set a monthly spend limit for yourself or your team
 
-Limit changes take effect immediately. Setting a limit to "No Limit" removes it.
+Limit changes take effect immediately. Setting a limit to "No Limit" removes it. Raising a limit mid-cycle can make previously credited overage billable.
 
 ## Who can change spend limits?
 
@@ -32,6 +32,12 @@ Enterprise admins can review changes to this setting in the [audit log](https://
 - Other team members continue unaffected
 - The user sees a notification that their limit was reached
 - Usage resumes automatically at the start of the next billing cycle
+
+## What if usage goes over my spend limit?
+
+Enforcement is not instant, so usage can briefly exceed your spend limit. Once we recognize that you have reached your spend limit, on-demand usage stops until you increase the spend limit or a new billing cycle starts. If a higher plan is available, upgrading can add included usage without raising the spend limit.
+
+We will credit the limited overage that occurs prior to enforcement as a temporary spend-limit credit. That is not a refund or a permanent credit. You are billed up to your current limit. If you raise the limit in the same cycle, we may bill some or all of that credit, up to the new limit. Leave the limit unchanged, or turn off on-demand usage, to keep the credit.
 
 ## What types of spend limits are available?
 

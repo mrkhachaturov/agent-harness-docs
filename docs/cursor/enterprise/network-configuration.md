@@ -90,7 +90,7 @@ We generally recommend allowlisting with the domain patterns above. However, if 
 - `api2.cursor.sh`: Used for most API requests.
 - `api5.cursor.sh`: Used for Cursor's agent requests.
 - `api3.cursor.sh`: Used for Cursor Tab requests (HTTP/2 only).
-- `repo42.cursor.sh`: Used for codebase indexing (HTTP/2 only).
+- `repo42.cursor.sh`: Used for codebase search (HTTP/2 only).
 - `api4.cursor.sh`, `us-asia.gcpp.cursor.sh`, `us-eu.gcpp.cursor.sh`, `us-only.gcpp.cursor.sh`: Used for Cursor Tab requests depending on your location (HTTP/2 only).
 - `adminportal42.cursor.sh`: Used to configure SSO and domain verification.
 - `marketplace.cursorapi.com`, `cursor-cdn.com`, `downloads.cursor.com`, `anysphere-binaries.s3.us-east-1.amazonaws.com`: Used for client updates and downloading extensions from the extension marketplace.

@@ -32,7 +32,7 @@ No. Grok Bot signs in with your Cursor account. Signing out of Grok Bot or unins
 
 - Your Cursor account and Grok Bot access
 - Grok Bot agents, chats, computers, and connected plugins
-- Cursor chat history, settings, and indexed codebases
+- Cursor chat history and settings
 
 All data is removed within 30 days.
 

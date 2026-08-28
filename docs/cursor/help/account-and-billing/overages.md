@@ -21,8 +21,14 @@ Go to [cursor.com/dashboard](https://cursor.com/dashboard) and click **Billing &
 ## How do I prevent on-demand charges?
 
 - **Disable on-demand usage**: Turn it off in your dashboard settings to stop requests once your included usage runs out
-- **Set a spend limit**: Cap how much on-demand usage you're willing to pay
+- **Set a spend limit**: Cap how much on-demand usage you're willing to pay that billing cycle. Raising it mid-cycle can make previously credited overage billable.
 - **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Pro+ or Ultra give you higher included usage limits for Cursor Models and Other Models.
+
+## What if usage goes over my spend limit?
+
+Enforcement is not instant, so usage can briefly exceed your spend limit. Once we recognize that you have reached your spend limit, on-demand usage stops until you increase the spend limit or a new billing cycle starts. If a higher plan is available, upgrading can add included usage without raising the spend limit.
+
+We will credit the limited overage that occurs prior to enforcement as a temporary spend-limit credit. That is not a refund or a permanent credit. You are billed up to your current limit. If you raise the limit in the same cycle, we may bill some or all of that credit, up to the new limit. Leave the limit unchanged, or turn off on-demand usage, to keep the credit.
 
 ## Why did my usage costs increase after the Cursor Router launch?
 
@@ -36,6 +42,7 @@ See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) f
 
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
+- [Spend limits](https://cursor.com/help/account-and-billing/spend-limits.md)
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)
 - [Invoices](https://cursor.com/help/account-and-billing/invoices.md)

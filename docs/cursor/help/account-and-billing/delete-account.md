@@ -17,7 +17,6 @@ Grok Bot uses your Cursor account. Deleting the Cursor account also deletes Grok
 
 - Your account and all associated data
 - Chat history and settings
-- Indexed codebases
 
 All data is removed within 30 days.
 

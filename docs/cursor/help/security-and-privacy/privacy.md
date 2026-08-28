@@ -73,7 +73,7 @@ Enterprise plans include additional controls beyond Privacy Mode:
 - **AI code tracking API and audit logs**: Track how AI features are used across your organization
 - **Granular admin and model controls**: Restrict model access, enforce Privacy Mode org-wide, and manage agent permissions
 - **Compliance certifications**: SOC 2 Type II and more (see [Security and compliance documents](https://cursor.com/help/security-and-privacy/compliance.md))
-- **Customer Managed Encryption Keys (CMEK)**: Encrypt embeddings and Cloud Agent data with your own keys, with full control over key rotation and access
+- **Customer Managed Encryption Keys (CMEK)**: Encrypt Cloud Agent data with your own keys, with full control over key rotation and access
 
 See the full Enterprise feature list on [cursor.com/pricing](https://cursor.com/pricing) or [contact sales](https://cursor.com/contact-sales?source=docs-help-privacy) for details.
 

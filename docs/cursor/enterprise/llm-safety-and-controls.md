@@ -107,7 +107,7 @@ The `.cursorignore` file works like `.gitignore` but controls what Cursor can ac
 
 - Users can manually read ignored files
 - Agents might find ways to access ignored content
-- It doesn't prevent file access, only excludes from indexing
+- Terminal commands and MCP tools can still read ignored files
 
 For true security, use file system permissions or encrypt sensitive data.
 

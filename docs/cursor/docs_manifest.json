@@ -27,8 +27,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "bdb7332845a01f2f5b23c0d185412bec2b01482b65fb89e1dd1cfaa3506381ef",
-      "last_updated": "2026-08-25T00:57:12.641131"
+      "hash": "df9c6593d352af963344099dcdfec49ccfa2dc073bd42a8eb159a556845e8a93",
+      "last_updated": "2026-08-28T23:50:44.234144"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -153,8 +153,8 @@
     "agent/tools/search.md": {
       "original_url": "https://cursor.com/docs/agent/tools/search",
       "original_md_url": "https://cursor.com/docs/agent/tools/search.md",
-      "hash": "97d822cf751e3e955be23604e3850e0eb98afd9cb91a54e8dddd75252bb25a83",
-      "last_updated": "2026-07-24T19:21:36.615546"
+      "hash": "06efa88ffd9ad805fe2f1b32bfcbfb247aa31b51b9d8ac133a3c504e618f5234",
+      "last_updated": "2026-08-28T23:50:44.234649"
     },
     "agent/tools/terminal.md": {
       "original_url": "https://cursor.com/docs/agent/tools/terminal",
@@ -417,14 +417,14 @@
     "enterprise/identity-and-access-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/identity-and-access-management",
       "original_md_url": "https://cursor.com/docs/enterprise/identity-and-access-management.md",
-      "hash": "57bee7c663325de9d1d2aa3f3676825d00bd404b3b3e197abe1e851e243cfcdb",
-      "last_updated": "2026-07-19T21:47:45.575479"
+      "hash": "a14116bc6cb1ce58552186e3b943e58ef36104c5a3b35f6cbb37e9116fa54390",
+      "last_updated": "2026-08-28T23:50:44.235572"
     },
     "enterprise/llm-safety-and-controls.md": {
       "original_url": "https://cursor.com/docs/enterprise/llm-safety-and-controls",
       "original_md_url": "https://cursor.com/docs/enterprise/llm-safety-and-controls.md",
-      "hash": "9301c7356685c2e133a35845c83b1788e857f344f07510ca7c95599cba207812",
-      "last_updated": "2026-07-08T02:09:33.202125"
+      "hash": "4a4d4bd68097abc882ba1dafe86fa37022f986b74b5520afe58b6dba0839f894",
+      "last_updated": "2026-08-28T23:50:44.235813"
     },
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
@@ -435,8 +435,8 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "30c988cc0aa92c75fd97ae6ef7b141a5d2127a83a1839bec9bdb8446cb3a2c7d",
-      "last_updated": "2026-08-24T21:24:42.909561"
+      "hash": "592b8a5c79ddd4cde5990b0042c30c8b403783867bd1d184098773cf8bbf463e",
+      "last_updated": "2026-08-28T23:50:44.236139"
     },
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
@@ -471,14 +471,14 @@
     "enterprise/privacy-and-data-governance.md": {
       "original_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
       "original_md_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance.md",
-      "hash": "1c4696d06e389ca6a64b532f012163c826bbcde3b98d5db3cbc5b36948adcda7",
-      "last_updated": "2026-08-04T16:50:36.268367"
+      "hash": "c180f7a06190275a6e826368f81b66046657f3f5e319f0659f7ea1a5cac8ce69",
+      "last_updated": "2026-08-28T23:50:44.236504"
     },
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
       "original_md_url": "https://cursor.com/docs/enterprise/security-hardening.md",
-      "hash": "febc1754d7992b9682061a623f35528cd4195c242afb2e0cd7d19914dcfbf4b2",
-      "last_updated": "2026-08-08T01:10:04.134518"
+      "hash": "5a15762bca5cb61f91ad071abe897b28fba4e7e8aea298ec238415c52b376343",
+      "last_updated": "2026-08-28T23:50:44.236784"
     },
     "get-started/quickstart.md": {
       "original_url": "https://cursor.com/docs/get-started/quickstart",
@@ -513,8 +513,8 @@
     "help/account-and-billing/change-email.md": {
       "original_url": "https://cursor.com/help/account-and-billing/change-email",
       "original_md_url": "https://cursor.com/help/account-and-billing/change-email.md",
-      "hash": "4e8e5a2bdbec98bdc08ea2e8c49be5a736c242a52c58e996fc6d5ee5b45b5a1e",
-      "last_updated": "2026-06-29T22:53:03.561334"
+      "hash": "334249fc8b33692f66150e57461e05af153f9e0929769c55cb07f39577055819",
+      "last_updated": "2026-08-28T23:50:44.237008"
     },
     "help/account-and-billing/cursor-start.md": {
       "original_url": "https://cursor.com/help/account-and-billing/cursor-start",
@@ -525,8 +525,8 @@
     "help/account-and-billing/delete-account.md": {
       "original_url": "https://cursor.com/help/account-and-billing/delete-account",
       "original_md_url": "https://cursor.com/help/account-and-billing/delete-account.md",
-      "hash": "9c27475568462993af61ec29069929afaaec2d0420410b3a275cdc0e069d4aeb",
-      "last_updated": "2026-08-26T19:43:26.772909"
+      "hash": "029c6a45e804f76815168e978bccb253b442a0c3c37d24b201688dff6996441c",
+      "last_updated": "2026-08-28T23:50:44.237241"
     },
     "help/account-and-billing/enterprise.md": {
       "original_url": "https://cursor.com/help/account-and-billing/enterprise",
@@ -543,8 +543,8 @@
     "help/account-and-billing/overages.md": {
       "original_url": "https://cursor.com/help/account-and-billing/overages",
       "original_md_url": "https://cursor.com/help/account-and-billing/overages.md",
-      "hash": "255b915bb40b38048d6b0f29dd7af9f8ddfca593ee129f1c2775c3ec60771f26",
-      "last_updated": "2026-08-25T00:57:12.644276"
+      "hash": "14b20854842c54933fa41482f91f4c5c35d4cae531dac668a9f18f2e6f9c6583",
+      "last_updated": "2026-08-28T23:50:44.237435"
     },
     "help/account-and-billing/payment-issues.md": {
       "original_url": "https://cursor.com/help/account-and-billing/payment-issues",
@@ -591,8 +591,8 @@
     "help/account-and-billing/spend-limits.md": {
       "original_url": "https://cursor.com/help/account-and-billing/spend-limits",
       "original_md_url": "https://cursor.com/help/account-and-billing/spend-limits.md",
-      "hash": "530c396cd44f81f17e6e1f8df8a9efb13d2ba8db28d15431fb70df70801b4ecf",
-      "last_updated": "2026-08-12T21:41:02.489805"
+      "hash": "18e2cfbb00c4b17597ecae5167cff122d37045c04c166023a96e7c0afe0d0678",
+      "last_updated": "2026-08-28T23:50:44.237678"
     },
     "help/account-and-billing/student-discount.md": {
       "original_url": "https://cursor.com/help/account-and-billing/student-discount",
@@ -759,8 +759,8 @@
     "help/customization/ignore-files.md": {
       "original_url": "https://cursor.com/help/customization/ignore-files",
       "original_md_url": "https://cursor.com/help/customization/ignore-files.md",
-      "hash": "93720fd8dbcb5fdd324357386d7f9d7bd2cefe89a9a52e91e4d73758b01296ae",
-      "last_updated": "2026-06-29T22:53:03.567197"
+      "hash": "d40e70bfa58dcc9f12ac8d23e5bc7139be283ab3e771b529d238346d4eefd29d",
+      "last_updated": "2026-08-28T23:50:44.238031"
     },
     "help/customization/keyboard-shortcuts.md": {
       "original_url": "https://cursor.com/help/customization/keyboard-shortcuts",
@@ -843,8 +843,8 @@
     "help/grok-bot/delete-account.md": {
       "original_url": "https://cursor.com/help/grok-bot/delete-account",
       "original_md_url": "https://cursor.com/help/grok-bot/delete-account.md",
-      "hash": "c3f23ff97e647d2a594d2017fa1eab7307ff0cf0a113004f2443e27cadfc2359",
-      "last_updated": "2026-08-26T19:43:26.773393"
+      "hash": "1c9a77a03073b8e16dc752e57ec43e0128f596bd1876e3e94d6c95fc3ba3b366",
+      "last_updated": "2026-08-28T23:50:44.238287"
     },
     "help/grok-bot/get-help.md": {
       "original_url": "https://cursor.com/help/grok-bot/get-help",
@@ -981,8 +981,8 @@
     "help/security-and-privacy/privacy.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/privacy",
       "original_md_url": "https://cursor.com/help/security-and-privacy/privacy.md",
-      "hash": "76d351a8830cd8d1390752565101d1ce5e139495025a4465877a48440223e238",
-      "last_updated": "2026-08-19T09:29:53.121788"
+      "hash": "9095678d65f4e523d94943cee082dc949418ca6d27e20b298306498dd6ec2593",
+      "last_updated": "2026-08-28T23:50:44.238583"
     },
     "help/security-and-privacy/regions.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/regions",
@@ -1023,8 +1023,8 @@
     "help/troubleshooting/performance.md": {
       "original_url": "https://cursor.com/help/troubleshooting/performance",
       "original_md_url": "https://cursor.com/help/troubleshooting/performance.md",
-      "hash": "250e773f09db708b46394e7fe5450a00e01eefdae157196477850d400eeae360",
-      "last_updated": "2026-07-29T05:47:37.478825"
+      "hash": "7b5124296ca3122fc6056a23c336dfed4fbfdcb47060e87fce8e56518fc2a937",
+      "last_updated": "2026-08-28T23:50:44.238765"
     },
     "help/troubleshooting/reporting-bugs.md": {
       "original_url": "https://cursor.com/help/troubleshooting/reporting-bugs",
@@ -1334,8 +1334,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-28T14:50:23.961523",
-    "fetch_duration_seconds": 1.749423,
+    "last_fetch_completed": "2026-08-28T23:50:44.242511",
+    "fetch_duration_seconds": 2.187075,
     "total_pages_discovered": 222,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1348,7 +1348,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-28T14:50:23.961539",
+  "last_updated": "2026-08-28T23:50:44.242523",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

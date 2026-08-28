@@ -18,7 +18,6 @@ Deleting your account is permanent. You will lose:
 
 - Chat history
 - Settings and preferences
-- Indexed codebases
 
 Local project files on your computer are not affected.
 
