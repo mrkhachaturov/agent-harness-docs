@@ -339,8 +339,8 @@
     "cloud-agent/security-network.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security-network",
       "original_md_url": "https://cursor.com/docs/cloud-agent/security-network.md",
-      "hash": "73dd1b5234d2f7964fa1a09ea07eb7c32a13b8eb2bf2adda0b394df76122d496",
-      "last_updated": "2026-08-24T21:24:42.908559"
+      "hash": "c561e39810a841a458bc27ec74bad9527956a5a817525a3b793ffce47892dd96",
+      "last_updated": "2026-08-28T14:50:23.955973"
     },
     "cloud-agent/security.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security",
@@ -1257,8 +1257,8 @@
     "origin/mirror-github.md": {
       "original_url": "https://cursor.com/docs/origin/mirror-github",
       "original_md_url": "https://cursor.com/docs/origin/mirror-github.md",
-      "hash": "83842dca857601d8d1cd067b18ee163051bf69f28fca1bb077b1d12f9ed0f8a5",
-      "last_updated": "2026-08-17T18:31:17.517895"
+      "hash": "c560d7580517aca8292d3d24ae83a91a0f4c49ebbc3442553ff87d588986ae5e",
+      "last_updated": "2026-08-28T14:50:23.957742"
     },
     "origin/pull-requests.md": {
       "original_url": "https://cursor.com/docs/origin/pull-requests",
@@ -1334,8 +1334,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-28T00:14:34.275245",
-    "fetch_duration_seconds": 2.726006,
+    "last_fetch_completed": "2026-08-28T14:50:23.961523",
+    "fetch_duration_seconds": 1.749423,
     "total_pages_discovered": 222,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1348,7 +1348,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-28T00:14:34.275261",
+  "last_updated": "2026-08-28T14:50:23.961539",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
