@@ -93,8 +93,8 @@
     "agent/agents-window.md": {
       "original_url": "https://cursor.com/docs/agent/agents-window",
       "original_md_url": "https://cursor.com/docs/agent/agents-window.md",
-      "hash": "e9dba4de79bf5dd69f8c7ce6ddbd553fe175f72b34a38f5758b99e63b9c31af3",
-      "last_updated": "2026-07-07T06:43:17.495020"
+      "hash": "3f4b7efbc8aa1238e75ff9fa804fe24a9a63e1cd2ddffca66e37a2e2b4476a32",
+      "last_updated": "2026-08-31T18:42:27.243347"
     },
     "agent/debug-mode.md": {
       "original_url": "https://cursor.com/docs/agent/debug-mode",
@@ -561,8 +561,8 @@
     "help/account-and-billing/pricing.md": {
       "original_url": "https://cursor.com/help/account-and-billing/pricing",
       "original_md_url": "https://cursor.com/help/account-and-billing/pricing.md",
-      "hash": "e7067b58415cf44f5023b5c4d94a2750167b132f44a40093438e930207196890",
-      "last_updated": "2026-08-25T00:57:12.644406"
+      "hash": "e17c0fed78d7c612a5a5947c748bdba3734477ad1af1edafd5182298b466eefb",
+      "last_updated": "2026-08-31T18:42:27.244603"
     },
     "help/account-and-billing/profiles.md": {
       "original_url": "https://cursor.com/help/account-and-billing/profiles",
@@ -579,8 +579,8 @@
     "help/account-and-billing/refunds.md": {
       "original_url": "https://cursor.com/help/account-and-billing/refunds",
       "original_md_url": "https://cursor.com/help/account-and-billing/refunds.md",
-      "hash": "677543626867a816b344929843cd9f380e4ac3c400e38576c9ecbc3872647e2f",
-      "last_updated": "2026-08-19T09:29:53.120040"
+      "hash": "945ea83ab8658209192ddb53d17cea12331e6ded449de983b595a8a9bf97fd6f",
+      "last_updated": "2026-08-31T18:42:27.244811"
     },
     "help/account-and-billing/spend-alerts.md": {
       "original_url": "https://cursor.com/help/account-and-billing/spend-alerts",
@@ -1203,8 +1203,8 @@
     "origin.md": {
       "original_url": "https://cursor.com/docs/origin",
       "original_md_url": "https://cursor.com/docs/origin.md",
-      "hash": "ddbb0a90ccc0d7c8f62a7f931569babffda7bdf3632f548f4ed884d1cb898f08",
-      "last_updated": "2026-08-18T18:31:18.838025"
+      "hash": "657bb332de0d620bba2cf38e89f3f683f82ed285a040df15a3075925e569c56c",
+      "last_updated": "2026-08-31T18:42:27.245775"
     },
     "origin/browse.md": {
       "original_url": "https://cursor.com/docs/origin/browse",
@@ -1323,19 +1323,19 @@
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
       "original_md_url": "https://cursor.com/docs/skills.md",
-      "hash": "2587ac7166d70713733870a1215b203fd283d5f8274eef9a2ee1503734a3a195",
-      "last_updated": "2026-08-27T13:34:27.011153"
+      "hash": "b6544aee159849e7fdccac3360cefd9817b58c0e2f64b985753ee632fc7feb1c",
+      "last_updated": "2026-08-31T18:42:27.246574"
     },
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
       "original_md_url": "https://cursor.com/docs/subagents.md",
-      "hash": "03e3f64e0bb55ae1ce3c2eaf11669254192a6d8f681a72258b4dd5ed03efbd5c",
-      "last_updated": "2026-08-19T18:27:28.232130"
+      "hash": "187b052042c53a4ce32375ca7043b1f0e1a31ff8f735087880205a8e22cb1d36",
+      "last_updated": "2026-08-31T18:42:27.246839"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-31T09:15:21.321606",
-    "fetch_duration_seconds": 2.458391,
+    "last_fetch_completed": "2026-08-31T18:42:27.249649",
+    "fetch_duration_seconds": 3.777582,
     "total_pages_discovered": 222,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1348,7 +1348,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-31T09:15:21.321620",
+  "last_updated": "2026-08-31T18:42:27.249661",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
