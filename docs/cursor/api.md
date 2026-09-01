@@ -73,7 +73,7 @@ API keys are tied to your organization and viewable by all admins. Keys are unaf
 
 ## Rate Limits
 
-All APIs implement rate limiting to ensure fair usage and system stability. Rate limits are enforced per team and reset every minute.
+All APIs implement rate limiting to ensure fair usage and system stability. Limits apply per authenticated user, team, or organization, and most are scoped to a single endpoint. Unless an endpoint documents a different limit, the default is 20 requests per minute.
 
 ### Rate Limits by API
 
@@ -82,6 +82,7 @@ All APIs implement rate limiting to ensure fair usage and system stability. Rate
 | **Admin API**            | Most endpoints                                                            | 20 requests/minute                                    |
 | **Admin API**            | `/teams/filtered-usage-events` and `/organizations/filtered-usage-events` | 60 requests/minute                                    |
 | **Admin API**            | `/teams/user-spend-limit`                                                 | 250 requests/minute                                   |
+| **Organization API**     | Most endpoints                                                            | 20 requests/minute per endpoint                       |
 | **Analytics API**        | Most team-level endpoints                                                 | 100 requests/minute                                   |
 | **Analytics API**        | `/analytics/team/conversation-insights`                                   | 20 requests/minute                                    |
 | **Analytics API**        | By-user endpoints                                                         | 50 requests/minute                                    |
@@ -92,12 +93,12 @@ All APIs implement rate limiting to ensure fair usage and system stability. Rate
 
 ### Rate Limit Response
 
-When you exceed the rate limit, you'll receive a `429 Too Many Requests` response:
+When you exceed the rate limit, you'll receive a `429 Too Many Requests` response. Admin and Organization API responses include `Retry-After: 60` and this body:
 
 ```json
 {
-  "error": "Too Many Requests",
-  "message": "Rate limit exceeded. Please try again later."
+  "code": "error",
+  "message": "Rate limit exceeded"
 }
 ```
 

@@ -202,7 +202,7 @@ For model access specifically, neither the team nor a group fully supersedes the
 
 ## Manage groups with the API
 
-List groups, read members, and add or remove members through the [Organization API](https://cursor.com/docs/account/organizations/organization-admin-api.md#organization-groups). Group routes use Organization API keys, and group IDs use the `g_` prefix.
+Create, list, update, and delete groups through the [Organization API](https://cursor.com/docs/account/organizations/organization-admin-api.md#organization-groups). The API also lists group members and adds or removes members of manual groups. Group routes use Organization API keys, and group IDs use the `g_` prefix.
 
 ## Related docs
 

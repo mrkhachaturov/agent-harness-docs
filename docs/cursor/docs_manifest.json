@@ -21,8 +21,8 @@
     "account/organizations/organization-admin-api.md": {
       "original_url": "https://cursor.com/docs/account/organizations/organization-admin-api",
       "original_md_url": "https://cursor.com/docs/account/organizations/organization-admin-api.md",
-      "hash": "8fea1b0e53ef56ab40184dca683ed5e28827fa19e0db18c2e5106b0fde9f5c52",
-      "last_updated": "2026-08-25T00:57:12.640807"
+      "hash": "bcc650e9967b34f1c9ac5ccd28bc93bbf2b659ef1a18581733b0899a2926e595",
+      "last_updated": "2026-09-01T18:10:19.285788"
     },
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
@@ -165,8 +165,8 @@
     "api.md": {
       "original_url": "https://cursor.com/docs/api",
       "original_md_url": "https://cursor.com/docs/api.md",
-      "hash": "4576a449ff031d01177ddcf93f7d41d3663e631c671a7a1486979c2cea70e7a1",
-      "last_updated": "2026-08-25T00:57:12.642662"
+      "hash": "853882ee34647ed5575f6d98b2de7c99cadd367f4a718fdfa5cd28be56409c80",
+      "last_updated": "2026-09-01T18:10:19.286527"
     },
     "approval-agents.md": {
       "original_url": "https://cursor.com/docs/approval-agents",
@@ -489,8 +489,8 @@
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
       "original_md_url": "https://cursor.com/docs/enterprise/organization-groups.md",
-      "hash": "8af627c78dcc93eacd00872c5cbd45b4a918c2e9555177908d06de704a0f88db",
-      "last_updated": "2026-07-29T16:22:32.910978"
+      "hash": "98dcbad0a966cb4f3e36eeefcdbed3f05138f19e388dfbc8ef21be2214fa5a74",
+      "last_updated": "2026-09-01T18:10:19.287706"
     },
     "enterprise/organizations.md": {
       "original_url": "https://cursor.com/docs/enterprise/organizations",
@@ -549,8 +549,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "2ad46d996c9ef5be1a4cc45034166d2292fb5b883b70a3be64704b801b74c5c1",
-      "last_updated": "2026-09-01T08:14:05.697437"
+      "hash": "fb369e8525ed4cbf976f3de46c2910b7415d10013cdb26537132a1dd99ed645c",
+      "last_updated": "2026-09-01T18:10:19.288113"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1412,8 +1412,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-01T13:54:41.632755",
-    "fetch_duration_seconds": 2.805247,
+    "last_fetch_completed": "2026-09-01T18:10:19.292693",
+    "fetch_duration_seconds": 2.167334,
     "total_pages_discovered": 235,
     "pages_fetched_successfully": 235,
     "pages_failed": 0,
@@ -1426,7 +1426,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-01T13:54:41.632769",
+  "last_updated": "2026-09-01T18:10:19.292707",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
