@@ -41,6 +41,7 @@ All data is removed within 30 days.
 - Files on your computer stay on your machine
 - If you subscribed through the App Store, cancel that subscription in Apple's settings. See [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - If you linked SuperGrok, that Grok subscription is separate. Cancel it on Grok if you no longer want it
+- If you linked X Premium+, that X subscription is separate. Cancel it on X if you no longer want it
 
 ## What if I don't see Delete Account?
 

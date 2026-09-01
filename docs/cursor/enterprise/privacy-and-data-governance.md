@@ -38,9 +38,9 @@ See [Cloud Agents](https://cursor.com/docs/cloud-agent.md) for details.
 
 Most models run under Cursor's ZDR agreements, so providers don't store inputs or outputs or train on your data ([read more](https://cursor.com/data-use) about our data use policies). A few models require data retention with the provider and fall outside these agreements. For Enterprise customers, Teams with Privacy Mode enabled, and individual customers with Privacy Mode enabled, Cursor requires admin approval before use.
 
-[Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md) works this way. Anthropic stores its inputs and outputs to run automatic and human harm-prevention reviews. This data is not used for training or product improvement. For Enterprise customers and customers with Privacy Mode enabled, requests to Fable 5 fail until the model's data retention policy is approved from the [dashboard](https://cursor.com/dashboard/restricted_models/claude-fable-5). Opting in applies to the whole team. Enterprise admins can still limit which user groups can select the model with [model access control](https://cursor.com/docs/enterprise/model-and-integration-management.md#model-access-control).
+[Claude Fable 5.1](https://cursor.com/docs/models/claude-fable-5-1.md) and [Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md) work this way. Anthropic stores their inputs and outputs to run automatic and human harm-prevention reviews. This data is not used for training or product improvement. For Enterprise customers and customers with Privacy Mode enabled, requests to these models fail until the model's data retention policy is approved from the [dashboard](https://cursor.com/dashboard/restricted_models/claude-fable-5-1). Opting in applies to the whole team. Enterprise admins can still limit which user groups can select the model with [model access control](https://cursor.com/docs/enterprise/model-and-integration-management.md#model-access-control).
 
-When a Fable 5 request trips one of its security guardrails, Cursor routes that request to Claude Opus automatically so your work continues.
+When a Fable request trips one of its security guardrails, Cursor routes that request to Claude Opus automatically so your work continues.
 
 ## Privacy Mode enforcement
 

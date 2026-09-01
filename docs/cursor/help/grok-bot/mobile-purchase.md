@@ -11,6 +11,7 @@ Sign in to Grok Bot mobile with the **same Cursor account** you use on desktop, 
 - **Cursor Pro**
 - **Cursor Teams** (self-serve) seats
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
+- **X Premium+** account links
 
 You should not buy a second subscription on Apple in these cases.
 
@@ -24,9 +25,9 @@ If your Cursor account doesn't already include Grok Bot, subscribe from the mobi
 
 Only monthly individual plans are available through the mobile app. For yearly billing, Teams, or Enterprise plans, subscribe on [cursor.com](https://cursor.com/dashboard/billing). See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md) for how Apple handles in-app subscriptions.
 
-## How do I use SuperGrok, SuperGrok Plus, or SuperGrok Heavy on mobile?
+## How do I use SuperGrok or X Premium+ on mobile?
 
-You still need to [link your Grok account](https://cursor.com/help/grok-bot/supergrok.md). Complete the link on desktop, then sign in to Grok Bot mobile with the same Cursor account.
+You still need to [link your Grok or X account](https://cursor.com/help/grok-bot/supergrok.md). Complete the SuperGrok or X Premium+ link on desktop, then sign in to Grok Bot mobile with the same Cursor account.
 
 ## How do I manage or cancel an Apple subscription?
 

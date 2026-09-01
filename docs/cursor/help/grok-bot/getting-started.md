@@ -9,7 +9,7 @@ Grok Bot gives you **agents** you can keep around. An agent can use plugins you'
 ## How do I get started with Grok Bot?
 
 1. Open Grok Bot and [sign in](https://cursor.com/help/grok-bot/sign-in.md) with the **same Cursor account** that should own your plan and usage.
-2. Choose a path under [Plans and billing](https://cursor.com/help/grok-bot/plans.md): a Cursor plan that includes Grok Bot, or link SuperGrok, SuperGrok Plus, or SuperGrok Heavy.
+2. Choose a path under [Plans and billing](https://cursor.com/help/grok-bot/plans.md): a Cursor plan that includes Grok Bot, or link SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+.
 3. Create your first agent: give it a name, shape, color, and title.
 4. In the new chat window, describe the outcome you want and send the message. Suggestions will be presented to help you get started.
 5. Send another message anytime to steer or stop the work.

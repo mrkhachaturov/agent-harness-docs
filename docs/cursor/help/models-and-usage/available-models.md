@@ -29,7 +29,7 @@ Cursor Router routes across these models:
 - **[GPT-5.5](https://cursor.com/docs/models/gpt-5-5.md)**
 - **[Claude Opus 5](https://cursor.com/docs/models/claude-opus-5.md)**
 - **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)**
-- **[Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md)**
+- **[Claude Fable 5.1](https://cursor.com/docs/models/claude-fable-5-1.md)**
 
 **Required:** [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md). The router needs a powerful, cost-efficient model in the pool; blocking Grok 4.5 disables the router.
 

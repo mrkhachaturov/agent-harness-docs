@@ -17,6 +17,7 @@ No. Grok Bot access carries into mobile when you sign in with the same Cursor ac
 - **Cursor Pro**
 - **Cursor Teams** (self-serve) seats
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
+- **X Premium+** account links
 
 You should not purchase a second subscription through Apple in these cases.
 

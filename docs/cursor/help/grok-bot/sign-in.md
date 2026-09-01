@@ -38,19 +38,19 @@ Some session and account-link failures, including looped sign-in flows, can't be
 - The exact error text (e.g. "Authentication error", "Access blocked", GitHub 404 on OAuth)
 - Your platform and Grok Bot version
 - The steps you already tried (logout/login, cache clear, reinstall, incognito, x.ai/bot sign-in)
-- Whether the issue started during SuperGrok linking
+- Whether the issue started during SuperGrok or X Premium+ linking
 
 If the steps in [Why is Grok Bot showing a persistent authentication error even after I log out, clear cache, and reinstall?](https://cursor.com/help/grok-bot/sign-in.md#why-is-grok-bot-showing-a-persistent-authentication-error-even-after-i-log-out-clear-cache-and-reinstall) don't resolve the issue, [contact support](https://cursor.com/help/grok-bot/get-help.md)
 
 ## What if my Grok Bot account is access-blocked by a phone verification failure?
 
-Phone verification failures can block account access, including after SuperGrok linking. These blocks can't be cleared from your side, so support needs to reset them.
+Phone verification failures can block account access, including after SuperGrok or X Premium+ linking. These blocks can't be cleared from your side, so support needs to reset them.
 
 **Include when you contact support:**
 
 - Cursor account email
 - Whether the user completed phone verification or received an error
-- Whether the block appeared during sign-in or during SuperGrok linking
+- Whether the block appeared during sign-in or during SuperGrok or X Premium+ linking
 - Screenshot of the access-blocked screen
 
 [Contact support](https://cursor.com/help/grok-bot/get-help.md) if you cannot complete phone verification and remain access-blocked after retrying.
