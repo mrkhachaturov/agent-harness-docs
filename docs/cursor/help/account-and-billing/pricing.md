@@ -47,7 +47,7 @@ The Hobby plan gives you access to Cursor's core features with limited usage. Yo
 3. Select the plan you want
 4. Complete payment through Stripe checkout
 
-The change takes effect immediately. This applies to individual plans (Pro, Pro+, Ultra).
+The change takes effect immediately. This applies to individual plans (Pro, Pro+, Ultra). Any credit for your previous plan is based on its unused included usage, not days remaining. See [Do I get a prorated refund when I upgrade my plan?](https://cursor.com/help/account-and-billing/refunds.md#do-i-get-a-prorated-refund-when-i-upgrade-my-plan)
 
 ## How do I downgrade my plan?
 

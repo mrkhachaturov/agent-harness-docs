@@ -4,20 +4,21 @@ Learn how plans, usage, and billing work with Grok Bot.
 
 ## How do I get access to Grok Bot?
 
-Grok Bot access is included on every paid individual Cursor plan and on Cursor Teams. You can also grant usage to your Cursor account by linking an individual SuperGrok, SuperGrok Plus, or SuperGrok Heavy subscription.
+Grok Bot access is included on every paid individual Cursor plan and on Cursor Teams. You can also grant usage to your Cursor account by linking an individual SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+ subscription.
 
-| Situation                                               | What to do                                                                                                                                    | Grok Bot usage                     |
-| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
-| You're on **Cursor Ultra**                              | Sign in to Grok Bot with the same account. Access is included.                                                                                | Highest weekly usage               |
-| You're on **Cursor Pro+**                               | Sign in to Grok Bot with the same account. Access is included.                                                                                | Generous weekly usage, below Ultra |
-| You're on **Cursor Pro**                                | Sign in to Grok Bot with the same account. Access is included.                                                                                | Weekly usage, below Pro+           |
-| You're on a **Cursor Teams** plan (self-serve)          | Sign in with your Cursor account. Every member has access. No Premium seat or admin request required.                                         | Follows the Teams plan allowance   |
-| You're on **Cursor Enterprise**                         | Consult your account executive to enable Grok Bot access for your team.                                                                       | Managed by your admin              |
-| You have **individual SuperGrok Heavy**                 | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md). | Highest linked usage               |
-| You have **individual SuperGrok Plus**                  | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md). | Generous linked usage, below Heavy |
-| You have **individual SuperGrok**                       | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md). | Linked usage, below Plus           |
-| You have **SuperGrok Team** or **SuperGrok Enterprise** | SuperGrok linking is not supported. Only individual SuperGrok, SuperGrok Plus, or SuperGrok Heavy accounts can link.                          | Not included                       |
-| You're on **SuperGrok Lite**                            | Grok Bot is not included. Upgrade to SuperGrok, SuperGrok Plus, or SuperGrok Heavy, then link again.                                          | Not included                       |
+| Situation                                               | What to do                                                                                                                              | Grok Bot usage                     |
+| ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------- |
+| You're on **Cursor Ultra**                              | Sign in to Grok Bot with the same account. Access is included.                                                                          | Highest weekly usage               |
+| You're on **Cursor Pro+**                               | Sign in to Grok Bot with the same account. Access is included.                                                                          | Generous weekly usage, below Ultra |
+| You're on **Cursor Pro**                                | Sign in to Grok Bot with the same account. Access is included.                                                                          | Weekly usage, below Pro+           |
+| You're on a **Cursor Teams** plan (self-serve)          | Sign in with your Cursor account. Every member has access. No Premium seat or admin request required.                                   | Follows the Teams plan allowance   |
+| You're on **Cursor Enterprise**                         | Consult your account executive to enable Grok Bot access for your team.                                                                 | Managed by your admin              |
+| You have **individual SuperGrok Heavy**                 | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md). | Highest linked usage               |
+| You have **individual SuperGrok Plus**                  | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md). | Generous linked usage, below Heavy |
+| You have **individual SuperGrok**                       | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md). | Linked usage, below Plus           |
+| You have **X Premium+**                                 | Link your X account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md).    | Linked usage, below SuperGrok Plus |
+| You have **SuperGrok Team** or **SuperGrok Enterprise** | SuperGrok linking is not supported. Only individual SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+ accounts can link.        | Not included                       |
+| You're on **SuperGrok Lite**                            | Grok Bot is not included. Upgrade to SuperGrok, SuperGrok Plus, or SuperGrok Heavy, then link again.                                    | Not included                       |
 
 Linking SuperGrok is a **usage grant**, not a Cursor plan. Your existing Cursor plan stays in place after linking.
 
@@ -31,13 +32,13 @@ Pro, Pro+, and Ultra all sign in to Grok Bot the same way: use the same Cursor a
 
 ## Do I need a separate Grok Bot subscription?
 
-No. Access is included with **Cursor Pro**, **Cursor Pro+**, **Cursor Ultra**, or a **Cursor Teams** seat, or through an **individual SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account link.
+No. Access is included with Cursor Pro, Cursor Pro+, Cursor Ultra, or a Cursor Teams seat, or through an individual SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+ account link.
 
 ## Does joining a Cursor Teams plan require a Premium seat for Grok Bot?
 
 No. On a self-serve **Cursor Teams** plan, every member gets Grok Bot on their Cursor account. Team admins do not need to assign a Premium seat, and members do not need to request access.
 
-Grok Bot usage draws from the Teams plan's usage allowance for that seat. See [Team pricing](https://cursor.com/docs/account/teams/pricing.md) for how seat allowances work.
+Grok Bot usage draws from the Teams plan's usage allowance for that seat. On-demand usage is enabled by default for the Teams plan. See [Team pricing](https://cursor.com/docs/account/teams/pricing.md#on-demand-usage) for seat allowances and on-demand details.
 
 ## How does Grok Bot usage work?
 
@@ -64,7 +65,7 @@ Yes. macOS and iOS share a single usage bucket tied to your signed-in Cursor acc
 
 The trial is a usage credit, so a large or long-running agent task can use most or all of it at once. This is expected, and used trial credit is not restored or topped up.
 
-To keep using Grok Bot, upgrade to **Cursor Pro**, **Cursor Pro+**, **Cursor Ultra**, or a **Cursor Teams** plan, or link an **individual SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account.
+To keep using Grok Bot, upgrade to **Cursor Pro**, **Cursor Pro+**, **Cursor Ultra**, or a **Cursor Teams** plan, or link an **individual SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, or **X Premium+** account.
 
 See [How do I get access to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-do-i-get-access-to-grok-bot). To make the credit go further, see [How does the Grok Bot free trial work and how do I use it efficiently?](https://cursor.com/help/grok-bot/plans.md#how-does-the-grok-bot-free-trial-work-and-how-do-i-use-it-efficiently).
 
@@ -78,7 +79,7 @@ Linking SuperGrok is a usage grant, not a Cursor plan. It doesn't change or canc
 - If you're on a **Cursor Teams** seat, the seat stays in place after linking.
 - If you had no Cursor plan before linking, you still don't, and Grok Bot usage comes from the SuperGrok grant alone.
 
-A SuperGrok link is permanent once created. You can't unlink or move it to a different Cursor account, so sign in with the correct Cursor account before linking. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md) for the linking steps.
+A SuperGrok or X Premium+ link is permanent once created. You can't unlink or move it to a different Cursor account, so sign in with the correct Cursor account before linking. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md) for the linking steps.
 
 ## How do I cancel my Grok Bot trial or request a partial refund?
 
@@ -97,7 +98,7 @@ Trial cancellation is self-serve when **Cancel Trial** is available on the plan 
 
 ## Related
 
-- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
 - [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
 - [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)

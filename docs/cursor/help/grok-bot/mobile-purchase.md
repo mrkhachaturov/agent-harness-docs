@@ -26,7 +26,7 @@ Only monthly individual plans are available through the mobile app. For yearly b
 
 ## How do I use SuperGrok, SuperGrok Plus, or SuperGrok Heavy on mobile?
 
-You still need to [link your Grok account](https://cursor.com/help/grok-bot/supergrok-heavy.md). Complete the link on desktop, then sign in to Grok Bot mobile with the same Cursor account.
+You still need to [link your Grok account](https://cursor.com/help/grok-bot/supergrok.md). Complete the link on desktop, then sign in to Grok Bot mobile with the same Cursor account.
 
 ## How do I manage or cancel an Apple subscription?
 
@@ -36,7 +36,7 @@ Apple handles in-app subscriptions. Cancel or change the plan in **Apple ID → 
 
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
-- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
 - [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 

@@ -33,7 +33,7 @@ Try desktop once. If the problem continues, [contact support](https://cursor.com
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
 - [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
-- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok-heavy.md)
+- [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
 - [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 

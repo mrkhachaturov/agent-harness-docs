@@ -38,10 +38,6 @@ Sections sync between iOS and desktop. Deleting a section moves its bots to **Un
 
 Sidebar Sections require Grok Bot v1.2.0 or later. Update from the App Store if you do not see **Move to**.
 
-## Why is Grok Bot described as a beta?
-
-Some launch materials describe Grok Bot as a beta only to set expectations that it is an early product. Grok Bot is not subject to Cursor's Beta Services terms.
-
 ## How do I troubleshoot Grok Bot computer, routine, connector, and startup problems?
 
 Most operational issues clear with a full restart. Fully quit Grok Bot (on Mac, choose **Quit** from the menu bar, not just closing the window), reopen, and try again before anything else.

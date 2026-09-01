@@ -23,6 +23,16 @@ Outside the 14-day window, or with usage during the period, that payment is gene
 
 This policy does not limit any rights you may have under applicable consumer protection laws.
 
+## Do I get a prorated refund when I upgrade my plan?
+
+It depends on your usage. If some of your included usage is left, a matching share of what you paid is credited automatically when you upgrade. If you've already used it all, you'll owe the full price of the new plan.
+
+This applies to upgrades between individual plans (Pro to Pro+, Pro+ to Ultra) and to moving from an individual plan to a team, on monthly and yearly plans.
+
+For upgrade steps, see [How do I upgrade my plan?](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan).
+
+Time left in your billing period is not a factor. The credit is based only on unused included usage.
+
 ## Can I get a prorated refund or credit if I downgrade mid-cycle?
 
 No. Cursor does not issue prorated refunds when you downgrade an active subscription that already has usage during the current billing period.

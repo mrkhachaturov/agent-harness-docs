@@ -69,8 +69,8 @@
     "go.md": {
       "upstream_path": "packages/web/src/content/docs/go.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/go.mdx",
-      "hash": "eec77b0f970968ac4818385ef9c596442df56fcf74f9e86e7ed265c5ca366d2f",
-      "last_updated": "2026-08-28T14:50:27.583900"
+      "hash": "79ec6478025dc42d8772a9a76ea4e98d200c18d53a7194926d69fcf18e162d64",
+      "last_updated": "2026-09-01T08:14:09.100737"
     },
     "ide.md": {
       "upstream_path": "packages/web/src/content/docs/ide.mdx",
@@ -218,8 +218,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-01T00:21:05.848946",
-    "fetch_duration_seconds": 8.421439,
+    "last_fetch_completed": "2026-09-01T08:14:13.711064",
+    "fetch_duration_seconds": 7.873267,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-09-01T00:21:05.848965",
+  "last_updated": "2026-09-01T08:14:13.711087",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

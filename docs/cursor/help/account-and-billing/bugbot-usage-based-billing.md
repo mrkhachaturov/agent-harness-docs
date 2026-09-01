@@ -27,9 +27,10 @@ If on-demand usage is disabled, Bugbot pauses until your next billing cycle, whe
 
 Alongside usage-based billing, Bugbot supports configurable effort levels for reviews:
 
+- **Low:** Optimizes for cost, with quality close to Default. Reviews are cheaper and take longer.
 - **Default:** Bugbot continues to use the same effort level as it does today. Optimized for efficiency and speed.
 - **High:** Bugbot spends more time reasoning. Reviews are more expensive and take longer, but Bugbot may find more bugs.
-- **Custom:** Describe in natural language when Bugbot should use default or high effort. Cursor will dynamically set effort levels based on your instructions.
+- **Smart:** Describe in natural language when Bugbot should use low, default, or high effort. Cursor will dynamically set effort levels based on your instructions.
 
 You can configure effort levels from **Settings** in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot).
 
