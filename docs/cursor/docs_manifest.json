@@ -561,8 +561,8 @@
     "help/account-and-billing/pricing.md": {
       "original_url": "https://cursor.com/help/account-and-billing/pricing",
       "original_md_url": "https://cursor.com/help/account-and-billing/pricing.md",
-      "hash": "e17c0fed78d7c612a5a5947c748bdba3734477ad1af1edafd5182298b466eefb",
-      "last_updated": "2026-08-31T18:42:27.244603"
+      "hash": "e7067b58415cf44f5023b5c4d94a2750167b132f44a40093438e930207196890",
+      "last_updated": "2026-09-01T00:20:57.284401"
     },
     "help/account-and-billing/profiles.md": {
       "original_url": "https://cursor.com/help/account-and-billing/profiles",
@@ -579,8 +579,8 @@
     "help/account-and-billing/refunds.md": {
       "original_url": "https://cursor.com/help/account-and-billing/refunds",
       "original_md_url": "https://cursor.com/help/account-and-billing/refunds.md",
-      "hash": "945ea83ab8658209192ddb53d17cea12331e6ded449de983b595a8a9bf97fd6f",
-      "last_updated": "2026-08-31T18:42:27.244811"
+      "hash": "677543626867a816b344929843cd9f380e4ac3c400e38576c9ecbc3872647e2f",
+      "last_updated": "2026-09-01T00:20:57.284631"
     },
     "help/account-and-billing/spend-alerts.md": {
       "original_url": "https://cursor.com/help/account-and-billing/spend-alerts",
@@ -1334,8 +1334,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-08-31T18:42:27.249649",
-    "fetch_duration_seconds": 3.777582,
+    "last_fetch_completed": "2026-09-01T00:20:57.289182",
+    "fetch_duration_seconds": 1.896663,
     "total_pages_discovered": 222,
     "pages_fetched_successfully": 222,
     "pages_failed": 0,
@@ -1348,7 +1348,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-08-31T18:42:27.249661",
+  "last_updated": "2026-09-01T00:20:57.289196",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
