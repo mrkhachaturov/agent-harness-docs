@@ -1,6 +1,6 @@
 # OpenTelemetry Export
 
-OpenTelemetry Export streams Cursor usage data for your team to a collector you run. Cursor sends metrics (tokens, tool calls, best-effort cost) and logs (API requests, errors, corrections, skills, hooks, plugins, and cloud agent lifecycle events) to one team-managed destination. Export runs server-side.
+OpenTelemetry Export streams Cursor usage data for your team to a collector you run. Cursor sends metrics (tokens, tool calls, best-effort cost) and logs (API requests, errors, corrections, skills, hooks, plugins, cloud agent lifecycle events, and recorded Grok Bot actions) to one team-managed destination. Export runs server-side.
 
 OpenTelemetry Export is available on the [Enterprise plan](https://cursor.com/contact-sales?source=docs-opentelemetry-export). Admins configure it in **Team Settings > OpenTelemetry Export**.
 
@@ -122,6 +122,12 @@ Everything below is on by default for a new destination. Turn individual familie
 - `cursor.cloud_agent.artifact`
 - `cursor.cloud_agent.pull_request`: `opened` / `creation_failed`
 - `cursor.cloud_agent.mcp_auth_error`: an MCP server rejected the run's credentials
+- `cursor.grok_bot.mcp_tool_call`: a Grok Bot connector (MCP) tool call
+- `cursor.grok_bot.shell_command`: a Grok Bot shell command, secrets scrubbed
+- `cursor.grok_bot.browser_navigation`: a page the Grok Bot browser navigated to
+- `cursor.grok_bot.computer_use_session`: a Grok Bot computer use session summary
+
+The `cursor.grok_bot.*` events carry [Action Recording](https://cursor.com/docs/grok-bot/teams.md#logging-and-audit) data, so they flow only after a team admin enables Action Recording on the dashboard Grok Bot page. Events are sanitized before export: shell commands are secret-scrubbed and browser URLs are stripped of query strings and fragments.
 
 **Families** (admin toggles; all default on)
 
@@ -129,6 +135,7 @@ Everything below is on by default for a new destination. Turn individual familie
 - `tool_calls`: tool.calls metric
 - `skills_hooks_plugins`: skill / hook / plugin logs
 - `cloud_agents`: cloud\_agent.\* logs
+- `grok_bot_agent_actions`: grok\_bot.\* action logs; requires Action Recording (Enterprise)
 
 **Useful attributes**
 
