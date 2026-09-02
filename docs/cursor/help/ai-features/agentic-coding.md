@@ -14,7 +14,7 @@ Agentic coding arrived in three steps:
 2. **Synchronous agents** could hold more context and run longer, so developers directed them through prompt-and-response loops.
 3. **Autonomous agents** now take on larger tasks over hours with less direction.
 
-Agent usage in Cursor has [grown more than 15x](/blog/third-era) in the past year. The [Cursor Developer Habits Report](/insights) tracks how agentic coding is changing across millions of developer sessions.
+Agent usage in Cursor has [grown more than 15x](/blog/third-era) in the past year. The [Cursor Developer Habits Report](/insights/developer-habits) tracks how agentic coding is changing across millions of developer sessions.
 
 ![Agent usage in Cursor has grown more than 15x in the past year.](https://ptht05hbb1ssoooe.public.blob.vercel-storage.com/assets/blog/third-era-chart-r5.png)
 

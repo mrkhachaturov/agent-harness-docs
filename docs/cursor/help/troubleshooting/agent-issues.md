@@ -37,6 +37,14 @@ Or add this to a rule so Agent always unsets it:
 When running terminal commands, prefix with `unset CI &&` if the command's behavior changes in CI environments.
 ```
 
+## How do I troubleshoot a Self-Hosted Machines setup?
+
+Run `agent worker debug` for a preflight report. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-troubleshoot-a-self-hosted-machines-setup) for common fixes and when to contact support.
+
+## How do I check if my team pool is at capacity or why an agent run failed to start?
+
+Check the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) or call `GET /v0/private-workers/summary`. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-check-if-my-team-pool-is-at-capacity) for failure modes and scaling guidance.
+
 ## What if I see "Agent Execution Timed Out"?
 
 This error means Cursor's extension host didn't finish starting within 60 seconds, so Agent features couldn't initialize. The same root cause shows up as "Timeout waiting for EverythingProvider" in network diagnostics.

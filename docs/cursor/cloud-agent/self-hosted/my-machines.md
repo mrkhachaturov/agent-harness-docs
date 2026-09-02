@@ -17,7 +17,7 @@ Use My Machines when you want to:
 - Reuse machine-local state that you do not want to recreate in a cloud environment
 - Try the worker model before building a centrally managed pool
 
-For org-wide worker fleets, see [Self-Hosted Pool](https://cursor.com/docs/cloud-agent/self-hosted/pool.md).
+For org-wide worker fleets, see [Team Pools](https://cursor.com/docs/cloud-agent/self-hosted/pool.md).
 
 ## Quickstart
 
@@ -120,6 +120,16 @@ agent worker start --auth-token-file /var/run/cursor/token
 
 This is useful in Kubernetes because environment variables from Secrets are fixed when the pod starts. Secret volumes update while the pod runs, while mounted token paths can be live updated within the pod giving you the chance to refresh the token while the pod is running.
 
+### Enable computer use
+
+Let the agent click, type, take screenshots, and drive apps on this machine by passing `--computer-use` before `start`:
+
+```bash
+agent worker --computer-use --name "my-mac" start
+```
+
+On macOS, the first start installs the **Cursor Computer Use** helper app. Grant it **Accessibility** and **Screen Recording** in System Settings → Privacy & Security, then test with a task that takes a screenshot. On Linux, install the desktop packages first. See [Computer use and desktop sharing](https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md) for the macOS permission steps, MDM guidance, and the Linux display options.
+
 ## Trigger this machine from a chat surface
 
 Use `worker=` or `machine=` when you want Slack, GitHub, or Linear requests to run on one of your named machines. These are the only trigger options that target My Machines.
@@ -156,7 +166,7 @@ The error appears as an ephemeral reply in Slack, an agent activity error in Lin
 
 If no machine matches the linked user and target repo, the request fails instead of falling back to another environment. Confirm the machine name, your Cursor account linking, and the worker directory's git remote.
 
-`self_hosted`, `pool=`, and `repo=` on their own don't target My Machines. Use them with [Self-Hosted Pool](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#triggering-pool-agents) workers. When you pair `repo=` with `worker=`, it sets which repo Cursor matches against your machines.
+`self_hosted`, `pool=`, and `repo=` on their own don't target My Machines. Use them with [Team Pool](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#triggering-pool-agents) workers. When you pair `repo=` with `worker=`, it sets which repo Cursor matches against your machines.
 
 ## Hooks
 
@@ -177,6 +187,7 @@ To disable artifact uploads, block outbound traffic to `cloud-agent-artifacts.s3
 Workers need outbound HTTPS access to:
 
 - `api2.cursor.sh` and `api2direct.cursor.sh` for the agent session
+- `downloads.cursor.com` for CLI updates and the first-time [Cursor Computer Use](https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md#macos) install on macOS
 - `cloud-agent-artifacts.s3.us-east-1.amazonaws.com` for [artifact](https://cursor.com/docs/cloud-agent/self-hosted/my-machines.md#artifacts) uploads
 
 If your firewall can only match wildcards, `*.s3.us-east-1.amazonaws.com` covers the artifact host, but also opens every other bucket in the region. Prefer an exact-host rule when the firewall supports it.
@@ -188,6 +199,7 @@ No inbound ports, public IPs, or VPN tunnels are required. If you use a proxy, s
 | If you block...                                       | Effect                                                                                                                                                                        |
 | ----------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `api2.cursor.sh` or `api2direct.cursor.sh`            | The worker can't start or continue an agent session.                                                                                                                          |
+| `downloads.cursor.com`                                | CLI updates and the first-time Cursor Computer Use install on macOS fail. A worker that already has both installed keeps running.                                             |
 | `cloud-agent-artifacts.s3.us-east-1.amazonaws.com`    | Artifact uploads fail. PR embeds, dashboard previews, and notification attachments that depend on artifacts are missing. The agent session and other tool calls keep working. |
 | An outbound host a specific tool or integration needs | Only that tool or integration fails. The agent continues.                                                                                                                     |
 
@@ -218,6 +230,8 @@ If the machine does not appear in the picker:
 - Confirm the Cursor app and CLI use the same account.
 - Check that the worker directory has the expected Git remote.
 - Check outbound access to the hosts listed in [Networking](https://cursor.com/docs/cloud-agent/self-hosted/my-machines.md#networking).
+
+If computer use fails on a Mac, the report confirms whether **Cursor Computer Use** is installed but not whether its permissions are granted. Grant **Accessibility** and **Screen Recording** to Cursor Computer Use in System Settings → Privacy & Security, then retry a screenshot task. See [macOS](https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md#macos).
 
 ## Next steps
 

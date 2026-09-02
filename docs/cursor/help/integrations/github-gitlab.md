@@ -28,6 +28,15 @@ Follow the setup steps in the [Bitbucket integration docs](https://cursor.com/do
 
 Both deployment types support [Bugbot](https://cursor.com/help/ai-features/bugbot.md). Bitbucket Cloud also supports [Cloud Agents](https://cursor.com/agents).
 
+## How do I connect a private or self-hosted GitLab instance with Self-Hosted Machines?
+
+Use an any-repo team pool on a worker that can reach your GitLab instance over your network. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-connect-private-or-self-hosted-gitlab) for setup steps.
+
+## Related
+
+- [GitLab integration](https://cursor.com/docs/integrations/gitlab.md)
+- [Cloud Agents](https://cursor.com/help/ai-features/cloud-agents.md)
+
 
 ---
 

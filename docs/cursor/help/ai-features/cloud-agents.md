@@ -28,6 +28,8 @@ Yes. Add and manage MCP servers through the MCP dropdown at [cursor.com/agents](
 
 Cloud agents support HTTP and stdio servers, plus OAuth for servers that need it. See the [Cloud Agent capabilities page](https://cursor.com/docs/cloud-agent/capabilities.md) for setup details.
 
+On Self-Hosted Machines, MCP behavior differs. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#do-hooks-and-mcp-work-on-self-hosted-machines).
+
 ## Do Cloud Agents run hooks?
 
 Yes. Cloud Agents run command-based hooks from `.cursor/hooks.json` in your repository. On Enterprise plans, they also run team hooks and enterprise-managed hooks.
@@ -39,6 +41,8 @@ Conversation-level hooks let you observe prompts, responses, and thinking; contr
 Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply on Cursor-managed Cloud Agents because they have no editor-lifetime session boundary. On [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hooks) workers, `sessionStart` and `sessionEnd` run when a session claims the worker and when that claim is released. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
 
 See the [full hooks support matrix](https://cursor.com/docs/hooks.md#cloud-agent-support) for details.
+
+On Self-Hosted Machines, hook support matches managed Cloud Agents with a few differences. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#do-hooks-and-mcp-work-on-self-hosted-machines).
 
 ## Can Cloud Agents fix CI failures?
 
@@ -100,6 +104,7 @@ Yes. Cursor-managed Cloud Agent VMs serve an [agent metadata](https://cursor.com
 - [Automations](https://cursor.com/help/ai-features/automations.md)
 - [What are background agents?](https://cursor.com/help/ai-features/background-agents.md)
 - [What is multi-agent coding?](https://cursor.com/help/ai-features/multi-agent.md)
+- [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md)
 - [Cloud Agent reference](https://cursor.com/docs/cloud-agent.md)
 - [Cloud Agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md)
 - [Cloud Agent setup](https://cursor.com/docs/cloud-agent/setup.md)

@@ -10,6 +10,7 @@ The Enterprise plan includes everything in the Teams plan, plus additional contr
 - AI code tracking API and audit logs
 - Granular admin controls (Model Access Control, Run Mode, Repository Blocklist, MCP Configuration)
 - Customer Managed Encryption Keys (CMEK)
+- [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md) for Cloud Agents, including Team Pools
 - Priority support and dedicated account management
 
 ## How much is the Enterprise plan?

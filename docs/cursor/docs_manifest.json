@@ -27,8 +27,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "86585d70dc19c14851c084aea4131f41640b619fda5249db22e76405d3716f33",
-      "last_updated": "2026-09-02T02:26:44.036269"
+      "hash": "adb8f96c1504db9bfb215285bc74e00d2cac43c41434ac73dd5663839d665e70",
+      "last_updated": "2026-09-02T22:58:54.432072"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -237,8 +237,8 @@
     "cli/reference/parameters.md": {
       "original_url": "https://cursor.com/docs/cli/reference/parameters",
       "original_md_url": "https://cursor.com/docs/cli/reference/parameters.md",
-      "hash": "963d15eb1edf8407dfcda3d3334e23f89c6aa3593a7827b9fe53dc1c83112989",
-      "last_updated": "2026-06-29T22:53:03.551470"
+      "hash": "b50b48d66f4f420a8d1d4a6c3087aa74d3fa37f2c5363933ac30754ef10a8c78",
+      "last_updated": "2026-09-02T22:58:54.432899"
     },
     "cli/reference/permissions.md": {
       "original_url": "https://cursor.com/docs/cli/reference/permissions",
@@ -309,8 +309,8 @@
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
       "original_md_url": "https://cursor.com/docs/cloud-agent/capabilities.md",
-      "hash": "09c71379db651451ec30afb32a687edfe783934180426eb9a9f5fe45db95381d",
-      "last_updated": "2026-08-24T21:24:42.908057"
+      "hash": "49668d8dc73400c9167598ba4fcac766543cbe6db763ed2cf97a4a8ba479e7e9",
+      "last_updated": "2026-09-02T22:58:54.433296"
     },
     "cloud-agent/identity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/identity",
@@ -327,8 +327,8 @@
     "cloud-agent/mobile.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/mobile",
       "original_md_url": "https://cursor.com/docs/cloud-agent/mobile.md",
-      "hash": "164cb48ef56d5c8003127142d7d72e6a54b1cb6f8eeaa21330d9a6c961fc1a5f",
-      "last_updated": "2026-09-02T07:34:49.351004"
+      "hash": "cdb0b736a24705f9886a38608482ae3fca3ccb679eae06c4e58381ece28c6148",
+      "last_updated": "2026-09-02T22:58:54.433480"
     },
     "cloud-agent/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/private-connectivity",
@@ -351,32 +351,38 @@
     "cloud-agent/self-hosted.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted.md",
-      "hash": "14042fc7399cc4873dd5b35133f47165ddb078ffa6e26e2b231ff2c936da0c37",
-      "last_updated": "2026-09-02T07:34:49.351323"
+      "hash": "3e3fe8b65a1a48a5e775abaac5c5f4bd185c54ce342c9d7787e6bbbb16117ecd",
+      "last_updated": "2026-09-02T22:58:54.433679"
     },
     "cloud-agent/self-hosted/choose-runtime.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime.md",
-      "hash": "5d9aa9cafa821539b276c3c233b6d5da114db979342eb645b0076e8dd20cee99",
-      "last_updated": "2026-09-02T07:34:49.351532"
+      "hash": "12406754cad851aedf63d7c4d8a52997ee67db063957c74efc0b698bf0ad3c52",
+      "last_updated": "2026-09-02T22:58:54.433773"
     },
     "cloud-agent/self-hosted/computer-use.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/computer-use",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md",
-      "hash": "a5de08e66cef36fff0499a1c3bbda8e139e75e14ad720e5eaee208eedb202c71",
-      "last_updated": "2026-09-02T07:34:49.351680"
+      "hash": "a9ceb020282d7c61ad99ccd13de0c8831dd57499ac32af31b5f4afc9e9e186d0",
+      "last_updated": "2026-09-02T22:58:54.433908"
+    },
+    "cloud-agent/self-hosted/integrations.md": {
+      "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/integrations",
+      "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/integrations.md",
+      "hash": "55562102b3f82702427ecbaba48a3d74ada9e2ac245b2d6c9f84b18ee85f8d24",
+      "last_updated": "2026-09-02T22:58:54.434034"
     },
     "cloud-agent/self-hosted/my-machines.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines.md",
-      "hash": "9f331645f4d2ebcd1f705bd5d166343b748d162b021f2569c93a8b21a0e25624",
-      "last_updated": "2026-09-02T18:23:52.873415"
+      "hash": "ece74cf8bf03162f281cea262d7d7c2eb7fbb1f2541bb265993937f33b036b14",
+      "last_updated": "2026-09-02T22:58:54.434143"
     },
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "760ccc67e535a9a290a053d0fa0faf86109dc8d806c91384193526d8fcc7652c",
-      "last_updated": "2026-09-02T18:23:52.873705"
+      "hash": "07d3f55cba243bb629b932ae32303ad804600f10dc68b230c0dfaa3e57dd70cf",
+      "last_updated": "2026-09-02T22:58:54.434319"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -609,8 +615,8 @@
     "help/account-and-billing/enterprise.md": {
       "original_url": "https://cursor.com/help/account-and-billing/enterprise",
       "original_md_url": "https://cursor.com/help/account-and-billing/enterprise.md",
-      "hash": "a8e5bbc9751fd04aac2e9fd51c6296a52f6bafb7ad50a826ffbaaadbc494fb46",
-      "last_updated": "2026-06-29T22:53:03.561619"
+      "hash": "4d0320acee6940250ea0bab4ec68dd216b8e7052eec46c3fa9809df2f56f954b",
+      "last_updated": "2026-09-02T22:58:54.434877"
     },
     "help/account-and-billing/invoices.md": {
       "original_url": "https://cursor.com/help/account-and-billing/invoices",
@@ -699,8 +705,8 @@
     "help/ai-features/agentic-coding.md": {
       "original_url": "https://cursor.com/help/ai-features/agentic-coding",
       "original_md_url": "https://cursor.com/help/ai-features/agentic-coding.md",
-      "hash": "133075f5deefa7c5e81f2e68e3592c47c888f70401cacd648fffda069301aceb",
-      "last_updated": "2026-06-29T22:53:03.564021"
+      "hash": "28a452c2acfff1f97259a8069392e028d382a117bcbd91b6bdafacf8ad817d62",
+      "last_updated": "2026-09-02T22:58:54.435069"
     },
     "help/ai-features/ai-pair-programming.md": {
       "original_url": "https://cursor.com/help/ai-features/ai-pair-programming",
@@ -741,8 +747,8 @@
     "help/ai-features/cloud-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/cloud-agents",
       "original_md_url": "https://cursor.com/help/ai-features/cloud-agents.md",
-      "hash": "4c3cced9a14e85506d253f871c9a2d5dd730af7de4054128b3b22c3814bef95b",
-      "last_updated": "2026-09-02T18:23:52.874495"
+      "hash": "c920731f08f00042eca0d764aa88408ec437729003ae7eb8ce39126c59992f4f",
+      "last_updated": "2026-09-02T22:58:54.435211"
     },
     "help/ai-features/coding-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/coding-agents",
@@ -791,6 +797,12 @@
       "original_md_url": "https://cursor.com/help/ai-features/plan-mode.md",
       "hash": "b05917709c2126633fc794a805f26a69981d25278f11ca97837152244e7fdf3c",
       "last_updated": "2026-08-25T00:57:12.644733"
+    },
+    "help/ai-features/self-hosted-machines.md": {
+      "original_url": "https://cursor.com/help/ai-features/self-hosted-machines",
+      "original_md_url": "https://cursor.com/help/ai-features/self-hosted-machines.md",
+      "hash": "ceba68b66a53940dc6cd12cc0e7c92e6394185ef0067288c244f845d1d88cee4",
+      "last_updated": "2026-09-02T22:58:54.435411"
     },
     "help/ai-features/shared-transcripts.md": {
       "original_url": "https://cursor.com/help/ai-features/shared-transcripts",
@@ -987,8 +999,8 @@
     "help/integrations/github-gitlab.md": {
       "original_url": "https://cursor.com/help/integrations/github-gitlab",
       "original_md_url": "https://cursor.com/help/integrations/github-gitlab.md",
-      "hash": "93de54257bcd93540fd669becb27c9f0c69b7ada23b6bd7d72256386d840f868",
-      "last_updated": "2026-07-03T02:27:31.254038"
+      "hash": "cc6145f53b56adcad428a759d61b12e8ae92ec1e28b6b36ca4977ff3207c4dba",
+      "last_updated": "2026-09-02T22:58:54.435659"
     },
     "help/integrations/third-party.md": {
       "original_url": "https://cursor.com/help/integrations/third-party",
@@ -1059,8 +1071,8 @@
     "help/security-and-privacy/privacy.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/privacy",
       "original_md_url": "https://cursor.com/help/security-and-privacy/privacy.md",
-      "hash": "9095678d65f4e523d94943cee082dc949418ca6d27e20b298306498dd6ec2593",
-      "last_updated": "2026-08-28T23:50:44.238583"
+      "hash": "8d1767143214299c6fe76e2d33753ab6d83429b02b75977905e77065f80a7066",
+      "last_updated": "2026-09-02T22:58:54.435812"
     },
     "help/security-and-privacy/regions.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/regions",
@@ -1077,8 +1089,8 @@
     "help/troubleshooting/agent-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/agent-issues",
       "original_md_url": "https://cursor.com/help/troubleshooting/agent-issues.md",
-      "hash": "0eeed885d38316d536b5c792a7c41ef5a812cb90cf85db40f8c5a9a32131b037",
-      "last_updated": "2026-07-08T02:09:33.203530"
+      "hash": "2f37efb6fbda8678d565f2c636b65e17feb3c63dc19daa0d7d63bd5a368526ce",
+      "last_updated": "2026-09-02T22:58:54.435906"
     },
     "help/troubleshooting/extensions.md": {
       "original_url": "https://cursor.com/help/troubleshooting/extensions",
@@ -1191,8 +1203,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "3d38f138949f2862e29ffdd64b0c188f9c1953a026cc6aedb59f0b960d89a6cc",
-      "last_updated": "2026-09-02T07:34:49.353693"
+      "hash": "e8848bf35d592b99e9b20e27416ea6f7b325abdb7ba598b68ce247b95af8fca2",
+      "last_updated": "2026-09-02T22:58:54.436303"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1412,21 +1424,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-02T18:23:52.880155",
-    "fetch_duration_seconds": 3.630217,
-    "total_pages_discovered": 235,
-    "pages_fetched_successfully": 235,
+    "last_fetch_completed": "2026-09-02T22:58:54.439024",
+    "fetch_duration_seconds": 3.282251,
+    "total_pages_discovered": 237,
+    "pages_fetched_successfully": 237,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 235,
+    "total_files": 237,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-02T18:23:52.880168",
+  "last_updated": "2026-09-02T22:58:54.439038",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

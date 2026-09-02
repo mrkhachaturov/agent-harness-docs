@@ -77,6 +77,12 @@ Enterprise plans include additional controls beyond Privacy Mode:
 
 See the full Enterprise feature list on [cursor.com/pricing](https://cursor.com/pricing) or [contact sales](https://cursor.com/contact-sales?source=docs-help-privacy) for details.
 
+## What data stays on my machine vs. in Cursor's cloud with Self-Hosted Machines?
+
+With [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md), tool execution stays on your machine and the agent loop stays in Cursor's cloud. [Privacy Mode](/data-use) applies the same way it does for managed Cloud Agents.
+
+See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#what-data-stays-on-my-machine-vs-in-cursors-cloud) for the full data split.
+
 ## Related
 
 - [Security and compliance documents](https://cursor.com/help/security-and-privacy/compliance.md)
