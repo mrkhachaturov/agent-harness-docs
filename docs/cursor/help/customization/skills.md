@@ -27,7 +27,7 @@ Skills are automatically loaded from `.agents/skills/`, `.cursor/skills/`, `~/.a
 
 ## Are user-level skills available on Cloud Agents and remote workers?
 
-Cursor loads `~/.cursor/skills/` and `~/.agents/skills/` on the local machine. Those folders are not copied to Cloud Agents, Agents Window remote SSH, or [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted-guides/pool.md). On those surfaces, use project skills in the repo, or bake skills into the worker image.
+Cursor loads `~/.cursor/skills/` and `~/.agents/skills/` on the local machine. Those folders are not copied to Cloud Agents, Agents Window remote SSH, or [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted/pool.md). On those surfaces, use project skills in the repo, or bake skills into the worker image.
 
 ## How do I scope a skill to specific files?
 
@@ -84,7 +84,7 @@ Rules with `alwaysApply: true` or specific `globs` patterns are not migrated, as
 
 - [Skills reference](https://cursor.com/docs/skills.md)
 - [Rules](https://cursor.com/help/customization/rules.md)
-- [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted-guides/choose-runtime.md)
+- [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime.md)
 
 
 ---
