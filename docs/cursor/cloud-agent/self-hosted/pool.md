@@ -260,11 +260,21 @@ The Cloud Agent API uses the same resolver with `usePrivateWorker` and `labels` 
 
 ## Hooks
 
-Self-hosted workers run project hooks committed in your repository through `.cursor/hooks.json`.
+Self-Hosted Machines workers run command-based [hooks](https://cursor.com/docs/hooks.md) during Cloud Agent sessions. They load configuration from the workspace the worker serves.
 
-If you're on Enterprise, self-hosted workers also support team hooks and enterprise-managed hooks.
+- **Project hooks.** Commit `.cursor/hooks.json` and the scripts it references in the repository or workspace directory the worker uses. That is the git checkout, a `--worker-dir` root, or the directory you pass for an [any-repo pool](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#any-repo-pools).
+- **Team and enterprise-managed hooks.** On Enterprise, workers also run hooks configured in the [web dashboard](https://cursor.com/dashboard/team-content?section=hooks).
 
-See [Hooks](https://cursor.com/docs/hooks.md) for configuration details.
+The [Hooks](https://cursor.com/docs/hooks.md) reference covers the schema, events, and examples. [Cloud agent support](https://cursor.com/docs/hooks.md#cloud-agent-support) lists which events the Cloud Agent loop runs.
+
+The Cloud Agent limits that also apply on these tool-execution workers:
+
+- **Command-based hooks only.** Prompt-based hooks do not run.
+- **No IDE-only hooks.** Tab hooks (`beforeTabFileRead`, `afterTabFileEdit`) and `workspaceOpen` do not run on workers.
+
+`sessionStart` and `sessionEnd` run on Self-Hosted Machines workers. They fire when a Cloud Agent session claims the worker and when that claim is released. Cursor-managed Cloud Agents skip those hooks.
+
+[Kubernetes](https://cursor.com/docs/cloud-agent/self-hosted/kubernetes.md) workers use this same hooks model.
 
 ## Labels
 
@@ -725,6 +735,12 @@ your custom worker image.
 
 Yes. Configure MCP servers through the Cloud Agents dashboard. See the
 [MCP servers](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#mcp-servers) section for how routing works by transport type.
+
+### Do hooks run on self-hosted workers?
+
+Yes. Self-Hosted Machines workers run project hooks from
+`.cursor/hooks.json`. On Enterprise, they also run team and
+enterprise-managed hooks. See [Hooks](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hooks).
 
 ### Can multiple agents use one pool worker?
 

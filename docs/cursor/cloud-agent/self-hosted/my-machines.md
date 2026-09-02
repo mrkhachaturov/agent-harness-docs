@@ -158,6 +158,12 @@ If no machine matches the linked user and target repo, the request fails instead
 
 `self_hosted`, `pool=`, and `repo=` on their own don't target My Machines. Use them with [Self-Hosted Pool](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#triggering-pool-agents) workers. When you pair `repo=` with `worker=`, it sets which repo Cursor matches against your machines.
 
+## Hooks
+
+A My Machines worker runs the same hooks as other Self-Hosted Machines workers: command-based hooks from `.cursor/hooks.json` in the workspace you start the worker from. On Enterprise, it also runs team hooks and enterprise-managed hooks.
+
+[Hooks on Pools](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hooks) covers what applies on workers, including `sessionStart` and `sessionEnd` when a session claims and releases the machine. The [Hooks reference](https://cursor.com/docs/hooks.md) covers the schema, events, and examples.
+
 ## Artifacts
 
 Artifact behavior is identical on self-hosted workers and Cursor-hosted agents. The agent produces the artifact inside the worker and the worker uploads it to Cursor-managed storage over HTTPS. Everything downstream (PR embeds, dashboard previews, notification attachments) is handled by Cursor's backend and doesn't depend on where the worker runs.

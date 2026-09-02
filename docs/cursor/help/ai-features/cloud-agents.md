@@ -36,7 +36,7 @@ Supported hooks include tool and file hooks (`beforeShellExecution`, `afterShell
 
 Conversation-level hooks let you observe prompts, responses, and thinking; control subagents; react to compaction; and run logic when a turn completes. You can use them to build self-correcting loops around agent output and reasoning.
 
-Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply because cloud agents have no editor-lifetime session boundary. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
+Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply on Cursor-managed Cloud Agents because they have no editor-lifetime session boundary. On [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hooks) workers, `sessionStart` and `sessionEnd` run when a session claims the worker and when that claim is released. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
 
 See the [full hooks support matrix](https://cursor.com/docs/hooks.md#cloud-agent-support) for details.
 
