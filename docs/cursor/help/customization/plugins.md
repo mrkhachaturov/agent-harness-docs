@@ -24,6 +24,14 @@ open source and [manually reviewed](https://cursor.com/help/security-and-privacy
 
 Yes. Every plugin is open source and manually reviewed before it appears in the marketplace. Each update is re-reviewed before publishing.
 
+## How do I publish a skill to my team's marketplace?
+
+On Teams and Enterprise plans, open **Customize → Skills**, open a personal skill, and choose **Publish**. Cursor adds it to your team's Default marketplace. Teammates install it from there. See [Publish a skill to your team](https://cursor.com/docs/plugins.md#publish-a-skill-to-your-team).
+
+## Can I stop members from publishing skills?
+
+Yes. Admins can turn off **Allow Members to Publish** on the Default marketplace under [Dashboard → Plugins](https://cursor.com/dashboard/plugins). When it is off, only team admins can publish new skills.
+
 ## Related
 
 - [Plugins reference](https://cursor.com/docs/plugins.md)

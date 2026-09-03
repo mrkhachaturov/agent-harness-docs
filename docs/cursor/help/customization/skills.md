@@ -25,9 +25,21 @@ You can also organize skills into subfolders, like `.cursor/skills/shipping/depl
 
 Skills are automatically loaded from `.agents/skills/`, `.cursor/skills/`, `~/.agents/skills/` (global on the local machine), and `~/.cursor/skills/` (global on the local machine), including nested project subdirectories such as `apps/web/.cursor/skills/` in a monorepo. Skills in a nested project directory are automatically scoped to files inside that directory. For example, skills under `apps/web/.cursor/skills/` are only surfaced when the agent works with files in `apps/web/`, similar to the [`paths` frontmatter field](https://cursor.com/help/customization/skills.md#how-do-i-scope-a-skill-to-specific-files). For compatibility, Cursor also loads skills from Claude and Codex directories: `.claude/skills/`, `.codex/skills/`, `~/.claude/skills/`, and `~/.codex/skills/`.
 
+## How do I use personal skills with Cloud Agents?
+
+Personal skills in `~/.cursor/skills/` stay on your machine until you sync them. Open **Settings → Agents**, then turn on **Sync Skills for Cloud Agents** under **Context and Tools**. Synced skills stay private to you.
+
+Only `~/.cursor/skills/` syncs. To share a skill with teammates, [publish it to your team marketplace](https://cursor.com/docs/plugins.md#publish-a-skill-to-your-team).
+
+On Teams and Enterprise, admins can turn sync off for everyone from [Team Settings](https://cursor.com/dashboard/team-settings) under **Security & Identity**. See [Use personal skills with Cloud Agents](https://cursor.com/docs/skills.md#use-personal-skills-with-cloud-agents).
+
+## How do I publish a skill to my team?
+
+Open **Customize → Skills**, open a personal skill, and choose **Publish**. Cursor adds it to your team's Default marketplace. Teammates install it from there. See [Publish a skill to your team](https://cursor.com/docs/plugins.md#publish-a-skill-to-your-team).
+
 ## Are user-level skills available on Cloud Agents and remote workers?
 
-Cursor loads `~/.cursor/skills/` and `~/.agents/skills/` on the local machine. Those folders are not copied to Cloud Agents, Agents Window remote SSH, or [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted/pool.md). On those surfaces, use project skills in the repo, or bake skills into the worker image.
+You can [sync](https://cursor.com/help/customization/skills.md#how-do-i-use-personal-skills-with-cloud-agents) `~/.cursor/skills/` so Cloud Agents can use those skills. `~/.agents/skills/` and unsynced local skills stay on your machine. They are not copied to Cloud Agents, Agents Window remote SSH, or [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted/pool.md). On self-hosted workers, use project skills in the repo or bake skills into the worker image.
 
 ## How do I scope a skill to specific files?
 
@@ -83,6 +95,7 @@ Rules with `alwaysApply: true` or specific `globs` patterns are not migrated, as
 ## Related
 
 - [Skills reference](https://cursor.com/docs/skills.md)
+- [Publish a skill to your team](https://cursor.com/docs/plugins.md#publish-a-skill-to-your-team)
 - [Rules](https://cursor.com/help/customization/rules.md)
 - [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime.md)
 

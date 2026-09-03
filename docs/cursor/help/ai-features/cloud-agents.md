@@ -22,6 +22,12 @@ This means agents can start dev servers, open the app in a browser, click throug
 
 Agents attach screenshots, videos, and log references to the PR so you can validate changes without checking out the branch.
 
+## Can Cloud Agents use my personal skills?
+
+Yes. Turn on **Sync Skills for Cloud Agents** under **Settings → Agents** to copy `~/.cursor/skills/` for your own Cloud Agents. Synced skills stay private to you. See [Use personal skills with Cloud Agents](https://cursor.com/docs/skills.md#use-personal-skills-with-cloud-agents).
+
+Project skills in the repo are always available. To share a skill with teammates, [publish it to your team marketplace](https://cursor.com/docs/plugins.md#publish-a-skill-to-your-team).
+
 ## Can Cloud Agents use MCP tools?
 
 Yes. Add and manage MCP servers through the MCP dropdown at [cursor.com/agents](https://cursor.com/agents). This gives agents access to databases, APIs, and third-party services during their runs.
@@ -105,6 +111,7 @@ Yes. Cursor-managed Cloud Agent VMs serve an [agent metadata](https://cursor.com
 - [What are background agents?](https://cursor.com/help/ai-features/background-agents.md)
 - [What is multi-agent coding?](https://cursor.com/help/ai-features/multi-agent.md)
 - [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md)
+- [Skills](https://cursor.com/docs/skills.md)
 - [Cloud Agent reference](https://cursor.com/docs/cloud-agent.md)
 - [Cloud Agent capabilities](https://cursor.com/docs/cloud-agent/capabilities.md)
 - [Cloud Agent setup](https://cursor.com/docs/cloud-agent/setup.md)

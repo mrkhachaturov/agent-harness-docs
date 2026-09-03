@@ -2,8 +2,6 @@
 
 Cursor for iOS is the Cursor mobile app for controlling agents running [in the cloud](https://cursor.com/help/ai-features/cloud-agents.md) and on your own computer. You start agents, watch them work in real time, and review and merge their pull requests from your iPhone or iPad. See the [Cursor for iOS reference](https://cursor.com/docs/cloud-agent/mobile.md) for a full feature tour.
 
-The app is in beta, so features can change before general availability.
-
 ## Is there an Android app?
 
 Not yet. The native app runs on iPhone and iPad. An Android version is planned, but there's no release date.

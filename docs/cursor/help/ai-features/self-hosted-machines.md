@@ -98,7 +98,7 @@ A team pool is a named routing target. Chats wait in the team pool until a worke
 
 My Machines (also called Remote Control) connects one machine you own. Multiple agents can run on the same machine when it has enough resources.
 
-For Kubernetes fleets, use the Helm chart and `WorkerDeployment` operator. See the [Kubernetes deployment guide](https://cursor.com/docs/cloud-agent/self-hosted/kubernetes.md).
+For Kubernetes fleets, start from the [anysphere/k8s-workers](https://github.com/anysphere/k8s-workers) template, which runs `agent worker controller --spawn` in your cluster without a CRD. The older `WorkerDeployment` operator is deprecated; its [reference](https://cursor.com/docs/cloud-agent/self-hosted/kubernetes.md) stays available for clusters that already run it.
 
 Team Pools require an Enterprise plan and a [service account API key](https://cursor.com/docs/account/enterprise/service-accounts.md). [My Machines](https://cursor.com/docs/cloud-agent/self-hosted/my-machines.md) uses a personal credential.
 

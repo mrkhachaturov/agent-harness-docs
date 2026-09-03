@@ -486,6 +486,15 @@ with CursorClient.launch_bridge(workspace=".") as client:
         print(agent.send("Summarize what this repository does").text())
 ```
 
+If your platform already runs `cursor-sdk-bridge`, attach to it with `CursorClient.connect(base_url, auth_token)` instead of launching another one. `client.ping()` and `client.get_version()` report the bridge's health and version. `AsyncClient.connect(...)` mirrors the sync form.
+
+```python
+from cursor_sdk import CursorClient
+
+with CursorClient.connect("http://127.0.0.1:43210", auth_token=bridge_token) as client:
+    print(client.ping(), client.get_version()["bridgeVersion"])
+```
+
 ### Resources
 
 Explicit clients expose resource namespaces:
@@ -1185,7 +1194,7 @@ class RunUsage:
 @dataclass(frozen=True)
 class UsageCost:
     raw_cost_cents: float  # undiscounted model token cost; 0 for request-priced usage
-    charged_cents: float   # amount charged, discounts and the Cursor Token Rate included
+    charged_cents: float   # amount charged, discounts and the Cursor Token Fee included
 ```
 
 Cost includes discounts and can take a moment to settle after a run ends; `cost` is `None` until it does. `charged_cents` is `0.0` for plan-included, BYOK, and credit-grant usage.
@@ -1382,6 +1391,10 @@ Subagents committed to the repo at `.cursor/agents/*.md` (with `name`, `descript
 
 Subagents can spawn their own subagents, within a nesting limit. When a subagent uses the `Agent` tool, it reaches the same subagent executor the parent has, so a parent can delegate to a subagent that delegates further. Each level sees the same set of named subagents. The top-level agent and its direct subagents can launch subagents, but a subagent launched by another subagent can't launch further ones.
 
+### Background subagents
+
+When the agent runs a subagent in the background, the subagent's result returns to the parent as a follow-up turn on the same run instead of being dropped when the parent turn ends. `run.messages()` keeps yielding through those turns, and `run.wait()` returns after them. Local agents only.
+
 ## Restricting the toolset
 
 `tools` allowlists the built-in tools offered to the model; `disallowed_tools` removes tools and keeps the rest, including tools added to the platform after your SDK version was released. Both are local agents only for now, and neither persists on the agent: pass them again on resume to keep the restriction.
@@ -1446,7 +1459,7 @@ with Agent.create(
     agent.send("Is the checkout service healthy?").wait()
 ```
 
-`execute` receives the parsed arguments and a `CustomToolContext` with `tool_call_id` when available. It can return a string, a JSON-compatible value, or a mapping with a `content` list. Custom tools are local agents only.
+`execute` receives the parsed arguments and a `CustomToolContext` with `tool_call_id` when available. It can return a string, a JSON-compatible value, or a mapping with a `content` list. `output_schema` declares a JSON Schema for the tool's structured result, advertised to the model as the tool's MCP `outputSchema`; results are not validated against it. Custom tools are local agents only.
 
 ## Hooks
 
@@ -1595,6 +1608,7 @@ class CustomTool:
     execute: Callable[[Mapping[str, Any], CustomToolContext], Any]
     description: str | None = None
     input_schema: Mapping[str, Any] | None = None
+    output_schema: Mapping[str, Any] | None = None
 
 class CustomToolContext:
     tool_call_id: str | None = None
@@ -1725,7 +1739,7 @@ Returned by `client.agents.list()`, `client.agents.list_runs()`, and `Agent.list
 
 ## Errors
 
-All SDK errors extend `CursorAgentError`. `CursorSDKError` is the backward-compatible alias root for older callers. Use `is_retryable` and `retry_after` to drive retry logic.
+All SDK errors extend `CursorAgentError`. The concrete errors subclass `CursorSDKError`, itself a `CursorAgentError`, so either works as a catch-all. Use `is_retryable` and `retry_after` to drive retry logic.
 
 ```python
 class CursorAgentError(Exception):
@@ -1788,7 +1802,7 @@ Every `CursorAgentError` includes `request_id` when the server returned one. Log
 
 ```python
 class IntegrationNotConnectedError(ConfigurationError):
-    provider: str   # e.g. "github", "gitlab", "azuredevops"
+    provider: str   # e.g. "github", "gitlab", "azure-devops"
     help_url: str   # dashboard link to reconnect
 ```
 
