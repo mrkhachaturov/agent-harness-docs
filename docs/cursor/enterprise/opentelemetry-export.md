@@ -127,7 +127,7 @@ Everything below is on by default for a new destination. Turn individual familie
 - `cursor.grok_bot.browser_navigation`: a page the Grok Bot browser navigated to
 - `cursor.grok_bot.computer_use_session`: a Grok Bot computer use session summary
 
-The `cursor.grok_bot.*` events carry [Action Recording](https://cursor.com/docs/grok-bot/teams.md#logging-and-audit) data, so they flow only after a team admin enables Action Recording on the dashboard Grok Bot page. Events are sanitized before export: shell commands are secret-scrubbed and browser URLs are stripped of query strings and fragments.
+The `cursor.grok_bot.*` events carry [Action Recording](https://cursor.com/docs/grok-bot/security.md#logging-and-audit) data, so they flow only after a team admin enables Action Recording on the dashboard Grok Bot page. Events are sanitized before export: shell commands are secret-scrubbed and browser URLs are stripped of query strings and fragments.
 
 **Families** (admin toggles; all default on)
 

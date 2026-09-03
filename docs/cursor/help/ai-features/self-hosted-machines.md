@@ -106,8 +106,8 @@ Team Pools require an Enterprise plan and a [service account API key](https://cu
 
 Team admins open the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) and go to **Self-Hosted** settings.
 
-- **Allow Self-Hosted Agents**: members can opt in to runs on machines they connect. Without opt-in, Cloud Agents use Cursor's managed infrastructure.
-- **Require Self-Hosted Agents**: every Cloud Agent session must use a self-hosted machine.
+- **Allow Self-Hosted Machines**: members can opt in to runs on machines they connect. Without opt-in, Cloud Agents use Cursor's managed infrastructure.
+- **Require Self-Hosted Machines**: every Cloud Agent session must use a self-hosted machine.
 
 The dashboard also shows team pool details and machines registered under **My Machines**.
 
