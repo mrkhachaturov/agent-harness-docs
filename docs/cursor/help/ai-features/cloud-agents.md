@@ -85,6 +85,21 @@ Remote Machines are consolidated in the same picker flow so you can open local, 
 - **In Linear**: Use **@Cursor** on an issue
 - **Via API**: Use the [Cloud Agent API](https://cursor.com/docs/cloud-agent/api/endpoints.md)
 
+## What are the attachment limits for Cloud Agents on the web?
+
+At [cursor.com/agents](https://cursor.com/agents), documents and images have a 4 MB per-file limit. Videos have a separate 15 MB per-file limit. The browser rejects files over these limits before upload, so changing the model's context window or enabling Max Mode does not increase the attachment limit.
+
+Supported document formats include PDF, Markdown (`.md` and `.markdown`), plain text (`.txt`), CSV, JSON, HAR, XML, YAML (`.yaml` and `.yml`), TOML, INI, and log files (`.log`).
+
+If a file is too large:
+
+- Keep only the content the agent needs, or split the file into parts of 4 MB or less
+- For logs and structured text such as JSON, CSV, XML, or HAR, keep the relevant time range and requests instead of the full capture
+- Start the Cloud Agent from Cursor desktop and attach the file there, since attachment limits can differ from the web app
+- For non-sensitive files already in source control, ask the agent to read them from its checked-out repository
+
+ZIP files are not supported as web document attachments. Before attaching diagnostic files, remove credentials, cookies, headers, source code, and personal data you do not want to share.
+
 ## How is Cloud Agent usage priced?
 
 Cloud Agents are charged at [API pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for the selected model. You can select the context window size for supported models. A larger context window can increase token usage and costs.

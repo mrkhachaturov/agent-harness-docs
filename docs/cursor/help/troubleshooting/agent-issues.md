@@ -45,6 +45,10 @@ Run `agent worker debug` for a preflight report. See [Self-Hosted Machines](http
 
 Check the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) or call `GET /v0/private-workers/summary`. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-check-if-my-team-pool-is-at-capacity) for failure modes and scaling guidance.
 
+## What if a Cloud Agent web attachment is too large?
+
+If [cursor.com/agents](https://cursor.com/agents) shows `<filename> is too large (4MB limit)`, see [Cloud Agent web attachment limits](https://cursor.com/help/ai-features/cloud-agents.md#what-are-the-attachment-limits-for-cloud-agents-on-the-web) for supported file types and ways to reduce or split the file.
+
 ## What if I see "Agent Execution Timed Out"?
 
 This error means Cursor's extension host didn't finish starting within 60 seconds, so Agent features couldn't initialize. The same root cause shows up as "Timeout waiting for EverythingProvider" in network diagnostics.

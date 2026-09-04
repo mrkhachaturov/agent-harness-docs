@@ -23,6 +23,8 @@ Cursor [plans](https://cursor.com/docs/models-and-pricing.md) include two usage 
 
 A **Fast mode** tier (`gpt-5.6-terra-fast`) is available for priority processing at 2x the standard rates.
 
+When input exceeds 272k tokens (long context), input pricing doubles and output pricing is 1.5x the standard rate. The same multipliers apply in Fast mode: long-context requests bill at 2x the Fast input, cache write, and cache read rates, and 1.5x the Fast output rate.
+
 
 ---
 

@@ -20,7 +20,7 @@ Some Teams and Individual plans include monthly Bugbot usage. You can enable usa
 4. Follow the provider setup flow
 5. Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to enable it on specific repositories
 
-For setup details, see the [GitHub](https://cursor.com/docs/integrations/github.md), [GitLab](https://cursor.com/docs/integrations/gitlab.md), or [Bitbucket](https://cursor.com/docs/integrations/bitbucket.md) integration pages.
+For setup details, see the [GitHub](https://cursor.com/docs/integrations/github.md), [GitLab](https://cursor.com/docs/integrations/gitlab.md), [Bitbucket](https://cursor.com/docs/integrations/bitbucket.md), or [Azure DevOps](https://cursor.com/docs/integrations/azure-devops.md#set-up-bugbot) integration pages.
 
 ## How do I trigger a review?
 

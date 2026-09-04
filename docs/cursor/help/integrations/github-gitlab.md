@@ -1,6 +1,6 @@
 # GitHub, GitLab, Azure DevOps, and Bitbucket
 
-Connect GitHub, GitLab, Azure DevOps, or Bitbucket Cloud to use Cloud Agents. GitHub, GitLab, Bitbucket Cloud, and Bitbucket Data Center also support Bugbot.
+Connect GitHub, GitLab, Azure DevOps, or Bitbucket Cloud to use Cloud Agents. GitHub, GitLab, Azure DevOps, Bitbucket Cloud, and Bitbucket Data Center also support Bugbot.
 
 Azure DevOps and Bitbucket Cloud are in public beta.
 
@@ -20,7 +20,7 @@ Once connected, you can run [Bugbot](https://cursor.com/help/ai-features/bugbot.
 
 Follow the setup steps in the [Azure DevOps integration docs](https://cursor.com/docs/integrations/azure-devops.md). Azure DevOps Services at `dev.azure.com` is covered.
 
-Once connected, you can trigger [Cloud Agents](https://cursor.com/agents) from your Azure DevOps repos and open pull requests back to Azure DevOps.
+Once connected, you can run [Bugbot](https://cursor.com/help/ai-features/bugbot.md) on your Azure DevOps pull requests and trigger [Cloud Agents](https://cursor.com/agents) from your repos.
 
 ## How do I connect Bitbucket?
 
