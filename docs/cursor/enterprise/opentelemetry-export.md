@@ -139,7 +139,7 @@ The `cursor.grok_bot.*` events carry [Action Recording](https://cursor.com/docs/
 
 **Useful attributes**
 
-- Resource: `service.name=cursor`, `cursor.team.id`, optional `cursor.user.id`, surface/entrypoint
+- Resource: `service.name=cursor`, `cursor.team.id`, optional `cursor.user.id`, surface/entrypoint. Grok Bot traffic exports as `cursor.surface=grok_bot` across all families; `desktop` no longer includes it.
 - Logs: `cursor.event.id` (dedupe), and `cursor.request.id` / `cursor.conversation.id` / `cursor.usage_event.id` when present
 
 ## Delivery
@@ -168,9 +168,9 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 **What each id means**
 
-- `cursor.conversation.id` is the session key. In the IDE and CLI it's the composer chat UUID. For cloud agents it's the customer-visible `bc-...` agent id. The same value appears on that run's `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, and `cloud_agent.*` logs when present.
+- `cursor.conversation.id` is the session key. In the IDE and CLI it's the composer chat UUID. For cloud agents it's the customer-visible `bc-...` agent id. For `grok_bot.*` logs it's the Grok Bot conversation id. The same value appears on that run's `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `cloud_agent.*`, and `grok_bot.*` logs when present.
 - `cursor.usage_event.id` is the request-grain key on `api.request`, `api.error`, and `api.correction`. Use it to reconcile against Cursor usage and billing exports and to apply corrections.
-- `cursor.request.id` is an optional per-call id on most logs. It never appears on `api.correction` or `cloud_agent.*`.
+- `cursor.request.id` is an optional per-call id on most logs. It never appears on `api.correction`, `cloud_agent.*`, or `grok_bot.*`.
 - `cursor.event.id` is a dedupe key only, not a join key across event types.
 
 **Recipe: rank sessions by tokens, then attach skills and tools**

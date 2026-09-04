@@ -27,8 +27,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "adb8f96c1504db9bfb215285bc74e00d2cac43c41434ac73dd5663839d665e70",
-      "last_updated": "2026-09-02T22:58:54.432072"
+      "hash": "6c30957713a5606f507ee745465fe4558f9e750b7e06ab5553fd8657ef23a047",
+      "last_updated": "2026-09-04T02:34:04.635393"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -51,8 +51,8 @@
     "account/teams/dashboard.md": {
       "original_url": "https://cursor.com/docs/account/teams/dashboard",
       "original_md_url": "https://cursor.com/docs/account/teams/dashboard.md",
-      "hash": "0cecd214c28a21be35b3774ed4afe45c4648db90fe647a71aa03572fb974c19a",
-      "last_updated": "2026-09-03T23:03:02.083379"
+      "hash": "4ef63a87d70f2bd189ff0a7a15f6275e0e46b3c128c9dbd543ee76f077fac16b",
+      "last_updated": "2026-09-04T02:34:04.635825"
     },
     "account/teams/members.md": {
       "original_url": "https://cursor.com/docs/account/teams/members",
@@ -435,8 +435,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "348a7b9408d07aacfd28096a4ac0e63410e621465ad7677d394189c7843ea774",
-      "last_updated": "2026-09-03T02:33:13.879855"
+      "hash": "03f32710f906c653b348adc2f0b84e894e07065319cf60c57d24051408ad4186",
+      "last_updated": "2026-09-04T02:34:04.637035"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -477,14 +477,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "76d00d3a14fc8ab35c508f92ef991eaf66d16ed68bdc7b1d26a7796efb03f671",
-      "last_updated": "2026-09-03T02:33:13.880176"
+      "hash": "1e751dafcfb89c52dec05ae34d8a2c824af240a13afd08fbc62f96d69564b1c9",
+      "last_updated": "2026-09-04T02:34:04.637365"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "61df22ad31fc07e1bda1a1814ed2218bb7344b8bb46e02d5985ee84afe4861c8",
-      "last_updated": "2026-08-26T00:57:44.395676"
+      "hash": "0b82d79bc46dd351ea32e28843dfde713c2ca7b4af98fe2c9e5a8004df4367b3",
+      "last_updated": "2026-09-04T02:34:04.637588"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -549,14 +549,14 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "1c7ec16af484e4d802f66895ae436c8025180d8064bc0bc9031f5a6538487e15",
-      "last_updated": "2026-09-03T02:33:13.881410"
+      "hash": "86a199aedadce8c37bc1087a8d910b25b7a1258e06d5aafac547fcbab84feb30",
+      "last_updated": "2026-09-04T02:34:04.638019"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "2a25047ddc4e33fdceeac6d0d1aae6153a20bd75cd54862e0f349a88fe4367e4",
-      "last_updated": "2026-09-03T02:33:13.881583"
+      "hash": "955c146b978323762664b87b285a1713eb82dda36a5fe10f9615ee58d15a37a4",
+      "last_updated": "2026-09-04T02:34:04.638229"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -567,8 +567,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "72a75be2b715b9b2f5cd9595c301aee0badd83461df94bd189dd0c04f2aa71cd",
-      "last_updated": "2026-09-03T02:33:13.881985"
+      "hash": "57d7e06b8b3d8bc1210cced120758aea55d797116f2641cb868cc5f9fb6fb5ba",
+      "last_updated": "2026-09-04T02:34:04.638450"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1436,8 +1436,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-03T23:03:02.093768",
-    "fetch_duration_seconds": 2.857346,
+    "last_fetch_completed": "2026-09-04T02:34:04.643022",
+    "fetch_duration_seconds": 2.219724,
     "total_pages_discovered": 239,
     "pages_fetched_successfully": 239,
     "pages_failed": 0,
@@ -1450,7 +1450,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-03T23:03:02.093781",
+  "last_updated": "2026-09-04T02:34:04.643034",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
