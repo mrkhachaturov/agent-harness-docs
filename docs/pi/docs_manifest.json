@@ -147,8 +147,8 @@
     "termux.md": {
       "upstream_path": "packages/coding-agent/docs/termux.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/termux.md",
-      "hash": "471c4aff3e2004e7de5387737f728ede4c4c6ac1ccf51575ff4ef2fdbd52c3ce",
-      "last_updated": "2026-05-28T03:22:00.709272"
+      "hash": "135caf639c826b9ae901070b213ed95e7f2c58f47260236fdfafe0e2279df34c",
+      "last_updated": "2026-09-05T22:36:59.867495"
     },
     "themes.md": {
       "upstream_path": "packages/coding-agent/docs/themes.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-05T19:50:17.018403",
-    "fetch_duration_seconds": 0.906578,
+    "last_fetch_completed": "2026-09-05T22:36:59.868238",
+    "fetch_duration_seconds": 0.925897,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-09-05T19:50:17.018417",
+  "last_updated": "2026-09-05T22:36:59.868250",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
