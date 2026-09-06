@@ -1149,8 +1149,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-06T07:32:23.467020",
-    "fetch_duration_seconds": 163.330034,
+    "last_fetch_completed": "2026-09-06T12:36:56.690415",
+    "fetch_duration_seconds": 328.32929,
     "total_pages_discovered": 191,
     "pages_fetched_successfully": 192,
     "pages_failed": 0,
@@ -1160,7 +1160,7 @@
     "total_files": 191,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-09-06T07:32:23.467035",
+  "last_updated": "2026-09-06T12:36:56.690428",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
