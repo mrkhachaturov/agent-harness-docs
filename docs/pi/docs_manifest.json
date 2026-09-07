@@ -3,8 +3,8 @@
     "compaction.md": {
       "upstream_path": "packages/coding-agent/docs/compaction.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/compaction.md",
-      "hash": "b6aff7cab195cd781714dae7c9246fbfb14c782f8fff7851253d5903c19996e7",
-      "last_updated": "2026-08-28T14:50:33.484014"
+      "hash": "bb211227f0fecba957be15a76b3b84ac30b1fd92a3bc2b0329211d693b6d8b16",
+      "last_updated": "2026-09-07T14:44:28.306705"
     },
     "containerization.md": {
       "upstream_path": "packages/coding-agent/docs/containerization.md",
@@ -15,14 +15,14 @@
     "custom-provider.md": {
       "upstream_path": "packages/coding-agent/docs/custom-provider.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/custom-provider.md",
-      "hash": "b029e062363856ffe62f67861a89415c2f1d5fd2a9d3da858e0a5c4c4cfa293a",
-      "last_updated": "2026-08-25T12:38:05.456464"
+      "hash": "a439a91fd690c9be69f7665d4a313678f952cf357f1e756fb3aff67c8348c524",
+      "last_updated": "2026-09-07T14:44:28.307132"
     },
     "development.md": {
       "upstream_path": "packages/coding-agent/docs/development.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/development.md",
-      "hash": "a827758748c87c8aa798945edc1b9443f76900cb9bec8ed030cc1f38108d6b36",
-      "last_updated": "2026-09-05T12:19:17.626374"
+      "hash": "beb6c22fb027aea83ffa7d0528204534db47373e704f7971dd81f10da8ec4627",
+      "last_updated": "2026-09-07T14:44:28.307269"
     },
     "environment-variables.md": {
       "upstream_path": "packages/coding-agent/docs/environment-variables.md",
@@ -33,8 +33,8 @@
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md",
-      "hash": "39c54b91faabd76a17ab07f7ae85b274e941f36aacfaa6fe304281f697671faf",
-      "last_updated": "2026-09-03T23:03:12.257226"
+      "hash": "2a5fc41e7ed148729357c3ed926c91316d8ee8a26746fd009d8073a2261c9060",
+      "last_updated": "2026-09-07T14:44:28.308452"
     },
     "index.md": {
       "upstream_path": "packages/coding-agent/docs/index.md",
@@ -45,8 +45,8 @@
     "json.md": {
       "upstream_path": "packages/coding-agent/docs/json.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/json.md",
-      "hash": "094b8d1b25aebd949334b695b18e8e7e73d934b82337439af12f6936d73aca84",
-      "last_updated": "2026-08-19T12:36:04.540859"
+      "hash": "2b9d739327eafa35b819def3d2bc7b52525c5358ac81c93caa8598fb4c9ec981",
+      "last_updated": "2026-09-07T14:44:28.308819"
     },
     "keybindings.md": {
       "upstream_path": "packages/coding-agent/docs/keybindings.md",
@@ -81,8 +81,8 @@
     "providers.md": {
       "upstream_path": "packages/coding-agent/docs/providers.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/providers.md",
-      "hash": "3644ff28ca832b5575595e26120b07c2843a32ca0cee4c66e541b490c2ff3a38",
-      "last_updated": "2026-08-06T23:54:46.000920"
+      "hash": "c8741ab21f78c4df43a9068ff05c06639a2fd961116642722b034756a8c26dc8",
+      "last_updated": "2026-09-07T14:44:28.309553"
     },
     "quickstart.md": {
       "upstream_path": "packages/coding-agent/docs/quickstart.md",
@@ -99,20 +99,20 @@
     "sdk.md": {
       "upstream_path": "packages/coding-agent/docs/sdk.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/sdk.md",
-      "hash": "3c575c006043769bdb85d01fdbd9e86468f45160deedc2519db3464387eaffbf",
-      "last_updated": "2026-09-03T13:13:24.949526"
+      "hash": "5552225acbc4da1a2d40c00407b2d7d523d006e7fa531d9ee2d4e8021f8e1de3",
+      "last_updated": "2026-09-07T14:44:28.310003"
     },
     "security.md": {
       "upstream_path": "packages/coding-agent/docs/security.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/security.md",
-      "hash": "5df4b27e7b0db49f50807f0e5d8a77e6dc099c76adab6edf21c5b705ede6efab",
-      "last_updated": "2026-08-05T22:09:33.228780"
+      "hash": "a7dd1abbbbb6b7cec21c10fdadd073fe9e77e9eb0e6bf9deec7e86f5f31c043d",
+      "last_updated": "2026-09-07T14:44:28.310193"
     },
     "session-format.md": {
       "upstream_path": "packages/coding-agent/docs/session-format.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/session-format.md",
-      "hash": "c0f25475ab08fb96e244e6bf433aeaa41b69bfb5a52de5c7b01b81c900a84a54",
-      "last_updated": "2026-07-27T12:21:06.119260"
+      "hash": "4a895691fa972b3bf6dd3d54d01ea12265296011c3f4b251c57a6fa2341f56bd",
+      "last_updated": "2026-09-07T14:44:28.310424"
     },
     "sessions.md": {
       "upstream_path": "packages/coding-agent/docs/sessions.md",
@@ -165,8 +165,8 @@
     "tui.md": {
       "upstream_path": "packages/coding-agent/docs/tui.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/tui.md",
-      "hash": "2ffe6305b3ce0f1ea9702fb2fa7568e00cc70c80e46f477134bd1ed07f37088c",
-      "last_updated": "2026-09-03T23:03:12.260961"
+      "hash": "279d5c04e6d48fbc978dfc428d07d1b70731fcefba8f299b39d02cc0cfe9c1d1",
+      "last_updated": "2026-09-07T14:44:28.311622"
     },
     "usage.md": {
       "upstream_path": "packages/coding-agent/docs/usage.md",
@@ -182,8 +182,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-07T07:49:55.601298",
-    "fetch_duration_seconds": 2.250169,
+    "last_fetch_completed": "2026-09-07T14:44:28.311866",
+    "fetch_duration_seconds": 2.109747,
     "total_pages_discovered": 30,
     "pages_fetched_successfully": 30,
     "pages_failed": 0,
@@ -194,7 +194,7 @@
     "total_files": 30,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-09-07T07:49:55.601310",
+  "last_updated": "2026-09-07T14:44:28.311879",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
