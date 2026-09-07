@@ -471,8 +471,8 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "592b8a5c79ddd4cde5990b0042c30c8b403783867bd1d184098773cf8bbf463e",
-      "last_updated": "2026-08-28T23:50:44.236139"
+      "hash": "f41885c051f142797cd9b530c4d51239ff0afcaea0338573e57efdf11566aa41",
+      "last_updated": "2026-09-07T23:17:11.263266"
     },
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
@@ -543,20 +543,26 @@
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
       "original_md_url": "https://cursor.com/docs/grok-bot/private-networks.md",
-      "hash": "ceae996b52b5a6c8ceaf2f4d20fff829548b3720f2a82f602a9ae16c711a1e32",
-      "last_updated": "2026-09-03T02:33:13.881179"
+      "hash": "4cedc48123ede682da4a7e70630efe5c6725dc0bb7e82de84648f465e8271037",
+      "last_updated": "2026-09-07T23:17:11.263660"
+    },
+    "grok-bot/proxies.md": {
+      "original_url": "https://cursor.com/docs/grok-bot/proxies",
+      "original_md_url": "https://cursor.com/docs/grok-bot/proxies.md",
+      "hash": "ac3a32e38f91fcdba6f9763598e66f1bacee8ac44f037c46ee86c7e63c7294ec",
+      "last_updated": "2026-09-07T23:17:11.263849"
     },
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "57774d19cf67a1ca8354af5827c6e0b96905d2ef96314d949a479393195effcf",
-      "last_updated": "2026-09-04T20:28:38.037635"
+      "hash": "d6e3168572ababcb5dcbbb71043d911ff30b8ad1beae60dd416f6286951b8f7f",
+      "last_updated": "2026-09-07T23:17:11.264032"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "811b0b6d891ac565e93c445642ae61005c255f19d7d2d27fc709e78ccadf8f7d",
-      "last_updated": "2026-09-04T20:28:38.037828"
+      "hash": "43e1c02d8a834aca30d1419b198a7796aaa0673b86949955d72799d4cb7d9d0e",
+      "last_updated": "2026-09-07T23:17:11.264233"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -567,8 +573,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "57d7e06b8b3d8bc1210cced120758aea55d797116f2641cb868cc5f9fb6fb5ba",
-      "last_updated": "2026-09-04T02:34:04.638450"
+      "hash": "61e83bf4df5fd57b8a9bc2fecf5d33bfbb14eef1eb13a48a2252e4412b4167d9",
+      "last_updated": "2026-09-07T23:17:11.264476"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1119,8 +1125,8 @@
     "help/troubleshooting/network.md": {
       "original_url": "https://cursor.com/help/troubleshooting/network",
       "original_md_url": "https://cursor.com/help/troubleshooting/network.md",
-      "hash": "85a89a697b2fba43d18c85c02d4fae2e5f0d62e6b386afd7b6df11fcd57496d9",
-      "last_updated": "2026-06-29T22:53:03.571049"
+      "hash": "51923549ebb2b87876c458c5566fb12b01e74598019f1715f1eff467a9034b85",
+      "last_updated": "2026-09-07T23:17:11.265168"
     },
     "help/troubleshooting/performance.md": {
       "original_url": "https://cursor.com/help/troubleshooting/performance",
@@ -1436,21 +1442,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-07T18:59:48.168409",
-    "fetch_duration_seconds": 2.226512,
-    "total_pages_discovered": 239,
-    "pages_fetched_successfully": 239,
+    "last_fetch_completed": "2026-09-07T23:17:11.269209",
+    "fetch_duration_seconds": 2.284056,
+    "total_pages_discovered": 240,
+    "pages_fetched_successfully": 240,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 239,
+    "total_files": 240,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-07T18:59:48.168422",
+  "last_updated": "2026-09-07T23:17:11.269221",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

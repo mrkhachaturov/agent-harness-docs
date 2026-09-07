@@ -28,6 +28,8 @@ Cursor's services are already encrypted end-to-end. We recommend disabling SSL i
 - `*.cursorvm.com`
 - `*.*.cursorvm.com`
 
+Both `cursorvm.com` patterns are required for Grok Bot: hosted computers use nested hostnames, and a single-level wildcard misses them. Apply the exclusions to off-network and roaming proxy profiles as well as office locations. For Grok Bot symptoms and Zscaler profile notes, see [Configure TLS-inspecting proxies](https://cursor.com/docs/grok-bot/proxies.md).
+
 If your security policy requires SSL inspection on all traffic, your proxy must support:
 
 - HTTP/2 bidirectional streaming (or that Cursor's HTTP/1.1 fallback works)
