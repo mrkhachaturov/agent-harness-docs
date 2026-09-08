@@ -14,6 +14,10 @@ On an individual plan? You can [schedule a downgrade](https://cursor.com/help/ac
 
 In-app subscriptions are managed by Apple, not through cursor.com. Cursor can't cancel an in-app plan for you. See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md#how-do-i-manage-an-in-app-subscription) for how to cancel through Apple.
 
+## What if I subscribed through the Android app?
+
+Subscriptions bought in the Grok Bot Android app are managed by Google Play, not through cursor.com. Cursor can't cancel an in-app plan for you. See [Subscribe from the Android app](https://cursor.com/help/account-and-billing/google-play-subscription.md#how-do-i-manage-an-in-app-subscription) for how to cancel through Google Play.
+
 ## What happens after I cancel my subscription?
 
 - You keep access to your paid plan features until the end of your current billing period
@@ -35,6 +39,7 @@ A few account states hide the cancel button:
 - **You have an unpaid invoice.** Billing must be resolved before you can make subscription changes. See the steps below.
 - **You're on a Teams plan without admin access.** Only team admins can cancel.
 - **You subscribed through the iOS app.** Apple manages the subscription; see the section above.
+- **You subscribed through the Grok Bot Android app.** Google Play manages the subscription; see the section above.
 
 If none of these apply and you still can't cancel, [contact support](https://cursor.com/help.md) with a screenshot of your billing page.
 

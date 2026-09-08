@@ -19,7 +19,7 @@ Because Apple processes the payment, Cursor can't cancel an in-app plan or issue
 
 ## Can I use on-demand spend on an in-app plan?
 
-No. Cursor doesn't store a payment method for in-app subscribers, so you can't turn on [on-demand spend](https://cursor.com/help/account-and-billing/overages.md). To use on-demand, move to a subscription billed through cursor.com.
+Yes. Apple bills your subscription, and [on-demand usage](https://cursor.com/help/account-and-billing/overages.md) is billed separately to a payment card you add on the web. In a browser, go to [cursor.com/dashboard](https://cursor.com/dashboard), open **Spending**, and set a monthly limit. You'll be asked to add a card if you don't have one on file. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md) for the full steps.
 
 ## How do I switch to a subscription on cursor.com?
 
@@ -45,6 +45,8 @@ Yes. In-app plans are available in every region where Cursor is on the App Store
 
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
 - [Cursor for iOS](https://cursor.com/help/ai-features/mobile-app.md)
+- [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md)
+- [Subscribe from the Android app](https://cursor.com/help/account-and-billing/google-play-subscription.md)
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)
 - [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md)
 - [Refunds](https://cursor.com/help/account-and-billing/refunds.md)

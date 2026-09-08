@@ -43,6 +43,7 @@ See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) f
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Spend limits](https://cursor.com/help/account-and-billing/spend-limits.md)
+- [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md)
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)
 - [Invoices](https://cursor.com/help/account-and-billing/invoices.md)

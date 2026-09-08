@@ -1,10 +1,10 @@
 # Grok Bot on mobile
 
-Use Grok Bot on your phone with the same account and cloud computer as desktop. For now, Grok Bot is only supported on iOS.
+Use Grok Bot on your phone with the same account and cloud computer as desktop. Grok Bot is available on iOS and Android.
 
 ## How do I set up the Grok Bot mobile app?
 
-1. Install the current **Grok Bot** mobile app from the App Store.
+1. Install the current **Grok Bot** mobile app from the App Store on iOS or Google Play on Android.
 2. Sign in on mobile with the **same Cursor account** you use on desktop or web.
 3. If your Cursor account doesn't already include Grok Bot, subscribe from the mobile app. See [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md).
 
@@ -19,7 +19,7 @@ No. Grok Bot access carries into mobile when you sign in with the same Cursor ac
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 - **X Premium+** account links
 
-You should not purchase a second subscription through Apple in these cases.
+You should not purchase a second subscription through Apple or Google Play in these cases.
 
 ## Can I update the Grok Bot computer from my phone?
 

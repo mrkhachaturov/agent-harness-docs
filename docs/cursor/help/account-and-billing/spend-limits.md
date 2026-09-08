@@ -71,6 +71,7 @@ On Enterprise pooled usage accounts, member spend limits apply to total usage, n
 
 - [Spend alerts](https://cursor.com/help/account-and-billing/spend-alerts.md)
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)
+- [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 
 

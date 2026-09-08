@@ -73,6 +73,10 @@ If you are unsure about a charge, [contact support](https://cursor.com/help.md) 
 
 Apple is the merchant of record for in-app purchases, so Cursor can't issue refunds for them. For refunds on an in-app subscription, use [Apple's Subscriptions and billing support](https://support.apple.com/billing). See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md) for more details.
 
+## What if I subscribed through the Android app?
+
+Google is the merchant of record for in-app purchases made in the Grok Bot Android app, so Cursor can't issue refunds for them. For refunds on an in-app subscription, use [Google Play's refund support](https://support.google.com/googleplay/answer/2479637). See [Subscribe from the Android app](https://cursor.com/help/account-and-billing/google-play-subscription.md) for more details.
+
 ## I did not authorize this charge. What should I do?
 
 If you see a charge you do not recognize, [contact support](https://cursor.com/help.md). Include the charge amount, date, and the last four digits of the card that was charged. We will investigate the account activity.
