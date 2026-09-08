@@ -573,8 +573,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "61e83bf4df5fd57b8a9bc2fecf5d33bfbb14eef1eb13a48a2252e4412b4167d9",
-      "last_updated": "2026-09-07T23:17:11.264476"
+      "hash": "88169e3ab3c3918fd5070dd94120ba52bff4e7eb3d815c1cb184de3639ba46e6",
+      "last_updated": "2026-09-08T23:09:08.072386"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1460,8 +1460,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-08T18:18:16.221013",
-    "fetch_duration_seconds": 4.219442,
+    "last_fetch_completed": "2026-09-08T23:09:08.077137",
+    "fetch_duration_seconds": 2.912121,
     "total_pages_discovered": 243,
     "pages_fetched_successfully": 243,
     "pages_failed": 0,
@@ -1474,7 +1474,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-08T18:18:16.221025",
+  "last_updated": "2026-09-08T23:09:08.077151",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
