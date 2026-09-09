@@ -19,7 +19,7 @@ No. Grok Bot access carries into mobile when you sign in with the same Cursor ac
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 - **X Premium+** account links
 
-You should not purchase a second subscription through Apple or Google Play in these cases.
+You should not purchase a second subscription through Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. Linking SuperGrok on top of a Cursor plan does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## Can I update the Grok Bot computer from my phone?
 

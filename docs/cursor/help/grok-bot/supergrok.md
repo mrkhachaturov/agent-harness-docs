@@ -19,13 +19,17 @@ Linking is a **usage grant**, not a Cursor plan. It grants Grok Bot usage on the
 
 Cursor re-checks your SuperGrok or X Premium+ status at each renewal.
 
+The grant does not stack with a Cursor plan. If you are on **Pro+**, linking **SuperGrok Plus** does not add usage. Linking **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, or **X Premium+** on top of Pro, Pro+, Ultra, or a self-serve Teams plan does not add usage either. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+
 ## Does linking SuperGrok change my Cursor plan?
 
 No. Your existing Cursor plan stays in place. Linking SuperGrok or X Premium+ doesn't cancel a Pro, Pro+, Ultra, or Teams subscription, and it doesn't replace them with another Cursor plan. If you had no Cursor plan before linking, you still don't, and Grok Bot usage comes from the SuperGrok or X Premium+ grant alone.
 
-If you have both a paid Cursor plan that includes Grok Bot and a SuperGrok or X Premium+ link, both apply to the same Cursor account. Your Cursor plan continues to bill and renew independently of the link.
+If you have both a paid Cursor plan that includes Grok Bot and a SuperGrok or X Premium+ link, both stay on the same Cursor account, but they do not stack. Linking **SuperGrok Plus** while you are on **Pro+** does not add Grok Bot usage. Purchasing **Cursor Ultra** while **SuperGrok Heavy** is linked does not grant more included usage either. You can still move from **Pro+** to **Ultra** on the Cursor plan itself. That upgrade changes the Cursor grant. It does not combine with SuperGrok.
 
-If you already have Grok Bot on Pro, Pro+, Ultra, or a self-serve Teams plan, you can keep using it by signing in. Linking SuperGrok or X Premium+ does not swap you to Ultra, cancel that plan, or add a second Grok Bot meter. It does not change how that Cursor plan bills.
+Your Cursor plan continues to bill and renew independently of the link. Neither subscription cancels the other. Linking SuperGrok or X Premium+ does not swap you to Ultra, cancel a Cursor plan, or add a second Grok Bot meter.
+
+If you need more usage after the included grant runs out, enable [on-demand usage](https://cursor.com/help/account-and-billing/overages.md). That is the path for extra usage. Linking SuperGrok or X Premium+ on top of a Cursor plan is not. You can still upgrade the Cursor plan, such as **Pro+** to **Ultra**.
 
 ## How do I link my Grok account?
 
@@ -93,6 +97,7 @@ If your access, email, or usage still looks wrong, [contact support](https://cur
 ## Related
 
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
+- [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
