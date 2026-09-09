@@ -1347,8 +1347,8 @@
     "origin/cli/reference/commands.md": {
       "original_url": "https://cursor.com/docs/origin/cli/reference/commands",
       "original_md_url": "https://cursor.com/docs/origin/cli/reference/commands.md",
-      "hash": "a379e9d3160f9f8fff9e9af7b4293538ca373816180ad5e04771fd3be3d27fc1",
-      "last_updated": "2026-09-01T22:58:28.911805"
+      "hash": "e754ce0091e4e35626baf972e6bf5bdfc9b76b4281c72899efe1dbbcffd941bf",
+      "last_updated": "2026-09-09T13:21:33.782978"
     },
     "origin/cli/reference/pull-requests.md": {
       "original_url": "https://cursor.com/docs/origin/cli/reference/pull-requests",
@@ -1365,32 +1365,32 @@
     "origin/create-repository.md": {
       "original_url": "https://cursor.com/docs/origin/create-repository",
       "original_md_url": "https://cursor.com/docs/origin/create-repository.md",
-      "hash": "91876877510539b41416ad343381c664b49fec519a43099454e843533238d503",
-      "last_updated": "2026-08-17T18:31:17.517428"
+      "hash": "62017ee9fde148b5f5a4509ff497e43b87d5d33fb684c96748a3e44ebb7b8a12",
+      "last_updated": "2026-09-09T13:21:33.783201"
     },
     "origin/git.md": {
       "original_url": "https://cursor.com/docs/origin/git",
       "original_md_url": "https://cursor.com/docs/origin/git.md",
-      "hash": "79b894936fc3a53afe3a1bbae60e327af0348a51cd8764d0badfaa4f7bb17c42",
-      "last_updated": "2026-08-17T18:31:17.517569"
+      "hash": "9a0ead4bf076fd2a0400ef312d9eb2af68f3c90d0b99560ed57cd4c4a988f80b",
+      "last_updated": "2026-09-09T13:21:33.783391"
     },
     "origin/integrations.md": {
       "original_url": "https://cursor.com/docs/origin/integrations",
       "original_md_url": "https://cursor.com/docs/origin/integrations.md",
-      "hash": "47573a2d73fa23f656dcfca765b951cca7e844af7b3929d5821dcc72e5394b08",
-      "last_updated": "2026-09-01T22:58:28.912229"
+      "hash": "11e905ce634e250b1bfd9e5d9cbf8c3f0b77bde924653cb6c237849122b6a6a0",
+      "last_updated": "2026-09-09T13:21:33.783563"
     },
     "origin/mirror-github.md": {
       "original_url": "https://cursor.com/docs/origin/mirror-github",
       "original_md_url": "https://cursor.com/docs/origin/mirror-github.md",
-      "hash": "c560d7580517aca8292d3d24ae83a91a0f4c49ebbc3442553ff87d588986ae5e",
-      "last_updated": "2026-08-28T14:50:23.957742"
+      "hash": "d7a9bc4b381e458a69ed30cab2a8e3cf66eb1f4c87c0cbd46150f5c370791bea",
+      "last_updated": "2026-09-09T13:21:33.783777"
     },
     "origin/pull-requests.md": {
       "original_url": "https://cursor.com/docs/origin/pull-requests",
       "original_md_url": "https://cursor.com/docs/origin/pull-requests.md",
-      "hash": "5ece5460df0bd7d0e96bcdf2f712d859280a4b24aab66c1e27e670aebe20a61b",
-      "last_updated": "2026-08-17T18:31:17.518048"
+      "hash": "32a959841f8668526d04949d46e0cfa205fd29af7c5d52d2a62875359bb752a0",
+      "last_updated": "2026-09-09T13:21:33.783957"
     },
     "origin/settings.md": {
       "original_url": "https://cursor.com/docs/origin/settings",
@@ -1460,8 +1460,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-09T07:47:51.893695",
-    "fetch_duration_seconds": 2.64647,
+    "last_fetch_completed": "2026-09-09T13:21:33.787618",
+    "fetch_duration_seconds": 3.944177,
     "total_pages_discovered": 243,
     "pages_fetched_successfully": 243,
     "pages_failed": 0,
@@ -1474,7 +1474,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-09T07:47:51.893709",
+  "last_updated": "2026-09-09T13:21:33.787631",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
