@@ -23,11 +23,19 @@ You should not purchase a second subscription through Apple or Google Play in th
 
 ## Can I update the Grok Bot computer from my phone?
 
-Computer updates are not available on mobile. Use desktop Grok Bot to update your agent's computer.
+Computer updates are not available on mobile. Use desktop Grok Bot to update, recover, or reset the computer. See [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md).
+
+## How do I stop phone notifications while I work on desktop?
+
+There is no setting that stays quiet only while the desktop app is open.
+
+To stop alerts for one Bot, open that Bot and turn off **Notifications**. The note is **Get notified when this Bot finishes or needs input**. The same switch is in **Bot settings** on desktop. Off means that Bot does not notify you when it finishes or needs input, including on your phone.
+
+To stop phone alerts for every Bot, open **Settings** on the phone and turn off **Notifications**. If the phone says **Notifications are off**, choose **Open Settings** and allow notifications for Grok Bot there only if you want them back.
 
 ## How do I reconnect mobile to my Grok Bot computer?
 
-Try desktop once. If the problem continues, [contact support](https://cursor.com/help/grok-bot/get-help.md).
+Open desktop Grok Bot and follow [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md). If the computer still will not reconnect, [contact support](https://cursor.com/help/grok-bot/get-help.md).
 
 ## Related
 
@@ -35,6 +43,8 @@ Try desktop once. If the problem continues, [contact support](https://cursor.com
 - [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
+- [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md)
+- [Routines](https://cursor.com/help/grok-bot/routines.md)
 - [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 
