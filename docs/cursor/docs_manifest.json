@@ -555,14 +555,14 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "b38600dcdbab8212aae1638cafdc6e87402cf8bef278d3ed95b6490eefc079de",
-      "last_updated": "2026-09-09T22:54:55.813575"
+      "hash": "063bd83a0a51340c2f28f1467fce3bc7329dd2611b49a17778fb772b56e50c68",
+      "last_updated": "2026-09-10T02:38:29.944230"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "15a76736a78be7d01872e6c85a9e1af92aa2f2cf9bd7cffad324e7e6887fd30e",
-      "last_updated": "2026-09-09T22:54:55.813663"
+      "hash": "e12beb5b2257c48db396be6540101b40ee2b38a33bf090ba0ffc19fd2f374d72",
+      "last_updated": "2026-09-10T02:38:29.944482"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -573,8 +573,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "814232c267ec63d88e744a81b642b6c04054706fda5e9598db2ef3f9adb76320",
-      "last_updated": "2026-09-09T22:54:55.813831"
+      "hash": "0334f46939f9e4d80f872d19c971edabeae9ee3e162381e035f3b48870af9b26",
+      "last_updated": "2026-09-10T02:38:29.944719"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1460,8 +1460,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-09T22:54:55.817337",
-    "fetch_duration_seconds": 3.081347,
+    "last_fetch_completed": "2026-09-10T02:38:29.949419",
+    "fetch_duration_seconds": 2.186701,
     "total_pages_discovered": 243,
     "pages_fetched_successfully": 243,
     "pages_failed": 0,
@@ -1474,7 +1474,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-09T22:54:55.817351",
+  "last_updated": "2026-09-10T02:38:29.949432",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
