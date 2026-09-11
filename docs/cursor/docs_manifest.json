@@ -315,8 +315,8 @@
     "cloud-agent/identity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/identity",
       "original_md_url": "https://cursor.com/docs/cloud-agent/identity.md",
-      "hash": "847100758798f57e19cee2932eeaa59a596dc0ef80dfc256724718e137b3149a",
-      "last_updated": "2026-08-12T21:41:02.488482"
+      "hash": "259926eb01c8f1541eaf6335994c09f41d087065813455aadb8754cdab7ea150",
+      "last_updated": "2026-09-11T07:42:03.080313"
     },
     "cloud-agent/metadata.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/metadata",
@@ -351,8 +351,8 @@
     "cloud-agent/self-hosted.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted.md",
-      "hash": "a4d668490a48520088cb400619e0857dce4ab8b038cd71862c4779f615c4085b",
-      "last_updated": "2026-09-03T23:03:02.084871"
+      "hash": "93be1d675d51c9e4b71642150bb394ca35a37e3e103403d9a2765b343f8a318d",
+      "last_updated": "2026-09-11T07:42:03.080823"
     },
     "cloud-agent/self-hosted/choose-runtime.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime",
@@ -369,8 +369,8 @@
     "cloud-agent/self-hosted/integrations.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/integrations",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/integrations.md",
-      "hash": "51d5874ef086ce6a9365c3e074b94dff9a9d3bdf306d4c7ce28b92794662857f",
-      "last_updated": "2026-09-03T23:03:02.085099"
+      "hash": "3e8c9c88ab901585ae28c132563717cb09f39712361d5e07e3071ce5dce683cd",
+      "last_updated": "2026-09-11T07:42:03.081098"
     },
     "cloud-agent/self-hosted/my-machines.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines",
@@ -381,8 +381,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "378823ae9e6031db4e4551ce1554ceaabf6279657ed804fa02623bc3902d31e4",
-      "last_updated": "2026-09-03T23:03:02.085396"
+      "hash": "f1ff2fc68a41be71bf5efa1bfe4166127fa4d7279a07245706bae2c7e5dc3f9d",
+      "last_updated": "2026-09-11T07:42:03.081444"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -831,8 +831,8 @@
     "help/ai-features/self-hosted-machines.md": {
       "original_url": "https://cursor.com/help/ai-features/self-hosted-machines",
       "original_md_url": "https://cursor.com/help/ai-features/self-hosted-machines.md",
-      "hash": "4af7c0f0d5e01eb7448cb5b792fd0792666025030036fbf4d5b34c039b94d51c",
-      "last_updated": "2026-09-03T23:03:02.086959"
+      "hash": "ce2ae2a752e429225a132adfa99f7d418e9406b51a01c0f15c462bd067d620f8",
+      "last_updated": "2026-09-11T07:42:03.082729"
     },
     "help/ai-features/shared-transcripts.md": {
       "original_url": "https://cursor.com/help/ai-features/shared-transcripts",
@@ -1466,8 +1466,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-11T02:32:21.692323",
-    "fetch_duration_seconds": 2.20414,
+    "last_fetch_completed": "2026-09-11T07:42:03.086486",
+    "fetch_duration_seconds": 2.953246,
     "total_pages_discovered": 244,
     "pages_fetched_successfully": 244,
     "pages_failed": 0,
@@ -1480,7 +1480,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-11T02:32:21.692336",
+  "last_updated": "2026-09-11T07:42:03.086500",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

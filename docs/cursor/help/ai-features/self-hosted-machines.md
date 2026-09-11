@@ -117,7 +117,7 @@ Yes. Team pool workers can run on a partner platform, or from a reference templa
 
 See [Integrations](https://cursor.com/docs/cloud-agent/self-hosted/integrations.md) for the partner guides and templates.
 
-Partner guides cover AWS Lambda, Cloudflare, Namespace, Modal, Daytona, E2B, and Vercel. Reference templates cover AWS Lambda MicroVMs, Cloudflare Containers, and Kubernetes.
+Partner guides cover AWS Lambda, Cloudflare, Namespace, Modal, Daytona, E2B, Vercel, and Tensorlake. Reference templates cover AWS Lambda MicroVMs, Cloudflare Containers, and Kubernetes.
 
 You can also install the Cursor CLI on a VM you already run and start a worker yourself with `agent worker start` or `agent worker --pool start`.
 
