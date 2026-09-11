@@ -74,7 +74,7 @@ Ask this Bot in chat to add, change, pause, or delete a routine. You can still r
 ## Related
 
 - [Work with Grok Bot](https://cursor.com/docs/grok-bot/work.md#skills-and-routines)
-- [Getting started with Grok Bot](https://cursor.com/help/grok-bot/getting-started.md)
+- [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)

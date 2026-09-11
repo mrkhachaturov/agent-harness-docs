@@ -1,6 +1,6 @@
 # Get started with Grok Bot
 
-This guide takes you from install to your first finished task. You'll set up the desktop app, create a Bot with a clear job, and review its work.
+This guide takes you from install to your first finished task. You'll set up the desktop app, create a Bot with a clear job, and review its work. For a shorter help-center checklist, follow [Onboarding](https://cursor.com/help/grok-bot/onboarding.md).
 
 Grok Bot access is included with every paid individual Cursor plan and with
 the Cursor Teams plan, or through an individual SuperGrok link. See [Plans and
@@ -76,7 +76,7 @@ Some flows stay on desktop: teaching a workflow by demonstration, editing a rout
 
 ## If something doesn't work
 
-Most setup problems clear after you fully quit and reopen the app. For symptom-by-symptom help with computers, routines, plugins, and startup, see [Getting started with Grok Bot](https://cursor.com/help/grok-bot/getting-started.md) in the help center, or [contact support](https://cursor.com/help/grok-bot/get-help.md).
+Most setup problems clear after you fully quit and reopen the app. For symptom-by-symptom help with computers, routines, plugins, and startup, see [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md#how-do-i-troubleshoot-grok-bot-computer-routine-connector-and-startup-problems) in the help center, or [contact support](https://cursor.com/help/grok-bot/get-help.md).
 
 ## Related pages
 

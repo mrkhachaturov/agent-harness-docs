@@ -83,7 +83,7 @@ There is no workaround for now. We will update this article once Zoom can be con
 
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
-- [Getting started with Grok Bot](https://cursor.com/help/grok-bot/getting-started.md)
+- [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 
 

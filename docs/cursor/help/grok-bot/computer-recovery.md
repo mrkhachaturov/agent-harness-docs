@@ -85,7 +85,7 @@ Include your Cursor account email, Grok Bot version, which action you already tr
 
 ## Related
 
-- [Getting started with Grok Bot](https://cursor.com/help/grok-bot/getting-started.md)
+- [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)

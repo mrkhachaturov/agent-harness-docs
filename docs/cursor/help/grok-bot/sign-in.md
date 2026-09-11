@@ -57,7 +57,7 @@ Phone verification failures can block account access, including after SuperGrok 
 
 ## Related
 
-- [Getting started with Grok Bot](https://cursor.com/help/grok-bot/getting-started.md)
+- [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
