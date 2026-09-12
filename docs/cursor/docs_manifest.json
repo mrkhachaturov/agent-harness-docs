@@ -528,6 +528,12 @@
       "hash": "30e4831d82634ea045ce8d4c6659afbb5f696c19c98837c5fdd48eddd8f35063",
       "last_updated": "2026-09-09T22:54:55.813384"
     },
+    "grok-bot/computers.md": {
+      "original_url": "https://cursor.com/docs/grok-bot/computers",
+      "original_md_url": "https://cursor.com/docs/grok-bot/computers.md",
+      "hash": "7e77c63205bd2fa6d7e40cfc28405e63811235fb2057233c47c52926230a56b3",
+      "last_updated": "2026-09-12T02:39:51.108640"
+    },
     "grok-bot/get-started.md": {
       "original_url": "https://cursor.com/docs/grok-bot/get-started",
       "original_md_url": "https://cursor.com/docs/grok-bot/get-started.md",
@@ -561,8 +567,8 @@
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "b8f28748c13dfd5bd206faf491f0a040f0b3cc63f3f0432bee2dd063cfb831cd",
-      "last_updated": "2026-09-10T18:02:07.098877"
+      "hash": "7c586cb6456a8fe382d3de68ed51818094251a68044de70056e0a34405a5d59b",
+      "last_updated": "2026-09-12T02:39:51.108980"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -573,8 +579,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "0334f46939f9e4d80f872d19c971edabeae9ee3e162381e035f3b48870af9b26",
-      "last_updated": "2026-09-10T02:38:29.944719"
+      "hash": "03180a4fa839935e84c7343d07194766e88a4f9a1cac7852feec5c60b71cb9f5",
+      "last_updated": "2026-09-12T02:39:51.109243"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1472,21 +1478,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-11T22:57:15.221653",
-    "fetch_duration_seconds": 2.760383,
-    "total_pages_discovered": 245,
-    "pages_fetched_successfully": 245,
+    "last_fetch_completed": "2026-09-12T02:39:51.113842",
+    "fetch_duration_seconds": 2.651059,
+    "total_pages_discovered": 246,
+    "pages_fetched_successfully": 246,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 245,
+    "total_files": 246,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-11T22:57:15.221667",
+  "last_updated": "2026-09-12T02:39:51.113854",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
