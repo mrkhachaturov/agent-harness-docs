@@ -147,8 +147,8 @@
     "agent/tools/canvas.md": {
       "original_url": "https://cursor.com/docs/agent/tools/canvas",
       "original_md_url": "https://cursor.com/docs/agent/tools/canvas.md",
-      "hash": "82960f61a0bc638d7e83e7f9720e942f3e14ba0712421d5e993a2871b487180e",
-      "last_updated": "2026-06-29T22:53:03.548607"
+      "hash": "97f7a8577702a3c662a355d3e0545815b7e44f0426c977d69fd5fbe5fe74f918",
+      "last_updated": "2026-09-13T13:36:27.869549"
     },
     "agent/tools/search.md": {
       "original_url": "https://cursor.com/docs/agent/tools/search",
@@ -549,38 +549,38 @@
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
       "original_md_url": "https://cursor.com/docs/grok-bot/private-networks.md",
-      "hash": "4cedc48123ede682da4a7e70630efe5c6725dc0bb7e82de84648f465e8271037",
-      "last_updated": "2026-09-07T23:17:11.263660"
+      "hash": "ce8fd8a7ba5f2c71bf0367cac18e5af71bca3a907f2d95d453d6defd30517c0c",
+      "last_updated": "2026-09-13T13:36:27.870988"
     },
     "grok-bot/proxies.md": {
       "original_url": "https://cursor.com/docs/grok-bot/proxies",
       "original_md_url": "https://cursor.com/docs/grok-bot/proxies.md",
-      "hash": "ac3a32e38f91fcdba6f9763598e66f1bacee8ac44f037c46ee86c7e63c7294ec",
-      "last_updated": "2026-09-07T23:17:11.263849"
+      "hash": "7fe0246551398b52348e6a48858ae58b5834763d98f2844e5c016899e4ce75dc",
+      "last_updated": "2026-09-13T13:36:27.871211"
     },
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "063bd83a0a51340c2f28f1467fce3bc7329dd2611b49a17778fb772b56e50c68",
-      "last_updated": "2026-09-10T02:38:29.944230"
+      "hash": "7fb1d610ce381cf424287326919684a1b723023d03df3c64e65e23d18ca5c296",
+      "last_updated": "2026-09-13T13:36:27.871401"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "7c586cb6456a8fe382d3de68ed51818094251a68044de70056e0a34405a5d59b",
-      "last_updated": "2026-09-12T02:39:51.108980"
+      "hash": "9b8bbf0db9b35aa0c3170516a69c16028282a316becb224acef42e792588f245",
+      "last_updated": "2026-09-13T13:36:27.871605"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
       "original_md_url": "https://cursor.com/docs/grok-bot/settings.md",
-      "hash": "f8439715201b4d5728d0c8ac2680084e75519725911bbaa6da4903866ac2c155",
-      "last_updated": "2026-09-10T18:02:07.099075"
+      "hash": "87063219b887107712fe75374b291141bc163a58a7c98c681a8e76aa2e586a6e",
+      "last_updated": "2026-09-13T13:36:27.871819"
     },
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "03180a4fa839935e84c7343d07194766e88a4f9a1cac7852feec5c60b71cb9f5",
-      "last_updated": "2026-09-12T02:39:51.109243"
+      "hash": "7605fa5cde8bb59780c7be99f4d9ced6b67d63f1f286e84b7a8ed1f3d42243d6",
+      "last_updated": "2026-09-13T13:36:27.872026"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1478,8 +1478,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-13T07:56:21.308584",
-    "fetch_duration_seconds": 3.745894,
+    "last_fetch_completed": "2026-09-13T13:36:27.876591",
+    "fetch_duration_seconds": 2.517647,
     "total_pages_discovered": 246,
     "pages_fetched_successfully": 246,
     "pages_failed": 0,
@@ -1492,7 +1492,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-13T07:56:21.308597",
+  "last_updated": "2026-09-13T13:36:27.876603",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
