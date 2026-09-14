@@ -315,8 +315,8 @@
     "cloud-agent/identity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/identity",
       "original_md_url": "https://cursor.com/docs/cloud-agent/identity.md",
-      "hash": "259926eb01c8f1541eaf6335994c09f41d087065813455aadb8754cdab7ea150",
-      "last_updated": "2026-09-11T07:42:03.080313"
+      "hash": "ca29ed80882843781cea26eb9706c7311d977af5e135ffd7ea33922c60754119",
+      "last_updated": "2026-09-14T08:28:26.417338"
     },
     "cloud-agent/metadata.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/metadata",
@@ -375,14 +375,14 @@
     "cloud-agent/self-hosted/my-machines.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines.md",
-      "hash": "ece74cf8bf03162f281cea262d7d7c2eb7fbb1f2541bb265993937f33b036b14",
-      "last_updated": "2026-09-02T22:58:54.434143"
+      "hash": "dec970b0ad24c71126513b0cf33294810c64fb4ad1bde5026158a3dae80fe272",
+      "last_updated": "2026-09-14T08:28:26.417671"
     },
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "f1ff2fc68a41be71bf5efa1bfe4166127fa4d7279a07245706bae2c7e5dc3f9d",
-      "last_updated": "2026-09-11T07:42:03.081444"
+      "hash": "35d0a65e3be7e4752f91090960b6a508ef95f722ce5197b2642fe364eb202785",
+      "last_updated": "2026-09-14T08:28:26.417842"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -987,8 +987,8 @@
     "help/grok-bot/mobile-purchase.md": {
       "original_url": "https://cursor.com/help/grok-bot/mobile-purchase",
       "original_md_url": "https://cursor.com/help/grok-bot/mobile-purchase.md",
-      "hash": "95cf14ec87d6be4f15243b37da1206b3339e163edd0faa8ea86e9006d7579ef0",
-      "last_updated": "2026-09-09T22:54:55.814324"
+      "hash": "221589a4b7a1e1295d505c714e6f1d6afb4e3f2ad03f7391cd0b110875a74a56",
+      "last_updated": "2026-09-14T08:28:26.418728"
     },
     "help/grok-bot/mobile.md": {
       "original_url": "https://cursor.com/help/grok-bot/mobile",
@@ -1005,8 +1005,8 @@
     "help/grok-bot/plans.md": {
       "original_url": "https://cursor.com/help/grok-bot/plans",
       "original_md_url": "https://cursor.com/help/grok-bot/plans.md",
-      "hash": "52c7ba7f609f63f369840334fc9bae883dc634b856d4e05c87633ef1bcfcd8fc",
-      "last_updated": "2026-09-10T18:02:07.100792"
+      "hash": "3224175b1935058274af0f5053477f7e6717ea12d48f2d083d08151ef8577dc0",
+      "last_updated": "2026-09-14T08:28:26.418900"
     },
     "help/grok-bot/routines.md": {
       "original_url": "https://cursor.com/help/grok-bot/routines",
@@ -1478,8 +1478,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-14T02:54:15.000478",
-    "fetch_duration_seconds": 2.169056,
+    "last_fetch_completed": "2026-09-14T08:28:26.421757",
+    "fetch_duration_seconds": 2.87294,
     "total_pages_discovered": 246,
     "pages_fetched_successfully": 246,
     "pages_failed": 0,
@@ -1492,7 +1492,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-14T02:54:15.000491",
+  "last_updated": "2026-09-14T08:28:26.421769",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

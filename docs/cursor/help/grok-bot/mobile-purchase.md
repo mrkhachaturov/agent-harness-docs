@@ -31,10 +31,12 @@ You still need to [link your Grok or X account](https://cursor.com/help/grok-bot
 
 ## How do I manage or cancel a mobile subscription?
 
-The store you bought through handles the subscription. Cursor can't cancel an in-app plan for you.
+The store you bought through handles the subscription, including store free trials (intro offers). Cursor can't cancel an in-app plan or refund it for you.
 
-- **iOS:** Apple handles in-app subscriptions. Cancel or change the plan in **Apple ID → Subscriptions**. For Apple billing questions, use Apple's subscription support.
+- **iOS:** Apple handles in-app subscriptions. Cancel or change the plan in **Apple ID → Subscriptions** before a trial ends if you do not want it to convert to a paid subscription. For Apple billing questions and refunds, use Apple's subscription support.
 - **Android:** Google Play handles in-app subscriptions. Cancel or change the plan in the Google Play app under **Payments & subscriptions → Subscriptions**. For Google Play billing questions, use Google Play's subscription support.
+
+The Grok Bot usage-credit trial claimed on web or desktop is separate. See [How do I cancel my Grok Bot trial?](https://cursor.com/help/grok-bot/plans.md#how-do-i-cancel-my-grok-bot-trial).
 
 ## Related
 

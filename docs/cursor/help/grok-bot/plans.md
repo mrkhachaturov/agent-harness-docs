@@ -143,26 +143,51 @@ A downgrade or a seat change changes which single grant Grok Bot uses. It does n
 
 Request-based Teams plans and Enterprise seats do not take a personal SuperGrok link. Those plans keep Grok Bot on the Cursor contract.
 
-## How do I cancel my Grok Bot trial or request a partial refund?
+## How do I cancel my Grok Bot trial?
 
-**Canceling a trial:**
+There is no charge to cancel, and the Grok Bot trial never becomes a paid plan.
 
-- You can cancel a Grok Bot trial from the plan screen (**Cancel Trial**).
-- For Apple Pay or App Store trial paths, use Apple's subscription management if the in-app cancel button is unavailable.
-- [Contact support](https://cursor.com/help/grok-bot/get-help.md) when cancellation does not take effect within 24 hours.
+**Cancel Trial** appears on free-plan accounts. On a paid plan or Teams seat, the trial ends on its own and there's nothing to cancel.
 
-**Partial refund eligibility:**
+Use **Cancel Trial** on the plan screen. That ends the trial right away, removes any remaining trial credit, and you can't claim the trial again.
 
-- The Grok Bot free trial is a usage credit, not a charge, so there is nothing to refund. Used trial credit is not restored. See [What if my trial ran out during a single run?](https://cursor.com/help/grok-bot/plans.md#what-if-my-trial-ran-out-during-a-single-run).
-- Refunds for active paid subscriptions follow [Refunds](https://cursor.com/help/account-and-billing/refunds.md). Prorated refunds are not issued for mid-cycle downgrades with usage.
+If you're on a free plan and **Cancel Trial** doesn't appear or the cancel doesn't take effect, [contact support](https://cursor.com/help/grok-bot/get-help.md).
 
-Trial cancellation is self-serve when **Cancel Trial** is available on the plan screen. For a refund on an active paid subscription, follow the steps in [Refunds](https://cursor.com/help/account-and-billing/refunds.md).
+## How do I cancel a free trial I started in the iOS app?
+
+An App Store intro offer is different from the Grok Bot usage-credit trial. Apple runs it, and it turns into a paid Apple subscription when the trial ends unless you cancel first.
+
+Cancel in **Apple ID → Subscriptions** before the trial ends. See Apple's guide to [viewing and canceling subscriptions](https://support.apple.com/guide/iphone/iph4e3e7324f/ios). For refunds on an Apple in-app charge, use [Apple's Subscriptions and billing support](https://support.apple.com/billing). Cursor can't cancel or refund an Apple in-app trial or subscription for you.
+
+See [How do I manage or cancel a mobile subscription?](https://cursor.com/help/grok-bot/mobile-purchase.md#how-do-i-manage-or-cancel-a-mobile-subscription). Android has no in-app trial.
+
+## How do refunds work for Grok Bot?
+
+Grok Bot does not have a separate subscription, so it does not have a separate refund path.
+
+**Cursor plans.** Paid access is billed through your Cursor plan (Pro, Pro+, or Ultra). Subscription refund eligibility follows [Refunds](https://cursor.com/help/account-and-billing/refunds.md).
+
+These Cursor charges are not refundable:
+
+- On-demand usage Grok Bot has already consumed
+- Mid-cycle downgrades with usage (no prorated refund)
+
+**Store purchases.** Cursor can't refund in-app store charges:
+
+- **iOS:** [Apple's Subscriptions and billing support](https://support.apple.com/billing)
+- **Google Play:** [Google Play's refund support](https://support.google.com/googleplay/answer/2479637)
+
+**SuperGrok and X Premium+.** Qualifying Grok accounts are individual SuperGrok, SuperGrok Plus, SuperGrok Heavy, and X Premium+. Those subscriptions are billed by xAI or X, not Cursor.
+
+- **SuperGrok:** see [xAI's FAQ](https://docs.x.ai/grok/faq#can-i-get-a-refund-for-my-grok-or-supergrok-subscription)
+- **X Premium+:** contact X for refunds
 
 ## Related
 
 - [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)
 - [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
+- [Refunds](https://cursor.com/help/account-and-billing/refunds.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
 - [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)
 - [Team pricing](https://cursor.com/docs/account/teams/pricing.md)
