@@ -381,8 +381,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "35d0a65e3be7e4752f91090960b6a508ef95f722ce5197b2642fe364eb202785",
-      "last_updated": "2026-09-14T08:28:26.417842"
+      "hash": "2bb37e656138762c6669531c2fa2d31306d25c94f83a54479de2ef08924cb0ab",
+      "last_updated": "2026-09-15T18:41:16.649305"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -837,8 +837,8 @@
     "help/ai-features/self-hosted-machines.md": {
       "original_url": "https://cursor.com/help/ai-features/self-hosted-machines",
       "original_md_url": "https://cursor.com/help/ai-features/self-hosted-machines.md",
-      "hash": "ce2ae2a752e429225a132adfa99f7d418e9406b51a01c0f15c462bd067d620f8",
-      "last_updated": "2026-09-11T07:42:03.082729"
+      "hash": "f3504bd02f4ba26572f2422e1d7c64335ca1c684d57475a6fbe5f188bd6371f2",
+      "last_updated": "2026-09-15T18:41:16.650355"
     },
     "help/ai-features/shared-transcripts.md": {
       "original_url": "https://cursor.com/help/ai-features/shared-transcripts",
@@ -1251,8 +1251,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "e8848bf35d592b99e9b20e27416ea6f7b325abdb7ba598b68ce247b95af8fca2",
-      "last_updated": "2026-09-02T22:58:54.436303"
+      "hash": "f63e2dd6a8a86c9917d54fb7a69da6f2ebd439c3ee2bff06224895f36af07930",
+      "last_updated": "2026-09-15T18:41:16.651161"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1478,8 +1478,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-15T14:06:41.023365",
-    "fetch_duration_seconds": 2.22791,
+    "last_fetch_completed": "2026-09-15T18:41:16.655111",
+    "fetch_duration_seconds": 2.089313,
     "total_pages_discovered": 246,
     "pages_fetched_successfully": 246,
     "pages_failed": 0,
@@ -1492,7 +1492,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-15T14:06:41.023380",
+  "last_updated": "2026-09-15T18:41:16.655124",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
