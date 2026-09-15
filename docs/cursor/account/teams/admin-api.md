@@ -1904,6 +1904,10 @@ Whether Action Recording is enabled.
 
 Team ceiling for Bots on a member's machine: `never`, `ask`, `always`, or `null` for no ceiling.
 
+`localEgressAllowed` boolean
+
+Whether members can route Grok Bot's web traffic through their own computer (**Allow Local Egress Routing**; Enterprise only).
+
 ```bash
 curl -X GET https://api.cursor.com/grok-bot/capabilities \
   -u YOUR_API_KEY:
@@ -1917,7 +1921,8 @@ curl -X GET https://api.cursor.com/grok-bot/capabilities \
   "cloudAgents": true,
   "templateSharing": "team_only",
   "actionRecording": false,
-  "localExecution": "ask"
+  "localExecution": "ask",
+  "localEgressAllowed": true
 }
 ```
 
@@ -1947,13 +1952,18 @@ Whether Action Recording is enabled.
 
 `never`, `ask`, `always`, or `null` to clear the team ceiling.
 
+`localEgressAllowed` boolean
+
+Whether members can route Grok Bot's web traffic through their own computer (**Allow Local Egress Routing**; Enterprise only). Returns **403** when local egress routing controls are not enabled for the team.
+
 ```bash
 curl -X PATCH https://api.cursor.com/grok-bot/capabilities \
   -u YOUR_API_KEY: \
   -H "Content-Type: application/json" \
   -d '{
     "cloudAgents": false,
-    "localExecution": "never"
+    "localExecution": "never",
+    "localEgressAllowed": false
   }'
 ```
 
@@ -1965,7 +1975,8 @@ curl -X PATCH https://api.cursor.com/grok-bot/capabilities \
   "cloudAgents": false,
   "templateSharing": "team_only",
   "actionRecording": false,
-  "localExecution": "never"
+  "localExecution": "never",
+  "localEgressAllowed": false
 }
 ```
 
