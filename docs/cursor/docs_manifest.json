@@ -3,8 +3,8 @@
     "account/enterprise/billing-groups.md": {
       "original_url": "https://cursor.com/docs/account/enterprise/billing-groups",
       "original_md_url": "https://cursor.com/docs/account/enterprise/billing-groups.md",
-      "hash": "984b0c63455a3318c42d2232cd545e47bda6849cc243c1b5a50076602cc5151a",
-      "last_updated": "2026-08-24T21:24:42.905890"
+      "hash": "3d16d40616129ff978924c168abc241bba776f40b8c36464cfef789186948711",
+      "last_updated": "2026-09-15T23:23:41.603463"
     },
     "account/enterprise/cyber-safeguards.md": {
       "original_url": "https://cursor.com/docs/account/enterprise/cyber-safeguards",
@@ -21,14 +21,14 @@
     "account/organizations/organization-admin-api.md": {
       "original_url": "https://cursor.com/docs/account/organizations/organization-admin-api",
       "original_md_url": "https://cursor.com/docs/account/organizations/organization-admin-api.md",
-      "hash": "155e4916eb95fbd3048667f2f146299f7aef969cdeeb16ec3db73b2ce5bc0ba0",
-      "last_updated": "2026-09-14T21:19:27.153070"
+      "hash": "03e4e2a28824d91a4bade6edce5305aa7dfb19abb502dd810d8cec7ee4f370e5",
+      "last_updated": "2026-09-15T23:23:41.604049"
     },
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "24dc95309b256a0d13a250611ab1f1e136804e7b5147079344d45f2eb70a4a40",
-      "last_updated": "2026-09-15T14:06:41.017054"
+      "hash": "76e78087ecf77e7382d9c2c76a19975e7b9935639cce13a53ca7077a4abbb35f",
+      "last_updated": "2026-09-15T23:23:41.604600"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -489,14 +489,14 @@
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
       "original_md_url": "https://cursor.com/docs/enterprise/organization-groups.md",
-      "hash": "4bb81e8ec205f2161420988dc054ce23dc2400b31a5ee7e3c331e28643b19cac",
-      "last_updated": "2026-09-14T21:19:27.154741"
+      "hash": "8334dae457b9267bdd3cc12c733250411ff108f8254618a5c2cd34b68f249e23",
+      "last_updated": "2026-09-15T23:23:41.606114"
     },
     "enterprise/organizations.md": {
       "original_url": "https://cursor.com/docs/enterprise/organizations",
       "original_md_url": "https://cursor.com/docs/enterprise/organizations.md",
-      "hash": "1de58fb2788c8fa17fbac2dccd2618d5bf8133071bd8b9cc25e642af8232a9ed",
-      "last_updated": "2026-08-27T00:25:58.410122"
+      "hash": "5ba4e2021ef59e2710b0cf77d26c8b8d467e872579e996d0f980186cca2f4468",
+      "last_updated": "2026-09-15T23:23:41.606350"
     },
     "enterprise/pooled-usage.md": {
       "original_url": "https://cursor.com/docs/enterprise/pooled-usage",
@@ -579,8 +579,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "32fed5df87689dbd6c125e7a7ab8264423e10a1d1a3d723360c1354ce3040a9c",
-      "last_updated": "2026-09-14T21:19:27.155069"
+      "hash": "989adc79b6ea43af3c172028661f711ade7721f1bb5f86ebd92233a27f4a7593",
+      "last_updated": "2026-09-15T23:23:41.606793"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1478,8 +1478,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-15T18:41:16.655111",
-    "fetch_duration_seconds": 2.089313,
+    "last_fetch_completed": "2026-09-15T23:23:41.611520",
+    "fetch_duration_seconds": 3.442189,
     "total_pages_discovered": 246,
     "pages_fetched_successfully": 246,
     "pages_failed": 0,
@@ -1492,7 +1492,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-15T18:41:16.655124",
+  "last_updated": "2026-09-15T23:23:41.611532",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

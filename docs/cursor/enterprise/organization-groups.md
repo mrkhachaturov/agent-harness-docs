@@ -11,7 +11,7 @@ Manage membership by hand, or sync it from your identity provider through SCIM. 
 
 Organization Groups are separate from [Billing
 Groups](https://cursor.com/docs/account/enterprise/billing-groups.md), which attribute spend for
-reporting, and from team-level [directory
+reporting, and from [Team directory
 groups](https://cursor.com/docs/account/teams/scim.md#directory-groups), which set spend and
 policy within one team.
 
@@ -105,7 +105,7 @@ Open a group and select **Settings**. Group settings apply to everyone in the gr
 
 ### Spend limits
 
-Set a per-user monthly spend limit on the group. When a user belongs to multiple groups or also has team-level limits, the highest applicable limit wins. For example, if a team default is stricter and a group carries a higher limit, the group limit applies to that user. A group limit lower than a more permissive team setting doesn't tighten the user's access.
+Set a per-user monthly spend limit on the group. When a user belongs to multiple groups or also has team spend limits, the highest applicable limit wins. For example, if a team default is stricter and a group carries a higher limit, the group limit applies to that user. A group limit lower than a more permissive team setting doesn't tighten the user's access.
 
 ### Model access
 
@@ -133,13 +133,13 @@ When the team and a group both define the same Auto-run setting, Cursor merges e
 | Sandbox Networking         | Loosest setting wins. `user_controlled` beats `always_disabled`, so networking is always disabled only when both levels set `always_disabled`. |
 | Sandbox Git Access         | Same as Sandbox Networking: `user_controlled` beats `always_disabled`.                                                                         |
 
-When several groups apply to the same user, the same field-wise merge runs across those groups. Auto-review instructions are the exception: if a group defines instructions, they replace the team-level instructions for that user.
+When several groups apply to the same user, the same field-wise merge runs across those groups. Auto-review instructions are the exception: if a group defines instructions, they replace the team instructions for that user.
 
 ### Team marketplace access
 
 Team admins can restrict a [team marketplace](https://cursor.com/docs/plugins.md#team-marketplaces) to selected groups. Open **Dashboard -> Plugins**, select a marketplace, then choose groups under **Marketplace Settings -> Marketplace Access**.
 
-A marketplace stays scoped to its owning team: selecting a group grants access only to group members who also belong to that team. Team admins keep access, and a marketplace with no selected groups is open to everyone in the team. Existing marketplaces that use team-level directory groups keep those assignments; Cursor doesn't migrate them.
+A marketplace stays scoped to its owning team: selecting a group grants access only to group members who also belong to that team. Team admins keep access, and a marketplace with no selected groups is open to everyone in the team. Existing marketplaces that use Team directory groups keep those assignments; Cursor doesn't migrate them.
 
 ## Use groups to power teams
 
@@ -204,6 +204,8 @@ For model access specifically, neither the team nor a group fully supersedes the
 
 Create, list, update, and delete groups through the [Organization API](https://cursor.com/docs/account/organizations/organization-admin-api.md#organization-groups). The API also lists group members and adds or removes members of manual groups. Group routes use Organization API keys and take the group `id`, which uses the `g_` prefix. Group responses also return a `publicId` with the `grp_` prefix. To find a group by name, call [List Organization Groups](https://cursor.com/docs/account/organizations/organization-admin-api.md#list-organization-groups) with the `name` query parameter.
 
+Team directory groups are a different resource. Team Admin API routes at [`/teams/directory-groups`](https://cursor.com/docs/account/teams/admin-api.md#team-directory-groups) manage those groups and use `team_group_…` ids. Those routes do not accept Organization Group `id` (`g_`) or `publicId` (`grp_`) values.
+
 ## Related docs
 
 - [Organizations](https://cursor.com/docs/enterprise/organizations.md)
@@ -211,6 +213,7 @@ Create, list, update, and delete groups through the [Organization API](https://c
 - [SCIM provisioning](https://cursor.com/docs/account/teams/scim.md)
 - [Members, roles, and seat types](https://cursor.com/docs/account/teams/members.md)
 - [Organization API](https://cursor.com/docs/account/organizations/organization-admin-api.md#organization-groups)
+- [Team directory groups](https://cursor.com/docs/account/teams/admin-api.md#team-directory-groups)
 - [Pooled usage](https://cursor.com/docs/enterprise/pooled-usage.md)
 - [Spend limits](https://cursor.com/help/account-and-billing/spend-limits.md)
 
