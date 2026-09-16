@@ -1065,8 +1065,8 @@
     "help/models-and-usage/api-keys.md": {
       "original_url": "https://cursor.com/help/models-and-usage/api-keys",
       "original_md_url": "https://cursor.com/help/models-and-usage/api-keys.md",
-      "hash": "cd680f7ee0c44b5b812ce93ffc8e38aa467010e76e04f4d5854afa752ba0672c",
-      "last_updated": "2026-08-24T21:24:42.910679"
+      "hash": "ea08652e0f23573ee30781f24b781bec93274cd849262c30a99fbfec4f40292b",
+      "last_updated": "2026-09-16T14:00:01.847218"
     },
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
@@ -1101,8 +1101,8 @@
     "help/models-and-usage/usage-limits.md": {
       "original_url": "https://cursor.com/help/models-and-usage/usage-limits",
       "original_md_url": "https://cursor.com/help/models-and-usage/usage-limits.md",
-      "hash": "c2c8aeda854a93b67ed09607f250642219358717c17067b1d14c4edf08275cd0",
-      "last_updated": "2026-08-25T00:57:12.645253"
+      "hash": "12186a1345320b7ae2a86cf0e2bf22f1c36d39c826573dbfb860de3268873536",
+      "last_updated": "2026-09-16T14:00:01.847396"
     },
     "help/security-and-privacy/account-compromised.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/account-compromised",
@@ -1484,8 +1484,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-16T08:13:12.377639",
-    "fetch_duration_seconds": 4.571435,
+    "last_fetch_completed": "2026-09-16T14:00:01.850099",
+    "fetch_duration_seconds": 3.026885,
     "total_pages_discovered": 247,
     "pages_fetched_successfully": 247,
     "pages_failed": 0,
@@ -1498,7 +1498,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-16T08:13:12.377653",
+  "last_updated": "2026-09-16T14:00:01.850112",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

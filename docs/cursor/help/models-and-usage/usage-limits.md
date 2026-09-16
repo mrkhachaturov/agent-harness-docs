@@ -42,6 +42,14 @@ When included usage runs out, on-demand charges apply if you have on-demand usag
 
 See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for mode details.
 
+## Do requests made with my own API key count toward my usage?
+
+On individual plans, no. Your provider bills you directly for the model cost, and those requests don't draw from either pool.
+
+On Teams and Enterprise plans, requests made with your own key still carry the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens. That charge appears under **Other Models** and draws from that allowance. When the allowance runs out, the Cursor Token Rate is billed as on-demand usage if on-demand usage is enabled. If it is turned off, those requests stop until the next billing cycle.
+
+See [Bring your own API key](https://cursor.com/help/models-and-usage/api-keys.md#does-using-my-own-api-key-count-against-my-included-usage) for details.
+
 ## Related
 
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
