@@ -111,14 +111,20 @@
     "agent/overview.md": {
       "original_url": "https://cursor.com/docs/agent/overview",
       "original_md_url": "https://cursor.com/docs/agent/overview.md",
-      "hash": "6fc55bfd04299e85278fc934d567968e566b4cb6c4e5250d6c4a32f387a84320",
-      "last_updated": "2026-08-25T18:33:41.125897"
+      "hash": "e0d9d0789c1521ff8c774423b2df0bf981ea2e535434c2c46e22b7c3ad0d7919",
+      "last_updated": "2026-09-16T02:52:23.560623"
     },
     "agent/plan-mode.md": {
       "original_url": "https://cursor.com/docs/agent/plan-mode",
       "original_md_url": "https://cursor.com/docs/agent/plan-mode.md",
       "hash": "c0d81d9373fbe024d7e554550d0548dbc38b552af6df6214070551bc1770c22a",
       "last_updated": "2026-08-25T00:57:12.642232"
+    },
+    "agent/projects.md": {
+      "original_url": "https://cursor.com/docs/agent/projects",
+      "original_md_url": "https://cursor.com/docs/agent/projects.md",
+      "hash": "a3398508654f530b91642cfd2dd7e7ccd1d22eaffd6229a67398603b53aa27ad",
+      "last_updated": "2026-09-16T02:52:23.560812"
     },
     "agent/prompting.md": {
       "original_url": "https://cursor.com/docs/agent/prompting",
@@ -1478,21 +1484,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-15T23:23:41.611520",
-    "fetch_duration_seconds": 3.442189,
-    "total_pages_discovered": 246,
-    "pages_fetched_successfully": 246,
+    "last_fetch_completed": "2026-09-16T02:52:23.567151",
+    "fetch_duration_seconds": 2.793838,
+    "total_pages_discovered": 247,
+    "pages_fetched_successfully": 247,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 246,
+    "total_files": 247,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-15T23:23:41.611532",
+  "last_updated": "2026-09-16T02:52:23.567164",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
