@@ -16,7 +16,7 @@ irm 'https://cursor.com/install?win32=true' | iex
 
 ## What can the CLI do?
 
-The CLI brings Cursor's AI capabilities to your terminal. It supports Agent, Plan, and Ask modes, so you can do almost everything you'd do in the editor without opening an IDE.
+The CLI brings Cursor's AI capabilities to your terminal. It supports Agent, Plan, and Ask modes for interactive coding and automation. Some features work differently or are available only in the editor.
 
 Learn more at [cursor.com/cli](https://cursor.com/cli).
 
@@ -26,28 +26,22 @@ Yes. Use headless mode for scripts, CI pipelines, and [GitHub Actions](https://c
 
 ## Does the CLI work with other editors?
 
-Yes. Cursor CLI works with any IDE or editor, not just Cursor. Plug it into your existing workflow anywhere you have a terminal.
+Yes. Cursor CLI works with any IDE or editor. Plug it into your existing workflow anywhere you have a terminal.
 
 ## How do I authenticate the CLI?
 
-Run `agent auth` or set the `CURSOR_API_KEY` environment variable. See the [CLI authentication docs](https://cursor.com/docs/cli/reference/authentication.md) for details.
+Run `agent login` or set the `CURSOR_API_KEY` environment variable. See the [CLI authentication docs](https://cursor.com/docs/cli/reference/authentication.md) for details.
 
-## What if the CLI reports "invalid API key" on a network error?
+## What if the CLI can't reach Cursor's servers?
 
-If DNS resolution fails or the CLI can't reach Cursor's servers, the error message may say "invalid API key" instead of a network error. Check your network connection first. If you're behind a VPN or firewall, verify that `*.cursor.sh` and `*.cursorapi.com` are accessible.
+Check your network connection first. Behind a VPN or firewall, allowlist `*.cursor.sh` and `*.cursorapi.com`. For proxy environment variables and HTTP/1.1 fallback, see [CLI configuration](https://cursor.com/docs/cli/reference/configuration.md).
 
 ## How do I update the CLI?
 
-Run:
+Cursor CLI auto-updates by default. To update manually, run:
 
 ```bash
 agent update
-```
-
-To switch release channels (e.g., from `stable` to `lab`), run:
-
-```bash
-agent set-channel lab
 ```
 
 ## Related
@@ -55,6 +49,7 @@ agent set-channel lab
 - [CLI overview](https://cursor.com/docs/cli/overview.md)
 - [CLI installation](https://cursor.com/docs/cli/installation.md)
 - [CLI authentication](https://cursor.com/docs/cli/reference/authentication.md)
+- [CLI configuration](https://cursor.com/docs/cli/reference/configuration.md)
 - [GitHub Actions](https://cursor.com/docs/cli/github-actions.md)
 - [cursor.com/cli](https://cursor.com/cli)
 
