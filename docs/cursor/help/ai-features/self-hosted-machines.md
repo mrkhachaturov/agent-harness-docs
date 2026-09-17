@@ -147,9 +147,11 @@ agent worker --pool sandbox --worker-dir "$HOME/cursor-sandboxes/default" start
 
 Pass `--clone-git-repos` so the worker clones repos on claim. In the Cursor composer environment picker, select the team pool under **Any repo**.
 
+Without `--clone-git-repos`, an any-repo pool can use an [always-applied workspace rule](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#any-repo-pools) to map task subjects to repositories and clone them with worker credentials.
+
 In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves.
 
-Repo-backed team pools still work when workers serve specific checkouts. Pass `--worker-dir` once per repo root.
+This setup only applies to any-repo pools. Repo-bound pools route requests to workers that already have matching checkouts.
 
 ## How do I connect private or self-hosted GitLab?
 
