@@ -1380,6 +1380,12 @@
       "hash": "3aa9b41853904e8086a6e058ae056ad93f48e990a8b0ffb8a4326f7dd8a7d3bb",
       "last_updated": "2026-08-17T18:31:17.517137"
     },
+    "origin/clonekit-ci.md": {
+      "original_url": "https://cursor.com/docs/origin/clonekit-ci",
+      "original_md_url": "https://cursor.com/docs/origin/clonekit-ci.md",
+      "hash": "86ae1838b2fee6846bee8ff64473bc4c23d5148fde2162a0b8b47b35522bef27",
+      "last_updated": "2026-09-17T14:03:52.489274"
+    },
     "origin/codebase-settings.md": {
       "original_url": "https://cursor.com/docs/origin/codebase-settings",
       "original_md_url": "https://cursor.com/docs/origin/codebase-settings.md",
@@ -1484,21 +1490,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-17T08:19:18.509465",
-    "fetch_duration_seconds": 2.090537,
-    "total_pages_discovered": 247,
-    "pages_fetched_successfully": 247,
+    "last_fetch_completed": "2026-09-17T14:03:52.492038",
+    "fetch_duration_seconds": 2.967101,
+    "total_pages_discovered": 248,
+    "pages_fetched_successfully": 248,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 247,
+    "total_files": 248,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-17T08:19:18.509481",
+  "last_updated": "2026-09-17T14:03:52.492052",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
