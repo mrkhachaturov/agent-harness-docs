@@ -137,7 +137,7 @@ When several groups apply to the same user, the same field-wise merge runs acros
 
 ### Team marketplace access
 
-Team admins can restrict a [team marketplace](https://cursor.com/docs/plugins.md#team-marketplaces) to selected groups. Open **Dashboard -> Plugins**, select a marketplace, then choose groups under **Marketplace Settings -> Marketplace Access**.
+Team admins can restrict a [team marketplace](https://cursor.com/docs/plugins.md#team-marketplaces) to selected groups. Open **Dashboard -> Plugins & MCPs**, select a marketplace, then choose groups under **Marketplace Settings -> Marketplace Access**.
 
 A marketplace stays scoped to its owning team: selecting a group grants access only to group members who also belong to that team. Team admins keep access, and a marketplace with no selected groups is open to everyone in the team. Existing marketplaces that use Team directory groups keep those assignments; Cursor doesn't migrate them.
 

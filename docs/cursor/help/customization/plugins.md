@@ -30,7 +30,7 @@ On Teams and Enterprise plans, open **Customize → Skills**, open a personal sk
 
 ## Can I stop members from publishing skills?
 
-Yes. Admins can turn off **Allow Members to Publish** on the Default marketplace under [Dashboard → Plugins](https://cursor.com/dashboard/plugins). When it is off, only team admins can publish new skills.
+Yes. Admins can turn off **Allow Members to Publish** on the Default marketplace under [Dashboard → Plugins & MCPs](https://cursor.com/dashboard/plugins). When it is off, only team admins can publish new skills.
 
 ## Related
 
