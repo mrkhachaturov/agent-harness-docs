@@ -8,7 +8,8 @@ Each plan includes a monthly usage budget. If you exceed your included usage, ad
 
 On Teams and Enterprise plans, third-party model requests also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). This includes when Auto routes to a third-party model. First-party Cursor models, including Grok and Composer, are exempt.
 
-- On-demand usage must be explicitly enabled in your settings
+- **Individual plans:** On-demand usage must be explicitly enabled in your settings.
+- **Teams:** On-demand usage is enabled by default. Team admins can disable it or set spend limits in the dashboard.
 - On-demand usage has its own invoices and line items, distinct from your subscription
 
 ## How do I check my usage?
@@ -20,8 +21,8 @@ Go to [cursor.com/dashboard](https://cursor.com/dashboard) and click **Billing &
 
 ## How do I prevent on-demand charges?
 
-- **Disable on-demand usage**: Turn it off in your dashboard settings to stop requests once your included usage runs out
-- **Set a spend limit**: Cap how much on-demand usage you're willing to pay that billing cycle. Raising it mid-cycle can make previously credited overage billable.
+- **Disable on-demand usage**: On Individual plans, turn it off in your spending settings to stop requests once your included usage runs out. On Teams, admins disable it in the team dashboard.
+- **Set a spend limit**: Cap how much on-demand usage you're willing to pay that billing cycle. On Individual plans, set this in your spending settings. On Teams, admins set it in the team dashboard. Raising it mid-cycle can make previously credited overage billable.
 - **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Pro+ or Ultra give you higher included usage limits for Cursor Models and Other Models.
 
 ## What if usage goes over my spend limit?
@@ -43,6 +44,7 @@ See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) f
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Spend limits](https://cursor.com/help/account-and-billing/spend-limits.md)
+- [Team Pricing](https://cursor.com/docs/account/teams/pricing.md)
 - [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md)
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
 - [Billing and payments](https://cursor.com/help/account-and-billing/billing.md)

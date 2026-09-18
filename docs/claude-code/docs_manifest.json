@@ -514,8 +514,8 @@
     "errors.md": {
       "original_url": "https://code.claude.com/docs/en/errors",
       "original_md_url": "https://code.claude.com/docs/en/errors.md",
-      "hash": "6a0195a164b013439616064a80b4fcc3296c8475f10fc208742b9571c27cb319",
-      "last_updated": "2026-09-18T02:41:36.389377"
+      "hash": "d869e681b979e9fa112ff40ce61a633ff8dd30e46243f5f21e5024a474613803",
+      "last_updated": "2026-09-18T22:58:21.190149"
     },
     "fast-mode.md": {
       "original_url": "https://code.claude.com/docs/en/fast-mode",
@@ -526,8 +526,8 @@
     "feature-availability.md": {
       "original_url": "https://code.claude.com/docs/en/feature-availability",
       "original_md_url": "https://code.claude.com/docs/en/feature-availability.md",
-      "hash": "042d39d93ca0b4347e1e3ba0b83b277d042aab666e0256d2afe13f06af1a7871",
-      "last_updated": "2026-09-18T20:46:26.178720"
+      "hash": "83284c85d33a8f28c46c0cb27ebe5cd5df4dbd2205170a2cc99efc1c84a04528",
+      "last_updated": "2026-09-18T22:58:22.473689"
     },
     "features-overview.md": {
       "original_url": "https://code.claude.com/docs/en/features-overview",
@@ -646,8 +646,8 @@
     "llm-gateway.md": {
       "original_url": "https://code.claude.com/docs/en/llm-gateway",
       "original_md_url": "https://code.claude.com/docs/en/llm-gateway.md",
-      "hash": "236a7b796b0255310652fa290588809971d92ef4f8b43f2a3da5c1b16544f85f",
-      "last_updated": "2026-09-04T02:32:42.214935"
+      "hash": "e863684e59a07b3817483d81dc7ff96d91c96a12edba8fbe41649c6387daa4b5",
+      "last_updated": "2026-09-18T22:58:44.645497"
     },
     "llm-gateway-connect.md": {
       "original_url": "https://code.claude.com/docs/en/llm-gateway-connect",
@@ -658,14 +658,14 @@
     "llm-gateway-protocol.md": {
       "original_url": "https://code.claude.com/docs/en/llm-gateway-protocol",
       "original_md_url": "https://code.claude.com/docs/en/llm-gateway-protocol.md",
-      "hash": "19c52d46285264754c3e271d8234e98767b5d6fd25201f92ed883ab5a00c2e0e",
-      "last_updated": "2026-09-17T23:19:54.579639"
+      "hash": "e82c90fa5f99716521ced55cf2cdb7486cf9adfa2ce4fba7dfb30786c29bca31",
+      "last_updated": "2026-09-18T22:58:47.947497"
     },
     "llm-gateway-rollout.md": {
       "original_url": "https://code.claude.com/docs/en/llm-gateway-rollout",
       "original_md_url": "https://code.claude.com/docs/en/llm-gateway-rollout.md",
-      "hash": "f578fee1c4c8f2d49d89caa66e326179309a4b1e8f06a45f9b532721354f070b",
-      "last_updated": "2026-09-15T23:22:39.171651"
+      "hash": "504cc1dbc2264b89c1a9c153e22e848b228464f67d138158d9ecdbd501ad3ad7",
+      "last_updated": "2026-09-18T22:58:50.588736"
     },
     "managed-mcp.md": {
       "original_url": "https://code.claude.com/docs/en/managed-mcp",
@@ -694,8 +694,8 @@
     "memory.md": {
       "original_url": "https://code.claude.com/docs/en/memory",
       "original_md_url": "https://code.claude.com/docs/en/memory.md",
-      "hash": "3d8f2316f236568fa93bf8bd9f8db18230949b3630d621b3aafeb100c3749702",
-      "last_updated": "2026-09-18T20:46:48.794460"
+      "hash": "1cf44b112e7daa1bc85820c368b8bed40359abc687d962925d4f93b2f54ffb82",
+      "last_updated": "2026-09-18T22:58:57.954090"
     },
     "microsoft-foundry.md": {
       "original_url": "https://code.claude.com/docs/en/microsoft-foundry",
@@ -742,8 +742,8 @@
     "permission-modes.md": {
       "original_url": "https://code.claude.com/docs/en/permission-modes",
       "original_md_url": "https://code.claude.com/docs/en/permission-modes.md",
-      "hash": "6f3718d5a765fe18e3b8f916dd149ea6fb0a892d3ccbc723c23cc5f898f2fd58",
-      "last_updated": "2026-09-17T23:20:04.552802"
+      "hash": "80d07bdc833ffe40c358b2bcc3a9135e15fd0988d964b2922c0456c77c74df16",
+      "last_updated": "2026-09-18T22:59:07.321267"
     },
     "permissions.md": {
       "original_url": "https://code.claude.com/docs/en/permissions",
@@ -1185,8 +1185,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-18T20:47:56.657722",
-    "fetch_duration_seconds": 175.253857,
+    "last_fetch_completed": "2026-09-18T23:00:24.663782",
+    "fetch_duration_seconds": 181.059522,
     "total_pages_discovered": 197,
     "pages_fetched_successfully": 198,
     "pages_failed": 0,
@@ -1196,7 +1196,7 @@
     "total_files": 197,
     "fetch_tool_version": "3.0"
   },
-  "last_updated": "2026-09-18T20:47:56.657737",
+  "last_updated": "2026-09-18T23:00:24.663799",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/claude-code/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

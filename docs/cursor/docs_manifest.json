@@ -159,8 +159,8 @@
     "agent/tools/search.md": {
       "original_url": "https://cursor.com/docs/agent/tools/search",
       "original_md_url": "https://cursor.com/docs/agent/tools/search.md",
-      "hash": "06efa88ffd9ad805fe2f1b32bfcbfb247aa31b51b9d8ac133a3c504e618f5234",
-      "last_updated": "2026-08-28T23:50:44.234649"
+      "hash": "60b8b5e8b4e860e5de0f9939a56b3ff94942ece769732e96471283c71888e8e1",
+      "last_updated": "2026-09-18T23:00:28.276707"
     },
     "agent/tools/terminal.md": {
       "original_url": "https://cursor.com/docs/agent/tools/terminal",
@@ -669,8 +669,8 @@
     "help/account-and-billing/overages.md": {
       "original_url": "https://cursor.com/help/account-and-billing/overages",
       "original_md_url": "https://cursor.com/help/account-and-billing/overages.md",
-      "hash": "ab08b310d94464e065b8d1acd576465a76ef2e9f29539f7d0a858518cde43e6f",
-      "last_updated": "2026-09-08T18:18:16.217050"
+      "hash": "87c36f3f0a8fd2474859911229e83332b12b78b95f854ae59edf4a12259cd4d9",
+      "last_updated": "2026-09-18T23:00:28.278266"
     },
     "help/account-and-billing/payment-issues.md": {
       "original_url": "https://cursor.com/help/account-and-billing/payment-issues",
@@ -1490,8 +1490,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-18T20:48:00.600494",
-    "fetch_duration_seconds": 3.327648,
+    "last_fetch_completed": "2026-09-18T23:00:28.281908",
+    "fetch_duration_seconds": 3.013707,
     "total_pages_discovered": 248,
     "pages_fetched_successfully": 248,
     "pages_failed": 0,
@@ -1504,7 +1504,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-18T20:48:00.600507",
+  "last_updated": "2026-09-18T23:00:28.281925",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
