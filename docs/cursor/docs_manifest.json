@@ -297,8 +297,8 @@
     "cloud-agent/automations.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/automations",
       "original_md_url": "https://cursor.com/docs/cloud-agent/automations.md",
-      "hash": "5000fa3b1455aa60878d44e31eddf6407f673a64454c72aea63dbe645a73e5a5",
-      "last_updated": "2026-08-25T00:57:12.643411"
+      "hash": "e5f5d8e2066357dcd9a3ad6b62cafb3db7864d895d6c53cf2c94f283e655dfbf",
+      "last_updated": "2026-09-18T18:03:01.015803"
     },
     "cloud-agent/best-practices.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/best-practices",
@@ -411,8 +411,8 @@
     "cursor-router.md": {
       "original_url": "https://cursor.com/docs/cursor-router",
       "original_md_url": "https://cursor.com/docs/cursor-router.md",
-      "hash": "2f5c4032b6fa75688c636eeb99d251063d8e1d18421caaf4e6a8248c55c69da2",
-      "last_updated": "2026-09-08T02:35:24.381607"
+      "hash": "63c041b2823fe2005e04e20e1a4fb4f374509a387ff3a82914301eec600eaba6",
+      "last_updated": "2026-09-18T18:03:01.016522"
     },
     "customize-cursor.md": {
       "original_url": "https://cursor.com/docs/customize-cursor",
@@ -765,8 +765,8 @@
     "help/ai-features/automations.md": {
       "original_url": "https://cursor.com/help/ai-features/automations",
       "original_md_url": "https://cursor.com/help/ai-features/automations.md",
-      "hash": "f0829168f5f1b60dee577cc5945a071b399bafd8b2f6d66cac3fd792d5cdda91",
-      "last_updated": "2026-08-03T19:27:09.532321"
+      "hash": "1a929a2de6b32a586314a9e1d91c018a5780f2c952673958dc34139a3242942d",
+      "last_updated": "2026-09-18T18:03:01.017529"
     },
     "help/ai-features/background-agents.md": {
       "original_url": "https://cursor.com/help/ai-features/background-agents",
@@ -1071,8 +1071,8 @@
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
       "original_md_url": "https://cursor.com/help/models-and-usage/available-models.md",
-      "hash": "4d39a494d869bbf15aad4e086289edb22d22a0205127b50f6faac0ca1066fd3d",
-      "last_updated": "2026-09-01T22:58:28.910180"
+      "hash": "7c4ef91730c59d2dcf1f1d0adf11590ec5fa7c08a3a6f1fa49c02f8659e77308",
+      "last_updated": "2026-09-18T18:03:01.018100"
     },
     "help/models-and-usage/cursor-router.md": {
       "original_url": "https://cursor.com/help/models-and-usage/cursor-router",
@@ -1407,8 +1407,8 @@
     "origin/integrations.md": {
       "original_url": "https://cursor.com/docs/origin/integrations",
       "original_md_url": "https://cursor.com/docs/origin/integrations.md",
-      "hash": "11e905ce634e250b1bfd9e5d9cbf8c3f0b77bde924653cb6c237849122b6a6a0",
-      "last_updated": "2026-09-09T13:21:33.783563"
+      "hash": "b2b50b5e0bc2069ddb5b8d8ffffda5e945670f1adff7f008f282281acd8f2f4e",
+      "last_updated": "2026-09-18T18:03:01.018901"
     },
     "origin/mirror-github.md": {
       "original_url": "https://cursor.com/docs/origin/mirror-github",
@@ -1490,8 +1490,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-18T13:20:32.772343",
-    "fetch_duration_seconds": 3.873211,
+    "last_fetch_completed": "2026-09-18T18:03:01.021753",
+    "fetch_duration_seconds": 4.054846,
     "total_pages_discovered": 248,
     "pages_fetched_successfully": 248,
     "pages_failed": 0,
@@ -1504,7 +1504,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-18T13:20:32.772356",
+  "last_updated": "2026-09-18T18:03:01.021767",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

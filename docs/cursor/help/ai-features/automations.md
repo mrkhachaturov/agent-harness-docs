@@ -76,13 +76,24 @@ Source control triggers work with GitHub, GitLab, and Bitbucket Cloud. Provider 
 
 Automations create Cloud Agent runs. Each run is billed at [API pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for the selected model.
 
+On a team, usage follows **Run as** in Share: **Me** bills to you, and **Service account** bills to the team. See [automation billing](https://cursor.com/docs/cloud-agent/automations.md#billing).
+
 ## How do I control who can see my automation?
 
-Choose a permission level when creating the automation:
+On a team account, open **Share** on the automation detail header. Personal accounts do not have this menu.
 
-- **Private**: Only you can manage it. Team admins can view and disable it.
-- **Team Visible**: Team members can view it. Only you can manage it. Team admins can disable it.
-- **Team Owned**: Team members can view it. Only team admins can manage it. Creating a team-owned automation requires team admin access.
+**Access** sets visibility:
+
+- **Private**: Other team members cannot see it. Only you can manage it. Team admins can view and disable it.
+- **Members can view**: Team members can view it. You manage it when it runs as you. Team admins manage it when it runs as the service account.
+- **Members can edit**: Team members can view and edit it.
+
+**Run as** sets identity and billing:
+
+- **Me**: Runs with your auth. Billed to you. Other members see **Creator**.
+- **Service account**: Runs as the team's shared account. Billed to the team. Only team admins can choose this.
+
+See [Share in the automations reference](https://cursor.com/docs/cloud-agent/automations.md#share) for details.
 
 ## How do I write a good automation prompt?
 
