@@ -1,6 +1,6 @@
 # Grok 4.6
 
-Grok 4.6 is a first-party Cursor model, built together with SpaceXAI for coding and other knowledge work. It builds on Grok 4.5 with a focus on longer agent runs and more ambitious interactive and visual work.
+Grok 4.6 is a first-party Cursor model, built together with SpaceXAI for coding and other knowledge work. It builds on Grok 4.5 with a focus on longer agent runs and more ambitious interactive and visual work. For most new work, use [Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md).
 
 ## What is Grok 4.6?
 
@@ -14,8 +14,6 @@ Grok 4.6 is designed for difficult, long-running tasks that require creative too
 - Safest model yet, with improved cyber and moderation
 
 While Composer remains available for everyday coding speed and cost, Grok 4.6 is the general model aimed at harder, longer sessions.
-
-In the product, the model appears as **Cursor Grok 4.6**.
 
 ## What are Grok 4.6 effort levels?
 
@@ -64,6 +62,7 @@ Grok 4.6 is served under the Cursor vendor catalog, so teams that previously blo
 ## Related
 
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
+- [Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md)
 - [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Regions and model availability](https://cursor.com/help/security-and-privacy/regions.md)

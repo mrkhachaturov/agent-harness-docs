@@ -8,14 +8,14 @@ Open the model selector in your chat or agent panel and choose the model you wan
 
 ## Which models are available?
 
-Cursor offers its own models ([Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md) and [Composer](https://cursor.com/docs/models/cursor-composer-2-5.md)) in the Cursor Models pool alongside other frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
+Cursor offers its own models ([Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md) and [Composer](https://cursor.com/docs/models/cursor-composer-2-5.md)) in the Cursor Models pool alongside other frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the complete list, context window sizes, and capabilities.
 
 ## Which model should I use?
 
 - **Auto** selects models that balance intelligence, cost, and reliability. Good for everyday tasks. See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for Cost, Balance, and Intelligence modes.
-- **[Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)** is Cursor's flagship model. The smartest model Cursor has trained, built for the hardest tasks.
+- **[Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md)** is Cursor's flagship model. Built for the hardest, longest-running tasks.
 - **Composer** is Cursor's fast, cost-efficient model. Capable for most tasks, and built for interactive coding.
 - **Claude Opus** and **GPT-5.6 Sol** handle complex, multi-step tasks well.
 - Some users also prefer **Gemini Pro** models.
@@ -50,6 +50,16 @@ If model visibility is set to Displayed, check the model picker or request detai
 ## How much does Auto cost?
 
 All Auto modes bill at the list price of the model each request is routed to. Third-party models also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for current rates.
+
+## How much does Grok 4.7 cost?
+
+Grok 4.7 has two speeds and a long-context tier:
+
+- **Standard**: $2.00 per 1M input tokens, $6.00 per 1M output tokens, $0.50 per 1M cache read tokens
+- **Fast**: $4.00 per 1M input tokens, $12.00 per 1M output tokens, $1.00 per 1M cache read tokens
+- **Long context (>256k)**: 2x standard rates, or 3x standard rates in Fast, up to a 500k window
+
+Grok 4.7 draws from the Cursor Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
 
 ## How much does Grok 4.5 cost?
 
@@ -95,6 +105,7 @@ See the [regions reference](https://cursor.com/docs/account/regions.md) for prov
 ## Related
 
 - [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md)
+- [Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md)
 - [Grok 4.6](https://cursor.com/help/models-and-usage/grok-4-6.md)
 - [Grok 4.5](https://cursor.com/help/models-and-usage/grok-4-5.md)
 - [API keys](https://cursor.com/help/models-and-usage/api-keys.md)

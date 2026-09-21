@@ -1,6 +1,6 @@
 # Grok 4.5
 
-Grok 4.5 is Cursor's flagship model, built together with SpaceXAI for coding and other knowledge work.
+Grok 4.5 is a first-party Cursor model, built together with SpaceXAI for coding and other knowledge work. For most new work, use [Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md).
 
 ## What is Grok 4.5?
 
@@ -16,7 +16,7 @@ On [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md), 
 
 ## When should I choose Grok 4.5 over Composer?
 
-- Choose Grok 4.5 for the hardest tasks. It is Cursor's most capable model.
+- Choose Grok 4.5 when you want the previous generation. For most new work, use [Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md).
 - Choose Composer for everyday coding where speed and cost matter most. Composer Fast is faster than Grok 4.5 Fast.
 
 Grok 4.5 costs more than Composer. See [how much Grok 4.5 costs](https://cursor.com/help/models-and-usage/available-models.md#how-much-does-grok-45-cost) for token rates.
@@ -53,6 +53,7 @@ Enterprise team admins manage model access at [cursor.com/dashboard/team-setting
 ## Related
 
 - [Available models](https://cursor.com/help/models-and-usage/available-models.md)
+- [Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md)
 - [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
 - [Regions and model availability](https://cursor.com/help/security-and-privacy/regions.md)

@@ -2,7 +2,7 @@
 
 Most Cursor plans include two monthly usage pools:
 
-- **Cursor Models**: Cursor Grok 4.6, Cursor Grok 4.5, and Composer 2.5
+- **Cursor Models**: Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5
 - **Other Models**: Third-party models, charged at model provider prices
 
 Pro, Pro Plus, and Ultra include both pools. The Start plan covers the Cursor Models pool only. See [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) for India plan details.
@@ -27,7 +27,7 @@ For teams, all members' usage resets at the same time based on the team billing 
 
 ## How do I get more usage?
 
-- **Use Cursor Models**: Cursor Grok 4.6, Cursor Grok 4.5, and Composer 2.5 draw from the Cursor Models pool, tracked separately and included with your plan
+- **Use Cursor Models**: Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5 draw from the Cursor Models pool, tracked separately and included with your plan
 - **Enable on-demand usage**: Pay for additional requests at the same API rates
 - **[Upgrade your plan](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan)**: Higher-tier plans include more usage
 
