@@ -45,8 +45,8 @@
     "account/teams/analytics.md": {
       "original_url": "https://cursor.com/docs/account/teams/analytics",
       "original_md_url": "https://cursor.com/docs/account/teams/analytics.md",
-      "hash": "912b4f408d104cd2cb19888a749ebaac16244acaa9af3f83fe3ae1ebb9610376",
-      "last_updated": "2026-09-09T22:54:55.811731"
+      "hash": "8577849d712bf7a3e52fd9bbc7816d7b37696708f5fa581265dbb2b0fbee0202",
+      "last_updated": "2026-09-22T13:51:56.849214"
     },
     "account/teams/dashboard.md": {
       "original_url": "https://cursor.com/docs/account/teams/dashboard",
@@ -1502,8 +1502,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-22T08:10:51.451044",
-    "fetch_duration_seconds": 2.5227,
+    "last_fetch_completed": "2026-09-22T13:51:56.853768",
+    "fetch_duration_seconds": 2.805575,
     "total_pages_discovered": 250,
     "pages_fetched_successfully": 250,
     "pages_failed": 0,
@@ -1516,7 +1516,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-22T08:10:51.451058",
+  "last_updated": "2026-09-22T13:51:56.853786",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
