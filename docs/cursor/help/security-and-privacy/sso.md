@@ -31,9 +31,15 @@ For team-level SSO, team admins can review the connection status and its domain 
 
 For org-level SSO, org admins review the connection in the Organization's Settings. See [Organizations](https://cursor.com/docs/enterprise/organizations.md#identity-model).
 
-## Why do team members see "Not assigned to this application"?
+## Why do I see AADSTS50105 or "User is not assigned to this application"?
 
-This means the team member hasn't been assigned to the Cursor application in your identity provider's admin console. Add them to the Cursor app in your IdP to fix this.
+Your identity provider blocked the sign-in. The Cursor enterprise app requires assignment, and you are not assigned to it. Cursor cannot add you.
+
+Ask your IT admin to assign you to the Cursor app as a user, or as a direct member of an assigned group. Nested groups often fail on Microsoft Entra ID and similar providers. Being in a group nested under an assigned group is not enough.
+
+After they assign you, wait a few minutes for the change to propagate, then sign in again.
+
+See [SSO troubleshooting](https://cursor.com/docs/account/teams/sso.md#user-is-not-assigned-to-this-application) for the admin version of these steps.
 
 ## Related
 

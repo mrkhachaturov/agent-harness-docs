@@ -81,8 +81,8 @@
     "account/teams/sso.md": {
       "original_url": "https://cursor.com/docs/account/teams/sso",
       "original_md_url": "https://cursor.com/docs/account/teams/sso.md",
-      "hash": "d72bcc572c84a0fdb9b6cfc30a592782988198939df1d8e04018d9ca4795ae4e",
-      "last_updated": "2026-09-03T02:33:13.877974"
+      "hash": "1229cea103789b1934ad3997c0f4975bc3e344c9cc98f6523786cade29ba7967",
+      "last_updated": "2026-09-22T23:27:14.527203"
     },
     "agent/agent-review.md": {
       "original_url": "https://cursor.com/docs/agent/agent-review",
@@ -387,8 +387,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "11eaffa90a8ba1ec1efe39eccce040dde22fe7a40ee40cc59bd8b864164cdd10",
-      "last_updated": "2026-09-17T02:56:37.018361"
+      "hash": "9723604a9c980556e4afa43436527a4d85f23285da56a73c42f21f0a69e18a64",
+      "last_updated": "2026-09-22T23:27:14.528294"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -483,14 +483,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "dc3eedea5bf4d43e458a0d2bf6cd205ae28de5aa11bb49ead9f18f5c4a671efe",
-      "last_updated": "2026-09-09T22:54:55.813083"
+      "hash": "b3a57d56ff603774f9e589468624d6801ed3ca804af01ab6996b38d909303a6b",
+      "last_updated": "2026-09-22T23:27:14.528813"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "9dab2c280ce354a193f168a53542fd7f99d4e067ce8177510c5a4ecd7502aea8",
-      "last_updated": "2026-09-09T22:54:55.813201"
+      "hash": "aa2fd7e8b82185b8a7aa76d4d10590b89086bf0d11fdf323f073c658c1ab682b",
+      "last_updated": "2026-09-22T23:27:14.529086"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1143,8 +1143,8 @@
     "help/security-and-privacy/sso.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/sso",
       "original_md_url": "https://cursor.com/help/security-and-privacy/sso.md",
-      "hash": "f6b1474a3569fccfd644d1fa3f17826ceb216172843d2ad1706970648ccdb8a9",
-      "last_updated": "2026-09-03T02:33:13.883449"
+      "hash": "5ff385976f9ce1767f65d7a9aede93f7238854e20f7d45ae300368bad03a39a7",
+      "last_updated": "2026-09-22T23:27:14.530167"
     },
     "help/troubleshooting/agent-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/agent-issues",
@@ -1239,8 +1239,8 @@
     "integrations/jira.md": {
       "original_url": "https://cursor.com/docs/integrations/jira",
       "original_md_url": "https://cursor.com/docs/integrations/jira.md",
-      "hash": "ebae347e791364d2022a8d62937671b81504eb5bfd7222af8ec2846fa3a2fe72",
-      "last_updated": "2026-07-09T17:20:57.573526"
+      "hash": "fe576d9345c3829cfa84e7c46a80d3337bb75a06d11e769e0b5a7857b116aa43",
+      "last_updated": "2026-09-22T23:27:14.530666"
     },
     "integrations/linear.md": {
       "original_url": "https://cursor.com/docs/integrations/linear",
@@ -1263,8 +1263,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "5eca8230c2592dde88e7abc8aa64077e69230d389cf4ea4df69ef7c6299ba803",
-      "last_updated": "2026-09-19T02:41:45.984769"
+      "hash": "b12ac2e89a05929daf00c78ae6ec467869a3696798a2ed39f1847709626baa2f",
+      "last_updated": "2026-09-22T23:27:14.531026"
     },
     "integrations/xcode.md": {
       "original_url": "https://cursor.com/docs/integrations/xcode",
@@ -1502,8 +1502,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-22T18:29:14.049994",
-    "fetch_duration_seconds": 3.928352,
+    "last_fetch_completed": "2026-09-22T23:27:14.534997",
+    "fetch_duration_seconds": 3.185121,
     "total_pages_discovered": 250,
     "pages_fetched_successfully": 250,
     "pages_failed": 0,
@@ -1516,7 +1516,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-22T18:29:14.050006",
+  "last_updated": "2026-09-22T23:27:14.535009",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

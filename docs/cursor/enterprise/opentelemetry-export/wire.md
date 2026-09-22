@@ -25,15 +25,16 @@ One resource per (team, user, surface, entrypoint, surface version) grouping.
 
 ## Families
 
-Family ids match the toggles in Team Settings. All default on for a new destination.
+Family ids match the toggles in Team Settings. All default on for a new destination except `conversation_content`, which is off until the team opts in and the destination enables it.
 
-| Family id                | Signals        | Covers                                                                                                             |
-| ------------------------ | -------------- | ------------------------------------------------------------------------------------------------------------------ |
-| `model_usage`            | metrics + logs | `token.usage`, `cost.usage`; `api.request`, `api.error`, `api.correction`                                          |
-| `tool_calls`             | metrics        | `tool.calls`                                                                                                       |
-| `skills_hooks_plugins`   | logs           | `skill.activated`, `hook.execution_complete`, `plugin.installed`                                                   |
-| `cloud_agents`           | logs           | `cloud_agent.pull_request`, `cloud_agent.setup`, `cloud_agent.artifact`, `cloud_agent.mcp_auth_error`              |
-| `grok_bot_agent_actions` | logs           | `grok_bot.mcp_tool_call`, `grok_bot.shell_command`, `grok_bot.browser_navigation`, `grok_bot.computer_use_session` |
+| Family id                | Signals        | Default                                    | Covers                                                                                                             |
+| ------------------------ | -------------- | ------------------------------------------ | ------------------------------------------------------------------------------------------------------------------ |
+| `model_usage`            | metrics + logs | On                                         | `token.usage`, `cost.usage`; `api.request`, `api.error`, `api.correction`                                          |
+| `tool_calls`             | metrics        | On                                         | `tool.calls`                                                                                                       |
+| `skills_hooks_plugins`   | logs           | On                                         | `skill.activated`, `hook.execution_complete`, `plugin.installed`                                                   |
+| `cloud_agents`           | logs           | On                                         | `cloud_agent.pull_request`, `cloud_agent.setup`, `cloud_agent.artifact`, `cloud_agent.mcp_auth_error`              |
+| `grok_bot_agent_actions` | logs           | On (needs Action Recording)                | `grok_bot.mcp_tool_call`, `grok_bot.shell_command`, `grok_bot.browser_navigation`, `grok_bot.computer_use_session` |
+| `conversation_content`   | logs           | **Off** (team opt-in + destination toggle) | `conversation.user_message`, `conversation.assistant_message`                                                      |
 
 ## Metrics
 
@@ -77,13 +78,13 @@ Severities: INFO=9, WARN=13, ERROR=17.
 
 ### Common log attributes
 
-| Attribute                | Type   | Presence | Notes                                                                                                                                                                                                                          |
-| ------------------------ | ------ | -------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `cursor.event.id`        | string | Always   | **Dedupe key.** Opaque. Deterministic across retries, worker restarts, and Cursor Kafka replay. Prefix `customer-telemetry:v1:...` is stable; treat the whole string as opaque.                                                |
-| `cursor.source_event.id` | string | Always   | Opaque internal source identity. Several signals may share one value.                                                                                                                                                          |
-| `cursor.request.id`      | string | Optional | On `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `plugin.installed`. Never on `api.correction`, `cloud_agent.*`, or `grok_bot.*`.                                                                  |
-| `cursor.conversation.id` | string | Optional | IDE/CLI: composer UUID. Cloud agent: customer-visible `bc-...` agent id. Grok Bot `grok_bot.*` events: Grok Bot conversation id. Join key for session reconstruction across api, skill/hook, cloud\_agent, and grok\_bot logs. |
-| `cursor.usage_event.id`  | string | Optional | `api.request` / `api.error` / `api.correction` only. Request-grain key against Cursor usage and billing exports.                                                                                                               |
+| Attribute                | Type   | Presence | Notes                                                                                                                                                                                                                                                                               |
+| ------------------------ | ------ | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `cursor.event.id`        | string | Always   | **Dedupe key.** Opaque. Deterministic across retries, worker restarts, and Cursor Kafka replay. Prefix `customer-telemetry:v1:...` is stable; treat the whole string as opaque.                                                                                                     |
+| `cursor.source_event.id` | string | Always   | Opaque internal source identity. Several signals may share one value.                                                                                                                                                                                                               |
+| `cursor.request.id`      | string | Optional | On `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `plugin.installed`. Never on `api.correction`, `cloud_agent.*`, or `grok_bot.*`. Don't depend on it on `conversation.*`.                                                                               |
+| `cursor.conversation.id` | string | Optional | IDE/CLI: composer UUID. Cloud agent: customer-visible `bc-...` agent id. Grok Bot (`grok_bot.*`, and any log with `cursor.surface=grok_bot`): Grok Bot conversation id. Join key for session reconstruction across api, skill/hook, cloud\_agent, grok\_bot, and conversation logs. |
+| `cursor.usage_event.id`  | string | Optional | `api.request` / `api.error` / `api.correction` only. Request-grain key against Cursor usage and billing exports.                                                                                                                                                                    |
 
 ### `cursor.api.request`
 
@@ -245,15 +246,44 @@ INFO, body `grok_bot_computer_use_session`. Family `grok_bot_agent_actions`. Cou
 | `cursor.grok_bot.computer_use.screenshot_count` | int    | Always   |                                         |
 | `cursor.grok_bot.tool_call.id`                  | string | Optional | Tool-call id of the subagent invocation |
 
+### Conversation content
+
+Family `conversation_content`. The `conversation.*` events are the only log records whose body is message text rather than a constant event name. Route on the log event name, as with every other family. `cursor.conversation.user_message` is a prompt and `cursor.conversation.assistant_message` is a response; don't parse the body to tell them apart.
+
+**Body.** Scrubbed message text, at most 32 KiB. Longer messages are cut at the cap and flagged with `cursor.conversation.content_truncated`.
+
+**Identity.** Records carry the [common log attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#common-log-attributes). `cursor.conversation.id` joins them to the conversation's `api.request`, `skill.activated`, `hook.execution_complete`, `cloud_agent.*`, and `grok_bot.*` logs. No `user.email` or other direct identifier appears on the wire. The only user identifier is the optional, opaque `cursor.user.id` resource attribute. Don't depend on `cursor.request.id`, `cursor.usage_event.id`, or `cursor.grok_bot.turn.id` on these records.
+
+**Surfaces.** Cloud Agents and Grok Bot only. Cloud Agent conversations arrive with `cursor.surface=cloud_agent` on the resource. Grok Bot conversations arrive with `cursor.surface=grok_bot`, alongside the Bot's `grok_bot.*` action logs when Action Recording is on. IDE, CLI, and desktop conversations are not on this family yet. Filter or route on `cursor.surface`.
+
+Both events are INFO and carry these attributes:
+
+| Attribute                               | Type   | Presence | Values / notes                                                            |
+| --------------------------------------- | ------ | -------- | ------------------------------------------------------------------------- |
+| `cursor.conversation.provenance`        | string | Always   | `server` (observed by Cursor). `client` is reserved; tolerate it.         |
+| `cursor.conversation.message.id`        | string | Always   | Message id within the conversation                                        |
+| `cursor.conversation.turn.id`           | string | Optional | Turn id within the conversation. Separate from `cursor.grok_bot.turn.id`. |
+| `cursor.conversation.content_truncated` | bool   | Always   | True when the body was cut at the cap                                     |
+
+#### `cursor.conversation.user_message`
+
+INFO. Body: the scrubbed text of a user prompt.
+
+#### `cursor.conversation.assistant_message`
+
+INFO. Body: the scrubbed final assistant text for the response.
+
 ## Identity and joins
 
-| Goal                           | Field                               | Coverage                                                                    |
-| ------------------------------ | ----------------------------------- | --------------------------------------------------------------------------- |
-| Dedupe logs                    | `cursor.event.id`                   | Every log record                                                            |
-| Group by session or Bot        | `cursor.conversation.id`            | Logs when present. For Grok Bot, this value identifies the Bot.             |
-| Group Grok Bot actions by turn | `cursor.grok_bot.turn.id`           | `grok_bot.*` logs when present. `api.request` logs do not carry this field. |
-| Group by user                  | Resource attribute `cursor.user.id` | Logs and metrics when present. This is an opaque id.                        |
-| Reconcile billing              | `cursor.usage_event.id`             | `api.request`, `api.error`, and `api.correction` logs                       |
+| Goal                                      | Field                               | Coverage                                                                                                            |
+| ----------------------------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------------------------------- |
+| Dedupe logs                               | `cursor.event.id`                   | Every log record                                                                                                    |
+| Group by session or Bot                   | `cursor.conversation.id`            | Logs when present. For Grok Bot, this value identifies the Bot.                                                     |
+| Group Grok Bot actions by turn            | `cursor.grok_bot.turn.id`           | `grok_bot.*` logs when present. `api.request` logs do not carry this field; don't depend on it on `conversation.*`. |
+| Attach prompts and responses to a session | `cursor.conversation.id`            | `conversation.*` logs (Cloud Agents and Grok Bot), only with the `conversation_content` opt-in                      |
+| Group prompts and responses by turn       | `cursor.conversation.turn.id`       | `conversation.*` logs when present                                                                                  |
+| Group by user                             | Resource attribute `cursor.user.id` | Logs and metrics when present. This is an opaque id. No email or other direct identifier is on the wire.            |
+| Reconcile billing                         | `cursor.usage_event.id`             | `api.request`, `api.error`, and `api.correction` logs                                                               |
 
 Exported logs do not carry OpenTelemetry `trace_id` or `span_id` fields. Use `cursor.conversation.id` and `cursor.grok_bot.turn.id` for Bot and turn correlation. Metrics do not carry correlation ids; use `api.request` logs for per-conversation token totals.
 

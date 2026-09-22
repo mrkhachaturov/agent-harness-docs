@@ -1,6 +1,6 @@
 # OpenTelemetry Export
 
-OpenTelemetry Export streams Cursor usage data for your team to a collector you run. Cursor sends metrics (tokens, tool calls, best-effort cost) and logs (API requests, errors, corrections, skills, hooks, plugins, cloud agent lifecycle events, and recorded Grok Bot actions) to one team-managed destination. Export runs server-side.
+OpenTelemetry Export streams Cursor usage data for your team to a collector you run. Cursor sends metrics (tokens, tool calls, best-effort cost) and logs (API requests, errors, corrections, skills, hooks, plugins, cloud agent lifecycle events, and recorded Grok Bot actions) to one team-managed destination. Teams can also opt in to [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content): the user prompts and assistant responses from Cloud Agents and Grok Bot. Export runs server-side.
 
 OpenTelemetry Export is available on the [Enterprise plan](https://cursor.com/contact-sales?source=docs-opentelemetry-export). Admins configure it in **Team Settings > OpenTelemetry Export**.
 
@@ -96,13 +96,41 @@ In **Team Settings > OpenTelemetry Export**:
 2. **Test connection** to check the URL and auth
 3. **Enable**. Export starts within about a minute.
 
-Each signal and telemetry family has its own toggle. New families default on unless you turn off `auto_enable_new_families`.
+Each signal and telemetry family has its own toggle. New families default on unless you turn off `auto_enable_new_families`. [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) is the exception: it stays off until you enable it.
+
+### Conversation content
+
+The `conversation_content` family streams the text of user prompts and assistant responses to your collector as `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs. Today it covers Cloud Agents and Grok Bot conversations only. IDE, CLI, and desktop conversations are not on this family yet. It is the only family that carries message text. The [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#conversation-content) documents the record shape.
+
+Conversation content is off by default. Turn on both toggles below before
+any message text is exported. Turning either off stops the export; turning
+them back on does not backfill earlier messages. Teams on Privacy Mode
+(Legacy) can't turn on **Allow conversation content export**; the control
+is unavailable.
+
+### Allow conversation content export for the team
+
+In **Team Settings > OpenTelemetry Export**, turn on **Allow conversation
+content export**. It sits above the destination family toggles. Cursor
+confirms with **Conversation content export enabled**.
+
+### Turn on Conversation content on the destination
+
+On the destination, turn on **Conversation content**. Prompts and
+responses export together; there is no separate toggle for each.
+
+What ships once both controls are on:
+
+- **Two log events.** `cursor.conversation.user_message` carries a user prompt and `cursor.conversation.assistant_message` carries the final assistant response. The event name identifies the role. The body is the message text.
+- **Scrubbed and capped.** Cursor scrubs message text before export and caps each body at 32 KiB. `cursor.conversation.content_truncated` is true when a message hit the cap.
+- **Opaque ids only.** Records carry the same ids as other logs. No `user.email` appears on the wire. The only user identifier is the optional, opaque `cursor.user.id` resource attribute.
+- **Cloud Agents and Grok Bot only.** Cloud Agent conversations arrive as `cursor.surface=cloud_agent` and Grok Bot conversations as `cursor.surface=grok_bot`. IDE, CLI, and desktop conversations are not exported by this family yet. Grok Bot messages are separate from the [`grok_bot_agent_actions`](https://cursor.com/docs/enterprise/opentelemetry-export.md#what-cursor-exports) family, which needs Action Recording and carries actions rather than messages.
 
 ## What Cursor exports
 
 Scope: `cursor.telemetry` `0.1.0`.
 
-Everything below is on by default for a new destination. Turn individual families off in Team Settings.
+Everything below is on by default for a new destination, except `conversation_content`. Turn individual families off in Team Settings.
 
 **Metrics** (delta temporality)
 
@@ -126,16 +154,21 @@ Everything below is on by default for a new destination. Turn individual familie
 - `cursor.grok_bot.shell_command`: a Grok Bot shell command, secrets scrubbed
 - `cursor.grok_bot.browser_navigation`: a page the Grok Bot browser navigated to
 - `cursor.grok_bot.computer_use_session`: a Grok Bot computer use session summary
+- `cursor.conversation.user_message`: a user prompt, scrubbed; opt-in
+- `cursor.conversation.assistant_message`: an assistant response, scrubbed; opt-in
 
 The `cursor.grok_bot.*` events carry [Action Recording](https://cursor.com/docs/grok-bot/security.md#logging-and-audit) data, so they flow only after a team admin enables Action Recording on the dashboard Grok Bot page. Events are sanitized before export: shell commands are secret-scrubbed and browser URLs are stripped of query strings and fragments.
 
-**Families** (admin toggles; all default on)
+The `cursor.conversation.*` events carry message text and flow only after the team opts in and the destination enables the family. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content).
+
+**Families** (admin toggles; all default on except `conversation_content`)
 
 - `model_usage`: token and cost metrics; api.request / api.error / api.correction
 - `tool_calls`: tool.calls metric
 - `skills_hooks_plugins`: skill / hook / plugin logs
 - `cloud_agents`: cloud\_agent.\* logs
 - `grok_bot_agent_actions`: grok\_bot.\* action logs; requires Action Recording (Enterprise)
+- `conversation_content`: conversation.\* message logs; off by default
 
 **Useful attributes**
 
@@ -158,7 +191,8 @@ Cursor stores headers encrypted. To rotate credentials, edit the destination and
 - **Cost is not billing.** `cursor.cost.usage` is a best-effort estimate. One series covers both included-quota drawdown and on-demand usage. For BYOK it reflects the **Cursor Token Rate** only, not provider spend. Use the Admin and billing APIs for invoices.
 - **Disabling or deleting a destination drops in-flight data.** Rotate credentials by editing the destination instead of deleting and re-adding it.
 - **Logs can arrive more than once.** Delivery is at-least-once. Dedupe on `cursor.event.id`.
-- **No prompt content, trace context, or historical backfill.** Exported logs don't carry OpenTelemetry `trace_id` or `span_id` fields, and Cursor doesn't send traces. Export starts when you enable the destination.
+- **No prompt content unless you opt in.** Message text ships only through the opt-in `conversation_content` family. Every other log event carries ids, counts, and low-cardinality attributes. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content).
+- **No trace context or historical backfill.** Exported logs don't carry OpenTelemetry `trace_id` or `span_id` fields, and Cursor doesn't send traces. Export starts when you enable the destination.
 - **Metric datapoints carry no correlation IDs.** Use log attributes for per-conversation joins. See [Joining sessions](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions).
 - **Metrics are delta-only.** Sum deltas per series. A strict delta-to-cumulative processor may drop end-time-inverted points.
 
@@ -168,7 +202,7 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 **What each id means**
 
-- `cursor.conversation.id` is the session key. In the IDE and CLI it's the composer chat UUID. For cloud agents it's the customer-visible `bc-...` agent id. For `grok_bot.*` logs it identifies the Bot. The same value appears on that run's `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `cloud_agent.*`, and `grok_bot.*` logs when present.
+- `cursor.conversation.id` is the session key. In the IDE and CLI it's the composer chat UUID. For cloud agents it's the customer-visible `bc-...` agent id. For `grok_bot.*` logs it identifies the Bot. The same value appears on that run's `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `cloud_agent.*`, `grok_bot.*`, and (when the team opts in) `conversation.*` logs when present.
 - `cursor.usage_event.id` is the request-grain key on `api.request`, `api.error`, and `api.correction`. Use it to reconcile against Cursor usage and billing exports and to apply corrections.
 - `cursor.request.id` is an optional per-call id on most logs. It never appears on `api.correction`, `cloud_agent.*`, or `grok_bot.*`.
 - `cursor.event.id` is a dedupe key only, not a join key across event types.
@@ -194,6 +228,8 @@ For example, a turn can produce these records:
 
 Group the `grok_bot.*` records by `turn-1` to reconstruct the recorded actions from the turn. Group all four records by `bot-a` to combine model requests and actions for the Bot. These fields are custom log attributes, not OpenTelemetry trace or span ids.
 
+With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) enabled, the Bot's `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs carry the same `cursor.conversation.id` (`bot-a`). Join on it to place the prompt and response next to the Bot's model requests and recorded actions. Message logs carry their own optional `cursor.conversation.turn.id`. Don't depend on `cursor.grok_bot.turn.id` or `cursor.request.id` on them.
+
 **Recipe: rank sessions by tokens, then attach skills and tools**
 
 1. Take `cursor.api.request` log rows. Sum `cursor.api.request.input_tokens` and `output_tokens` (and the cache fields if you need them) grouped by `cursor.conversation.id`. This gives per-session token totals, which metrics can't provide.
@@ -202,6 +238,7 @@ Group the `grok_bot.*` records by `turn-1` to reconstruct the recorded actions f
    - `cursor.skill.activated` shows which skills ran
    - `cursor.hook.execution_complete` shows hooks
    - `cursor.cloud_agent.*` shows setup, pull requests, artifacts, and MCP auth failures (cloud agents only)
+   - `cursor.conversation.user_message` and `cursor.conversation.assistant_message` show the prompts and responses (Cloud Agents and Grok Bot, only with the `conversation_content` opt-in)
 4. `cursor.tool.calls` is metric-only, so it has no conversation id. Report org-wide tool rates from the metric. Per-session tool attribution is not on the wire yet.
 
 `cursor.cost.usage` is also metric-only. To rank sessions by cost, approximate from `api.request` token totals and your own rates, or pull spend from the Admin and billing APIs and join on `cursor.usage_event.id` where available.
