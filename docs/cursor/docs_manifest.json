@@ -27,8 +27,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "76e78087ecf77e7382d9c2c76a19975e7b9935639cce13a53ca7077a4abbb35f",
-      "last_updated": "2026-09-15T23:23:41.604600"
+      "hash": "fe9e3e14a1c7409a68c603a56523b745fcac803c1ba6a78973671e12bc31d979",
+      "last_updated": "2026-09-22T02:52:16.627489"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -441,8 +441,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "333635be347d682e6ac6922ac10eadb4b991284e31fd84e050785f051e7ba203",
-      "last_updated": "2026-09-09T22:54:55.812881"
+      "hash": "07cf1208c69ea0de391f02e4cdcc398fd4e04c597809116ca88cd793e272e8e8",
+      "last_updated": "2026-09-22T02:52:16.628979"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -1502,8 +1502,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-21T21:35:04.574630",
-    "fetch_duration_seconds": 2.098445,
+    "last_fetch_completed": "2026-09-22T02:52:16.633224",
+    "fetch_duration_seconds": 3.000715,
     "total_pages_discovered": 250,
     "pages_fetched_successfully": 250,
     "pages_failed": 0,
@@ -1516,7 +1516,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-21T21:35:04.574642",
+  "last_updated": "2026-09-22T02:52:16.633237",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
