@@ -297,8 +297,8 @@
     "cloud-agent/automations.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/automations",
       "original_md_url": "https://cursor.com/docs/cloud-agent/automations.md",
-      "hash": "e5f5d8e2066357dcd9a3ad6b62cafb3db7864d895d6c53cf2c94f283e655dfbf",
-      "last_updated": "2026-09-18T18:03:01.015803"
+      "hash": "84ec585a5f939f2508dbd7c6ab09ef62d9cc871569c09123cc5b7e3c6b26b5f4",
+      "last_updated": "2026-09-23T23:25:33.379256"
     },
     "cloud-agent/best-practices.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/best-practices",
@@ -1502,8 +1502,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-23T18:48:11.453357",
-    "fetch_duration_seconds": 2.946453,
+    "last_fetch_completed": "2026-09-23T23:25:33.384792",
+    "fetch_duration_seconds": 3.582589,
     "total_pages_discovered": 250,
     "pages_fetched_successfully": 250,
     "pages_failed": 0,
@@ -1516,7 +1516,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-23T18:48:11.453370",
+  "last_updated": "2026-09-23T23:25:33.384805",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
