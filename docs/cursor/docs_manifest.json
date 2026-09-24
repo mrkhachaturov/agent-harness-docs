@@ -978,11 +978,17 @@
       "hash": "ab85f6d7e4320d8012f08e0c29cc43ba95ebed17512044dc7ed5f87755fd14b4",
       "last_updated": "2026-09-01T22:58:28.908844"
     },
+    "help/grok-bot/faqs.md": {
+      "original_url": "https://cursor.com/help/grok-bot/faqs",
+      "original_md_url": "https://cursor.com/help/grok-bot/faqs.md",
+      "hash": "b82764e47e87fef2be2c61b29cbde48341baa710dc6a90e11c32c22a890a40b9",
+      "last_updated": "2026-09-24T08:04:02.712163"
+    },
     "help/grok-bot/get-help.md": {
       "original_url": "https://cursor.com/help/grok-bot/get-help",
       "original_md_url": "https://cursor.com/help/grok-bot/get-help.md",
-      "hash": "a5477f9aa7ff56c9e87f56c7ceb0e00a2687b04ffacb34849e2f260f166477d2",
-      "last_updated": "2026-09-11T22:57:15.216281"
+      "hash": "f542ce9dac1cacf61bf3db9b843cd1c46ffb9895a6e6515c268b1641bff987e0",
+      "last_updated": "2026-09-24T08:04:02.712399"
     },
     "help/grok-bot/how-to.md": {
       "original_url": "https://cursor.com/help/grok-bot/how-to",
@@ -1502,21 +1508,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-24T02:42:21.850424",
-    "fetch_duration_seconds": 3.649934,
-    "total_pages_discovered": 250,
-    "pages_fetched_successfully": 250,
+    "last_fetch_completed": "2026-09-24T08:04:02.717132",
+    "fetch_duration_seconds": 2.687439,
+    "total_pages_discovered": 251,
+    "pages_fetched_successfully": 251,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 250,
+    "total_files": 251,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-24T02:42:21.850440",
+  "last_updated": "2026-09-24T08:04:02.717145",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
