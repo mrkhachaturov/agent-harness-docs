@@ -107,6 +107,10 @@ Open a run to inspect the underlying Cloud Agent for more detail about what the 
 
 ![Security Agents run history in Automations](/docs-static/images/security-review/recent-runs.png)
 
+## Related pages
+
+- [Rollouts](https://cursor.com/docs/rollouts.md) monitors each pull request as it deploys and reports its health in every environment.
+
 
 ---
 

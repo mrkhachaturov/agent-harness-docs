@@ -150,14 +150,23 @@ Everything below is on by default for a new destination, except `conversation_co
 - `cursor.cloud_agent.artifact`
 - `cursor.cloud_agent.pull_request`: `opened` / `creation_failed`
 - `cursor.cloud_agent.mcp_auth_error`: an MCP server rejected the run's credentials
-- `cursor.grok_bot.mcp_tool_call`: a Grok Bot connector (MCP) tool call
-- `cursor.grok_bot.shell_command`: a Grok Bot shell command, secrets scrubbed
-- `cursor.grok_bot.browser_navigation`: a page the Grok Bot browser navigated to
-- `cursor.grok_bot.computer_use_session`: a Grok Bot computer use session summary
+- `cursor.grok_bot.tool_result`: every builtin tool call a Bot made, with its outcome and duration
+- `cursor.grok_bot.tool_decision`: who allowed or refused a Bot tool call (a person, Auto-review, a hook, or no gate)
+- `cursor.grok_bot.mcp_tool_call`: a Bot connector (MCP) tool call
+- `cursor.grok_bot.shell_command`: a Bot shell command, secrets scrubbed, with exit code and duration
+- `cursor.grok_bot.browser_navigation`: a page the Bot browser navigated to
+- `cursor.grok_bot.computer_use_session`: a Bot computer use session summary
+- `cursor.grok_bot.file_transfer`: a file moved between the Bot's computer and a user machine or cloud account
+- `cursor.grok_bot.message_delivery`: a message a Bot sent, where it went, and whether it arrived
+- `cursor.grok_bot.routine_run`: a finished routine run
+- `cursor.grok_bot.guardrail`: a loop detected, a site blocking the Bot, or an approval ask and its wait
+- `cursor.grok_bot.delegation`: work a Bot handed to a subagent or cloud agent, and the result coming back
 - `cursor.conversation.user_message`: a user prompt, scrubbed; opt-in
 - `cursor.conversation.assistant_message`: an assistant response, scrubbed; opt-in
 
-The `cursor.grok_bot.*` events carry [Action Recording](https://cursor.com/docs/grok-bot/security.md#logging-and-audit) data, so they flow only after a team admin enables Action Recording on the dashboard Grok Bot page. Events are sanitized before export: shell commands are secret-scrubbed and browser URLs are stripped of query strings and fragments.
+The `cursor.grok_bot.*` events, and `cursor.skill.activated` when a Bot reads a skill, carry [Action Recording](https://cursor.com/docs/grok-bot/security.md#logging-and-audit) data. They flow only after a team admin turns on Action Recording on the dashboard Grok Bot page; it is a team setting, off by default, and Privacy Mode (Legacy) forces it off.
+
+Recorded events are metadata about what the Bot did, never the content it worked with. Tool arguments and results, file paths and names, message bodies and recipients, credentials, and card details are never exported. Shell command text is exported after secret scrubbing and capped at 8 KiB; browser URLs are stripped of query strings, fragments, and credentials; and where a tool acted on a site, only the bare hostname is reported. The [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#shared-grok_bot-attributes) lists every attribute per event.
 
 The `cursor.conversation.*` events carry message text and flow only after the team opts in and the destination enables the family. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content).
 
@@ -165,15 +174,16 @@ The `cursor.conversation.*` events carry message text and flow only after the te
 
 - `model_usage`: token and cost metrics; api.request / api.error / api.correction
 - `tool_calls`: tool.calls metric
-- `skills_hooks_plugins`: skill / hook / plugin logs
+- `skills_hooks_plugins`: skill / hook / plugin logs, including a Bot's skill activations
 - `cloud_agents`: cloud\_agent.\* logs
 - `grok_bot_agent_actions`: grok\_bot.\* action logs; requires Action Recording (Enterprise)
 - `conversation_content`: conversation.\* message logs; off by default
 
 **Useful attributes**
 
-- Resource: `service.name=cursor`, `cursor.team.id`, optional `cursor.user.id`, surface/entrypoint. Grok Bot traffic exports as `cursor.surface=grok_bot` across all families; `desktop` no longer includes it.
+- Resource: `service.name=cursor`, `cursor.team.id`, optional `cursor.user.id`, surface/entrypoint. Grok Bot traffic exports as `cursor.surface=grok_bot` across all families; `desktop` no longer includes it. A turn a routine started exports `cursor.entrypoint=automation`.
 - Logs: `cursor.event.id` (dedupe), and `cursor.request.id` / `cursor.conversation.id` / `cursor.usage_event.id` when present
+- Grok Bot logs: `cursor.grok_bot.turn.id`, `cursor.grok_bot.event.sequence`, `cursor.grok_bot.tool_call.id`, and `cursor.grok_bot.decision.id`; see [Joining sessions](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions)
 
 ## Delivery
 
@@ -209,26 +219,32 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 **Group Grok Bot activity**
 
-| Goal     | Group by                            | Coverage                                                            |
-| -------- | ----------------------------------- | ------------------------------------------------------------------- |
-| One Bot  | `cursor.conversation.id`            | Action Recording and model request logs for the Bot                 |
-| One turn | `cursor.grok_bot.turn.id`           | Action Recording logs from the turn when the source provides the id |
-| One user | Resource attribute `cursor.user.id` | Logs and metrics when the source provides the id                    |
+| Goal          | Group by                            | Coverage                                                                                                                                                             |
+| ------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| One Bot       | `cursor.conversation.id`            | Action Recording and model request logs for the Bot                                                                                                                  |
+| One turn      | `cursor.grok_bot.turn.id`           | Action Recording logs from the turn, the Bot's `skill.activated` logs, and the turn's `api.request` / `api.error` logs                                               |
+| One tool call | `cursor.grok_bot.tool_call.id`      | Every row one tool call produced: its `tool_result`, its `tool_decision` rows, and its tool-specific row (`mcp_tool_call`, `file_transfer`, `message_delivery`, ...) |
+| One approval  | `cursor.grok_bot.decision.id`       | The `tool_decision` row of a person's answer and the `guardrail` rows for the ask and the wait                                                                       |
+| One user      | Resource attribute `cursor.user.id` | Logs and metrics when the source provides the id                                                                                                                     |
 
-`cursor.grok_bot.turn.id` appears on `grok_bot.*` Action Recording logs. It does not appear on `api.request`, so model requests join to Grok Bot activity per Bot, not per turn. `cursor.user.id` is an optional opaque id. Don't require it on every record. Subagents use their own `cursor.conversation.id`; parent rollup is not exported.
+Four attributes tie a Bot's records together. `cursor.grok_bot.turn.id` names the turn: it appears on every Action Recording log from the turn and, for `cursor.surface=grok_bot`, on the turn's `api.request` and `api.error` logs too, so model calls join to actions per turn. Within a turn, `cursor.grok_bot.event.sequence` orders the actions without trusting client clocks; sort by it, not by timestamp, and don't expect it to be dense. `cursor.grok_bot.tool_call.id` groups the rows of one tool call, and `cursor.grok_bot.decision.id` joins an approval ask, the wait on it, and the person's answer.
 
-For example, a turn can produce these records:
+Subagent actions carry their own `cursor.grok_bot.turn.id` and `cursor.grok_bot.subagent.id`, plus `cursor.grok_bot.root_turn.id`, the user-facing turn they serve. Group by `root_turn.id` to roll a subagent's actions up to the turn that spawned it. `cursor.user.id` is an optional opaque id; don't require it on every record.
 
-| Log event                            | `cursor.conversation.id` | `cursor.grok_bot.turn.id` | `cursor.grok_bot.tool_call.id` |
-| ------------------------------------ | ------------------------ | ------------------------- | ------------------------------ |
-| `cursor.api.request`                 | `bot-a`                  | Not present               | Not present                    |
-| `cursor.grok_bot.shell_command`      | `bot-a`                  | `turn-1`                  | Not present                    |
-| `cursor.grok_bot.browser_navigation` | `bot-a`                  | `turn-1`                  | Not present                    |
-| `cursor.grok_bot.mcp_tool_call`      | `bot-a`                  | `turn-1`                  | `tool-call-1` when present     |
+For example, a turn in which the Bot ran a command that Auto-review escalated to the user can produce these records:
 
-Group the `grok_bot.*` records by `turn-1` to reconstruct the recorded actions from the turn. Group all four records by `bot-a` to combine model requests and actions for the Bot. These fields are custom log attributes, not OpenTelemetry trace or span ids.
+| Log event                       | `cursor.grok_bot.turn.id` | `cursor.grok_bot.event.sequence` | `cursor.grok_bot.tool_call.id` | `cursor.grok_bot.decision.id` |
+| ------------------------------- | ------------------------- | -------------------------------- | ------------------------------ | ----------------------------- |
+| `cursor.api.request`            | `turn-1`                  | Not present                      | Not present                    | Not present                   |
+| `cursor.grok_bot.tool_decision` | `turn-1`                  | 3                                | `call-7`                       | `dec-1` (`policy`, `denied`)  |
+| `cursor.grok_bot.guardrail`     | `turn-1`                  | 4                                | `call-7`                       | `card-2` (`tool_escalation`)  |
+| `cursor.grok_bot.guardrail`     | `turn-1`                  | 5                                | `call-7`                       | `card-2` (`pause`, `resumed`) |
+| `cursor.grok_bot.tool_decision` | `turn-1`                  | 6                                | `call-7`                       | `card-2` (`human`, `allowed`) |
+| `cursor.grok_bot.tool_result`   | `turn-1`                  | 7                                | `call-7`                       | Not present                   |
 
-With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) enabled, the Bot's `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs carry the same `cursor.conversation.id` (`bot-a`). Join on it to place the prompt and response next to the Bot's model requests and recorded actions. Message logs carry their own optional `cursor.conversation.turn.id`. Don't depend on `cursor.grok_bot.turn.id` or `cursor.request.id` on them.
+All rows share the Bot's `cursor.conversation.id`. Group by `turn-1` to reconstruct the turn, including its model calls. Group by `call-7` to follow the one shell call: Auto-review refused it, a card asked the user, the user allowed it, and the tool ran and returned `success`. `card-2` ties the ask and its wait to the answer. The command text itself is on the turn's `cursor.grok_bot.shell_command` row, which carries no `tool_call.id`. These fields are custom log attributes, not OpenTelemetry trace or span ids.
+
+With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) enabled, the Bot's `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs carry the same `cursor.conversation.id`. Join on it to place the prompt and response next to the Bot's model requests and recorded actions. Message logs carry their own optional `cursor.conversation.turn.id`. Don't depend on `cursor.grok_bot.turn.id` or `cursor.request.id` on them.
 
 **Recipe: rank sessions by tokens, then attach skills and tools**
 
@@ -238,8 +254,9 @@ With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-exp
    - `cursor.skill.activated` shows which skills ran
    - `cursor.hook.execution_complete` shows hooks
    - `cursor.cloud_agent.*` shows setup, pull requests, artifacts, and MCP auth failures (cloud agents only)
+   - `cursor.grok_bot.*` shows what a Bot did (Grok Bot only, with Action Recording on)
    - `cursor.conversation.user_message` and `cursor.conversation.assistant_message` show the prompts and responses (Cloud Agents and Grok Bot, only with the `conversation_content` opt-in)
-4. `cursor.tool.calls` is metric-only, so it has no conversation id. Report org-wide tool rates from the metric. Per-session tool attribution is not on the wire yet.
+4. `cursor.tool.calls` is metric-only, so it has no conversation id. Report org-wide tool rates from the metric. For Grok Bot, `cursor.grok_bot.tool_result` and `cursor.grok_bot.mcp_tool_call` give per-Bot and per-turn tool attribution; for other surfaces it is not on the wire yet.
 
 `cursor.cost.usage` is also metric-only. To rank sessions by cost, approximate from `api.request` token totals and your own rates, or pull spend from the Admin and billing APIs and join on `cursor.usage_event.id` where available.
 
@@ -251,8 +268,9 @@ With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-exp
 
 **Caveats**
 
-- Subagents get their own conversation id. Parent rollup is not exported yet.
+- Subagents get their own conversation id. For Grok Bot actions, roll them up with `cursor.grok_bot.root_turn.id`; for other surfaces, parent rollup is not exported yet.
 - Dedupe log rows on `cursor.event.id` before joining if you need exactly-once views.
+- Records from older Grok Bot versions omit `cursor.grok_bot.event.sequence` and `cursor.grok_bot.initiated_by`. Treat both as optional.
 
 ## Change policy
 

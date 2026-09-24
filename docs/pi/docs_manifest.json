@@ -224,8 +224,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-24T13:59:53.188261",
-    "fetch_duration_seconds": 1.613666,
+    "last_fetch_completed": "2026-09-24T18:48:49.007245",
+    "fetch_duration_seconds": 0.984498,
     "total_pages_discovered": 37,
     "pages_fetched_successfully": 37,
     "pages_failed": 0,
@@ -236,7 +236,7 @@
     "total_files": 37,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-09-24T13:59:53.188275",
+  "last_updated": "2026-09-24T18:48:49.007259",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
