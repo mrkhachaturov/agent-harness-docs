@@ -10,7 +10,7 @@ Set up your first Grok Bot, give it a focused role, and start with a simple task
 4. Add one clear title that describes its main job.
 5. Write a description of the work it should do, the sources it should use, and when it should ask for your approval.
 
-You can update the name, title, and description later from the Bot's settings.
+You can update the name, title, and description later from the Bot's settings. See [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md).
 
 For example:
 

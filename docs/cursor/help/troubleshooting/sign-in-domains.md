@@ -48,6 +48,11 @@ These are unchanged:
 
 If login fails after Sep 30 and your network uses an allowlist, have IT add the domains above, then retry from accounts.spacex.ai or accounts.x.ai, or your existing IDP / authenticator.cursor.sh.
 
+## Related
+
+- [Network, proxy, and remote connections](https://cursor.com/help/troubleshooting/network.md)
+- [Network configuration](https://cursor.com/docs/enterprise/network-configuration.md)
+
 
 ---
 

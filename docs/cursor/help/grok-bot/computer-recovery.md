@@ -65,7 +65,7 @@ Often no. Chats are stored separately from the computer, so a computer problem d
 
 1. Fully quit Grok Bot and reopen it. On Mac, choose **Quit** from the menu bar, not just close the window.
 2. Open the same account on another device, including the iPhone app. Bots and conversations are shared across devices signed into that account.
-3. In the sidebar, open **Hidden Bots** or **Show Hidden Bots**. **Hide from sidebar** removes a Bot from the list only. Hidden Bots stay active and keep their history. Choose **Unhide** to show one again.
+3. In the sidebar, open **Hidden Bots** on desktop or **Show Hidden Bots** on the phone. **Hide from sidebar** removes a Bot from the list only. Hidden Bots stay active and keep their history. To show one again, choose **Show in sidebar** on desktop or **Unhide** on the phone.
 4. Confirm you are in the same Cursor account, not a different login.
 
 A disk warning is not data loss. **Computer is low on disk space** or **Computer is critically low on disk space** means Disk Saver is auditing usage and will propose safe cleanup. Nothing is deleted without confirmation. **Disk Saver** is a Bot in the sidebar. Choose **Go to Disk Saver** to review what it proposes. Declining leaves those files in place. Cleanup applies only to computer files you confirm, not to chats.

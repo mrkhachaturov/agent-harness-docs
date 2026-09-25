@@ -69,9 +69,15 @@ Gmail can search and read mail, draft and send, and apply labels on the connecte
 
 ## Can I connect two Gmail accounts?
 
-No. Each plugin connects one account. To use a different Gmail mailbox, disconnect the current one and authorize the other. You cannot keep a personal mailbox and a work mailbox connected to Gmail at the same time.
+No. Gmail connects one mailbox at a time. To use a different Gmail mailbox, disconnect the current one and authorize the other. You cannot keep a personal mailbox and a work mailbox connected to Gmail at the same time.
 
 An installed plugin is available to every bot on that Grok Bot account. Disconnect Gmail if a bot should not use that mailbox.
+
+Some other plugins, like Notion, can connect a second account. See [How do I add a second account for the same plugin?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-add-a-second-account-for-the-same-plugin)
+
+## A plugin is added, but the Bot says it's missing. What do I do?
+
+**Added** means the plugin is installed, not that you are signed in. Open the plugin and choose **Authorize** if it shows **Needs auth** or **Disconnected**. For a connect card that never shows up or does nothing, see [How do I reconnect a plugin?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-reconnect-a-plugin)
 
 ## Why does connecting to Zoom fail with error 4700 during authorization?
 

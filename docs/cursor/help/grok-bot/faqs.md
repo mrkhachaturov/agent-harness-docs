@@ -1,6 +1,6 @@
 # Grok Bot FAQs
 
-Short answers for access, usage, and using Grok Bot. Longer steps live on the linked articles.
+Short answers for access, usage, service status, and using Grok Bot. Longer steps live on the linked articles.
 
 ## Do I need a separate Grok Bot subscription?
 
@@ -29,6 +29,18 @@ No. The email on a Cursor account cannot change. To use a different email, make 
 ## I'm stuck in a sign-in loop or see an authentication error.
 
 Update the app, then sign out and sign in again. Clear cookies for cursor.com and x.ai and try a private window. If the phone loops, sign in on desktop first. If the error is new, wait 30 to 60 minutes. Reinstalling usually does not help. See [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md#why-is-grok-bot-showing-a-persistent-authentication-error-even-after-i-log-out-clear-cache-and-reinstall).
+
+## Is Grok Bot down?
+
+Check [status.cursor.com](https://status.cursor.com) and look at the **Grok Bot** row. The app doesn't show service status, so the status page is the place to check. You can subscribe to updates there.
+
+If the status page shows a Grok Bot incident:
+
+- Wait for the incident to be resolved. The status page posts updates.
+- Don't **Reset** the computer or reinstall the app. Neither fixes a service problem, and **Reset** can lose recent unsynced work.
+- When the incident is resolved, send your message again.
+
+If the status page shows no incident and the Bot says **Bot failed to respond** or **Model provider is overloaded**, wait a moment and send the message again. If the Bot still doesn't reply, fully quit and reopen Grok Bot, then follow [How do I troubleshoot Grok Bot computer, routine, connector, and startup problems?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-troubleshoot-grok-bot-computer-routine-connector-and-startup-problems) If it keeps happening, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the request ID.
 
 ## My Bot stopped replying and says I hit my usage limit. Is it broken?
 
@@ -78,6 +90,14 @@ They are usually not deleted. Fully quit and reopen. Check another device on the
 
 Wait and choose **Retry**. Then fully quit and reopen. Then **Update**, then **Recover**. Use **Reset** only last, because it can lose recent unsynced work. See [Which should I try first?](https://cursor.com/help/grok-bot/computer-recovery.md#which-should-i-try-first).
 
+## What does the low disk space warning mean?
+
+**Computer is low on disk space** or **Computer is critically low on disk space** is about your Bots' cloud computer, not your laptop. Choose **Go to Disk Saver**. Disk Saver is a Bot that checks what is using space and suggests what to clean up. It asks before it deletes anything, and nothing is deleted unless you confirm. Your chats are not affected. See [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).
+
+## Why did an approval expire before I saw it?
+
+Approvals from work that started without you, like a routine or a message from another Bot, expire after about 10 minutes. Approvals in a chat you are in wait for you. Turn on the Bot's **Notifications**, or choose **Always allow** for actions you trust. See [Why did an approval expire?](https://cursor.com/help/grok-bot/how-to.md#why-did-an-approval-expire)
+
 ## Can I pick the model?
 
 No. Cursor picks the model for the specific task under the hood. There is no model picker in Grok Bot. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
@@ -94,6 +114,8 @@ The desktop app runs on Mac, Windows, and Linux. The phone app runs on iPhone an
 
 - [Onboarding](https://cursor.com/help/grok-bot/onboarding.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
+- [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md)
+- [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
