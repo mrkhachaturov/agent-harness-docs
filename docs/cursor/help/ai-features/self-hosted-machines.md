@@ -142,14 +142,14 @@ Cursor's cloud handles the agent loop: inference requests and planning. Results 
 Yes. Any-repo team pools decouple source control from the team pool. One team pool can serve many repositories.
 
 ```bash
-agent worker --pool sandbox --worker-dir "$HOME/cursor-sandboxes/default" start
+agent worker --pool my-pool --worker-dir "$HOME/cursor-sandboxes/default" start
 ```
 
 Pass `--clone-git-repos` so the worker clones repos on claim. In the Cursor composer environment picker, select the team pool under **Any repo**.
 
 Without `--clone-git-repos`, an any-repo pool can use an [always-applied workspace rule](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#any-repo-pools) to map task subjects to repositories and clone them with worker credentials.
 
-In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves.
+In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves. Add `channel` (`@Cursor pool set <name> channel`) to set a [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool) that does the same for one channel.
 
 This setup only applies to any-repo pools. Repo-bound pools route requests to workers that already have matching checkouts.
 
@@ -218,7 +218,7 @@ Self-hosted runs use two layers: Cursor routing (which worker serves a request) 
 **Cursor routing**
 
 - **My Machines**: Cursor only routes a repository request to a worker when one of its registered `--worker-dir` roots matches that repo. Start the worker from the correct checkout or add another `--worker-dir`.
-- **Repo-backed team pools**: Requests match both the team pool name and a `repo=<owner/repo>` label. A request for `pool=gpu` and `repo=acme/payments` routes only to a worker serving that repo.
+- **Repo-backed team pools**: Requests match both the team pool name and a `repo=<owner/repo>` label. A request for `pool=my-pool` and `repo=acme/payments` routes only to a worker serving that repo.
 - **GitHub triggers**: On public repos, only users with `OWNER` or `COLLABORATOR` access can route a run to a self-hosted team pool. Other commenters stay on managed infrastructure unless your team requires self-hosted for all runs.
 - **Org controls**: [Protected Git Scopes](https://cursor.com/docs/enterprise/model-and-integration-management.md#protected-git-scopes) and the [repository blocklist](https://cursor.com/docs/enterprise/model-and-integration-management.md#git-repository-blocklist) still apply. Connect each user's Git account under [Integrations](https://cursor.com/dashboard/integrations) so Cursor can verify repository access before a run starts.
 

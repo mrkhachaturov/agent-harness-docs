@@ -1,6 +1,6 @@
 # Team Pools
 
-A pool is a named routing target that connects requests with [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted.md) workers. Requests wait in the pool until an available worker claims them. Create separate pools for different execution environments, such as `gpu` for work that needs GPUs or `ios` for work that needs a Mac.
+A pool is a named routing target that connects requests with [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted.md) workers. Requests wait in the pool until an available worker claims them. Create separate pools for different execution environments, such as one for work that needs GPUs and another for work that needs a Mac.
 
 Team Pools are for Enterprise teams that want Cloud Agents to run inside company-managed infrastructure. Instead of each developer starting a worker on a personal machine, admins operate a pool of workers that can be assigned to agents across the organization.
 
@@ -86,12 +86,12 @@ cd /path/to/repo
 agent worker --pool start
 ```
 
-`--pool` registers the worker for pool assignment. Pass an optional name to join a named pool (for example, `--pool gpu`). When the name is omitted, the worker joins `default`. Each Cloud Agent session claims one worker at a time.
+`--pool` registers the worker for pool assignment. Pass an optional name to join a named pool (for example, `--pool my-pool`). When the name is omitted, the worker joins `default`. Each Cloud Agent session claims one worker at a time.
 
 For orchestrated environments, combine it with `--idle-release-timeout` so the process exits cleanly after work completes:
 
 ```bash
-agent worker --pool gpu --idle-release-timeout 600 start
+agent worker --pool my-pool --idle-release-timeout 600 start
 ```
 
 `--idle-release-timeout` keeps the worker alive for a window (in seconds) after a session ends to handle follow-up messages. The default is `3600` seconds. See [Session lifecycle](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#session-lifecycle) for how release and reconnection work.
@@ -101,7 +101,7 @@ agent worker --pool gpu --idle-release-timeout 600 start
 Pass `--computer-use` so claimed agents can click, type, take screenshots, and drive apps on the worker:
 
 ```bash
-agent worker --pool gpu --computer-use start
+agent worker --pool my-pool --computer-use start
 ```
 
 On macOS, the first start installs the **Cursor Computer Use** helper app. Grant it **Accessibility** and **Screen Recording**, verify with a task that takes a screenshot, then snapshot the machine so every worker restored from the image is ready. On Linux, bake the desktop packages into the worker image. See [Computer use and desktop sharing](https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md) for the macOS permission steps, MDM profile guidance, and the Linux display options.
@@ -130,7 +130,7 @@ Run a preflight check before starting the worker:
 
 ```bash
 agent worker \
-  --pool app-infra \
+  --pool my-pool \
   --name app-infra-worker \
   --worker-dir "$WORKER_ROOT/app" \
   --worker-dir "$WORKER_ROOT/infra" \
@@ -141,7 +141,7 @@ Start the worker with the same roots:
 
 ```bash
 agent worker \
-  --pool app-infra \
+  --pool my-pool \
   --name app-infra-worker \
   --worker-dir "$WORKER_ROOT/app" \
   --worker-dir "$WORKER_ROOT/infra" \
@@ -179,7 +179,7 @@ If you prefer to manage source control yourself, create a pool without a repo at
 
 ```bash
 mkdir -p "$HOME/cursor-sandboxes/default"
-agent worker --pool sandbox --worker-dir "$HOME/cursor-sandboxes/default" start
+agent worker --pool my-pool --worker-dir "$HOME/cursor-sandboxes/default" start
 ```
 
 To give every any-repo request repository instructions, create an `.mdc` file under `.cursor/rules` inside the directory passed to `--worker-dir`. The filename is arbitrary. This example uses `repo-info.mdc`:
@@ -209,7 +209,7 @@ pre-authenticated `gh` CLI.
 To have the worker check out the claimed agent's repos on claim, pass `--clone-git-repos`. This is opt-in. Default any-repo behavior does not clone.
 
 ```bash
-agent worker --pool sandbox --clone-git-repos start
+agent worker --pool my-pool --clone-git-repos start
 ```
 
 `--clone-git-repos` implies `--mint-github-token`. Clones and fetches use that minted short-lived GitHub token. A team admin must enable GitHub token minting for Team Pool workers, and `git` must be on `PATH`.
@@ -234,7 +234,7 @@ If clone fails, the request stays in the queue. Operators see a generic clone fa
 
 `--clone-git-repos`, `--mint-github-token`, and `--sync-dashboard-secrets` assume one worker per container or OS user. Co-locating multiple credential-enabled workers under the same user is unsupported.
 
-Any-repo pools omit `repo=` routing labels. Start agents against them with `env.type: "pool"` and `env.name` set to the pool name, and omit `repos` (see [Create An Agent](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent)). Pick the pool under **Any repo** on [cursor.com/agents](https://cursor.com/agents). In Slack, an any-repo pool set as the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool) lets `@Cursor` start an agent even when no repository resolves from the message or defaults.
+Any-repo pools omit `repo=` routing labels. Start agents against them with `env.type: "pool"` and `env.name` set to the pool name, and omit `repos` (see [Create An Agent](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent)). Pick the pool under **Any repo** on [cursor.com/agents](https://cursor.com/agents). In Slack, an any-repo pool set as the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool) or a [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool) lets `@Cursor` start an agent even when no repository resolves from the message or defaults.
 
 ## Manage pools
 
@@ -253,7 +253,7 @@ Group pool workers under a name when you want sessions to route to a specific su
 Pass the name to `--pool`:
 
 ```bash
-agent worker --pool gpu start
+agent worker --pool my-pool start
 ```
 
 When the name is omitted, the worker joins the `default` pool. Older CLI versions that only supported a boolean `--pool` plus separate `--pool-name` continue to work; `--pool-name` is a deprecated alias for `--pool <name>`.
@@ -261,7 +261,7 @@ When the name is omitted, the worker joins the `default` pool. Older CLI version
 Set the pool name from the environment when an orchestrator injects config:
 
 ```bash
-export CURSOR_WORKER_POOL_NAME=gpu
+export CURSOR_WORKER_POOL_NAME=my-pool
 agent worker --pool start
 ```
 
@@ -288,7 +288,7 @@ Pool workers handle:
 
 Use these options from integrations to start pool agents:
 
-- **Slack**: Mention `@Cursor` with `self_hosted=true`, `sh=1`, or `pool=<name>`. Team admins can set a [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool) with `@Cursor pool set <name>` so members run on it without an option in each mention. Explicit `pool=`, `worker=`, `machine=`, or `self_hosted=false` override the default, and an any-repo default pool lets Slack launch without a resolved repository.
+- **Slack**: Mention `@Cursor` with `self_hosted=true`, `sh=1`, or `pool=<name>`. Team admins can set a [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool) with `@Cursor pool set <name>` so members run on it without an option in each mention. A [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool), set with `@Cursor pool set <name> channel`, replaces the team default in that channel. Explicit `pool=`, `worker=`, `machine=`, or `self_hosted=false` override both defaults, and an any-repo default pool lets Slack launch without a resolved repository.
 - **GitHub**: Comment `@cursoragent self_hosted=true ...`, `@cursoragent sh=1 ...`, or `@cursoragent pool=<name> ...` on an issue, pull request, or review comment.
 - **Linear**: Mention `@Cursor` in a comment with `self_hosted=true`, `sh=1`, `pool=<name>`, or `[pool=<name>]`. Cursor reads these options from that comment, not from the issue description. You can also use issue or project labels where the parent label is `pool` and the child label is the pool name. Labels are the only way to pick a pool when you [delegate an issue](https://cursor.com/docs/integrations/linear.md#delegating-issues) to Cursor, because there's no comment to read. A `pool=` in the comment wins over a pool label, and `self_hosted=false` skips pool labels.
 
@@ -489,7 +489,7 @@ docker run -d \
 Default mode. The controller lists pending requests, watches `GET /v0/private-workers/pending-requests/stream`, claims each request, and execs `--spawn` once per claim.
 
 ```bash
-agent worker controller --spawn ./spawn.sh --api-key "$CURSOR_API_KEY" --pool gpu --pool default
+agent worker controller --spawn ./spawn.sh --api-key "$CURSOR_API_KEY" --pool my-pool --pool default
 ```
 
 ### Warm pool
@@ -501,7 +501,7 @@ The controller reconciles against `GET /v0/private-workers/pools` every 60 secon
 Warm mode requires `--pool`. You cannot combine it with `--all-pools`. Run one warm controller per pool: there is no server-side spawn lease, so concurrent controllers can transiently over-spawn.
 
 ```bash
-agent worker controller --spawn ./spawn.sh --api-key "$CURSOR_API_KEY" --pool gpu --warm-idle 5
+agent worker controller --spawn ./spawn.sh --api-key "$CURSOR_API_KEY" --pool my-pool --warm-idle 5
 ```
 
 To build a custom controller instead, use the [Cloud Agents API](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#build-your-own-controller).
@@ -535,7 +535,7 @@ curl --request POST \
   --header 'Content-Type: application/json' \
   --data '{
     "scope": "team",
-    "poolName": "gpu",
+    "poolName": "my-pool",
     "workerReadyTimeoutSeconds": 900
   }'
 ```
@@ -554,7 +554,7 @@ Restore the snapshot and start a worker with the same id before the window lapse
 
 ```bash
 export CURSOR_AGENT_WORKER_ID="<claimedWorkerId>"
-agent worker --pool gpu start
+agent worker --pool my-pool start
 ```
 
 The follow-up resumes on the machine with its workspace intact.
