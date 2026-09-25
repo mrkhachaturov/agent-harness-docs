@@ -29,7 +29,9 @@ Cursor Router routes across these models:
 - **[GPT-5.5](https://cursor.com/docs/models/gpt-5-5.md)**
 - **[Claude Opus 5](https://cursor.com/docs/models/claude-opus-5.md)**
 - **[Grok 4.6](https://cursor.com/help/models-and-usage/grok-4-6.md)**
-- **[Claude Fable 5.1](https://cursor.com/docs/models/claude-fable-5-1.md)**
+- **[Claude Fable 5](https://cursor.com/docs/models/claude-fable-5.md)**
+
+The pool changes over time as Cursor validates new models for routing. A model can be available to select directly before the router routes to it.
 
 **Required:** [Grok 4.6](https://cursor.com/help/models-and-usage/grok-4-6.md). The router needs a powerful, cost-efficient model in the pool; blocking Grok 4.6 disables the router.
 

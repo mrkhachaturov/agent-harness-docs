@@ -27,8 +27,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "fe9e3e14a1c7409a68c603a56523b745fcac803c1ba6a78973671e12bc31d979",
-      "last_updated": "2026-09-22T02:52:16.627489"
+      "hash": "48432d035108e6dc0d8ba61d2d6fe445f4498fb7b10e7ee250d6628a6c23ad87",
+      "last_updated": "2026-09-25T19:06:19.429024"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -387,8 +387,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "d1aa798454e740da7a8ce51e736adf3ad7f7a12b2db178fe3d3806aae25e8d28",
-      "last_updated": "2026-09-23T18:48:11.448942"
+      "hash": "18b093372071d08cc2d66e429204b769158e4b19eaeb349e3d71e9b4a7c267bd",
+      "last_updated": "2026-09-25T19:06:19.430523"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -483,14 +483,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "025174017a78f60570341c0b6338161dc1b4e78a5ebc194b943f217ef6a18f07",
-      "last_updated": "2026-09-24T18:48:39.371313"
+      "hash": "eff76afb16e33001f06002ce31bbf72d5c08a94be00137e1d498413a238f7456",
+      "last_updated": "2026-09-25T19:06:19.431078"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "7f749b8bde2a7ac53760692a550498d3fd2c9308863cf1fc65be4db4bc27e6eb",
-      "last_updated": "2026-09-24T18:48:39.371640"
+      "hash": "252636b772de815847d0e1bd48b602b47779ffaa0bf1ed8dbb3acce015a225e8",
+      "last_updated": "2026-09-25T19:06:19.431465"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1095,8 +1095,8 @@
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
       "original_md_url": "https://cursor.com/help/models-and-usage/available-models.md",
-      "hash": "4a1e9c5f89077dbfca0609aabf16120b653be7e77d388dcf93195bc771cf4897",
-      "last_updated": "2026-09-21T21:35:04.568283"
+      "hash": "807b47c02c4694a0b5a3d1b5a0a0ca3fa57fb448aef3bb324005daac76d48b8a",
+      "last_updated": "2026-09-25T19:06:19.432562"
     },
     "help/models-and-usage/cursor-router.md": {
       "original_url": "https://cursor.com/help/models-and-usage/cursor-router",
@@ -1485,8 +1485,8 @@
     "rollouts.md": {
       "original_url": "https://cursor.com/docs/rollouts",
       "original_md_url": "https://cursor.com/docs/rollouts.md",
-      "hash": "b178a3118d7ef684ab65259e05020dafc560602c5c22a65ceda0e9fd1ee9c8bc",
-      "last_updated": "2026-09-24T18:48:39.373623"
+      "hash": "026e9360c96091cf3a0445085fdff7327ebb16ba6a780c5db71adf946f4b9480",
+      "last_updated": "2026-09-25T19:06:19.433557"
     },
     "rules.md": {
       "original_url": "https://cursor.com/docs/rules",
@@ -1538,8 +1538,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-25T14:23:37.797985",
-    "fetch_duration_seconds": 3.030781,
+    "last_fetch_completed": "2026-09-25T19:06:19.437240",
+    "fetch_duration_seconds": 2.882426,
     "total_pages_discovered": 256,
     "pages_fetched_successfully": 256,
     "pages_failed": 0,
@@ -1552,7 +1552,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-25T14:23:37.798000",
+  "last_updated": "2026-09-25T19:06:19.437253",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -123,7 +123,7 @@ What ships once both controls are on:
 
 - **Two log events.** `cursor.conversation.user_message` carries a user prompt and `cursor.conversation.assistant_message` carries the final assistant response. The event name identifies the role. The body is the message text.
 - **Scrubbed and capped.** Cursor scrubs message text before export and caps each body at 32 KiB. `cursor.conversation.content_truncated` is true when a message hit the cap.
-- **Opaque ids only.** Records carry the same ids as other logs. No `user.email` appears on the wire. The only user identifier is the optional, opaque `cursor.user.id` resource attribute.
+- **Same identity as other logs.** Records carry the same ids as every other log, including the optional `cursor.user.*` [resource attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#resource-attributes).
 - **Cloud Agents and Grok Bot only.** Cloud Agent conversations arrive as `cursor.surface=cloud_agent` and Grok Bot conversations as `cursor.surface=grok_bot`. IDE, CLI, and desktop conversations are not exported by this family yet. Grok Bot messages are separate from the [`grok_bot_agent_actions`](https://cursor.com/docs/enterprise/opentelemetry-export.md#what-cursor-exports) family, which needs Action Recording and carries actions rather than messages.
 
 ## What Cursor exports
@@ -181,7 +181,7 @@ The `cursor.conversation.*` events carry message text and flow only after the te
 
 **Useful attributes**
 
-- Resource: `service.name=cursor`, `cursor.team.id`, optional `cursor.user.id`, surface/entrypoint. Grok Bot traffic exports as `cursor.surface=grok_bot` across all families; `desktop` no longer includes it. A turn a routine started exports `cursor.entrypoint=automation`.
+- Resource: `service.name=cursor`, `cursor.team.id`, surface/entrypoint, and the optional `cursor.user.id`, `cursor.user.account_id`, and `cursor.user.email`; see [Joining sessions](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions) to attribute records to a person. Grok Bot traffic exports as `cursor.surface=grok_bot` across all families; `desktop` no longer includes it. A turn a routine started exports `cursor.entrypoint=automation`.
 - Logs: `cursor.event.id` (dedupe), and `cursor.request.id` / `cursor.conversation.id` / `cursor.usage_event.id` when present
 - Grok Bot logs: `cursor.grok_bot.turn.id`, `cursor.grok_bot.event.sequence`, `cursor.grok_bot.tool_call.id`, and `cursor.grok_bot.decision.id`; see [Joining sessions](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions)
 
@@ -212,24 +212,28 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 **What each id means**
 
-- `cursor.conversation.id` is the session key. In the IDE and CLI it's the composer chat UUID. For cloud agents it's the customer-visible `bc-...` agent id. For `grok_bot.*` logs it identifies the Bot. The same value appears on that run's `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `cloud_agent.*`, `grok_bot.*`, and (when the team opts in) `conversation.*` logs when present.
+- `cursor.conversation.id` is the session key. In the IDE and CLI it's the composer chat UUID. For cloud agents it's the customer-visible `bc-...` agent id. For Grok Bot (`grok_bot.*`, and any log with `cursor.surface=grok_bot`) it is the identifier for the Bot, and that value is the Bot's conversation id. The same value appears on that run's `api.request`, `api.error`, `skill.activated`, `hook.execution_complete`, `cloud_agent.*`, `grok_bot.*`, and (when the team opts in) `conversation.*` logs when present.
 - `cursor.usage_event.id` is the request-grain key on `api.request`, `api.error`, and `api.correction`. Use it to reconcile against Cursor usage and billing exports and to apply corrections.
 - `cursor.request.id` is an optional per-call id on most logs. It never appears on `api.correction`, `cloud_agent.*`, or `grok_bot.*`.
 - `cursor.event.id` is a dedupe key only, not a join key across event types.
 
+**Attribute records to a person**
+
+`cursor.user.account_id` is the member's Admin API id. Join it to `id` in the [`GET /teams/members`](https://cursor.com/docs/account/teams/admin-api.md#get-team-members) response to name the person behind a record. `cursor.user.email` names the member directly on teams where Cursor has enabled email export; ask your account team. Both are optional and appear only alongside `cursor.user.id`, so don't require them on every record. The [resource attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#resource-attributes) table has the presence rules.
+
 **Group Grok Bot activity**
 
-| Goal          | Group by                            | Coverage                                                                                                                                                             |
-| ------------- | ----------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| One Bot       | `cursor.conversation.id`            | Action Recording and model request logs for the Bot                                                                                                                  |
-| One turn      | `cursor.grok_bot.turn.id`           | Action Recording logs from the turn, the Bot's `skill.activated` logs, and the turn's `api.request` / `api.error` logs                                               |
-| One tool call | `cursor.grok_bot.tool_call.id`      | Every row one tool call produced: its `tool_result`, its `tool_decision` rows, and its tool-specific row (`mcp_tool_call`, `file_transfer`, `message_delivery`, ...) |
-| One approval  | `cursor.grok_bot.decision.id`       | The `tool_decision` row of a person's answer and the `guardrail` rows for the ask and the wait                                                                       |
-| One user      | Resource attribute `cursor.user.id` | Logs and metrics when the source provides the id                                                                                                                     |
+| Goal          | Group by                                    | Coverage                                                                                                                                                             |
+| ------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| One Bot       | `cursor.conversation.id`                    | The Bot's identifier (its conversation id). Action Recording and model request logs for the Bot                                                                      |
+| One turn      | `cursor.grok_bot.turn.id`                   | Action Recording logs from the turn, the Bot's `skill.activated` logs, and the turn's `api.request` / `api.error` logs                                               |
+| One tool call | `cursor.grok_bot.tool_call.id`              | Every row one tool call produced: its `tool_result`, its `tool_decision` rows, and its tool-specific row (`mcp_tool_call`, `file_transfer`, `message_delivery`, ...) |
+| One approval  | `cursor.grok_bot.decision.id`               | The `tool_decision` row of a person's answer and the `guardrail` rows for the ask and the wait                                                                       |
+| One user      | Resource attribute `cursor.user.account_id` | Logs and metrics when present; see [Attribute records to a person](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions)                      |
 
 Four attributes tie a Bot's records together. `cursor.grok_bot.turn.id` names the turn: it appears on every Action Recording log from the turn and, for `cursor.surface=grok_bot`, on the turn's `api.request` and `api.error` logs too, so model calls join to actions per turn. Within a turn, `cursor.grok_bot.event.sequence` orders the actions without trusting client clocks; sort by it, not by timestamp, and don't expect it to be dense. `cursor.grok_bot.tool_call.id` groups the rows of one tool call, and `cursor.grok_bot.decision.id` joins an approval ask, the wait on it, and the person's answer.
 
-Subagent actions carry their own `cursor.grok_bot.turn.id` and `cursor.grok_bot.subagent.id`, plus `cursor.grok_bot.root_turn.id`, the user-facing turn they serve. Group by `root_turn.id` to roll a subagent's actions up to the turn that spawned it. `cursor.user.id` is an optional opaque id; don't require it on every record.
+Subagent actions carry their own `cursor.grok_bot.turn.id` and `cursor.grok_bot.subagent.id`, plus `cursor.grok_bot.root_turn.id`, the user-facing turn they serve. Group by `root_turn.id` to roll a subagent's actions up to the turn that spawned it.
 
 For example, a turn in which the Bot ran a command that Auto-review escalated to the user can produce these records:
 
