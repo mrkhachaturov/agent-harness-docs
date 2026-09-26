@@ -39,8 +39,8 @@
     "ecosystem.md": {
       "upstream_path": "packages/web/src/content/docs/ecosystem.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/ecosystem.mdx",
-      "hash": "985ff2cd13ef5243442e2a452e769f06bd52bcacd4ef9ec077102c8ab8f495da",
-      "last_updated": "2026-08-12T15:56:36.516681"
+      "hash": "2868b6f1508da1fab2368377fe2514cb4e6da40e31f54e36ba2b4674fa2033cf",
+      "last_updated": "2026-09-26T18:15:25.360779"
     },
     "enterprise.md": {
       "upstream_path": "packages/web/src/content/docs/enterprise.mdx",
@@ -218,8 +218,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-26T13:37:02.013751",
-    "fetch_duration_seconds": 9.277819,
+    "last_fetch_completed": "2026-09-26T18:15:30.533190",
+    "fetch_duration_seconds": 8.936889,
     "total_pages_discovered": 36,
     "pages_fetched_successfully": 36,
     "pages_failed": 0,
@@ -230,7 +230,7 @@
     "total_files": 36,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-09-26T13:37:02.013770",
+  "last_updated": "2026-09-26T18:15:30.533207",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
