@@ -1,6 +1,6 @@
 # OpenTelemetry Export
 
-OpenTelemetry Export streams Cursor usage data for your team to a collector you run. Cursor sends metrics (tokens, tool calls, best-effort cost) and logs (API requests, errors, corrections, skills, hooks, plugins, cloud agent lifecycle events, and recorded Grok Bot actions) to one team-managed destination. Teams can also opt in to [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content): the user prompts and assistant responses from Cloud Agents and Grok Bot. Export runs server-side.
+OpenTelemetry Export streams Cursor usage data for your team to a collector you run. Cursor sends metrics (tokens, tool calls, best-effort cost) and logs (API requests, errors, corrections, skills, hooks, plugins, cloud agent lifecycle events, and recorded Grok Bot actions) to one team-managed destination. Teams can also opt in to [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content): the user prompts and assistant responses from Cloud Agents and Grok Bot, and the [arguments and results of Grok Bot MCP tool calls](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io). Export runs server-side.
 
 OpenTelemetry Export is available on the [Enterprise plan](https://cursor.com/contact-sales?source=docs-opentelemetry-export). Admins configure it in **Team Settings > OpenTelemetry Export**.
 
@@ -100,13 +100,14 @@ Each signal and telemetry family has its own toggle. New families default on unl
 
 ### Conversation content
 
-The `conversation_content` family streams the text of user prompts and assistant responses to your collector as `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs. Today it covers Cloud Agents and Grok Bot conversations only. IDE, CLI, and desktop conversations are not on this family yet. It is the only family that carries message text. The [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#conversation-content) documents the record shape.
+The `conversation_content` family streams the text of user prompts and assistant responses to your collector as `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs. It also streams the arguments and results of Grok Bot MCP tool calls as [`cursor.conversation.tool_io`](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io) logs. Today it covers Cloud Agents and Grok Bot only. IDE, CLI, and desktop conversations are not on this family yet. It is the only family that carries message text or tool payloads. The [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#conversation-content) documents the record shapes.
 
-Conversation content is off by default. Turn on both toggles below before
-any message text is exported. Turning either off stops the export; turning
-them back on does not backfill earlier messages. Teams on Privacy Mode
-(Legacy) can't turn on **Allow conversation content export**; the control
-is unavailable.
+Conversation content is off by default. Turn on the team opt-in and the
+destination toggles below before any message text or tool payload is
+exported. Turning a toggle off stops that export; turning it back on does
+not backfill earlier messages or tool calls. Teams on Privacy Mode (Legacy)
+can't turn on **Allow conversation content export**; the control is
+unavailable.
 
 ### Allow conversation content export for the team
 
@@ -116,15 +117,41 @@ confirms with **Conversation content export enabled**.
 
 ### Turn on Conversation content on the destination
 
-On the destination, turn on **Conversation content**. Prompts and
-responses export together; there is no separate toggle for each.
+On the destination, turn on **Conversation content**. Three toggles
+appear under it: **Prompts**, **Responses**, and **Tool I/O**. Turning
+**Conversation content** on sets **Prompts** and **Responses** on and
+leaves **Tool I/O** off. Turning it off clears all three.
 
-What ships once both controls are on:
+### Turn on Tool I/O (optional)
+
+Under **Conversation content**, turn on **Tool I/O** to also receive
+the arguments and results of Grok Bot MCP tool calls. It stays off until
+you turn it on, including on destinations that exported conversation
+content before tool I/O existed. Keep
+[Action Recording](https://cursor.com/docs/grok-bot/security.md#logging-and-audit) on as
+well, so every tool I/O row has an `mcp_tool_call` row to join to. See
+[MCP tool I/O](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io) for what it carries.
+
+What ships once the team opt-in and **Conversation content** are on:
 
 - **Two log events.** `cursor.conversation.user_message` carries a user prompt and `cursor.conversation.assistant_message` carries the final assistant response. The event name identifies the role. The body is the message text.
-- **Scrubbed and capped.** Cursor scrubs message text before export and caps each body at 32 KiB. `cursor.conversation.content_truncated` is true when a message hit the cap.
+- **Scrubbed and capped.** Cursor scrubs message text before export and caps each message body at 32 KiB. `cursor.conversation.content_truncated` is true when the exported body is a prefix of the redacted text.
+- **Tool I/O is separate.** With its toggle on, `cursor.conversation.tool_io` adds the arguments and results of Grok Bot MCP calls, capped at 8 KiB per side. See [MCP tool I/O](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io).
 - **Same identity as other logs.** Records carry the same ids as every other log, including the optional `cursor.user.*` [resource attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#resource-attributes).
 - **Cloud Agents and Grok Bot only.** Cloud Agent conversations arrive as `cursor.surface=cloud_agent` and Grok Bot conversations as `cursor.surface=grok_bot`. IDE, CLI, and desktop conversations are not exported by this family yet. Grok Bot messages are separate from the [`grok_bot_agent_actions`](https://cursor.com/docs/enterprise/opentelemetry-export.md#what-cursor-exports) family, which needs Action Recording and carries actions rather than messages.
+
+### MCP tool I/O
+
+The `cursor.grok_bot.mcp_tool_call` log proves a Bot made an MCP call: which server, which tool, whether it succeeded, and how long it took. It never carries what the Bot sent or what came back, so a reviewer can see a Jira transition happened but not which issue moved to which state. `cursor.conversation.tool_io` carries that content, behind the [**Tool I/O** toggle](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) on the destination.
+
+Before you enable it, a Bot's Jira call shows up in your collector as one `cursor.grok_bot.mcp_tool_call` row whose `cursor.tool.name` names the transition tool and whose `cursor.tool.status` is `success`. After you enable it, the same call also produces two `cursor.conversation.tool_io` rows. The `direction=arguments` row carries the JSON the Bot sent, such as the issue key and the target status. The `direction=result` row carries what Jira returned. Join the three rows on `cursor.grok_bot.tool_call.id`.
+
+Scope and limits:
+
+- **Excerpts, not full payloads.** Each side is capped at 8 KiB. A cut body is a prefix of the redacted text, flagged with `cursor.conversation.content_truncated`, and does not parse as JSON. The head of a write call (object key, target, new value) fits; long read results are cut.
+- **Result contents.** On success the result record carries the tool's text and structured content. On failure it carries the error, rejection, or denial message. Cursor replaces image bytes with their MIME type.
+- **Secrets redacted, best effort.** Cursor runs the same pattern-based scrubber as shell commands and message text: known credential shapes, PEM blocks, and email addresses become `[REDACTED: ...]` markers, so an `assignee` address exports as `[REDACTED: Email]`. It also redacts the value of any JSON member whose key names a credential (`password`, `token`, `api_key`, and similar; the [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#cursorconversationtool_io) lists them), whatever the value looks like. Pattern matching can't recognize every secret or every piece of personal data. A credential behind a key outside the list, split across fields, or in a header row with an unusual member name (`{"k":"Authorization","v":"Basic ..."}`) exports as is, and so does an argument that quotes a teammate's message or a result that carries a connector's response body. Your team owns that residual risk, as with prompts and responses.
+- **Hosted connector calls only.** Grok Bot MCP calls Cursor runs (Jira, Slack, Linear, and other hosted servers; their `mcp_tool_call` rows show `cursor.grok_bot.mcp.transport=http`) produce tool I/O. `stdio` servers on the Bot's computer, builtin tools, and Cloud Agent, IDE, and CLI tool calls report no payloads yet.
 
 ## What Cursor exports
 
@@ -163,12 +190,13 @@ Everything below is on by default for a new destination, except `conversation_co
 - `cursor.grok_bot.delegation`: work a Bot handed to a subagent or cloud agent, and the result coming back
 - `cursor.conversation.user_message`: a user prompt, scrubbed; opt-in
 - `cursor.conversation.assistant_message`: an assistant response, scrubbed; opt-in
+- `cursor.conversation.tool_io`: one side (arguments or result) of a Grok Bot MCP tool call, scrubbed; opt-in
 
 The `cursor.grok_bot.*` events, and `cursor.skill.activated` when a Bot reads a skill, carry [Action Recording](https://cursor.com/docs/grok-bot/security.md#logging-and-audit) data. They flow only after a team admin turns on Action Recording on the dashboard Grok Bot page; it is a team setting, off by default, and Privacy Mode (Legacy) forces it off.
 
-Recorded events are metadata about what the Bot did, never the content it worked with. Tool arguments and results, file paths and names, message bodies and recipients, credentials, and card details are never exported. Shell command text is exported after secret scrubbing and capped at 8 KiB; browser URLs are stripped of query strings, fragments, and credentials; and where a tool acted on a site, only the bare hostname is reported. The [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#shared-grok_bot-attributes) lists every attribute per event.
+Recorded events are metadata about what the Bot did, never the content it worked with. Tool arguments and results, file paths and names, message bodies and recipients, credentials, and card details are never exported on these events; MCP arguments and results ship only as the opt-in [`cursor.conversation.tool_io`](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io) record. Shell command text is exported after secret scrubbing and capped at 8 KiB; browser URLs are stripped of query strings, fragments, and credentials; and where a tool acted on a site, only the bare hostname is reported. The [Wire Reference](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#shared-grok_bot-attributes) lists every attribute per event.
 
-The `cursor.conversation.*` events carry message text and flow only after the team opts in and the destination enables the family. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content).
+The `cursor.conversation.*` events carry message text or tool payloads and flow only after the team opts in and the destination turns on the toggle for that kind. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) and [MCP tool I/O](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io).
 
 **Families** (admin toggles; all default on except `conversation_content`)
 
@@ -177,7 +205,7 @@ The `cursor.conversation.*` events carry message text and flow only after the te
 - `skills_hooks_plugins`: skill / hook / plugin logs, including a Bot's skill activations
 - `cloud_agents`: cloud\_agent.\* logs
 - `grok_bot_agent_actions`: grok\_bot.\* action logs; requires Action Recording (Enterprise)
-- `conversation_content`: conversation.\* message logs; off by default
+- `conversation_content`: conversation.\* message and tool I/O logs; off by default
 
 **Useful attributes**
 
@@ -201,7 +229,7 @@ Cursor stores headers encrypted. To rotate credentials, edit the destination and
 - **Cost is not billing.** `cursor.cost.usage` is a best-effort estimate. One series covers both included-quota drawdown and on-demand usage. For BYOK it reflects the **Cursor Token Rate** only, not provider spend. Use the Admin and billing APIs for invoices.
 - **Disabling or deleting a destination drops in-flight data.** Rotate credentials by editing the destination instead of deleting and re-adding it.
 - **Logs can arrive more than once.** Delivery is at-least-once. Dedupe on `cursor.event.id`.
-- **No prompt content unless you opt in.** Message text ships only through the opt-in `conversation_content` family. Every other log event carries ids, counts, and low-cardinality attributes. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content).
+- **No prompt content or tool payloads unless you opt in.** Message text and MCP tool arguments and results ship only through the opt-in `conversation_content` family. Every other log event carries ids, counts, and low-cardinality attributes. See [Conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) and [MCP tool I/O](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io).
 - **No trace context or historical backfill.** Exported logs don't carry OpenTelemetry `trace_id` or `span_id` fields, and Cursor doesn't send traces. Export starts when you enable the destination.
 - **Metric datapoints carry no correlation IDs.** Use log attributes for per-conversation joins. See [Joining sessions](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions).
 - **Metrics are delta-only.** Sum deltas per series. A strict delta-to-cumulative processor may drop end-time-inverted points.
@@ -223,13 +251,13 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 **Group Grok Bot activity**
 
-| Goal          | Group by                                    | Coverage                                                                                                                                                             |
-| ------------- | ------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| One Bot       | `cursor.conversation.id`                    | The Bot's identifier (its conversation id). Action Recording and model request logs for the Bot                                                                      |
-| One turn      | `cursor.grok_bot.turn.id`                   | Action Recording logs from the turn, the Bot's `skill.activated` logs, and the turn's `api.request` / `api.error` logs                                               |
-| One tool call | `cursor.grok_bot.tool_call.id`              | Every row one tool call produced: its `tool_result`, its `tool_decision` rows, and its tool-specific row (`mcp_tool_call`, `file_transfer`, `message_delivery`, ...) |
-| One approval  | `cursor.grok_bot.decision.id`               | The `tool_decision` row of a person's answer and the `guardrail` rows for the ask and the wait                                                                       |
-| One user      | Resource attribute `cursor.user.account_id` | Logs and metrics when present; see [Attribute records to a person](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions)                      |
+| Goal          | Group by                                    | Coverage                                                                                                                                                                                                                                                                                                   |
+| ------------- | ------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| One Bot       | `cursor.conversation.id`                    | The Bot's identifier (its conversation id). Action Recording and model request logs for the Bot                                                                                                                                                                                                            |
+| One turn      | `cursor.grok_bot.turn.id`                   | Action Recording logs from the turn, the Bot's `skill.activated` logs, and the turn's `api.request` / `api.error` logs                                                                                                                                                                                     |
+| One tool call | `cursor.grok_bot.tool_call.id`              | Every row one tool call produced: its `tool_result`, its `tool_decision` rows, its tool-specific row (`mcp_tool_call`, `file_transfer`, `message_delivery`, ...), and, with [MCP tool I/O](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io) on, its two `conversation.tool_io` rows |
+| One approval  | `cursor.grok_bot.decision.id`               | The `tool_decision` row of a person's answer and the `guardrail` rows for the ask and the wait                                                                                                                                                                                                             |
+| One user      | Resource attribute `cursor.user.account_id` | Logs and metrics when present; see [Attribute records to a person](https://cursor.com/docs/enterprise/opentelemetry-export.md#joining-sessions)                                                                                                                                                            |
 
 Four attributes tie a Bot's records together. `cursor.grok_bot.turn.id` names the turn: it appears on every Action Recording log from the turn and, for `cursor.surface=grok_bot`, on the turn's `api.request` and `api.error` logs too, so model calls join to actions per turn. Within a turn, `cursor.grok_bot.event.sequence` orders the actions without trusting client clocks; sort by it, not by timestamp, and don't expect it to be dense. `cursor.grok_bot.tool_call.id` groups the rows of one tool call, and `cursor.grok_bot.decision.id` joins an approval ask, the wait on it, and the person's answer.
 
@@ -250,6 +278,8 @@ All rows share the Bot's `cursor.conversation.id`. Group by `turn-1` to reconstr
 
 With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-export.md#conversation-content) enabled, the Bot's `cursor.conversation.user_message` and `cursor.conversation.assistant_message` logs carry the same `cursor.conversation.id`. Join on it to place the prompt and response next to the Bot's model requests and recorded actions. Message logs carry their own optional `cursor.conversation.turn.id`. Don't depend on `cursor.grok_bot.turn.id` or `cursor.request.id` on them.
 
+With [MCP tool I/O](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io) enabled, an MCP call adds two `cursor.conversation.tool_io` logs (`direction=arguments` and `direction=result`) that carry the call's `cursor.grok_bot.tool_call.id` and, when present, its `turn.id` and `event.sequence`. Group by `tool_call.id` to put the arguments and result next to the call's `mcp_tool_call` and `tool_decision` rows.
+
 **Recipe: rank sessions by tokens, then attach skills and tools**
 
 1. Take `cursor.api.request` log rows. Sum `cursor.api.request.input_tokens` and `output_tokens` (and the cache fields if you need them) grouped by `cursor.conversation.id`. This gives per-session token totals, which metrics can't provide.
@@ -260,6 +290,7 @@ With [conversation content](https://cursor.com/docs/enterprise/opentelemetry-exp
    - `cursor.cloud_agent.*` shows setup, pull requests, artifacts, and MCP auth failures (cloud agents only)
    - `cursor.grok_bot.*` shows what a Bot did (Grok Bot only, with Action Recording on)
    - `cursor.conversation.user_message` and `cursor.conversation.assistant_message` show the prompts and responses (Cloud Agents and Grok Bot, only with the `conversation_content` opt-in)
+   - `cursor.conversation.tool_io` shows what each Grok Bot MCP call sent and received (Grok Bot, only with the [tool I/O opt-in](https://cursor.com/docs/enterprise/opentelemetry-export.md#mcp-tool-io))
 4. `cursor.tool.calls` is metric-only, so it has no conversation id. Report org-wide tool rates from the metric. For Grok Bot, `cursor.grok_bot.tool_result` and `cursor.grok_bot.mcp_tool_call` give per-Bot and per-turn tool attribution; for other surfaces it is not on the wire yet.
 
 `cursor.cost.usage` is also metric-only. To rank sessions by cost, approximate from `api.request` token totals and your own rates, or pull spend from the Admin and billing APIs and join on `cursor.usage_event.id` where available.

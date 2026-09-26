@@ -4,7 +4,14 @@ Short answers for organizing bots, updating the app, fixing plugins, signing in 
 
 ## How do I organize bots by project or business?
 
-Use **Sidebar Sections** to group bots by project, client, or business without mixing them together.
+Use sidebar sections to group bots by project, client, or business without mixing them together.
+
+**On desktop:**
+
+1. Right-click a bot in the sidebar.
+2. Choose **Move to new section**. If you already have sections, choose **Move to**, then pick a section or choose **Create section**.
+3. To name a section for your project or business, right-click the section name and choose **Rename**.
+4. Repeat for other bots you want in the same group.
 
 **On iOS:**
 
@@ -15,7 +22,7 @@ Use **Sidebar Sections** to group bots by project, client, or business without m
 
 Sections sync between iOS and desktop. Deleting a section moves its bots to **Unassigned** without deleting the bots themselves.
 
-Sidebar Sections require Grok Bot v1.2.0 or later. Update from the App Store if you do not see **Move to**.
+On iOS, sections require Grok Bot v1.2.0 or later. Update from the App Store if you do not see **Move to**.
 
 ## How do I hide a Bot from the sidebar?
 

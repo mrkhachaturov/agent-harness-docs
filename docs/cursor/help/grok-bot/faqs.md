@@ -80,7 +80,7 @@ Bots work on their own cloud computer. A Bot runs a command on your desktop only
 
 ## Why does a website block my Bot or show a captcha?
 
-Some sites block traffic from cloud computers. When that happens, the Bot hands you the step, and you can sign in yourself on the Bot's computer. You can also turn on **Settings** > **Route egress through this desktop**, so sites see your own connection.
+Some sites block traffic from cloud computers. When that happens, the Bot hands you the step, and you can sign in yourself on the Bot's computer. You can also turn on **Settings** > **Computer** > **Route traffic through this computer**, so sites see your own connection.
 
 ## My chats or Bots are missing.
 

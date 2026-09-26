@@ -4,8 +4,14 @@ Set up your first Grok Bot, give it a focused role, and start with a simple task
 
 ## How do I create my first Bot?
 
-1. Open Grok Bot and [sign in](https://cursor.com/help/grok-bot/sign-in.md) with your Cursor account.
-2. Choose **Create your own**.
+1. Open Grok Bot and choose **Sign in**. Finish signing in with your Cursor account in your browser. See [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md).
+2. Click through the short intro.
+3. Grok Bot sets up your first Bot, named **Grok Bot**, and opens a chat with it.
+
+## How do I create another Bot?
+
+1. Choose **New** in the sidebar, then **Create new Bot**.
+2. Pick a suggested teammate, or choose **Create your own**.
 3. Give your Bot a short name.
 4. Add one clear title that describes its main job.
 5. Write a description of the work it should do, the sources it should use, and when it should ask for your approval.
