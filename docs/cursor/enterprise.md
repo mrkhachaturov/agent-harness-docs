@@ -36,6 +36,7 @@ Learn how to deploy, configure, and manage Cursor for your organization. This do
 - [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md) - Usage metrics and logs delivered to your observability stack over OTLP
 - [HIPAA Business Associate Agreements](https://cursor.com/docs/enterprise/baa.md) - Request BAA support for Enterprise customers
 - [Deployment patterns](https://cursor.com/docs/enterprise/deployment-patterns.md) - MDM-managed editor vs self-hosted CLI
+- [Grok Bot deployment](https://cursor.com/docs/grok-bot/deployment.md) - Install the Grok Bot desktop app on managed devices and plan updates
 
 ## Key features
 

@@ -4,6 +4,8 @@ This guide covers how to deploy the Cursor editor and CLI tools to developer mac
 
 For other deployment options like SCM integrations (bugbot, BGA apps) or web-based access, see the relevant integration documentation.
 
+To deploy the Grok Bot desktop app, see [Deploy Grok Bot to your organization](https://cursor.com/docs/grok-bot/deployment.md).
+
 ## Editor deployment with MDM
 
 Deploy the Cursor editor and agent to user workstations and enforce policies through Mobile Device Management (MDM) systems.
