@@ -76,7 +76,7 @@ Yes. Bots work on a cloud computer. Closing the app, the laptop, or the phone do
 
 ## Does the Bot use my own computer?
 
-Bots work on their own cloud computer. A Bot runs a command on your desktop only if you allow it under **Settings** > **Execution on Local Computer**. By default it asks you each time. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
+Bots work on their own cloud computer. A Bot runs a command on your desktop only if you allow it. The setting is under **Settings** > **Computer**, labeled **Execution on this computer**. If no desktop is listed there yet, look under **Settings** > **General** > **Bot** for **Execution on Local Computer**. By default it asks you each time. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
 
 ## Why does a website block my Bot or show a captcha?
 

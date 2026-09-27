@@ -247,7 +247,7 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 **Attribute records to a person**
 
-`cursor.user.account_id` is the member's Admin API id. Join it to `id` in the [`GET /teams/members`](https://cursor.com/docs/account/teams/admin-api.md#get-team-members) response to name the person behind a record. `cursor.user.email` names the member directly on teams where Cursor has enabled email export; ask your account team. Both are optional and appear only alongside `cursor.user.id`, so don't require them on every record. The [resource attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#resource-attributes) table has the presence rules.
+`cursor.user.account_id` is the member's Admin API id. Join it to `id` in the [`GET /teams/members`](https://cursor.com/docs/account/teams/admin-api.md#get-team-members) response to name the person behind a record. `cursor.user.email` names the member directly. Both are optional and appear only alongside `cursor.user.id`, so don't require them on every record. The [resource attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#resource-attributes) table has the presence rules.
 
 **Group Grok Bot activity**
 

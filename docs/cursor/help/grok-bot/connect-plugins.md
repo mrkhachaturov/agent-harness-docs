@@ -61,7 +61,7 @@ Finding and opening files uses the **Google Drive** plugin. Drive can search and
 
 **Slack**
 
-The Slack plugin posts as the Slack user you connected, not as a separate bot that has to be invited. It can post only in channels that user can post in. It cannot post in a private channel that user is not in, or in a channel where that workspace blocks posting. To use another Slack workspace, connect that workspace. This is separate from a Slack message that starts a routine. See [Routines](https://cursor.com/help/grok-bot/routines.md#how-do-slack-keyword-listeners-work).
+The Slack plugin posts as the Slack user you connected, not as a separate bot that has to be invited. It can post only in channels that user can post in. It cannot post in a private channel that user is not in, or in a channel where that workspace blocks posting. To use another Slack workspace, connect that workspace. This is separate from a Slack message that starts a routine. See [Routines](https://cursor.com/help/grok-bot/routines.md#how-do-slack-triggers-work).
 
 **Gmail**
 
