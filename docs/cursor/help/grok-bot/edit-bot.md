@@ -22,6 +22,8 @@ On desktop:
    - **Generate** makes a picture from a short description. Describe the picture, choose **Generate**, then choose **Set avatar**.
    - **Upload** uses your own image. Drag in an image or choose **Browse files**, adjust it, then choose **Set avatar**. The image must be smaller than 25 MB.
 
+![The Bot picture picker with Bot, Generate, and Upload tabs, character shapes, and colors](/docs-static/images/grok-bot/avatar-picker-light.png)
+
 On the phone, open the Bot's profile and tap its picture. Choose **Select from Gallery**, **Generate**, or **Remove Photo**.
 
 ## How do I change what a Bot does?
@@ -34,6 +36,8 @@ On desktop:
 2. Click the Bot's name at the top of the chat to open its details.
 3. Choose **Bot settings**.
 4. Edit **Description**. **Name** and **Label (optional)** are here too.
+
+![A Bot's settings with its picture, Name, Label (optional), Description, and Notifications fields](/docs-static/images/grok-bot/bot-settings-light.png)
 
 On the phone, open the Bot's profile and tap **Instructions**. The phone app calls the description **Instructions**, and the label **Title (optional)**.
 

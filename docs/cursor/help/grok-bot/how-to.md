@@ -26,7 +26,9 @@ On iOS, sections require Grok Bot v1.2.0 or later. Update from the App Store if 
 
 ## How do I hide a Bot from the sidebar?
 
-Choose **Hide from sidebar**. The Bot stays active and keeps its history. A hidden Bot doesn't send notifications.
+On desktop, right-click the Bot in the sidebar and choose **Hide from sidebar**. The Bot stays active and keeps its history. A hidden Bot doesn't send notifications.
+
+![The menu that opens when you right-click a Bot in the sidebar, with Pin, Move to new section, Mark as Unread, Rename Bot, Copy conversation ID, Hide from sidebar, and Delete](/docs-static/images/grok-bot/sidebar-bot-menu-light.png)
 
 To show it again on desktop, open **Hidden Bots**, right-click the Bot, and choose **Show in sidebar**. On the phone, open **Show Hidden Bots** and choose **Unhide**.
 
@@ -101,6 +103,8 @@ If the old version keeps coming back, [contact support](https://cursor.com/help/
 
 On desktop, open **Settings**, go to **General**, and choose a **Language** under **Appearance**. **Follow System** uses your computer's language. Desktop has 31 languages: English, Afrikaans, Arabic, Bengali, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, Finnish, French, German, Greek, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Norwegian Bokmål, Polish, Portuguese, Russian, Spanish, Swedish, Thai, Turkish, Ukrainian, Urdu, and Vietnamese.
 
+![The Appearance section in Grok Bot's General settings, with Theme and Language menus](/docs-static/images/grok-bot/settings-appearance-light.png)
+
 On the phone, open **Settings** and choose **Language**. **System** uses your phone's language. The phone app has English, Chinese (Simplified), Chinese (Traditional), French, German, Hindi, Japanese, Korean, Polish, Portuguese, and Spanish.
 
 The language changes the app's menus and messages. New Bots write to you in that language unless you write to them in another one. Voice chat has its own **Language** setting. See [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md).
@@ -163,6 +167,8 @@ An approval card means the Bot stopped and is waiting. The action does not run u
 - **Deny** stops this action.
 
 Open **Settings**, then **Bot**, and use the **Auto-review** switch. The description there is **Grok Bot checks each action before it runs and asks you first when needed.** Under **Auto-review Rules**, write one short rule per action. **Ask first** wins if two rules conflict. If the switch says **Required by your admin**, you cannot turn it off.
+
+![The Bot section in Grok Bot's General settings, with Timezone, the Auto-review switch, and Auto-review Rules](/docs-static/images/grok-bot/settings-bot-section-light.png)
 
 A secret card, a plugin sign-in, or a page that asks you to type a password is a different prompt. Use the secure card for secrets. See [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md).
 

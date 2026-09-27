@@ -82,6 +82,8 @@ Bots work on their own cloud computer. A Bot runs a command on your desktop only
 
 Some sites block traffic from cloud computers. When that happens, the Bot hands you the step, and you can sign in yourself on the Bot's computer. You can also turn on **Settings** > **Computer** > **Route traffic through this computer**, so sites see your own connection.
 
+![The Network section in Grok Bot's Computer settings, with the Route traffic through this computer toggle turned off](/docs-static/images/grok-bot/settings-network-light.png)
+
 ## My chats or Bots are missing.
 
 They are usually not deleted. Fully quit and reopen. Check another device on the same account. Open **Hidden Bots**. Make sure you are on the same Cursor account. Do not use **Reset** to look for them. See [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).

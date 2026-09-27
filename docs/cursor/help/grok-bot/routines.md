@@ -10,6 +10,8 @@ A Bot can own up to 50 routines. **Run history** keeps the 20 most recent runs. 
 
 Schedules use the time zone in **Settings**, under **Bot**, labeled **Timezone**. **Auto-detect** follows this computer. Pick a zone when the routine should follow a different one, such as the office where the work belongs.
 
+![The Bot section in Grok Bot's General settings, with the Timezone menu set to Auto-detect](/docs-static/images/grok-bot/settings-bot-section-light.png)
+
 Open **When to run** and add a schedule. The choices are **Every hour**, **Every day**, **Weekdays**, **Every week**, **Every month**, **Interval**, **Advanced**, and **Custom**. **Weekdays** means Monday through Friday. The clock time is in the **Timezone** above, not the time zone of the website or Slack workspace the routine reads.
 
 Saving a routine does not run it. A schedule waits for the next matching time. If you save "every day at 8:00 AM" at 8:05, today's 8:00 run does not happen. The first run is the next 8:00 AM in that time zone.

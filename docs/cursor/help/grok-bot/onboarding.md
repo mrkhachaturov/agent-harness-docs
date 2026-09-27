@@ -8,21 +8,23 @@ Set up your first Grok Bot, give it a focused role, and start with a simple task
 2. Click through the short intro.
 3. Grok Bot sets up your first Bot, named **Grok Bot**, and opens a chat with it.
 
+![The Grok Bot welcome screen with the Sign in button](/docs-static/images/grok-bot/onboarding-landing-light.png)
+
 ## How do I create another Bot?
 
-1. Choose **New** in the sidebar, then **Create new Bot**.
-2. Pick a suggested teammate, or choose **Create your own**.
-3. Give your Bot a short name.
-4. Add one clear title that describes its main job.
-5. Write a description of the work it should do, the sources it should use, and when it should ask for your approval.
+1. Choose **New** in the sidebar, then **Create new Bot**. Grok Bot adds a Bot named **New Bot** and opens its chat. To name it up front, type the name first, then choose **Create "Name" Bot**.
+2. Click the Bot's name at the top of the chat, then choose **Bot settings**.
+3. Give your Bot a short **Name**.
+4. Add a **Label** that describes its main job.
+5. Write a **Description** of the work it should do, the sources it should use, and when it should ask for your approval.
 
-You can update the name, title, and description later from the Bot's settings. See [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md).
+You can change these at any time. See [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md).
 
 For example:
 
 > Name: Research
 >
-> Title: Weekly product researcher
+> Label: Weekly product researcher
 >
 > Description: Research one product topic at a time. Use the web and the documents I share. Summarize the main findings with source links, and ask before changing any external service.
 
