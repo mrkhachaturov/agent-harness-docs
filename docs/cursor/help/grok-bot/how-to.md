@@ -152,7 +152,7 @@ Choose **Skip** if you don't want to sign in now.
 
 On Mac and Windows, you can also use a hardware security key, such as a YubiKey, plugged into your computer. Open **Settings**, go to **General**, and under **Security Key** turn on **Use hardware security keys**. Grok Bot asks you to approve each use.
 
-All your Bots share one computer. After you sign in, every Bot on your account can use that sign-in until it expires. Don't sign in to an account on the Bot's computer if one of your Bots shouldn't use it.
+All your Bots share one computer. After you sign in, every Bot on your account can use that sign-in until it expires. Don't sign in to an account on the Bot's computer if one of your Bots shouldn't use it. When you chat with a teammate's [Team Bot](https://cursor.com/help/grok-bot/team-bots.md), it usually works on your computer too, so it can use those sign-ins.
 
 ## Why is the Bot asking me to approve something?
 

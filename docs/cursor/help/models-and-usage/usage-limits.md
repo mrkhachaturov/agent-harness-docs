@@ -42,6 +42,14 @@ When included usage runs out, on-demand charges apply if you have on-demand usag
 
 See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for mode details.
 
+## Can Auto usage draw from Other Models?
+
+Yes. Auto bills each parent request at the routed model's list price, so a third-party route draws from Other Models.
+
+Subagents can also run a named third-party model while the picker still shows Auto, Grok, or Composer. Those requests bill Other Models at that model's list price.
+
+See [parent model and usage pools](https://cursor.com/docs/subagents.md#parent-model-and-usage-pools) and [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes).
+
 ## Do requests made with my own API key count toward my usage?
 
 On individual plans, no. Your provider bills you directly for the model cost, and those requests don't draw from either pool.
@@ -59,6 +67,7 @@ See [Bring your own API key](https://cursor.com/help/models-and-usage/api-keys.m
 - [API keys](https://cursor.com/help/models-and-usage/api-keys.md)
 - [Pricing reference](https://cursor.com/docs/models-and-pricing.md)
 - [Model pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing)
+- [Subagents](https://cursor.com/docs/subagents.md#parent-model-and-usage-pools)
 
 
 ---

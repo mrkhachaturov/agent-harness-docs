@@ -1,6 +1,6 @@
 # Group chats and Bot-to-Bot messages
 
-A group chat puts several of your Bots in one conversation. To start one, see [Group chats](https://cursor.com/docs/grok-bot/work.md#group-chats). This page covers what to do once the group is running.
+A group chat puts several of your Bots in one conversation. You can also add a teammate's published [Team Bot](https://cursor.com/help/grok-bot/team-bots.md), but not alongside Bots that run on your own computer. To start one, see [Group chats](https://cursor.com/docs/grok-bot/work.md#group-chats). This page covers what to do once the group is running.
 
 ## Where do Bots reply in a group chat?
 

@@ -249,6 +249,8 @@ Metrics (`cursor.token.usage`, `cursor.tool.calls`, `cursor.cost.usage`) are agg
 
 `cursor.user.account_id` is the member's Admin API id. Join it to `id` in the [`GET /teams/members`](https://cursor.com/docs/account/teams/admin-api.md#get-team-members) response to name the person behind a record. `cursor.user.email` names the member directly. Both are optional and appear only alongside `cursor.user.id`, so don't require them on every record. The [resource attributes](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#resource-attributes) table has the presence rules.
 
+Cloud agent records (`cursor.cloud_agent.*`) carry the same user attributes, resolved from the run's owner. A run started with a team API key or a service account has no owner and carries none.
+
 **Group Grok Bot activity**
 
 | Goal          | Group by                                    | Coverage                                                                                                                                                                                                                                                                                                   |

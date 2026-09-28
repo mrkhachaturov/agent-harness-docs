@@ -10,7 +10,7 @@ You can also save a secret on the Bot itself. Open that Bot's **Secrets** sectio
 
 Don't paste secrets into chat, Shell, or ordinary files. Don't type them into a demonstration when you use **Teach a task**.
 
-Secrets on a Bot are yours. A credential your company's setup scripts need, such as a license key for a tool installed on every team computer, is stored by a team admin as a [Team Secret](https://cursor.com/docs/grok-bot/teams.md#team-secrets) on the Enterprise dashboard instead. Those never reach your Bots directly.
+Secrets on a Bot are yours. On a [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) you own, secrets are used in every teammate's chat, so only add keys you're happy for the whole team to use. A credential your company's setup scripts need, such as a license key for a tool installed on every team computer, is stored by a team admin as a [Team Secret](https://cursor.com/docs/grok-bot/teams.md#team-secrets) on the Enterprise dashboard instead. Those never reach your Bots directly.
 
 ## Why can't I see the secret value?
 

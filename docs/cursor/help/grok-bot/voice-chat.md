@@ -39,6 +39,8 @@ On the phone, stop dictation before you start a voice chat.
 
 No. Voice chat works with one Bot at a time. Open that Bot's own chat to start a call.
 
+Voice chat isn't available with a teammate's [Team Bot](https://cursor.com/help/grok-bot/team-bots.md).
+
 ## What happens if a voice chat drops?
 
 The call ends and Grok Bot shows **Voice chat failed**. The notice may say **The call ended unexpectedly.** or **The realtime connection failed.**
