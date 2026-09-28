@@ -98,7 +98,9 @@ Enterprise teams can use the Bugbot API to trigger reviews and retrieve per-revi
 
 ### Trigger a review
 
-/bugbot/review
+POST
+
+`/bugbot/review`
 
 Queue a Bugbot review for a pull request or merge request. The request returns when the review is queued; the review runs asynchronously.
 
@@ -163,7 +165,9 @@ If Bugbot cannot review the pull request, the endpoint returns `400 Bad Request`
 
 ### Review analytics
 
-/analytics/team/bugbot-reviews
+GET
+
+`/analytics/team/bugbot-reviews`
 
 Return one item per completed Bugbot review, including the reviewed commit, findings count, billed cost, and per-finding resolution data.
 

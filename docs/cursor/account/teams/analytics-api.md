@@ -10,7 +10,9 @@ The Analytics API provides comprehensive insights into your team's Cursor usage,
 
 ### Agent Edits
 
-/analytics/team/agent-edits
+GET
+
+`/analytics/team/agent-edits`
 
 Get metrics on AI-suggested code edits accepted by your team with Cursor.
 
@@ -78,7 +80,9 @@ curl -X GET "https://api.cursor.com/analytics/team/agent-edits" \
 
 ### Tab Usage
 
-/analytics/team/tabs
+GET
+
+`/analytics/team/tabs`
 
 Get metrics on Tab autocomplete usage across your team.
 
@@ -146,7 +150,9 @@ curl -X GET "https://api.cursor.com/analytics/team/tabs" \
 
 ### Daily Active Users (DAU)
 
-/analytics/team/dau
+GET
+
+`/analytics/team/dau`
 
 Get daily active user counts for your team. DAU is the number of unique users who have used Cursor in a given day.
 An active user is a user who has used at least one AI feature in Cursor.
@@ -203,7 +209,9 @@ curl -X GET "https://api.cursor.com/analytics/team/dau?startDate=14d&endDate=tod
 
 ### Client Versions
 
-/analytics/team/client-versions
+GET
+
+`/analytics/team/client-versions`
 
 Get distribution of Cursor client versions used by your team (defaults to last 7 days). We report the latest version for each user per day (if a user has installed multiple versions, we report the latest).
 
@@ -255,7 +263,9 @@ curl -X GET "https://api.cursor.com/analytics/team/client-versions" \
 
 ### Model Usage
 
-/analytics/team/models
+GET
+
+`/analytics/team/models`
 
 Get metrics on AI model usage across your team.
 
@@ -325,7 +335,9 @@ curl -X GET "https://api.cursor.com/analytics/team/models" \
 
 ### Top File Extensions
 
-/analytics/team/top-file-extensions
+GET
+
+`/analytics/team/top-file-extensions`
 
 Get the most frequently edited files across your team in Cursor. Returns the top 5 file extensions per day by suggestion volume.
 
@@ -385,7 +397,9 @@ curl -X GET "https://api.cursor.com/analytics/team/top-file-extensions?startDate
 
 ### MCP Adoption
 
-/analytics/team/mcp
+GET
+
+`/analytics/team/mcp`
 
 Get metrics on MCP (Model Context Protocol) tool adoption across your team. Returns daily adoption counts broken down by tool name and MCP server name.
 
@@ -443,7 +457,9 @@ curl -X GET "https://api.cursor.com/analytics/team/mcp" \
 
 ### Commands Adoption
 
-/analytics/team/commands
+GET
+
+`/analytics/team/commands`
 
 Get metrics on Cursor command adoption across your team. Returns daily adoption counts broken down by command name.
 
@@ -498,7 +514,9 @@ curl -X GET "https://api.cursor.com/analytics/team/commands" \
 
 ### Plans Adoption
 
-/analytics/team/plans
+GET
+
+`/analytics/team/plans`
 
 Get metrics on Plan mode adoption across your team. Returns daily adoption counts broken down by AI model used for plan generation.
 
@@ -555,7 +573,9 @@ curl -X GET "https://api.cursor.com/analytics/team/plans" \
 
 ### Skills Adoption
 
-/analytics/team/skills
+GET
+
+`/analytics/team/skills`
 
 Get metrics on Skills adoption across your team. Returns daily adoption counts broken down by skill name.
 
@@ -610,7 +630,9 @@ curl -X GET "https://api.cursor.com/analytics/team/skills" \
 
 ### Ask Mode Adoption
 
-/analytics/team/ask-mode
+GET
+
+`/analytics/team/ask-mode`
 
 Get metrics on Ask mode adoption across your team. Returns daily adoption counts broken down by AI model used for Ask mode queries.
 
@@ -665,7 +687,9 @@ curl -X GET "https://api.cursor.com/analytics/team/ask-mode" \
 
 ### Conversation Insights
 
-/analytics/team/conversation-insights
+GET
+
+`/analytics/team/conversation-insights`
 
 Get the same aggregate Conversation Insights data you see in the dashboard. This endpoint returns aggregate insights, not raw conversation exports or raw conversation content.
 
@@ -878,7 +902,9 @@ curl -X GET "https://api.cursor.com/analytics/team/conversation-insights?startDa
 
 ### Leaderboard
 
-/analytics/team/leaderboard
+GET
+
+`/analytics/team/leaderboard`
 
 Get a leaderboard of team members ranked by AI usage metrics.
 
@@ -1009,7 +1035,9 @@ curl -X GET "https://api.cursor.com/analytics/team/leaderboard?users=alice@examp
 
 ### Bugbot Analytics
 
-/analytics/team/bugbot
+GET
+
+`/analytics/team/bugbot`
 
 Get per-PR Bugbot review analytics for your team, including issue counts by severity and how many issues were resolved.
 
@@ -1110,7 +1138,9 @@ curl -X GET "https://api.cursor.com/analytics/team/bugbot?page=2&pageSize=50" \
 
 ### Bugbot review analytics
 
-/analytics/team/bugbot-reviews
+GET
+
+`/analytics/team/bugbot-reviews`
 
 Return one item per completed Bugbot review, including the reviewed commit, findings count, billed cost, and per-finding resolution data.
 
@@ -1356,7 +1386,9 @@ All by-user endpoints follow the pattern: `/analytics/by-user/{metric}`
 
 ### Agent Edits By User
 
-/analytics/by-user/agent-edits
+GET
+
+`/analytics/by-user/agent-edits`
 
 Get agent edits metrics organized by individual users with pagination support.
 
@@ -1469,7 +1501,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/agent-edits?users=alice@ex
 
 ### Tab Usage By User
 
-/analytics/by-user/tabs
+GET
+
+`/analytics/by-user/tabs`
 
 Get Tab autocomplete metrics organized by individual users with pagination support.
 
@@ -1563,7 +1597,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/tabs?page=1&pageSize=50" \
 
 ### Model Usage By User
 
-/analytics/by-user/models
+GET
+
+`/analytics/by-user/models`
 
 Get model usage metrics organized by individual users with pagination support.
 
@@ -1651,7 +1687,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/models?page=1&pageSize=50"
 
 ### Top File Extensions By User
 
-/analytics/by-user/top-file-extensions
+GET
+
+`/analytics/by-user/top-file-extensions`
 
 Get top file extension metrics organized by individual users with pagination support.
 
@@ -1747,7 +1785,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/top-file-extensions?page=1
 
 ### Client Versions By User
 
-/analytics/by-user/client-versions
+GET
+
+`/analytics/by-user/client-versions`
 
 Get client version metrics organized by individual users with pagination support.
 
@@ -1825,7 +1865,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/client-versions?page=1&pag
 
 ### MCP Adoption By User
 
-/analytics/by-user/mcp
+GET
+
+`/analytics/by-user/mcp`
 
 Get MCP tool adoption metrics organized by individual users with pagination support.
 
@@ -1909,7 +1951,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/mcp?page=1&pageSize=50" \
 
 ### Commands Adoption By User
 
-/analytics/by-user/commands
+GET
+
+`/analytics/by-user/commands`
 
 Get command adoption metrics organized by individual users with pagination support.
 
@@ -1990,7 +2034,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/commands?page=1&pageSize=5
 
 ### Plans Adoption By User
 
-/analytics/by-user/plans
+GET
+
+`/analytics/by-user/plans`
 
 Get Plan mode adoption metrics organized by individual users with pagination support.
 
@@ -2071,7 +2117,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/plans?page=1&pageSize=50" 
 
 ### Skills Adoption By User
 
-/analytics/by-user/skills
+GET
+
+`/analytics/by-user/skills`
 
 Get Skills adoption metrics organized by individual users with pagination support.
 
@@ -2162,7 +2210,9 @@ curl -X GET "https://api.cursor.com/analytics/by-user/skills?page=1&pageSize=50"
 
 ### Ask Mode Adoption By User
 
-/analytics/by-user/ask-mode
+GET
+
+`/analytics/by-user/ask-mode`
 
 Get Ask mode adoption metrics organized by individual users with pagination support.
 

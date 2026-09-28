@@ -11,7 +11,9 @@ For org-wide actions across your teams, see [Organizations](https://cursor.com/d
 
 ### Get Team Members
 
-/teams/members
+GET
+
+`/teams/members`
 
 Retrieve all team members and their details.
 
@@ -57,7 +59,9 @@ curl -X GET https://api.cursor.com/teams/members \
 
 ### Get Audit Logs
 
-/teams/audit-logs
+GET
+
+`/teams/audit-logs`
 
 Retrieve audit log events for your team with filtering. Track team activity, security events, and configuration changes. Rate limited to 20 requests per minute per team. See [rate limits and best practices](https://cursor.com/docs/api.md#rate-limits).
 
@@ -177,7 +181,9 @@ Routine rows identify the Bot with `event_data.sand_agent_id`.
 
 ### Get Daily Usage Data
 
-/teams/daily-usage-data
+POST
+
+`/teams/daily-usage-data`
 
 Retrieve daily usage metrics for your team. Data is aggregated at the hourly level - we recommend polling this endpoint at most once per hour. Rate limited to 20 requests per minute per team. See [best practices](https://cursor.com/docs/api.md#best-practices).
 
@@ -380,7 +386,9 @@ curl -X POST https://api.cursor.com/teams/daily-usage-data \
 
 ### Get Spending Data
 
-/teams/spend
+POST
+
+`/teams/spend`
 
 Retrieve spending information for the current billing cycle with search, sorting, and pagination.
 
@@ -472,7 +480,9 @@ curl -X POST https://api.cursor.com/teams/spend \
 
 ### Get Usage Events Data
 
-/teams/filtered-usage-events
+POST
+
+`/teams/filtered-usage-events`
 
 Retrieve detailed usage events for your team with filtering, search, and pagination options. This endpoint provides granular insights into API calls, model usage, token consumption, and costs. Data is aggregated at the hourly level. We recommend polling this endpoint at most once per hour. Rate limited to 60 requests per minute per team. See the [API guidance](https://cursor.com/docs/api.md#best-practices).
 
@@ -749,7 +759,9 @@ curl -X POST https://api.cursor.com/teams/filtered-usage-events \
 
 ### Set User Spend Limit
 
-/teams/user-spend-limit
+POST
+
+`/teams/user-spend-limit`
 
 Set spending limits for individual team members. This allows you to control how much each user can spend on AI usage within your team. Rate limited to 250 requests per minute per team. See [rate limits](https://cursor.com/docs/api.md#rate-limits).
 
@@ -801,7 +813,9 @@ curl -X POST https://api.cursor.com/teams/user-spend-limit \
 
 ### Set User Spend Limits in Bulk (Preview)
 
-/teams/user-spend-limits
+POST
+
+`/teams/user-spend-limits`
 
 Set spending limits for up to 100 team members in one request. Rate limited to 20 requests per minute per team. See [rate limits](https://cursor.com/docs/api.md#rate-limits).
 
@@ -879,7 +893,9 @@ curl -X POST https://api.cursor.com/teams/user-spend-limits \
 
 ### Remove Team Member
 
-/teams/remove-member
+POST
+
+`/teams/remove-member`
 
 Remove a member from your team programmatically. This is useful for automating offboarding workflows or integrating with HR systems. Rate limited to 50 requests per minute per team. See [rate limits](https://cursor.com/docs/api.md#rate-limits).
 
@@ -950,7 +966,9 @@ curl -X POST https://api.cursor.com/teams/remove-member \
 
 ### Get Team Repo Blocklists
 
-/settings/repo-blocklists/repos
+GET
+
+`/settings/repo-blocklists/repos`
 
 Retrieve all repository blocklists configured for your team. Add repositories and use patterns to prevent files or directories from being used as context.
 
@@ -990,7 +1008,9 @@ curl -X GET https://api.cursor.com/settings/repo-blocklists/repos \
 
 ### Upsert Repo Blocklists
 
-/settings/repo-blocklists/repos/upsert
+POST
+
+`/settings/repo-blocklists/repos/upsert`
 
 Replace existing repository blocklists for the provided repos. This endpoint will only overwrite the patterns for the repositories provided. All other repos will be unaffected.
 
@@ -1042,7 +1062,9 @@ curl -X POST https://api.cursor.com/settings/repo-blocklists/repos/upsert \
 
 ### Delete Repo Blocklist
 
-/settings/repo-blocklists/repos/:repoId
+DELETE
+
+`/settings/repo-blocklists/repos/:repoId`
 
 Remove a specific repository from the blocklist. Returns 204 No Content on successful deletion.
 
@@ -1096,7 +1118,9 @@ Group routes share these error responses:
 
 ### List Team directory groups
 
-/teams/directory-groups
+GET
+
+`/teams/directory-groups`
 
 Retrieve Team directory groups for the team attached to your API key.
 
@@ -1165,7 +1189,9 @@ curl -X GET "https://api.cursor.com/teams/directory-groups?page=1&pageSize=50" \
 
 ### Get Team directory group
 
-/teams/directory-groups/:groupId
+GET
+
+`/teams/directory-groups/:groupId`
 
 Retrieve one Team directory group.
 
@@ -1201,7 +1227,9 @@ curl -X GET https://api.cursor.com/teams/directory-groups/team_group_01k2ja2000e
 
 ### Create Team directory group
 
-/teams/directory-groups
+POST
+
+`/teams/directory-groups`
 
 Create a Team directory group with manually managed membership. To create a SCIM-synced group, sync it from your identity provider instead. See [SCIM](https://cursor.com/docs/account/teams/scim.md).
 
@@ -1245,7 +1273,9 @@ curl -X POST https://api.cursor.com/teams/directory-groups \
 
 ### Update Team directory group
 
-/teams/directory-groups/:groupId
+PATCH
+
+`/teams/directory-groups/:groupId`
 
 Update a group's name or monthly spending limit. Updates are partial: include at least one field, and any field you omit keeps its current value.
 
@@ -1304,7 +1334,9 @@ curl -X PATCH https://api.cursor.com/teams/directory-groups/team_group_01k2ja200
 
 ### Delete Team directory group
 
-/teams/directory-groups/:groupId
+DELETE
+
+`/teams/directory-groups/:groupId`
 
 Delete a Team directory group. The group must be empty: remove every member before deleting it.
 
@@ -1335,7 +1367,9 @@ curl -X DELETE https://api.cursor.com/teams/directory-groups/team_group_01k2ja20
 
 ### List Team directory group members
 
-/teams/directory-groups/:groupId/members
+GET
+
+`/teams/directory-groups/:groupId/members`
 
 Retrieve members in a Team directory group.
 
@@ -1404,7 +1438,9 @@ curl -X GET "https://api.cursor.com/teams/directory-groups/team_group_01k2ja2000
 
 ### Add Team directory group members
 
-/teams/directory-groups/:groupId/members/bulk-add
+POST
+
+`/teams/directory-groups/:groupId/members/bulk-add`
 
 Add members to a manual Team directory group.
 
@@ -1448,7 +1484,9 @@ curl -X POST https://api.cursor.com/teams/directory-groups/team_group_01k2ja2000
 
 ### Remove Team directory group members
 
-/teams/directory-groups/:groupId/members/bulk-remove
+POST
+
+`/teams/directory-groups/:groupId/members/bulk-remove`
 
 Remove members from a manual Team directory group.
 
@@ -1500,7 +1538,9 @@ Billing Groups live at `/teams/groups` and use `group_…` ids. Team directory g
 
 ### List Groups
 
-/teams/groups
+GET
+
+`/teams/groups`
 
 Retrieve all billing groups for your team with spend data for the current billing cycle.
 
@@ -1581,7 +1621,9 @@ curl -X GET "https://api.cursor.com/teams/groups?billingCycle=2025-01-15" \
 
 ### Get Group
 
-/teams/groups/:groupId
+GET
+
+`/teams/groups/:groupId`
 
 Retrieve a single billing group with its members and spend data for the current billing cycle.
 
@@ -1663,7 +1705,9 @@ curl -X GET "https://api.cursor.com/teams/groups/group_PDSPmvukpYgZEDXsoNirw3CFh
 
 ### Create Group
 
-/teams/groups
+POST
+
+`/teams/groups`
 
 Create a new billing group. Rate limited to 20 requests per minute per team.
 
@@ -1705,7 +1749,9 @@ curl -X POST https://api.cursor.com/teams/groups \
 
 ### Update Group
 
-/teams/groups/:groupId
+PATCH
+
+`/teams/groups/:groupId`
 
 Update a billing group's name or directory group attachment. Rate limited to 20 requests per minute per team.
 
@@ -1760,7 +1806,9 @@ curl -X PATCH https://api.cursor.com/teams/groups/group_PDSPmvukpYgZEDXsoNirw3CF
 
 ### Delete Group
 
-/teams/groups/:groupId
+DELETE
+
+`/teams/groups/:groupId`
 
 Delete a billing group. Returns 204 No Content on success. Rate limited to 20 requests per minute per team.
 
@@ -1785,7 +1833,9 @@ curl -X DELETE https://api.cursor.com/teams/groups/group_PDSPmvukpYgZEDXsoNirw3C
 
 ### Add Members to Group
 
-/teams/groups/:groupId/members
+POST
+
+`/teams/groups/:groupId/members`
 
 Add team members to a billing group. Users must already be members of your team and not currently assigned to another group. Rate limited to 20 requests per minute per team.
 
@@ -1842,7 +1892,9 @@ curl -X POST https://api.cursor.com/teams/groups/group_PDSPmvukpYgZEDXsoNirw3CFh
 
 ### Remove Members from Group
 
-/teams/groups/:groupId/members
+DELETE
+
+`/teams/groups/:groupId/members`
 
 Remove team members from a billing group. Removed members are moved to the `Unassigned` group. Rate limited to 20 requests per minute per team.
 
@@ -1912,7 +1964,9 @@ For org-wide reads and bulk toggles across linked teams, see the [Organization A
 
 ### Get Model Access Configuration
 
-/teams/model-access/configuration
+GET
+
+`/teams/model-access/configuration`
 
 Return whether the team has a custom model-access policy and the defaults for newly seen providers and models.
 
@@ -1952,7 +2006,9 @@ curl -X GET https://api.cursor.com/teams/model-access/configuration \
 
 ### Update Model Access Configuration
 
-/teams/model-access/configuration
+PUT
+
+`/teams/model-access/configuration`
 
 Create a custom policy, update defaults, or return the team to unrestricted.
 
@@ -2020,7 +2076,9 @@ curl -X PUT https://api.cursor.com/teams/model-access/configuration \
 
 ### List Model Access Providers
 
-/teams/model-access/providers
+GET
+
+`/teams/model-access/providers`
 
 List catalog providers and models with resolved enabled flags and per-model `parameters`. Returns **409** when the team does not have a custom policy.
 
@@ -2114,7 +2172,9 @@ curl -X GET https://api.cursor.com/teams/model-access/providers \
 
 ### Update Model Access Provider
 
-/teams/model-access/providers/:provider
+PUT
+
+`/teams/model-access/providers/:provider`
 
 Enable or disable a provider. Returns **409** when the team is still `unrestricted` or `legacy`.
 
@@ -2137,7 +2197,9 @@ curl -X PUT https://api.cursor.com/teams/model-access/providers/openai \
 
 ### List Models for a Provider
 
-/teams/model-access/providers/:provider/models
+GET
+
+`/teams/model-access/providers/:provider/models`
 
 List models for one provider with resolved enabled flags and per-model `parameters`. The parameter fields match the [providers response](https://cursor.com/docs/account/teams/admin-api.md#list-model-access-providers). Returns **409** when the team does not have a custom policy.
 
@@ -2154,7 +2216,9 @@ curl -X GET https://api.cursor.com/teams/model-access/providers/anthropic/models
 
 ### Update Model Access Model
 
-/teams/model-access/providers/:provider/models/:model
+PUT
+
+`/teams/model-access/providers/:provider/models/:model`
 
 Enable or disable a single model, and optionally set per-model parameter restrictions and defaults. Returns **409** when the team is still `unrestricted` or `legacy`.
 
@@ -2275,7 +2339,9 @@ Enable Grok Bot and manage capabilities, Enforce Auto-Review, group access, netw
 
 ### Enable Grok Bot
 
-/grok-bot/enable
+POST
+
+`/grok-bot/enable`
 
 Enable Grok Bot for the team. The first enable on an eligible Enterprise team starts the trial. Returns 204 No Content on success.
 
@@ -2292,7 +2358,9 @@ curl -X POST https://api.cursor.com/grok-bot/enable \
 
 ### Disable Grok Bot
 
-/grok-bot/disable
+POST
+
+`/grok-bot/disable`
 
 Disable Grok Bot for the team. Members lose access; their computers are not deleted. Returns **403** on Teams plans.
 
@@ -2309,7 +2377,9 @@ curl -X POST https://api.cursor.com/grok-bot/disable \
 
 ### Get Grok Bot Capabilities
 
-/grok-bot/capabilities
+GET
+
+`/grok-bot/capabilities`
 
 Return the team's Grok Bot capabilities.
 
@@ -2359,7 +2429,9 @@ curl -X GET https://api.cursor.com/grok-bot/capabilities \
 
 ### Update Grok Bot Capabilities
 
-/grok-bot/capabilities
+PATCH
+
+`/grok-bot/capabilities`
 
 Update Grok Bot capabilities. Omitted fields stay unchanged. Returns **403** when a field is not available to the team.
 
@@ -2413,7 +2485,9 @@ curl -X PATCH https://api.cursor.com/grok-bot/capabilities \
 
 ### Get Enforce Auto-Review
 
-/grok-bot/auto-review
+GET
+
+`/grok-bot/auto-review`
 
 Return the team's Enforce Auto-Review policy.
 
@@ -2446,7 +2520,9 @@ curl -X GET https://api.cursor.com/grok-bot/auto-review \
 
 ### Replace Enforce Auto-Review
 
-/grok-bot/auto-review
+PUT
+
+`/grok-bot/auto-review`
 
 Replace the team's Enforce Auto-Review policy. Returns **403** when Enforce Auto-Review is not available to the team.
 
@@ -2504,7 +2580,9 @@ curl -X PUT https://api.cursor.com/grok-bot/auto-review \
 
 ### Get Grok Bot Access
 
-/grok-bot/access
+GET
+
+`/grok-bot/access`
 
 Return who on the team can use Grok Bot.
 
@@ -2539,7 +2617,9 @@ curl -X GET https://api.cursor.com/grok-bot/access \
 
 ### Update Grok Bot Access
 
-/grok-bot/access
+PUT
+
+`/grok-bot/access`
 
 Set who on the team can use Grok Bot. Returns **403** when group access is not available to the team.
 
@@ -2581,7 +2661,9 @@ curl -X PUT https://api.cursor.com/grok-bot/access \
 
 ### Get Grok Bot Network Policy
 
-/grok-bot/network
+GET
+
+`/grok-bot/network`
 
 Return the team's Grok Bot network policy.
 
@@ -2616,7 +2698,9 @@ curl -X GET https://api.cursor.com/grok-bot/network \
 
 ### Replace Grok Bot Network Policy
 
-/grok-bot/network
+PUT
+
+`/grok-bot/network`
 
 Replace the team's Grok Bot network policy. Returns **403** on Teams plans.
 
@@ -2664,7 +2748,9 @@ curl -X PUT https://api.cursor.com/grok-bot/network \
 
 ### List Grok Bot Team Rules
 
-/grok-bot/team-rules
+GET
+
+`/grok-bot/team-rules`
 
 List Grok Bot team rules, newest first.
 
@@ -2704,7 +2790,9 @@ curl -X GET "https://api.cursor.com/grok-bot/team-rules?limit=50" \
 
 ### Create Grok Bot Team Rule
 
-/grok-bot/team-rules
+POST
+
+`/grok-bot/team-rules`
 
 Create a Grok Bot team rule. A team can store up to 50 Grok Bot rules. Returns **201**.
 
@@ -2751,7 +2839,9 @@ curl -X POST https://api.cursor.com/grok-bot/team-rules \
 
 ### Update Grok Bot Team Rule
 
-/grok-bot/team-rules/:id
+PATCH
+
+`/grok-bot/team-rules/:id`
 
 Update a Grok Bot team rule. Returns **404** when the rule does not exist.
 
@@ -2802,7 +2892,9 @@ curl -X PATCH https://api.cursor.com/grok-bot/team-rules/rule_PDSPmvukpYgZEDXsoN
 
 ### Delete Grok Bot Team Rule
 
-/grok-bot/team-rules/:id
+DELETE
+
+`/grok-bot/team-rules/:id`
 
 Delete a Grok Bot team rule. Returns 204 No Content on success.
 
@@ -2825,7 +2917,9 @@ curl -X DELETE https://api.cursor.com/grok-bot/team-rules/rule_PDSPmvukpYgZEDXso
 
 ### List Grok Bot Setup Manifests
 
-/grok-bot/setup-manifests
+GET
+
+`/grok-bot/setup-manifests`
 
 List Grok Bot setup manifests, ordered by `id`.
 
@@ -2863,7 +2957,9 @@ curl -X GET "https://api.cursor.com/grok-bot/setup-manifests?limit=50" \
 
 ### Upsert Grok Bot Setup Manifest
 
-/grok-bot/setup-manifests/:manifestId
+PUT
+
+`/grok-bot/setup-manifests/:manifestId`
 
 Create or replace a setup manifest. A team can store up to 100 manifests. Returns **409** when the manifest changed during the request.
 
@@ -2909,7 +3005,9 @@ curl -X PUT https://api.cursor.com/grok-bot/setup-manifests/toolchain \
 
 ### Delete Grok Bot Setup Manifest
 
-/grok-bot/setup-manifests/:manifestId
+DELETE
+
+`/grok-bot/setup-manifests/:manifestId`
 
 Delete a setup manifest. Returns 204 No Content on success.
 
