@@ -21,14 +21,14 @@
     "account/organizations/organization-admin-api.md": {
       "original_url": "https://cursor.com/docs/account/organizations/organization-admin-api",
       "original_md_url": "https://cursor.com/docs/account/organizations/organization-admin-api.md",
-      "hash": "e83d8d5bc4ae59fb0fbba5c27ecfc8feda5fb5cd99f74ee0b07b98bc962aa5f9",
-      "last_updated": "2026-09-28T03:04:29.645009"
+      "hash": "3333bde1e146d878c8db836a022b2e406b9b0ac6e01b19091b73cb67a1c09e9f",
+      "last_updated": "2026-09-29T17:29:46.459953"
     },
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "c343f7113017f71ee481421f606c4bddd413ee496b9b11bc4d0a66d769b1e41b",
-      "last_updated": "2026-09-28T03:04:29.645605"
+      "hash": "d6cf7e1dd3314a1b28f4ac1f699c255c0fd0b6acbff5c0d03cfb7b0837325cd3",
+      "last_updated": "2026-09-29T17:29:46.460551"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -183,8 +183,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "f312d5eb52058da59c2edee8120bfb2f15ba085407433528380ea0a2c6e0f5a0",
-      "last_updated": "2026-09-29T09:24:39.437788"
+      "hash": "41b78a96ca873f849e6d90fd8545739be1def026e62b558a5e33057420f902f3",
+      "last_updated": "2026-09-29T17:29:46.461701"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -465,8 +465,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "07cf1208c69ea0de391f02e4cdcc398fd4e04c597809116ca88cd793e272e8e8",
-      "last_updated": "2026-09-22T02:52:16.628979"
+      "hash": "c73242e6c9b520b257e8c6093d6169ad9b13467112e0267d8208b89da81e8231",
+      "last_updated": "2026-09-29T17:29:46.462996"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -1574,8 +1574,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-29T09:24:39.444117",
-    "fetch_duration_seconds": 3.746508,
+    "last_fetch_completed": "2026-09-29T17:29:46.467241",
+    "fetch_duration_seconds": 3.04349,
     "total_pages_discovered": 262,
     "pages_fetched_successfully": 262,
     "pages_failed": 0,
@@ -1588,7 +1588,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-29T09:24:39.444159",
+  "last_updated": "2026-09-29T17:29:46.467257",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
