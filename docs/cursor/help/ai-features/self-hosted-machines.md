@@ -145,11 +145,11 @@ Yes. Any-repo team pools decouple source control from the team pool. One team po
 agent worker --pool my-pool --worker-dir "$HOME/cursor-sandboxes/default" start
 ```
 
-Pass `--clone-git-repos` so the worker clones repos on claim. In the Cursor composer environment picker, select the team pool under **Any repo**.
+Pass `--clone-git-repos` so the worker clones repos on claim. In the Cursor composer environment picker, select the team pool under **Any repo**. With the API, set `env.name` to the team pool in [`POST /v1/agents`](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent). You can list several repos in `repos`, and the worker clones each one.
 
 Without `--clone-git-repos`, an any-repo pool can use an [always-applied workspace rule](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#any-repo-pools) to map task subjects to repositories and clone them with worker credentials.
 
-In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves. Add `channel` (`@Cursor pool set <name> channel`) to set a [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool) that does the same for one channel.
+In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves. Any team member can run `@Cursor pool set <name> channel` to set a [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool) that does the same for one channel.
 
 This setup only applies to any-repo pools. Repo-bound pools route requests to workers that already have matching checkouts.
 
@@ -225,7 +225,7 @@ Self-hosted runs use two layers: Cursor routing (which worker serves a request) 
 **Git access on the worker**
 
 - **Existing checkouts** (My Machines or repo-backed team pools): The agent uses git credentials already on the machine, such as SSH keys or a personal access token in your credential helper. Grant each worker only the repo access it needs.
-- **Any-repo team pools with `--clone-git-repos`**: The worker clones on claim using a short-lived GitHub token minted for the user who started the run. A team admin must enable GitHub token minting for team pool workers, and the requesting user must have access to that repository in GitHub.
+- **Any-repo team pools with `--clone-git-repos`**: The worker clones on claim using a short-lived GitHub token minted for the user who started the run. The token covers every repo in the request. A team admin must enable GitHub token minting for team pool workers, and the requesting user must have access to each of those repositories in GitHub.
 - **Private or self-hosted GitLab**: Authenticate git on the worker with a local PAT or SSH key. See [How do I connect private or self-hosted GitLab?](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-connect-private-or-self-hosted-gitlab).
 
 **When git fails but the worker is connected**

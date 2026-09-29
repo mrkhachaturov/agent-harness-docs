@@ -6,13 +6,13 @@ Open computer controls from **Settings > Updates**. You can also get **Recover**
 
 ## What do Update, Recover, and Reset each do?
 
-| Action      | What it does                                                                                                     | What it keeps                                    | What it removes                                                              |
-| ----------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------------ | ---------------------------------------------------------------------------- |
-| **Update**  | Moves the computer to the latest version. You can update now or schedule it for later.                           | Bots, files, and logins that have already synced | Installed apps and packages. A turn that cannot pause is discarded.          |
-| **Recover** | Recreates the computer and reconnects.                                                                           | Bots, files, and logins                          | Installed apps and packages                                                  |
-| **Reset**   | Restores the last saved snapshot and starts a fresh computer on the latest version. Running work is interrupted. | Only what is already in that snapshot            | Recent bots and files that have not synced yet. Installed apps and packages. |
+| Action      | What it does                                                                                                                                                                                                                                                          | What it keeps                                                                                    | What it removes                                                                                      |
+| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Update**  | Moves the computer to the latest version. Some updates only refresh Grok Bot's software. Others replace the whole computer, and you may be able to schedule those for later. The text under **Update** in **Settings** > **Updates** tells you which kind is waiting. | Software update: everything, including installed apps. Computer update: Bots, files, and logins. | Software update: nothing. Computer update: installed apps and packages.                              |
+| **Recover** | Saves what it can, then builds a new computer on the latest version from your saved data. Running work is interrupted.                                                                                                                                                | Bots, files, and logins that were saved                                                          | Installed apps and packages. Very recent changes, if the computer could not be reached to save them. |
+| **Reset**   | Builds a new computer on the latest version from your last saved data. Running work is interrupted.                                                                                                                                                                   | Bots, files, and logins that were saved                                                          | Installed apps and packages. Very recent changes, if the computer could not be reached to save them. |
 
-**Reset** is the only one that can drop recent bots and files. If bots recently disappeared, or saving failed, cancel **Reset** and [contact support](https://cursor.com/help/grok-bot/get-help.md).
+**Recover** and **Reset** both rebuild from your last saved data. If the computer can't be reached to save first, very recent changes may be lost. If Bots recently disappeared, or saving failed, [contact support](https://cursor.com/help/grok-bot/get-help.md) before you use either one.
 
 ## Which should I try first?
 
@@ -20,7 +20,7 @@ Open computer controls from **Settings > Updates**. You can also get **Recover**
 2. Fully quit Grok Bot and reopen it. On Mac, choose **Quit** from the menu bar, not just close the window.
 3. **Update** the computer from **Settings > Updates** if an update is offered.
 4. **Recover** if it still cannot reconnect, or if an update looks stuck and **Recover computer** is shown. On a slow update, **Keep waiting** is the safe default.
-5. **Reset** only after those steps, and only if you can lose unsynced work.
+5. **Reset** only after those steps. Like **Recover**, it can lose very recent changes if the computer can't be reached to save them.
 
 Do not start a second Update or Reset while one is already running. Repeated resets can interrupt a restore that is still finishing.
 
@@ -51,13 +51,15 @@ Grok Bot keeps a durable copy of synced computer data. Reopening the computer re
 
 Files that exist only on your Mac or Windows machine are not covered. Keep your own backups for those.
 
-| Data type                            | Recoverable?                                                                          |
-| ------------------------------------ | ------------------------------------------------------------------------------------- |
-| Agent conversation history           | Yes. Stored outside the computer.                                                     |
-| Computer files already synced        | Yes. Restored when the computer reopens, or from the last snapshot on **Reset**.      |
-| Recent bots and files not yet synced | No, if you **Reset**. **Recover** and **Update** keep synced bots, files, and logins. |
-| Installed apps and packages          | No. **Update**, **Recover**, and **Reset** all remove them.                           |
-| Files on your Mac or Windows machine | No. Use your own backups.                                                             |
+| Data type                             | Recoverable?                                                                                                                                                                 |
+| ------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Agent conversation history            | Yes. Stored outside the computer.                                                                                                                                            |
+| Bots, files, and logins already saved | Yes. Restored after **Update**, **Recover**, and **Reset**.                                                                                                                  |
+| Recent bots and files not yet saved   | **Update** saves first, and does not run if it can't. **Recover** and **Reset** save first when they can reach the computer. If they can't, very recent changes may be lost. |
+| Installed apps and packages           | Kept by a software update. Removed by a computer update, **Recover**, and **Reset**.                                                                                         |
+| Files on your Mac or Windows machine  | No. Use your own backups.                                                                                                                                                    |
+
+Project folders such as `node_modules` or a Python virtual environment are not saved. Reinstall them after a computer update, **Recover**, or **Reset**.
 
 ## My chats or bots look missing. Were they deleted?
 
@@ -70,7 +72,7 @@ Often no. Chats are stored separately from the computer, so a computer problem d
 
 A disk warning is not data loss. **Computer is low on disk space** or **Computer is critically low on disk space** means Disk Saver is auditing usage and will propose safe cleanup. Nothing is deleted without confirmation. **Disk Saver** is a Bot in the sidebar. Choose **Go to Disk Saver** to review what it proposes. Declining leaves those files in place. Cleanup applies only to computer files you confirm, not to chats.
 
-**Reset** is different. It can drop recent bots and files that have not synced. Don't **Reset** to look for chats that seem missing. If they are still missing on every device after the checks above, [contact support](https://cursor.com/help/grok-bot/get-help.md). Include your account email, the Bot name, and a screenshot of the sidebar.
+**Recover** and **Reset** are different. Both can lose very recent changes if the computer can't be reached to save them. Don't use either one to look for chats that seem missing. If they are still missing on every device after the checks above, [contact support](https://cursor.com/help/grok-bot/get-help.md). Include your account email, the Bot name, and a screenshot of the sidebar.
 
 ## When should I contact support?
 

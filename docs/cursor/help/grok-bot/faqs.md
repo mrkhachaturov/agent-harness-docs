@@ -37,7 +37,7 @@ Check [status.cursor.com](https://status.cursor.com) and look at the **Grok Bot*
 If the status page shows a Grok Bot incident:
 
 - Wait for the incident to be resolved. The status page posts updates.
-- Don't **Reset** the computer or reinstall the app. Neither fixes a service problem, and **Reset** can lose recent unsynced work.
+- Don't **Reset** the computer or reinstall the app. Neither fixes a service problem, and **Reset** can lose very recent changes if the computer can't be reached to save them.
 - When the incident is resolved, send your message again.
 
 If the status page shows no incident and the Bot says **Bot failed to respond** or **Model provider is overloaded**, wait a moment and send the message again. If the Bot still doesn't reply, fully quit and reopen Grok Bot, then follow [How do I troubleshoot Grok Bot computer, routine, connector, and startup problems?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-troubleshoot-grok-bot-computer-routine-connector-and-startup-problems) If it keeps happening, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the request ID.
@@ -86,11 +86,11 @@ Some sites block traffic from cloud computers. When that happens, the Bot hands 
 
 ## My chats or Bots are missing.
 
-They are usually not deleted. Fully quit and reopen. Check another device on the same account. Open **Hidden Bots**. Make sure you are on the same Cursor account. Do not use **Reset** to look for them. See [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).
+They are usually not deleted. Fully quit and reopen. Check another device on the same account. Open **Hidden Bots**. Make sure you are on the same Cursor account. Don't use **Recover** or **Reset** to look for them. See [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).
 
 ## The computer says Reconnecting or "Couldn't Reach Grok Bot's Computer."
 
-Wait and choose **Retry**. Then fully quit and reopen. Then **Update**, then **Recover**. Use **Reset** only last, because it can lose recent unsynced work. See [Which should I try first?](https://cursor.com/help/grok-bot/computer-recovery.md#which-should-i-try-first).
+Wait and choose **Retry**. Then fully quit and reopen. Then **Update**, then **Recover**. Use **Reset** only last. Like **Recover**, it can lose very recent changes if the computer can't be reached to save them. See [Which should I try first?](https://cursor.com/help/grok-bot/computer-recovery.md#which-should-i-try-first).
 
 ## What does the low disk space warning mean?
 

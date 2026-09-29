@@ -26,7 +26,7 @@ If save fails, the form says **The secret was not saved. Try again.** If the lis
 
 ## Did Update delete my secrets?
 
-**Update**, **Recover**, and **Reset** remove installed apps and packages. A secret you typed into a file, a shell profile, or an installed tool on the computer can disappear with that. That is separate from **Secrets**.
+**Recover**, **Reset**, and computer updates remove installed apps and packages. A secret you typed into a file, a shell profile, or an installed tool on the computer can disappear with that. That is separate from **Secrets**.
 
 If the name is still listed under **Secrets**, the value is still stored. Shell not printing it does not mean the secret was wiped. See [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md) for what Update, Recover, and Reset keep.
 
