@@ -183,8 +183,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "26b8a590ec1e15130ab78d2eebbbe4ce327a4cfc16105551500c7cee30b0a768",
-      "last_updated": "2026-09-29T21:47:10.828319"
+      "hash": "c569316824f9dd7dfa8a0123fcd3c530641dc05d972b2e8029434fdcebe03d30",
+      "last_updated": "2026-09-30T17:26:49.613860"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -195,8 +195,8 @@
     "api/origin/migrations.md": {
       "original_url": "https://cursor.com/docs/api/origin/migrations",
       "original_md_url": "https://cursor.com/docs/api/origin/migrations.md",
-      "hash": "f63268b3396a6747e65507748bf1ca44bcb5d82de79b90db1ab7d1d6742ea3c8",
-      "last_updated": "2026-09-28T03:04:29.648183"
+      "hash": "dcbc061883d76fe937c35546ba9b00c48e45d96d7346342e01c8a201dfed3a4f",
+      "last_updated": "2026-09-30T17:26:49.614206"
     },
     "approval-agents.md": {
       "original_url": "https://cursor.com/docs/approval-agents",
@@ -1221,8 +1221,8 @@
     "help/troubleshooting/install-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/install-issues",
       "original_md_url": "https://cursor.com/help/troubleshooting/install-issues.md",
-      "hash": "9e242e02ef9d575fab591fae71fdbb0b950f3897900cfdbbcc59d62398236f96",
-      "last_updated": "2026-06-29T22:53:03.570927"
+      "hash": "67378cef13fd86d7160e1d3a79b9b6a9e3e5fb34590922b2eab39a6cff36f4f9",
+      "last_updated": "2026-09-30T17:26:49.616154"
     },
     "help/troubleshooting/network.md": {
       "original_url": "https://cursor.com/help/troubleshooting/network",
@@ -1521,8 +1521,8 @@
     "rollouts.md": {
       "original_url": "https://cursor.com/docs/rollouts",
       "original_md_url": "https://cursor.com/docs/rollouts.md",
-      "hash": "2770859cb756fc51913cfb247881e6a802aa6adcd3d963f655545ea7d6bb1828",
-      "last_updated": "2026-09-29T21:47:10.833075"
+      "hash": "701d4a7b783e1af9cafed40ebd070a48aeac94fed186b9bc2170c48918117c2b",
+      "last_updated": "2026-09-30T17:26:49.616922"
     },
     "rules.md": {
       "original_url": "https://cursor.com/docs/rules",
@@ -1574,8 +1574,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-30T11:46:47.002286",
-    "fetch_duration_seconds": 2.809363,
+    "last_fetch_completed": "2026-09-30T17:26:49.620108",
+    "fetch_duration_seconds": 2.41517,
     "total_pages_discovered": 262,
     "pages_fetched_successfully": 262,
     "pages_failed": 0,
@@ -1588,7 +1588,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-09-30T11:46:47.002296",
+  "last_updated": "2026-09-30T17:26:49.620119",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
