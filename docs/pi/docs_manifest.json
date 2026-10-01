@@ -81,8 +81,8 @@
     "mcp.md": {
       "upstream_path": "packages/coding-agent/docs/mcp.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/mcp.md",
-      "hash": "34cb3e0a8de74d75b2689f67ebec9933a1f40c26dab74a0b4c1d85b75ba0806e",
-      "last_updated": "2026-09-30T17:26:58.597718"
+      "hash": "e69ed24efca5f57f313e6ddca639bddc54653db89b81ba5aa81d50d21cc034e8",
+      "last_updated": "2026-10-01T03:36:57.851626"
     },
     "message-types.md": {
       "upstream_path": "packages/coding-agent/docs/message-types.md",
@@ -236,8 +236,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-09-30T21:48:08.088489",
-    "fetch_duration_seconds": 1.572959,
+    "last_fetch_completed": "2026-10-01T03:36:57.854419",
+    "fetch_duration_seconds": 0.612695,
     "total_pages_discovered": 39,
     "pages_fetched_successfully": 39,
     "pages_failed": 0,
@@ -248,7 +248,7 @@
     "total_files": 39,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-09-30T21:48:08.088501",
+  "last_updated": "2026-10-01T03:36:57.854430",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
