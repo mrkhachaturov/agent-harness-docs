@@ -123,8 +123,8 @@
     "agent/projects.md": {
       "original_url": "https://cursor.com/docs/agent/projects",
       "original_md_url": "https://cursor.com/docs/agent/projects.md",
-      "hash": "a3398508654f530b91642cfd2dd7e7ccd1d22eaffd6229a67398603b53aa27ad",
-      "last_updated": "2026-09-16T02:52:23.560812"
+      "hash": "7573eccd51d17e43b7e272595ad38e6b3ffd9cf0c5b8d4a9fe75ada14cd1130c",
+      "last_updated": "2026-10-01T20:05:06.651983"
     },
     "agent/prompting.md": {
       "original_url": "https://cursor.com/docs/agent/prompting",
@@ -183,8 +183,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "c569316824f9dd7dfa8a0123fcd3c530641dc05d972b2e8029434fdcebe03d30",
-      "last_updated": "2026-09-30T17:26:49.613860"
+      "hash": "98cc84b378f46430d83173392603ea6453a864e9e9d57e745ab662a9328101e7",
+      "last_updated": "2026-10-01T20:05:06.652972"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -195,14 +195,14 @@
     "api/origin/mcp.md": {
       "original_url": "https://cursor.com/docs/api/origin/mcp",
       "original_md_url": "https://cursor.com/docs/api/origin/mcp.md",
-      "hash": "4b23cc08e1bc325b7f10f8ef579e4b53443c27654580b976a9ea0adc2ed4e959",
-      "last_updated": "2026-10-01T03:36:50.606587"
+      "hash": "a6adbf1f0b8dd7116ac960d2a0396477f2a2390c2e918ed78033cbaa61a9a6e0",
+      "last_updated": "2026-10-01T20:05:06.653279"
     },
     "api/origin/mcp/tools.md": {
       "original_url": "https://cursor.com/docs/api/origin/mcp/tools",
       "original_md_url": "https://cursor.com/docs/api/origin/mcp/tools.md",
-      "hash": "e54d33bf46a565adb766973ab8243ab9b8953e3b046ac1ce6351a08d1e7d77e7",
-      "last_updated": "2026-10-01T03:36:50.606930"
+      "hash": "19588b9b3c275d5a2502866b1388f63643d8b737c741e34ea223e63aebc85f70",
+      "last_updated": "2026-10-01T20:05:06.653802"
     },
     "api/origin/migrations.md": {
       "original_url": "https://cursor.com/docs/api/origin/migrations",
@@ -219,8 +219,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "0943ac0455bdd45a3bb1f3ad08bf424310a9f209195a2d38855f41b957253f62",
-      "last_updated": "2026-09-28T03:04:29.648568"
+      "hash": "c72ba578ddf54bc8ce713ae436cf7ea68a55739f6e63c5a5377fe8030f5ad3c8",
+      "last_updated": "2026-10-01T20:05:06.654225"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -321,8 +321,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "5c4ada38cba5550d5f59fc1fab3c8aafb5b8252fb7e270f40c6449830d10e2c4",
-      "last_updated": "2026-09-29T00:56:53.151661"
+      "hash": "1d8938be56ed2db2fa1d4661313aed63e9423b143f6376a2e225605ae6d8d9cb",
+      "last_updated": "2026-10-01T20:05:06.654915"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -1586,8 +1586,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-01T12:16:01.123026",
-    "fetch_duration_seconds": 4.104899,
+    "last_fetch_completed": "2026-10-01T20:05:06.660735",
+    "fetch_duration_seconds": 2.234399,
     "total_pages_discovered": 264,
     "pages_fetched_successfully": 264,
     "pages_failed": 0,
@@ -1600,7 +1600,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-01T12:16:01.123040",
+  "last_updated": "2026-10-01T20:05:06.660749",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
