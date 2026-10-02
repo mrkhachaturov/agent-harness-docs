@@ -133,9 +133,15 @@ Workers need outbound access to `api2.cursor.sh`, `api2direct.cursor.sh`, and `c
 
 Your source code, build artifacts, secrets, and tool execution stay on your machine. That includes file edits, terminal commands, and network calls the agent makes locally.
 
-Cursor's cloud handles the agent loop: inference requests and planning. Results from tool calls flow back to Cursor for the next inference round, but your raw code and secrets are not stored in Cursor-managed infrastructure.
+Cursor's cloud handles the agent loop: inference requests and planning. Results from tool calls flow back to Cursor for the next inference round, but your raw code and machine-local secrets are not stored in Cursor-managed infrastructure. Cursor stores the dashboard secrets you sync to pool workers with `--sync-dashboard-secrets`, [encrypted at rest](https://cursor.com/docs/cloud-agent/security-network.md#secret-protection) like every Cloud Agent secret.
 
 [Privacy Mode](/data-use) applies the same way it applies to managed Cloud Agents. When enabled, code sent from the worker is not used for training by Cursor or model providers.
+
+## Do Cloud Agent environments work on Self-Hosted Machines?
+
+Partly. A [Cloud Agent environment](https://cursor.com/docs/cloud-agent/setup.md#what-is-a-cloud-agent-environment) is the saved setup a Cursor-hosted agent starts from: repositories, dependencies, secrets, startup commands, and network access. A self-hosted run uses only the environment's repositories. Pool workers started with `--sync-dashboard-secrets` also get team and user secrets once a team admin turns on **Secret sync**.
+
+Other settings, such as install and startup commands, Builds, network access, and environment-scoped secrets, apply only to Cursor-hosted Cloud Agents. Set those up on the machine, in the worker image, or with `sessionStart` hooks. See [Environments on Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted.md#environments-on-self-hosted-machines) for what replaces each setting.
 
 ## Can I use a team pool for any repository without specifying one?
 
@@ -145,13 +151,13 @@ Yes. Any-repo team pools decouple source control from the team pool. One team po
 agent worker --pool my-pool --worker-dir "$HOME/cursor-sandboxes/default" start
 ```
 
-Pass `--clone-git-repos` so the worker clones repos on claim. In the Cursor composer environment picker, select the team pool under **Any repo**. With the API, set `env.name` to the team pool in [`POST /v1/agents`](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent). You can list several repos in `repos`, and the worker clones each one.
+Pass `--clone-git-repos` so the worker clones repos on claim. When you start an agent, pick the team pool under **Any repo**. With the API, set `env.name` to the team pool in [`POST /v1/agents`](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent). You can list several repos in `repos`, and the worker clones each one.
 
 Without `--clone-git-repos`, an any-repo pool can use an [always-applied workspace rule](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#any-repo-pools) to map task subjects to repositories and clone them with worker credentials.
 
 In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves. Any team member can run `@Cursor pool set <name> channel` to set a [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool) that does the same for one channel.
 
-This setup only applies to any-repo pools. Repo-bound pools route requests to workers that already have matching checkouts.
+This setup only applies to any-repo pools. Repo-backed pools route requests to workers that already have matching checkouts.
 
 ## How do I connect private or self-hosted GitLab?
 
