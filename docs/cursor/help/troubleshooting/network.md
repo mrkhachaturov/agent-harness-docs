@@ -21,7 +21,7 @@ If your firewall blocks outbound connections, allowlist these domains:
 - `*.cursorapi.com` (includes `marketplace.cursorapi.com`)
 - `*.cursorvm.com` and `*.*.cursorvm.com` (the Grok Bot hosted computer; both patterns are required)
 
-Starting September 30, sign-in also needs the hosts in [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md).
+Sign-in also needs the hosts in [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md).
 
 See the [network configuration docs](https://cursor.com/docs/enterprise/network-configuration.md) for the full list and connectivity tests. If Grok Bot hangs or fails at computer setup, see [Configure TLS-inspecting proxies](https://cursor.com/docs/grok-bot/proxies.md).
 

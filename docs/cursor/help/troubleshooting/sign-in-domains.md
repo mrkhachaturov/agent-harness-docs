@@ -1,10 +1,10 @@
 # Which domains does Cursor sign-in need?
 
-On September 30, Cursor sign-in moves to accounts.spacex.ai and accounts.x.ai (replacing authenticator.cursor.sh as the sign-in page). Your Cursor app, site, and SSO tiles keep working, and nobody gets logged out.
+Cursor sign-in is moving to accounts.spacex.ai and accounts.x.ai (replacing authenticator.cursor.sh as the sign-in page). Your Cursor app, site, and SSO tiles keep working, and nobody gets logged out.
 
-If your company uses a firewall or proxy allowlist (for example Zscaler), add the domains below. You have until October 30: if accounts.spacex.ai or accounts.x.ai are blocked on your network, sign-in falls back to the old page until then, so nobody is locked out on September 30.
+If your company uses a firewall or proxy allowlist (for example Zscaler), add the domains below. If accounts.spacex.ai or accounts.x.ai are blocked on your network, sign-in falls back to the old page for now, so nobody is locked out.
 
-We recommend adding the domains as soon as you can so your users get the new sign-in page from day one. After October 30, the fallback is retired and sign-in requires accounts.spacex.ai and accounts.x.ai.
+We recommend adding the domains as soon as you can so your users get the new sign-in page from day one. The fallback is temporary. Once it is retired on October 30, sign-in requires accounts.spacex.ai and accounts.x.ai.
 
 If your team has bookmarks or internal docs that point to authenticator.cursor.sh, update them to accounts.spacex.ai and accounts.x.ai.
 
@@ -46,7 +46,7 @@ These are unchanged:
 - SSO IdP config (Okta tiles, ACS URLs, and similar) does not need to change for this change
 - Cursor app, website, and API hosts (cursor.com, api\*.cursor.com) are not changing
 
-If login fails after Sep 30 and your network uses an allowlist, have IT add the domains above, then retry from accounts.spacex.ai or accounts.x.ai, or your existing IDP / authenticator.cursor.sh.
+If login fails and your network uses an allowlist, have IT add the domains above, then retry from accounts.spacex.ai or accounts.x.ai, or your existing IDP / authenticator.cursor.sh.
 
 ## Related
 
