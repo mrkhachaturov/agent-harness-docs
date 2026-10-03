@@ -43,7 +43,7 @@ Run `agent worker debug` for a preflight report. See [Self-Hosted Machines](http
 
 ## How do I check if my team pool is at capacity or why an agent run failed to start?
 
-Check the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) or call `GET /v0/private-workers/summary`. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-check-if-my-team-pool-is-at-capacity) for failure modes and scaling guidance.
+Check the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted) or call `GET /v0/private-workers/summary`. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-check-if-my-team-pool-is-at-capacity) for failure modes and scaling guidance.
 
 ## What if a Cloud Agent web attachment is too large?
 

@@ -31,7 +31,7 @@ agent worker --pool start
 
 Team pool workers need a [service account API key](https://cursor.com/docs/account/enterprise/service-accounts.md). Personal API keys register a My Machines worker, not a team pool worker.
 
-Team admins must enable self-hosted workers in the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) before members can connect team pool workers.
+Team admins must enable self-hosted workers in the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted) before members can connect team pool workers.
 
 Keep the process running. The worker connects outbound over HTTPS. No inbound ports or VPN are required.
 
@@ -104,7 +104,7 @@ Team Pools require an Enterprise plan and a [service account API key](https://cu
 
 ## How do admins enable or require Self-Hosted Machines?
 
-Team admins open the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) and go to **Self-Hosted** settings.
+Team admins open the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted) and go to **Self-Hosted** settings.
 
 - **Allow Self-Hosted Machines**: members can opt in to runs on machines they connect. Without opt-in, Cloud Agents use Cursor's managed infrastructure.
 - **Require Self-Hosted Machines**: every Cloud Agent session must use a self-hosted machine.
@@ -195,7 +195,7 @@ Yes, with some differences from managed Cloud Agents.
 
 Start with these basics:
 
-1. **Check the dashboard.** Open the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents) and confirm workers show as connected, idle, or in use under **My Machines** or team pool details.
+1. **Check the dashboard.** Open the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted) and confirm workers show as connected, idle, or in use under **My Machines** or team pool details.
 2. **Run diagnostics.** Run `agent worker debug` for worker preflight checks (add `--json` for machine-readable output). The report covers auth, connectivity, routing, and backend visibility.
 3. **Worker missing from the UI.** If the worker process is running locally but does not appear in Cursor, the cause is usually outbound connectivity. Confirm the machine can reach `api2.cursor.sh` and `api2direct.cursor.sh` over HTTPS. See [Do Self-Hosted Machines require inbound network access or a VPN?](https://cursor.com/help/ai-features/self-hosted-machines.md#do-self-hosted-machines-require-inbound-network-access-or-a-vpn).
 4. **Team pool controller issues.** The built-in [worker controller](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#worker-controller) is new. Treat controller and autoscaling setups as early deployments and document fixes as patterns emerge on your team.
@@ -249,7 +249,7 @@ Cursor never widens repository access beyond what the triggering user already ha
 
 ## How do I check if my team pool is at capacity?
 
-Check worker capacity in the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted-agents). Team pool details and **My Machines** list workers by status.
+Check worker capacity in the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#self-hosted). Team pool details and **My Machines** list workers by status.
 
 For programmatic checks, call the summary API:
 
