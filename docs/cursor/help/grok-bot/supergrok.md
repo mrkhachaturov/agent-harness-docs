@@ -59,11 +59,11 @@ These do not qualify:
 
 No. A SuperGrok or X Premium+ link is permanent once created. You can't unlink a Grok or X account from a Cursor account, and you can't move a link to a different Cursor account. Support can't unlink or move it either.
 
-Sign in with the correct Cursor account before you select **Link Grok Account** or **Link X Account**. If a link ended up on the wrong Cursor account, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the emails on your Cursor accounts so we can confirm which one holds the grant. To use the grant, sign into Grok Bot with that account.
+Sign in with the correct Cursor account before you select **Link Grok Account** or **Link X Account**. To use the grant, sign into Grok Bot with the Cursor account that holds the link.
 
 ## Why am I still on the plan screen after linking?
 
-Confirm you're signed in with the same Cursor account you linked. If access still doesn't appear, [contact support](https://cursor.com/help/grok-bot/get-help.md).
+Confirm you're signed in with the same Cursor account you linked.
 
 ## Why don't I see a Link Grok Account option after I've already logged in?
 
@@ -78,7 +78,7 @@ If you still don't see **Link Grok Account** or **Link X Account**, confirm you'
 
 ## What if my SuperGrok access, email, or usage looks wrong after linking?
 
-If linking didn't grant Grok Bot usage, applied to the wrong account, or your usage didn't reset, work through these checks first.
+If linking didn't grant Grok Bot usage, applied to the wrong account, or your usage didn't reset, work through these checks.
 
 **Confirm the basics:**
 
@@ -88,14 +88,12 @@ If linking didn't grant Grok Bot usage, applied to the wrong account, or your us
 
 **Common failure modes:**
 
-| What you're seeing                              | What to try                                                                                                                                                                                                                                                                                                                                                                                                      |
-| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Linking fails partway through sign-in           | Fully quit Grok Bot (on Mac, choose **Quit** from the menu bar), reopen, and link again from the **Get Started** screen.                                                                                                                                                                                                                                                                                         |
-| Access applied to the wrong Cursor account      | A SuperGrok or X Premium+ link is permanent. Neither you nor support can unlink it or move it to a different Cursor account. [Contact support](https://cursor.com/help/grok-bot/get-help.md) with the Cursor account email you expected to hold the grant and any other Cursor account email you may have signed in with, so we can confirm which one holds the link. Then sign into Grok Bot with that account. |
-| Usage didn't reset after linking                | Confirm your SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+ subscription is active, then allow up to 24 hours after a successful link for usage to refresh.                                                                                                                                                                                                                                           |
-| Still on the old SuperGrok tier after upgrading | Allow up to 24 hours for **Weekly usage** to move to the new tier. Do not link again. If it is still the old tier after 24 hours, [contact support](https://cursor.com/help/grok-bot/get-help.md) with a screenshot of **Weekly usage**.                                                                                                                                                                         |
-
-If your access, email, or usage still looks wrong, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the email on your Cursor account, the Grok or X account email you linked, and a screenshot of your plan screen.
+| What you're seeing                              | What to try                                                                                                                                                                                  |
+| ----------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Linking fails partway through sign-in           | Fully quit Grok Bot (on Mac, choose **Quit** from the menu bar), reopen, and link again from the **Get Started** screen.                                                                     |
+| Access applied to the wrong Cursor account      | A SuperGrok or X Premium+ link is permanent. Neither you nor support can unlink it or move it to a different Cursor account. Sign into Grok Bot with the Cursor account that holds the link. |
+| Usage didn't reset after linking                | Confirm your SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+ subscription is active, then allow up to 24 hours after a successful link for usage to refresh.                       |
+| Still on the old SuperGrok tier after upgrading | Allow up to 24 hours for **Weekly usage** to move to the new tier. Do not link again.                                                                                                        |
 
 ## Related
 
