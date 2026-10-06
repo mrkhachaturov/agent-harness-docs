@@ -1001,7 +1001,7 @@ Display name, up to 255 characters. It must differ from the names of the owner's
 
 `repos` array (required)
 
-Repositories for the environment. Each entry has a `url` (for example, `https://github.com/your-org/your-repo`). Maximum 50 repositories. Send an empty array for an environment without repositories. A repository Cursor can't reach through your source control integration returns `400 repository_access`.
+Repositories for the environment. Each entry has a `url` (for example, `https://github.com/your-org/your-repo`). Maximum 100 repositories. Send an empty array for an environment without repositories. A repository Cursor can't reach through your source control integration returns `400 repository_access`.
 
 `environmentJson` string (required)
 
@@ -1833,13 +1833,15 @@ POST
 
 `/v0/private-workers/claims/{id}/release`
 
-Drop the long-term claim that binds an agent to a self-hosted worker. After release, Cursor stops preferring that machine for the agent.
+Release the claim that binds an agent to its self-hosted worker so the worker can serve another agent.
 
-The claim is a routing suggestion, not live process state. Release does not check whether the worker is connected. A waiting follow-up returns to the pool queue at the next scheduling point. A connected worker finishes its current turn undisturbed. A replacement worker can claim the same agent immediately after release.
+When no turn is using the worker, release frees it immediately. Cursor clears the claim and the agent's worker assignment together, returns a waiting follow-up to the pool queue as an unclaimed request, and tells the worker CLI to exit. The agent's next turn runs on another worker. A replacement worker can claim the agent as soon as release returns.
+
+While a turn is using the worker, release returns HTTP `400` and changes nothing. A turn is using the worker when the agent's [status](https://cursor.com/docs/cloud-agent/api/endpoints.md#get-an-agent) is `ACTIVE`, the worker is connected, and the claim isn't waiting for a [hibernated](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hibernation) machine to wake. If Cursor can't read the worker's connection state, it counts the worker as connected. Retry after the turn ends, or [cancel the active run](https://cursor.com/docs/cloud-agent/api/endpoints.md#cancel-a-run) and release again.
 
 A second [Claim A Pending Request](https://cursor.com/docs/cloud-agent/api/endpoints.md#claim-a-pending-request) while a live claim exists is rejected. Release first, then claim a new `workerId`.
 
-`--idle-release-timeout` (env var `CURSOR_WORKER_IDLE_RELEASE_TIMEOUT`) makes the worker CLI exit after idle. This endpoint only drops the routing claim.
+`--idle-release-timeout` (env var `CURSOR_WORKER_IDLE_RELEASE_TIMEOUT`) makes the worker CLI exit on its own after idle.
 
 This endpoint requires a service account API key.
 
@@ -1861,6 +1863,14 @@ curl --request POST \
 {
   "id": "bc-00000000-0000-0000-0000-000000000002",
   "workerId": "pw_123"
+}
+```
+
+HTTP `400` means a turn is using the worker. Nothing changed. Retry after the turn ends:
+
+```json
+{
+  "error": "Worker in use: The agent is mid-turn on this worker; retry after the turn ends, or stop the agent to free the worker now"
 }
 ```
 

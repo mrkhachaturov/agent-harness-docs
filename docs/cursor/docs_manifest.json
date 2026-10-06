@@ -321,8 +321,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "4d55d2ba973de580718740b1352fa13d1c36d1d4dbbb6940196305722903d537",
-      "last_updated": "2026-10-05T21:48:19.323702"
+      "hash": "a9f8d7a5d1cf16b53b11ba5af0317e673ed13274190d9cd83dcb8bbc6a26d1c5",
+      "last_updated": "2026-10-06T04:21:39.534960"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -423,8 +423,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "0bb086f6b0d8a805b70ef27bc06664b543753b80f137cbaedb2cab82832572e5",
-      "last_updated": "2026-10-03T03:21:25.541523"
+      "hash": "eed7d4e90eef602983a9928e9731bcb21a8adda16eff6d6548308d5e89aeec57",
+      "last_updated": "2026-10-06T04:21:39.535734"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -1586,8 +1586,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-05T21:48:19.330243",
-    "fetch_duration_seconds": 4.17454,
+    "last_fetch_completed": "2026-10-06T04:21:39.540760",
+    "fetch_duration_seconds": 3.597645,
     "total_pages_discovered": 264,
     "pages_fetched_successfully": 264,
     "pages_failed": 0,
@@ -1600,7 +1600,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-05T21:48:19.330256",
+  "last_updated": "2026-10-06T04:21:39.540774",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
