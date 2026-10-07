@@ -63,8 +63,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "c76d566f044a01afc69be9eae1979f3a4ac3e5824adff42f24ce9a76808fe92f",
-      "last_updated": "2026-09-29T00:56:53.150334"
+      "hash": "2a72fcbe036591a51929b3fe03e9da4d458604751564e1dfd7b586bd3cc823d9",
+      "last_updated": "2026-10-07T18:18:45.511334"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -201,8 +201,8 @@
     "api/origin/mcp/tools.md": {
       "original_url": "https://cursor.com/docs/api/origin/mcp/tools",
       "original_md_url": "https://cursor.com/docs/api/origin/mcp/tools.md",
-      "hash": "67a1b867c9b59e0bfe9d98489141807ba4b3f19980f9b9ef0e1f1f2bd2df6e98",
-      "last_updated": "2026-10-06T19:58:41.755673"
+      "hash": "bc9cd1396c385e4849ae79ad02e967a1bd2b306d26767dd6483d671de76614ed",
+      "last_updated": "2026-10-07T18:18:45.512097"
     },
     "api/origin/migrations.md": {
       "original_url": "https://cursor.com/docs/api/origin/migrations",
@@ -219,8 +219,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "330a99003b45cf37dacb5bd3986ed88ecf87baea60569ad1b33a8e1686567310",
-      "last_updated": "2026-10-02T21:44:31.669018"
+      "hash": "e34fff5321e7fe8784a60c18a7b576682bbc7abffcc07b0f7d80782ae58b87dd",
+      "last_updated": "2026-10-07T18:18:45.512403"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -321,8 +321,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "606bb636970ab8de2e8d87bfff9c13ae972ebe4817cc88ced9a60882aab124ef",
-      "last_updated": "2026-10-06T19:58:41.756939"
+      "hash": "4b10533e8222c9030c3a3b8add63e5bc65f2d1e41e84f1df3ea440e512265254",
+      "last_updated": "2026-10-07T18:18:45.512913"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -423,8 +423,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "eed7d4e90eef602983a9928e9731bcb21a8adda16eff6d6548308d5e89aeec57",
-      "last_updated": "2026-10-06T04:21:39.535734"
+      "hash": "b67e7f5ed22ce48d371e451c5c457d6630357b33d3d5e32ce1c9f6423b7bc41f",
+      "last_updated": "2026-10-07T18:18:45.513432"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -609,14 +609,14 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "8e71c04b343f53793ef3e7a34085a680e2bcb561af6fcd3992f55ac8c85a3a52",
-      "last_updated": "2026-09-28T21:01:57.201725"
+      "hash": "8748e59d814ba03467c96b4e74143fc2927cf57ce509d4b0d9b61a0f9ea14f17",
+      "last_updated": "2026-10-07T18:18:45.514037"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "2a4d2ab300db1d44d452e6bcfb053f0d926bd96df9f6e75630e6e216eca83fbf",
-      "last_updated": "2026-10-05T21:48:19.325452"
+      "hash": "ca659acf2458b5ade2879731715226147c427b206fa15783b2da7e69a4a630a9",
+      "last_updated": "2026-10-07T18:18:45.514275"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -957,8 +957,8 @@
     "help/customization/rules.md": {
       "original_url": "https://cursor.com/help/customization/rules",
       "original_md_url": "https://cursor.com/help/customization/rules.md",
-      "hash": "19e6d1c01e6cf141af61ce29b98baf8ad4aeda8d01b9055715b20d243c8d98c9",
-      "last_updated": "2026-08-17T15:22:43.184423"
+      "hash": "c6d2b0697e0b8f51d0d9ad7701a850cd81c389ec075e24b15e24bbd4e5afcdfc",
+      "last_updated": "2026-10-07T18:18:45.514769"
     },
     "help/customization/skills.md": {
       "original_url": "https://cursor.com/help/customization/skills",
@@ -1029,8 +1029,8 @@
     "help/grok-bot/faqs.md": {
       "original_url": "https://cursor.com/help/grok-bot/faqs",
       "original_md_url": "https://cursor.com/help/grok-bot/faqs.md",
-      "hash": "2c1714d6249c345af6dd2042974c093876b6679b9339ead349d695f603421832",
-      "last_updated": "2026-09-29T00:56:53.158619"
+      "hash": "e6a56d4a38214974e4ea04abceb5a6286664c98a4ebe4e842d3566eef786c5e4",
+      "last_updated": "2026-10-07T18:18:45.515061"
     },
     "help/grok-bot/get-help.md": {
       "original_url": "https://cursor.com/help/grok-bot/get-help",
@@ -1061,6 +1061,12 @@
       "original_md_url": "https://cursor.com/help/grok-bot/mobile.md",
       "hash": "fda8d04144171548605814c3e11a54a54811177ca795d31c6222dd6c8f4dfbe9",
       "last_updated": "2026-09-10T18:02:07.100603"
+    },
+    "help/grok-bot/models.md": {
+      "original_url": "https://cursor.com/help/grok-bot/models",
+      "original_md_url": "https://cursor.com/help/grok-bot/models.md",
+      "hash": "56bd2ac9f9476b8ee62e0aefee133e2f1d9765120d459ab6cf70a24b13d5992e",
+      "last_updated": "2026-10-07T18:18:45.515223"
     },
     "help/grok-bot/onboarding.md": {
       "original_url": "https://cursor.com/help/grok-bot/onboarding",
@@ -1275,8 +1281,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "a7a77a20174247044d76289a7464f8a947068c95bbc518121cf109f55115af08",
-      "last_updated": "2026-09-29T00:56:53.160161"
+      "hash": "0306dc1e10e93b4c1b7be33019846d41652b33788db2bbb333f05506b27b743d",
+      "last_updated": "2026-10-07T18:18:45.515696"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -1287,8 +1293,8 @@
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
       "original_md_url": "https://cursor.com/docs/integrations/bitbucket.md",
-      "hash": "e4b533174ca4955dc6bc05fafaf74943d001b48a3d0a56b436238bc404f24cc2",
-      "last_updated": "2026-10-06T19:58:41.758737"
+      "hash": "48cfa14e0edae5415bf0374706c1a0449fcc89ac4a67945014636a422dc5a27d",
+      "last_updated": "2026-10-07T18:18:45.515964"
     },
     "integrations/cursor-blame.md": {
       "original_url": "https://cursor.com/docs/integrations/cursor-blame",
@@ -1359,14 +1365,20 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "acf02bfcab1618470f08d7be86b87a91045d1a1d34fffe831a29b62b7b15875f",
-      "last_updated": "2026-09-29T00:56:53.162634"
+      "hash": "19b52442cfd850ff65b4e17335cb9e475cd4ee9b13d5dddd95522023ed061713",
+      "last_updated": "2026-10-07T18:18:45.516373"
     },
     "models/claude-fable-5-1.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5-1",
       "original_md_url": "https://cursor.com/docs/models/claude-fable-5-1.md",
       "hash": "0f9eed4959567f5538e83eeb7b4f2038843afc35c59e72cdf393882a34b11c8b",
       "last_updated": "2026-09-22T18:29:14.045908"
+    },
+    "models/claude-haiku-5-5.md": {
+      "original_url": "https://cursor.com/docs/models/claude-haiku-5-5",
+      "original_md_url": "https://cursor.com/docs/models/claude-haiku-5-5.md",
+      "hash": "0b6999ada68cf25fba8f3932ed4c718cf6c2536d0e28b6c85e3662815123cee3",
+      "last_updated": "2026-10-07T18:18:45.516468"
     },
     "models/claude-opus-5-5.md": {
       "original_url": "https://cursor.com/docs/models/claude-opus-5-5",
@@ -1445,12 +1457,6 @@
       "original_md_url": "https://cursor.com/docs/origin.md",
       "hash": "429149224b98df7597bf54482a92686ddbac4488816043880a8982272f59b81a",
       "last_updated": "2026-09-28T21:01:57.206627"
-    },
-    "origin/apps/publish.md": {
-      "original_url": "https://cursor.com/docs/origin/apps/publish",
-      "original_md_url": "https://cursor.com/docs/origin/apps/publish.md",
-      "hash": "ece47cf39c553540b2d1394cb68840eb259a229a427fb98380c1e9da6f3e4f3c",
-      "last_updated": "2026-10-07T00:20:03.461236"
     },
     "origin/browse.md": {
       "original_url": "https://cursor.com/docs/origin/browse",
@@ -1551,14 +1557,14 @@
     "rollouts.md": {
       "original_url": "https://cursor.com/docs/rollouts",
       "original_md_url": "https://cursor.com/docs/rollouts.md",
-      "hash": "404ce4ca279e3244af29e4a80467343fba8439f9456cac0d9eb831d3a4289e03",
-      "last_updated": "2026-10-06T19:58:41.760225"
+      "hash": "8bbb58b89d7c73d652ddf9adabbcc2ba2c1f9b5e2c3a7242b8aba0833e9d2e53",
+      "last_updated": "2026-10-07T18:18:45.517215"
     },
     "rules.md": {
       "original_url": "https://cursor.com/docs/rules",
       "original_md_url": "https://cursor.com/docs/rules.md",
-      "hash": "044b5134a59f74dea99ec1a273ed87e96ed44dc6c7fc7b154417d8108833c030",
-      "last_updated": "2026-09-14T15:35:40.330474"
+      "hash": "884c67ca161142c2f3f0e4ef66a732dd48119cb08bd0dc2ff73e693721546bc8",
+      "last_updated": "2026-10-07T18:18:45.517462"
     },
     "sdk/bridge.md": {
       "original_url": "https://cursor.com/docs/sdk/bridge",
@@ -1569,20 +1575,20 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "62bb82a6870c57f9b996a8da69a5d8758bc31969b41bbc62730ffe4d3d441c5f",
-      "last_updated": "2026-09-03T23:03:02.089478"
+      "hash": "3ca10e7239541e13f13177649ca548e530c1063d4526f436ea492d26f76c524f",
+      "last_updated": "2026-10-07T18:18:45.517840"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "70535b80db2e8fa5e03668c545c5252b113e53c60a164179aa5e4a42bb394566",
-      "last_updated": "2026-10-02T21:44:31.674395"
+      "hash": "21f61a22bad808130bc85097cae078f2a31f97cafad5bac0f4370016b23beeaa",
+      "last_updated": "2026-10-07T18:18:45.518317"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
       "original_md_url": "https://cursor.com/docs/security-agents.md",
-      "hash": "b9627c955b64ecebd5b82d28be20f77d384fec9a35a90379be6309a08c9e51c0",
-      "last_updated": "2026-10-02T21:44:31.674646"
+      "hash": "c6e2d00a6c28f9479af5f939fdc3bee6684b9fbd8082e80c541f82d146a990b3",
+      "last_updated": "2026-10-07T18:18:45.518546"
     },
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
@@ -1598,21 +1604,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-07T09:41:01.883327",
-    "fetch_duration_seconds": 4.272814,
-    "total_pages_discovered": 266,
-    "pages_fetched_successfully": 266,
+    "last_fetch_completed": "2026-10-07T18:18:45.521644",
+    "fetch_duration_seconds": 3.109769,
+    "total_pages_discovered": 267,
+    "pages_fetched_successfully": 267,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 266,
+    "total_files": 267,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-07T09:41:01.883342",
+  "last_updated": "2026-10-07T18:18:45.521658",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

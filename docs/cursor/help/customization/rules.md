@@ -53,7 +53,7 @@ For more control over when rules apply, use project rules in `.cursor/rules/` in
 ## What are good practices for writing rules?
 
 - Keep rules under 500 lines. Split large rules into smaller, focused files.
-- Include concrete examples or reference files with `@filename` in your rule content.
+- Include concrete examples, or point Agent at reference files by path (for example `@service-template.ts`). Agent reads the file when it needs it; the contents aren't inlined, so put anything that must always be in context in the rule body.
 - Start small. Add rules when you notice Agent making the same mistake more than once.
 - Check rules into git so your teammates benefit too.
 

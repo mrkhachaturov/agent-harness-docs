@@ -102,7 +102,7 @@ Approvals from work that started without you, like a routine or a message from a
 
 ## Can I pick the model?
 
-No. Cursor picks the model for the specific task under the hood. There is no model picker in Grok Bot. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
+No. Grok Bot picks the model for each task, and the model used doesn't change how fast you use your limits. There is no model picker. See [Which AI models power Grok Bot?](https://cursor.com/help/grok-bot/models.md).
 
 ## Which devices work?
 
@@ -119,6 +119,7 @@ The desktop app runs on Mac, Windows, and Linux. The phone app runs on iPhone an
 - [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md)
 - [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
+- [Which AI models power Grok Bot?](https://cursor.com/help/grok-bot/models.md)
 - [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md)
 - [Sign in to Grok Bot](https://cursor.com/help/grok-bot/sign-in.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
