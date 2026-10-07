@@ -1446,6 +1446,12 @@
       "hash": "429149224b98df7597bf54482a92686ddbac4488816043880a8982272f59b81a",
       "last_updated": "2026-09-28T21:01:57.206627"
     },
+    "origin/apps/publish.md": {
+      "original_url": "https://cursor.com/docs/origin/apps/publish",
+      "original_md_url": "https://cursor.com/docs/origin/apps/publish.md",
+      "hash": "ece47cf39c553540b2d1394cb68840eb259a229a427fb98380c1e9da6f3e4f3c",
+      "last_updated": "2026-10-07T00:20:03.461236"
+    },
     "origin/browse.md": {
       "original_url": "https://cursor.com/docs/origin/browse",
       "original_md_url": "https://cursor.com/docs/origin/browse.md",
@@ -1533,8 +1539,8 @@
     "release-notes.md": {
       "original_url": "https://cursor.com/docs/release-notes",
       "original_md_url": "https://cursor.com/docs/release-notes.md",
-      "hash": "f1c6b0aede31d1c11fd8106fe9ea209a1450aef06614c5066068c73dec9d3183",
-      "last_updated": "2026-10-06T19:58:41.759899"
+      "hash": "fd7b6d3592eec0e73f951bcdf50fe0a8e292069cd0bb11854946f876d031690d",
+      "last_updated": "2026-10-07T00:20:03.462608"
     },
     "release-notes/sdk.md": {
       "original_url": "https://cursor.com/docs/release-notes/sdk",
@@ -1592,21 +1598,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-06T19:58:41.763416",
-    "fetch_duration_seconds": 2.989787,
-    "total_pages_discovered": 265,
-    "pages_fetched_successfully": 265,
+    "last_fetch_completed": "2026-10-07T00:20:03.466483",
+    "fetch_duration_seconds": 2.74031,
+    "total_pages_discovered": 266,
+    "pages_fetched_successfully": 266,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 265,
+    "total_files": 266,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-06T19:58:41.763426",
+  "last_updated": "2026-10-07T00:20:03.466495",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
