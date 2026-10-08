@@ -12,7 +12,7 @@ No. Grok (the chat app from xAI) and Grok Bot are two different apps. A paywall 
 
 ## Which Grok plans can I link?
 
-Individual **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, and **X Premium+**. **SuperGrok Lite**, **SuperGrok Team**, and **SuperGrok Enterprise** cannot link. See [Which SuperGrok tiers grant Grok Bot?](https://cursor.com/help/grok-bot/supergrok.md#which-supergrok-tiers-grant-grok-bot).
+Individual **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, and **X Premium+**. **SuperGrok Lite** and **Grok Enterprise** cannot link. If you have a seat on a self-serve **Grok Business** plan, you don't link from the plan screen. Sign out, then sign back in with **Sign in with Grok** using the Grok account that holds the seat. See [Which SuperGrok tiers grant Grok Bot?](https://cursor.com/help/grok-bot/supergrok.md#which-supergrok-tiers-grant-grok-bot).
 
 ## I don't see Link Grok Account.
 
@@ -102,7 +102,7 @@ Approvals from work that started without you, like a routine or a message from a
 
 ## Can I pick the model?
 
-No. Grok Bot picks the model for each task, and the model used doesn't change how fast you use your limits. There is no model picker. See [Which AI models power Grok Bot?](https://cursor.com/help/grok-bot/models.md).
+No. Grok Bot picks the model for each task, and there is no model picker. See [Which AI models power Grok Bot?](https://cursor.com/help/grok-bot/models.md).
 
 ## Which devices work?
 

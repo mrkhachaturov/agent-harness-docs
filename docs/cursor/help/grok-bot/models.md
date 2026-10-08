@@ -2,7 +2,7 @@
 
 How Grok Bot chooses the model behind each request, what you see in your usage, how it affects your usage limits, and how it interacts with team model settings.
 
-Grok Bot is not tied to a single model. For each task, it uses the backend model most likely to deliver the best outcome. That can be a first-party xAI model or a third-party model from a provider on the [sub-processor list](https://trust.cursor.com/subprocessors), and the choice can differ from one request to the next. This does not change how quickly you use your limits: Grok Bot usage counts the same way regardless of which model handled the request.
+Grok Bot is not tied to a single model. For each task, it uses the backend model most likely to deliver the best outcome. That can be a first-party xAI model or a third-party model from a provider on the [sub-processor list](https://trust.cursor.com/subprocessors), and the choice can differ from one request to the next.
 
 ## Can I see which model handled a Grok Bot request?
 
@@ -12,9 +12,9 @@ No. Grok Bot does not show the underlying model for a request. Your usage and sp
 
 No. Grok Bot has no per-user or per-request model selection, and there is no model picker in [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md). Users cannot be routed to or away from a particular model. Grok Bot always uses the model most likely to produce the best result for the task.
 
-## Does the model used change how fast I use my Grok Bot usage limits?
+## Does Grok Bot using Opus 5.5 use my usage limits faster?
 
-No. Your usage counts the same whichever model handles the request. If you notice your usage moving faster than before, it reflects how much work Grok Bot is doing for you, such as longer tasks, [routines](https://cursor.com/help/grok-bot/routines.md), or multiple Bots running, not which model was used. See [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
+No. We work to give you the best price-performance and stretch your usage as far as possible. How fast you use it depends on the kind of work you give Grok Bot and how much effort each task takes, and routing a task to Opus 5.5 doesn't change what it costs you. To see where your usage went, open **Settings** > **Usage & Billing** in Grok Bot, or see [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
 
 ## Does my team's Cursor model allowlist apply to Grok Bot?
 

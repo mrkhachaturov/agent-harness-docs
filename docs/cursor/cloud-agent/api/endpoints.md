@@ -1115,6 +1115,45 @@ curl --request GET \
 }
 ```
 
+### Update An Environment
+
+PATCH
+
+`/v1/environments/{id}`
+
+Rename an environment, replace its configuration, or both. A request with both fields applies them together, so either both change or neither does. The response is `204` with no body.
+
+Renaming an environment to a name its owner already uses returns `409 environment_name_conflict`.
+
+#### Path Parameters
+
+`id` string
+
+Environment ID.
+
+#### Request Body
+
+`name` string (optional)
+
+New display name, up to 255 characters. It must differ from the names of the owner's other environments.
+
+`environmentJson` string (optional)
+
+Replacement `environment.json`, as a JSON-encoded string. It replaces the whole configuration and uses the same [schema](https://cursor.com/docs/cloud-agent/setup.md#configuration-in-code-with-environmentjson) as a `.cursor/environment.json` file. An invalid configuration returns `400 validation_error`.
+
+```bash
+curl --request PATCH \
+  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "name": "Web app (staging)",
+    "environmentJson": "{\"install\": \"pnpm install --frozen-lockfile\", \"start\": \"sudo service docker start\"}"
+  }'
+```
+
+**Response:** `204 No Content`
+
 ### Delete An Environment
 
 DELETE
@@ -1140,6 +1179,106 @@ curl --request DELETE \
 ```json
 {
   "id": "8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c"
+}
+```
+
+### List Environment History
+
+GET
+
+`/v1/environments/{id}/history`
+
+List the changes to an environment, newest first. These are the events its History tab in the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#environments) shows.
+
+#### Path Parameters
+
+`id` string
+
+Environment ID.
+
+#### Query Parameters
+
+`limit` number (optional)
+
+Number of events to return. Default: 20, Max: 100.
+
+`cursor` string (optional)
+
+Pagination cursor from `nextCursor` on the previous response.
+
+#### Response Fields
+
+`items` array
+
+History events, newest first, with the fields below.
+
+`nextCursor` string (optional)
+
+Cursor for the next page. Omitted when there are no more events.
+
+#### Event Fields
+
+`id` string
+
+Event ID.
+
+`createdAt` string
+
+When the change was made (ISO 8601).
+
+`kind` string
+
+`created`, `updated`, `deleted`, `backfilled`, or `changed`.
+
+`title`, `description` string
+
+The event's summary and details, as the History tab shows them.
+
+`source` string (optional)
+
+Where the change came from: `dashboard`, `setup_flow`, `restore`, `api`, `agent_run`, `repo_file`, or `request_override`.
+
+`current` boolean
+
+`true` for the event that saved the environment's current configuration.
+
+`environmentJson` string (optional)
+
+The `environment.json` the event saved, as a JSON-encoded string.
+
+```bash
+curl --request GET \
+  --url 'https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/history?limit=2' \
+  -u YOUR_API_KEY:
+```
+
+**Response:**
+
+```json
+{
+  "items": [
+    {
+      "id": "3b7e1f2a-9c4d-4e8b-a1f6-5d2c8e9b0a17",
+      "createdAt": "2026-09-29T21:05:00.000Z",
+      "kind": "updated",
+      "title": "Team environment updated",
+      "description": "Install script changed.",
+      "source": "api",
+      "current": true,
+      "environmentJson": "{\"install\": \"pnpm install\", \"start\": \"sudo service docker start\"}"
+    },
+    {
+      "id": "e4a9c2d1-6b3f-4a7e-9d8c-1f0b2a3c4d5e",
+      "createdAt": "2026-09-01T16:20:00.000Z",
+      "kind": "created",
+      "title": "Team environment created",
+      "description": "Team environment created.",
+      "source": "dashboard",
+      "current": false,
+      "environmentJson": "{\"install\": \"npm install\"}"
+    }
+  ],
+  "nextCursor": "e4a9c2d1-6b3f-4a7e-9d8c-1f0b2a3c4d5e"
 }
 ```
 
@@ -1379,6 +1518,176 @@ curl --request POST \
   "expiresAt": "2026-04-24T19:00:00.000Z",
   "userId": 42,
   "teamId": 456
+}
+```
+
+## Secrets
+
+Secrets are the environment variables Cursor gives cloud agents, the values you also manage in the **Secrets** tab of the [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents). The secrets endpoints cover the secrets that belong to one environment and the secrets that belong to your team. To choose a type for a secret, see [Secret protection](https://cursor.com/docs/cloud-agent/security-network.md#secret-protection).
+
+- **Responses never include values.** They list names, types, and repositories.
+- **A name can have versions for different repositories.** An environment or team can hold one name several times, each version for repositories the others don't cover. Each version is listed separately and has its own `id`.
+- **Use a user API key, an agent-scoped service account API key, or a user-scoped token.** Each works within one team: a user API key in its user's default team, a user-scoped token in the team that minted it, and a service account API key in its own team. User-scoped tokens come from [Create A User-Scoped Worker Token](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-a-user-scoped-worker-token). Team API keys and automation webhook API keys aren't supported, and API keys that start with `grok_` get `403 key_not_supported`.
+
+#### Secret Versions
+
+Every secrets endpoint describes a version of a secret with these fields. No response includes a secret's value.
+
+`id` string
+
+Opaque version ID, such as `secv_3qKx9mT2bV7nR1cW5yZ8aQ`. A version keeps its `id` through changes to its value, type, or repositories.
+
+`name` string
+
+The environment variable name agents see, such as `NPM_TOKEN`.
+
+`type` string
+
+`runtime_secret` for a [Runtime Secret](https://cursor.com/docs/cloud-agent/security-network.md#runtime-secrets), `environment_variable` for an [Environment Variable](https://cursor.com/docs/cloud-agent/security-network.md#environment-variables), or `build_secret` for a [Build Secret](https://cursor.com/docs/cloud-agent/security-network.md#build-secrets).
+
+`repos` array of strings
+
+The only repositories that get this version, such as `github.com/acme/api`, or an empty array when every repository gets it. Repositories are listed the way Cursor stores them: lowercase and sorted, with repository URLs reduced to `host/owner/repo`.
+
+`createdAt` string
+
+When the version was created, in ISO 8601 format.
+
+#### Which Value An Agent Gets
+
+When one name is set in several places, an agent gets the value from the most specific place: values passed when the agent starts, such as `envVars` on [Create An Agent](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent), then the environment's secrets, then the user's personal secrets, then the team's secrets. A name set at one level hides that name at every level below it.
+
+### List Environment Secrets
+
+GET
+
+`/v1/environments/{id}/secrets`
+
+List an environment's Cloud Agents secrets. Each item is a [secret version](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions), and no item includes a value. Items are sorted by name, so the versions of one name sit together.
+
+Who can list an environment's secrets:
+
+- **A user API key or user-scoped token** can list its user's personal environments and its team's environments. Any team member can list a team environment's secrets.
+- **A service account API key** can list its team's environments.
+- **An API key limited to certain repositories**, or a user-scoped token it minted, can list only environments that have repositories, all inside its limit.
+- **Everyone else** gets `404 environment_not_found`, including a team admin on a member's personal environment.
+
+The list isn't paginated yet, so `nextCursor` is always `null`. Follow `nextCursor` until it's `null`, so your client keeps working when pages arrive.
+
+#### Path Parameters
+
+`id` string
+
+Environment ID.
+
+#### Response Fields
+
+`items` array
+
+The environment's [secret versions](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions). A name with versions for different repositories appears once per version.
+
+`nextCursor` string or null
+
+Cursor for the next page. Always `null` for now.
+
+```bash
+curl --request GET \
+  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/secrets \
+  -u YOUR_API_KEY:
+```
+
+**Response:**
+
+```json
+{
+  "items": [
+    {
+      "id": "secv_Qm7pW2xK9cT4vB1nY6hR3w",
+      "name": "DOCKER_TOKEN",
+      "type": "build_secret",
+      "repos": [],
+      "createdAt": "2026-09-30T14:02:11.000Z"
+    },
+    {
+      "id": "secv_3qKx9mT2bV7nR1cW5yZ8aQ",
+      "name": "NPM_TOKEN",
+      "type": "runtime_secret",
+      "repos": ["github.com/acme/api"],
+      "createdAt": "2026-10-01T09:15:42.000Z"
+    },
+    {
+      "id": "secv_Lw0pE4sJ6hD9fG2kU8tY1g",
+      "name": "NPM_TOKEN",
+      "type": "runtime_secret",
+      "repos": ["github.com/acme/web"],
+      "createdAt": "2026-10-02T11:20:05.000Z"
+    },
+    {
+      "id": "secv_Zr5cN8vM1qL4wX7tA2sD9g",
+      "name": "SENTRY_ENVIRONMENT",
+      "type": "environment_variable",
+      "repos": [],
+      "createdAt": "2026-10-03T16:45:00.000Z"
+    }
+  ],
+  "nextCursor": null
+}
+```
+
+### List Team Secrets
+
+GET
+
+`/v1/team/secrets`
+
+List the Cloud Agents secrets of the team your API key works in. Each item is a [secret version](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions), and no item includes a value. Personal secrets, environment secrets, and other teams' secrets aren't included. Items are sorted by name, so the versions of one name sit together.
+
+Who can list team secrets:
+
+- **Any member of the team** can list them with a user API key or user-scoped token, even when the team lets only admins change secrets.
+- **A service account API key** lists its own team.
+- **An API key limited to certain repositories**, or a user-scoped token it minted, gets `403 repository_access`, because team secrets reach every repository.
+- **An API key that isn't working in a team**, or a caller without a seat on the team, gets `403 team_membership_required`.
+
+The list isn't paginated yet, so `nextCursor` is always `null`. Follow `nextCursor` until it's `null`, so your client keeps working when pages arrive.
+
+#### Response Fields
+
+`items` array
+
+The team's [secret versions](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions). A name with versions for different repositories appears once per version.
+
+`nextCursor` string or null
+
+Cursor for the next page. Always `null` for now.
+
+```bash
+curl --request GET \
+  --url https://api.cursor.com/v1/team/secrets \
+  -u YOUR_API_KEY:
+```
+
+**Response:**
+
+```json
+{
+  "items": [
+    {
+      "id": "secv_Hn2kT8wQ5vC1xZ4mB7rP0g",
+      "name": "GITHUB_PACKAGES_TOKEN",
+      "type": "runtime_secret",
+      "repos": [],
+      "createdAt": "2026-09-28T10:12:34.000Z"
+    },
+    {
+      "id": "secv_Ye6sF3jL9pV2nK5tD8uW1A",
+      "name": "SENTRY_DSN",
+      "type": "environment_variable",
+      "repos": ["github.com/acme/web"],
+      "createdAt": "2026-10-02T08:30:00.000Z"
+    }
+  ],
+  "nextCursor": null
 }
 ```
 

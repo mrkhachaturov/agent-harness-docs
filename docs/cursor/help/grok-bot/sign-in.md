@@ -9,6 +9,8 @@ Grok Bot uses your Cursor account. There is no separate Grok Bot login.
 3. Finish signing in in your browser with your Cursor account.
 4. Return to Grok Bot. You should see your account in Settings.
 
+If your Grok Bot access comes from a seat on a self-serve Grok Business plan, choose **Sign in with Grok** in the browser and use the Grok account that holds the seat. See [How do I use a Grok Business seat with Grok Bot?](https://cursor.com/help/grok-bot/supergrok.md#how-do-i-use-a-grok-business-seat-with-grok-bot).
+
 ## How do I sign in to Grok Bot on mobile?
 
 1. Open the Grok Bot mobile app.
