@@ -1061,6 +1061,69 @@ curl --request POST \
 }
 ```
 
+### List Environments
+
+GET
+
+`/v1/environments`
+
+List the saved environments your API key can access, most recently updated first: your personal environments and your team's environments. Team admins don't see members' personal environments in the list.
+
+Team admins and service account API keys see every team environment. Other callers see a team environment only when they can access all of its repositories. A service account API key limited to specific repositories, and user-scoped tokens minted with it, only list environments that have repositories, all within that limit. Drafts and deleted environments aren't included.
+
+#### Query Parameters
+
+`limit` number (optional)
+
+Number of environments to return. Default: 20, Max: 100.
+
+`cursor` string (optional)
+
+Pagination cursor from `nextCursor` on the previous response.
+
+#### Response Fields
+
+`items` array
+
+Environments, with the same fields as [Get An Environment](https://cursor.com/docs/cloud-agent/api/endpoints.md#get-an-environment) except `environmentJson` and `versionId`. Call Get An Environment to load an environment's configuration.
+
+`nextCursor` string (optional)
+
+Cursor for the next page. Omitted when there are no more pages.
+
+A page can come back with fewer items than `limit`. Keep requesting pages until `nextCursor` is absent. It's **omitted** from the response, not returned as `null`, when there are no more pages.
+
+Callers other than team admins and service account API keys see team environments only after Cursor checks their access to the repositories, and those checks can run out of time. A response can then leave out team environments it hasn't verified yet, or stop before the end of the list. Those environments show up in later requests.
+
+The list is ordered by last update, so an environment that changes during a walk moves to the front. A later page can then leave it out and repeat another environment.
+
+```bash
+curl --request GET \
+  --url 'https://api.cursor.com/v1/environments?limit=20' \
+  -u YOUR_API_KEY:
+```
+
+**Response:**
+
+```json
+{
+  "items": [
+    {
+      "id": "8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c",
+      "name": "Web app",
+      "owner": "team",
+      "repos": [
+        { "url": "https://github.com/your-org/your-web-app" },
+        { "url": "https://github.com/your-org/your-api" }
+      ],
+      "createdAt": "2026-09-01T16:20:00.000Z",
+      "updatedAt": "2026-09-29T21:05:00.000Z"
+    }
+  ],
+  "nextCursor": "MjA"
+}
+```
+
 ### Get An Environment
 
 GET
@@ -1557,6 +1620,11 @@ When the version was created, in ISO 8601 format.
 
 When one name is set in several places, an agent gets the value from the most specific place: values passed when the agent starts, such as `envVars` on [Create An Agent](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent), then the environment's secrets, then the user's personal secrets, then the team's secrets. A name set at one level hides that name at every level below it.
 
+#### Changing Secrets
+
+- **Changes reach agents that start afterward.** Running agents keep the values they started with. Agents that start from a [Build](https://cursor.com/docs/cloud-agent/builds.md) get the change once a newer Build of their environment finishes.
+- **Reads can lag behind writes.** Right after a change, a request can miss it. Leave a moment between writes to the same name, and pass `?id=` to pick a version.
+
 ### List Environment Secrets
 
 GET
@@ -1634,6 +1702,169 @@ curl --request GET \
 }
 ```
 
+### Set An Environment Secret
+
+PUT
+
+`/v1/environments/{id}/secrets/{name}`
+
+Create an environment secret, rotate its value, or change its type or repositories. Every request sends the value, and the response is the [secret version](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions) without it.
+
+Which version the request changes:
+
+- **With `?id=`**, it changes the version with that `id`. An `id` that isn't a version of this name in this environment returns `404 secret_not_found`.
+- **Without `?id=`**, a name with no version gets one, and the response is `201`. A name with one version has it changed in place, and the response is `200`. A name with several versions returns `409 secret_name_ambiguous`, listing each version's `id` and `repos`, so you can pass one as `?id=`.
+
+A `PUT` never adds a second version to a name that already has one. To give a name a version for other repositories, use the dashboard.
+
+When you omit `type` or `repos`, the version keeps its current one, so rotating a value never changes its type or widens its repositories. Send `repos: []` to give the version every repository. New `repos` that overlap another version of the name return `409 secret_scope_conflict`. An environment holds at most 1,000 secrets, and creating one more returns `409 secret_limit_reached`.
+
+Build secrets can't be set through the API yet: `type: "build_secret"` returns `400 validation_error`, and so does a change to an existing Build Secret. `DELETE` still removes one.
+
+Who can set an environment's secrets:
+
+- **A user API key or user-scoped token** can set secrets on its user's personal environments and its team's environments.
+- **A service account API key** can set secrets on its team's environments.
+- **An API key limited to certain repositories**, or a user-scoped token it minted, can set secrets only on environments that have repositories, all inside its limit.
+- **When your team lets only admins change secrets**, only team admins can set a team environment's secrets. Everyone else, service account API keys included, gets `403 team_admin_required`.
+- **Everyone else** gets `404 environment_not_found`.
+
+Each change is recorded as a [`cloud_agent_secret` event](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#event-types) with the secret's name and repositories but not its value, as the same change in the dashboard is.
+
+#### Path Parameters
+
+`id` string
+
+Environment ID.
+
+`name` string
+
+Secret name, as agents see it: letters, digits, and underscores, not starting with a digit, and at most 255 characters. Names that contain `CURSOR_SANDBOX` are reserved, and so are `HTTP_PROXY`, `HTTPS_PROXY`, and `ALL_PROXY` in any letter case.
+
+Names that differ only in letter case count as the same name. Creating `npm_token` when `NPM_TOKEN` exists returns `409 secret_name_conflict`.
+
+#### Query Parameters
+
+`id` string (optional)
+
+The `id` of the version to change, from the environment's secrets list (`GET /v1/environments/{id}/secrets`) or from a `409 secret_name_ambiguous` response.
+
+#### Request Body
+
+`value` string (required)
+
+The secret's value, 1 to 4,096 bytes of UTF-8 text.
+
+`type` string (optional)
+
+`runtime_secret` or `environment_variable`. A new version defaults to `runtime_secret`. A change without `type` keeps the version's type.
+
+`repos` array of strings (optional)
+
+The only repositories that get this version, up to 100. An empty array, or omitting `repos` on a new version, gives it every repository. A change without `repos` keeps the version's repositories.
+
+Each entry names a repository: `acme/api`, a URL such as `https://github.com/acme/api.git` or `git@github.com:acme/api.git`, or another host's path such as `gitlab.com/group/subgroup/project`.
+
+#### Response Fields
+
+The [secret version](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions) the request created or changed. When the new version isn't readable yet, a `201` leaves out `id` and `createdAt`.
+
+```bash
+curl --request PUT \
+  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/secrets/NPM_TOKEN \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "value": "npm_example_token",
+    "repos": ["github.com/acme/api"]
+  }'
+```
+
+**Response:** `201`
+
+```json
+{
+  "id": "secv_3qKx9mT2bV7nR1cW5yZ8aQ",
+  "name": "NPM_TOKEN",
+  "type": "runtime_secret",
+  "repos": ["github.com/acme/api"],
+  "createdAt": "2026-10-04T14:02:11.000Z"
+}
+```
+
+Rotate the value. The response is `200` with the same `id`, `type`, `repos`, and `createdAt`:
+
+```bash
+curl --request PUT \
+  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/secrets/NPM_TOKEN \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{"value": "npm_rotated_token"}'
+```
+
+### Delete An Environment Secret
+
+DELETE
+
+`/v1/environments/{id}/secrets/{name}`
+
+Delete one version of an environment secret. This action is irreversible. Every type can be deleted, Build Secrets included.
+
+Which version the request deletes:
+
+- **With `?id=`**, it deletes the version with that `id`. An `id` that isn't a version of this name in this environment returns `404 secret_not_found`.
+- **Without `?id=`**, a name with one version has it deleted. A name with no version returns `404 secret_not_found`, and a name with several versions returns `409 secret_name_ambiguous`, listing each version's `id` and `repos`, and deletes nothing.
+
+`{name}` must match a listed name exactly, letter case included, so a request for `NPM_TOKEN` never deletes `npm_token`. URL-encode characters a path can't carry.
+
+Who can delete an environment's secrets follows the same rules as setting them: a user API key or user-scoped token on its user's personal environments and its team's environments, a service account API key on its team's environments, and an API key limited to certain repositories only on environments that have repositories, all inside its limit. Everyone else gets `404 environment_not_found`. When your team lets only admins change secrets, everyone but team admins gets `403 team_admin_required`, service account API keys included.
+
+Each delete is recorded as a [`cloud_agent_secret` event](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#event-types) with the action `delete`, as a delete in the dashboard is. Agents that start afterward stop getting this version.
+
+#### Path Parameters
+
+`id` string
+
+Environment ID.
+
+`name` string
+
+Secret name, exactly as the environment's secrets list (`GET /v1/environments/{id}/secrets`) shows it.
+
+#### Query Parameters
+
+`id` string (optional)
+
+The `id` of the version to delete, from the environment's secrets list or from a `409 secret_name_ambiguous` response.
+
+#### Response Fields
+
+`name` string
+
+Name of the deleted secret.
+
+```bash
+curl --request DELETE \
+  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/secrets/NPM_TOKEN \
+  -u YOUR_API_KEY:
+```
+
+**Response:**
+
+```json
+{
+  "name": "NPM_TOKEN"
+}
+```
+
+Delete one version of a name that has several:
+
+```bash
+curl --request DELETE \
+  --url 'https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/secrets/NPM_TOKEN?id=secv_Lw0pE4sJ6hD9fG2kU8tY1g' \
+  -u YOUR_API_KEY:
+```
+
 ### List Team Secrets
 
 GET
@@ -1688,6 +1919,152 @@ curl --request GET \
     }
   ],
   "nextCursor": null
+}
+```
+
+### Set A Team Secret
+
+PUT
+
+`/v1/team/secrets/{name}`
+
+Create a secret for the team your API key works in, rotate its value, or change its type or repositories. Every request sends the value, and the response is the [secret version](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions) without it. Team secrets reach every agent on the team unless a more specific value hides them, as described in [Which Value An Agent Gets](https://cursor.com/docs/cloud-agent/api/endpoints.md#which-value-an-agent-gets).
+
+Which version the request changes:
+
+- **With `?id=`**, it changes the version with that `id`, from the team's secrets list (`GET /v1/team/secrets`). An `id` that isn't a version of this name in your team returns `404 secret_not_found`.
+- **Without `?id=`**, a name with no version gets one, and the response is `201`. A name with one version has it changed in place, and the response is `200`. A name with several versions returns `409 secret_name_ambiguous`, listing each version's `id` and `repos`, so you can pass one as `?id=`.
+
+A `PUT` never adds a second version to a name that already has one. To give a name a version for other repositories, use the dashboard.
+
+When you omit `type` or `repos`, the version keeps its current one, so rotating a value never changes its type or widens its repositories. Send `repos: []` to give the version every repository. New `repos` that overlap another version of the name return `409 secret_scope_conflict`, and so does `repos: []` while the name has other versions. A team holds at most 1,000 secrets, and creating one more returns `409 secret_limit_reached`.
+
+Build secrets can't be set through the API yet: `type: "build_secret"` returns `400 validation_error`, and so does a change to an existing Build Secret.
+
+Who can set team secrets:
+
+- **Any member of the team** can, with a user API key or user-scoped token, unless the team lets only admins change secrets. Then everyone but team admins gets `403 team_admin_required`, service account API keys included.
+- **A service account API key** sets its own team's secrets.
+- **An API key limited to certain repositories**, or a user-scoped token it minted, gets `403 repository_access`, because team secrets reach every repository.
+- **An API key that isn't working in a team**, or a caller without a seat on the team, gets `403 team_membership_required`.
+
+Each change is recorded in your team's audit log as a [`cloud_agent_secret` event](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#event-types) with the secret's name and repositories but not its value, as the same change in the dashboard is.
+
+#### Path Parameters
+
+`name` string
+
+Secret name, as agents see it: letters, digits, and underscores, not starting with a digit, and at most 255 characters. Names that contain `CURSOR_SANDBOX` are reserved, and so are `HTTP_PROXY`, `HTTPS_PROXY`, and `ALL_PROXY` in any letter case.
+
+Names that differ only in letter case count as the same name. Creating `npm_token` when the team has `NPM_TOKEN` returns `409 secret_name_conflict`.
+
+#### Query Parameters
+
+`id` string (optional)
+
+The `id` of the version to change, from the team's secrets list or from a `409 secret_name_ambiguous` response.
+
+#### Request Body
+
+`value` string (required)
+
+The secret's value, 1 to 4,096 bytes of UTF-8 text.
+
+`type` string (optional)
+
+`runtime_secret` or `environment_variable`. A new version defaults to `runtime_secret`. A change without `type` keeps the version's type.
+
+`repos` array of strings (optional)
+
+The only repositories that get this version, up to 100. An empty array, or omitting `repos` on a new version, gives it every repository. A change without `repos` keeps the version's repositories.
+
+Each entry names a repository: `acme/api`, a URL such as `https://github.com/acme/api.git` or `git@github.com:acme/api.git`, or another host's path such as `gitlab.com/group/subgroup/project`.
+
+#### Response Fields
+
+The [secret version](https://cursor.com/docs/cloud-agent/api/endpoints.md#secret-versions) the request created or changed. When the new version isn't readable yet, a `201` leaves out `id` and `createdAt`.
+
+```bash
+curl --request PUT \
+  --url https://api.cursor.com/v1/team/secrets/NPM_TOKEN \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "value": "npm_example_token",
+    "repos": ["github.com/acme/api"]
+  }'
+```
+
+**Response:** `201`
+
+```json
+{
+  "id": "secv_Ub4rJ7nD2kX9qM5wL1sE8Q",
+  "name": "NPM_TOKEN",
+  "type": "runtime_secret",
+  "repos": ["github.com/acme/api"],
+  "createdAt": "2026-10-04T14:02:11.000Z"
+}
+```
+
+Change one version of a name that has several, using its `id` from the team's secrets list:
+
+```bash
+curl --request PUT \
+  --url 'https://api.cursor.com/v1/team/secrets/NPM_TOKEN?id=secv_Ub4rJ7nD2kX9qM5wL1sE8Q' \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{"value": "npm_rotated_token"}'
+```
+
+### Delete A Team Secret
+
+DELETE
+
+`/v1/team/secrets/{name}`
+
+Delete one version of a secret from the team your API key works in. This action is irreversible. Every type can be deleted, Build Secrets included.
+
+Which version the request deletes:
+
+- **With `?id=`**, it deletes the version with that `id`, from the team's secrets list (`GET /v1/team/secrets`). An `id` that isn't a version of this name in your team returns `404 secret_not_found`.
+- **Without `?id=`**, a name with one version has it deleted. A name with no version returns `404 secret_not_found`, and a name with several versions returns `409 secret_name_ambiguous`, listing each version's `id` and `repos`, and deletes nothing.
+
+`{name}` must match a listed name exactly, letter case included, so a request for `NPM_TOKEN` never deletes `npm_token`. URL-encode characters a path can't carry.
+
+Who can delete team secrets follows the same rules as setting them: any member of the team with a user API key or user-scoped token, and the team's service account API keys. When the team lets only admins change secrets, everyone but team admins gets `403 team_admin_required`, service account API keys included. An API key limited to certain repositories gets `403 repository_access`, and an API key that isn't working in a team, or a caller without a seat on the team, gets `403 team_membership_required`.
+
+Each delete is recorded in your team's audit log as a [`cloud_agent_secret` event](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#event-types) with the action `delete`, as a delete in the dashboard is. Agents that start afterward stop getting this version.
+
+#### Path Parameters
+
+`name` string
+
+Secret name, exactly as the team's secrets list shows it.
+
+#### Query Parameters
+
+`id` string (optional)
+
+The `id` of the version to delete, from the team's secrets list or from a `409 secret_name_ambiguous` response.
+
+#### Response Fields
+
+`name` string
+
+Name of the deleted secret.
+
+```bash
+curl --request DELETE \
+  --url https://api.cursor.com/v1/team/secrets/NPM_TOKEN \
+  -u YOUR_API_KEY:
+```
+
+**Response:**
+
+```json
+{
+  "name": "NPM_TOKEN"
 }
 ```
 
