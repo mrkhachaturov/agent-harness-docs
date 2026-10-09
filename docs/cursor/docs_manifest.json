@@ -183,8 +183,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "55b84d6edc6ab99e70ef8347796edeea809d175f7a0c2bd29091dee98d0cbd97",
-      "last_updated": "2026-10-08T18:20:02.637425"
+      "hash": "6b4c41ae6da533f4d1a43ced789b3ec97c098ffb5c89c8e695d1db67d7ac7a3a",
+      "last_updated": "2026-10-09T17:53:02.364206"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -201,8 +201,8 @@
     "api/origin/mcp/tools.md": {
       "original_url": "https://cursor.com/docs/api/origin/mcp/tools",
       "original_md_url": "https://cursor.com/docs/api/origin/mcp/tools.md",
-      "hash": "bb3455f16beefe21dbe6a82f8813edd9a8032a56fa212d08146014002b7f4ad5",
-      "last_updated": "2026-10-08T18:20:02.638016"
+      "hash": "2812fd76b5f9b557b7de8175011f937fb33268f330b8becc0b7c998092375ad4",
+      "last_updated": "2026-10-09T17:53:02.364731"
     },
     "api/origin/migrations.md": {
       "original_url": "https://cursor.com/docs/api/origin/migrations",
@@ -1610,8 +1610,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-09T09:55:37.131722",
-    "fetch_duration_seconds": 3.136043,
+    "last_fetch_completed": "2026-10-09T17:53:02.370630",
+    "fetch_duration_seconds": 3.296386,
     "total_pages_discovered": 268,
     "pages_fetched_successfully": 268,
     "pages_failed": 0,
@@ -1624,7 +1624,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-09T09:55:37.131735",
+  "last_updated": "2026-10-09T17:53:02.370642",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
