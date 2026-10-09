@@ -12,9 +12,9 @@ No. Grok Bot does not show the underlying model for a request. Your usage and sp
 
 No. Grok Bot has no per-user or per-request model selection, and there is no model picker in [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md). Users cannot be routed to or away from a particular model. Grok Bot always uses the model most likely to produce the best result for the task.
 
-## Does Grok Bot using Opus 5.5 use my usage limits faster?
+## Does Grok Bot using Opus 5.5 cost more per token?
 
-No. We work to give you the best price-performance and stretch your usage as far as possible. How fast you use it depends on the kind of work you give Grok Bot and how much effort each task takes, and routing a task to Opus 5.5 doesn't change what it costs you. To see where your usage went, open **Settings** > **Usage & Billing** in Grok Bot, or see [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
+No. We work to give you the best price-performance and stretch your usage as far as possible. How fast you use it depends on the kind of work you give Grok Bot and how much effort each task takes, and routing a task to Opus 5.5 doesn't change what it costs you per token. To see where your usage went, open **Settings** > **Usage & Billing** in Grok Bot, or see [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
 
 ## Does my team's Cursor model allowlist apply to Grok Bot?
 

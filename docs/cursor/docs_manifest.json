@@ -321,8 +321,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "ddbe475da2a31093a030e5c767528651c944766b07f332a2a1e767dca554f42a",
-      "last_updated": "2026-10-08T18:20:02.638870"
+      "hash": "293b1a11e1ab4617ce036bdec17e02007d29fe5a22e9a282b1af0dacf271174d",
+      "last_updated": "2026-10-09T00:57:32.438505"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -1065,8 +1065,8 @@
     "help/grok-bot/models.md": {
       "original_url": "https://cursor.com/help/grok-bot/models",
       "original_md_url": "https://cursor.com/help/grok-bot/models.md",
-      "hash": "a42772dc10dfac2a2a17caa752590cf09a21592c01ae3b60a8bfcf3ca29bab55",
-      "last_updated": "2026-10-08T00:41:44.904821"
+      "hash": "81d7e30331235c383089597d57bd5a0213d70b6cef280e44c196913c164b5299",
+      "last_updated": "2026-10-09T00:57:32.440154"
     },
     "help/grok-bot/onboarding.md": {
       "original_url": "https://cursor.com/help/grok-bot/onboarding",
@@ -1610,8 +1610,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-08T18:20:02.646956",
-    "fetch_duration_seconds": 1.806066,
+    "last_fetch_completed": "2026-10-09T00:57:32.445241",
+    "fetch_duration_seconds": 2.409379,
     "total_pages_discovered": 268,
     "pages_fetched_successfully": 268,
     "pages_failed": 0,
@@ -1624,7 +1624,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-08T18:20:02.646968",
+  "last_updated": "2026-10-09T00:57:32.445253",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
