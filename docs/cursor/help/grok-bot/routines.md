@@ -1,6 +1,6 @@
 # Routines
 
-A routine tells one Bot when to run a workflow. It can run on a schedule, or when something happens, such as a Slack message, a GitHub, Linear, Sentry, or PagerDuty event, an email, or a webhook call. Routines run in the cloud while your laptop is closed.
+A routine tells one Bot when to run a workflow. It can run on a schedule, or when something happens, such as a Slack message, a GitHub, Linear, Sentry, or PagerDuty event, an email, or a webhook call. Routines run in the cloud while your laptop is closed. For email to your Bot's own address, see [Give your Bot an email address](https://cursor.com/help/grok-bot/agent-email.md#how-do-i-have-my-bot-act-on-incoming-email).
 
 ## How do I set up or change a routine?
 

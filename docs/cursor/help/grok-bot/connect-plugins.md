@@ -6,6 +6,8 @@ Connect Gmail, Notion, Slack, and other services so agents can use them in chat.
 
 Plugins let agents talk to external services. Plugin connections belong to the **same account** you used to sign in to Grok Bot.
 
+The **Email** plugin is different: it gives your Bots their own email address instead of connecting an account you already have. See [Give your Bot an email address](https://cursor.com/help/grok-bot/agent-email.md).
+
 ## How do I add a plugin?
 
 1. In Grok Bot, select **Plugins** on the sidebar, or follow an in-chat **Connect** card. In the Grok Bot mobile app, tap your avatar on the top left and select **Plugins**.
