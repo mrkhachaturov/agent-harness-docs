@@ -150,7 +150,6 @@ The opencode server exposes the following APIs.
 | `DELETE` | `/session/:id`                           | Delete a session and all its data     | Returns `boolean`                                             |
 | `PATCH`  | `/session/:id`                           | Update session properties             | body: `{ title? }`, returns Session                           |
 | `GET`    | `/session/:id/children`                  | Get a session's child sessions        | Returns Session\[]                                            |
-| `GET`    | `/session/:id/todo`                      | Get the todo list for a session       | Returns Todo\[]                                               |
 | `POST`   | `/session/:id/init`                      | Analyze app and create `AGENTS.md`    | body: `{ messageID, providerID, modelID }`, returns `boolean` |
 | `POST`   | `/session/:id/fork`                      | Fork an existing session at a message | body: `{ messageID? }`, returns Session                       |
 | `POST`   | `/session/:id/abort`                     | Abort a running session               | Returns `boolean`                                             |

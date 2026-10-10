@@ -237,10 +237,9 @@ const agents = await client.app.agents()
 
 ### Project
 
-| Method              | Description         | Response   |
-| ------------------- | ------------------- | ---------- |
-| `project.list()`    | List all projects   | Project\[] |
-| `project.current()` | Get current project | Project    |
+| Method           | Description       | Response   |
+| ---------------- | ----------------- | ---------- |
+| `project.list()` | List all projects | Project\[] |
 
 ---
 
@@ -250,8 +249,6 @@ const agents = await client.app.agents()
 // List all projects
 const projects = await client.project.list()
 
-// Get current project
-const currentProject = await client.project.current()
 ```
 
 ---
