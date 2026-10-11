@@ -36,6 +36,16 @@ Cursor [project rules](https://cursor.com/docs/rules.md) (`*.mdc` files in `.cur
 
 Rules are limited to 30,000 characters each, and 100,000 characters combined per review. See [Bugbot](https://cursor.com/docs/bugbot.md#rule-limits) for details.
 
+## How do I turn Bugbot learning on or off?
+
+Learning is set per organization.
+
+1. Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot)
+2. Go to **Organizations** and select the organization
+3. Turn **Automatically Learn Rules** on or off
+
+See [Bugbot](https://cursor.com/docs/bugbot.md#learned-rules) for details.
+
 ## How do I check which rules Bugbot used?
 
 Comment `bugbot run verbose=true` or `cursor review verbose=true` on the pull request. Bugbot replies with a table of the rules included in that review and flags any that were truncated or omitted. See [Bugbot](https://cursor.com/docs/bugbot.md#see-which-rules-a-review-used) for details.
