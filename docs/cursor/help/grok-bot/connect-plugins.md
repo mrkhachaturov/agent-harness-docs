@@ -10,10 +10,10 @@ The **Email** plugin is different: it gives your Bots their own email address in
 
 ## How do I add a plugin?
 
-1. In Grok Bot, select **Plugins** on the sidebar, or follow an in-chat **Connect** card. In the Grok Bot mobile app, tap your avatar on the top left and select **Plugins**.
+1. In Grok Bot, select **Connect apps** in the sidebar, or follow an in-chat **Connect** card. In the Grok Bot mobile app, tap your avatar on the top left and select **Connect apps**.
 2. Browse or search for the plugin, then add it.
 3. When Grok Bot asks you to **Authorize** or **Authenticate**, finish the provider login in your browser.
-4. If Grok Bot shows **Waiting for authorization**, use **Reopen** so the browser tab comes back.
+4. If sign-in doesn't finish, choose **Reconnect** on the plugin, or **Reopen** on the in-chat card, to bring the sign-in page back.
 5. Confirm the plugin appears under **Installed**.
 
 ## Why does a plugin say "Disabled by team admin"?
@@ -79,7 +79,7 @@ Some other plugins, like Notion, can connect a second account. See [How do I add
 
 ## A plugin is added, but the Bot says it's missing. What do I do?
 
-**Added** means the plugin is installed, not that you are signed in. Open the plugin and choose **Authorize** if it shows **Needs auth** or **Disconnected**. For a connect card that never shows up or does nothing, see [How do I reconnect a plugin?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-reconnect-a-plugin)
+**Added** means the plugin is installed, not that you are signed in. Open the plugin and choose **Authenticate** (**Authorize** on the phone) if it shows **Needs auth** or **Disconnected**. For a connect card that never shows up or does nothing, see [How do I reconnect a plugin?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-reconnect-a-plugin)
 
 ## Why does connecting to Zoom fail with error 4700 during authorization?
 

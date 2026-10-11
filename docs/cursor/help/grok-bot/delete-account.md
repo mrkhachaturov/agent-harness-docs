@@ -2,7 +2,9 @@
 
 Grok Bot uses your Cursor account. Deleting it is self-serve and permanent.
 
-## How do I delete my Grok Bot account on iOS?
+## How do I delete my Grok Bot account on the phone?
+
+These steps work in the iOS and Android apps.
 
 1. Open Grok Bot and tap your account avatar to open **Settings**
 2. Tap your account
@@ -18,9 +20,9 @@ Grok Bot does not have a separate account. Delete the Cursor account you use to 
 Follow [Delete your account](https://cursor.com/help/account-and-billing/delete-account.md):
 
 1. Cancel your subscription first if it is active. See [Plans and billing](https://cursor.com/help/grok-bot/plans.md) and [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md)
-2. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
-3. Scroll to **Advanced Account Settings**
-4. Click **Delete Account** and confirm
+2. Go to [cursor.com/dashboard](https://cursor.com/dashboard) and open **Settings**
+3. In **More**, find **Delete Account** and choose **Delete**
+4. Confirm
 
 Desktop Grok Bot can sign you out. It does not delete the account.
 
@@ -39,7 +41,7 @@ All data is removed within 30 days.
 ## What is not affected by account deletion?
 
 - Files on your computer stay on your machine
-- If you subscribed through the App Store, cancel that subscription in Apple's settings. See [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
+- If you subscribed through the App Store, cancel that subscription in Apple's settings. If you subscribed through Google Play, cancel it in Google Play. See [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
 - If you linked SuperGrok, that Grok subscription is separate. Cancel it on Grok if you no longer want it
 - If you linked X Premium+, that X subscription is separate. Cancel it on X if you no longer want it
 
@@ -47,7 +49,7 @@ All data is removed within 30 days.
 
 On cursor.com, **Delete Account** appears for personal accounts. If you are on a Cursor Teams or Enterprise seat, ask a team admin or [contact support](https://cursor.com/help/grok-bot/get-help.md).
 
-On iOS, **Delete Account** is in Settings under your account.
+On the phone, **Delete Account** is in Settings under your account.
 
 ## Related
 

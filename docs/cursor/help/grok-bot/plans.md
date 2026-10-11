@@ -16,12 +16,12 @@ Grok Bot access is included on every paid individual Cursor plan and on Cursor T
 | You have **individual SuperGrok Heavy**                          | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md).                                                                                                                                                                                            | Highest linked usage                                           |
 | You have **individual SuperGrok Plus**                           | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md).                                                                                                                                                                                            | Generous linked usage, below Heavy                             |
 | You have **individual SuperGrok**                                | Link your Grok account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md).                                                                                                                                                                                            | Linked usage, below Plus                                       |
-| You have **X Premium+**                                          | Link your X account from the Grok Bot plan screen. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md).                                                                                                                                                                                               | Linked usage, below SuperGrok Plus                             |
+| You have **X Premium+**                                          | Link your Grok account from the Grok Bot plan screen, signing in to Grok with the account that has X Premium+. See [Link SuperGrok for Grok Bot](https://cursor.com/help/grok-bot/supergrok.md).                                                                                                                                   | Linked usage, below SuperGrok Plus                             |
 | You have an assigned seat on a self-serve **Grok Business** plan | Sign out of Grok Bot, then sign back in with **Sign in with Grok** using the Grok account that holds the seat. You don't need to buy anything or link from the plan screen. See [How do I use a Grok Business seat with Grok Bot?](https://cursor.com/help/grok-bot/supergrok.md#how-do-i-use-a-grok-business-seat-with-grok-bot). | Matches the license on your seat: SuperGrok or SuperGrok Heavy |
 | You're on **Grok Enterprise**                                    | Contact your account manager about Grok Bot access.                                                                                                                                                                                                                                                                                | Managed by your account manager                                |
 | You're on **SuperGrok Lite**                                     | Grok Bot is not included. Upgrade to SuperGrok, SuperGrok Plus, or SuperGrok Heavy, then link again.                                                                                                                                                                                                                               | Not included                                                   |
 
-Linking SuperGrok or X Premium+ is a **usage grant**, not a Cursor plan. Your existing Cursor plan stays in place after linking. You can still upgrade that Cursor plan, such as **Pro+** to **Ultra**. Linking SuperGrok on top of it does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+Linking SuperGrok or X Premium+ is a **usage grant**, not a Cursor plan. Your existing Cursor plan stays in place after linking. A Cursor plan and a link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## What's the difference between Pro, Pro+, and Ultra for Grok Bot?
 
@@ -45,7 +45,7 @@ Grok Bot usage draws from the Teams plan's usage allowance for that seat. On-dem
 
 Paid Grok Bot access includes **Weekly usage**. That included grant resets weekly. When it runs out, extra Grok Bot usage can continue as **On-demand usage** if on-demand is enabled. That extra usage is billed through Cursor and counts toward the **On-demand monthly limit**. See [What do the plan and spending screens call usage?](https://cursor.com/help/grok-bot/plans.md#what-do-the-plan-and-spending-screens-call-usage) and [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot).
 
-Grok Bot usage is metered on your Cursor account, not on Grok or X. A SuperGrok or X Premium+ link grants Grok Bot usage on that same Cursor account while SuperGrok or X Premium+ stays active. It does not create a second meter on Grok or X, and it does not change your Cursor plan. If you already have a Cursor plan that includes Grok Bot, the link does not add usage on top of that plan. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+Grok Bot usage is metered on your Cursor account, not on Grok or X. A SuperGrok or X Premium+ link grants Grok Bot usage on that same Cursor account while SuperGrok or X Premium+ stays active. It does not create a second meter on Grok or X, and it does not change your Cursor plan. If you also have a Cursor plan that includes Grok Bot, the two do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## How does the Grok Bot free trial work and how do I use it efficiently?
 
@@ -84,27 +84,27 @@ A SuperGrok or X Premium+ link is permanent once created. You can't unlink or mo
 
 ## Do Cursor and SuperGrok plans stack?
 
-No. A Cursor plan and a SuperGrok or X Premium+ link do not stack. They do not add extra Grok Bot usage on top of each other.
+No. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage.
 
-You can still upgrade within Cursor plans. Moving from **Pro+** to **Ultra** raises included Grok Bot usage to the Ultra tier. That upgrade is a change of Cursor plan, not a second grant.
+**Pro**, **SuperGrok**, and **X Premium+** are the same tier. **Pro+** and **SuperGrok Plus** are the same tier. **Ultra** and **SuperGrok Heavy** are the same tier.
 
-What does not add usage is combining a Cursor plan with a SuperGrok or X Premium+ link:
-
-- If you are on **Pro+**, linking **SuperGrok Plus** does not add Grok Bot usage.
+- If you are on **Pro** and link **SuperGrok Plus**, Grok Bot moves to the Plus tier.
+- If you are on **Pro+**, linking **SuperGrok Plus** does not add Grok Bot usage. They are the same tier.
 - If you already have **SuperGrok Heavy** linked, purchasing **Cursor Ultra** does not add Grok Bot usage.
-- Linking **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, or **X Premium+** while you already have Grok Bot on Pro, Pro+, Ultra, or a self-serve Teams plan does not add usage.
-- A Cursor plan does not add usage on top of an **X Premium+** link, and an **X Premium+** link does not add usage on top of a Cursor plan.
-- A **Grok Business** seat works the same way as a SuperGrok link. It does not add usage on top of a Cursor plan or a SuperGrok link.
+- If you are on **Ultra**, linking any SuperGrok plan or **X Premium+** does not add Grok Bot usage.
+- A **Grok Business** seat works the same way as a SuperGrok link. It does not add together with a Cursor plan or a SuperGrok link. Grok Bot uses whichever one grants more.
+
+You can also upgrade within Cursor plans. Moving from **Pro+** to **Ultra** raises included Grok Bot usage to the Ultra tier.
 
 Your Cursor subscription and your SuperGrok or X Premium+ subscription can both stay active and keep billing on their own. Buying one does not cancel the other. Only the usage grants do not combine.
 
-When **Weekly usage** runs out, keep going with [on-demand usage](https://cursor.com/help/account-and-billing/overages.md) if it is enabled on your Cursor account. On-demand is how you get more Grok Bot usage past the included grant. Linking SuperGrok or X Premium+ on top of a Cursor plan is not. If you subscribed in the iOS or Android app, enable on-demand on the web. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md).
+When **Weekly usage** runs out, keep going with [on-demand usage](https://cursor.com/help/account-and-billing/overages.md) if it is enabled on your Cursor account. On-demand is how you get more Grok Bot usage past the included grant. If you subscribed in the iOS or Android app, enable on-demand on the web. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md).
 
 ## What do the plan and spending screens call usage?
 
 Grok Bot Settings and the Cursor dashboard use different names for the same two pools.
 
-- **Weekly usage** in Grok Bot is included usage. It resets weekly. A SuperGrok, SuperGrok Plus, or SuperGrok Heavy title on that meter is the linked grant, not a second Cursor plan.
+- **Weekly usage limit** on desktop (**Weekly usage** on the phone) is included usage. It resets weekly. If a SuperGrok plan funds it, a SuperGrok, SuperGrok Plus, or SuperGrok Heavy name in **Manage Plan** is the linked grant, not a second Cursor plan.
 - **On-demand usage** in Grok Bot is extra usage after weekly usage runs out. The row says **Billed through Cursor**.
 - **On-demand monthly limit** in Grok Bot is the cap on that extra usage. On the web, the same cap is **Spending** and **Monthly Limit**.
 
@@ -116,7 +116,7 @@ The grant follows the SuperGrok or X Premium+ plan on the linked account, but th
 
 If you upgrade SuperGrok to SuperGrok Plus or SuperGrok Heavy after linking, keep using Grok Bot. Allow up to 24 hours for **Weekly usage** to move to the new tier. You do not need to link again, and you cannot unlink to force a refresh.
 
-Buying Cursor Ultra while you wait does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+A Cursor plan bought while you wait does not add to the link. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 If the old tier is still shown after 24 hours, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the Cursor account email, the Grok account email, and a screenshot of **Weekly usage**.
 
@@ -126,7 +126,7 @@ Grok Bot draws from **Weekly usage** first. When that included grant runs out, e
 
 To turn it on or change it:
 
-1. In Grok Bot, open **Settings** and find **On-demand monthly limit**. Choose **Enable** if it is off.
+1. In Grok Bot, open **Settings** > **Usage & Billing** and find **On-demand monthly limit**. Choose **Enable** if it is off.
 2. If Grok Bot asks for a card, finish that on the web. In a browser, go to [cursor.com/dashboard](https://cursor.com/dashboard), open **Spending**, and set **Monthly Limit**.
 3. If you subscribed in the iOS or Android app, set that limit on the web. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md).
 
@@ -139,8 +139,8 @@ If on-demand is off, Grok Bot stops when weekly usage runs out. The screen says 
 A downgrade or a seat change changes which single grant Grok Bot uses. It does not stack with another plan.
 
 - Downgrading SuperGrok, SuperGrok Plus, or SuperGrok Heavy lowers the linked grant after the same refresh window, up to 24 hours. Usage already spent this week still counts. If you are already past the new tier, further included usage stops. On-demand continues only if it is enabled.
-- Downgrading a Cursor plan, such as Ultra to Pro+, changes the Cursor weekly usage the same way. A SuperGrok link does not replace or add to that change.
-- On a self-serve Teams plan, Grok Bot follows the seat you are on. A higher seat can raise weekly usage. A lower seat lowers it. You do not need a separate SuperGrok link, and a link does not add usage on top of the seat.
+- Downgrading a Cursor plan, such as Ultra to Pro+, changes the Cursor weekly usage the same way. If you also have a SuperGrok link, Grok Bot uses whichever of the two now grants more.
+- On a self-serve Teams plan, Grok Bot follows the seat you are on. A higher seat can raise weekly usage. A lower seat lowers it. You do not need a separate SuperGrok link. A link does not add to the seat. Grok Bot uses whichever one grants more.
 - If an admin removes your Teams seat, the Teams grant ends. A SuperGrok or X Premium+ link already on that Cursor account does not turn into a larger grant, and it does not restore the Teams allowance.
 - If your Grok Business admin removes your seat, or changes its license, Grok Bot usage from the seat ends or changes to match.
 

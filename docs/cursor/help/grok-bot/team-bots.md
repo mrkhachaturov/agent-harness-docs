@@ -6,19 +6,19 @@ Team Bots always run in the cloud. A Bot that runs on your own computer can't be
 
 ## Who can use Team Bots?
 
-Team Bots are for members of a Cursor team who have Grok Bot. If you don't see **Create new Team Bot** after you choose **New** in the sidebar, Team Bots aren't on for your team yet. Opening a Team Bot link then shows **Team Bots Not Available**.
+Team Bots are for members of a Cursor team who have Grok Bot. If you don't see **Create new Team Bot** after you choose **New chat** (the **+** button) in the sidebar, Team Bots aren't on for your team yet. Opening a Team Bot link then shows **Team Bots Not Available**.
 
 ## How do I create a Team Bot?
 
-1. Choose **New** in the sidebar, then **Create new Team Bot**. Grok Bot creates a Bot named **New team bot** and opens its chat.
+1. Choose **New chat** (the **+** button) in the sidebar, then **Create new Team Bot**. Grok Bot creates a Bot named **New team bot** and opens its chat.
 2. Tell the Bot what it should help the team with. A sentence is enough.
 3. Follow its setup steps. It asks for plugins, then secrets, then files. Only add keys and files you're happy for the whole team to use.
-4. Give the Bot a name and description. Click the Bot's name at the top of the chat, then choose **Edit details**. Teammates can't see a Team Bot that still has the default name and no description.
+4. Give the Bot a name and description. Click the Bot's name at the top of the chat. Click the name to rename it, and edit the description under **About**. Teammates can't see a Team Bot that still has the default name and no description.
 5. Publish it. See [How do I publish a Team Bot?](https://cursor.com/help/grok-bot/team-bots.md#how-do-i-publish-a-team-bot)
 
 ## How do I turn a Bot I already have into a Team Bot?
 
-Open the Bot's **Share** menu and choose **Publish to Team**. The Bot makes a separate team copy of itself and walks you through what to bring:
+Open the Bot's **Share** menu and choose **Publish to team**. The Bot makes a separate team copy of itself and walks you through what to bring:
 
 - Secrets. Only bring keys you're happy for the whole team to use.
 - Memories. The Bot shows you which of its memories the team should have.
@@ -30,14 +30,14 @@ The personal Bot keeps working, and its chats don't move to the team copy. The t
 
 When the Bot is ready, it shows a card that says it's ready for your team. Choose **Publish to team**.
 
-After you publish, teammates can find the Bot by choosing **New**, then **Team Bots**. The card also has a button to copy the Bot's link, so you can send it to people.
+After you publish, teammates can find the Bot by choosing **New chat**, then **Team Bots**. The card also has a button to copy the Bot's link, so you can send it to people.
 
 To stop sharing, click the Bot's name at the top of the chat and choose **Unpublish**. Teammates lose access until you publish it again.
 
 ## How do teammates find a Team Bot?
 
-- Choose **New** in the sidebar, then **Team Bots**. Search or scroll the list. Each Bot shows who made it.
-- In the regular **New** search, type at least 3 characters of the Bot's name.
+- Choose **New chat** (the **+** button) in the sidebar, then **Team Bots**. Search or scroll the list. Each Bot shows who made it.
+- In the regular **New chat** search, type at least 3 characters of the Bot's name.
 - Open a link a teammate sent you, then choose **Start a chat**.
 
 To copy a published Team Bot's link, right-click it in the sidebar and choose **Copy link**. A Team Bot link opens the same shared Bot. It's different from [sharing a Bot template](https://cursor.com/docs/grok-bot/work.md#share-a-bot), which gives each person their own copy.
@@ -97,7 +97,7 @@ Each teammate needs to link their Slack account first. Open **Settings** > **Gen
 Only the owner can change a Team Bot. Click the Bot's name at the top of the chat to open its details:
 
 - **Plugins**, **Secrets**, **Skills**, and **Files** hold what the Bot uses for everyone.
-- **Edit details** changes the name and description.
+- Click the name to rename the Bot. Edit the description under **About**.
 - **Unpublish** hides the Bot from teammates until you publish it again.
 
 To rename it, you can also right-click the Bot in the sidebar and choose **Rename Bot**.
@@ -106,7 +106,7 @@ To delete it, right-click the Bot in the sidebar and choose **Delete**. This del
 
 ## How do I remove a Team Bot from my sidebar?
 
-Right-click the Bot and choose **Hide from sidebar**. To add it back, choose **New**, then **Team Bots**, and pick it again.
+Right-click the Bot and choose **Hide from sidebar**. To add it back, choose **New chat**, then **Team Bots**, and pick it again.
 
 If your admin added the Bot to your sidebar for you, **Hide from sidebar** isn't in its menu, and you can't remove it.
 
@@ -122,7 +122,7 @@ Yes. You can add a teammate's published Team Bot to your own group chat. It can'
 
 ## How do admins add a Team Bot for everyone?
 
-On the Grok Bot page of the [Cursor dashboard](https://cursor.com/dashboard/bot), find **Manage Team Bots** and choose **Manage**. For each Team Bot, choose **All team** or specific groups. Those members get the Bot in their sidebar automatically, and can't hide it. See [Grok Bot for Teams and Enterprise](https://cursor.com/docs/grok-bot/teams.md#manage-team-bots).
+On the Grok Bot page of the [Cursor dashboard](https://cursor.com/dashboard/bot), open **Manage Team Bots** under **Team Bots**. In a Team Bot's **Auto-add** column, pick **All team** or one or more groups. Those members get the Bot in their sidebar automatically, and can't hide it. See [Grok Bot for Teams and Enterprise](https://cursor.com/docs/grok-bot/teams.md#manage-team-bots).
 
 ## Why can't I see or use a Team Bot?
 

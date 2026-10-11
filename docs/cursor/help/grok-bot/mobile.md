@@ -19,7 +19,7 @@ No. Grok Bot access carries into mobile when you sign in with the same Cursor ac
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 - **X Premium+** account links
 
-You should not purchase a second subscription through Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. Linking SuperGrok on top of a Cursor plan does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+You should not purchase a second subscription through Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## Can I update the Grok Bot computer from my phone?
 
@@ -29,7 +29,7 @@ Computer updates are not available on mobile. Use desktop Grok Bot to update, re
 
 There is no setting that stays quiet only while the desktop app is open.
 
-To stop alerts for one Bot, open that Bot and turn off **Notifications**. The note is **Get notified when this Bot finishes or needs input**. The same switch is in **Bot settings** on desktop. Off means that Bot does not notify you when it finishes or needs input, including on your phone.
+To stop alerts for one Bot, tap the Bot's name at the top of its chat and turn off **Notifications**. The note is **Get notified when this Bot finishes or is waiting for you**. Off means that Bot does not notify you, including on your phone. On desktop, ask the Bot to turn its notifications off.
 
 To stop phone alerts for every Bot, open **Settings** on the phone and turn off **Notifications**. If the phone says **Notifications are off**, choose **Open Settings** and allow notifications for Grok Bot there only if you want them back.
 

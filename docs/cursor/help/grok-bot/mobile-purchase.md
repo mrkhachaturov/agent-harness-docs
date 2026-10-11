@@ -13,7 +13,7 @@ Sign in to Grok Bot mobile with the **same Cursor account** you use on desktop, 
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 - **X Premium+** account links
 
-You should not buy a second subscription on Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. Linking SuperGrok on top of a Cursor plan does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+You should not buy a second subscription on Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## How do I subscribe to Grok Bot from the mobile app?
 
@@ -27,7 +27,7 @@ Only monthly individual plans are available through the mobile app. For yearly b
 
 ## How do I use SuperGrok or X Premium+ on mobile?
 
-You still need to [link your Grok or X account](https://cursor.com/help/grok-bot/supergrok.md). Complete the SuperGrok or X Premium+ link on desktop, then sign in to Grok Bot mobile with the same Cursor account.
+You still need to [link your Grok account](https://cursor.com/help/grok-bot/supergrok.md). On the phone's paywall screen, choose **Link Grok Account** and finish signing in to Grok in your browser. Then choose **Finished Linking? Refresh My Status**. A link made on desktop or the web also works on the phone with the same Cursor account.
 
 ## How do I manage or cancel a mobile subscription?
 

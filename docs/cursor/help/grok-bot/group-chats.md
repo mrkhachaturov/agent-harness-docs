@@ -12,17 +12,14 @@ A Bot can also message you in its own chat, or message another Bot to hand off w
 
 Tell the Bot in the group. For example: "Reply here in the group. Don't message me privately about this."
 
-To make it a lasting rule, add it to a description:
-
-- **The group's description** applies to every Bot in that group. Open the group chat, click the group's name at the top, and choose **Bot settings**. Add the rule to **Description**.
-- **A Bot's own description** applies everywhere that Bot works. See [How do I change what a Bot does?](https://cursor.com/help/grok-bot/edit-bot.md#how-do-i-change-what-a-bot-does)
+To make it a lasting rule, ask each Bot to remember it. For example: "Remember: in group chats, reply in the group." See [How do I change what a Bot does?](https://cursor.com/help/grok-bot/edit-bot.md#how-do-i-change-what-a-bot-does)
 
 ## How do I stop Bots from messaging each other?
 
 There is no switch for this. Bots message each other to hand off work, and they follow your instructions about it.
 
 1. Tell the Bots in the chat. For example: "Don't message other Bots. Ask me first."
-2. To keep the rule, add it to the group's description or to each Bot's description.
+2. To keep the rule, ask each Bot to remember it.
 3. If a Bot keeps starting new work, open that Bot's chat and ask it to stop.
 
 To quiet a helper Bot without deleting it, turn off its notifications or hide it. See [How do I turn off notifications for helper Bots?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-turn-off-notifications-for-helper-bots)
@@ -31,9 +28,9 @@ Every Bot reply counts toward your usage, including replies in a group and messa
 
 ## How do I rename a group chat or change what it is for?
 
-To rename it on desktop, right-click the group in the sidebar and choose **Rename chat**.
+To rename it on desktop, right-click the group in the sidebar and choose **Rename chat**. You can also click the group's name at the top of the chat, then click the name in its details to edit it. On the phone, tap the group's name at the top of the chat, then tap **Edit name**.
 
-To change what the group is for, open the group chat, click the group's name at the top, and choose **Bot settings**. Edit **Group name** or **Description**. The Bots in the group read the description when they reply.
+To change what the group is for, tell the Bots in the group.
 
 ## Do group chats have notifications?
 
@@ -46,7 +43,7 @@ No. Voice chat works with one Bot at a time. See [Voice chat with a Bot](https:/
 ## Related
 
 - [Work with Grok Bot](https://cursor.com/docs/grok-bot/work.md#group-chats)
-- [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md)
+- [Change a Bot's name, picture, and what it does](https://cursor.com/help/grok-bot/edit-bot.md)
 - [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 

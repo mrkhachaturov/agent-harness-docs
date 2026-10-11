@@ -14,7 +14,7 @@ With an address, a Bot can:
 You can claim it two ways:
 
 - **Ask your Bot.** Say something like "Get yourself an email address." The Bot asks what name you want, checks that it's free, and shows an approval card. Nothing is claimed until you approve.
-- **Use the Email plugin.** On desktop, open the plugin marketplace from the sidebar and choose **Email**. On the phone, open **Settings** > **Plugins** > **Email**. Under **Email address**, type a name in **Choose a name**, then choose **Create address**.
+- **Use the Email plugin.** On desktop, open **Connect apps** in the sidebar and choose **Email**. On the phone, open **Settings** > **Connect apps** > **Email**. Under **Email address**, type a name in **Choose a name**, then choose **Create address**.
 
 After you claim it, the plugin shows your address with a button to copy it.
 

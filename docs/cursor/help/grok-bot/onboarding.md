@@ -12,21 +12,15 @@ Set up your first Grok Bot, give it a focused role, and start with a simple task
 
 ## How do I create another Bot?
 
-1. Choose **New** in the sidebar, then **Create new Bot**. Grok Bot adds a Bot named **New Bot** and opens its chat. To name it up front, type the name first, then choose **Create "Name" Bot**.
-2. Click the Bot's name at the top of the chat, then choose **Bot settings**.
-3. Give your Bot a short **Name**.
-4. Add a **Label** that describes its main job.
-5. Write a **Description** of the work it should do, the sources it should use, and when it should ask for your approval.
+1. Choose **New chat** (the **+** button) at the top of the sidebar, then **Create new Bot**. Grok Bot adds a Bot named **New Bot** and opens its chat. To name it up front, type the name first, then choose **Create "Name" Bot**.
+2. In your first message, tell the Bot what work it should do, which sources to use, and when to ask for your approval. Ask it to remember that for future work.
+3. To rename the Bot or add a label that describes its main job, click the Bot's name at the top of the chat, then click the name or the label.
 
-You can change these at any time. See [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md).
+You can change these at any time. See [Change a Bot's name, picture, and what it does](https://cursor.com/help/grok-bot/edit-bot.md).
 
-For example:
+For example, a first message to a Bot named Research:
 
-> Name: Research
->
-> Label: Weekly product researcher
->
-> Description: Research one product topic at a time. Use the web and the documents I share. Summarize the main findings with source links, and ask before changing any external service.
+> Research one product topic at a time. Use the web and the documents I share. Summarize the main findings with source links, and ask before changing any external service. Remember this for future work.
 
 ## What should I ask my Bot to do first?
 
@@ -38,7 +32,7 @@ Review the answer and send a follow-up if you want a different format. Your Bot 
 
 ## How do I give my Bot access to a tool?
 
-Connect a plugin when your Bot needs Gmail, Google Calendar, Slack, Notion, or another supported service. Follow the **Connect** card in chat, or open **Plugins** from the sidebar. See [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md).
+Connect a plugin when your Bot needs Gmail, Google Calendar, Slack, Notion, or another supported service. Follow the **Connect** card in chat, or open **Connect apps** in the sidebar. See [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md).
 
 For a website without a plugin, open the Bot's computer and sign in yourself when prompted. The Bot does not see the password you enter. Your Bots share the same cloud computer, including its files and browser sessions.
 

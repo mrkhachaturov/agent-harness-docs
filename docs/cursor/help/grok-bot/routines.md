@@ -15,7 +15,7 @@ On the phone, open the Bot's profile and tap **Add routine** under **Routines**.
 On desktop:
 
 1. Click the Bot's name at the top of the chat to open its details.
-2. Choose **Tasks**. Routines are under **Routines**.
+2. On the **Details** tab, find **Routines**.
 
 Each row shows the routine's name and when it runs, or **Paused**. Use the switch on the row to pause or resume it. If the Bot has no routines, you see **Ask in chat to set a routine**.
 
@@ -32,8 +32,6 @@ On the phone, open the Bot's profile and find **Routines**. Tap a routine to see
 ## How do schedules and time zones work?
 
 Schedules use the time zone in **Settings**, under **Bot**, labeled **Timezone**. **Auto-detect** follows this computer. Pick a zone when the routine should follow a different one, such as the office where the work belongs.
-
-![The Bot section in Grok Bot's General settings, with the Timezone menu set to Auto-detect](/docs-static/images/grok-bot/settings-bot-section-light.png)
 
 Ask for a schedule in plain words, like "every weekday at 8:00 AM" or "every 2 hours". Then open the routine and check **When to run**. It shows the saved schedule in words, so you can confirm it matches what you meant. If it doesn't, choose **Edit** and tell the Bot what to fix.
 

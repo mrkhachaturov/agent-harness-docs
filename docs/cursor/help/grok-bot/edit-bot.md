@@ -1,14 +1,14 @@
-# Change a Bot's name, picture, and description
+# Change a Bot's name, picture, and what it does
 
-Each Bot has its own name, picture, and description. The description is the Bot's job. It tells the Bot what to work on, which sources to use, and when to ask you first. Only the Bot's owner can change these.
+Each Bot has its own name, picture, and label. Only the Bot's owner can change these. To change what a Bot works on, tell it in chat.
 
 ## How do I rename a Bot?
 
 On desktop, right-click the Bot in the sidebar and choose **Rename Bot**. You can also double-click the Bot's name in the sidebar. Type the new name and press Enter. If the sidebar is collapsed to icons, expand it first.
 
-You can also change the name in **Bot settings**. See [How do I change what a Bot does?](https://cursor.com/help/grok-bot/edit-bot.md#how-do-i-change-what-a-bot-does)
+You can also click the Bot's name at the top of the chat to open its details, then click the name to edit it. The label under the name works the same way. It shows **Add a label** when the Bot doesn't have one.
 
-On the phone, tap the Bot's name at the top of the chat to open its profile. Then tap **Edit name**.
+On the phone, tap the Bot's name at the top of the chat to open its profile. Then tap **Edit name**. The phone calls the label **Title (optional)**.
 
 ## How do I change a Bot's picture?
 
@@ -28,30 +28,21 @@ On the phone, open the Bot's profile and tap its picture. Choose **Select from G
 
 ## How do I change what a Bot does?
 
-Edit its description.
+Tell the Bot in chat. For a lasting rule, ask it to remember. For example: "From now on, ask before sending any email." The Bot keeps lasting rules in its memory. Put one-time requests in a normal message.
 
-On desktop:
+A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) you own still has a description. Edit it in the Bot's details, under **About**.
 
-1. Open the chat with the Bot.
-2. Click the Bot's name at the top of the chat to open its details.
-3. Choose **Bot settings**.
-4. Edit **Description**. **Name** and **Label (optional)** are here too.
+For what to tell a new Bot, see [Onboarding](https://cursor.com/help/grok-bot/onboarding.md) and [Edit a Bot](https://cursor.com/docs/grok-bot/work.md#edit-a-bot).
 
-![A Bot's settings with its picture, Name, Label (optional), Description, and Notifications fields](/docs-static/images/grok-bot/bot-settings-light.png)
+## Where did Bot settings go?
 
-On the phone, open the Bot's profile and tap **Instructions**. The phone app calls the description **Instructions**, and the label **Title (optional)**.
+The Bot's details no longer have a **Bot settings** page, and personal Bots no longer have a description. To change the picture, name, or label, click the Bot's name at the top of the chat to open its details. Click the picture or the name to edit it. To change what the Bot does, tell it in chat.
 
-Put lasting rules in the description, like "Ask before sending any email." Put one-time requests in the chat. For what to write, see [Onboarding](https://cursor.com/help/grok-bot/onboarding.md) and [Edit a Bot](https://cursor.com/docs/grok-bot/work.md#edit-a-bot).
-
-## Where did Edit Profile go?
-
-The sidebar right-click menu no longer has **Edit Profile**. **Rename Bot** is still there.
-
-The picture, description, and other settings are now in the Bot's details. Click the Bot's name at the top of the chat, then choose **Bot settings**. You can also make these changes in the phone app.
+The sidebar right-click menu still has **Rename Bot**.
 
 ## Why can't I rename or edit a Bot?
 
-Only the Bot's owner can change its name, picture, and description. **Rename Bot** does not appear for a Bot you don't own.
+Only the Bot's owner can change its name, picture, and label. **Rename Bot** does not appear for a Bot you don't own.
 
 ## Related
 

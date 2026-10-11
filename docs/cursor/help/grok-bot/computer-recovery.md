@@ -2,15 +2,15 @@
 
 The Grok Bot computer is shared by your bots. Files, logins, installed apps, and the browser live there. Chats are stored separately, so a computer problem does not delete conversation history by itself.
 
-Open computer controls from **Settings > Updates**. You can also get **Recover** from the reconnect screen when the app offers it.
+Open computer controls from **Settings** > **Computer**, under **Bot's computer**. You can also get **Recover** from the reconnect screen when the app offers it.
 
 ## What do Update, Recover, and Reset each do?
 
-| Action      | What it does                                                                                                                                                                                                                                                          | What it keeps                                                                                    | What it removes                                                                                      |
-| ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
-| **Update**  | Moves the computer to the latest version. Some updates only refresh Grok Bot's software. Others replace the whole computer, and you may be able to schedule those for later. The text under **Update** in **Settings** > **Updates** tells you which kind is waiting. | Software update: everything, including installed apps. Computer update: Bots, files, and logins. | Software update: nothing. Computer update: installed apps and packages.                              |
-| **Recover** | Saves what it can, then builds a new computer on the latest version from your saved data. Running work is interrupted.                                                                                                                                                | Bots, files, and logins that were saved                                                          | Installed apps and packages. Very recent changes, if the computer could not be reached to save them. |
-| **Reset**   | Builds a new computer on the latest version from your last saved data. Running work is interrupted.                                                                                                                                                                   | Bots, files, and logins that were saved                                                          | Installed apps and packages. Very recent changes, if the computer could not be reached to save them. |
+| Action      | What it does                                                                                                                                                                                                                                                                          | What it keeps                                                                                    | What it removes                                                                                      |
+| ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
+| **Update**  | Moves the computer to the latest version. Some updates only refresh Grok Bot's software. Others replace the whole computer, and you may be able to schedule those for later. The text under **Update Bot's Computer** in **Settings** > **Computer** tells you which kind is waiting. | Software update: everything, including installed apps. Computer update: Bots, files, and logins. | Software update: nothing. Computer update: installed apps and packages.                              |
+| **Recover** | Saves what it can, then builds a new computer on the latest version from your saved data. Running work is interrupted.                                                                                                                                                                | Bots, files, and logins that were saved                                                          | Installed apps and packages. Very recent changes, if the computer could not be reached to save them. |
+| **Reset**   | Builds a new computer on the latest version from your last saved data. Running work is interrupted.                                                                                                                                                                                   | Bots, files, and logins that were saved                                                          | Installed apps and packages. Very recent changes, if the computer could not be reached to save them. |
 
 **Recover** and **Reset** both rebuild from your last saved data. If the computer can't be reached to save first, very recent changes may be lost. If Bots recently disappeared, or saving failed, [contact support](https://cursor.com/help/grok-bot/get-help.md) before you use either one.
 
@@ -18,7 +18,7 @@ Open computer controls from **Settings > Updates**. You can also get **Recover**
 
 1. Wait, then choose **Retry** if the computer says **Reconnecting** or **Couldn't Reach Grok Bot's Computer**. Bots, files, and logins are safe while it reconnects. Do not **Reset** during this.
 2. Fully quit Grok Bot and reopen it. On Mac, choose **Quit** from the menu bar, not just close the window.
-3. **Update** the computer from **Settings > Updates** if an update is offered.
+3. **Update** the computer from **Settings** > **Computer** if an update is offered.
 4. **Recover** if it still cannot reconnect, or if an update looks stuck and **Recover computer** is shown. On a slow update, **Keep waiting** is the safe default.
 5. **Reset** only after those steps. Like **Recover**, it can lose very recent changes if the computer can't be reached to save them.
 
@@ -31,11 +31,11 @@ Do not start a second Update or Reset while one is already running. Repeated res
 - Choose **Recover** only if the update appears stuck and the app offers **Recover computer**. If recovery is not available, keep waiting.
 - If **Recover** or **Reset** fails, use **Retry Recovery** or **Retry Reset** once. Then stop and [contact support](https://cursor.com/help/grok-bot/get-help.md).
 
-## Why does Update say Backup not ready?
+## Why didn't Update run?
 
-The computer's data is not safely backed up yet. Grok Bot will offer the update again after a backup completes. Wait for that. Do not **Reset** to force the update.
+If the computer's files aren't backed up yet, **Update** says they aren't ready and nothing changes. Wait a moment and try again. Do not **Reset** to force it.
 
-**Agent busy** means a bot could not pause in time, so the computer was not updated. Let that bot finish, then update again.
+If **Settings** says **An agent couldn't pause in time, so the computer was not updated**, let that Bot finish, then choose **Update** again.
 
 ## Why did a bot fail to respond?
 
@@ -79,7 +79,7 @@ A disk warning is not data loss. **Computer is low on disk space** or **Computer
 Contact support instead of trying another **Reset** if:
 
 - Bots or chats still look missing on every device after the checks in [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted), or saving failed
-- **Backup not ready** does not clear
+- **Update** keeps saying the computer's files aren't ready
 - **Recover** or **Reset** fails after one retry
 - The computer is still empty after **Recover**
 

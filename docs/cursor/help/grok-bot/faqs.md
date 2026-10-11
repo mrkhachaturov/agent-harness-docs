@@ -16,7 +16,7 @@ Individual **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, and **X Premi
 
 ## I don't see Link Grok Account.
 
-That option shows only on the **Get Started** screen, before you sign in. Settings does not have it. Fully quit Grok Bot (on Mac, choose **Quit** from the menu bar), then open it again. See [Why don't I see a Link Grok Account option after I've already logged in?](https://cursor.com/help/grok-bot/supergrok.md#why-dont-i-see-a-link-grok-account-option-after-ive-already-logged-in).
+**Link Grok Account** is on the **Get Started with Grok Bot** page at [cursor.com/bot/onboarding](https://cursor.com/bot/onboarding), and on the phone's paywall screen. If you already have access, open **Settings** > **Usage & Billing** and look under **Manage Plan** for **Get Access with Grok**. It appears only when linking would raise your usage. See [Why don't I see a Link Grok Account option after I've already logged in?](https://cursor.com/help/grok-bot/supergrok.md#why-dont-i-see-a-link-grok-account-option-after-ive-already-logged-in).
 
 ## I linked SuperGrok to the wrong Cursor account. Can I unlink it?
 
@@ -52,11 +52,11 @@ They are two separate meters for two products. Grok Bot usage lives on your Curs
 
 ## Do a Cursor plan and SuperGrok add together?
 
-No. They do not stack. For more usage, upgrade your Cursor plan (for example **Pro+** to **Ultra**) or turn on on-demand usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+No. Grok Bot uses whichever one grants more weekly usage. **Pro**, **SuperGrok**, and **X Premium+** are the same tier, **Pro+** matches **SuperGrok Plus**, and **Ultra** matches **SuperGrok Heavy**. For more usage, move to a higher tier or turn on on-demand usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## How do I stop charges after my weekly usage runs out?
 
-Turn off on-demand, or set a cap. In Grok Bot, open **Settings** > **On-demand monthly limit**. On the web, go to [cursor.com/dashboard](https://cursor.com/dashboard) > **Spending** > **Monthly Limit**. The cap does not stop a Bot in the middle of a run, so a running task can go a little past it. See [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot) and [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md).
+Turn off on-demand, or set a cap. In Grok Bot, open **Settings** > **Usage & Billing** > **On-demand monthly limit**. On the web, go to [cursor.com/dashboard](https://cursor.com/dashboard) > **Spending** > **Monthly Limit**. The cap does not stop a Bot in the middle of a run, so a running task can go a little past it. See [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot) and [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md).
 
 ## My trial ran out in one task. Can I get it back?
 
@@ -76,13 +76,11 @@ Yes. Bots work on a cloud computer. Closing the app, the laptop, or the phone do
 
 ## Does the Bot use my own computer?
 
-Bots work on their own cloud computer. A Bot runs a command on your desktop only if you allow it. The setting is under **Settings** > **Computer**, labeled **Execution on this computer**. If no desktop is listed there yet, look under **Settings** > **General** > **Bot** for **Execution on Local Computer**. By default it asks you each time. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
+Bots work on their own cloud computer. A Bot runs a command on your desktop only if you allow it. The setting is under **Settings** > **Computer** > **Your computer**, labeled **Execution on this computer**. If no desktop is listed there yet, the same page shows **Execution on Local Computer**. By default it asks you each time. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
 
 ## Why does a website block my Bot or show a captcha?
 
-Some sites block traffic from cloud computers. When that happens, the Bot hands you the step, and you can sign in yourself on the Bot's computer. You can also turn on **Settings** > **Computer** > **Route traffic through this computer**, so sites see your own connection.
-
-![The Network section in Grok Bot's Computer settings, with the Route traffic through this computer toggle turned off](/docs-static/images/grok-bot/settings-network-light.png)
+Some sites block traffic from cloud computers. When that happens, the Bot hands you the step, and you can sign in yourself on the Bot's computer. You can also turn on **Route traffic through this computer** in **Settings** > **Computer**, under **Your computer**, so sites see your own connection.
 
 ## My chats or Bots are missing.
 
@@ -110,13 +108,13 @@ The desktop app runs on Mac, Windows, and Linux. The phone app runs on iPhone an
 
 ## How do I contact support?
 
-[Contact support](https://cursor.com/help.md) while signed in to your Cursor account. Include your account email, your Grok Bot version (account menu > **About** > **Copy version info**), a screenshot, and the request ID (right-click the message > **Copy request ID**). See [How do I find my Grok Bot version?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-find-my-grok-bot-version) and [How do I copy a request ID?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-copy-a-request-id).
+[Contact support](https://cursor.com/help.md) while signed in to your Cursor account. Include your account email, your Grok Bot version (account menu > **Support** > **About** > **Copy version info**), a screenshot, and the request ID (right-click the message > **Copy request ID**). See [How do I find my Grok Bot version?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-find-my-grok-bot-version) and [How do I copy a request ID?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-copy-a-request-id).
 
 ## Related
 
 - [Onboarding](https://cursor.com/help/grok-bot/onboarding.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
-- [Change a Bot's name, picture, and description](https://cursor.com/help/grok-bot/edit-bot.md)
+- [Change a Bot's name, picture, and what it does](https://cursor.com/help/grok-bot/edit-bot.md)
 - [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Which AI models power Grok Bot?](https://cursor.com/help/grok-bot/models.md)
