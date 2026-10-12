@@ -6,7 +6,7 @@ Cursor accounts are tied to a single email address, and email addresses cannot b
 
 There is no way to change the email on an existing account. As a workaround, you can create a new account with your preferred email.
 
-1. Cancel your subscription (if active) via [cursor.com/dashboard](https://cursor.com/dashboard) > **Manage Subscription** > **Cancel Subscription**
+1. Cancel your subscription (if active) via [cursor.com/dashboard](https://cursor.com/dashboard) > **Manage in Stripe** > **Cancel Subscription**
 2. Wait for the billing period to end
 3. Delete your account at [cursor.com/dashboard](https://cursor.com/dashboard) > **Advanced Account Settings** > **Delete Account**
 4. Create a new account at [cursor.com](https://cursor.com) using your preferred email

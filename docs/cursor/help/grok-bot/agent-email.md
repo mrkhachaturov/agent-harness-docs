@@ -6,7 +6,7 @@ With an address, a Bot can:
 
 - Sign up for services with its own address, and pick up the verification code or link with your OK.
 - Collect receipts, newsletters, and reports, and summarize them for you.
-- Send email for you, such as a digest or an update, and handle replies, once you've asked it to.
+- Draft email for you, such as a digest or an update, and draft replies. You approve each one before it sends.
 - Run a routine when email arrives, optionally only from specific senders.
 
 ## How do I get an email address for my Bot?
@@ -51,6 +51,8 @@ Each message can include up to 10 attachments, up to 10 MB each and 25 MB in tot
 
 Set up a routine. New mail doesn't start a chat or wake a Bot on its own. A Bot acts on incoming mail only through a routine you create.
 
+A routine can read the mail, summarize it, and draft a reply. Any email it wants to send waits as a draft until you approve it.
+
 Ask your Bot in chat, for example "When an email arrives from [billing@example.com](mailto:billing@example.com), summarize it and tell me." A routine can watch for:
 
 - Mail from anyone.
@@ -61,11 +63,15 @@ By default, the routine only runs for mail from senders that pass standard email
 
 ## Does my Bot need my approval to send email?
 
-Yes. Your Bot sends email only when you've asked it to, either in chat or in a routine's instructions. Otherwise it shows you the full draft and asks first. Replying counts as sending.
+Yes, every time. Your Bot shows you the full draft, and nothing sends until you press **Send**. This includes routines and replies.
 
-If **Auto-review** is on, sends are checked the same way as other actions, and some sends always ask you. Instructions inside an email the Bot received never count as your permission to send.
+Asking your Bot in chat, or putting the instruction in a routine, doesn't skip approval. Instructions inside an email the Bot received never count as your permission to send.
 
 If you've also connected Gmail or Outlook, your Bot asks which account to send from when either could work.
+
+## Why does my routine leave a draft instead of sending?
+
+This is expected. Open the draft and press **Send**. There's no option for unattended sending.
 
 ## Are there limits on what my Bot can send?
 

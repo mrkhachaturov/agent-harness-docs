@@ -5,7 +5,7 @@ Cancel your plan in the dashboard. Keep access until your billing period ends.
 ## How do I cancel my subscription?
 
 1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
-2. Click **Manage Subscription** to open the Stripe billing portal
+2. Click **Manage in Stripe** to open the Stripe billing portal
 3. Click **Cancel Subscription** and confirm
 
 On an individual plan? You can [schedule a downgrade](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-downgrade-my-plan) instead of canceling.
@@ -48,7 +48,7 @@ If none of these apply and you still can't cancel, [contact support](https://cur
 Use these steps:
 
 1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) and check for unpaid invoices
-2. Complete payment or retry from **Manage Subscription**
+2. Complete payment or retry from **Manage in Stripe**
 3. If the issue persists, [contact support](https://cursor.com/help.md) with your workspace name and a screenshot
 
 ## Can I resubscribe later?

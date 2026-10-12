@@ -8,7 +8,7 @@ Enterprise teams can control which AI models team members can use, [contact sale
 
 Configure model access in two places:
 
-1. **Team Settings → Models** in the [team dashboard](https://cursor.com/docs/account/teams/dashboard.md) (Enterprise only). From Team Settings, open the **Model Providers** section to manage providers, models, defaults, and personal API key (BYOK) controls. This is the team baseline.
+1. **Team Settings → Models** in the [team dashboard](https://cursor.com/docs/account/teams/dashboard.md) (Enterprise only). Turn models on or off under **Cursor Models** and **Other Models**, set defaults for new providers and models under **Model Defaults**, and control whether members can use their own API keys under **Personal API Keys (BYOK)**. This is the team baseline.
 2. **Organization → Groups → \[group] → Models**, when you use [Organization Groups](https://cursor.com/docs/enterprise/organization-groups.md#model-access). Use this to widen access for specific cohorts.
 
 You can also manage the team baseline programmatically with the [Admin API model access](https://cursor.com/docs/account/teams/admin-api.md#model-access) routes, or across linked teams with the [Organization API](https://cursor.com/docs/account/organizations/organization-admin-api.md#model-access).
@@ -36,6 +36,8 @@ See [Models](https://cursor.com/docs/models-and-pricing.md) for the current list
 ### Auto-review and model access
 
 [Auto-review](https://cursor.com/docs/agent/security/run-modes.md#run-mode) uses a background classifier that runs on Gemini 3.5 Flash Lite, with [Claude 4.5 Haiku](https://cursor.com/docs/models/claude-4-5-haiku.md) as the fallback. Keep Claude 4.5 Haiku allowed. Blocking it can disable Auto-review in the IDE, even when team Run Modes includes it. See [Auto-review classifier requirements](https://cursor.com/docs/agent/security/run-modes.md#auto-review-model-requirements).
+
+Gemini 3.5 Flash Lite is only available in Cursor as a model for Auto-review. For that reason, enabling it for an organization will not make it available for coding agents.
 
 ## Restrict personal API keys (BYOK controls)
 

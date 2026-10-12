@@ -4,13 +4,19 @@ Access invoice history, download PDFs, and gather billing records.
 
 ## How do I open my invoice history?
 
+For a plan billed on cursor.com:
+
 1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
-2. Click **Manage Subscription** to open the Stripe billing portal
+2. Click **Manage in Stripe** to open the Stripe billing portal
 3. Scroll to billing history
+
+The same invoices are listed under **Invoices** on that billing page.
+
+For an App Store plan, the subscription receipt comes from Apple. For a plan bought in the Grok Bot Android app, it comes from Google Play. On-demand invoices are in the **Invoices** list on the billing page. See [Billing and payments](https://cursor.com/help/account-and-billing/billing.md#where-do-i-find-invoices-and-receipts).
 
 ## How do I download invoice PDFs?
 
-1. Open your billing history in the Stripe portal
+1. View the **Invoices** list on [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing), or your billing history in the Stripe portal
 2. Select an invoice
 3. Click to download the PDF
 

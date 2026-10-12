@@ -4,7 +4,7 @@ Account deletion is self-serve and permanent.
 
 ## How do I delete my account?
 
-1. Cancel your subscription first (if active) via **Billing** > **Manage Subscription** > **Cancel Subscription**
+1. Cancel your subscription first (if active) via **Billing** > **Manage in Stripe** > **Cancel Subscription**
 2. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
 3. Scroll to **Advanced Account Settings**
 4. Click **Delete Account** and confirm

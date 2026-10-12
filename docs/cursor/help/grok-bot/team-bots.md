@@ -26,6 +26,8 @@ Open the Bot's **Share** menu and choose **Publish to team**. The Bot makes a se
 
 The personal Bot keeps working, and its chats don't move to the team copy. The team copy appears in your sidebar, hidden from teammates until you publish it.
 
+The team copy connects to Slack as its own app, with its own handle. Add it to Slack after you publish. See [How do I add a Team Bot to Slack?](https://cursor.com/help/grok-bot/team-bots.md#how-do-i-add-a-team-bot-to-slack)
+
 ## How do I publish a Team Bot?
 
 When the Bot is ready, it shows a card that says it's ready for your team. Choose **Publish to team**.
@@ -89,6 +91,8 @@ The owner adds it, after publishing:
 3. If it says **Awaiting admin approval**, a Slack workspace admin needs to approve the app.
 
 Once it says **Connected**, teammates can message the Bot directly or mention it in channels.
+
+In a channel thread or a DM, the Team Bot acts for the teammate who mentioned it. It can hand work to that person's own Bots, and their replies are posted back into the same thread. A personal Bot doesn't hand work to other Bots from a channel thread. See [Can a Bot message other Bots from Slack?](https://cursor.com/help/grok-bot/group-chats.md#can-a-bot-message-other-bots-from-slack)
 
 Each teammate needs to link their Slack account first. Open **Settings** > **General** > **Team Bots** and choose **Link**. If you message the Bot before you link, it replies with steps to link your account.
 
