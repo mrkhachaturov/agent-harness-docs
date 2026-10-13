@@ -166,7 +166,7 @@ Local command-based (`stdio`) servers run in a sandbox with one of these network
 
 You can prevent Cursor from accessing specific repositories.
 
-Add repository URLs or patterns in the [team dashboard](https://cursor.com/docs/account/teams/dashboard.md) under "Repository Blocklist" (Enterprise only). Cursor will refuse to index or work with blocked repositories.
+Add repository URLs or patterns in the [team dashboard](https://cursor.com/docs/account/teams/dashboard.md) under "Repository Blocklist" (Enterprise only). Cursor will refuse to index or work with blocked repositories. This applies to the editor and CLI, not to Cloud Agents, Automations, or Bugbot.
 
 ## Protected Git Scopes
 

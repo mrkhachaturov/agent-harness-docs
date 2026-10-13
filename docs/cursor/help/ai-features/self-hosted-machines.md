@@ -226,7 +226,7 @@ Self-hosted runs use two layers: Cursor routing (which worker serves a request) 
 - **My Machines**: Cursor only routes a repository request to a worker when one of its registered `--worker-dir` roots matches that repo. Start the worker from the correct checkout or add another `--worker-dir`.
 - **Repo-backed team pools**: Requests match both the team pool name and a `repo=<owner/repo>` label. A request for `pool=my-pool` and `repo=acme/payments` routes only to a worker serving that repo.
 - **GitHub triggers**: On public repos, only users with `OWNER` or `COLLABORATOR` access can route a run to a self-hosted team pool. Other commenters stay on managed infrastructure unless your team requires self-hosted for all runs.
-- **Org controls**: [Protected Git Scopes](https://cursor.com/docs/enterprise/model-and-integration-management.md#protected-git-scopes) and the [repository blocklist](https://cursor.com/docs/enterprise/model-and-integration-management.md#git-repository-blocklist) still apply. Connect each user's Git account under [Integrations](https://cursor.com/dashboard/integrations) so Cursor can verify repository access before a run starts.
+- **Org controls**: [Protected Git Scopes](https://cursor.com/docs/enterprise/model-and-integration-management.md#protected-git-scopes) still apply. Connect each user's Git account under [Integrations](https://cursor.com/dashboard/integrations) so Cursor can verify repository access before a run starts.
 
 **Git access on the worker**
 

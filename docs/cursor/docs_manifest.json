@@ -183,8 +183,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "2e84acb4493fc8a5b7f1451ad77c0002784ef30e5ca9b22404c5182966c36a13",
-      "last_updated": "2026-10-12T22:22:59.734303"
+      "hash": "7cf7d6430ec03820080badcd032c6a1720d8e337669da5d4f225ecbf5ce9f8e2",
+      "last_updated": "2026-10-13T13:22:29.801819"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -201,8 +201,8 @@
     "api/origin/mcp/tools.md": {
       "original_url": "https://cursor.com/docs/api/origin/mcp/tools",
       "original_md_url": "https://cursor.com/docs/api/origin/mcp/tools.md",
-      "hash": "2812fd76b5f9b557b7de8175011f937fb33268f330b8becc0b7c998092375ad4",
-      "last_updated": "2026-10-09T17:53:02.364731"
+      "hash": "0da38f846e5d434a36f641a78b0bf482ca21be8ddfdc4996bc0908bcf1afb286",
+      "last_updated": "2026-10-13T13:22:29.802472"
     },
     "api/origin/migrations.md": {
       "original_url": "https://cursor.com/docs/api/origin/migrations",
@@ -387,8 +387,8 @@
     "cloud-agent/security.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security",
       "original_md_url": "https://cursor.com/docs/cloud-agent/security.md",
-      "hash": "451db97caabc7f3ab2ff520e997c709f6bb5127f548896e376d86993e1ac1b7c",
-      "last_updated": "2026-08-08T01:10:04.133631"
+      "hash": "a4262260a63a575f7904d96bef3f509fe6463db87a939311e773ae3d3258072c",
+      "last_updated": "2026-10-13T13:22:29.803427"
     },
     "cloud-agent/self-hosted.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted",
@@ -507,8 +507,8 @@
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
       "original_md_url": "https://cursor.com/docs/enterprise/model-and-integration-management.md",
-      "hash": "f912182c26951d05f88b0c1d327e7c542a37e88dcc419f0128c27a241f7bb10f",
-      "last_updated": "2026-10-12T22:22:59.736813"
+      "hash": "ace3ad5420bc1252a6e60c3131aafbe461677b5731c539efb2591cefaa3cba4d",
+      "last_updated": "2026-10-13T13:22:29.804085"
     },
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
@@ -885,8 +885,8 @@
     "help/ai-features/self-hosted-machines.md": {
       "original_url": "https://cursor.com/help/ai-features/self-hosted-machines",
       "original_md_url": "https://cursor.com/help/ai-features/self-hosted-machines.md",
-      "hash": "ea0dc26984e77cc3df5aa9c350642fd454bfeaa016da7d645826c4208070b7fc",
-      "last_updated": "2026-10-03T03:21:25.542731"
+      "hash": "fd8387c9434326392df18f971e119e430000a80ad32fced88dae9923ce663395",
+      "last_updated": "2026-10-13T13:22:29.805001"
     },
     "help/ai-features/shared-transcripts.md": {
       "original_url": "https://cursor.com/help/ai-features/shared-transcripts",
@@ -1479,14 +1479,20 @@
     "origin/apps.md": {
       "original_url": "https://cursor.com/docs/origin/apps",
       "original_md_url": "https://cursor.com/docs/origin/apps.md",
-      "hash": "fb7762b6b52b616b2b8e4f1a0391fd594f2001a4a33067112a1499267a3d092a",
-      "last_updated": "2026-10-08T00:41:44.906941"
+      "hash": "470eb2b03734bea6ae182bb3ac251693b68b3456dfb084d4a79bc5de5abebc63",
+      "last_updated": "2026-10-13T13:22:29.806151"
     },
     "origin/apps/build-app.md": {
       "original_url": "https://cursor.com/docs/origin/apps/build-app",
       "original_md_url": "https://cursor.com/docs/origin/apps/build-app.md",
-      "hash": "4b888d12f19d78dcb76a6696c1a6ed28a666cf4f9879381c01f5ffa84e5de816",
-      "last_updated": "2026-10-08T00:41:44.907034"
+      "hash": "c4e18b6d6471ea81cb00553296d85480d6f9dad8df8bc138b8b83a48bc576921",
+      "last_updated": "2026-10-13T13:22:29.806381"
+    },
+    "origin/apps/publish.md": {
+      "original_url": "https://cursor.com/docs/origin/apps/publish",
+      "original_md_url": "https://cursor.com/docs/origin/apps/publish.md",
+      "hash": "1c752df404ac1d0104b06d39ef64499f4ded7ef7825882bc47912cf521fb4774",
+      "last_updated": "2026-10-13T13:22:29.806571"
     },
     "origin/browse.md": {
       "original_url": "https://cursor.com/docs/origin/browse",
@@ -1622,21 +1628,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-13T05:01:06.186161",
-    "fetch_duration_seconds": 3.393515,
-    "total_pages_discovered": 270,
-    "pages_fetched_successfully": 270,
+    "last_fetch_completed": "2026-10-13T13:22:29.811089",
+    "fetch_duration_seconds": 2.447248,
+    "total_pages_discovered": 271,
+    "pages_fetched_successfully": 271,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 270,
+    "total_files": 271,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-13T05:01:06.186180",
+  "last_updated": "2026-10-13T13:22:29.811101",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
