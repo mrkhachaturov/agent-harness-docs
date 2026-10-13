@@ -219,8 +219,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "02b1b86fe1f8eb48daecbc65b1b3b82a0c7d528aba7acedad35c20622e07db7d",
-      "last_updated": "2026-10-12T22:22:59.734923"
+      "hash": "27143dda40893681e1af71806612937518a20a6078069e3690e59d05ef1e0abe",
+      "last_updated": "2026-10-13T05:01:06.178325"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -549,8 +549,8 @@
     "enterprise/privacy-and-data-governance.md": {
       "original_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance",
       "original_md_url": "https://cursor.com/docs/enterprise/privacy-and-data-governance.md",
-      "hash": "e1aefe24c2b7954aecb88313d6bbeebe6d6a5fe9670503c67e3f337fb8b20834",
-      "last_updated": "2026-09-01T22:58:28.908221"
+      "hash": "262381db13c42aa37b43428b0e7aae93dc5e2b51aae1fb8ab9adc23a795493c8",
+      "last_updated": "2026-10-13T05:01:06.179778"
     },
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
@@ -1230,6 +1230,12 @@
       "hash": "5ff385976f9ce1767f65d7a9aede93f7238854e20f7d45ae300368bad03a39a7",
       "last_updated": "2026-09-22T23:27:14.530167"
     },
+    "help/the-x-subscription/overview.md": {
+      "original_url": "https://cursor.com/help/the-x-subscription/overview",
+      "original_md_url": "https://cursor.com/help/the-x-subscription/overview.md",
+      "hash": "285ee3b02eb3cf932338ccb1de959b0c089b9c27116229d02d63c48e5c461ef6",
+      "last_updated": "2026-10-13T05:01:06.180877"
+    },
     "help/troubleshooting/agent-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/agent-issues",
       "original_md_url": "https://cursor.com/help/troubleshooting/agent-issues.md",
@@ -1616,21 +1622,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-12T22:22:59.747138",
-    "fetch_duration_seconds": 2.647919,
-    "total_pages_discovered": 269,
-    "pages_fetched_successfully": 269,
+    "last_fetch_completed": "2026-10-13T05:01:06.186161",
+    "fetch_duration_seconds": 3.393515,
+    "total_pages_discovered": 270,
+    "pages_fetched_successfully": 270,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 269,
+    "total_files": 270,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-12T22:22:59.747151",
+  "last_updated": "2026-10-13T05:01:06.186180",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
