@@ -63,8 +63,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "8e5269fd81a0ca9bb53a2f73863f4a75a00119404340545c0d669b1d2a3564c7",
-      "last_updated": "2026-10-08T00:41:44.901178"
+      "hash": "b4a317ad506e249f054b5699329d07a48737735b7133919512d9ba70e972c127",
+      "last_updated": "2026-10-13T20:30:55.468757"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -141,8 +141,8 @@
     "agent/security/run-modes.md": {
       "original_url": "https://cursor.com/docs/agent/security/run-modes",
       "original_md_url": "https://cursor.com/docs/agent/security/run-modes.md",
-      "hash": "0c3c691997ae6dea4c66b04a0e5fbb2f4e325a8be6a83ce668046b46e3f76829",
-      "last_updated": "2026-10-12T22:22:59.733105"
+      "hash": "77f2506195893012d3a9fdc869ed93fcdd5b55dbb461cfef87a06acd33c1afa7",
+      "last_updated": "2026-10-13T20:30:55.469188"
     },
     "agent/tools/browser.md": {
       "original_url": "https://cursor.com/docs/agent/tools/browser",
@@ -321,8 +321,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "cc12fe03e612d830909f4ec8a2c13bef7dc5e697aa85f0058f926bcd6a03e295",
-      "last_updated": "2026-10-09T22:08:47.407396"
+      "hash": "400db9ed2a465af313c5a921415bc0ee1909e568358e7017095bcbbfb7c08be1",
+      "last_updated": "2026-10-13T20:30:55.470594"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -357,8 +357,8 @@
     "cloud-agent/identity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/identity",
       "original_md_url": "https://cursor.com/docs/cloud-agent/identity.md",
-      "hash": "ca29ed80882843781cea26eb9706c7311d977af5e135ffd7ea33922c60754119",
-      "last_updated": "2026-09-14T08:28:26.417338"
+      "hash": "e1f024f56fa6fc752e7b9ef792e9761ba15d8a3ecbac16868aed1b6a7be9f5db",
+      "last_updated": "2026-10-13T20:30:55.470974"
     },
     "cloud-agent/metadata.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/metadata",
@@ -381,14 +381,14 @@
     "cloud-agent/security-network.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security-network",
       "original_md_url": "https://cursor.com/docs/cloud-agent/security-network.md",
-      "hash": "7870ae40b8ea3ab53d04edf56cbe2a651644703b135ad7ad325af8f51bdeee2d",
-      "last_updated": "2026-10-02T00:27:55.104067"
+      "hash": "2c81618c332f8c36162c74cbada66c79239824c2e367fe3da77639388e18c148",
+      "last_updated": "2026-10-13T20:30:55.471333"
     },
     "cloud-agent/security.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security",
       "original_md_url": "https://cursor.com/docs/cloud-agent/security.md",
-      "hash": "a4262260a63a575f7904d96bef3f509fe6463db87a939311e773ae3d3258072c",
-      "last_updated": "2026-10-13T13:22:29.803427"
+      "hash": "3f2561d4c19990c5015d8426df9590c09f8e12b363b9e5db4468cf87b136675b",
+      "last_updated": "2026-10-13T20:30:55.471649"
     },
     "cloud-agent/self-hosted.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted",
@@ -423,8 +423,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "0fb7cf5b46b4b2acd91814ac522aaedaa4e0cff869897db3743296d61b9abca8",
-      "last_updated": "2026-10-08T18:20:02.639531"
+      "hash": "b4ee59b524396d5b1ba0da4c6ee9dcda414418253180b8c6acbcd25888a4f5e3",
+      "last_updated": "2026-10-13T20:30:55.472098"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -435,8 +435,8 @@
     "cloud-agent/setup.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/setup",
       "original_md_url": "https://cursor.com/docs/cloud-agent/setup.md",
-      "hash": "b36a38f8101b2315372c33190e84e9ed5884cae7327e17519ef6decce45572b3",
-      "last_updated": "2026-10-02T00:27:55.106168"
+      "hash": "fbeeefbf04e01625ad7537d90729806d6738513ab9607eb96fc97429135ecd21",
+      "last_updated": "2026-10-13T20:30:55.472461"
     },
     "configuration/worktrees.md": {
       "original_url": "https://cursor.com/docs/configuration/worktrees",
@@ -477,8 +477,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "c73242e6c9b520b257e8c6093d6169ad9b13467112e0267d8208b89da81e8231",
-      "last_updated": "2026-09-29T17:29:46.462996"
+      "hash": "8a4862ab3430f9a54ced1517ac8aa22745dba34f1e0697fabb348244f4033854",
+      "last_updated": "2026-10-13T20:30:55.472854"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -507,8 +507,8 @@
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
       "original_md_url": "https://cursor.com/docs/enterprise/model-and-integration-management.md",
-      "hash": "ace3ad5420bc1252a6e60c3131aafbe461677b5731c539efb2591cefaa3cba4d",
-      "last_updated": "2026-10-13T13:22:29.804085"
+      "hash": "d2aa3a5c41864124eb0fb63706af20ebceeb700423a244360540d9991543ba67",
+      "last_updated": "2026-10-13T20:30:55.473223"
     },
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
@@ -519,14 +519,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "6e34aabb750c3855983326e0a88ec037afc23ec2eb9fd3deb08c74826db0e82c",
-      "last_updated": "2026-09-30T21:47:56.965427"
+      "hash": "0616175499e1b640ff880c037ae44eddee48719dd183e8d3bd5879bd54b4c08c",
+      "last_updated": "2026-10-13T20:30:55.473544"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "4103c8105d0a34e39fe51febbb7c3170d79a60b44c09a03cf7dadc179574d4b0",
-      "last_updated": "2026-09-30T21:47:56.965789"
+      "hash": "c75160ff00fb16a9e5813cbb830e0565c3e670e5997059afd77eb710b50c8794",
+      "last_updated": "2026-10-13T20:30:55.473906"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1293,8 +1293,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "15ad1d581e10694c26f8462501a9365b7904de2556978008026ddede39447d7a",
-      "last_updated": "2026-10-08T00:41:44.905964"
+      "hash": "fa8fe9d247aa5235f33c6e4a402ba5d48cd754a2255c6c44cd386206e9c41fc3",
+      "last_updated": "2026-10-13T20:30:55.475289"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -1377,8 +1377,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "bb6ceef2705dfbe0b2b1e716a83c7fecb26e3ddeb4e441eda35c7bfc0bb2a8fb",
-      "last_updated": "2026-10-08T00:41:44.906359"
+      "hash": "c6dd7f6f91a2ddcc2a48ee955d5f764a261fab1fe96b6b13945f36719c8c5ac8",
+      "last_updated": "2026-10-13T20:30:55.475882"
     },
     "models/claude-fable-5-1.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5-1",
@@ -1421,6 +1421,12 @@
       "original_md_url": "https://cursor.com/docs/models/gemini-3-8-flash.md",
       "hash": "503e8ef59e60aa76bfb2e4e7e7568ffaee664874eddcfd2e7e8011ed5920d8c1",
       "last_updated": "2026-09-02T18:23:52.876226"
+    },
+    "models/gemini-4-argon.md": {
+      "original_url": "https://cursor.com/docs/models/gemini-4-argon",
+      "original_md_url": "https://cursor.com/docs/models/gemini-4-argon.md",
+      "hash": "a954e95f34b74b9e130e014b5aaa88e243c01843e3321bb995db3f14507c2fad",
+      "last_updated": "2026-10-13T20:30:55.476097"
     },
     "models/gpt-5-6-luna.md": {
       "original_url": "https://cursor.com/docs/models/gpt-5-6-luna",
@@ -1509,14 +1515,14 @@
     "origin/cli/reference/commands.md": {
       "original_url": "https://cursor.com/docs/origin/cli/reference/commands",
       "original_md_url": "https://cursor.com/docs/origin/cli/reference/commands.md",
-      "hash": "5f58e524cb58013e6c4f3a21cf014ada929428df7e09fb6e72b4dcb278b41a28",
-      "last_updated": "2026-10-08T00:41:44.907609"
+      "hash": "da21ac820101e8ac2f54855236c80b4e7e75231314b6035f7b32f3cb26aa9034",
+      "last_updated": "2026-10-13T20:30:55.476492"
     },
     "origin/cli/reference/pull-requests.md": {
       "original_url": "https://cursor.com/docs/origin/cli/reference/pull-requests",
       "original_md_url": "https://cursor.com/docs/origin/cli/reference/pull-requests.md",
-      "hash": "a82d271a3e1d20c2f68f129971de417332b43f147576aac567d6343a29c5de4d",
-      "last_updated": "2026-10-08T18:20:02.641757"
+      "hash": "602c75ded7acc6dcd89bb34aa1f7fcfaea99b045c4c1dca4f98f073f95d2e7d3",
+      "last_updated": "2026-10-13T20:30:55.476759"
     },
     "origin/clonekit-ci.md": {
       "original_url": "https://cursor.com/docs/origin/clonekit-ci",
@@ -1551,8 +1557,8 @@
     "origin/settings.md": {
       "original_url": "https://cursor.com/docs/origin/settings",
       "original_md_url": "https://cursor.com/docs/origin/settings.md",
-      "hash": "18153ed6227467562ff64e7a926fc5eb9b4606fd084203b65bc3ea7cbc93df74",
-      "last_updated": "2026-10-09T22:08:47.412119"
+      "hash": "05124c77e7b366fce3c1306aa3e31610b2aa9bc24ce9f1795ae484bd46836ab2",
+      "last_updated": "2026-10-13T20:30:55.477071"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1628,21 +1634,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-13T13:22:29.811089",
-    "fetch_duration_seconds": 2.447248,
-    "total_pages_discovered": 271,
-    "pages_fetched_successfully": 271,
+    "last_fetch_completed": "2026-10-13T20:30:55.481525",
+    "fetch_duration_seconds": 3.485458,
+    "total_pages_discovered": 272,
+    "pages_fetched_successfully": 272,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 271,
+    "total_files": 272,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-13T13:22:29.811101",
+  "last_updated": "2026-10-13T20:30:55.481539",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
