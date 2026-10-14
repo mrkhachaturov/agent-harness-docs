@@ -4,7 +4,7 @@ Short answers for access, usage, service status, and using Grok Bot. Longer step
 
 ## Do I need a separate Grok Bot subscription?
 
-No. Grok Bot comes with **Cursor Pro**, **Pro+**, **Ultra**, and self-serve **Teams**. You can also link an individual **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, or **X Premium+** account. On Enterprise, ask your account team. See [Plans and billing](https://cursor.com/help/grok-bot/plans.md#how-do-i-get-access-to-grok-bot).
+No. Grok Bot comes with **Premium**, **Super**, and **Ultra** on The X Subscription, and with legacy **Cursor Pro**, **Pro+**, **Ultra**, and self-serve **Teams**. On a legacy Cursor account you can also link an individual **SuperGrok**, **SuperGrok Plus**, **SuperGrok Heavy**, or **X Premium+** account. On Enterprise, ask your account team. See [Plans and billing](https://cursor.com/help/grok-bot/plans.md#how-do-i-get-access-to-grok-bot).
 
 ## Is Grok Bot the same as the Grok app?
 
@@ -44,7 +44,7 @@ If the status page shows no incident and the Bot says **Bot failed to respond** 
 
 ## My Bot stopped replying and says I hit my usage limit. Is it broken?
 
-No. Your weekly usage is used up. It resets each week. To keep going now, turn on on-demand usage or move to a bigger Cursor plan. See [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
+No. Your weekly usage is used up. It resets each week. To keep going now, add prepaid credit (The X Subscription), turn on on-demand usage (legacy Cursor plans), or move to a bigger plan. See [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
 
 ## Why doesn't my SuperGrok limit match my Grok Bot usage?
 
@@ -52,11 +52,11 @@ They are two separate meters for two products. Grok Bot usage lives on your Curs
 
 ## Do a Cursor plan and SuperGrok add together?
 
-No. Grok Bot uses whichever one grants more weekly usage. **Pro**, **SuperGrok**, and **X Premium+** are the same tier, **Pro+** matches **SuperGrok Plus**, and **Ultra** matches **SuperGrok Heavy**. For more usage, move to a higher tier or turn on on-demand usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+No. On a legacy Cursor account, Grok Bot uses whichever one grants more weekly usage. Legacy **Pro**, **SuperGrok**, and **X Premium+** are the same tier, **Pro+** matches **SuperGrok Plus**, and **Ultra** matches **SuperGrok Heavy**. For more usage, move to a higher tier or turn on on-demand usage. On The X Subscription there's nothing to link: Grok Bot draws from your plan's shared weekly pool. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## How do I stop charges after my weekly usage runs out?
 
-Turn off on-demand, or set a cap. In Grok Bot, open **Settings** > **Usage & Billing** > **On-demand monthly limit**. On the web, go to [cursor.com/dashboard](https://cursor.com/dashboard) > **Spending** > **Monthly Limit**. The cap does not stop a Bot in the middle of a run, so a running task can go a little past it. See [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot) and [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md).
+On The X Subscription, leave Auto Top-up off or set a monthly additional usage limit under **Additional usage credits** at [grok.com/dashboard/billing](https://grok.com/dashboard/billing). On a legacy Cursor plan, turn off on-demand or set a cap: in Grok Bot, open **Settings** > **Usage & Billing** > **On-demand monthly limit**, or on the web go to [cursor.com/dashboard](https://cursor.com/dashboard) > **Spending** > **Monthly Limit**. The cap does not stop a Bot in the middle of a run, so a running task can go a little past it. See [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot) and [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md).
 
 ## My trial ran out in one task. Can I get it back?
 

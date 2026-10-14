@@ -4,7 +4,7 @@ The [Grok Bot Android app](https://cursor.com/help/grok-bot/mobile.md) supports 
 
 ## Which plans can I buy in the app?
 
-If you don't already have a plan billed through cursor.com, you can subscribe to a monthly Pro, Pro+, or Ultra plan from the app. If you already subscribed in the app, you can upgrade your plan there too. If you're on a plan billed through cursor.com, manage it on [cursor.com](https://cursor.com/dashboard/billing) instead.
+If you don't already have a plan billed through cursor.com, you can subscribe to a monthly legacy Pro, Pro+, or Ultra plan from the app. If you already subscribed in the app, you can upgrade your plan there too. If you're on a plan billed through cursor.com, manage it on [cursor.com](https://cursor.com/dashboard/billing) instead. The Android app doesn't sell The X Subscription tiers; to move to one, see [How do I switch to The X Subscription?](https://cursor.com/help/account-and-billing/google-play-subscription.md#how-do-i-switch-to-the-x-subscription).
 
 Only monthly individual plans are available in the app. For yearly billing, Teams, or Enterprise plans, subscribe on [cursor.com](https://cursor.com/dashboard/billing).
 
@@ -15,19 +15,15 @@ Google is the merchant of record for Google Play in-app purchases, so Google han
 - To view, change, or cancel your plan, see Google's guide to [managing subscriptions on Google Play](https://support.google.com/googleplay/answer/7018481).
 - For refunds, invoices, and receipts, use [Google Play's refund support](https://support.google.com/googleplay/answer/2479637).
 
-Because Google processes the payment, Cursor can't cancel an in-app plan or issue a refund for you. Any billing question on an in-app subscription goes through Google Play.
+Because Google processes the payment, Cursor can't cancel an in-app plan or issue a refund for you on request. Any billing question on an in-app subscription goes through Google Play. The exception is switching to The X Subscription, which cancels the in-app plan and refunds unused time as part of the switch.
 
 ## Can I use on-demand spend on an in-app plan?
 
 Yes. Google Play bills your subscription, and [on-demand usage](https://cursor.com/help/account-and-billing/overages.md) is billed separately to a payment card you add on the web. In a browser, go to [cursor.com/dashboard](https://cursor.com/dashboard), open **Spending**, and set a monthly limit. You'll be asked to add a card if you don't have one on file. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md) for the full steps.
 
-## How do I switch to a subscription on cursor.com?
+## How do I switch to The X Subscription?
 
-You can't switch directly while an in-app subscription is active. To move to a plan billed through cursor.com:
-
-1. [Cancel the in-app subscription](https://support.google.com/googleplay/answer/7018481) through Google Play.
-2. Wait for it to expire at the end of the current period.
-3. Once it lapses, sign up again on [cursor.com](https://cursor.com/dashboard/billing).
+Go to [cursor.com/unify](https://cursor.com/unify) and pick a plan. When you switch, your Grok Bot in-app subscription is cancelled and the unused time is refunded. After the switch, check your subscriptions in Google Play; if one is still set to renew, cancel it there. See [What is The X Subscription?](https://cursor.com/help/the-x-subscription/overview.md).
 
 ## Is my plan tied to my email or my Google account?
 

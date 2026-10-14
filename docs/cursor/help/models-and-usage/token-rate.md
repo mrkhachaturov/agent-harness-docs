@@ -1,10 +1,10 @@
 # Cursor Token Rate
 
-Teams and Enterprise plan customers pay a Cursor Token Rate of $0.25 per million tokens on third-party model requests. This includes when you pick a third-party model directly and when Auto routes to a third-party model.
+Teams and Enterprise plan customers pay a Cursor Token Rate of $0.25 per million tokens on third-party model requests. This includes when you pick a third-party model directly and when Cursor Router (Balance or Intelligence) routes to a third-party model. Cost mode requests are exempt.
 
-First-party Cursor models, including Grok and Composer, are exempt.
+First-party Cursor models, including Grok and Composer, are exempt. Individual plans don't pay the Cursor Token Rate.
 
-This applies to included usage, on-demand usage, and BYOK usage when the request uses a third-party model that is subject to the Cursor Token Rate.
+On The X Subscription, the rate is charged on top of the model's API price and paid from the team's prepaid credit. On legacy Teams plans, it applies to included Other Models usage, on-demand usage, and BYOK usage alike.
 
 ## What does the Cursor Token Rate cover?
 

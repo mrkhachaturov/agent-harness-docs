@@ -29,7 +29,7 @@ Yes. If you already redeemed your student discount, you'll keep your current rat
 
 ## What happens after the student discount year ends?
 
-Your Pro subscription continues at the regular $20/month rate unless you cancel.
+Your subscription continues at the regular rate for your plan unless you cancel. On a legacy Pro plan, that's $20/month.
 
 ## Related
 

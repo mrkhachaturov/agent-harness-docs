@@ -1,10 +1,12 @@
 # On-demand usage for mobile subscriptions
 
-If you subscribed to Cursor through the Apple App Store or Google Play, you can still use on-demand usage. You enable it on the web.
+If you subscribed to a legacy Cursor plan through the Apple App Store or Google Play, you can still use on-demand usage. You enable it on the web.
 
 ## What is on-demand usage?
 
 On-demand usage lets you keep using Cursor and Grok Bot after your plan's included usage runs out. You set a monthly spend limit, and usage beyond your included allowance is billed to a payment card, up to that limit. See [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md) for how on-demand pricing works.
+
+On [The X Subscription](https://cursor.com/help/the-x-subscription/overview.md), extra usage comes from prepaid credit (top-ups) managed at [grok.com/dashboard/billing](https://grok.com/dashboard/billing) instead, whatever device you subscribed from.
 
 ## How do I enable on-demand usage with a mobile subscription?
 

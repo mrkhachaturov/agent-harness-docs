@@ -12,14 +12,15 @@ Use Grok Bot on your phone with the same account and cloud computer as desktop. 
 
 No. Grok Bot access carries into mobile when you sign in with the same Cursor account. This includes:
 
-- **Cursor Ultra**
-- **Cursor Pro+**
-- **Cursor Pro**
-- **Cursor Teams** (self-serve) seats
+- **Premium**, **Super**, or **Ultra** on The X Subscription, including team seats
+- Legacy **Cursor Ultra**
+- Legacy **Cursor Pro+**
+- Legacy **Cursor Pro**
+- Legacy **Cursor Teams** (self-serve) seats
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 - **X Premium+** account links
 
-You should not purchase a second subscription through Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+You should not purchase a second subscription through Apple or Google Play in these cases. You can still upgrade within your plans, such as **Pro+** to **Ultra**. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## Can I update the Grok Bot computer from my phone?
 

@@ -1,10 +1,10 @@
 # Cursor Start
 
-Cursor Start is a paid plan for developers who want Cursor's AI coding agent at local pricing.
+Cursor Start is a legacy Cursor plan for developers in India who subscribed before [The X Subscription](https://cursor.com/help/the-x-subscription/overview.md). It keeps working as it is. New customers choose a plan on The X Subscription; the comparable tier is Plus. See [Legacy Cursor plans](https://cursor.com/docs/account/pricing/legacy-cursor-plans.md).
 
 ## What is Cursor Start?
 
-Cursor Start is launching as an India-specific subscription that gives you access to Cursor's agentic coding features: plan work, research your codebase, and run longer agents in Agent, Plan, and Ask modes. The plan includes access to Cursor models (Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5) with a larger monthly usage pool than the free Hobby plan, plus Cloud Agents.
+Cursor Start is an India-specific subscription that gives you access to Cursor's agentic coding features: plan work, research your codebase, and run longer agents in Agent, Plan, and Ask modes. The plan includes access to Cursor models (Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5) with a larger monthly usage pool than the free Hobby plan, plus Cloud Agents.
 
 ## How much does Cursor Start cost?
 
@@ -29,7 +29,7 @@ Auto mode and third-party models (OpenAI, Anthropic, Google, and others) are not
 
 ## Can I change Grok effort levels on Cursor Start?
 
-No. On Cursor Start, Grok 4.7, Grok 4.6, and Grok 4.5 all run at a fixed medium effort level in non-fast mode. You cannot switch between low, medium, and high effort, or turn on Fast mode. Upgrade to Pro or a higher plan to choose effort levels and Fast mode.
+No. On Cursor Start, Grok 4.7, Grok 4.6, and Grok 4.5 all run at a fixed medium effort level in non-fast mode. You cannot switch between low, medium, and high effort, or turn on Fast mode. Move to Premium or higher on The X Subscription, or to a legacy Pro or higher plan, to choose effort levels and Fast mode.
 
 ## What features are included in and excluded from Cursor Start?
 
@@ -71,13 +71,13 @@ No. Cursor Start does not include on-demand spend or usage-based overages.
 
 When you reach your monthly usage limit, AI features pause until your usage resets at the start of your next billing cycle.
 
-## Can I upgrade from Cursor Start to a Pro or Teams plan?
+## Can I upgrade from Cursor Start to another plan?
 
 Cursor Start is a separate India market plan.
 
-Please note that once your account is upgraded to a Pro, Pro+, Ultra, or Teams plan, you will be unable to downgrade back to a Start plan.
+Start can only be purchased while your account is on the free plan, so once you move to any other paid plan, including a legacy Pro, Pro+, Ultra, or Teams plan or a plan on The X Subscription, you can't switch back to Start directly.
 
-To use global Pro, Pro+, Ultra, or Teams plans, subscribe through the standard billing flow at [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) with pricing in USD.
+To move to a legacy Pro, Pro+, Ultra, or Teams plan, use the standard billing flow at [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) with pricing in USD. To move to The X Subscription, start at [cursor.com/unify](https://cursor.com/unify).
 
 ## How does Cursor Start handle support requests?
 
@@ -91,6 +91,7 @@ Cursor Start support tickets are handled by **Sam**, Cursor's AI support agent. 
 - [Regions and model availability](https://cursor.com/help/security-and-privacy/regions.md)
 - [Cloud Agents](https://cursor.com/help/ai-features/cloud-agents.md)
 - [Pricing reference](https://cursor.com/docs/models-and-pricing.md)
+- [Legacy Cursor plans](https://cursor.com/docs/account/pricing/legacy-cursor-plans.md)
 
 
 ---

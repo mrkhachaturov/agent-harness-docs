@@ -1,6 +1,8 @@
 # Link SuperGrok for Grok Bot
 
-Link your Grok account to grant Grok Bot usage on your Cursor account. Individual SuperGrok, SuperGrok Plus, SuperGrok Heavy, and X Premium+ qualify. An assigned seat on a self-serve Grok Business plan also includes Grok Bot. See [How do I use a Grok Business seat with Grok Bot?](https://cursor.com/help/grok-bot/supergrok.md#how-do-i-use-a-grok-business-seat-with-grok-bot).
+Link your Grok account to grant Grok Bot usage on a legacy Cursor account. Individual SuperGrok, SuperGrok Plus, SuperGrok Heavy, and X Premium+ qualify. An assigned seat on a self-serve Grok Business plan also includes Grok Bot. See [How do I use a Grok Business seat with Grok Bot?](https://cursor.com/help/grok-bot/supergrok.md#how-do-i-use-a-grok-business-seat-with-grok-bot).
+
+On [The X Subscription](https://cursor.com/help/the-x-subscription/overview.md), there's nothing to link. Grok Bot is included on Premium, Super, and Ultra and draws from your plan's shared weekly pool. See [How does Grok Bot work on The X Subscription?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-work-on-the-x-subscription).
 
 ## What do I need before linking SuperGrok?
 
@@ -21,11 +23,11 @@ Cursor re-checks your SuperGrok or X Premium+ status at each renewal.
 
 Upgrading or downgrading SuperGrok after you have already linked can take up to 24 hours to show on **Weekly usage**. You do not need to link again. See [What if I upgrade SuperGrok after I already linked?](https://cursor.com/help/grok-bot/plans.md#what-if-i-upgrade-supergrok-after-i-already-linked).
 
-The grant does not add together with a Cursor plan. Grok Bot uses whichever one grants more weekly usage. **Pro**, **SuperGrok**, and **X Premium+** are the same tier. **Pro+** and **SuperGrok Plus** are the same tier. **Ultra** and **SuperGrok Heavy** are the same tier. For example, if you are on **Pro** and link **SuperGrok Plus**, Grok Bot moves to the Plus tier. If you are on **Pro+**, linking **SuperGrok Plus** does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+The grant does not add together with a Cursor plan. Grok Bot uses whichever one grants more weekly usage. Legacy **Pro**, **SuperGrok**, and **X Premium+** are the same tier. **Pro+** and **SuperGrok Plus** are the same tier. **Ultra** and **SuperGrok Heavy** are the same tier. For example, if you are on **Pro** and link **SuperGrok Plus**, Grok Bot moves to the Plus tier. If you are on **Pro+**, linking **SuperGrok Plus** does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## Does linking SuperGrok change my Cursor plan?
 
-No. Your existing Cursor plan stays in place. Linking SuperGrok or X Premium+ doesn't cancel a Pro, Pro+, Ultra, or Teams subscription, and it doesn't replace them with another Cursor plan. If you had no Cursor plan before linking, you still don't, and Grok Bot usage comes from the SuperGrok or X Premium+ grant alone.
+No. Your existing Cursor plan stays in place. Linking SuperGrok or X Premium+ doesn't cancel a legacy Pro, Pro+, Ultra, or Teams subscription, and it doesn't replace them with another Cursor plan. If you had no Cursor plan before linking, you still don't, and Grok Bot usage comes from the SuperGrok or X Premium+ grant alone.
 
 If you have both a paid Cursor plan that includes Grok Bot and a SuperGrok or X Premium+ link, both stay on the same Cursor account, but they do not add together. Grok Bot uses whichever one grants more weekly usage. Linking **SuperGrok Plus** while you are on **Pro+** does not add Grok Bot usage, because they are the same tier. Purchasing **Cursor Ultra** while **SuperGrok Heavy** is linked does not add usage either.
 

@@ -2,6 +2,8 @@
 
 Understand your billing cycle, renewals, payment methods, and invoices.
 
+On [The X Subscription](https://cursor.com/help/the-x-subscription/overview.md), your plan, payment method, invoices, and prepaid credit live at [grok.com/dashboard/billing](https://grok.com/dashboard/billing). See [Managing The X Subscription](https://docs.x.ai/x-subscription/manage). The cursor.com steps on this page apply to [legacy Cursor plans](https://cursor.com/docs/account/pricing/legacy-cursor-plans.md).
+
 ## How does my billing cycle work?
 
 Your cycle starts on the date you subscribe. It renews monthly or yearly based on your plan.
@@ -12,23 +14,23 @@ Your cycle starts on the date you subscribe. It renews monthly or yearly based o
 
 ## When does included usage reset?
 
-Included usage resets with your billing cycle.
-
-- Individual plans reset monthly
-- Teams plans include usage per paid seat each cycle, based on [seat type](https://cursor.com/docs/account/teams/members.md#seat-types) (Standard or Premium)
-- Usage beyond included amounts appears as on-demand usage
+- On The X Subscription, your included pool for Cursor models refreshes weekly, separate from your billing cycle. Prepaid credit doesn't reset with it; each top-up stays available until used or until it expires (currently 365 days after purchase)
+- On legacy individual plans, included usage resets monthly with your billing cycle
+- Legacy Teams plans include usage per paid seat each cycle, based on [seat type](https://cursor.com/docs/account/teams/members.md#seat-tiers) (Standard or Premium)
+- Usage beyond included amounts is paid from prepaid credit on The X Subscription, or appears as on-demand usage on legacy plans
 
 ## What can create charges before renewal?
 
 You can see charges between renewal dates when one of these events happens:
 
-- On-demand usage is billed after included usage is consumed
+- A manual or automatic top-up adds prepaid credit (The X Subscription)
+- On-demand usage is billed after included usage is consumed (legacy plans)
 - Team seats are added mid-cycle and charged pro-rata
 - Team seat removals can create billing adjustments or credits
 
 ## How do seats work on a Teams plan?
 
-Cursor bills teams per active paid seat, not pre-allocated seats. Seat price depends on the seat type (Standard or Premium).
+Cursor bills teams per active paid seat, not pre-allocated seats. Seat price depends on the [seat tier](https://cursor.com/docs/account/teams/members.md#seat-tiers): Premium, Super, or Ultra on The X Subscription, or Standard or Premium on legacy Teams plans.
 
 - Adding a member mid-cycle creates a pro-rated charge
 - Removing a member who used credits keeps the seat occupied until the cycle ends
@@ -36,7 +38,11 @@ Cursor bills teams per active paid seat, not pre-allocated seats. Seat price dep
 
 ## How do I update my payment method?
 
-**Billed on cursor.com:**
+**On The X Subscription:**
+
+Go to [grok.com/dashboard/billing](https://grok.com/dashboard/billing) and open **Payment details** to add a payment method, change your default, or remove one.
+
+**Legacy plan billed on cursor.com:**
 
 1. Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing)
 2. Click **Manage in Stripe** to open the Stripe billing portal
@@ -60,7 +66,11 @@ For a plan billed on cursor.com, update your company name, address, and tax deta
 
 ## Where do I find invoices and receipts?
 
-**Billed on cursor.com:**
+**On The X Subscription:**
+
+Go to [grok.com/dashboard/billing](https://grok.com/dashboard/billing) and open the **Invoices** tab. Subscription charges and top-ups are both listed, and you can download each one.
+
+**Legacy plan billed on cursor.com:**
 
 Go to [cursor.com/dashboard/billing](https://cursor.com/dashboard/billing) and click **Manage in Stripe**. In the Stripe portal, open any invoice to view or download the PDF. See [Invoices](https://cursor.com/help/account-and-billing/invoices.md) for details.
 

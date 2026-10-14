@@ -6,14 +6,15 @@ Grok Bot mobile signs in with the same Cursor account you use on desktop. If you
 
 Sign in to Grok Bot mobile with the **same Cursor account** you use on desktop, and access carries over for:
 
-- **Cursor Ultra**
-- **Cursor Pro+**
-- **Cursor Pro**
-- **Cursor Teams** (self-serve) seats
+- **Premium**, **Super**, or **Ultra** on The X Subscription, including team seats
+- Legacy **Cursor Ultra**
+- Legacy **Cursor Pro+**
+- Legacy **Cursor Pro**
+- Legacy **Cursor Teams** (self-serve) seats
 - **SuperGrok**, **SuperGrok Plus**, or **SuperGrok Heavy** account links
 - **X Premium+** account links
 
-You should not buy a second subscription on Apple or Google Play in these cases. You can still upgrade within Cursor plans, such as **Pro+** to **Ultra**. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
+You should not buy a second subscription on Apple or Google Play in these cases. You can still upgrade within your plans, such as **Pro+** to **Ultra**. A Cursor plan and a SuperGrok or X Premium+ link do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
 ## How do I subscribe to Grok Bot from the mobile app?
 

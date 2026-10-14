@@ -12,7 +12,7 @@ While Composer focuses on code, Grok 4.5 is a general model. It is also better a
 
 Grok 4.5 is Cursor's first model with effort levels: high (the default), medium, and low. Higher effort lets the model think longer and harder on difficult tasks. Composer has no effort levels.
 
-On [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md), Grok 4.5 is fixed at medium effort in non-fast mode. You cannot change the effort level or enable Fast mode on that plan. Upgrade to Pro or higher to choose effort levels and Fast mode.
+On Plus and on the legacy [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) plan, Grok 4.5 is fixed at medium effort in non-fast mode. You cannot change the effort level or enable Fast mode on those plans. Move to Premium or higher, or a legacy Pro or higher plan, to choose effort levels and Fast mode.
 
 ## When should I choose Grok 4.5 over Composer?
 
@@ -23,7 +23,7 @@ Grok 4.5 costs more than Composer. See [how much Grok 4.5 costs](https://cursor.
 
 ## Which plans include Grok 4.5?
 
-Every paid plan includes access to Grok 4.5: Start (India), Pro, Pro+, Ultra, Teams, and Enterprise. Grok 4.5 draws from the Cursor Models usage pool included with your plan. On Start, Grok 4.5 runs at a fixed medium effort level in non-fast mode.
+Every paid plan includes access to Grok 4.5: Plus, Premium, Super, Ultra, Teams, and Enterprise on The X Subscription, and the legacy Start (India), Pro, Pro+, and Ultra plans. Grok 4.5 draws from the usage pool for Cursor models included with your plan. On Plus and on the legacy Start plan, Grok 4.5 runs at a fixed medium effort level in non-fast mode.
 
 ## Where can I use Grok 4.5?
 

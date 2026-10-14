@@ -25,10 +25,10 @@ Custom API keys only work with chat models. Tab completion continues using Curso
 
 It depends on your plan.
 
-- **Individual plans (Pro, Pro+, and Ultra)**: No. Your provider bills you for the model cost, and those requests don't draw from your included usage.
-- **Teams and Enterprise plans**: Yes. Your provider still bills the model cost, and Cursor charges nothing for it. But every third-party model request carries the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens (input, output, and cached), including requests made with your own key. That charge appears under **Other Models** in your [Spending](https://cursor.com/dashboard/spending) tab and draws from that included allowance. The amount drawn is the Cursor Token Rate for those tokens, not the model cost you paid your provider, so you aren't billed twice for the same request.
+- **Individual plans (Premium, Super, and Ultra, and the legacy Pro, Pro+, and Ultra plans)**: No. Your provider bills you for the model cost, and those requests don't draw from your included usage or prepaid credit.
+- **Teams and Enterprise plans**: Yes. Your provider still bills the model cost, and Cursor charges nothing for it. But every third-party model request carries the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens (input, output, and cached), including requests made with your own key. The amount charged is the Cursor Token Rate for those tokens, not the model cost you paid your provider, so you aren't billed twice for the same request.
 
-When the Other Models allowance runs out on a Teams or Enterprise plan, requests with your own key keep working if on-demand usage is enabled. The team is billed the Cursor Token Rate as on-demand usage. If on-demand usage is turned off, those requests stop until the next billing cycle. See [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md) for how on-demand usage and spend limits work.
+On a team on The X Subscription, the Cursor Token Rate for your own-key requests is paid from the team's prepaid credit. On a legacy Teams plan, it appears under **Other Models** in your [Spending](https://cursor.com/dashboard/spending) tab and draws from that included allowance; when the allowance runs out, requests keep working if on-demand usage is enabled and the team is billed the Cursor Token Rate as on-demand usage. If on-demand usage is turned off, those requests stop until the next billing cycle. See [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md) for how top-ups, on-demand usage, and spend limits work.
 
 ## Does Cursor's Zero Data Retention policy apply when using my own API keys?
 

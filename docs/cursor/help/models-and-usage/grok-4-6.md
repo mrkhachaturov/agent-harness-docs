@@ -19,7 +19,7 @@ While Composer remains available for everyday coding speed and cost, Grok 4.6 is
 
 Grok 4.6 supports four effort levels: **low**, **medium**, **high**, and **xhigh**, so you can match compute to how hard the task is. Higher effort lets the model think longer on difficult tasks. The named-model default is **high**. When using Auto, Cursor uses the same default (**high**) at launch.
 
-On [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md), Grok 4.6 is fixed at medium effort in non-fast mode. You cannot change the effort level or enable Fast mode on that plan. Upgrade to Pro or higher to choose effort levels and Fast mode.
+On Plus and on the legacy [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) plan, Grok 4.6 is fixed at medium effort in non-fast mode. You cannot change the effort level or enable Fast mode on those plans. Move to Premium or higher, or a legacy Pro or higher plan, to choose effort levels and Fast mode.
 
 ## When should I choose Grok 4.6 over Composer?
 
@@ -30,7 +30,7 @@ On [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md), 
 
 Grok 4.6 uses the same first-party / Composer credit treatment as Grok 4.5. Credits that apply to Grok 4.5 also apply to Grok 4.6. Included plan usage from the first-party pool covers 4.6 the same way.
 
-Every paid plan includes access to Grok 4.6: Start (India), Pro, Pro+, Ultra, Teams, and Enterprise. Grok 4.6 draws from the Cursor Models usage pool included with your plan. On Start, Grok 4.6 runs at a fixed medium effort level in non-fast mode.
+Every paid plan includes access to Grok 4.6: Plus, Premium, Super, Ultra, Teams, and Enterprise on The X Subscription, and the legacy Start (India), Pro, Pro+, and Ultra plans. Grok 4.6 draws from the usage pool for Cursor models included with your plan. On Plus and on the legacy Start plan, Grok 4.6 runs at a fixed medium effort level in non-fast mode.
 
 ## Where can I use Grok 4.6?
 

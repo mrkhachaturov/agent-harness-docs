@@ -10,7 +10,7 @@ See [how to cancel your subscription](https://cursor.com/help/account-and-billin
 
 ## When am I eligible for a refund? (Individual plans)
 
-Pro, Pro+, and Ultra use the same refund rules for monthly and annual plans.
+These rules cover individual plans billed through cursor.com: the legacy Pro, Pro+, and Ultra plans, monthly and annual. For a plan on The X Subscription, see [Invoices & Refunds](https://docs.x.ai/x-subscription/invoices-and-refunds) in the SpaceXSI documentation.
 
 You may qualify for a refund on your most recent subscription payment if both of these are true:
 
@@ -27,9 +27,9 @@ This policy does not limit any rights you may have under applicable consumer pro
 
 It depends on your usage. If some of your included usage is left, a matching share of what you paid is credited automatically when you upgrade. If you've already used it all, you'll owe the full price of the new plan.
 
-This applies to upgrades between individual plans (Pro to Pro+, Pro+ to Ultra) and to moving from an individual plan to a team, on monthly and yearly plans.
+This applies to upgrades between legacy individual plans (Pro to Pro+, Pro+ to Ultra) and to moving from a legacy individual plan to a team, on monthly and yearly plans.
 
-For upgrade steps, see [How do I upgrade my plan?](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-upgrade-my-plan).
+For upgrade steps, see [How do I change plans on a legacy Cursor plan?](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-change-plans-on-a-legacy-cursor-plan).
 
 Time left in your billing period is not a factor. The credit is based only on unused included usage.
 
@@ -40,7 +40,7 @@ No. Cursor does not issue prorated refunds when you downgrade an active subscrip
 If you downgrade or cancel after using part of your plan, these are your self-serve options:
 
 - **Cancel:** Stops future renewal charges. You keep paid access until the current billing period ends. See [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md).
-- **Schedule a downgrade:** Keeps your current plan until the period ends, then switches to the lower plan at the next renewal. See [How do I downgrade my plan?](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-downgrade-my-plan).
+- **Schedule a downgrade:** Keeps your current plan until the period ends, then switches to the lower plan at the next renewal. See [How do I change plans on a legacy Cursor plan?](https://cursor.com/help/account-and-billing/pricing.md#how-do-i-change-plans-on-a-legacy-cursor-plan).
 
 Refund reviews still follow the [14-day eligibility rules](https://cursor.com/help/account-and-billing/refunds.md#when-am-i-eligible-for-a-refund-individual-plans) above. A downgrade alone does not qualify for a partial credit on the current cycle.
 
@@ -63,19 +63,23 @@ This page only reflects that public guidance. If you need a decision on a specif
 
 Yes. You can cancel to stop future renewal charges. Cancellation keeps paid access until the end of your current billing period.
 
-## Are on-demand charges refundable?
+## Are on-demand or top-up charges refundable?
 
-On-demand and fast-request charges for usage you have already consumed are not refundable. This is separate from the subscription refund above.
+On-demand and fast-request charges for usage you have already consumed are not refundable. The same goes for prepaid credit you've already spent on The X Subscription. This is separate from the subscription refund above.
 
 If you are unsure about a charge, [contact support](https://cursor.com/help.md) and we can review it with you.
 
 ## What if I subscribed through the iOS app?
 
-Apple is the merchant of record for in-app purchases, so Cursor can't issue refunds for them. For refunds on an in-app subscription, use [Apple's Subscriptions and billing support](https://support.apple.com/billing). See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md) for more details.
+Apple is the merchant of record for in-app purchases, so Cursor can't issue refunds for them. For refunds on an in-app subscription, use [Apple's Subscriptions and billing support](https://support.apple.com/billing). See [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md) for more details. Grok Bot subscriptions bought in the iOS app are the one case handled for you: switching to The X Subscription cancels them and refunds unused time.
 
 ## What if I subscribed through the Android app?
 
-Google is the merchant of record for in-app purchases made in the Grok Bot Android app, so Cursor can't issue refunds for them. For refunds on an in-app subscription, use [Google Play's refund support](https://support.google.com/googleplay/answer/2479637). See [Subscribe from the Android app](https://cursor.com/help/account-and-billing/google-play-subscription.md) for more details.
+Google is the merchant of record for in-app purchases made in the Grok Bot Android app, so Cursor can't issue refunds for them on request. For refunds on an in-app subscription, use [Google Play's refund support](https://support.google.com/googleplay/answer/2479637). See [Subscribe from the Android app](https://cursor.com/help/account-and-billing/google-play-subscription.md) for more details.
+
+## What is refunded when I switch to The X Subscription?
+
+The Cursor, SuperGrok, and paid X Premium subscriptions you combine are cancelled at checkout with an automatic prorated refund for unused time. Grok Bot subscriptions bought in the iOS or Android app are cancelled and refunded for unused time too. A Cursor subscription billed through the Apple App Store is the exception: cancel it yourself and request any refund from Apple. Any on-demand usage not yet invoiced is billed in one final invoice when you switch, and the switch waits until it's paid. See [Invoices & Refunds](https://docs.x.ai/x-subscription/invoices-and-refunds).
 
 ## I did not authorize this charge. What should I do?
 

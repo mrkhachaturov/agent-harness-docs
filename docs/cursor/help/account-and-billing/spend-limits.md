@@ -1,8 +1,18 @@
 # Spend limits
 
-Set spending limits to cap how much on-demand usage you're willing to pay that billing cycle. When a limit is reached, on-demand usage stops for that user until the spend limit is increased or the next billing cycle starts.
+Spend limits cap how much paid additional usage you're willing to pay for in a period. On [The X Subscription](https://cursor.com/help/the-x-subscription/overview.md) the control is a **monthly additional usage limit**. On [legacy Cursor plans](https://cursor.com/docs/account/pricing/legacy-cursor-plans.md) it's an on-demand **spend limit**. When a limit is reached, additional usage stops for that user until the limit is increased or the next period starts.
 
-## How do I set a spend limit?
+## How do I set a monthly additional usage limit on The X Subscription?
+
+1. Go to [grok.com/dashboard/billing](https://grok.com/dashboard/billing)
+2. Under **Additional usage credits**, find **Monthly additional usage limit** and click **Edit**
+3. Enter an amount and save. Leave it unset for no cap
+
+The limit counts paid additional usage you consume, not the prepaid credit you buy. Adding credit, manually or through Auto Top-up, doesn't count toward it, and buying more credit doesn't raise it. When you reach the limit, additional usage pauses until the next month or until you raise it, even if credit remains.
+
+On Teams, admins set one limit for the whole team, either a fixed amount or an amount per seat. Only admins can change it or the Auto Top-up settings.
+
+## How do I set a spend limit on a legacy Cursor plan?
 
 1. Go to your [dashboard](https://cursor.com/dashboard/spending) under the **Spending** tab
 2. On-demand usage must be enabled to view and set spend limits
@@ -12,7 +22,9 @@ Limit changes take effect immediately. Setting a limit to "No Limit" removes it.
 
 ## Who can change spend limits?
 
-On Teams and Enterprise plans, whether team members can enable or disable on-demand usage and change the team-level spend limit depends on the **Only Admins Can Edit Usage Settings** toggle under **Permissions** in the [Spending tab](https://cursor.com/dashboard/spending):
+On The X Subscription, only team admins can change the team's monthly additional usage limit and Auto Top-up settings.
+
+On legacy Teams and Enterprise plans, whether team members can enable or disable on-demand usage and change the team-level spend limit depends on the **Only Admins Can Edit Usage Settings** toggle under **Permissions** in the [Spending tab](https://cursor.com/dashboard/spending):
 
 - **When the toggle is off**, any team member can change these settings.
 - **When the toggle is on**, only team admins can.
@@ -28,22 +40,26 @@ Enterprise admins can review changes to this setting in the [audit log](https://
 
 ## What happens when a spend limit is reached?
 
-- AI features stop working for that specific user
+- Paid additional usage stops for that specific user. Included weekly usage on The X Subscription keeps working
 - Other team members continue unaffected
 - The user sees a notification that their limit was reached
-- Usage resumes automatically at the start of the next billing cycle
+- Usage resumes automatically at the start of the next period
 
 ## What if usage goes over my spend limit?
 
-Enforcement is not instant, so usage can briefly exceed your spend limit. Once we recognize that you have reached your spend limit, on-demand usage stops until you increase the spend limit or a new billing cycle starts. If a higher plan is available, upgrading can add included usage without raising the spend limit.
+Enforcement is not instant, so usage can briefly exceed your spend limit. Once we recognize that you have reached your spend limit, additional usage stops until you increase the limit or a new period starts. If a higher plan is available, upgrading can add included usage without raising the limit.
 
-We will credit the limited overage that occurs prior to enforcement as a temporary spend-limit credit. That is not a refund or a permanent credit. You are billed up to your current limit. If you raise the limit in the same cycle, we may bill some or all of that credit, up to the new limit. Leave the limit unchanged, or turn off on-demand usage, to keep the credit.
+On legacy Cursor plans, we credit the limited overage that occurs prior to enforcement as a temporary spend-limit credit. That is not a refund or a permanent credit. You are billed up to your current limit. If you raise the limit in the same cycle, we may bill some or all of that credit, up to the new limit. Leave the limit unchanged, or turn off on-demand usage, to keep the credit.
 
 ## What types of spend limits are available?
 
-**Individual plans (Pro, Pro+, Ultra):** Set a monthly spend limit for your on-demand usage.
+**The X Subscription, individual plans:** Set a monthly additional usage limit for your own prepaid-credit usage.
 
-**Teams plans:** Set a team-level spend limit. When reached, all members consuming on-demand usage lose access to AI features.
+**The X Subscription, Teams:** Admins set one monthly additional usage limit for the whole team, fixed or per seat.
+
+**Legacy individual plans (Pro, Pro+, Ultra):** Set a monthly spend limit for your on-demand usage.
+
+**Legacy Teams plans:** Set a team-level spend limit. When reached, all members consuming on-demand usage lose access to AI features.
 
 **Enterprise plans:** Set both team-level and member-level limits. Member limits can be configured through:
 
@@ -73,6 +89,7 @@ On Enterprise pooled usage accounts, member spend limits apply to total usage, n
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)
 - [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md)
 - [Usage and limits](https://cursor.com/help/models-and-usage/usage-limits.md)
+- [Legacy Cursor plans](https://cursor.com/docs/account/pricing/legacy-cursor-plans.md)
 
 
 ---

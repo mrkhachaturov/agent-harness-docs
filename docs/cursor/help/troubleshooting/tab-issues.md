@@ -4,7 +4,7 @@ Troubleshooting steps for when Tab completions stop appearing or behave unexpect
 
 ## Why aren't Tab suggestions appearing?
 
-1. **Plan limits**: Free (Hobby) users have a monthly Tab allowance. Once it's used up, suggestions pause until the next billing cycle.
+1. **Plan limits**: Free users (and legacy Hobby users) have a limited Tab allowance. Once it's used up, suggestions pause until it resets.
 2. **HTTP compatibility**: Some networks block HTTP/2. Go to **Cursor Settings** > search "HTTP Compatibility Mode" > enable it to fall back to HTTP/1.1, then restart Cursor.
 3. **Outdated version**: Press **Cmd/Ctrl+Shift+P** > "Cursor: Attempt Update" to check for updates.
 4. **No internet**: Tab requires a connection to work.

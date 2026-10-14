@@ -8,7 +8,7 @@ Add and remove team members, manage seats, and track usage.
 2. Click **Invite Members**
 3. Enter the email addresses of the people you want to add
 
-New seats are prorated based on the number of days remaining in the billing cycle. When someone joins a team, any existing individual Pro subscription on their account is automatically canceled.
+New seats are prorated based on the number of days remaining in the billing cycle. When someone joins a legacy Cursor team, any existing individual legacy plan on their account is automatically canceled. Joining a team on The X Subscription doesn't cancel a personal plan; cancel it yourself if you no longer need it.
 
 Teams and Enterprise plans also support [SSO](https://cursor.com/docs/account/teams/sso.md) and [SCIM](https://cursor.com/docs/account/teams/scim.md) for automated member provisioning.
 

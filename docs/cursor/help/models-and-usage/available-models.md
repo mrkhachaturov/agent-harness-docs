@@ -8,7 +8,7 @@ Open the model selector in your chat or agent panel and choose the model you wan
 
 ## Which models are available?
 
-Cursor offers its own models ([Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md) and [Composer](https://cursor.com/docs/models/cursor-composer-2-5.md)) in the Cursor Models pool alongside other frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Hobby users have access to a smaller set, while paid plans unlock all models.
+Cursor offers its own models ([Grok 4.7](https://cursor.com/help/models-and-usage/grok-4-7.md) and [Composer](https://cursor.com/docs/models/cursor-composer-2-5.md)), covered by your plan's included usage, alongside other frontier models from OpenAI, Anthropic, and Google. The available models depend on your plan. Free and Plus include only Cursor's first-party models (Grok 4.7, Grok 4.6, Grok 4.5, and Composer 2.5). Premium and above, Teams, Enterprise, and the legacy Pro, Pro+, and Ultra plans unlock third-party models, billed at API list price. See [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md).
 
 See the [models reference](https://cursor.com/docs/models-and-pricing.md) for the complete list, context window sizes, and capabilities.
 
@@ -51,7 +51,7 @@ If model visibility is set to Displayed, check the model picker or request detai
 
 ## How much does Auto cost?
 
-All Auto modes bill at the list price of the model each request is routed to. Third-party models also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for current rates.
+Cost mode (classic Auto) bills as a Cursor-model request from your included pool. On Teams and Enterprise with Cursor Router on, Balance and Intelligence bill at the routed model's list price, and third-party routes also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for current rates.
 
 ## How much does Grok 4.7 cost?
 
@@ -61,7 +61,7 @@ Grok 4.7 has two speeds and a long-context tier:
 - **Fast**: $4.00 per 1M input tokens, $12.00 per 1M output tokens, $1.00 per 1M cache read tokens
 - **Long context (>256k)**: 2x standard rates, or 3x standard rates in Fast, up to a 500k window
 
-Grok 4.7 draws from the Cursor Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
+Grok 4.7 draws from the included usage pool for Cursor models on every paid plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
 
 ## How much does Grok 4.5 cost?
 
@@ -70,7 +70,7 @@ Grok 4.5 has two speeds, each with its own token rates:
 - **Standard**: $2.00 per 1M input tokens, $6.00 per 1M output tokens, $0.50 per 1M cache read tokens
 - **Fast**: $4.00 per 1M input tokens, $18.00 per 1M output tokens, $1.00 per 1M cache read tokens
 
-Grok 4.5 draws from the Cursor Models usage pool included with your plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
+Grok 4.5 draws from the included usage pool for Cursor models on every paid plan. See the [models reference](https://cursor.com/docs/models-and-pricing.md) for current rates.
 
 ## How much do models cost?
 
