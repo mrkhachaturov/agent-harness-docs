@@ -18,7 +18,9 @@ Some Teams and Individual plans include monthly Bugbot usage. You can enable usa
 2. Navigate to the **Integrations** tab
 3. Connect your repository provider
 4. Follow the provider setup flow
-5. Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to enable it on specific repositories
+5. Open [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot) to manage which repositories Bugbot reviews
+
+On GitHub, connecting turns Bugbot on for the repositories you grant access to. Repositories stay off when someone who isn't a team admin connects an enterprise team, or a team that already has Bugbot on. On GitLab, Bitbucket, Azure DevOps, and Origin, turn Bugbot on per repository.
 
 For setup details, see the [GitHub](https://cursor.com/docs/integrations/github.md), [GitLab](https://cursor.com/docs/integrations/gitlab.md), [Bitbucket](https://cursor.com/docs/integrations/bitbucket.md), or [Azure DevOps](https://cursor.com/docs/integrations/azure-devops.md#set-up-bugbot) integration pages.
 
