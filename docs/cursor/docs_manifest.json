@@ -63,8 +63,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "b4a317ad506e249f054b5699329d07a48737735b7133919512d9ba70e972c127",
-      "last_updated": "2026-10-13T20:30:55.468757"
+      "hash": "67f698b3c5384bfda2f2453d91f33cc55631e090e92b1a5edd000fec067e1838",
+      "last_updated": "2026-10-14T00:05:33.796120"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -417,8 +417,8 @@
     "cloud-agent/self-hosted/my-machines.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/my-machines.md",
-      "hash": "76a177db19e03e36db10e134d05a532eb399c9025cf435528f8eeab0e52c6213",
-      "last_updated": "2026-10-02T00:27:55.105208"
+      "hash": "ec2e4ac7330cf6bbef9149f3a439a2b61a7068a5d5fbaba69a8662cfb449facd",
+      "last_updated": "2026-10-14T00:05:33.797893"
     },
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
@@ -1377,8 +1377,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "c6dd7f6f91a2ddcc2a48ee955d5f764a261fab1fe96b6b13945f36719c8c5ac8",
-      "last_updated": "2026-10-13T20:30:55.475882"
+      "hash": "41b1b5cc33faf64b1c1dfa3d76cf7d15aa277d906f3ce7227888c06d02a0d14c",
+      "last_updated": "2026-10-14T00:05:33.799906"
     },
     "models/claude-fable-5-1.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5-1",
@@ -1419,8 +1419,8 @@
     "models/gemini-3-8-flash.md": {
       "original_url": "https://cursor.com/docs/models/gemini-3-8-flash",
       "original_md_url": "https://cursor.com/docs/models/gemini-3-8-flash.md",
-      "hash": "503e8ef59e60aa76bfb2e4e7e7568ffaee664874eddcfd2e7e8011ed5920d8c1",
-      "last_updated": "2026-09-02T18:23:52.876226"
+      "hash": "356794baf2236bb6f53c38f77a9864a05ea993526489178f9b19a80b5b1bcc86",
+      "last_updated": "2026-10-14T00:05:33.800197"
     },
     "models/gemini-4-argon.md": {
       "original_url": "https://cursor.com/docs/models/gemini-4-argon",
@@ -1634,8 +1634,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-13T20:30:55.481525",
-    "fetch_duration_seconds": 3.485458,
+    "last_fetch_completed": "2026-10-14T00:05:33.804718",
+    "fetch_duration_seconds": 2.27709,
     "total_pages_discovered": 272,
     "pages_fetched_successfully": 272,
     "pages_failed": 0,
@@ -1648,7 +1648,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-13T20:30:55.481539",
+  "last_updated": "2026-10-14T00:05:33.804731",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
