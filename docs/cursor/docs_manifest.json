@@ -321,8 +321,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "400db9ed2a465af313c5a921415bc0ee1909e568358e7017095bcbbfb7c08be1",
-      "last_updated": "2026-10-13T20:30:55.470594"
+      "hash": "f86da732eac261086aa46b704d5cd66f6eefa21c2025babb14db3118fbbcbf7b",
+      "last_updated": "2026-10-14T19:09:30.106791"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -345,8 +345,8 @@
     "cloud-agent/builds.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/builds",
       "original_md_url": "https://cursor.com/docs/cloud-agent/builds.md",
-      "hash": "03e89397501cc9ade0a7c26b0661f7d4983ac654152508fbc9af349e08ea2bbb",
-      "last_updated": "2026-10-12T22:22:59.735972"
+      "hash": "bc4f8179f0ade5d5c00cb3e2a04ce54bd95f1a1abafbdce2c81c7a24b6523d2e",
+      "last_updated": "2026-10-14T19:09:30.107115"
     },
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
@@ -423,8 +423,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "b4ee59b524396d5b1ba0da4c6ee9dcda414418253180b8c6acbcd25888a4f5e3",
-      "last_updated": "2026-10-13T20:30:55.472098"
+      "hash": "edaaf91a615b32a2fd96ad66c70c568e9010ed244b44af7630b6bbc7aed6c15c",
+      "last_updated": "2026-10-14T19:09:30.107611"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -525,8 +525,8 @@
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "c75160ff00fb16a9e5813cbb830e0565c3e670e5997059afd77eb710b50c8794",
-      "last_updated": "2026-10-13T20:30:55.473906"
+      "hash": "e93f490e3cd7a5cf951a9f680edff0167f19cd98180f3e62bbb7b7981cf987dd",
+      "last_updated": "2026-10-14T19:09:30.108150"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1605,14 +1605,14 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "3ca10e7239541e13f13177649ca548e530c1063d4526f436ea492d26f76c524f",
-      "last_updated": "2026-10-07T18:18:45.517840"
+      "hash": "9629cae9ce87134fe4fb6c497936bfb4b0152da1e7cec8e8d6a8158b00e2a0c4",
+      "last_updated": "2026-10-14T19:09:30.109974"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
       "original_md_url": "https://cursor.com/docs/sdk/typescript.md",
-      "hash": "21f61a22bad808130bc85097cae078f2a31f97cafad5bac0f4370016b23beeaa",
-      "last_updated": "2026-10-07T18:18:45.518317"
+      "hash": "44ac8bfb2e63699ed66a4ec4dc9ca757e844dafb4e21912b3f1d0c9c8acbb61e",
+      "last_updated": "2026-10-14T19:09:30.110427"
     },
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
@@ -1634,8 +1634,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-14T14:17:18.741561",
-    "fetch_duration_seconds": 2.2293,
+    "last_fetch_completed": "2026-10-14T19:09:30.113046",
+    "fetch_duration_seconds": 3.511449,
     "total_pages_discovered": 272,
     "pages_fetched_successfully": 272,
     "pages_failed": 0,
@@ -1648,7 +1648,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-14T14:17:18.741576",
+  "last_updated": "2026-10-14T19:09:30.113057",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
