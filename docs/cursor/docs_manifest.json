@@ -69,8 +69,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "53ee1acdbd0fd66d74ddc064f4d3956c5fa246304ddbc9eaf3a3d98afcfba677",
-      "last_updated": "2026-10-14T23:37:34.263945"
+      "hash": "4aa2035db8cd7491748bc936d5863cc0ca346004f579ad181d1fdcb59f5d5c54",
+      "last_updated": "2026-10-15T23:32:18.719125"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -147,8 +147,8 @@
     "agent/security/run-modes.md": {
       "original_url": "https://cursor.com/docs/agent/security/run-modes",
       "original_md_url": "https://cursor.com/docs/agent/security/run-modes.md",
-      "hash": "77f2506195893012d3a9fdc869ed93fcdd5b55dbb461cfef87a06acd33c1afa7",
-      "last_updated": "2026-10-13T20:30:55.469188"
+      "hash": "3047e773f2f179e85214eaa4f058bc9db6b8e54ac040a55371d7b95766095192",
+      "last_updated": "2026-10-15T23:32:18.719587"
     },
     "agent/tools/browser.md": {
       "original_url": "https://cursor.com/docs/agent/tools/browser",
@@ -513,8 +513,8 @@
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
       "original_md_url": "https://cursor.com/docs/enterprise/model-and-integration-management.md",
-      "hash": "d2aa3a5c41864124eb0fb63706af20ebceeb700423a244360540d9991543ba67",
-      "last_updated": "2026-10-13T20:30:55.473223"
+      "hash": "83dee0c922eb8e29c82949277828b4aa5920e9a2f9fb31db615d0dbbdc56bcee",
+      "last_updated": "2026-10-15T23:32:18.721424"
     },
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
@@ -1023,8 +1023,8 @@
     "help/grok-bot/connect-plugins.md": {
       "original_url": "https://cursor.com/help/grok-bot/connect-plugins",
       "original_md_url": "https://cursor.com/help/grok-bot/connect-plugins.md",
-      "hash": "1dd6e2fc748114c1e0ef8b7bbcf39bbfdc47195e2a116d96ea44c946de35c9d5",
-      "last_updated": "2026-10-11T09:36:39.807774"
+      "hash": "b9ae80cf9e76689bff38aadba2de93fcd3a247fe226216703f3601fd90e9ee1e",
+      "last_updated": "2026-10-15T23:32:18.722500"
     },
     "help/grok-bot/delete-account.md": {
       "original_url": "https://cursor.com/help/grok-bot/delete-account",
@@ -1299,8 +1299,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "fa8fe9d247aa5235f33c6e4a402ba5d48cd754a2255c6c44cd386206e9c41fc3",
-      "last_updated": "2026-10-13T20:30:55.475289"
+      "hash": "62109230bb5e9a8c0ab7abf8bed91fe2067bea685055eae4851901b92c6e27f4",
+      "last_updated": "2026-10-15T23:32:18.723252"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -1383,8 +1383,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "33843943fee372522106a1741bcda9b410f6957c6e7e364ce4bfc78292a304d1",
-      "last_updated": "2026-10-14T23:37:34.276599"
+      "hash": "2bb4baf3095d8fd7d3b536377f89719ab5d6fd9091954ad15db2d27a15717c77",
+      "last_updated": "2026-10-15T23:32:18.723778"
     },
     "models/claude-fable-5-1.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5-1",
@@ -1470,11 +1470,11 @@
       "hash": "5f780f9d8f6bb5d653c4b0c4f749c22e66d31156ba1203298da24fa801eb1e22",
       "last_updated": "2026-10-14T23:37:34.280347"
     },
-    "models/muse-spark-1-3.md": {
-      "original_url": "https://cursor.com/docs/models/muse-spark-1-3",
-      "original_md_url": "https://cursor.com/docs/models/muse-spark-1-3.md",
-      "hash": "1df6d3c47162ca2cb07b432a55c4eb80230135f8c4b3d3050c7f422c84c2e1fa",
-      "last_updated": "2026-10-14T23:37:34.280606"
+    "models/muse-wonder.md": {
+      "original_url": "https://cursor.com/docs/models/muse-wonder",
+      "original_md_url": "https://cursor.com/docs/models/muse-wonder.md",
+      "hash": "cc03843d5b4aca980d9e687e6247fbc912b2700dc48981a46d7ae56d39a521a5",
+      "last_updated": "2026-10-15T23:32:18.724031"
     },
     "origin.md": {
       "original_url": "https://cursor.com/docs/origin",
@@ -1640,8 +1640,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-15T18:51:17.681551",
-    "fetch_duration_seconds": 3.451413,
+    "last_fetch_completed": "2026-10-15T23:32:18.728870",
+    "fetch_duration_seconds": 3.900473,
     "total_pages_discovered": 273,
     "pages_fetched_successfully": 273,
     "pages_failed": 0,
@@ -1654,7 +1654,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-15T18:51:17.681566",
+  "last_updated": "2026-10-15T23:32:18.728882",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -87,6 +87,22 @@ This is a known issue, and our engineers are working on a fix. Zoom authorizatio
 
 There is no workaround for now. We will update this article once Zoom can be connected.
 
+## Why does SharePoint admin consent fail with a redirect URI error (AADSTS50011)?
+
+This is a known issue, and our engineers are working on a fix. When a Cursor team admin connects SharePoint from the dashboard **Integrations** page and chooses **Application-level permissions**, Microsoft shows AADSTS50011 (redirect URI mismatch) before the consent prompt. The Microsoft app named in the error belongs to Grok, not your organization, so nothing in your tenant causes this and no change in your Entra admin center will clear it.
+
+Workaround: connect with **Delegated permissions** instead.
+
+1. In the Cursor dashboard, open **Integrations** and find the SharePoint card.
+2. Choose **Connect team** (or **Reconnect** if you already started setup) and pick **Delegated permissions**.
+3. Enter your Microsoft tenant ID (for example contoso.onmicrosoft.com, or the GUID from Microsoft Entra ID > Overview).
+4. Sign in with Microsoft. Most work or school tenants need a Microsoft admin to consent once to Sites.Read.All.
+5. Each team member signs in with their own Microsoft account the first time a bot uses SharePoint. They see only the sites their account can already open.
+
+If you started Application-level setup and members now see "This team does not have the SharePoint integration", the admin needs to finish the Delegated sign-in above. The plugin stays unavailable until that Microsoft step completes.
+
+We will update this article when Application-level permissions can be approved.
+
 ## Related
 
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)
