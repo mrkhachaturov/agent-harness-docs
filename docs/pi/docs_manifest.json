@@ -96,11 +96,17 @@
       "hash": "b832893fb762f87fdbbfd694241d484592942823791f3e81a6c4d915421ff5db",
       "last_updated": "2026-10-06T19:58:49.510776"
     },
+    "models-configuration.md": {
+      "upstream_path": "packages/coding-agent/docs/models-configuration.md",
+      "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models-configuration.md",
+      "hash": "e44f771f9927d523b954b0b18388e18587f4692f0ac8cf4c40e90878a8d63780",
+      "last_updated": "2026-10-16T23:14:40.009996"
+    },
     "models.md": {
       "upstream_path": "packages/coding-agent/docs/models.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models.md",
-      "hash": "d5bd0d886f0e1541648081ae01da91e1a218cd454713336d5100fc820f6c1527",
-      "last_updated": "2026-10-11T17:13:43.224625"
+      "hash": "2cd9463ec81285f022b3d35dccd91faaa6db08be3bd4f137f1b5e5780d771d2a",
+      "last_updated": "2026-10-16T23:14:40.010473"
     },
     "nvidia-rtx-llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/nvidia-rtx-llama-cpp.md",
@@ -248,19 +254,19 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-16T18:36:15.794668",
-    "fetch_duration_seconds": 1.571924,
-    "total_pages_discovered": 41,
-    "pages_fetched_successfully": 41,
+    "last_fetch_completed": "2026-10-16T23:14:40.014000",
+    "fetch_duration_seconds": 1.388756,
+    "total_pages_discovered": 42,
+    "pages_fetched_successfully": 42,
     "pages_failed": 0,
     "failed_files": [],
     "upstream_repo": "https://github.com/earendil-works/pi.git",
     "upstream_branch": "main",
     "sparse_pattern": "/packages/coding-agent/docs/*.md",
-    "total_files": 41,
+    "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-16T18:36:15.794678",
+  "last_updated": "2026-10-16T23:14:40.014013",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
