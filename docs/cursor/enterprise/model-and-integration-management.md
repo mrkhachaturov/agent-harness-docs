@@ -39,6 +39,10 @@ See [Models](https://cursor.com/docs/models-and-pricing.md) for the current list
 
 Gemini 3.5 Flash Lite is only available in Cursor as a model for Auto-review. For that reason, enabling it for an organization will not make it available for coding agents.
 
+### Bugbot and model access
+
+[Bugbot](https://cursor.com/docs/bugbot.md) reviews only with models your team allows. When your model settings block every model Bugbot can use, the review stops instead of running on a blocked model. On a pull request, the [Bugbot check](https://cursor.com/docs/bugbot.md#ci-check-statuses) finishes as `neutral`.
+
 ## Restrict personal API keys (BYOK controls)
 
 Enterprise teams can prevent team members from using their own API keys with third-party providers (OpenAI, Anthropic, Azure, AWS Bedrock) in Cursor. All usage goes through Cursor's included models and usage pool.

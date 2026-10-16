@@ -85,6 +85,14 @@ Check these first:
 
 On the phone, **Run history** shows each recent run as **Running**, **Succeeded**, or **Failed**. A failed run shows its reason. **No runs yet** means nothing has started the routine yet.
 
+## Why did my routine fail with a rate limit error?
+
+This is a known issue, and our engineers are working on a fix. Some routine runs fail with "Automation run rate limit exceeded". The error comes from a limit all Grok Bot routines share, not from your own usage.
+
+A run that fails with this error isn't retried automatically, so rerun the routine yourself. Use **Test** to run it now. For a webhook, send the call again.
+
+We will update this article when the limit no longer affects routines.
+
 ## Related
 
 - [Work with Grok Bot](https://cursor.com/docs/grok-bot/work.md#skills-and-routines)
