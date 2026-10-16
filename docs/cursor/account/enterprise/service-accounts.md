@@ -69,6 +69,7 @@ Each service account can have API keys associated with it. You can:
 - **View masked keys**: See the last few characters of each key for identification
 - **Rotate keys**: Generate a new key and invalidate the old one
 - **Edit name and description**: Rename an active service account or update its description. Its existing API keys keep working
+- **Set spend limits**: Cap how much a service account can spend per billing period
 - **Suspend service accounts**: Stop all of a service account's API keys from working without revoking them, then resume it later
 - **Archive service accounts**: Archive a service account and revoke all its API keys
 
@@ -81,6 +82,21 @@ To rotate an API key:
 3. Copy the new key immediately
 
 The old key is immediately invalidated. Update any integrations using the old key.
+
+## Spend limits
+
+Admins can cap how much each service account spends per billing period.
+
+1. Navigate to **Dashboard** → **Settings** → **API Keys** → **Service Accounts**
+2. Open the actions menu next to the service account and click **Edit spend limit**
+3. Choose **Limit spend each billing period** and enter an amount, or choose **No limit**
+4. Click **Save**
+
+The Service Accounts table shows each account's current limit in the **Spend limit** column. New service accounts have no limit by default.
+
+When a service account reaches its limit, its requests are blocked with a "Service account spend limit reached" error for the rest of the billing period. A team admin can raise or remove the limit at any time to restore access immediately.
+
+Spend limits do not apply to Bugbot: Bugbot usage is billed through your Bugbot subscription, so Bugbot service accounts are never blocked by a spend limit.
 
 ## Using service accounts with the API
 
