@@ -78,9 +78,28 @@ Yes. Bots work on a cloud computer. Closing the app, the laptop, or the phone do
 
 Bots work on their own cloud computer. A Bot runs a command on your desktop only if you allow it. The setting is under **Settings** > **Computer** > **Your computer**, labeled **Execution on this computer**. If no desktop is listed there yet, the same page shows **Execution on Local Computer**. By default it asks you each time. See [Grok Bot settings](https://cursor.com/docs/grok-bot/settings.md).
 
+## Why does the Bot say local tools are turned off when my setting allows them?
+
+This is a known issue, and the team is working on a fix. A Bot may say "Local tools are turned off. The user has set local tool access to Never." even though **Execution on this computer** is set to **Always allow** or **Ask every time**.
+
+The issue is on our side. Your setting is correct, and there is nothing you need to change. Restarting or reinstalling Grok Bot, or changing the setting, won't clear this error.
+
+We will update this article when the issue is fixed.
+
 ## Why does a website block my Bot or show a captcha?
 
 Some sites block traffic from cloud computers. When that happens, the Bot hands you the step, and you can sign in yourself on the Bot's computer. You can also turn on **Route traffic through this computer** in **Settings** > **Computer**, under **Your computer**, so sites see your own connection.
+
+## What if a website times out or shows a connection error from the Bot's computer?
+
+The Bot's computer reaches the internet through Cursor's shared network. Some sites and services drop connections from it, even when the same address opens on your own device. The Bot may report a timeout, a secure connection error, or a page that never loads. **Update**, **Recover**, and **Reset** don't change this, so skip them.
+
+Two settings under **Settings** > **Computer** > **Your computer** send the work through your own device instead:
+
+- **Route traffic through this computer**. The Bot's browser uses your desktop's connection, so the site sees your network and IP address. It applies to new connections and works while the Grok Bot desktop app is open. If the row asks you to update the Bot's computer first, choose **Update**. If your team admin has turned off local routing, the switch is locked. See [Route traffic through your desktop](https://cursor.com/docs/grok-bot/settings.md#route-traffic-through-your-desktop).
+- **Execution on this computer**. The Bot runs commands and scripts, including API calls, on your desktop instead of its cloud computer. Choose **Ask every time** or **Always allow**. See [Does the Bot use my own computer?](https://cursor.com/help/grok-bot/faqs.md#does-the-bot-use-my-own-computer)
+
+If neither fits, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the site address and a screenshot of the error, and we'll check whether the Bot's computer can reach it.
 
 ## My chats or Bots are missing.
 

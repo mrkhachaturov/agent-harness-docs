@@ -327,8 +327,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "0f259da8289fb665631f7558d4346b582f48a39655b409c02a24234026ddce95",
-      "last_updated": "2026-10-16T18:36:08.082918"
+      "hash": "4c62500826dcaac71e095f6d1049332c908bd288e6dc768059e8be2713a63f01",
+      "last_updated": "2026-10-18T17:45:46.926985"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -465,8 +465,8 @@
     "enterprise.md": {
       "original_url": "https://cursor.com/docs/enterprise",
       "original_md_url": "https://cursor.com/docs/enterprise.md",
-      "hash": "2b7b065b2bd6798446a2922662aa8b1175b10a557ed59f01dacfb1c22fc8aae2",
-      "last_updated": "2026-09-26T03:02:34.091105"
+      "hash": "a811fbc1830886ffc7d332d9b0ce668bd80b90c21755b15e907f5da7b0a3b113",
+      "last_updated": "2026-10-18T17:45:46.927706"
     },
     "enterprise/admin-setup-guide.md": {
       "original_url": "https://cursor.com/docs/enterprise/admin-setup-guide",
@@ -501,8 +501,8 @@
     "enterprise/identity-and-access-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/identity-and-access-management",
       "original_md_url": "https://cursor.com/docs/enterprise/identity-and-access-management.md",
-      "hash": "a14116bc6cb1ce58552186e3b943e58ef36104c5a3b35f6cbb37e9116fa54390",
-      "last_updated": "2026-08-28T23:50:44.235572"
+      "hash": "8aef7134b1fff1ff3384164517303e8f3da5c1ff306a3e586edf8d4d93a1a800",
+      "last_updated": "2026-10-18T17:45:46.928054"
     },
     "enterprise/llm-safety-and-controls.md": {
       "original_url": "https://cursor.com/docs/enterprise/llm-safety-and-controls",
@@ -519,8 +519,8 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "c92b8ebdaabc7f16b95043a03dbfeecc11cbff4696abed4371b51279298f0d7d",
-      "last_updated": "2026-10-02T21:44:31.670251"
+      "hash": "224962f06a7086d214f1eb7f660a98c005f8325e8cb37272f6e0799f100135db",
+      "last_updated": "2026-10-18T17:45:46.928411"
     },
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
@@ -561,8 +561,14 @@
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
       "original_md_url": "https://cursor.com/docs/enterprise/security-hardening.md",
-      "hash": "780475a5cff0b0946b7d95371960f8fb5b562ea4991983c3ac330fdf88059a84",
-      "last_updated": "2026-10-06T19:58:41.757885"
+      "hash": "8ce85ec63b14e85eaff53daff77d689e8ae711f0628fd74ed87233c01a1f83cf",
+      "last_updated": "2026-10-18T17:45:46.928895"
+    },
+    "enterprise/tenancy-restriction.md": {
+      "original_url": "https://cursor.com/docs/enterprise/tenancy-restriction",
+      "original_md_url": "https://cursor.com/docs/enterprise/tenancy-restriction.md",
+      "hash": "e4fc2d9d553d5adb9a6f82c8e777812b6245497870d67fa160034324958346ac",
+      "last_updated": "2026-10-18T17:45:46.929033"
     },
     "get-started/quickstart.md": {
       "original_url": "https://cursor.com/docs/get-started/quickstart",
@@ -1041,8 +1047,8 @@
     "help/grok-bot/faqs.md": {
       "original_url": "https://cursor.com/help/grok-bot/faqs",
       "original_md_url": "https://cursor.com/help/grok-bot/faqs.md",
-      "hash": "462232ed8c48b47cee5121b30e62dbf0804623581ea8174595985693bd39264d",
-      "last_updated": "2026-10-14T23:37:34.272142"
+      "hash": "f1dec4be7bf2dff310e3cc8111ddfb1dedcd99a868218919bb5c924cf84fbe72",
+      "last_updated": "2026-10-18T17:45:46.929844"
     },
     "help/grok-bot/get-help.md": {
       "original_url": "https://cursor.com/help/grok-bot/get-help",
@@ -1640,21 +1646,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-18T12:57:28.886044",
-    "fetch_duration_seconds": 2.974898,
-    "total_pages_discovered": 273,
-    "pages_fetched_successfully": 273,
+    "last_fetch_completed": "2026-10-18T17:45:46.934410",
+    "fetch_duration_seconds": 3.439245,
+    "total_pages_discovered": 274,
+    "pages_fetched_successfully": 274,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 273,
+    "total_files": 274,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-18T12:57:28.886058",
+  "last_updated": "2026-10-18T17:45:46.934421",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

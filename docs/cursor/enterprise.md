@@ -25,6 +25,7 @@ Learn how to deploy, configure, and manage Cursor for your organization. This do
 - [Identity & access](https://cursor.com/docs/enterprise/identity-and-access-management.md) - SSO, SCIM, RBAC, and MDM policies
 - [Privacy & data governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md) - Data flows, Privacy Mode, and data residency
 - [Network configuration](https://cursor.com/docs/enterprise/network-configuration.md) - Proxy setup, IP allowlisting, and encryption
+- [Tenancy restriction](https://cursor.com/docs/enterprise/tenancy-restriction.md) - Limit which organizations and teams your network can use
 - [Private connectivity](https://cursor.com/docs/cloud-agent/private-connectivity.md) - AWS PrivateLink and Cloudflare Tunnel for private source control access
 - [Endpoint security](https://cursor.com/docs/enterprise/endpoint-security.md) - Configure antivirus, EDR, and DLP software
 - [LLM safety & controls](https://cursor.com/docs/enterprise/llm-safety-and-controls.md) - Hooks, terminal sandboxing, and agent controls

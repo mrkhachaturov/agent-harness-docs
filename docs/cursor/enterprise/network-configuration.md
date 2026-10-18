@@ -2,6 +2,8 @@
 
 Cursor needs to communicate with backend services and AI providers. This documentation covers how to configure Cursor to work within your network infrastructure, including proxies, firewalls, and encryption requirements.
 
+To limit which organizations and teams can use Cursor from this network, send the [tenancy restriction header](https://cursor.com/docs/enterprise/tenancy-restriction.md) from your proxy.
+
 ## Proxy configuration
 
 Many enterprises route traffic through proxy servers for monitoring and security. Cursor works with most proxy configurations, but some proxy settings can cause issues with streaming responses.
