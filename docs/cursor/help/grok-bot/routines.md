@@ -41,7 +41,7 @@ A new routine waits for its next scheduled time. It doesn't run when it's create
 
 Open the routine on desktop and choose **Test**. The button says **Running…** until the run finishes. The result shows up in the Bot's chat.
 
-A test does real work. It can change files and use connected plugins. Use a safe input. If the test can't start, you see **Couldn't start a test run**, or a message that explains why.
+A test does real work. It can change files and use connected apps. Use a safe input. If the test can't start, you see **Couldn't start a test run**, or a message that explains why.
 
 Some routines don't show **Test**. They still run on their schedule or trigger.
 
@@ -55,7 +55,7 @@ See [Plans and billing](https://cursor.com/help/grok-bot/plans.md) for weekly us
 
 ## How do Slack triggers work?
 
-A Slack trigger is part of a routine, not the Slack plugin. The plugin lets a Bot post and read as the Slack user you connected. A trigger starts the routine when something happens in Slack. Connect Slack on the Cursor account that owns the Bot before you rely on it. See [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md#what-can-a-plugin-do).
+A Slack trigger is part of a routine, not the Slack app. The app lets a Bot post and read as the Slack user you connected. A trigger starts the routine when something happens in Slack. Connect Slack on the Cursor account that owns the Bot before you rely on it. See [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md#what-can-a-connected-app-do).
 
 Ask the Bot for the trigger you want. A routine can start when the Bot is mentioned, when a word or phrase is mentioned, when you react to a message, or on any message. It can watch one channel or all of Slack. **When to run** shows the trigger in words, such as a phrase and a channel.
 
@@ -98,7 +98,7 @@ We will update this article when the limit no longer affects routines.
 - [Work with Grok Bot](https://cursor.com/docs/grok-bot/work.md#skills-and-routines)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
-- [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md)
+- [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 

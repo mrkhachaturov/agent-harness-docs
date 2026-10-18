@@ -32,9 +32,9 @@ Review the answer and send a follow-up if you want a different format. Your Bot 
 
 ## How do I give my Bot access to a tool?
 
-Connect a plugin when your Bot needs Gmail, Google Calendar, Slack, Notion, or another supported service. Follow the **Connect** card in chat, or open **Connect apps** in the sidebar. See [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md).
+Connect an app when your Bot needs Gmail, Google Calendar, Slack, Notion, or another supported service. Follow the **Connect** card in chat, or open **Connect apps** in the sidebar. See [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md).
 
-For a website without a plugin, open the Bot's computer and sign in yourself when prompted. The Bot does not see the password you enter. Your Bots share the same cloud computer, including its files and browser sessions.
+For a website without an app, open the Bot's computer and sign in yourself when prompted. The Bot does not see the password you enter. Your Bots share the same cloud computer, including its files and browser sessions.
 
 ## What should I check before my Bot takes action?
 
@@ -52,7 +52,7 @@ Once the workflow produces the result you expect, you can turn it into a [routin
 
 - [Get started with Grok Bot](https://cursor.com/docs/grok-bot/get-started.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
-- [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md)
+- [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md)
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)
 
 

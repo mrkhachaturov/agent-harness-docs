@@ -41,7 +41,7 @@ Grok Bot is a computer-use agent that operates applications, browsers, and devel
 The security model rests on four principles:
 
 - **Per-user isolation.** Each user's work runs in a dedicated Firecracker microVM, a micro virtual machine with hardware-level separation from other users.
-- **No access by default.** A Bot can use only the accounts and plugins the user or team grants it.
+- **No access by default.** A Bot can use only the accounts and connected apps the user or team grants it.
 - **Human approval gates.** Sensitive actions require user approval, evaluated by an independent review model called Auto Review.
 - **Administrative control.** Team admins can set Team Rules, Cloud Agent delegation, template sharing, and the local execution ceiling. Network Controls, Team Setup Scripts, Team Secrets, Allow Local Egress Routing, Allow Sudo on Bot Computers, Action Recording, Enforce Auto-review, Auto-review rules, and the organization-wide enable switch are Enterprise only.
 
@@ -50,7 +50,7 @@ The pieces fit together like this:
 1. **Local machine.** Chat, review, and approvals happen on the member's device. Work runs in the hosted computer. Optional [local execution](https://cursor.com/docs/grok-bot/security.md#local-execution) requires per-command approval by default and can be turned off.
 2. **Environment.** One persistent Firecracker microVM per user. Every Bot that user runs shares that computer. Admins manage Grok Bot from the Grok Bot page of the [Cursor dashboard](https://cursor.com/dashboard/bot). Team Rules, Cloud Agent delegation, public template sharing, and Execution on Local Computer are available to team admins. **Enterprise only** on that page: the organization-wide enable switch, Network Controls, Team Setup Scripts, Team Secrets, Allow Local Egress Routing, Allow Sudo on Bot Computers, Action Recording, Enforce Auto-review, Auto-review rules, and computer management for organization admins. Members never see this page.
 3. **The Bot.** Shell, browser, and computer use inside the hosted computer. A Bot has no access by default and acts only with accounts the member signs it into. It hands login, two-factor authentication, and payment steps to the member.
-4. **Plugins.** Your team's Cursor MCP (Model Context Protocol) policy applies in full, allowing or blocking each connector. OAuth tokens stay on Cursor's connector backend, and Bots invoke tools without receiving them.
+4. **Connected apps.** Your team's Cursor MCP (Model Context Protocol) policy applies in full, allowing or blocking each connector. OAuth tokens stay on Cursor's connector backend, and Bots invoke tools without receiving them.
 5. **Cloud Agents.** Grok Bot can delegate coding tasks to separate computers under your existing [Cloud Agent](https://cursor.com/docs/cloud-agent.md) controls. Admins can disable spawning.
 6. **Models and data.** Grok Bot manages model selection. With Privacy Mode enabled, customer data is not used for training; Cursor enforces this on its servers, and when the setting can't be verified, the system defaults to not training.
 
@@ -60,7 +60,7 @@ Each user gets a dedicated computer with hardware-level separation, and one user
 
 Within one user, the boundary is different: all of that user's Bots share one computer, and Bots isolate personalities and workspaces, not compute. Treat a login or file on the computer as available to every Bot that user runs, sign the browser out of accounts a Bot no longer needs, and remove sensitive temporary files when work completes. When a workload needs its own computer and credential set, give it its own Cursor user.
 
-[Team Bots](https://cursor.com/help/grok-bot/team-bots.md) are the exception to one Bot per user. A member publishes a cloud-hosted Bot to the team, and every member can chat with it. Each member's chat is private, including from the owner. In a member's own chat, the Bot usually works on that member's computer, uses that member's connected accounts after asking, and uses that member's Grok Bot usage. In Slack channels, threads, and group chats, a Team Bot uses one computer of its own. Secrets, plugins, and files the owner adds to a Team Bot are available in every teammate's chat.
+[Team Bots](https://cursor.com/help/grok-bot/team-bots.md) are the exception to one Bot per user. A member publishes a cloud-hosted Bot to the team, and every member can chat with it. Each member's chat is private, including from the owner. In a member's own chat, the Bot usually works on that member's computer, uses that member's connected accounts after asking, and uses that member's Grok Bot usage. In Slack channels, threads, and group chats, a Team Bot uses one computer of its own. Secrets, apps, and files the owner adds to a Team Bot are available in every teammate's chat.
 
 ## Admin controls
 
@@ -104,7 +104,7 @@ Lets members claim a `mail.grokbot.com` address that their Bots can read and sen
 
 #### Connector policy
 
-Grok Bot inherits your team's Cursor connector policy. There is no separate Grok Bot connector list, and connectors appear as plugins in the app. Set which servers members can use from your Team Marketplace on the dashboard's [Plugins & MCPs page](https://cursor.com/dashboard/plugins), not on the Grok Bot page. The MCP allowlist is Enterprise only; see [MCP server trust management](https://cursor.com/docs/enterprise/model-and-integration-management.md#mcp-server-trust-management). Any permitted connector is available to every Bot a member runs, and a blocked one shows as **Disabled by team admin**. Pushing connectors to members, whether mandatory or default-on, is not available.
+Grok Bot inherits your team's Cursor connector policy. There is no separate Grok Bot connector list, and members find permitted connectors under **Connect apps** in Grok Bot. Set which servers members can use from your Team Marketplace on the dashboard's [Plugins & MCPs page](https://cursor.com/dashboard/plugins), not on the Grok Bot page. The MCP allowlist is Enterprise only; see [MCP server trust management](https://cursor.com/docs/enterprise/model-and-integration-management.md#mcp-server-trust-management). Any permitted connector is available to every Bot a member runs, and a blocked one shows as **Disabled by team admin**. Pushing connectors to members, whether mandatory or default-on, is not available.
 
 #### Execution on Local Computer
 
@@ -248,7 +248,7 @@ For members:
 2. **Prefer Allow once over Always allow** for actions that touch accounts, money, or shared resources.
 3. **Sign the Bot's browser into accounts sized to the task**, and sign it out of accounts it no longer needs. Use scoped service accounts where the source system supports them.
 4. **Start new roles with read-only tasks and draft outputs**, and keep sending, publishing, purchasing, deletion, and production changes behind approval.
-5. **Review installed plugins and active routines regularly**, and pause a routine when its source system changes.
+5. **Review connected apps and active routines regularly**, and pause a routine when its source system changes.
 
 ## FAQ
 
@@ -269,14 +269,14 @@ A separate Grok Bot spend cap is not available today. Account-level
 on-demand controls apply, and the per-product split is on the dashboard
 usage page.
 
-### Why does a member see a plugin as Disabled by team admin?
+### Why does a member see an app as Disabled by team admin?
 
 Your team's connector policy blocks that server. Enable it in **Teams
 Marketplace**, add its server URL to your MCP allowlist if you use one,
-and have the member restart the app. If a permitted plugin still fails
+and have the member restart the app. If a permitted app still fails
 for regular members with a vendor-side permission error, check the
 provider's requirements; some vendors restrict their MCP endpoints to
-their own administrators. See [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md).
+their own administrators. See [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md).
 
 ### How do members request access?
 

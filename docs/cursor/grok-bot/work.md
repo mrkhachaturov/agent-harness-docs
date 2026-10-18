@@ -54,7 +54,7 @@ Grok Bot is designed to feel like messaging a teammate. Keep requests natural, b
 
 ### Message a Bot
 
-In a conversation you can paste text, links, and images, attach files, reference a saved [skill](https://cursor.com/docs/grok-bot/work.md#skills-and-routines) with `/`, mention a Bot, group, routine, or plugin with `@`, reply to or react to a message, and send another instruction while work is in progress. The transcript shows tool activity, computer use, created files, questions, and approval requests alongside normal messages.
+In a conversation you can paste text, links, and images, attach files, reference a saved [skill](https://cursor.com/docs/grok-bot/work.md#skills-and-routines) with `/`, mention a Bot, group, routine, or app with `@`, reply to or react to a message, and send another instruction while work is in progress. The transcript shows tool activity, computer use, created files, questions, and approval requests alongside normal messages.
 
 A direct message from you takes priority over background work and can redirect the current turn. Send "Stop now" when work should end immediately; stopping doesn't undo actions the Bot already completed.
 
@@ -75,7 +75,7 @@ Tell the Bot what each attachment is and how to use it:
 > section for every exception, and return a new spreadsheet plus a short
 > summary. Don't modify the originals.
 
-Paste a link when the Bot can reach the page from its computer or a plugin; if the page is private, [sign in through the computer](https://cursor.com/docs/grok-bot/work.md#take-over-for-sensitive-steps) or connect the plugin. Always check a link's destination before entering credentials or approving an external action.
+Paste a link when the Bot can reach the page from its computer or a connected app; if the page is private, [sign in through the computer](https://cursor.com/docs/grok-bot/work.md#take-over-for-sensitive-steps) or connect the app. Always check a link's destination before entering credentials or approving an external action.
 
 ### Group chats
 
@@ -117,13 +117,13 @@ The Bot hands you the computer for passwords, passkeys, two-factor codes, CAPTCH
 
 For a supported connection that presents a secure secret request, enter the value there: the field is masked, excluded from the transcript, and not shown to the model. Never paste passwords or one-time codes into ordinary chat. See [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md).
 
-### Connect plugins
+### Connect apps
 
-Plugins give Bots a structured way to work with services like Gmail, Notion, and Slack, and are more reliable than clicking through a website when one exists. Open **Connect apps** in the sidebar or follow an in-chat **Connect** card, then finish the provider login in your browser; setup steps and known issues are in [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md).
+Apps give Bots a structured way to work with services like Gmail, Notion, and Slack, and are more reliable than clicking through a website when one exists. Open **Connect apps** in the sidebar or follow an in-chat **Connect** card, then finish the provider login in your browser; setup steps and known issues are in [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md).
 
-- **Plugins are account-wide.** An installed plugin is available to every Bot you run. A teammate's [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) asks before it uses your accounts.
-- **Plugin logins stay off the computer.** OAuth tokens are held on Cursor's connector backend, and the Bot invokes tools without receiving them.
-- **Team policy applies.** A plugin blocked by your team's connector policy shows **Disabled by team admin**. Blocking a plugin doesn't block that service's website. Closing that second path takes **Network Controls**, which is Enterprise only. See [network policy](https://cursor.com/docs/grok-bot/security.md#network-policy).
+- **Apps are account-wide.** A connected app is available to every Bot you run. A teammate's [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) asks before it uses your accounts.
+- **App logins stay off the computer.** OAuth tokens are held on Cursor's connector backend, and the Bot invokes tools without receiving them.
+- **Team policy applies.** An app blocked by your team's connector policy shows **Disabled by team admin**. Blocking an app doesn't block that service's website. Closing that second path takes **Network Controls**, which is Enterprise only. See [network policy](https://cursor.com/docs/grok-bot/security.md#network-policy).
 
 ### Files and the workspace
 
@@ -151,7 +151,7 @@ A skill is a reusable set of instructions for how to do a task. A routine tells 
 
 ### Save a skill
 
-Skills capture steps, decision rules, expected output, and safety boundaries, and are available across your Bots (a Bot may still need the relevant plugin or login). Ask directly:
+Skills capture steps, decision rules, expected output, and safety boundaries, and are available across your Bots (a Bot may still need the relevant app or login). Ask directly:
 
 > Save the process we used for this task as a skill called "Weekly account
 > health". Include the source systems, risk definitions, output format, and
@@ -177,7 +177,7 @@ Ask the Bot that should own the recurring job:
 
 Confirm the owning Bot, the schedule and time zone, the input source, the expected result, the approval boundary, and what happens when a source is missing. Routines run in the cloud while your laptop is closed. Deleting a routine stops its future runs and can't be undone.
 
-Cursor account integrations can also start a routine from an event, such as a Slack message or a GitHub notification; they're separate from the Slack or GitHub plugins. Define a narrow matching rule and a clear response, like "when a message in `#customer-escalations` contains a ticket link and the phrase 'needs repro', reproduce the issue in staging and post a repro pack in this conversation". Avoid broad listeners like "every new message", which create noise, consume usage, and act on irrelevant input.
+Cursor account integrations can also start a routine from an event, such as a Slack message or a GitHub notification; they're separate from the Slack or GitHub apps. Define a narrow matching rule and a clear response, like "when a message in `#customer-escalations` contains a ticket link and the phrase 'needs repro', reproduce the issue in staging and post a repro pack in this conversation". Avoid broad listeners like "every new message", which create noise, consume usage, and act on irrelevant input.
 
 ### Test and manage routines
 
@@ -189,7 +189,7 @@ approval.
 
 Create and change routines by asking the Bot in chat. To review them on desktop, click the Bot's name at the top of the chat to open its details. Routines are on the **Details** tab. Open a routine to read its **Instruction** and **When to run**, and to **Pause**, **Resume**, **Test**, **Edit**, or delete it. On the phone, the Bot's profile lists its routines with **Run history**. After a long period away, Grok Bot may ask whether to keep routines running and pause them if you don't respond. For schedules, Slack triggers, and webhooks, see [Routines](https://cursor.com/help/grok-bot/routines.md).
 
-Routines earn trust the same way people do: automate preparation before execution, keep sending, purchasing, deleting, publishing, and production changes behind approval, report missing or stale sources instead of working around them, and re-test after a website, plugin, or source format changes.
+Routines earn trust the same way people do: automate preparation before execution, keep sending, purchasing, deleting, publishing, and production changes behind approval, report missing or stale sources instead of working around them, and re-test after a website, app, or source format changes.
 
 ## Related pages
 

@@ -14,9 +14,9 @@ With an address, a Bot can:
 You can claim it two ways:
 
 - **Ask your Bot.** Say something like "Get yourself an email address." The Bot asks what name you want, checks that it's free, and shows an approval card. Nothing is claimed until you approve.
-- **Use the Email plugin.** On desktop, open **Connect apps** in the sidebar and choose **Email**. On the phone, open **Settings** > **Connect apps** > **Email**. Under **Email address**, type a name in **Choose a name**, then choose **Create address**.
+- **Use the Email app.** On desktop, open **Connect apps** in the sidebar and choose **Email**. On the phone, open **Settings** > **Connect apps** > **Email**. Under **Email address**, type a name in **Choose a name**, then choose **Create address**.
 
-After you claim it, the plugin shows your address with a button to copy it.
+After you claim it, the app shows your address with a button to copy it.
 
 If you use Grok Bot through a Cursor team, a team admin has to turn on agent email first. See [How do team admins turn on agent email?](https://cursor.com/help/grok-bot/agent-email.md#how-do-team-admins-turn-on-agent-email)
 
@@ -102,7 +102,7 @@ If an admin turns agent email off later, Bots lose their email tools and email r
 | **Your team admin has turned off Grok Bot agent email, so this account cannot claim or use an agent email address.** | Ask your team admin to turn on **Agent Email**. See [How do team admins turn on agent email?](https://cursor.com/help/grok-bot/agent-email.md#how-do-team-admins-turn-on-agent-email) |
 | **That address is taken, and addresses are never reissued, so retrying it cannot succeed. Choose a different name.** | Choose a different name.                                                                                                                                                              |
 | A message about allowed characters, length, or a reserved word                                                       | Pick a name that follows [the name rules](https://cursor.com/help/grok-bot/agent-email.md#what-names-can-i-choose).                                                                   |
-| **You can have one agent email address.**                                                                            | You already have an address. Ask your Bot what it is, or open the **Email** plugin.                                                                                                   |
+| **You can have one agent email address.**                                                                            | You already have an address. Ask your Bot what it is, or open the **Email** app.                                                                                                      |
 | **Couldn't create your email address. Try again.** (phone)                                                           | Check the [name rules](https://cursor.com/help/grok-bot/agent-email.md#what-names-can-i-choose), or try on desktop, which shows the exact reason.                                     |
 | **Too many email addresses checked in the last minute.**                                                             | Wait a minute, then try again.                                                                                                                                                        |
 
@@ -111,7 +111,7 @@ If none of these match, [contact support](https://cursor.com/help/grok-bot/get-h
 ## Related
 
 - [Routines](https://cursor.com/help/grok-bot/routines.md)
-- [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md)
+- [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md)
 - [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
 - [Grok Bot for Teams and Enterprise](https://cursor.com/docs/grok-bot/teams.md)
 

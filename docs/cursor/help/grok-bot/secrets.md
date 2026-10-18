@@ -40,7 +40,7 @@ If the name is still missing on every device, add it again. Don't put it in a fi
 
 ## Related
 
-- [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md)
+- [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md)
 - [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)

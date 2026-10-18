@@ -33,7 +33,7 @@ No. Grok Bot signs in with your Cursor account. Signing out of Grok Bot or unins
 ## What gets deleted when I delete my account?
 
 - Your Cursor account and Grok Bot access
-- Grok Bot agents, chats, computers, and connected plugins
+- Grok Bot agents, chats, computers, and connected apps
 - Cursor chat history and settings
 
 All data is removed within 30 days.

@@ -12,7 +12,7 @@ Team Bots are for members of a Cursor team who have Grok Bot. If you don't see *
 
 1. Choose **New chat** (the **+** button) in the sidebar, then **Create new Team Bot**. Grok Bot creates a Bot named **New team bot** and opens its chat.
 2. Tell the Bot what it should help the team with. A sentence is enough.
-3. Follow its setup steps. It asks for plugins, then secrets, then files. Only add keys and files you're happy for the whole team to use.
+3. Follow its setup steps. It asks for apps, then secrets, then files. Only add keys and files you're happy for the whole team to use.
 4. Give the Bot a name and description. Click the Bot's name at the top of the chat. Click the name to rename it, and edit the description under **About**. Teammates can't see a Team Bot that still has the default name and no description.
 5. Publish it. See [How do I publish a Team Bot?](https://cursor.com/help/grok-bot/team-bots.md#how-do-i-publish-a-team-bot)
 
@@ -50,17 +50,17 @@ No. Each person's chat with a Team Bot is private. The owner can't read your cha
 
 The Bot can save things it learns for the whole team, and it tells you when it does. It doesn't save anything about you personally for the team. What it remembers about working with you stays between you and the Bot.
 
-## Whose plugins and secrets does a Team Bot use?
+## Whose apps and secrets does a Team Bot use?
 
-A Team Bot uses the plugins and secrets its owner added. Those work the same for everyone who chats with it.
+A Team Bot uses the apps and secrets its owner added. Those work the same for everyone who chats with it.
 
-In your own chat with a Team Bot, it can also use your plugins. It asks before it uses one of your personal accounts. The card says **Allow**, then the plugin name:
+In your own chat with a Team Bot, it can also use your apps. It asks before it uses one of your personal accounts. The card says **Allow**, then the app name:
 
 - **Allow once** lets it use that account this time.
 - **Always allow** remembers your answer. Its menu has **Always allow for this Bot** and **Always allow for all Team Bots**.
 - **Skip** means it doesn't use that account this time.
 
-In Slack channels, threads, and group chats, a Team Bot uses only its owner's plugins, and asks before it uses your accounts.
+In Slack channels, threads, and group chats, a Team Bot uses only its owner's apps, and asks before it uses your accounts.
 
 A connected account always acts as the person the Bot is answering. One teammate's connection is never used for someone else.
 
@@ -100,7 +100,7 @@ Each teammate needs to link their Slack account first. Open **Settings** > **Gen
 
 Only the owner can change a Team Bot. Click the Bot's name at the top of the chat to open its details:
 
-- **Plugins**, **Secrets**, **Skills**, and **Files** hold what the Bot uses for everyone.
+- **Plugins** (the Bot's connected apps), **Secrets**, **Skills**, and **Files** hold what the Bot uses for everyone.
 - Click the name to rename the Bot. Edit the description under **About**.
 - **Unpublish** hides the Bot from teammates until you publish it again.
 
@@ -145,7 +145,7 @@ If none of these match, [contact support](https://cursor.com/help/grok-bot/get-h
 ## Related
 
 - [Group chats and Bot-to-Bot messages](https://cursor.com/help/grok-bot/group-chats.md)
-- [Connect plugins](https://cursor.com/help/grok-bot/connect-plugins.md)
+- [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md)
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Grok Bot for Teams and Enterprise](https://cursor.com/docs/grok-bot/teams.md)
