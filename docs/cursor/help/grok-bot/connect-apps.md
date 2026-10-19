@@ -69,6 +69,10 @@ The Slack app posts as the Slack user you connected, not as a separate bot that 
 
 Gmail can search and read mail, draft and send, and apply labels on the connected mailbox.
 
+**X**
+
+The X plugin needs X API credits on your X developer account. See [What if the X plugin is connected but bookmarks, DMs, or the timeline fail?](https://cursor.com/help/grok-bot/how-to.md#what-if-the-x-plugin-is-connected-but-bookmarks-dms-or-the-timeline-fail).
+
 ## Can I connect two Gmail accounts?
 
 No. Gmail connects one mailbox at a time. To use a different Gmail mailbox, disconnect the current one and authorize the other. You cannot keep a personal mailbox and a work mailbox connected to Gmail at the same time.
