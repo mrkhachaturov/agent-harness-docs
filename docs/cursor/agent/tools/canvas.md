@@ -2,7 +2,7 @@
 
 Canvases let Cursor create interactive artifacts that render next to the chat. Instead of scrolling through a long markdown table or code block, you get a standalone view, laid out with sections, stats, and tables, that you can reopen, edit, and iterate on.
 
-Ask agents for a dashboard, analysis, audit, or report, and Cursor opens the result in a canvas when that is a better fit.
+Ask agents for a dashboard, analysis, audit, or report, and Cursor opens the result in a canvas when that is a better fit. [Cloud agents](https://cursor.com/docs/cloud-agent.md) can also build canvases as part of their work.
 
 ## How it works
 

@@ -26,7 +26,7 @@ When you discover a durable preference, boundary, or responsibility that should 
 - **Lasting rule.** "From now on, never send external messages without approval."
 - **Task.** "Draft follow-ups for these twelve accounts."
 
-A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) also has a description, which its owner edits under **About** in the Bot's details.
+A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) also has a description, which its owner or a Manager edits under **About** in the Bot's details.
 
 ### Organize your roster
 
@@ -34,7 +34,7 @@ A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) also has a descripti
 
 ### Share a Bot
 
-Share a public link when someone else should start from the same Bot. The link exposes the shared configuration (identity, description, skills, and routines), so remove API keys, internal URLs, and customer data first. The recipient adds a copy to their own account; they never get your computer, logins, or conversation history, and adding a shared Bot accepts the third-party bot terms shown at that point. To give your team one shared Bot to chat with instead of a copy each, publish a [Team Bot](https://cursor.com/help/grok-bot/team-bots.md).
+Share a public link when someone else should start from the same Bot. The link exposes the shared configuration (identity, description, skills, and routines), so remove API keys, internal URLs, and customer data first. The recipient adds a copy to their own account; they never get your computer, logins, or conversation history, and adding a shared Bot accepts the third-party bot terms shown at that point. To give your team one shared Bot to chat with instead of a copy each, share a [Team Bot](https://cursor.com/help/grok-bot/team-bots.md).
 
 On the Teams plan and the Enterprise plan, admins control whether members can
 publish Bot templates publicly. See [template
