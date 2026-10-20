@@ -51,8 +51,8 @@
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md",
-      "hash": "2ab958bff845f566bdde7192fca259ed95201c80544c24cc0a6dc803f37dfa20",
-      "last_updated": "2026-10-18T02:36:45.013119"
+      "hash": "46fc0baeb00db8ca8db399e33e0f506e86e425693b291258357e8063e2f3353c",
+      "last_updated": "2026-10-20T14:03:39.842246"
     },
     "how-pi-works.md": {
       "upstream_path": "packages/coding-agent/docs/how-pi-works.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-20T08:19:05.340192",
-    "fetch_duration_seconds": 0.80174,
+    "last_fetch_completed": "2026-10-20T14:03:39.843694",
+    "fetch_duration_seconds": 1.384233,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-20T08:19:05.340205",
+  "last_updated": "2026-10-20T14:03:39.843701",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
