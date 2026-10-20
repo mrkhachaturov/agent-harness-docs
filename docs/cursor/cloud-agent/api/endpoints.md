@@ -1184,7 +1184,7 @@ PATCH
 
 `/v1/environments/{id}`
 
-Rename an environment, replace its configuration, or both. A request with both fields applies them together, so either both change or neither does. The response is `204` with no body.
+Rename an environment, replace its configuration, replace its repositories, or any combination. A request applies every field it sends together, so either all of them change or none do. The response is `204` with no body.
 
 Renaming an environment to a name its owner already uses returns `409 environment_name_conflict`.
 
@@ -1204,6 +1204,23 @@ New display name, up to 255 characters. It must differ from the names of the own
 
 Replacement `environment.json`, as a JSON-encoded string. It replaces the whole configuration and uses the same [schema](https://cursor.com/docs/cloud-agent/setup.md#configuration-in-code-with-environmentjson) as a `.cursor/environment.json` file. An invalid configuration returns `400 validation_error`.
 
+`repos` array (optional)
+
+The environment's full list of repositories. It replaces the current list, so include every repository to keep. Each entry has a `url`, and the list follows the same rules as in [Create An Environment](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-environment). Send `environmentJson` with it: a repository change saves the whole configuration, so `repos` without `environmentJson` returns `400 validation_error`. To keep the current configuration, send the `environmentJson` from [Get An Environment](https://cursor.com/docs/cloud-agent/api/endpoints.md#get-an-environment). See [Repository Changes](https://cursor.com/docs/cloud-agent/api/endpoints.md#repository-changes) for which environments can change their repositories.
+
+#### Repository Changes
+
+Only environments with two or more repositories can change them, and they must keep at least two. Sending the current list unchanged doesn't count as a change.
+
+- An environment without repositories can't add any, and a single-repository environment can't change its repository. Both return `409 environment_repo_edit_blocked`. To work in different repositories, create a new environment.
+- A multi-repository environment can add, remove, and swap repositories. A list with fewer than two returns `409 environment_repo_edit_blocked`.
+
+When an environment reads its configuration from a file in a repository, [Get An Environment](https://cursor.com/docs/cloud-agent/api/endpoints.md#get-an-environment) returns that file in `repoFile`. Changing its repositories keeps the file as the configuration source, with these limits:
+
+- Keep the `repoFile.url` repository in `repos`. A list without it returns `409 repo_file_repo_removed`. Cursor compares repositories, not exact strings, so a trailing `.git` or slash, a missing `https://`, a leading `www.`, or different letter case on GitHub still match. If the list names that repository more than once in different forms, Cursor keeps the first entry and drops the others. For Bitbucket Server, send the URL as Get An Environment returns it. A clone URL doesn't match.
+- An environment whose only repository holds its configuration file is locked to that file. Any request with `repos` returns `409 repo_file_environment_locked`, even with the current list.
+- When Cursor can't read an environment's stored repositories, a request with `repos` returns `400 stored_repos_unreadable`.
+
 ```bash
 curl --request PATCH \
   --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c \
@@ -1212,6 +1229,25 @@ curl --request PATCH \
   --data '{
     "name": "Web app (staging)",
     "environmentJson": "{\"install\": \"pnpm install --frozen-lockfile\", \"start\": \"sudo service docker start\"}"
+  }'
+```
+
+**Response:** `204 No Content`
+
+Replace the repositories and keep the current configuration:
+
+```bash
+curl --request PATCH \
+  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c \
+  -u YOUR_API_KEY: \
+  --header 'Content-Type: application/json' \
+  --data '{
+    "repos": [
+      { "url": "https://github.com/your-org/your-web-app" },
+      { "url": "https://github.com/your-org/your-api" },
+      { "url": "https://github.com/your-org/your-design-system" }
+    ],
+    "environmentJson": "{\"install\": \"pnpm install\", \"start\": \"sudo service docker start\"}"
   }'
 ```
 

@@ -183,6 +183,8 @@ Grok Bot payloads carry identifiers and changed field names, never content such 
 | `grok_bot_vm_bulk`             | A bulk computer operation completes. Its child operations emit no rows                                                                                 | `action` (`bulk_recreate`, `bulk_kill`, `bulk_permanent_delete`), `operation_id`, `target_count`, `succeeded_count`, `skipped_count`, `failed_count`                                                                                                |
 | `grok_bot_routine`             | A routine is created, updated, enabled, disabled, or deleted                                                                                           | `action` (`create`, `update`, `enable`, `disable`, `delete`), `automation_id`, `name`, `sand_agent_id`, `trigger_type`, `creation_source`, `enabled`                                                                                                |
 
+Inference hook settings changes, denials, and failed checks have their own `inference_hooks_*` events, listed on [Grok Bot inference hooks](https://cursor.com/docs/grok-bot/inference-hooks.md#audit-log).
+
 #### Origin
 
 Origin events go to the team that owns the namespace or repository. Payloads carry identifiers, names, refs, and commit SHAs, never file contents or comment bodies. Every row includes `repo_namespace` and `repo_name` (or `namespace_slug` for namespace events).
