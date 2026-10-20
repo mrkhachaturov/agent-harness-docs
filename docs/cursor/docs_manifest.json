@@ -327,8 +327,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "51f2bbd20d4647cec767c8bb4e199cac36857c3e86c8872005bc88a28eeb4828",
-      "last_updated": "2026-10-20T18:54:00.882840"
+      "hash": "78c9bd9b2c711e4c3a120bf957c995c62f26b7a9aca8513c43bbedb1ad37df57",
+      "last_updated": "2026-10-20T23:37:09.443656"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -1658,8 +1658,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-20T18:54:00.893024",
-    "fetch_duration_seconds": 3.713026,
+    "last_fetch_completed": "2026-10-20T23:37:09.448310",
+    "fetch_duration_seconds": 2.633758,
     "total_pages_discovered": 276,
     "pages_fetched_successfully": 276,
     "pages_failed": 0,
@@ -1672,7 +1672,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-20T18:54:00.893037",
+  "last_updated": "2026-10-20T23:37:09.448322",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

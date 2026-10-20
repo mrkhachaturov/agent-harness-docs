@@ -1071,7 +1071,25 @@ List the saved environments your API key can access, most recently updated first
 
 Team admins and service account API keys see every team environment. Other callers see a team environment only when they can access all of its repositories. A service account API key limited to specific repositories, and user-scoped tokens minted with it, only list environments that have repositories, all within that limit. Drafts and deleted environments aren't included.
 
+Filters combine, so the list keeps only environments that match every filter you send. An invalid filter value returns `400 validation_error`.
+
 #### Query Parameters
+
+`query` string (optional)
+
+Only environments whose name contains this text, ignoring case. 1 to 255 characters.
+
+`owner` string (optional)
+
+`personal` or `team`, to list only environments with that `owner`.
+
+`named` boolean (optional)
+
+`true` for only environments with a `name`, or `false` for only environments without one.
+
+`repo` string (optional, repeatable)
+
+Only environments that include this repository, such as `github.com/acme/api`. Repeat it, up to 100 times, to list environments that include any of the repositories.
 
 `limit` number (optional)
 
@@ -1079,7 +1097,7 @@ Number of environments to return. Default: 20, Max: 100.
 
 `cursor` string (optional)
 
-Pagination cursor from `nextCursor` on the previous response.
+Pagination cursor from `nextCursor` on the previous response. Send the same filters with each `cursor`.
 
 #### Response Fields
 
@@ -1099,7 +1117,7 @@ The list is ordered by last update, so an environment that changes during a walk
 
 ```bash
 curl --request GET \
-  --url 'https://api.cursor.com/v1/environments?limit=20' \
+  --url 'https://api.cursor.com/v1/environments?repo=github.com/your-org/your-web-app&repo=github.com/your-org/your-api' \
   -u YOUR_API_KEY:
 ```
 
@@ -1202,7 +1220,7 @@ New display name, up to 255 characters. It must differ from the names of the own
 
 `environmentJson` string (optional)
 
-Replacement `environment.json`, as a JSON-encoded string. It replaces the whole configuration and uses the same [schema](https://cursor.com/docs/cloud-agent/setup.md#configuration-in-code-with-environmentjson) as a `.cursor/environment.json` file. An invalid configuration returns `400 validation_error`.
+Replacement `environment.json`, as a JSON-encoded string. It replaces the whole configuration and uses the same [schema](https://cursor.com/docs/cloud-agent/setup.md#configuration-in-code-with-environmentjson) as a `.cursor/environment.json` file. An invalid configuration returns `400 validation_error`. If the environment reads its configuration from a file in its only repository, the request returns `409 repo_file_environment_locked`.
 
 `repos` array (optional)
 
@@ -1387,7 +1405,7 @@ GET
 
 `/v1/environments/{id}/builds`
 
-List an environment's [Builds](https://cursor.com/docs/cloud-agent/builds.md), newest first, up to 10 per page.
+List an environment's [Builds](https://cursor.com/docs/cloud-agent/builds.md), newest first. Filter them by status or creation time.
 
 #### Path Parameters
 
@@ -1397,15 +1415,31 @@ Environment ID.
 
 #### Query Parameters
 
+`status` string (optional)
+
+Only Builds with this status: `IN_PROGRESS`, `SUCCEEDED`, `FAILED`, `CANCELLED`, or `SKIPPED`.
+
+`createdAfter` string (optional)
+
+Only Builds created at or after this time. Use an ISO 8601 timestamp with `Z` or a UTC offset and at most millisecond precision, such as `2026-09-29T00:00:00Z`.
+
+`createdBefore` string (optional)
+
+Only Builds created before this time, in the same format. It must be later than `createdAfter`.
+
+`limit` number (optional)
+
+Number of Builds to return. Default: 10, Max: 100.
+
 `cursor` string (optional)
 
-Pagination cursor from `nextCursor` on the previous response.
+Pagination cursor from `nextCursor` on the previous response. Send the same filters with it.
 
 #### Response Fields
 
 `items` array
 
-Up to 10 Builds, newest first. Each has the fields [Get An Environment Build](https://cursor.com/docs/cloud-agent/api/endpoints.md#get-an-environment-build) returns.
+Up to `limit` Builds, newest first. Each has the fields [Get An Environment Build](https://cursor.com/docs/cloud-agent/api/endpoints.md#get-an-environment-build) returns.
 
 `nextCursor` string (optional)
 
@@ -1413,7 +1447,7 @@ Cursor for the next page. Omitted when there are no more Builds.
 
 ```bash
 curl --request GET \
-  --url https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/builds \
+  --url 'https://api.cursor.com/v1/environments/8f14e45f-ceea-4e6b-9c3a-1d2e3f4a5b6c/builds?createdAfter=2026-09-29T00:00:00Z&limit=2' \
   -u YOUR_API_KEY:
 ```
 
