@@ -11,6 +11,8 @@ Linear is a Cloud Agent integration. To set it up:
 3. Authorize your Linear workspace and select a team
 4. Complete Cloud Agent setup (connect a repository provider, enable usage-based pricing, confirm privacy settings)
 
+If you're on a Cursor team, a team admin must make this connection. It applies to the whole team, including Linear triggers in [Automations](https://cursor.com/docs/cloud-agent/automations.md).
+
 Once connected, you can delegate Linear issues to Cursor or mention `@Cursor` in Linear comments to start a Cloud Agent.
 
 ## How do I connect Slack?

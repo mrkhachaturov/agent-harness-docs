@@ -99,14 +99,14 @@
     "models-configuration.md": {
       "upstream_path": "packages/coding-agent/docs/models-configuration.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models-configuration.md",
-      "hash": "e44f771f9927d523b954b0b18388e18587f4692f0ac8cf4c40e90878a8d63780",
-      "last_updated": "2026-10-16T23:14:40.009996"
+      "hash": "1eb60b0f1faad6f9fffd62ea257b545dbc983dbe4c5decc4803b1a241d604155",
+      "last_updated": "2026-10-21T23:54:45.075485"
     },
     "models.md": {
       "upstream_path": "packages/coding-agent/docs/models.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models.md",
-      "hash": "2cd9463ec81285f022b3d35dccd91faaa6db08be3bd4f137f1b5e5780d771d2a",
-      "last_updated": "2026-10-16T23:14:40.010473"
+      "hash": "c9914f5411db5ddd158b5391ec1da76c1f65788cfaea3a90e1e1555451b3d12e",
+      "last_updated": "2026-10-21T23:54:45.075778"
     },
     "nvidia-rtx-llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/nvidia-rtx-llama-cpp.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-21T19:06:34.235643",
-    "fetch_duration_seconds": 1.764269,
+    "last_fetch_completed": "2026-10-21T23:54:45.077133",
+    "fetch_duration_seconds": 1.861239,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-21T19:06:34.235653",
+  "last_updated": "2026-10-21T23:54:45.077142",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

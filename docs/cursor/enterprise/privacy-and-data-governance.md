@@ -101,18 +101,6 @@ Data residency applies across three independent layers for supported features an
 
 ### US data residency
 
-#### Model availability
-
-Under US-only data residency, only the following model families run in-region:
-
-- GPT (`gpt-*`)
-- Claude 4.6 and above
-- Gemini 2.5 Flash
-- Composer
-- Grok 4.5, Grok 4.6, Grok 4.7
-
-Selecting a model that isn't eligible returns an error, and the model is unavailable while data residency is enabled. Auto will select from only models on this list.
-
 #### What stays in-region
 
 When US-only data residency is enabled for a team, the following stay on US-based infrastructure:
@@ -149,7 +137,7 @@ Their requests still route to US-only infrastructure. Expect some added latency,
 
 ### Can I use any model I want?
 
-No. Only the eligible model families listed under Model availability are supported. Choosing an unsupported model returns an error while US-only data residency is active.
+No. Only models marked as eligible in the US Data Residency column on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) are supported. Choosing an unsupported model returns an error while US-only data residency is active, and Auto only selects from eligible models.
 
 ### What might leave the region?
 

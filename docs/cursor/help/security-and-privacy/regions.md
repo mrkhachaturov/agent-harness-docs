@@ -24,7 +24,7 @@ No. [Cursor Start](https://cursor.com/help/account-and-billing/cursor-start.md) 
 
 ## Does Cursor offer data residency controls?
 
-Enterprise customers can enroll in US-only data residency so inference, processing, and storage for supported features stay in the US. See [Privacy and Data Governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md#data-residency) for supported models, exclusions, pricing, and how to enable it.
+Enterprise customers can enroll in US-only data residency so inference, processing, and storage for supported features stay in the US. See [Privacy and Data Governance](https://cursor.com/docs/enterprise/privacy-and-data-governance.md#data-residency) for exclusions, pricing, and how to enable it, and [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for which models are eligible.
 
 ## Related
 

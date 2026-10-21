@@ -102,7 +102,7 @@ ZIP files are not supported as web document attachments. Before attaching diagno
 
 ## How is Cloud Agent usage priced?
 
-Cloud Agents are charged at [API pricing](https://cursor.com/docs/models-and-pricing.md#model-pricing) for the selected model. You can select the context window size for supported models. A larger context window can increase token usage and costs.
+Cloud Agents use the same plan usage as Agent in the editor and the CLI, at the selected model's rate. See [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for how Cursor models and third-party models bill on your plan. You can select the context window size for supported models. A larger context window can increase token usage and costs.
 
 ## Can I run Cloud Agents automatically or on a cron?
 
