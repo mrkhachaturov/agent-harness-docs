@@ -16,7 +16,7 @@ You're charged when you buy credit or when an automatic top-up runs, not in arre
 - **Teams:** the team shares one prepaid balance. Only admins can buy credit or change Auto Top-up.
 - Top-up charges appear under **Billing & invoices** › **Invoices** at [grok.com/dashboard/billing](https://grok.com/dashboard/billing), separate from your subscription charge.
 
-On Teams and Enterprise plans, third-party model requests also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). This includes when Cursor Router (Balance or Intelligence) routes to a third-party model. Cost mode requests and Cursor models, including Grok and Composer, are exempt.
+On Teams and Enterprise plans, eligible third-party model requests also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). This includes when Cursor Router (Balance or Intelligence) routes to a third-party model. Cost mode requests, Cursor models (including Grok and Composer), and the third-party models listed on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate) are exempt.
 
 ## How does on-demand pricing work on legacy Cursor plans?
 
@@ -25,7 +25,7 @@ Each legacy plan includes a monthly usage budget. If you exceed your included us
 - **Individual plans (Pro, Pro+, Ultra):** On-demand usage must be explicitly enabled in your settings.
 - **Teams Standard and Premium:** On-demand usage is enabled by default. Team admins can disable it or set spend limits in the dashboard.
 - On-demand usage has its own invoices and line items, distinct from your subscription.
-- Third-party requests on Teams and Enterprise also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md).
+- Eligible third-party requests on Teams and Enterprise also include the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). The third-party models listed on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate) are exempt.
 
 ## How do I check my usage?
 

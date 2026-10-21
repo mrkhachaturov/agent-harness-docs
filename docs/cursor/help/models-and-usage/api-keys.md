@@ -1,6 +1,6 @@
 # Bring your own API key
 
-You can add your own API keys so Cursor uses your preferred AI models. Your provider (OpenAI, Anthropic, Google, and others) bills you directly for the model cost of those requests. On individual plans, this means unlimited AI messages at your own cost. On Teams and Enterprise plans, the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) still applies. See [Does using my own API key count against my included usage?](https://cursor.com/help/models-and-usage/api-keys.md#does-using-my-own-api-key-count-against-my-included-usage).
+You can add your own API keys so Cursor uses your preferred AI models. Your provider (OpenAI, Anthropic, Google, and others) bills you directly for the model cost of those requests. On individual plans, this means unlimited AI messages at your own cost. On Teams and Enterprise plans, the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) still applies on models that include it. See [Does using my own API key count against my included usage?](https://cursor.com/help/models-and-usage/api-keys.md#does-using-my-own-api-key-count-against-my-included-usage).
 
 ## How do I add an API key?
 
@@ -26,7 +26,7 @@ Custom API keys only work with chat models. Tab completion continues using Curso
 It depends on your plan.
 
 - **Individual plans (Premium, Super, and Ultra, and the legacy Pro, Pro+, and Ultra plans)**: No. Your provider bills you for the model cost, and those requests don't draw from your included usage or prepaid credit.
-- **Teams and Enterprise plans**: Yes. Your provider still bills the model cost, and Cursor charges nothing for it. But every third-party model request carries the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens (input, output, and cached), including requests made with your own key. The amount charged is the Cursor Token Rate for those tokens, not the model cost you paid your provider, so you aren't billed twice for the same request.
+- **Teams and Enterprise plans**: Yes, for models that include the rate. Your provider still bills the model cost, and Cursor charges nothing for it. Eligible third-party model requests carry the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens (input, output, and cached), including requests made with your own key. The third-party models listed on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate) are excluded. The amount charged is the Cursor Token Rate for those tokens, not the model cost you paid your provider, so you aren't billed twice for the same request.
 
 On a team on The X Subscription, the Cursor Token Rate for your own-key requests is paid from the team's prepaid credit. On a legacy Teams plan, it appears under **Other Models** in your [Spending](https://cursor.com/dashboard/spending) tab and draws from that included allowance; when the allowance runs out, requests keep working if on-demand usage is enabled and the team is billed the Cursor Token Rate as on-demand usage. If on-demand usage is turned off, those requests stop until the next billing cycle. See [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md) for how top-ups, on-demand usage, and spend limits work.
 

@@ -51,7 +51,7 @@ If model visibility is set to Displayed, check the model picker or request detai
 
 ## How much does Auto cost?
 
-Cost mode (classic Auto) bills as a Cursor-model request from your included pool. On Teams and Enterprise with Cursor Router on, Balance and Intelligence bill at the routed model's list price, and third-party routes also incur the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for current rates.
+Cost mode (classic Auto) bills as a Cursor-model request from your included pool, with no Cursor Token Rate. On Teams and Enterprise with Cursor Router on, Balance and Intelligence bill at the routed model's list price, and a third-party route in those modes also incurs the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md). The models listed on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate) are excluded. See [Auto modes](https://cursor.com/docs/models-and-pricing.md#auto-modes) for current rates.
 
 ## How much does Grok 4.7 cost?
 

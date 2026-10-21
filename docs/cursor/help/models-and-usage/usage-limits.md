@@ -45,7 +45,7 @@ Unused included usage does not roll over on either kind of plan.
 Cost mode (classic Auto) bills as a Cursor-model request and draws from your included pool whatever model serves it. On Teams and Enterprise with Cursor Router on, Balance and Intelligence bill at the routed model's list price: a route to a Cursor model draws from your included pool, and a route to a third-party model bills as third-party usage, from prepaid credit on The X Subscription or from the Other Models pool on a legacy plan. Individual plans have Cost mode only.
 
 - **Composer 2.5** requests carry no [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) on any plan
-- Third-party routes from Balance or Intelligence also incur the Cursor Token Rate on Teams and Enterprise. Cost mode requests are exempt
+- Eligible third-party routes from Balance or Intelligence also incur the Cursor Token Rate on Teams and Enterprise. Cost mode requests are exempt, and so are the third-party models listed on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate)
 
 Check your usage dashboard for request-level cost details. See [Cursor Router](https://cursor.com/help/models-and-usage/cursor-router.md) for mode details.
 
@@ -61,7 +61,7 @@ See [parent model and usage pools](https://cursor.com/docs/subagents.md#parent-m
 
 On individual plans, no. Your provider bills you directly for the model cost, and those requests don't draw from your included usage or prepaid credit.
 
-On Teams and Enterprise plans, requests made with your own key still carry the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens. On The X Subscription that charge comes out of the team's prepaid credit. On a legacy Teams plan it appears under **Other Models** and draws from that allowance; when the allowance runs out, it's billed as on-demand usage if on-demand usage is enabled, and requests stop until the next billing cycle if it's turned off.
+On Teams and Enterprise plans, requests made with your own key still carry the [Cursor Token Rate](https://cursor.com/help/models-and-usage/token-rate.md) of $0.25 per million tokens when the model includes it. The third-party models listed on [Models & Pricing](https://cursor.com/docs/models-and-pricing.md#cursor-token-rate) are excluded. On The X Subscription that charge comes out of the team's prepaid credit. On a legacy Teams plan it appears under **Other Models** and draws from that allowance; when the allowance runs out, it's billed as on-demand usage if on-demand usage is enabled, and requests stop until the next billing cycle if it's turned off.
 
 See [Bring your own API key](https://cursor.com/help/models-and-usage/api-keys.md#does-using-my-own-api-key-count-against-my-included-usage) for details.
 
