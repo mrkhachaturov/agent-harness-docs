@@ -63,8 +63,8 @@
     "account/teams/members.md": {
       "original_url": "https://cursor.com/docs/account/teams/members",
       "original_md_url": "https://cursor.com/docs/account/teams/members.md",
-      "hash": "ed0d56d6b2a3cca4ea2082d5c4efc0f7a49ba93b4723ccd16d714756ec8528bb",
-      "last_updated": "2026-10-14T23:37:34.263610"
+      "hash": "0059f3c07825c8e0c6e78fcddd0640724182a1409c62c5ae40a808059e94534b",
+      "last_updated": "2026-10-21T19:06:25.240756"
     },
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
@@ -327,8 +327,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "78c9bd9b2c711e4c3a120bf957c995c62f26b7a9aca8513c43bbedb1ad37df57",
-      "last_updated": "2026-10-20T23:37:09.443656"
+      "hash": "44a12f0b6959f0fe87d0b30904b51fe19d0d3c7be22c0200447adced73256b73",
+      "last_updated": "2026-10-21T19:06:25.242237"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -351,8 +351,8 @@
     "cloud-agent/builds.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/builds",
       "original_md_url": "https://cursor.com/docs/cloud-agent/builds.md",
-      "hash": "060068aeb442d41a4d9e766fc63228432426cf098cc17bc50514ec63dd1220aa",
-      "last_updated": "2026-10-16T18:36:08.083237"
+      "hash": "a8de55b1095cfc26fd854841fb3ba367e8d5d2fcdd152fb979c790a00181e868",
+      "last_updated": "2026-10-21T19:06:25.242585"
     },
     "cloud-agent/capabilities.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/capabilities",
@@ -1317,8 +1317,8 @@
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
       "original_md_url": "https://cursor.com/docs/integrations/azure-devops.md",
-      "hash": "f9acee73f2682324501a26f4b8ae4430cdbf0ea524c4aa5192052f5d22b50167",
-      "last_updated": "2026-09-04T20:28:38.039785"
+      "hash": "17fbe3cdd9b6a75813150162c573ed660b4bd49ca3d4208f6ee3fd7e341ff847",
+      "last_updated": "2026-10-21T19:06:25.244522"
     },
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
@@ -1658,8 +1658,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-21T14:19:42.761376",
-    "fetch_duration_seconds": 4.155733,
+    "last_fetch_completed": "2026-10-21T19:06:25.248853",
+    "fetch_duration_seconds": 3.080139,
     "total_pages_discovered": 276,
     "pages_fetched_successfully": 276,
     "pages_failed": 0,
@@ -1672,7 +1672,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-21T14:19:42.761389",
+  "last_updated": "2026-10-21T19:06:25.248865",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
