@@ -381,8 +381,8 @@
     "cloud-agent/private-connectivity.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/private-connectivity",
       "original_md_url": "https://cursor.com/docs/cloud-agent/private-connectivity.md",
-      "hash": "0756163d52ed1e3a7227da41da565f93879e8a1e78f729189d0a514daf4cad91",
-      "last_updated": "2026-09-04T20:28:38.036839"
+      "hash": "b8a9a02b80ed6d032df503e8576e4988b061aca8c564081361e4f1c135d01f5d",
+      "last_updated": "2026-10-22T23:50:39.321208"
     },
     "cloud-agent/security-network.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/security-network",
@@ -1035,8 +1035,8 @@
     "help/grok-bot/connect-apps.md": {
       "original_url": "https://cursor.com/help/grok-bot/connect-apps",
       "original_md_url": "https://cursor.com/help/grok-bot/connect-apps.md",
-      "hash": "7b3aedc94cd723e757583f534c0bef41a081aaffcd9bc0e17824a344ddd0fc57",
-      "last_updated": "2026-10-19T21:57:54.419007"
+      "hash": "5dd860c62017c9563cb093222baa1258b66def93140e3a77f3b1b499f4ec3337",
+      "last_updated": "2026-10-22T23:50:39.322732"
     },
     "help/grok-bot/delete-account.md": {
       "original_url": "https://cursor.com/help/grok-bot/delete-account",
@@ -1145,6 +1145,12 @@
       "original_md_url": "https://cursor.com/help/grok-bot/voice-chat.md",
       "hash": "cf53b9d87de49a0384254c8091049bb4fa0adbd9b3a49ec6307a40c80ef307ca",
       "last_updated": "2026-10-19T02:50:53.687468"
+    },
+    "help/grok-bot/x-chat.md": {
+      "original_url": "https://cursor.com/help/grok-bot/x-chat",
+      "original_md_url": "https://cursor.com/help/grok-bot/x-chat.md",
+      "hash": "3290754fe13b48b4a705c2202c7daf4d02c2002cf08f87bbcce6f12ea0fce4f4",
+      "last_updated": "2026-10-22T23:50:39.323116"
     },
     "help/integrations/cli.md": {
       "original_url": "https://cursor.com/help/integrations/cli",
@@ -1664,21 +1670,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-22T19:02:24.303663",
-    "fetch_duration_seconds": 3.10715,
-    "total_pages_discovered": 277,
-    "pages_fetched_successfully": 277,
+    "last_fetch_completed": "2026-10-22T23:50:39.328495",
+    "fetch_duration_seconds": 2.64287,
+    "total_pages_discovered": 278,
+    "pages_fetched_successfully": 278,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 277,
+    "total_files": 278,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-22T19:02:24.303673",
+  "last_updated": "2026-10-22T23:50:39.328508",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

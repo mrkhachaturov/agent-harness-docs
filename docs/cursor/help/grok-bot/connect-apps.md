@@ -1,6 +1,6 @@
 # Connect apps
 
-Connect Gmail, Notion, Slack, and other apps so your Bots can use them in chat.
+Connect Gmail, Notion, Slack, 1Password, and other apps so your Bots can use them in chat.
 
 ## What are apps?
 
@@ -84,6 +84,59 @@ Some other apps, like Notion, can connect a second account. See [How do I add a 
 ## An app is added, but the Bot says it's missing. What do I do?
 
 **Added** means the app is installed, not that you are signed in. Open the app and choose **Authenticate** (**Authorize** on the phone) if it shows **Needs auth** or **Disconnected**. For a connect card that never shows up or does nothing, see [How do I reconnect an app?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-reconnect-an-app)
+
+## How do I connect 1Password?
+
+1Password lets your Bots sign in to websites on their computer with logins from your 1Password account. You approve each login in 1Password, and 1Password fills it in. Your Bots never see the values.
+
+The new 1Password integration is rolling out gradually. It works with personal and Family 1Password accounts and needs 1Password 8.12.42 or later.
+
+1. Select **Connect apps** and open **1Password**. It's under **Password Managers**.
+2. On your computer, choose **Connect 1Password**.
+3. Your browser opens. Sign in to 1Password there and approve Grok Bot. Grok Bot updates when you're done.
+
+On the phone, open 1Password from the **Password Managers** shelf in **Connect apps**, or search for it, then approve the connection in 1Password.
+
+If your phone says **1Password can only be set up on a Mac**, the new integration hasn't reached your account yet. Set up 1Password from Grok Bot on your computer instead.
+
+To stop using 1Password, open it in **Connect apps** and choose **Disconnect**. Your Bots stop signing in with your 1Password logins until you connect again.
+
+## How do my Bots sign in with 1Password?
+
+When a Bot needs a login, it sends a card in the chat that names the website.
+
+1. Choose **Review in 1Password**. The 1Password app opens. If the app isn't installed on that computer, 1Password opens in your browser.
+2. In 1Password, choose the exact logins to share and approve the request.
+3. 1Password fills the login in the Bot's browser.
+
+A login you share stays available in later chats. If 1Password stops allowing it, the Bot asks again.
+
+1Password does not fill payment cards. Your Bots still ask you to help with steps 1Password can't fill, such as a passkey, single sign-on, or a captcha they can't get past.
+
+## Why doesn't 1Password offer the login I want?
+
+1Password only offers logins from your own Personal vault, called Private on Family accounts. It does not offer logins from shared vaults. In the 1Password app, move or duplicate the login into that vault, then ask the Bot to try again.
+
+If no approval prompt shows up at all, check that your 1Password app is version 8.12.42 or later and update it if not.
+
+## I used 1Password with Grok Bot before. Why do I need to connect again?
+
+The new 1Password integration no longer uses a service account. Connect 1Password again with the steps in [How do I connect 1Password?](https://cursor.com/help/grok-bot/connect-apps.md#how-do-i-connect-1password).
+
+Logins in the vault you shared with the old integration aren't available to Grok Bot until you move them. The 1Password page in **Connect apps** tells you how many. In 1Password, select those logins and move them to your Personal or Private vault. On a Mac, you can choose **Move to Private** instead and approve in 1Password if it asks. The old vault stays in 1Password.
+
+## What do 1Password messages in Grok Bot mean?
+
+| Message                                                                                 | What to do                                                                                                                              |
+| --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- |
+| **1Password didn't finish connecting**                                                  | Start connecting again. On the phone, if you already have a 1Password account, choose **I already have 1Password** and sign in with it. |
+| **This 1Password account is already connected to another Grok Bot account**             | Disconnect 1Password from the other Grok Bot account first, or connect a different 1Password account.                                   |
+| **Reconnect required**                                                                  | 1Password no longer accepts the connection. Choose **Reconnect**.                                                                       |
+| **Sign in to the 1Password account you connected to Grok Bot, then try again**          | 1Password is signed out, or signed in to a different account. Sign in to the account you connected, then ask the Bot to try again.      |
+| **Access requests aren't turned on for your 1Password account**                         | Ask your 1Password administrator to turn on access requests.                                                                            |
+| **This request already ended in 1Password**                                             | Ask the Bot to try again. It sends a new request.                                                                                       |
+| **1Password could not be opened**                                                       | Open the 1Password app yourself to review the request.                                                                                  |
+| A message that asks you to revoke Grok Bot's access under **Integrations** in 1Password | In 1Password, revoke Grok Bot's access under **Integrations**, then connect 1Password again.                                            |
 
 ## Why does connecting to Zoom fail with error 4700 during authorization?
 
