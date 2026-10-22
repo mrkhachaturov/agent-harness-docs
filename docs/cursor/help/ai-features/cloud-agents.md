@@ -24,7 +24,7 @@ Agents attach screenshots, videos, and log references to the PR so you can valid
 
 ## Can Cloud Agents use my personal skills?
 
-Yes. Turn on **Sync Skills for Cloud Agents** under **Settings → Agents** to copy `~/.cursor/skills/` for your own Cloud Agents. Synced skills stay private to you. See [Use personal skills with Cloud Agents](https://cursor.com/docs/skills.md#use-personal-skills-with-cloud-agents).
+Yes. Turn on **Sync Skills for Cloud Agents** under **Settings → Agents** to move your personal skills into synced storage for your own Cloud Agents. Synced skills stay private to you. See [Use personal skills with Cloud Agents](https://cursor.com/docs/skills.md#use-personal-skills-with-cloud-agents).
 
 Project skills in the repo are always available. To share a skill with teammates, [publish it to your team marketplace](https://cursor.com/docs/plugins.md#publish-a-skill-to-your-team).
 
@@ -36,6 +36,10 @@ Cloud agents support HTTP and stdio servers, plus OAuth for servers that need it
 
 On Self-Hosted Machines, MCP behavior differs. See [Self-Hosted Machines](https://cursor.com/help/ai-features/self-hosted-machines.md#do-hooks-and-mcp-work-on-self-hosted-machines).
 
+## Do Cloud Agents load my team marketplace plugins?
+
+Yes. A Cloud Agent installs your marketplace plugins when it starts and keeps those versions for the whole run. Plugins from marketplaces imported from GitLab, Bitbucket, or Azure DevOps aren't installed in Cloud Agents, and the agent starts without them. To use those plugins in Cloud Agents, import the marketplace from a GitHub repository. See [Plugins](https://cursor.com/docs/plugins.md#add-a-team-marketplace).
+
 ## Do Cloud Agents run hooks?
 
 Yes. Cloud Agents run command-based hooks from `.cursor/hooks.json` in your repository. On Enterprise plans, they also run team hooks and enterprise-managed hooks.
@@ -44,7 +48,7 @@ Supported hooks include tool and file hooks (`beforeShellExecution`, `afterShell
 
 Conversation-level hooks let you observe prompts, responses, and thinking; control subagents; react to compaction; and run logic when a turn completes. You can use them to build self-correcting loops around agent output and reasoning.
 
-Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply on Cursor-managed Cloud Agents because they have no editor-lifetime session boundary. On [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hooks) workers, `sessionStart` and `sessionEnd` run when a session claims the worker and when that claim is released. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration.
+Hooks start once the agent has a writable environment. IDE-specific hooks like Tab hooks and `workspaceOpen` don't apply. `sessionEnd` doesn't apply on Cursor-managed Cloud Agents because they have no editor-lifetime session boundary. On [Self-Hosted Machines](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#hooks) workers, `sessionStart` and `sessionEnd` run when a session claims the worker and when that claim is released. Prompt-based hooks also aren't supported in cloud agents. User-level hooks from `~/.cursor/hooks.json` aren't loaded since the VM doesn't have access to your local configuration. Hooks packaged in [plugins](https://cursor.com/docs/plugins.md) don't run either; add them to `.cursor/hooks.json` in the repository or configure them as team hooks.
 
 See the [full hooks support matrix](https://cursor.com/docs/hooks.md#cloud-agent-support) for details.
 
@@ -56,13 +60,21 @@ Yes. Cloud Agents automatically try to fix GitHub Actions failures on PRs they c
 
 To disable this on a specific PR, comment `@cursor autofix off`. To re-enable it, comment `@cursor autofix on`. You can also disable it globally from [Cursor Dashboard > Cloud Agents > My Settings](https://cursor.com/dashboard/cloud-agents).
 
+## How do review rules treat commits from Cloud Agents?
+
+Cloud Agent commits are authored as the agent, not as the person who started it. See [Commit author](https://cursor.com/docs/cloud-agent/security-network.md#commit-author). Review rules that check the commit author or committer see the agent's identity, so the person who started the agent isn't treated as the author. To require a second reviewer on agent commits, match on the agent's author identity rather than the `Co-authored-by` trailer, which isn't added for every agent.
+
 ## What do I need to use Cloud Agents?
 
-Cloud Agents are available on all paid Cursor plans.
+Cloud Agents are available on eligible paid plans. On [The X Subscription](https://cursor.com/help/the-x-subscription/overview.md), that means Premium and above, Teams, and Enterprise; Free and Plus don't include Cloud Agents. The legacy Start, Pro, Pro+, and Ultra plans also include them. See [cursor.com/pricing](https://cursor.com/pricing) for the full comparison.
 
 ## How do I set up Cloud Agents?
 
 Create a new environment in your [Cloud Agents dashboard](https://cursor.com/dashboard/cloud-agents#environments). You'll connect your GitHub, GitLab, Azure DevOps, or Bitbucket Cloud account, select one or more repositories, add secrets or environment variables, and verify the setup. See the [full setup guide](https://cursor.com/docs/cloud-agent/setup.md) for multi-repo environments, environment-scoped secrets, network access, and Dockerfiles.
+
+## How do I use Docker in a Cloud Agent environment that uses Builds?
+
+A [Build](https://cursor.com/docs/cloud-agent/builds.md) keeps Docker's data directory (`/var/lib/docker`), so images and stopped containers carry over to new agents. The Docker daemon doesn't keep running, so start it again in your environment's `start` command.
 
 ## How do I use the redesigned project and repo picker?
 
@@ -102,7 +114,7 @@ ZIP files are not supported as web document attachments. Before attaching diagno
 
 ## How is Cloud Agent usage priced?
 
-Cloud Agents use the same plan usage as Agent in the editor and the CLI, at the selected model's rate. See [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for how Cursor models and third-party models bill on your plan. You can select the context window size for supported models. A larger context window can increase token usage and costs.
+Cloud Agents use the same plan usage as Agent in the editor and the CLI, at the selected model's rate. On [legacy request-based plans](https://cursor.com/docs/account/pricing/request-based-legacy.md), they still draw from your included requests, but they always run in [Max Mode](https://cursor.com/help/ai-features/max-mode.md), so they're priced at API rates plus the Max Mode upcharge and count against your included requests as request-equivalents rather than one request each. On-demand usage takes over after the quota. See [Models & Pricing](https://cursor.com/docs/models-and-pricing.md) for how Cursor models and third-party models bill on your plan. You can select the context window size for supported models. A larger context window can increase token usage and costs.
 
 ## Can I run Cloud Agents automatically or on a cron?
 

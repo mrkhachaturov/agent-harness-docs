@@ -153,6 +153,8 @@ agent worker --pool my-pool --worker-dir "$HOME/cursor-sandboxes/default" start
 
 Pass `--clone-git-repos` so the worker clones repos on claim. When you start an agent, pick the team pool under **Any repo**. With the API, set `env.name` to the team pool in [`POST /v1/agents`](https://cursor.com/docs/cloud-agent/api/endpoints.md#create-an-agent). You can list several repos in `repos`, and the worker clones each one.
 
+Select the repository as well as the team pool. A run started with only a team pool selected names no repository, so Cursor mints no GitHub token for it and the worker has nothing to clone.
+
 Without `--clone-git-repos`, an any-repo pool can use an [always-applied workspace rule](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#any-repo-pools) to map task subjects to repositories and clone them with worker credentials.
 
 In Slack, a team admin can run `@Cursor pool set <name>` to make an any-repo team pool the [team default pool](https://cursor.com/docs/integrations/slack.md#team-default-pool). `@Cursor` mentions then start on that pool without `pool=` in the message, even when no repository resolves. Any team member can run `@Cursor pool set <name> channel` to set a [channel default pool](https://cursor.com/docs/integrations/slack.md#channel-default-pool) that does the same for one channel.
@@ -182,6 +184,10 @@ agent worker --computer-use start
 On macOS, the first start installs the Cursor Computer Use helper. Grant it Accessibility and Screen Recording. Desktop sharing with `--share-desktop` is Linux-only. For browser use, install Chrome or Chromium on the runner.
 
 See [Computer use and desktop sharing](https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md) for dependencies and setup.
+
+## Does a team pool worker keep files between agents?
+
+A pool worker process serves one agent and exits when its claim is released or reset, so your supervisor can replace the machine. If your supervisor restarts workers on the same disk, files the previous agent left in the worker directory are still there. Reset checkouts at the start of each claim with `--on-session-start`, for example `git fetch`, `git reset --hard`, and `git clean -fdx` against the claimed ref. See [Session lifecycle](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#session-lifecycle).
 
 ## Do hooks and MCP work on Self-Hosted Machines?
 

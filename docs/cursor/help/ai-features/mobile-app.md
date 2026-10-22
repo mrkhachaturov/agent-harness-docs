@@ -20,7 +20,7 @@ The app is available in all App Store regions except mainland China. The interfa
 
 ## Who can use the app?
 
-The app directs agents running [in the cloud](https://cursor.com/help/ai-features/cloud-agents.md) and on your own computer (using Remote Control), both of which need a paid plan to start a run. There's no separate invite or mobile entitlement beyond that: anyone who can sign in and reach [cursor.com/agents](https://cursor.com/agents) can use the app. Free accounts can sign in, but won't be able to start agents. If your organization requires SSO, you sign in through it first.
+The app directs agents running [in the cloud](https://cursor.com/help/ai-features/cloud-agents.md) and on your own computer (using Remote Control). Cloud agents need a plan that includes them (Premium and higher, Teams, Enterprise, or a legacy paid plan, but not Plus), and Remote Control needs a paid plan. There's no separate invite or mobile entitlement beyond that: anyone who can sign in and reach [cursor.com/agents](https://cursor.com/agents) can use the app. Free accounts can sign in, but won't be able to start agents. If your organization requires SSO, you sign in through it first.
 
 ## Why don't I see any repositories?
 

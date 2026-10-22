@@ -89,6 +89,12 @@ By default, Agent asks for your approval before using an MCP tool. In Cursor 3.6
 - **Restart**: Remove the server from **Customize** > **MCPs**, then re-add it
 - **Environment variables**: If your server relies on environment variables set in your shell profile, make sure those variables are available to Cursor. Restart Cursor after updating your shell profile.
 
+## How do I run command MCP servers on Windows with MCP Network Controls?
+
+When your admin enables MCP Network Controls, Cursor starts command (stdio) servers inside a sandbox if their Command entry uses **Allow all**, **Allowlist**, or **Deny all**. Your own servers that don't match a Command entry also run in the sandbox. Windows doesn't support this sandbox, so those servers don't start there, and MCP Logs say the server requires sandboxing.
+
+To run a command server on Windows, ask your admin to add a Command entry for it with the **No sandbox** network mode. See [Network controls](https://cursor.com/docs/mcp.md#network-controls).
+
 ## Do MCP servers work with Cloud Agents?
 
 Yes. Cloud Agents support MCP servers configured in the [Cloud Agents dashboard](https://cursor.com/agents). On a Team plan, admins can configure shared servers under [Dashboard -> Plugins & MCPs](https://cursor.com/dashboard/plugins).

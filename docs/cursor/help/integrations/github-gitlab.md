@@ -16,6 +16,14 @@ Follow the setup steps in the [GitLab integration docs](https://cursor.com/docs/
 
 Once connected, you can run [Bugbot](https://cursor.com/help/ai-features/bugbot.md) on your merge requests and trigger [Cloud Agents](https://cursor.com/agents) from your repos.
 
+## Why do older GitLab merge requests from Cursor show Ghost User?
+
+Cloud Agents commit and open merge requests as the bot user of the project access token Cursor creates for each project. When Cursor replaces a project's token, it revokes the old one. GitLab then removes the old token's bot user (after 30 days on GitLab 17.9 and later) and moves its merge requests and comments to a ghost user, shown as Ghost User on GitLab.com. See [GitLab commit author](https://cursor.com/docs/integrations/gitlab.md#commit-author).
+
+## What if a GitLab pipeline can't include another project's CI file after a Cloud Agent push?
+
+Pipelines triggered by an agent's push run as the project's bot user. GitLab doesn't let a project access token's bot user join other projects, so an `include:project` from another private project returns a `not found or access denied` error. To run it, start a new pipeline for the agent's branch yourself (for example, with **Run pipeline**) as a member of both projects.
+
 ## How do I connect Azure DevOps?
 
 Follow the setup steps in the [Azure DevOps integration docs](https://cursor.com/docs/integrations/azure-devops.md). Azure DevOps Services at `dev.azure.com` is covered.

@@ -34,6 +34,10 @@ Alongside usage-based billing, Bugbot supports configurable effort levels for re
 
 You can configure effort levels from **Settings** in [Bugbot Automations](https://cursor.com/automations/from-cursor/bugbot).
 
+## Do reviews Bugbot skips use Bugbot usage?
+
+A review Bugbot skips because the PR is too large records no review usage. On the [legacy seat-based plan](https://cursor.com/docs/bugbot/legacy-pricing.md), starting that review can still add a Bugbot seat before Bugbot checks the PR size.
+
 ## How to switch to usage-based Bugbot early
 
 Existing customers can switch to usage-based Bugbot in their [Cursor dashboard](https://cursor.com/dashboard/bugbot?modal=migrate-bugbot).

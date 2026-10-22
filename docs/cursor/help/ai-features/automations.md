@@ -104,6 +104,23 @@ See [Share in the automations reference](https://cursor.com/docs/cloud-agent/aut
 
 Browse the [Automations marketplace](https://cursor.com/marketplace/automations) for examples.
 
+## How do I get alerted when an automation's MCP server needs to reconnect?
+
+Cursor doesn't send a notification when an MCP server rejects an automation's credentials. The run keeps going without that server's tools, and the run's page shows an **MCP authentication failed** event. Reconnect the server under **Integrations** in your dashboard.
+
+On Enterprise, set up an alert on the `cursor.cloud_agent.mcp_auth_error` log from [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export/wire.md#cursorcloud_agentmcp_auth_error).
+
+## How do I make sure PR Routing & Approval uses Bugbot's findings?
+
+PR Routing & Approval only uses Bugbot's findings when Bugbot has a check on the PR's latest commit. Bugbot skips draft PRs unless reviews on draft PRs are enabled, and when it runs only once per PR, it skips later commits.
+
+1. Enable reviews on draft PRs in your [Bugbot settings](https://cursor.com/docs/bugbot.md#configuration)
+2. Wait for Bugbot to finish reviewing the draft
+3. Mark the PR ready for review, which runs PR Routing & Approval
+4. If Bugbot runs only once per PR, avoid pushing new commits after its review
+
+See [PR Routing & Approval](https://cursor.com/docs/approval-agents.md#ai-reviewer-awareness) for how the agent waits for reviewer checks.
+
 ## Related
 
 - [Agents Window](https://cursor.com/docs/agent/agents-window.md)
