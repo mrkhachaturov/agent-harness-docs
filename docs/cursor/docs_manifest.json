@@ -429,8 +429,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "4aa4618ead3c20550c7e1db117429505c53b578a736280c0a6ce32a6bb743816",
-      "last_updated": "2026-10-22T14:19:03.813156"
+      "hash": "2297f5dd07f8532f16721c148a99a5a88f90e0adeaa4f48d83a39603030cb34e",
+      "last_updated": "2026-10-22T19:02:24.297985"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -609,8 +609,8 @@
     "grok-bot/inference-hooks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/inference-hooks",
       "original_md_url": "https://cursor.com/docs/grok-bot/inference-hooks.md",
-      "hash": "37ffc9cf321749b3366be2b09e12e5b855d182839f91b13a9326a0bdf770909b",
-      "last_updated": "2026-10-20T18:54:00.884791"
+      "hash": "9a9aa3c3dac90a012ca9cf70d97c13add991deeaa5e4a46145c63af30f281b6f",
+      "last_updated": "2026-10-22T19:02:24.298604"
     },
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
@@ -627,14 +627,14 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "2e410eafa9b05acf4466c7ddabad7b7f886937f52ed19e816154a1eb4523518b",
-      "last_updated": "2026-10-21T14:19:42.753338"
+      "hash": "4e69fd6e84d4afa02a938716d91e4d6d81e007e905fc76e50dd15ccbcb7f1a0b",
+      "last_updated": "2026-10-22T19:02:24.298853"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "01f8825db4f02cedc32a45a7515a47bd0c2b8d77f6095d449939ef80eb9cf829",
-      "last_updated": "2026-10-21T14:19:42.753643"
+      "hash": "3e44115af3e228fdc631496c0cc27a3640bd682b331019861ef85ac236659dc9",
+      "last_updated": "2026-10-22T19:02:24.299085"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -645,8 +645,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "7a8e5a62641b089b1aada756289691112821da0013c3b5e0174eaca97194e0b1",
-      "last_updated": "2026-10-21T14:19:42.753933"
+      "hash": "914335c8ae4dfada6a870d1ee0de42e14f55b1323a3684c4a086597289807f34",
+      "last_updated": "2026-10-22T19:02:24.299309"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1605,8 +1605,8 @@
     "release-notes.md": {
       "original_url": "https://cursor.com/docs/release-notes",
       "original_md_url": "https://cursor.com/docs/release-notes.md",
-      "hash": "eecc543c43a06494c0cae085ade5c42b9fdb7446cd259ebee7f1f150fd6275b8",
-      "last_updated": "2026-10-20T18:54:00.889204"
+      "hash": "fd4d830aa5b02cd79d4c3ac485eb01d31ebb7436f152e27496e7cb02a23d82cd",
+      "last_updated": "2026-10-22T19:02:24.301095"
     },
     "release-notes/sdk.md": {
       "original_url": "https://cursor.com/docs/release-notes/sdk",
@@ -1664,8 +1664,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-22T14:19:03.824555",
-    "fetch_duration_seconds": 2.192051,
+    "last_fetch_completed": "2026-10-22T19:02:24.303663",
+    "fetch_duration_seconds": 3.10715,
     "total_pages_discovered": 277,
     "pages_fetched_successfully": 277,
     "pages_failed": 0,
@@ -1678,7 +1678,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-22T14:19:03.824569",
+  "last_updated": "2026-10-22T19:02:24.303673",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
