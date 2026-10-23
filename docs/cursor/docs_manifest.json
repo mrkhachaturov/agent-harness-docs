@@ -21,8 +21,8 @@
     "account/organizations/organization-admin-api.md": {
       "original_url": "https://cursor.com/docs/account/organizations/organization-admin-api",
       "original_md_url": "https://cursor.com/docs/account/organizations/organization-admin-api.md",
-      "hash": "4c6d0f912f880b1c4ea090d6bf25d54b9239113d048ac88a74dd65e6ea487427",
-      "last_updated": "2026-10-21T14:19:42.748829"
+      "hash": "da3939e750c9a3a30912e3083bbcaaabdd29eada746e0a3b79272a6814a0964b",
+      "last_updated": "2026-10-23T18:52:06.334554"
     },
     "account/pricing/legacy-cursor-plans.md": {
       "original_url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans",
@@ -33,8 +33,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "d6cf7e1dd3314a1b28f4ac1f699c255c0fd0b6acbff5c0d03cfb7b0837325cd3",
-      "last_updated": "2026-09-29T17:29:46.460551"
+      "hash": "94dc736b9b2afa5730930c054c83b08e10357e30bade3a549df7fc2c5f79c11f",
+      "last_updated": "2026-10-23T18:52:06.335119"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -225,8 +225,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "39fe4c9643ae79b0fbb4f740a82bc2e8756f807b262b71dc1b39302978410106",
-      "last_updated": "2026-10-22T14:19:03.809688"
+      "hash": "e9c1a2c61a3c71aadcd307f64b1a9e4ef9e88524637aed396f914b0fd4acdc50",
+      "last_updated": "2026-10-23T18:52:06.336250"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -237,8 +237,8 @@
     "cli/changelog.md": {
       "original_url": "https://cursor.com/docs/cli/changelog",
       "original_md_url": "https://cursor.com/docs/cli/changelog.md",
-      "hash": "70d57616d76ddfa089d42b23a149fad68436ecd8711a94b33c13c3c64795167b",
-      "last_updated": "2026-10-11T00:12:34.522683"
+      "hash": "de106fcb00a92e0ff8320923c8b2c704366592980b2123ffeab695abb5623e35",
+      "last_updated": "2026-10-23T18:52:06.336751"
     },
     "cli/github-actions.md": {
       "original_url": "https://cursor.com/docs/cli/github-actions",
@@ -483,8 +483,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "1da1bbfed92ddbdcbb11bc0c0a11bcb8def20082a1edd0dfa7f62a2745045999",
-      "last_updated": "2026-10-21T14:19:42.751839"
+      "hash": "aeed578fd82584a9b075414b2d11f0f697a437eedcfc09ca54d328c45d707e79",
+      "last_updated": "2026-10-23T18:52:06.337856"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -1335,8 +1335,8 @@
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
       "original_md_url": "https://cursor.com/docs/integrations/bitbucket.md",
-      "hash": "48cfa14e0edae5415bf0374706c1a0449fcc89ac4a67945014636a422dc5a27d",
-      "last_updated": "2026-10-07T18:18:45.515964"
+      "hash": "011d616b2a032d8b03b59aa45fd4f6b472b002b2146f02fb0ee322a8544eb2c0",
+      "last_updated": "2026-10-23T18:52:06.339390"
     },
     "integrations/cursor-blame.md": {
       "original_url": "https://cursor.com/docs/integrations/cursor-blame",
@@ -1593,8 +1593,8 @@
     "origin/settings.md": {
       "original_url": "https://cursor.com/docs/origin/settings",
       "original_md_url": "https://cursor.com/docs/origin/settings.md",
-      "hash": "5ddd5cf264d3bdaea8aa6d7d4feab454a864a6b8066f089330c6668ef29a5178",
-      "last_updated": "2026-10-19T02:50:53.689043"
+      "hash": "01aadd249d73399c0c445f40c2b18c8eaa1d11f68beb2f1f12ed40b992fc642b",
+      "last_updated": "2026-10-23T18:52:06.340093"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1617,8 +1617,8 @@
     "release-notes/sdk.md": {
       "original_url": "https://cursor.com/docs/release-notes/sdk",
       "original_md_url": "https://cursor.com/docs/release-notes/sdk.md",
-      "hash": "3a1e95814269683801b8f1c049eaf14d5f61c4e1222c9cf8a294508c2ddffbe9",
-      "last_updated": "2026-10-06T19:58:41.760016"
+      "hash": "811565dc4c064db595a41861129f4b6f53bc061fae23584792f869ede3fd68bd",
+      "last_updated": "2026-10-23T18:52:06.340987"
     },
     "rollouts.md": {
       "original_url": "https://cursor.com/docs/rollouts",
@@ -1670,8 +1670,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-23T14:02:30.519741",
-    "fetch_duration_seconds": 3.492376,
+    "last_fetch_completed": "2026-10-23T18:52:06.344385",
+    "fetch_duration_seconds": 3.208653,
     "total_pages_discovered": 278,
     "pages_fetched_successfully": 278,
     "pages_failed": 0,
@@ -1684,7 +1684,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-23T14:02:30.519755",
+  "last_updated": "2026-10-23T18:52:06.344397",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
