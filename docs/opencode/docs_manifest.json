@@ -3,44 +3,44 @@
     "acp.md": {
       "upstream_path": "packages/web/src/content/docs/acp.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/acp.mdx",
-      "hash": "52113f6c06ebf7f70a2055dd049ffb1dbc7af9676e7ad61f4a6f5496d7f0fefa",
-      "last_updated": "2026-08-24T12:40:05.327271"
+      "hash": "6eb8b9f6f1d496c250e6bba9002b251b2dfe723b036029ec49f6f63de521362f",
+      "last_updated": "2026-10-23T02:57:38.580046"
     },
     "agents.md": {
       "upstream_path": "packages/web/src/content/docs/agents.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/agents.mdx",
-      "hash": "1b08fb5ddedd31f6227383eb3becfc16452452ba2fe2eb10f1acadc2da555024",
-      "last_updated": "2026-10-21T19:06:27.551141"
+      "hash": "6271180b32f0f428f5c969a9ba8ee84f88a0a4285f662e86a2f2da87fc9a1575",
+      "last_updated": "2026-10-23T02:57:38.800680"
     },
     "cli.md": {
       "upstream_path": "packages/web/src/content/docs/cli.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/cli.mdx",
-      "hash": "82498e3ce1fe5951ad00b5407cc13f82e31833dcc998e2c50d9324f88a66c545",
-      "last_updated": "2026-10-21T19:06:27.746447"
+      "hash": "cb0b40d5567a14104c0e9e12b337ce23e6dca2fd07c7afa75f0b197ccfa674de",
+      "last_updated": "2026-10-23T02:57:39.052574"
     },
     "commands.md": {
       "upstream_path": "packages/web/src/content/docs/commands.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/commands.mdx",
-      "hash": "c1472f8ba5e543163fd5d17ec04e889f4c1a6744d382342d349cb2388b77f0b7",
-      "last_updated": "2026-10-19T02:50:55.912319"
+      "hash": "529927aab94afe1353b0d783c8451bfc69a8316a83610bdec86c723c00f8077d",
+      "last_updated": "2026-10-23T02:57:39.230565"
     },
     "config.md": {
       "upstream_path": "packages/web/src/content/docs/config.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/config.mdx",
-      "hash": "a2aafcece7736b7e3d359fac86f26cff69cda0f1d28855aff9a56871950d5185",
-      "last_updated": "2026-10-19T02:50:56.061260"
+      "hash": "27cc231a4d3c67a162a22ec2d0624200c830f0d7dba5aa1079e72be8d20fdd4c",
+      "last_updated": "2026-10-23T02:57:39.464104"
     },
     "custom-tools.md": {
       "upstream_path": "packages/web/src/content/docs/custom-tools.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/custom-tools.mdx",
-      "hash": "30778d5f8202407b3a83dfcc131909a0e7a23a7687a2b8de5d35858a450202af",
-      "last_updated": "2026-10-19T02:50:56.166999"
+      "hash": "757629009d6a00c45ab1ddf1dc41665b0b6207755d3b08599ce75e2b7ae17def",
+      "last_updated": "2026-10-23T02:57:39.631562"
     },
     "ecosystem.md": {
       "upstream_path": "packages/web/src/content/docs/ecosystem.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/ecosystem.mdx",
-      "hash": "415a40ba9756d7a8720c50f54857923035abb7f763af28d488c01e13c7a14597",
-      "last_updated": "2026-10-05T21:48:23.250163"
+      "hash": "10df5b1f0a4df5ae30529a7c1d15df1053310d560dae7e10e7bd7ac5d96dff4b",
+      "last_updated": "2026-10-23T02:57:39.808378"
     },
     "enterprise.md": {
       "upstream_path": "packages/web/src/content/docs/enterprise.mdx",
@@ -51,56 +51,56 @@
     "formatters.md": {
       "upstream_path": "packages/web/src/content/docs/formatters.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/formatters.mdx",
-      "hash": "23c443e0ee3e6d6d36c7105b51e1485d9715f197c38157986ce5cc7102f3c5e9",
-      "last_updated": "2026-05-26T14:47:31.686518"
+      "hash": "db952615bf999aa55d896e2aefba40dac7dc285dd999eb7253a299172fd62c7c",
+      "last_updated": "2026-10-23T02:57:40.162995"
     },
     "github.md": {
       "upstream_path": "packages/web/src/content/docs/github.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/github.mdx",
-      "hash": "e44514c89876f91b47c104443c7f00eb4e214857336d804e0f46dadb0d964310",
-      "last_updated": "2026-10-15T18:51:21.558398"
+      "hash": "f69be0a97e6ccba7e952499fc037b0d0a6d7e9b9d5852198027dfba06a05b43c",
+      "last_updated": "2026-10-23T02:57:40.345721"
     },
     "gitlab.md": {
       "upstream_path": "packages/web/src/content/docs/gitlab.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/gitlab.mdx",
-      "hash": "f186469dbff5cb9bbef27ae32e5f75b7dc9a9da19a5d09aed08696c2a60f5404",
-      "last_updated": "2026-05-26T14:47:31.851591"
+      "hash": "8f458104c2c43cc542340fdeae3bcbd5f8c2bf58b3477bf81304d70b69913145",
+      "last_updated": "2026-10-23T02:57:40.517921"
     },
     "ide.md": {
       "upstream_path": "packages/web/src/content/docs/ide.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/ide.mdx",
-      "hash": "9e3131c799c38d1924e387543620e6eee8733073399316b2755d75640620d65d",
-      "last_updated": "2026-05-26T14:47:32.034249"
+      "hash": "0dc27e684e1f6d25f440911ec60abf8886d7c6c20aa1eba1a21a92b8bdbd9a5d",
+      "last_updated": "2026-10-23T02:57:40.670755"
     },
     "index.md": {
       "upstream_path": "packages/web/src/content/docs/index.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/index.mdx",
-      "hash": "019ac49e5beeb24c8d73f0402d0da8da759bcb6029f3b2f6e45fe299f375e4ae",
-      "last_updated": "2026-10-15T18:51:22.107197"
+      "hash": "a0462366450be7bc9ebb2e38d76638d35a5bf271e7d8f575ecd1eb9ac1c59b95",
+      "last_updated": "2026-10-23T02:57:40.862845"
     },
     "keybinds.md": {
       "upstream_path": "packages/web/src/content/docs/keybinds.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/keybinds.mdx",
-      "hash": "5106b1c97f34214831187e5f8faf2579db4427efbcab8c001521edd90675aa42",
-      "last_updated": "2026-10-15T18:51:22.287397"
+      "hash": "f6351457b7d9dfa00d14f0284d5ec7661e4785ad8664c0c104499e14383f0b18",
+      "last_updated": "2026-10-23T02:57:41.036326"
     },
     "lsp.md": {
       "upstream_path": "packages/web/src/content/docs/lsp.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/lsp.mdx",
-      "hash": "4c884223561414db7bc0f235cd8f818fcd7f7b1eaf17e778b423ab25ae8af3c2",
-      "last_updated": "2026-05-26T21:35:02.637163"
+      "hash": "82f7616ed1b51428e6518a5dedc08dfb71e8bcd7b29cba6e6ad404324a6e7196",
+      "last_updated": "2026-10-23T02:57:41.221002"
     },
     "mcp-servers.md": {
       "upstream_path": "packages/web/src/content/docs/mcp-servers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/mcp-servers.mdx",
-      "hash": "044192879861e135a0fb6d7868961d5ddbceb66c3657439684f649681a34cc62",
-      "last_updated": "2026-10-10T16:48:54.394282"
+      "hash": "526c9d35a470e75c3cfbdff936d3389b58e0de1499cca97982218efd137b29e7",
+      "last_updated": "2026-10-23T02:57:41.420052"
     },
     "models.md": {
       "upstream_path": "packages/web/src/content/docs/models.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/models.mdx",
-      "hash": "c49bb09539abd6a46cd92d849ba1b59538e28c2048f71df81a216a5d32672966",
-      "last_updated": "2026-10-12T14:10:04.940764"
+      "hash": "83f29291dc628b93e83b5da1b058a2684f159d4707e3ffa8f8deb4ddbfba5d18",
+      "last_updated": "2026-10-23T02:57:41.595800"
     },
     "network.md": {
       "upstream_path": "packages/web/src/content/docs/network.mdx",
@@ -111,26 +111,26 @@
     "permissions.md": {
       "upstream_path": "packages/web/src/content/docs/permissions.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/permissions.mdx",
-      "hash": "73cd3f8c6751b0c12063cafc74bd834559c990c7fafe3d90e61469955cce3572",
-      "last_updated": "2026-10-19T02:50:57.655585"
+      "hash": "84971401ef9d714b310d9afd647db36e2d958314d3e1b115bf31e0618d5b09ef",
+      "last_updated": "2026-10-23T02:57:41.929209"
     },
     "plugins.md": {
       "upstream_path": "packages/web/src/content/docs/plugins.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/plugins.mdx",
-      "hash": "60139c456e7c75b8f453b4f4f15fd8c9d0b38a53253aca1ad13cb90c3914fa2b",
-      "last_updated": "2026-10-19T02:50:57.780561"
+      "hash": "7d3bf152aba4fc6c1bf92632a1d0af3d97463b2e903891f1f702e3e2b48ce277",
+      "last_updated": "2026-10-23T02:57:42.116601"
     },
     "policies.md": {
       "upstream_path": "packages/web/src/content/docs/policies.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/policies.mdx",
-      "hash": "7010a10268d7efefb1e7961d3c3a856de1e619214e07fac0aac33d99ff57d995",
-      "last_updated": "2026-05-30T04:25:20.766946"
+      "hash": "35e3dd31b258ff9042d4780f5fefe81d7d139277e480ff05540baf9ca4e8c126",
+      "last_updated": "2026-10-23T02:57:42.280338"
     },
     "providers.md": {
       "upstream_path": "packages/web/src/content/docs/providers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/providers.mdx",
-      "hash": "d9d1587f57825f8fd5e5c87b498366a67c98981341d0c056502960c2ffaad608",
-      "last_updated": "2026-10-15T18:51:24.009203"
+      "hash": "b4b8ce726b6ed1f8b842387157761443eea388a4822bb05ed14603ea764c486a",
+      "last_updated": "2026-10-23T02:57:42.661008"
     },
     "references.md": {
       "upstream_path": "packages/web/src/content/docs/references.mdx",
@@ -147,20 +147,20 @@
     "sdk.md": {
       "upstream_path": "packages/web/src/content/docs/sdk.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/sdk.mdx",
-      "hash": "36cb2523570678d6f1827fca12bae0d1a360ddca4b96ca47869e876540d30e2f",
-      "last_updated": "2026-10-10T16:48:56.086763"
+      "hash": "4daf1aae252e79614e8d92e782bae2f2cd2dd57e73b9b41bf7334cdf82376efa",
+      "last_updated": "2026-10-23T02:57:43.224314"
     },
     "server.md": {
       "upstream_path": "packages/web/src/content/docs/server.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/server.mdx",
-      "hash": "f99d91fe04c0a38dc5a06f9d0612dcb75b2cd4d60da22738851242c5fc1f0a57",
-      "last_updated": "2026-10-15T18:51:24.857043"
+      "hash": "ef0b35cfe1dde3cf937960580460c7d7e78eb9bb670a1a0968a17ef79bd6d592",
+      "last_updated": "2026-10-23T02:57:43.459848"
     },
     "skills.md": {
       "upstream_path": "packages/web/src/content/docs/skills.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/skills.mdx",
-      "hash": "701856ed32b7286624fd69572a35d09bbe71bd0b705367d0dcd7809154a51fbc",
-      "last_updated": "2026-10-10T16:48:56.630121"
+      "hash": "cb6d478e41c952e4b4a3ffc214e71f6cbbe3b41ea0a3f3f9271f14b30481cbb9",
+      "last_updated": "2026-10-23T02:57:43.632258"
     },
     "themes.md": {
       "upstream_path": "packages/web/src/content/docs/themes.mdx",
@@ -171,20 +171,20 @@
     "tools.md": {
       "upstream_path": "packages/web/src/content/docs/tools.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/tools.mdx",
-      "hash": "fd6233510cd99d4bd51edc9e9adce9914f86f3d9201f5602a755cd5801669c2e",
-      "last_updated": "2026-10-19T02:50:59.014536"
+      "hash": "7f7e59b5fe4b52378ece64e47b793017fd22e835dbf4437f0c1d977fb566fa81",
+      "last_updated": "2026-10-23T02:57:43.998134"
     },
     "troubleshooting.md": {
       "upstream_path": "packages/web/src/content/docs/troubleshooting.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/troubleshooting.mdx",
-      "hash": "4c21dafde9e5f92d485b41a5adc7435ba9b4bc0b874aadb9993a7dda95f82e08",
-      "last_updated": "2026-06-09T10:17:54.743372"
+      "hash": "309875da32d03f30552a73663ea91ea2ea3a5b66695414ddfb4b9cfe67952509",
+      "last_updated": "2026-10-23T02:57:44.199311"
     },
     "tui.md": {
       "upstream_path": "packages/web/src/content/docs/tui.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/tui.mdx",
-      "hash": "d7f3434f59058b7a3944d8133234225ee5228e0ada1eac389f044f60c8931e6a",
-      "last_updated": "2026-10-19T02:50:59.269532"
+      "hash": "bf854c463c2352024dabd1b7b6e865161ffe56cb34848ac502e3f2e59eabb072",
+      "last_updated": "2026-10-23T02:57:44.401865"
     },
     "web.md": {
       "upstream_path": "packages/web/src/content/docs/web.mdx",
@@ -200,8 +200,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-22T23:50:46.781323",
-    "fetch_duration_seconds": 7.317139,
+    "last_fetch_completed": "2026-10-23T02:57:44.732759",
+    "fetch_duration_seconds": 7.590167,
     "total_pages_discovered": 33,
     "pages_fetched_successfully": 33,
     "pages_failed": 0,
@@ -212,7 +212,7 @@
     "total_files": 33,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-22T23:50:46.781345",
+  "last_updated": "2026-10-23T02:57:44.732779",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

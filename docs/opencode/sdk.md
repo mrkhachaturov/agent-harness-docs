@@ -54,7 +54,7 @@ const opencode = await createOpencode({
   hostname: "127.0.0.1",
   port: 4096,
   config: {
-    model: "anthropic/claude-3-5-sonnet-20241022",
+    model: "anthropic/claude-sonnet-5-5",
   },
 })
 
@@ -77,13 +77,13 @@ const client = createOpencodeClient({
 
 #### Options
 
-| Option          | Type       | Description                      | Default                 |
-| --------------- | ---------- | -------------------------------- | ----------------------- |
-| `baseUrl`       | `string`   | URL of the server                | `http://localhost:4096` |
-| `fetch`         | `function` | Custom fetch implementation      | `globalThis.fetch`      |
-| `parseAs`       | `string`   | Response parsing method          | `auto`                  |
-| `responseStyle` | `string`   | Return style: `data` or `fields` | `fields`                |
-| `throwOnError`  | `boolean`  | Throw errors instead of return   | `false`                 |
+| Option          | Type       | Description                      | Default              |
+| --------------- | ---------- | -------------------------------- | -------------------- |
+| `baseUrl`       | `string`   | URL of the server                | None; set explicitly |
+| `fetch`         | `function` | Custom fetch implementation      | `globalThis.fetch`   |
+| `parseAs`       | `string`   | Response parsing method          | `auto`               |
+| `responseStyle` | `string`   | Return style: `data` or `fields` | `fields`             |
+| `throwOnError`  | `boolean`  | Throw errors instead of return   | `false`              |
 
 ---
 
@@ -101,13 +101,13 @@ All types are generated from the server's OpenAPI specification and available in
 
 ## Errors
 
-The SDK can throw errors that you can catch and handle:
+By default, HTTP errors are returned in `result.error`. Set `throwOnError: true` to throw them instead. Network errors can still throw regardless of this option.
 
 ```typescript
 try {
-  await client.session.get({ path: { id: "invalid-id" } })
+  await client.session.get({ path: { id: "invalid-id" }, throwOnError: true })
 } catch (error) {
-  console.error("Failed to get session:", (error as Error).message)
+  console.error("Failed to get session:", error)
 }
 ```
 
@@ -115,14 +115,20 @@ try {
 
 ## Structured Output
 
-You can request structured JSON output from the model by specifying an `format` with a JSON schema. The model will use a `StructuredOutput` tool to return validated JSON matching your schema.
+You can request structured JSON output from the model by specifying a `format` with a JSON schema. The model will use a `StructuredOutput` tool to return validated JSON matching your schema.
+
+Structured output is only available on the client exported from `@opencode-ai/sdk/v2`. This client takes flat parameters instead of `path` and `body` objects.
 
 ### Basic Usage
 
 ```typescript
-const result = await client.session.prompt({
-  path: { id: sessionId },
-  body: {
+import { createOpencodeClient } from "@opencode-ai/sdk/v2"
+
+const client = createOpencodeClient({ baseUrl: "http://localhost:4096" })
+
+const result = await client.session.prompt(
+  {
+    sessionID: sessionId,
     parts: [{ type: "text", text: "Research Anthropic and provide company info" }],
     format: {
       type: "json_schema",
@@ -141,10 +147,11 @@ const result = await client.session.prompt({
       },
     },
   },
-})
+  { throwOnError: true },
+)
 
 // Access the structured output
-console.log(result.data.info.structured_output)
+console.log(result.data.info.structured)
 // { company: "Anthropic", founded: 2021, products: ["Claude", "Claude API"] }
 ```
 
@@ -171,8 +178,8 @@ If the model fails to produce valid structured output after all retries, the res
 
 ```typescript
 if (result.data.info.error?.name === "StructuredOutputError") {
-  console.error("Failed to produce structured output:", result.data.info.error.message)
-  console.error("Attempts:", result.data.info.error.retries)
+  console.error("Failed to produce structured output:", result.data.info.error.data.message)
+  console.error("Attempts:", result.data.info.error.data.retries)
 }
 ```
 
@@ -193,6 +200,8 @@ The SDK exposes all server APIs through a type-safe client.
 
 ### Global
 
+`global.health()` is only available on the `@opencode-ai/sdk/v2` client.
+
 | Method            | Description                     | Response                             |
 | ----------------- | ------------------------------- | ------------------------------------ |
 | `global.health()` | Check server health and version | `{ healthy: true, version: string }` |
@@ -202,7 +211,10 @@ The SDK exposes all server APIs through a type-safe client.
 #### Examples
 
 ```javascript
-const health = await client.global.health()
+import { createOpencodeClient } from "@opencode-ai/sdk/v2"
+
+const client = createOpencodeClient({ baseUrl: "http://localhost:4096" })
+const health = await client.global.health({ throwOnError: true })
 console.log(health.data.version)
 ```
 
@@ -284,34 +296,35 @@ const pathInfo = await client.path.get()
 ```javascript
 const config = await client.config.get()
 
-const { providers, default: defaults } = await client.config.providers()
+const result = await client.config.providers({ throwOnError: true })
+const { providers, default: defaults } = result.data
 ```
 
 ---
 
 ### Sessions
 
-| Method                                                     | Description                        | Notes                                                                                                                                                                                |
-| ---------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `session.list()`                                           | List sessions                      | Returns Session\[]                                                                                                                                                                   |
-| `session.get({ path })`                                    | Get session                        | Returns Session                                                                                                                                                                      |
-| `session.children({ path })`                               | List child sessions                | Returns Session\[]                                                                                                                                                                   |
-| `session.create({ body })`                                 | Create session                     | Returns Session                                                                                                                                                                      |
-| `session.delete({ path })`                                 | Delete session                     | Returns `boolean`                                                                                                                                                                    |
-| `session.update({ path, body })`                           | Update session properties          | Returns Session                                                                                                                                                                      |
-| `session.init({ path, body })`                             | Analyze app and create `AGENTS.md` | Returns `boolean`                                                                                                                                                                    |
-| `session.abort({ path })`                                  | Abort a running session            | Returns `boolean`                                                                                                                                                                    |
-| `session.share({ path })`                                  | Share session                      | Returns Session                                                                                                                                                                      |
-| `session.unshare({ path })`                                | Unshare session                    | Returns Session                                                                                                                                                                      |
-| `session.summarize({ path, body })`                        | Summarize session                  | Returns `boolean`                                                                                                                                                                    |
-| `session.messages({ path })`                               | List messages in a session         | Returns `{ info: `Message`, parts: `Part\[]`}[]`                                                                                                                                     |
-| `session.message({ path })`                                | Get message details                | Returns `{ info: `Message`, parts: `Part\[]`}`                                                                                                                                       |
-| `session.prompt({ path, body })`                           | Send prompt message                | `body.noReply: true` returns UserMessage (context only). Default returns AssistantMessage with AI response. Supports `body.outputFormat` for [structured output](#structured-output) |
-| `session.command({ path, body })`                          | Send command to session            | Returns `{ info: `AssistantMessage`, parts: `Part\[]`}`                                                                                                                              |
-| `session.shell({ path, body })`                            | Run a shell command                | Returns AssistantMessage                                                                                                                                                             |
-| `session.revert({ path, body })`                           | Revert a message                   | Returns Session                                                                                                                                                                      |
-| `session.unrevert({ path })`                               | Restore reverted messages          | Returns Session                                                                                                                                                                      |
-| `postSessionByIdPermissionsByPermissionId({ path, body })` | Respond to a permission request    | Returns `boolean`                                                                                                                                                                    |
+| Method                                                     | Description                        | Notes                                                                                                                                                  |
+| ---------------------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `session.list()`                                           | List sessions                      | Returns Session\[]                                                                                                                                     |
+| `session.get({ path })`                                    | Get session                        | Returns Session                                                                                                                                        |
+| `session.children({ path })`                               | List child sessions                | Returns Session\[]                                                                                                                                     |
+| `session.create({ body })`                                 | Create session                     | Returns Session                                                                                                                                        |
+| `session.delete({ path })`                                 | Delete session                     | Returns `boolean`                                                                                                                                      |
+| `session.update({ path, body })`                           | Update session properties          | Returns Session                                                                                                                                        |
+| `session.init({ path, body })`                             | Analyze app and create `AGENTS.md` | Returns `boolean`                                                                                                                                      |
+| `session.abort({ path })`                                  | Abort a running session            | Returns `boolean`                                                                                                                                      |
+| `session.share({ path })`                                  | Share session                      | Sharing has been discontinued; this endpoint returns an error                                                                                          |
+| `session.unshare({ path })`                                | Clear a stored share link          | Returns Session                                                                                                                                        |
+| `session.summarize({ path, body })`                        | Summarize session                  | Returns `boolean`                                                                                                                                      |
+| `session.messages({ path })`                               | List messages in a session         | Returns `{ info: `Message`, parts: `Part\[]`}[]`                                                                                                       |
+| `session.message({ path })`                                | Get message details                | Returns `{ info: `Message`, parts: `Part\[]`}`                                                                                                         |
+| `session.prompt({ path, body })`                           | Send prompt message                | Returns `{ info, parts }`. `body.noReply: true` adds context without an AI response. For structured output, use the [`/v2` client](#structured-output) |
+| `session.command({ path, body })`                          | Send command to session            | Returns `{ info: `AssistantMessage`, parts: `Part\[]`}`                                                                                                |
+| `session.shell({ path, body })`                            | Run a shell command                | Returns AssistantMessage                                                                                                                               |
+| `session.revert({ path, body })`                           | Revert a message                   | Returns Session                                                                                                                                        |
+| `session.unrevert({ path })`                               | Restore reverted messages          | Returns Session                                                                                                                                        |
+| `postSessionByIdPermissionsByPermissionId({ path, body })` | Respond to a permission request    | Returns `boolean`                                                                                                                                      |
 
 ---
 
@@ -321,22 +334,23 @@ const { providers, default: defaults } = await client.config.providers()
 // Create and manage sessions
 const session = await client.session.create({
   body: { title: "My session" },
+  throwOnError: true,
 })
 
 const sessions = await client.session.list()
 
 // Send a prompt message
 const result = await client.session.prompt({
-  path: { id: session.id },
+  path: { id: session.data.id },
   body: {
-    model: { providerID: "anthropic", modelID: "claude-3-5-sonnet-20241022" },
+    model: { providerID: "anthropic", modelID: "claude-sonnet-5-5" },
     parts: [{ type: "text", text: "Hello!" }],
   },
 })
 
 // Inject context without triggering AI response (useful for plugins)
 await client.session.prompt({
-  path: { id: session.id },
+  path: { id: session.data.id },
   body: {
     noReply: true,
     parts: [{ type: "text", text: "You are a helpful assistant." }],
@@ -353,14 +367,15 @@ await client.session.prompt({
 | `find.text({ query })`    | Search for text in files           | Array of match objects with `path`, `lines`, `line_number`, `absolute_offset`, `submatches` |
 | `find.files({ query })`   | Find files and directories by name | `string[]` (paths)                                                                          |
 | `find.symbols({ query })` | Find workspace symbols             | Symbol\[]                                                                                   |
-| `file.read({ query })`    | Read a file                        | `{ type: "raw" \| "patch", content: string }`                                               |
+| `file.read({ query })`    | Read a file                        | FileContent                                                                                 |
 | `file.status({ query? })` | Get status for tracked files       | File\[]                                                                                     |
 
-`find.files` supports a few optional query fields:
+The root client's `find.files` supports these optional query fields:
 
-- `type`: `"file"` or `"directory"`
+- `dirs`: `"false"` to search files only; otherwise directories are included
 - `directory`: override the project root for the search
-- `limit`: max results (1–200)
+
+The `/v2` client additionally supports `type` (`"file"` or `"directory"`) and `limit` (1–200), using flat parameters.
 
 ---
 
@@ -373,11 +388,11 @@ const textResults = await client.find.text({
 })
 
 const files = await client.find.files({
-  query: { query: "*.ts", type: "file" },
+  query: { query: ".ts", dirs: "false" },
 })
 
-const directories = await client.find.files({
-  query: { query: "packages", type: "directory", limit: 20 },
+const paths = await client.find.files({
+  query: { query: "packages", dirs: "true" },
 })
 
 const content = await client.file.read({
