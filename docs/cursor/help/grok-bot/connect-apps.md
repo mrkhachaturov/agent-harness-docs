@@ -103,7 +103,7 @@ To stop using 1Password, open it in **Connect apps** and choose **Disconnect**. 
 
 ## How do my Bots sign in with 1Password?
 
-When a Bot needs a login, it sends a card in the chat that names the website.
+Your Bots check [Vault](https://cursor.com/help/grok-bot/secrets.md#what-is-vault) first. When a login isn't saved there, the Bot sends a card in the chat that names the website.
 
 1. Choose **Review in 1Password**. The 1Password app opens. If the app isn't installed on that computer, 1Password opens in your browser.
 2. In 1Password, choose the exact logins to share and approve the request.

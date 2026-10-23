@@ -4,14 +4,13 @@ Cursor uses the same default shortcuts as VS Code, plus shortcuts for AI feature
 
 ## What are the key AI shortcuts?
 
-| Action                     | Mac                | Windows/Linux        |
-| -------------------------- | ------------------ | -------------------- |
-| Toggle Sidepanel           | Cmd + I or Cmd + L | Ctrl + I or Ctrl + L |
-| Inline edit                | Cmd + K            | Ctrl + K             |
-| Mode Menu                  | Cmd + .            | Ctrl + .             |
-| Rotate between Agent modes | Shift + Tab        | Shift + Tab          |
-| Loop between AI models     | Cmd + /            | Ctrl + /             |
-| Accept Tab suggestion      | Tab                | Tab                  |
+| Action                     | Mac                          | Windows/Linux                   |
+| -------------------------- | ---------------------------- | ------------------------------- |
+| Toggle Sidepanel           | Cmd + I, Cmd + L, or Cmd + K | Ctrl + I, Ctrl + L, or Ctrl + K |
+| Mode Menu                  | Cmd + .                      | Ctrl + .                        |
+| Rotate between Agent modes | Shift + Tab                  | Shift + Tab                     |
+| Loop between AI models     | Cmd + /                      | Ctrl + /                        |
+| Accept Tab suggestion      | Tab                          | Tab                             |
 
 ## How do I customize shortcuts?
 

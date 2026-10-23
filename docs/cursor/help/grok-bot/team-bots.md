@@ -103,6 +103,8 @@ Once it says **Connected**, teammates can message the Bot directly or mention it
 
 In a channel thread or a DM, the Team Bot acts for the teammate who mentioned it. It can hand work to that person's own Bots, and their replies are posted back into the same thread. A personal Bot doesn't hand work to other Bots from a channel thread. See [Can a Bot message other Bots from Slack?](https://cursor.com/help/grok-bot/group-chats.md#can-a-bot-message-other-bots-from-slack)
 
+Bots record who asked for each message they post in Slack, so anyone in the thread can ask the Bot who requested it. When a Team Bot's routine replies in a Slack thread, the Bot follows that thread and answers later replies without an @mention.
+
 Each teammate needs to link their Slack account first. Open **Settings** > **General** > **Team Bots** and choose **Link**. If you message the Bot before you link, it replies with steps to link your account.
 
 ## How do I edit, unpublish, or delete a Team Bot?

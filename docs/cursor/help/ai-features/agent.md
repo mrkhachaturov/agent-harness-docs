@@ -17,6 +17,10 @@ Agent can build features from scratch, refactor existing code, fix bugs, write t
 
 You can also run agents from the browser at [cursor.com/agents](https://cursor.com/agents) using Cloud Agents.
 
+## How do I send selected code to Agent?
+
+Select the code, then press Cmd + L or Cmd + K on Mac (Ctrl + L or Ctrl + K on Windows/Linux). Agent opens with those lines referenced in the input, ready for your instructions. Cmd + K used to open inline edit, which has been replaced by this workflow.
+
 ## How do I interrupt Agent?
 
 Click the **Stop** button to stop Agent mid-task. This lets you redirect or start a different approach.

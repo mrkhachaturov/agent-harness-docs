@@ -87,11 +87,13 @@ On the phone, **Run history** shows each recent run as **Running**, **Succeeded*
 
 ## Why did my routine fail with a rate limit error?
 
-This is a known issue, and our engineers are working on a fix. Some routine runs fail with "Automation run rate limit exceeded". The error comes from a limit all Grok Bot routines share, not from your own usage.
+Routines have hourly limits. Your routines can run up to 300 times an hour in total, and each routine up to 200 times an hour. A run past either limit fails with "Automation run rate limit exceeded". If one routine keeps hitting its limit, ask the Bot to narrow its trigger or widen its schedule.
+
+Some runs can also fail with this error because of a limit all Grok Bot routines share, even when your own routines run less than that. This is a known issue, and our engineers are working on a fix.
 
 A run that fails with this error isn't retried automatically, so rerun the routine yourself. Use **Test** to run it now. For a webhook, send the call again.
 
-We will update this article when the limit no longer affects routines.
+We will update this article when the shared limit no longer affects routines.
 
 ## Related
 

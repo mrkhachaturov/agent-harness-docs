@@ -6,7 +6,8 @@ With an address, a Bot can:
 
 - Sign up for services with its own address, and pick up the verification code or link with your OK.
 - Collect receipts, newsletters, and reports, and summarize them for you.
-- Draft email for you, such as a digest or an update, and draft replies. You approve each one before it sends.
+- Draft email for you, such as a digest or an update, and draft replies.
+- Forward an email from its inbox with the original formatting, images, and attachments. Forwarding needs Grok Bot 0.75.2 or later.
 - Run a routine when email arrives, optionally only from specific senders.
 
 ## How do I get an email address for my Bot?
@@ -63,9 +64,9 @@ By default, the routine only runs for mail from senders that pass standard email
 
 ## Does my Bot need my approval to send email?
 
-Yes, every time. Your Bot shows you the full draft, and nothing sends until you press **Send**. This includes routines and replies.
+It depends on who asked. When you ask your Bot in chat to send an email, it goes out once Auto-review allows it. If Auto-review needs you, you see an approval card first.
 
-Asking your Bot in chat, or putting the instruction in a routine, doesn't skip approval. Instructions inside an email the Bot received never count as your permission to send.
+Email from a routine, or from any other turn you didn't start with that request, waits as a draft. Your Bot shows you the full draft, and nothing sends until you press **Send**. Instructions inside an email the Bot received never count as your permission to send.
 
 If you've also connected Gmail or Outlook, your Bot asks which account to send from when either could work.
 

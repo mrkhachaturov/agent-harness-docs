@@ -10,7 +10,7 @@ Some extensions can interfere with Cursor's AI features. Here's how to identify 
 
 ## Which extensions commonly conflict?
 
-Extensions that provide their own AI completions or intercept keyboard shortcuts can conflict with Tab completion or inline edit. Other AI coding assistants are the most common source of conflicts.
+Extensions that provide their own AI completions or intercept keyboard shortcuts can conflict with Tab completion or Cursor's AI shortcuts. Other AI coding assistants are the most common source of conflicts.
 
 ## How do I disable an extension?
 

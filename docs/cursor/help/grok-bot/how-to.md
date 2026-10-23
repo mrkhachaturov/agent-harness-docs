@@ -179,7 +179,7 @@ An approval card means the Bot stopped and is waiting. The action does not run u
 
 - **Allow once** lets this action run this time.
 - **Always allow** lets this kind of action run later without asking. It adds a rule under **Custom Rules**.
-- **Deny** stops this action.
+- **Deny** stops this action. The Bot stops there and doesn't try that action again until you send another message.
 
 Open **Settings**, then **Bot**, and use the **Auto-review** switch. The description there is **Grok Bot checks each action before it runs and asks you first when needed. Add rules to customize what it can do automatically.** Under **Custom Rules**, write one short rule per action. **Ask first** wins if two rules conflict. If the switch says **Required by your admin**, you cannot turn it off.
 
