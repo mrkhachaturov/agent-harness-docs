@@ -116,7 +116,7 @@ If the old version keeps coming back, [contact support](https://cursor.com/help/
 
 ## How do I change the app language?
 
-On desktop, open **Settings**, go to **General**, and choose a **Language** under **Appearance**. **Follow System** uses your computer's language. Desktop has 36 languages: English, Afrikaans, Arabic, Bengali, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, Finnish, French, German, Greek, Hausa, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Marathi, Norwegian Bokmål, Polish, Portuguese, Russian, Spanish, Swahili, Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, and Vietnamese.
+On desktop, open **Settings**, go to **General**, and choose a **Language** under **Appearance**. **Follow System** uses your computer's language. Desktop has 37 languages: English, Afrikaans, Arabic, Bengali, Chinese (Simplified), Chinese (Traditional), Czech, Danish, Dutch, Finnish, French, German, Greek, Hausa, Hebrew, Hindi, Hungarian, Indonesian, Italian, Japanese, Korean, Marathi, Norwegian Bokmål, Polish, Portuguese (Brazil), Portuguese (Portugal), Russian, Spanish, Swahili, Swedish, Tamil, Telugu, Thai, Turkish, Ukrainian, Urdu, and Vietnamese.
 
 ![The Appearance section in Grok Bot's General settings, with Theme and Language menus](/docs-static/images/grok-bot/settings-appearance-light.png)
 
@@ -149,7 +149,7 @@ Some apps can connect more than one account, like two Notion workspaces.
 3. Give the account a label, like work or personal.
 4. Choose **Authorize** and sign in to the second account.
 
-On the phone, choose **Authorize new account**.
+On the phone, open the app from **Connect apps** and choose **Add account**.
 
 Tell the Bot which account to use by its label. For example: "Use my work Notion." Every Bot on your Grok Bot account can use every connected account.
 
@@ -181,7 +181,7 @@ An approval card means the Bot stopped and is waiting. The action does not run u
 - **Always allow** lets this kind of action run later without asking. It adds a rule under **Custom Rules**.
 - **Deny** stops this action. The Bot stops there and doesn't try that action again until you send another message.
 
-Open **Settings**, then **Bot**, and use the **Auto-review** switch. The description there is **Grok Bot checks each action before it runs and asks you first when needed. Add rules to customize what it can do automatically.** Under **Custom Rules**, write one short rule per action. **Ask first** wins if two rules conflict. If the switch says **Required by your admin**, you cannot turn it off.
+Open **Settings**, then **General**, and use the **Auto-review** switch. The description there is **Grok Bot checks each action before it runs and asks you first when needed. Add rules to customize what it can do automatically.** Under **Custom Rules**, write one short rule per action. **Ask first** wins if two rules conflict. If the switch says **Required by your admin**, you cannot turn it off.
 
 A secret card, an app sign-in, or a page that asks you to type a password is a different prompt. Use the secure card for secrets. See [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md).
 
@@ -195,7 +195,7 @@ On the phone, allow notifications for Grok Bot in your phone settings to get ale
 
 ## Why did an approval expire?
 
-An approval from a chat you are in waits for you. An approval from work that started without you, like a routine, a trigger, or a message from another Bot, expires after about 10 minutes. The card then shows **Expired**, and the action doesn't run.
+An approval from a chat you are in waits for you. An approval from work that started without you, like a routine, a trigger, or a message from another Bot, expires after about 30 minutes. The card then shows **Expired**, and the action doesn't run.
 
 To catch approvals in time:
 

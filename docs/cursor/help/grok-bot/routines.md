@@ -49,7 +49,7 @@ Some routines don't show **Test**. They still run on their schedule or trigger.
 
 Start with how often your routines run. Each run spends usage, so a routine that runs often spends more than one that runs rarely. An hourly schedule, a short interval, or a Slack trigger on a busy channel can use a week of usage in a day.
 
-If **Weekly usage** is falling faster than you expect, pause routines you don't need. Then ask the Bot to widen schedules and narrow Slack triggers before you raise a plan or an on-demand limit. A routine that never runs doesn't spend usage. **Test** does, because it performs the work.
+If your **Weekly usage limit** is running out faster than you expect, pause routines you don't need. Then ask the Bot to widen schedules and narrow Slack triggers before you raise a plan or an on-demand limit. A routine that never runs doesn't spend usage. **Test** does, because it performs the work.
 
 See [Plans and billing](https://cursor.com/help/grok-bot/plans.md) for weekly usage and the on-demand monthly limit.
 

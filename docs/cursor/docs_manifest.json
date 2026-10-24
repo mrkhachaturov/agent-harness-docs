@@ -327,8 +327,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "60801244c859e353c695ddd535ba651a7a2398c7568cf9dc85ca25178e11437c",
-      "last_updated": "2026-10-23T23:44:40.908668"
+      "hash": "38f7e6d31176e5959605cd59ef4d58e5c92f6bae3539508141d609283717ee49",
+      "last_updated": "2026-10-24T22:51:02.752248"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -579,8 +579,8 @@
     "grok-bot.md": {
       "original_url": "https://cursor.com/docs/grok-bot",
       "original_md_url": "https://cursor.com/docs/grok-bot.md",
-      "hash": "d6d180ee138ae8ed2aa2f8eb675eac6c93d700babeb93b430a0c94d6e6412301",
-      "last_updated": "2026-10-18T22:44:19.868182"
+      "hash": "5fca7bd365139d67092ceaba7be575f07322a2c30f809798debc465e7ba738df",
+      "last_updated": "2026-10-24T22:51:02.753351"
     },
     "grok-bot/computers.md": {
       "original_url": "https://cursor.com/docs/grok-bot/computers",
@@ -591,14 +591,14 @@
     "grok-bot/deployment.md": {
       "original_url": "https://cursor.com/docs/grok-bot/deployment",
       "original_md_url": "https://cursor.com/docs/grok-bot/deployment.md",
-      "hash": "d8183f47395f41d8d38fecdedf41ba30ee7b7833304aed9ffd7d9f9bb4897b8f",
-      "last_updated": "2026-10-21T14:19:42.752747"
+      "hash": "03b434aa67cffc065f57448d7951b506927fb0565a9e465252c692a281f3521e",
+      "last_updated": "2026-10-24T22:51:02.753705"
     },
     "grok-bot/get-started.md": {
       "original_url": "https://cursor.com/docs/grok-bot/get-started",
       "original_md_url": "https://cursor.com/docs/grok-bot/get-started.md",
-      "hash": "522983665f3e1a62f5641c73fd208974bd2771b75fc9aeec76b9615861e2b534",
-      "last_updated": "2026-10-19T02:50:53.683503"
+      "hash": "0fedc630806764cd6bcfb4ce803f2cbac97a9b885b8a266cdb7af31f09ad2ced",
+      "last_updated": "2026-10-24T22:51:02.753973"
     },
     "grok-bot/identity.md": {
       "original_url": "https://cursor.com/docs/grok-bot/identity",
@@ -615,8 +615,8 @@
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
       "original_md_url": "https://cursor.com/docs/grok-bot/private-networks.md",
-      "hash": "07d90ba40c57b97dfe803a4eb9ac0c9f87334cf358f3635c17df49bea655a02c",
-      "last_updated": "2026-10-21T14:19:42.753071"
+      "hash": "435becb0960a346843f32022bdddbc86e46fc7b34682c1f67d4f6b7e3ba8ff26",
+      "last_updated": "2026-10-24T22:51:02.754291"
     },
     "grok-bot/proxies.md": {
       "original_url": "https://cursor.com/docs/grok-bot/proxies",
@@ -627,26 +627,26 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "4e69fd6e84d4afa02a938716d91e4d6d81e007e905fc76e50dd15ccbcb7f1a0b",
-      "last_updated": "2026-10-22T19:02:24.298853"
+      "hash": "2c3479ef06c490daa9827273acac75069189405d7d825ff659c119c68e23c251",
+      "last_updated": "2026-10-24T22:51:02.754591"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "3e44115af3e228fdc631496c0cc27a3640bd682b331019861ef85ac236659dc9",
-      "last_updated": "2026-10-22T19:02:24.299085"
+      "hash": "163653064c8354b296d859adde0a0f4c1c138c04bdde72a57a4ea08c246a163c",
+      "last_updated": "2026-10-24T22:51:02.754866"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
       "original_md_url": "https://cursor.com/docs/grok-bot/settings.md",
-      "hash": "b1ec4ac397bcc0e990886e8335a40921c0f38f4f77c90ebd7cbd9f7db5d44aae",
-      "last_updated": "2026-10-18T22:44:19.869591"
+      "hash": "0d5b809e0809f921c6e6aad1bb541e321d16f2a1adc439f196ee771c4223c63a",
+      "last_updated": "2026-10-24T22:51:02.755114"
     },
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "914335c8ae4dfada6a870d1ee0de42e14f55b1323a3684c4a086597289807f34",
-      "last_updated": "2026-10-22T19:02:24.299309"
+      "hash": "5f94a4b0a7256b8b800ff7c109cdc19f23ab4248ea067f542075dd219661a348",
+      "last_updated": "2026-10-24T22:51:02.755419"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -657,8 +657,8 @@
     "grok-bot/work.md": {
       "original_url": "https://cursor.com/docs/grok-bot/work",
       "original_md_url": "https://cursor.com/docs/grok-bot/work.md",
-      "hash": "3314e6a2b70dbeecaebf6c2c76fb817f421fbff5dc6d1fa0ce0623e42898cffd",
-      "last_updated": "2026-10-19T02:50:53.684646"
+      "hash": "bb79bdefaf611f40a0230bd64a68e1320acfcc0dc4cb38be7ed946765c146114",
+      "last_updated": "2026-10-24T22:51:02.755680"
     },
     "help/account-and-billing/app-store-subscription.md": {
       "original_url": "https://cursor.com/help/account-and-billing/app-store-subscription",
@@ -1020,17 +1020,29 @@
       "hash": "fdab5f68b2b5f2371c60dcb2af2bd5df9b5c94f5bd6764fb563f6c2c28492ca4",
       "last_updated": "2026-10-23T23:44:40.911252"
     },
+    "help/grok-bot/approvals.md": {
+      "original_url": "https://cursor.com/help/grok-bot/approvals",
+      "original_md_url": "https://cursor.com/help/grok-bot/approvals.md",
+      "hash": "6b5890853b93dc29cdadbce393bc7b52e7cb42091dfad77a10b0db5c688288d0",
+      "last_updated": "2026-10-24T22:51:02.756154"
+    },
     "help/grok-bot/computer-recovery.md": {
       "original_url": "https://cursor.com/help/grok-bot/computer-recovery",
       "original_md_url": "https://cursor.com/help/grok-bot/computer-recovery.md",
-      "hash": "07ffad51f8fefbb58e159c58bd081021e73bbea1f8bd7bf66b1b8971f666abcb",
-      "last_updated": "2026-10-11T09:36:39.807518"
+      "hash": "3943d5fbed20c756ba954629d8878f9bf991eaf9a9a76885e53b55cbf7403798",
+      "last_updated": "2026-10-24T22:51:02.756430"
     },
     "help/grok-bot/connect-apps.md": {
       "original_url": "https://cursor.com/help/grok-bot/connect-apps",
       "original_md_url": "https://cursor.com/help/grok-bot/connect-apps.md",
       "hash": "bfaedccda271a72f37c9563b601e8138c0e7a34517bfbca8dc72dccc860adca6",
       "last_updated": "2026-10-23T23:44:40.911566"
+    },
+    "help/grok-bot/create-media.md": {
+      "original_url": "https://cursor.com/help/grok-bot/create-media",
+      "original_md_url": "https://cursor.com/help/grok-bot/create-media.md",
+      "hash": "0291979cdf39960e517356f0fb33e49ae7b736ef7228ae95252ab278f4e03d24",
+      "last_updated": "2026-10-24T22:51:02.756576"
     },
     "help/grok-bot/delete-account.md": {
       "original_url": "https://cursor.com/help/grok-bot/delete-account",
@@ -1041,14 +1053,14 @@
     "help/grok-bot/edit-bot.md": {
       "original_url": "https://cursor.com/help/grok-bot/edit-bot",
       "original_md_url": "https://cursor.com/help/grok-bot/edit-bot.md",
-      "hash": "226eabd2046bbb5da2e84762a5957c0fdd4e632017025dac2a3665e2445f9358",
-      "last_updated": "2026-10-19T02:50:53.685650"
+      "hash": "a3bffb2a090790d15493c442901c6a34414bba2cee96f0d114e7a2f4327fec31",
+      "last_updated": "2026-10-24T22:51:02.756811"
     },
     "help/grok-bot/faqs.md": {
       "original_url": "https://cursor.com/help/grok-bot/faqs",
       "original_md_url": "https://cursor.com/help/grok-bot/faqs.md",
-      "hash": "f1dec4be7bf2dff310e3cc8111ddfb1dedcd99a868218919bb5c924cf84fbe72",
-      "last_updated": "2026-10-18T17:45:46.929844"
+      "hash": "652ded19d1eacc5c04e58fef689b6c84b4c88197a86f9dced9a7e4c602c1429c",
+      "last_updated": "2026-10-24T22:51:02.757074"
     },
     "help/grok-bot/get-help.md": {
       "original_url": "https://cursor.com/help/grok-bot/get-help",
@@ -1059,14 +1071,20 @@
     "help/grok-bot/group-chats.md": {
       "original_url": "https://cursor.com/help/grok-bot/group-chats",
       "original_md_url": "https://cursor.com/help/grok-bot/group-chats.md",
-      "hash": "7c1dec298d2936e430f8eaab8daaa7c9a8afa9af713c11972ae3403af133766c",
-      "last_updated": "2026-10-19T02:50:53.685971"
+      "hash": "14a79da83b7141010c2d1539efeb5968ae246534098f117266f35f88c87a7608",
+      "last_updated": "2026-10-24T22:51:02.757319"
     },
     "help/grok-bot/how-to.md": {
       "original_url": "https://cursor.com/help/grok-bot/how-to",
       "original_md_url": "https://cursor.com/help/grok-bot/how-to.md",
-      "hash": "fc704750a1b584bd1e0c3a08b523010e8cfd83246906524b27e47f81f45c949a",
-      "last_updated": "2026-10-23T23:44:40.911896"
+      "hash": "e2144c69aacb9d70b1f00d3abb594c27457a018b9512e7417f4a9b53170159eb",
+      "last_updated": "2026-10-24T22:51:02.757621"
+    },
+    "help/grok-bot/memory.md": {
+      "original_url": "https://cursor.com/help/grok-bot/memory",
+      "original_md_url": "https://cursor.com/help/grok-bot/memory.md",
+      "hash": "5f422747e006e6d6401c34a4a4b6062e29db4cedc2eaf2e291109b8ca63c0e4a",
+      "last_updated": "2026-10-24T22:51:02.757747"
     },
     "help/grok-bot/mobile-purchase.md": {
       "original_url": "https://cursor.com/help/grok-bot/mobile-purchase",
@@ -1089,8 +1107,8 @@
     "help/grok-bot/onboarding.md": {
       "original_url": "https://cursor.com/help/grok-bot/onboarding",
       "original_md_url": "https://cursor.com/help/grok-bot/onboarding.md",
-      "hash": "7faa9bdf6c97e718fcf5cf8831167d40de458031c7a7d1e8747000cd76f503b7",
-      "last_updated": "2026-10-18T22:44:19.871864"
+      "hash": "4e6238c8c7bd4fa17f90dea6b46163c824f565ff37a62c71827b8e2440c8b08d",
+      "last_updated": "2026-10-24T22:51:02.757992"
     },
     "help/grok-bot/pages.md": {
       "original_url": "https://cursor.com/help/grok-bot/pages",
@@ -1101,14 +1119,14 @@
     "help/grok-bot/plans.md": {
       "original_url": "https://cursor.com/help/grok-bot/plans",
       "original_md_url": "https://cursor.com/help/grok-bot/plans.md",
-      "hash": "33d2fd901557bb7af14a9269ad7f63c141711f1167f306309cbd6a50d25798c8",
-      "last_updated": "2026-10-14T23:37:34.273132"
+      "hash": "bfa57df7f054d4b0088dc92821b567da2c1e1a77741162b8929be4b5c5ed1b8d",
+      "last_updated": "2026-10-24T22:51:02.758310"
     },
     "help/grok-bot/routines.md": {
       "original_url": "https://cursor.com/help/grok-bot/routines",
       "original_md_url": "https://cursor.com/help/grok-bot/routines.md",
-      "hash": "c42d0202dec1cb463a9d6a83cb947fb65a2ffdadf3d0eea02e9a45886b2e1ead",
-      "last_updated": "2026-10-23T23:44:40.912257"
+      "hash": "69adc7adab752e31bb5ed0515d7c13756f3543777e4d3e7b38500625a8fc5606",
+      "last_updated": "2026-10-24T22:51:02.758586"
     },
     "help/grok-bot/secrets.md": {
       "original_url": "https://cursor.com/help/grok-bot/secrets",
@@ -1125,8 +1143,8 @@
     "help/grok-bot/supergrok.md": {
       "original_url": "https://cursor.com/help/grok-bot/supergrok",
       "original_md_url": "https://cursor.com/help/grok-bot/supergrok.md",
-      "hash": "8a2181fd367d4b4c44f3d37eec994dbe75cbbe189730e560a82e68024d0bf0fd",
-      "last_updated": "2026-10-14T23:37:34.273432"
+      "hash": "d08c763074927dacb9fac3affc474a5c425cbbb598efd767f0c1960c50a43834",
+      "last_updated": "2026-10-24T22:51:02.758872"
     },
     "help/grok-bot/team-bots.md": {
       "original_url": "https://cursor.com/help/grok-bot/team-bots",
@@ -1137,8 +1155,8 @@
     "help/grok-bot/voice-chat.md": {
       "original_url": "https://cursor.com/help/grok-bot/voice-chat",
       "original_md_url": "https://cursor.com/help/grok-bot/voice-chat.md",
-      "hash": "cf53b9d87de49a0384254c8091049bb4fa0adbd9b3a49ec6307a40c80ef307ca",
-      "last_updated": "2026-10-19T02:50:53.687468"
+      "hash": "ddfc3c54e92321504c723a3a09ba9e0f49a2da874ed225b43dd6148c792673ba",
+      "last_updated": "2026-10-24T22:51:02.759143"
     },
     "help/grok-bot/x-chat.md": {
       "original_url": "https://cursor.com/help/grok-bot/x-chat",
@@ -1664,21 +1682,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-24T20:05:59.667683",
-    "fetch_duration_seconds": 2.938885,
-    "total_pages_discovered": 277,
-    "pages_fetched_successfully": 277,
+    "last_fetch_completed": "2026-10-24T22:51:02.763783",
+    "fetch_duration_seconds": 3.27202,
+    "total_pages_discovered": 280,
+    "pages_fetched_successfully": 280,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 277,
+    "total_files": 280,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-24T20:05:59.667699",
+  "last_updated": "2026-10-24T22:51:02.763795",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -58,7 +58,7 @@ Grok Bot usage draws from the seat's usage allowance. On legacy Teams plans, on-
 
 ## How does Grok Bot usage work?
 
-On The X Subscription, see [How does Grok Bot work on The X Subscription?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-work-on-the-x-subscription). On legacy Cursor plans and account links, paid Grok Bot access includes **Weekly usage**. That included grant resets weekly. When it runs out, extra Grok Bot usage can continue as **On-demand usage** if on-demand is enabled. That extra usage is billed through Cursor and counts toward the **On-demand monthly limit**. See [What do the plan and spending screens call usage?](https://cursor.com/help/grok-bot/plans.md#what-do-the-plan-and-spending-screens-call-usage) and [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot).
+On The X Subscription, see [How does Grok Bot work on The X Subscription?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-work-on-the-x-subscription). On legacy Cursor plans and account links, paid Grok Bot access includes weekly usage, shown as **Weekly usage limit**. That included grant resets weekly. When it runs out, extra Grok Bot usage can continue as **On-demand usage** if on-demand is enabled. That extra usage is billed through Cursor and counts toward the **On-demand monthly limit**. See [What do the plan and spending screens call usage?](https://cursor.com/help/grok-bot/plans.md#what-do-the-plan-and-spending-screens-call-usage) and [How does the on-demand monthly limit apply to Grok Bot?](https://cursor.com/help/grok-bot/plans.md#how-does-the-on-demand-monthly-limit-apply-to-grok-bot).
 
 Grok Bot usage is metered on your Cursor account, not on Grok or X. A SuperGrok or X Premium+ link grants Grok Bot usage on that same Cursor account while SuperGrok or X Premium+ stays active. It does not create a second meter on Grok or X, and it does not change your Cursor plan. If you also have a Cursor plan that includes Grok Bot, the two do not add together. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
@@ -113,13 +113,13 @@ You can also upgrade within Cursor plans. Moving from **Pro+** to **Ultra** rais
 
 Your Cursor subscription and your SuperGrok or X Premium+ subscription can both stay active and keep billing on their own. Buying one does not cancel the other. Only the usage grants do not combine.
 
-When **Weekly usage** runs out, keep going with [on-demand usage](https://cursor.com/help/account-and-billing/overages.md) if it is enabled on your Cursor account. On-demand is how you get more Grok Bot usage past the included grant. If you subscribed in the iOS or Android app, enable on-demand on the web. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md).
+When your **Weekly usage limit** runs out, keep going with [on-demand usage](https://cursor.com/help/account-and-billing/overages.md) if it is enabled on your Cursor account. On-demand is how you get more Grok Bot usage past the included grant. If you subscribed in the iOS or Android app, enable on-demand on the web. See [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md).
 
 ## What do the plan and spending screens call usage?
 
 Grok Bot Settings and the Cursor dashboard use different names for the same two pools.
 
-- **Weekly usage limit** on desktop (**Weekly usage** on the phone) is included usage. It resets weekly. If a SuperGrok plan funds it, a SuperGrok, SuperGrok Plus, or SuperGrok Heavy name in **Manage Plan** is the linked grant, not a second Cursor plan.
+- **Weekly usage limit** on desktop and the phone is included usage. It resets weekly. If a SuperGrok plan funds it, a SuperGrok, SuperGrok Plus, or SuperGrok Heavy name in **Manage Plan** is the linked grant, not a second Cursor plan.
 - **On-demand usage** in Grok Bot is extra usage after weekly usage runs out. The row says **Billed through Cursor**.
 - **On-demand monthly limit** in Grok Bot is the cap on that extra usage. On the web, the same cap is **Spending** and **Monthly Limit**.
 
@@ -129,15 +129,15 @@ Included weekly usage is not the monthly limit. Using up weekly usage does not s
 
 The grant follows the SuperGrok or X Premium+ plan on the linked account, but the Grok Bot screen can keep showing the old tier for a while.
 
-If you upgrade SuperGrok to SuperGrok Plus or SuperGrok Heavy after linking, keep using Grok Bot. Allow up to 24 hours for **Weekly usage** to move to the new tier. You do not need to link again, and you cannot unlink to force a refresh.
+If you upgrade SuperGrok to SuperGrok Plus or SuperGrok Heavy after linking, keep using Grok Bot. Allow up to 24 hours for the **Weekly usage limit** to move to the new tier. You do not need to link again, and you cannot unlink to force a refresh.
 
 A Cursor plan bought while you wait does not add to the link. Grok Bot uses whichever one grants more weekly usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
-If the old tier is still shown after 24 hours, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the Cursor account email, the Grok account email, and a screenshot of **Weekly usage**.
+If the old tier is still shown after 24 hours, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the Cursor account email, the Grok account email, and a screenshot of **Weekly usage limit**.
 
 ## How does the on-demand monthly limit apply to Grok Bot?
 
-Grok Bot draws from **Weekly usage** first. When that included grant runs out, extra Grok Bot usage continues on on-demand if it is enabled. That extra usage counts toward the **On-demand monthly limit** in Grok Bot, which is the same cap as **Monthly Limit** on the web.
+Grok Bot draws from your **Weekly usage limit** first. When that included grant runs out, extra Grok Bot usage continues on on-demand if it is enabled. That extra usage counts toward the **On-demand monthly limit** in Grok Bot, which is the same cap as **Monthly Limit** on the web.
 
 To turn it on or change it:
 

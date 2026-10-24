@@ -40,7 +40,7 @@ To hand work between Bots from a Slack channel, share a Team Bot and add it to S
 
 ## How do I rename a group chat or change what it is for?
 
-To rename it on desktop, right-click the group in the sidebar and choose **Rename chat**. You can also click the group's name at the top of the chat, then click the name in its details to edit it. On the phone, tap the group's name at the top of the chat, then tap **Edit name**.
+To rename it on desktop, right-click the group in the sidebar and choose **Rename chat**. You can also click the group's name at the top of the chat, then click the name in its details to edit it. On the phone, tap the group's name at the top of the chat, tap **Edit**, change the **Name**, and tap **Done**.
 
 To change what the group is for, tell the Bots in the group.
 

@@ -70,7 +70,7 @@ Often no. Chats are stored separately from the computer, so a computer problem d
 3. In the sidebar, open **Hidden Bots** on desktop or **Show Hidden Bots** on the phone. **Hide from sidebar** removes a Bot from the list only. Hidden Bots stay active and keep their history. To show one again, choose **Show in sidebar** on desktop or **Unhide** on the phone.
 4. Confirm you are in the same Cursor account, not a different login.
 
-A disk warning is not data loss. **Computer is low on disk space** or **Computer is critically low on disk space** means Disk Saver is auditing usage and will propose safe cleanup. Nothing is deleted without confirmation. **Disk Saver** is a Bot in the sidebar. Choose **Go to Disk Saver** to review what it proposes. Declining leaves those files in place. Cleanup applies only to computer files you confirm, not to chats.
+Low disk space is not data loss. When the computer is almost full, your Bot tells you once in chat, names the biggest files or folders with their sizes, and offers to delete them. Nothing is deleted unless you say yes, and saying no leaves those files in place. Cleanup applies only to computer files, not to chats.
 
 **Recover** and **Reset** are different. Both can lose very recent changes if the computer can't be reached to save them. Don't use either one to look for chats that seem missing. If they are still missing on every device after the checks above, [contact support](https://cursor.com/help/grok-bot/get-help.md). Include your account email, the Bot name, and a screenshot of the sidebar.
 

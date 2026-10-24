@@ -8,7 +8,7 @@ On desktop, right-click the Bot in the sidebar and choose **Rename Bot**. You ca
 
 You can also click the Bot's name at the top of the chat to open its details, then click the name to edit it. The label under the name works the same way. It shows **Add a label** when the Bot doesn't have one.
 
-On the phone, tap the Bot's name at the top of the chat to open its profile. Then tap **Edit name**. The phone calls the label **Title (optional)**.
+On the phone, tap the Bot's name at the top of the chat to open its profile. Tap **Edit**, change the **Name**, and tap **Done**. The phone calls the label **Title**.
 
 ## How do I change a Bot's picture?
 
@@ -24,7 +24,11 @@ On desktop:
 
 ![The Bot picture picker with Bot, Generate, and Upload tabs, character shapes, and colors](/docs-static/images/grok-bot/avatar-picker-light.png)
 
-On the phone, open the Bot's profile and tap its picture. Choose **Select from Gallery**, **Generate**, or **Remove Photo**.
+On the phone, open the Bot's profile, tap **Edit**, then tap the picture or **Avatar**. Choose a tab:
+
+- **Shape** changes the look of the Bot's character.
+- **Generate** makes a picture from a short description.
+- **Upload** uses your own image. Choose **Choose from Photos** or **Take Photo**, then crop it. Images can be up to 25 MB.
 
 ## How do I change what a Bot does?
 

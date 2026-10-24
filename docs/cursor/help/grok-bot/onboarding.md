@@ -12,7 +12,7 @@ Set up your first Grok Bot, give it a focused role, and start with a simple task
 
 ## How do I create another Bot?
 
-1. Choose **New chat** (the **+** button) at the top of the sidebar, then **Create new Bot**. Grok Bot adds a Bot named **New Bot** and opens its chat. To name it up front, type the name first, then choose **Create "Name" Bot**.
+1. Choose **New Bot** (the **+** button) at the top of the sidebar. If you use Grok Bot with a team, choose **Create a Bot** from the menu. Type a name, pick a shape and color if you like, and choose **Create**. Grok Bot opens the new Bot's chat.
 2. In your first message, tell the Bot what work it should do, which sources to use, and when to ask for your approval. Ask it to remember that for future work.
 3. To rename the Bot or add a label that describes its main job, click the Bot's name at the top of the chat, then click the name or the label.
 

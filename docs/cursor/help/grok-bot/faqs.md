@@ -109,13 +109,13 @@ They are usually not deleted. Fully quit and reopen. Check another device on the
 
 Wait and choose **Retry**. Then fully quit and reopen. Then **Update**, then **Recover**. Use **Reset** only last. Like **Recover**, it can lose very recent changes if the computer can't be reached to save them. See [Which should I try first?](https://cursor.com/help/grok-bot/computer-recovery.md#which-should-i-try-first).
 
-## What does the low disk space warning mean?
+## What happens when my Bot's computer runs low on disk space?
 
-**Computer is low on disk space** or **Computer is critically low on disk space** is about your Bots' cloud computer, not your laptop. Choose **Go to Disk Saver**. Disk Saver is a Bot that checks what is using space and suggests what to clean up. It asks before it deletes anything, and nothing is deleted unless you confirm. Your chats are not affected. See [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).
+This is about your Bots' cloud computer, not your laptop. When it's almost full, your Bot tells you once in chat, names the biggest files or folders with their sizes, and offers to delete them. Nothing is deleted unless you say yes. Your chats are not affected. See [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).
 
 ## Why did an approval expire before I saw it?
 
-Approvals from work that started without you, like a routine or a message from another Bot, expire after about 10 minutes. Approvals in a chat you are in wait for you. Turn on the Bot's **Notifications**, or choose **Always allow** for actions you trust. See [Why did an approval expire?](https://cursor.com/help/grok-bot/how-to.md#why-did-an-approval-expire)
+Approvals from work that started without you, like a routine or a message from another Bot, expire after about 30 minutes. Approvals in a chat you are in wait for you. Turn on the Bot's **Notifications**, or choose **Always allow** for actions you trust. See [Why did an approval expire?](https://cursor.com/help/grok-bot/how-to.md#why-did-an-approval-expire)
 
 ## Can I pick the model?
 

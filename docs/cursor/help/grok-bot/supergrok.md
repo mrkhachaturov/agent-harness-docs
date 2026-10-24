@@ -21,7 +21,7 @@ Linking is a **usage grant**, not a Cursor plan. It grants Grok Bot usage on the
 
 Cursor re-checks your SuperGrok or X Premium+ status at each renewal.
 
-Upgrading or downgrading SuperGrok after you have already linked can take up to 24 hours to show on **Weekly usage**. You do not need to link again. See [What if I upgrade SuperGrok after I already linked?](https://cursor.com/help/grok-bot/plans.md#what-if-i-upgrade-supergrok-after-i-already-linked).
+Upgrading or downgrading SuperGrok after you have already linked can take up to 24 hours to show on **Weekly usage limit**. You do not need to link again. See [What if I upgrade SuperGrok after I already linked?](https://cursor.com/help/grok-bot/plans.md#what-if-i-upgrade-supergrok-after-i-already-linked).
 
 The grant does not add together with a Cursor plan. Grok Bot uses whichever one grants more weekly usage. Legacy **Pro**, **SuperGrok**, and **X Premium+** are the same tier. **Pro+** and **SuperGrok Plus** are the same tier. **Ultra** and **SuperGrok Heavy** are the same tier. For example, if you are on **Pro** and link **SuperGrok Plus**, Grok Bot moves to the Plus tier. If you are on **Pro+**, linking **SuperGrok Plus** does not add usage. See [Do Cursor and SuperGrok plans stack?](https://cursor.com/help/grok-bot/plans.md#do-cursor-and-supergrok-plans-stack).
 
@@ -107,7 +107,7 @@ If linking didn't grant Grok Bot usage, applied to the wrong account, or your us
 | Linking fails partway through sign-in                                      | Open [cursor.com/bot/onboarding](https://cursor.com/bot/onboarding) and choose **Link Grok Account** again.                                                                                  |
 | Access applied to the wrong Cursor account                                 | A SuperGrok or X Premium+ link is permanent. Neither you nor support can unlink it or move it to a different Cursor account. Sign into Grok Bot with the Cursor account that holds the link. |
 | Usage didn't reset after linking                                           | Confirm your SuperGrok, SuperGrok Plus, SuperGrok Heavy, or X Premium+ subscription is active, then allow up to 24 hours after a successful link for usage to refresh.                       |
-| Still on the old SuperGrok tier after upgrading                            | Allow up to 24 hours for **Weekly usage** to move to the new tier. Do not link again.                                                                                                        |
+| Still on the old SuperGrok tier after upgrading                            | Allow up to 24 hours for the **Weekly usage limit** to move to the new tier. Do not link again.                                                                                              |
 | You have a Grok Business seat but still see the plan screen                | Sign out, then sign back in with **Sign in with Grok** using the Grok account that holds the seat. Check with your Grok Business admin that the seat is assigned to that account.            |
 | An error says the Grok account is already linked to another Cursor account | [Contact support](https://cursor.com/help/grok-bot/get-help.md) with your Cursor account email and the Grok account email.                                                                   |
 

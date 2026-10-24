@@ -43,7 +43,7 @@ On desktop, you can voice chat with a teammate's [Team Bot](https://cursor.com/h
 
 ## What happens if a voice chat drops?
 
-The call ends and Grok Bot shows **Voice chat failed**. The notice may say **The call ended unexpectedly.** or **The realtime connection failed.**
+Grok Bot tries to reconnect on its own first, so a short drop usually picks back up without you doing anything. If it can't reconnect, the call ends and Grok Bot shows **Voice chat failed**. The notice may say **Connection lost**, **No connection**, or **The call ended unexpectedly**.
 
 1. Choose **Dismiss**.
 2. Check your internet connection.
