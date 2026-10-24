@@ -561,8 +561,8 @@
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
       "original_md_url": "https://cursor.com/docs/enterprise/security-hardening.md",
-      "hash": "8ce85ec63b14e85eaff53daff77d689e8ae711f0628fd74ed87233c01a1f83cf",
-      "last_updated": "2026-10-18T17:45:46.928895"
+      "hash": "21f11bde8904b52189e7b0e4e1834cc4931cd2a65af55f8ab05cd7d35fe213ff",
+      "last_updated": "2026-10-24T07:50:52.737615"
     },
     "enterprise/tenancy-restriction.md": {
       "original_url": "https://cursor.com/docs/enterprise/tenancy-restriction",
@@ -1664,8 +1664,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-24T02:54:19.708650",
-    "fetch_duration_seconds": 3.048029,
+    "last_fetch_completed": "2026-10-24T07:50:52.741777",
+    "fetch_duration_seconds": 3.078512,
     "total_pages_discovered": 277,
     "pages_fetched_successfully": 277,
     "pages_failed": 0,
@@ -1678,7 +1678,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-24T02:54:19.708664",
+  "last_updated": "2026-10-24T07:50:52.741789",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
