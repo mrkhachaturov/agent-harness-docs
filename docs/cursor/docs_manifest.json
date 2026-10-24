@@ -411,8 +411,8 @@
     "cloud-agent/self-hosted/computer-use.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/computer-use",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/computer-use.md",
-      "hash": "a9ceb020282d7c61ad99ccd13de0c8831dd57499ac32af31b5f4afc9e9e186d0",
-      "last_updated": "2026-09-02T22:58:54.433908"
+      "hash": "114ff327c2cdf952369784f791c4eb19edeecbdb47e925772ac2d77583fb2981",
+      "last_updated": "2026-10-24T17:46:55.255840"
     },
     "cloud-agent/self-hosted/integrations.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/integrations",
@@ -1113,8 +1113,8 @@
     "help/grok-bot/secrets.md": {
       "original_url": "https://cursor.com/help/grok-bot/secrets",
       "original_md_url": "https://cursor.com/help/grok-bot/secrets.md",
-      "hash": "f882d658b9af6ed632302636f24eb03689820274289fc235adfb20e11f1b981e",
-      "last_updated": "2026-10-23T23:44:40.912533"
+      "hash": "577ecafd30906349a9564ff478cb6a357d2e6fa5bd38cf231fc816517d0496a4",
+      "last_updated": "2026-10-24T17:46:55.257546"
     },
     "help/grok-bot/sign-in.md": {
       "original_url": "https://cursor.com/help/grok-bot/sign-in",
@@ -1587,8 +1587,8 @@
     "origin/settings.md": {
       "original_url": "https://cursor.com/docs/origin/settings",
       "original_md_url": "https://cursor.com/docs/origin/settings.md",
-      "hash": "01aadd249d73399c0c445f40c2b18c8eaa1d11f68beb2f1f12ed40b992fc642b",
-      "last_updated": "2026-10-23T18:52:06.340093"
+      "hash": "7aacc87ce62c8d76fb83c4f4eecdda5d2091388bacbfb22a337563b63cff16c1",
+      "last_updated": "2026-10-24T17:46:55.258730"
     },
     "plugins.md": {
       "original_url": "https://cursor.com/docs/plugins",
@@ -1605,8 +1605,8 @@
     "release-notes.md": {
       "original_url": "https://cursor.com/docs/release-notes",
       "original_md_url": "https://cursor.com/docs/release-notes.md",
-      "hash": "fd4d830aa5b02cd79d4c3ac485eb01d31ebb7436f152e27496e7cb02a23d82cd",
-      "last_updated": "2026-10-22T19:02:24.301095"
+      "hash": "6d5e6f5ae17e36c948bec26cd75c0047c33c3694052aa615636447e799a55730",
+      "last_updated": "2026-10-24T17:46:55.260541"
     },
     "release-notes/sdk.md": {
       "original_url": "https://cursor.com/docs/release-notes/sdk",
@@ -1664,8 +1664,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-24T13:04:34.865416",
-    "fetch_duration_seconds": 3.010248,
+    "last_fetch_completed": "2026-10-24T17:46:55.264529",
+    "fetch_duration_seconds": 2.283472,
     "total_pages_discovered": 277,
     "pages_fetched_successfully": 277,
     "pages_failed": 0,
@@ -1678,7 +1678,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-24T13:04:34.865435",
+  "last_updated": "2026-10-24T17:46:55.264543",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

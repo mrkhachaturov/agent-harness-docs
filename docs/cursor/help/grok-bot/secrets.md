@@ -4,13 +4,15 @@ Keep passwords, cards, API keys, and other credentials out of chat and ordinary 
 
 ## What is Vault?
 
-Vault keeps your logins, cards, and contact info so your Bot can sign in to sites and check out for you without seeing the secret values. Find it in **Settings** > **Vault** on desktop and on the phone. You can add, edit, or remove anything there.
+Vault keeps your logins, cards, and contact info so your Bot can sign in to sites and check out for you without seeing the secret values. Find it in **Settings** > **Vault** on desktop and on the phone. You can add, edit, or remove anything there. Vault needs Grok Bot 0.75.2 or later.
 
 - **Logins**: a website, a username or email, and a password. Your Bot uses a saved login to sign in on that website.
 - **Cards**: the number, expiry, security code, name on card, and billing address.
 - **Contact info**: names, addresses, phone numbers, and emails for shipping and billing.
 
 Your Bot never sees a saved password, card number, or security code. It can see your contact info and which logins you saved, so it can pick the right entry and type contact details in for you.
+
+Vault covers your whole account. Everything you save is available to every Bot on your account, and you can't limit an item to one Bot.
 
 Vault isn't supported on [Team Bots](https://cursor.com/help/grok-bot/team-bots.md). For a Team Bot, add keys under **Secrets** instead. See [How should I add an API key or secret?](https://cursor.com/help/grok-bot/secrets.md#how-should-i-add-an-api-key-or-secret)
 
@@ -46,10 +48,19 @@ LastPass exports bring cards along too. The exported CSV holds your passwords un
 
 - **Signing in**: your Bot uses a saved login first, then a connected password manager such as [1Password](https://cursor.com/help/grok-bot/connect-apps.md#how-do-i-connect-1password). If neither has the login, it asks you with a Secure Form.
 - **New accounts**: if you let your Bot pick the password when it signs up for a site, Vault generates the password and saves the login. Your Bot never sees it.
-- **Checkout**: saved cards fill in at checkout, and your Bot asks before it uses one. Contact info fills in shipping and billing details.
+- **Checkout**: saved cards fill in at checkout, and contact info fills in shipping and billing details. See [Will my Bot ask before it uses a saved card?](https://cursor.com/help/grok-bot/secrets.md#will-my-bot-ask-before-it-uses-a-saved-card)
 - **Details you share in chat**: when you give your Bot a name, address, phone number, or email, it saves it as contact info once the task is done and tells you what it saved. Tell it if you don't want something kept.
 
 Your Bot can change contact info, and an entry's nickname and hints, when you ask. Passwords, usernames, websites, card numbers, and security codes change only in **Settings** > **Vault**. Logins and cards are removed only there too.
+
+## Will my Bot ask before it uses a saved card?
+
+Not necessarily. Saving a card in Vault lets your Bots fill it in at checkout, and there's no setting that requires your approval each time a saved card is used.
+
+If you want to approve each payment yourself, don't save the card:
+
+- When your Bot asks for a card with a Secure Form at checkout, leave **Securely save to Bot's vault** unchecked. The card is used only in that chat. A form without that checkbox saves straight to Vault, so don't submit it.
+- If you already saved a card, open **Settings** > **Vault**, select it, and choose **Remove**. After that, Grok Bot can no longer pay with it.
 
 ## How do I change or remove a Vault item?
 
