@@ -21,8 +21,8 @@
     "account/organizations/organization-admin-api.md": {
       "original_url": "https://cursor.com/docs/account/organizations/organization-admin-api",
       "original_md_url": "https://cursor.com/docs/account/organizations/organization-admin-api.md",
-      "hash": "d1e3481ce8b3eae0323ce05cad426f5f822b8fb46114ca4dfe036867ae4de741",
-      "last_updated": "2026-10-23T23:44:40.905131"
+      "hash": "76d23a44b9978c946b664aa3a0237f54a42f699cc88aa5a53f5a6b4250c74d51",
+      "last_updated": "2026-10-26T22:12:59.929111"
     },
     "account/pricing/legacy-cursor-plans.md": {
       "original_url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans",
@@ -69,8 +69,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "cd39da95d0fd20fb82004a9a210f3ccf4a779b579d76e2e1f0713e2f31914efb",
-      "last_updated": "2026-10-21T14:19:42.749863"
+      "hash": "0b487e496e9d5ef6789d56a9cfbf189119463b389664d3a9a9aeca9c941b9027",
+      "last_updated": "2026-10-26T22:12:59.929771"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -453,8 +453,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "4b9872b17788dbf015e3b641317f9e42543959b8a52f474e52c1989d12afaedc",
-      "last_updated": "2026-10-23T23:44:40.906927"
+      "hash": "14acbc49aac68b3cbd4c59abe22beab1c3dedce9b85cfdc72b34e0f09ef3eea1",
+      "last_updated": "2026-10-26T22:12:59.931081"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -747,14 +747,14 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "aeed578fd82584a9b075414b2d11f0f697a437eedcfc09ca54d328c45d707e79",
-      "last_updated": "2026-10-23T18:52:06.337856"
+      "hash": "c8cd5bd3dcd936e3d45087078fa01fc4ba4079fa85d9d96ab4809d923b5d8297",
+      "last_updated": "2026-10-26T22:12:59.932633"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
       "original_md_url": "https://cursor.com/docs/enterprise/deployment-patterns.md",
-      "hash": "474e1ca4de2c9b398746da029394cd6498e6b1ddbd3a30598d4df085b91caaaf",
-      "last_updated": "2026-09-26T03:02:34.091401"
+      "hash": "c7baef67ae451020330bf81362631dfc5200c438dd0f590e0379f4fc682c01f3",
+      "last_updated": "2026-10-26T22:12:59.932949"
     },
     "enterprise/endpoint-security.md": {
       "original_url": "https://cursor.com/docs/enterprise/endpoint-security",
@@ -789,14 +789,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "0616175499e1b640ff880c037ae44eddee48719dd183e8d3bd5879bd54b4c08c",
-      "last_updated": "2026-10-13T20:30:55.473544"
+      "hash": "1fdab771f5ac7e1a113e24730f3fa07c47cd9382f339535d9abe32bce57cf861",
+      "last_updated": "2026-10-26T22:12:59.933322"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "e93f490e3cd7a5cf951a9f680edff0167f19cd98180f3e62bbb7b7981cf987dd",
-      "last_updated": "2026-10-14T19:09:30.108150"
+      "hash": "96ffeb44a54199031ee9e48e5bbb44b4dff941ba04ab32ce22fc721524ac4eaa",
+      "last_updated": "2026-10-26T22:12:59.933675"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1557,8 +1557,14 @@
     "help/troubleshooting/install-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/install-issues",
       "original_md_url": "https://cursor.com/help/troubleshooting/install-issues.md",
-      "hash": "67378cef13fd86d7160e1d3a79b9b6a9e3e5fb34590922b2eab39a6cff36f4f9",
-      "last_updated": "2026-09-30T17:26:49.616154"
+      "hash": "a63e3c974386039299c0db0f290a8e7d1797ba202966962fa7f0dc7c2d988d8f",
+      "last_updated": "2026-10-26T22:12:59.935088"
+    },
+    "help/troubleshooting/minimum-version.md": {
+      "original_url": "https://cursor.com/help/troubleshooting/minimum-version",
+      "original_md_url": "https://cursor.com/help/troubleshooting/minimum-version.md",
+      "hash": "052ece867e20e97cdd8f9f65744cbd6ca2928618cfaa56943b3260eea8f7c908",
+      "last_updated": "2026-10-26T22:12:59.935285"
     },
     "help/troubleshooting/network.md": {
       "original_url": "https://cursor.com/help/troubleshooting/network",
@@ -1599,8 +1605,8 @@
     "index.md": {
       "original_url": "https://cursor.com/docs",
       "original_md_url": "https://cursor.com/docs.md",
-      "hash": "62109230bb5e9a8c0ab7abf8bed91fe2067bea685055eae4851901b92c6e27f4",
-      "last_updated": "2026-10-15T23:32:18.723252"
+      "hash": "b0589b5b5c7bd1e001777c0e64f03192b3c730ed5a56338d430f5bd9cb5b135d",
+      "last_updated": "2026-10-26T22:12:59.935681"
     },
     "integrations/azure-devops.md": {
       "original_url": "https://cursor.com/docs/integrations/azure-devops",
@@ -1683,8 +1689,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "9fe053861f5d67489e950dac72093e7fafa42de6d3282d88636d588cf2a73b5a",
-      "last_updated": "2026-10-21T14:19:42.756770"
+      "hash": "e3f6aee695446630790f73553110b5ff11d605a66a39d42ffc5e93f0489b5ce2",
+      "last_updated": "2026-10-26T22:12:59.936221"
     },
     "models/claude-fable-5-1.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5-1",
@@ -1946,21 +1952,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-26T15:44:40.569275",
-    "fetch_duration_seconds": 2.571091,
-    "total_pages_discovered": 324,
-    "pages_fetched_successfully": 324,
+    "last_fetch_completed": "2026-10-26T22:12:59.941600",
+    "fetch_duration_seconds": 3.068672,
+    "total_pages_discovered": 325,
+    "pages_fetched_successfully": 325,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 324,
+    "total_files": 325,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-26T15:44:40.569288",
+  "last_updated": "2026-10-26T22:12:59.941612",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

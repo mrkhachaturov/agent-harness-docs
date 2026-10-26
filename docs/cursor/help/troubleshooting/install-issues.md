@@ -73,6 +73,7 @@ To uninstall an extension, use the classic editor window's Extensions sidebar. O
 ## Related
 
 - [Download and install](https://cursor.com/help/getting-started/install.md)
+- [Minimum version policy](https://cursor.com/help/troubleshooting/minimum-version.md)
 - [Reporting a bug](https://cursor.com/help/troubleshooting/reporting-bugs.md)
 
 

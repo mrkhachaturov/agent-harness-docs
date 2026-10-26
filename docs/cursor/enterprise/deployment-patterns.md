@@ -489,6 +489,8 @@ You can estimate when a release will age out by combining this guidance with our
 
 When managing Cursor deployments for your organization, we recommend updating Cursor regularly (for example, via MDM) so users stay on supported versions.
 
+For what users see when their version ages out and how they update, see [Minimum version policy](https://cursor.com/help/troubleshooting/minimum-version.md).
+
 ## Troubleshooting
 
 - Proxy configuration problems (see [Network Configuration](https://cursor.com/docs/enterprise/network-configuration.md))
