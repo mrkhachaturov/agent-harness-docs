@@ -12,6 +12,12 @@ Cursor uses HTTP/2 for streaming responses. Some corporate proxies (like Zscaler
 
 Go to **Cursor Settings** > **Network** and set **HTTP Compatibility Mode** to **HTTP/1.1**, then restart Cursor.
 
+## Why do Cloud Agents stay on "Loading…" on cursor.com but open in the desktop app?
+
+A secure web gateway on your network (Cloudflare WARP, Zscaler, Netskope) is probably scanning `cursor.com` responses as downloads and holding the agent stream until it closes. The desktop app uses a different connection, so it is unaffected.
+
+Confirm it: turn the gateway client off, or open `cursor.com/agents` from a network without it. If the page loads right away, ask your IT team to exclude `cursor.com` and `*.cursor.com` from TLS inspection and file scanning. The exact gateway settings are in [Network configuration](https://cursor.com/docs/enterprise/network-configuration.md#gateways-that-scan-downloads).
+
 ## Which domains does Cursor need access to?
 
 If your firewall blocks outbound connections, allowlist these domains:
@@ -20,6 +26,7 @@ If your firewall blocks outbound connections, allowlist these domains:
 - `*.cursor-cdn.com`
 - `*.cursorapi.com` (includes `marketplace.cursorapi.com`)
 - `*.cursorvm.com` and `*.*.cursorvm.com` (the Grok Bot hosted computer; both patterns are required)
+- `cursor.com` and `*.cursor.com` (web dashboard, Cloud Agents web UI, and code review)
 
 Sign-in also needs the hosts in [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md).
 

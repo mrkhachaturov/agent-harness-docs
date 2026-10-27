@@ -783,20 +783,20 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "224962f06a7086d214f1eb7f660a98c005f8325e8cb37272f6e0799f100135db",
-      "last_updated": "2026-10-18T17:45:46.928411"
+      "hash": "080753217322fe166384e51fc0fb297cff71f14da6629da95690be4bb47485e7",
+      "last_updated": "2026-10-27T03:19:02.920052"
     },
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "1fdab771f5ac7e1a113e24730f3fa07c47cd9382f339535d9abe32bce57cf861",
-      "last_updated": "2026-10-26T22:12:59.933322"
+      "hash": "fa790f02dc89565e96d6ab46560aa2e73657aaf57675b1fa68beafe89faafa4d",
+      "last_updated": "2026-10-27T03:19:02.920381"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "96ffeb44a54199031ee9e48e5bbb44b4dff941ba04ab32ce22fc721524ac4eaa",
-      "last_updated": "2026-10-26T22:12:59.933675"
+      "hash": "6614804e4db5b90b6bae7a39f0e0fdfaee3dbe7e03a36a11380bf07e85a810b9",
+      "last_updated": "2026-10-27T03:19:02.920836"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1569,8 +1569,8 @@
     "help/troubleshooting/network.md": {
       "original_url": "https://cursor.com/help/troubleshooting/network",
       "original_md_url": "https://cursor.com/help/troubleshooting/network.md",
-      "hash": "356d4c0042a1ad2c339005314b46cb826f5f1c73561b16649b6e8c37a898ab62",
-      "last_updated": "2026-10-02T21:44:31.671567"
+      "hash": "e678cc35eee71d90bc764c8b537273281cf0a41ff9a4f550571ab48c1e3f488b",
+      "last_updated": "2026-10-27T03:19:02.922306"
     },
     "help/troubleshooting/performance.md": {
       "original_url": "https://cursor.com/help/troubleshooting/performance",
@@ -1952,8 +1952,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-26T22:12:59.941600",
-    "fetch_duration_seconds": 3.068672,
+    "last_fetch_completed": "2026-10-27T03:19:02.928168",
+    "fetch_duration_seconds": 2.38376,
     "total_pages_discovered": 325,
     "pages_fetched_successfully": 325,
     "pages_failed": 0,
@@ -1966,7 +1966,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-26T22:12:59.941612",
+  "last_updated": "2026-10-27T03:19:02.928181",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
