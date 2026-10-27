@@ -34,7 +34,7 @@ On the phone, open the Bot's profile, tap **Edit**, then tap the picture or **Av
 
 Tell the Bot in chat. For a lasting rule, ask it to remember. For example: "From now on, ask before sending any email." The Bot keeps lasting rules in its memory. Put one-time requests in a normal message.
 
-A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) you own or manage still has a description. Edit it in the Bot's details, under **About**.
+A [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) you own or manage still has a description. Edit it in the Bot's details, under **About**.
 
 For what to tell a new Bot, see [Onboarding](https://cursor.com/help/grok-bot/onboarding.md) and [Edit a Bot](https://cursor.com/docs/grok-bot/work.md#edit-a-bot).
 

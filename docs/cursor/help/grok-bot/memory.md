@@ -63,14 +63,12 @@ To delete everything, see [Delete your Grok Bot account](https://cursor.com/help
 
 A personal Bot's memory is yours. Only you can change it.
 
-A Team Bot can save things it learns for the whole team, and it tells you when it does. It doesn't save anything about you personally for the team. What it remembers about working with you stays between you and the Bot. A teammate's Team Bot doesn't get the facts your own Bots share about you.
-
-When you turn a Bot into a Team Bot, you choose which memories the team copy gets with **Share with team** or **Keep private**. See [Team Bots](https://cursor.com/help/grok-bot/team-bots.md).
+A shared Bot can save things it learns for the whole team, and it tells you when it does. It doesn't save anything about you personally for the team. What it remembers about working with you stays between you and the Bot. A teammate's shared Bot doesn't get the facts your own Bots share about you. See [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md).
 
 ## Related
 
 - [Change a Bot's name, picture, and what it does](https://cursor.com/help/grok-bot/edit-bot.md)
-- [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
+- [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md)
 - [Group chats and Bot-to-Bot messages](https://cursor.com/help/grok-bot/group-chats.md)
 - [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md)
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)

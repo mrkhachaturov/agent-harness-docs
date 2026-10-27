@@ -56,7 +56,7 @@ On Self-Hosted Machines, hook support matches managed Cloud Agents with a few di
 
 ## Can Cloud Agents fix CI failures?
 
-Yes. Cloud Agents automatically try to fix GitHub Actions failures on PRs they create. They ignore checks that are also failing on the base branch. This is currently available on Teams plans.
+Yes. Cloud Agents automatically try to fix GitHub Actions failures on PRs they create. They ignore checks that are also failing on the base branch. This is available on Teams and Enterprise plans.
 
 To disable this on a specific PR, comment `@cursor autofix off`. To re-enable it, comment `@cursor autofix on`. You can also disable it globally from [Cursor Dashboard > Cloud Agents > My Settings](https://cursor.com/dashboard/cloud-agents).
 

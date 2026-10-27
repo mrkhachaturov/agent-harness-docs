@@ -84,7 +84,7 @@ The share menu says why when an option isn't available.
 
 ## Related
 
-- [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
+- [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)

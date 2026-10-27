@@ -39,7 +39,7 @@ On the phone, stop dictation before you start a voice chat.
 
 No. Voice chat works with one Bot at a time. Open that Bot's own chat to start a call.
 
-On desktop, you can voice chat with a teammate's [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) from your own chat with it.
+On desktop, you can voice chat with a teammate's [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) from your own chat with it.
 
 ## What happens if a voice chat drops?
 

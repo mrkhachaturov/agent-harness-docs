@@ -79,7 +79,7 @@ Yes. When your Bot hands work to a task, that task can create images and videos 
 
 - [Pages](https://cursor.com/help/grok-bot/pages.md)
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
-- [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
+- [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md)
 - [Plans and billing](https://cursor.com/help/grok-bot/plans.md)
 - [Get help](https://cursor.com/help/grok-bot/get-help.md)
 

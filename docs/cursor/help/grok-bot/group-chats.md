@@ -1,6 +1,6 @@
 # Group chats and Bot-to-Bot messages
 
-A group chat puts several of your Bots in one conversation. You can also add a teammate's published [Team Bot](https://cursor.com/help/grok-bot/team-bots.md), but not alongside Bots that run on your own computer. To start one, see [Group chats](https://cursor.com/docs/grok-bot/work.md#group-chats). This page covers what to do once the group is running.
+A group chat puts several of your Bots in one conversation. You can also add a [Bot a teammate shared with you](https://cursor.com/help/grok-bot/shared-bots.md), but not alongside Bots that run on your own computer. To start one, see [Group chats](https://cursor.com/docs/grok-bot/work.md#group-chats). This page covers what to do once the group is running.
 
 ## Where do Bots reply in a group chat?
 
@@ -28,15 +28,15 @@ Every Bot reply counts toward your usage, including replies in a group and messa
 
 ## Can a Bot message other Bots from Slack?
 
-A Bot can hand work to other Bots only when it's acting for one person on that turn. Where you talk to it, and whether it's a personal Bot or a [Team Bot](https://cursor.com/help/grok-bot/team-bots.md), decide this:
+A Bot can hand work to other Bots only when it's acting for one person on that turn. Where you talk to it, and whether it's a personal Bot or a [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md), decide this:
 
 | Bot          | Where you ask                         | Can it message other Bots?     | Acting for                    | Where the reply lands         |
 | ------------ | ------------------------------------- | ------------------------------ | ----------------------------- | ----------------------------- |
 | Personal Bot | The app, or your own Slack DM with it | Yes                            | You                           | The app chat, not Slack       |
 | Personal Bot | A Slack channel thread                | No                             | Nobody, the thread is shared  | The Bot says it can't do that |
-| Team Bot     | A Slack channel thread or Slack DM    | Yes, to that person's own Bots | The teammate who mentioned it | The same Slack thread         |
+| Shared Bot   | A Slack channel thread or Slack DM    | Yes, to that person's own Bots | The teammate who mentioned it | The same Slack thread         |
 
-To hand work between Bots from a Slack channel, share a Team Bot and add it to Slack. A Team Bot has its own Slack app and handle, and anyone in the channel can give it work. See [How do I add a Team Bot to Slack?](https://cursor.com/help/grok-bot/team-bots.md#how-do-i-add-a-team-bot-to-slack)
+To hand work between Bots from a Slack channel, share a Bot and add it to Slack. A shared Bot has its own Slack app and handle, and anyone in the channel can give it work. See [How do I add a shared Bot to Slack?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-i-add-a-shared-bot-to-slack)
 
 ## How do I rename a group chat or change what it is for?
 

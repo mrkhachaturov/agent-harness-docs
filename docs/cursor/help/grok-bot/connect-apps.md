@@ -77,7 +77,7 @@ The X plugin needs X API credits on your X developer account. See [What if the X
 
 No. Gmail connects one mailbox at a time. To use a different Gmail mailbox, disconnect the current one and authorize the other. You cannot keep a personal mailbox and a work mailbox connected to Gmail at the same time.
 
-A connected app is available to every bot on that Grok Bot account. Disconnect Gmail if a bot should not use that mailbox. A teammate's [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) asks before it uses your accounts.
+A connected app is available to every bot on that Grok Bot account. Disconnect Gmail if a bot should not use that mailbox. A teammate's [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) asks before it uses your accounts.
 
 Some other apps, like Notion, can connect a second account. See [How do I add a second account for the same app?](https://cursor.com/help/grok-bot/how-to.md#how-do-i-add-a-second-account-for-the-same-app)
 

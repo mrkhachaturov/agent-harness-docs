@@ -38,7 +38,7 @@ You can have one address. You can't rename it or delete it, so choose the name c
 
 The address belongs to you, not to one Bot. All of your Bots can use it in your own chats with them, and in routines you set up.
 
-Bots can't use your address in Slack threads or in chats where someone else is talking to the Bot. A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) doesn't have a shared team address.
+Bots can't use your address in Slack threads or in chats where someone else is talking to the Bot. A [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) doesn't have a team address.
 
 ## Who can email my Bot, and where do I see the mail?
 
@@ -113,7 +113,7 @@ If none of these match, [contact support](https://cursor.com/help/grok-bot/get-h
 
 - [Routines](https://cursor.com/help/grok-bot/routines.md)
 - [Connect apps](https://cursor.com/help/grok-bot/connect-apps.md)
-- [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
+- [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md)
 - [Grok Bot for Teams and Enterprise](https://cursor.com/docs/grok-bot/teams.md)
 
 

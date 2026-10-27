@@ -14,7 +14,7 @@ Your Bot never sees a saved password, card number, or security code. It can see 
 
 Vault covers your whole account. Everything you save is available to every Bot on your account, and you can't limit an item to one Bot.
 
-Vault isn't supported on [Team Bots](https://cursor.com/help/grok-bot/team-bots.md). For a Team Bot, add keys under **Secrets** instead. See [How should I add an API key or secret?](https://cursor.com/help/grok-bot/secrets.md#how-should-i-add-an-api-key-or-secret)
+Vault isn't supported on [shared Bots](https://cursor.com/help/grok-bot/shared-bots.md). For a shared Bot, add keys under **Secrets** instead. See [How should I add an API key or secret?](https://cursor.com/help/grok-bot/secrets.md#how-should-i-add-an-api-key-or-secret)
 
 ## How do I add a login, card, or contact info?
 
@@ -72,11 +72,11 @@ To change a card's number, remove the card and add it again. On the phone, saved
 
 For an API key or other secret that isn't a login or card, use the **secure secret card** when a Bot asks for one. The field is masked. Choose **Save securely**. The card then says **Saved** and **Saved securely and kept private**. The value is not written into the chat.
 
-On a [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) you own or manage, you can also add a secret from the Bot's details. Open **Secrets**, choose **Add secret**, enter an environment variable name, a short description, and the value, then choose **Save secret**. The description is visible to the Bot. The value is not.
+On a [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) you own or manage, you can also add a secret from the Bot's details. Open **Secrets**, choose **Add secret**, enter an environment variable name, a short description, and the value, then choose **Save secret**. The description is visible to the Bot. The value is not.
 
 Don't paste secrets into chat, Shell, or ordinary files. Don't type them into a demonstration when you use **Teach a task**.
 
-Secrets you save are yours. On a Team Bot you own or manage, secrets are used in every teammate's chat, so only add keys you're happy for everyone who can chat with the Bot to use. A credential your company's setup scripts need, such as a license key for a tool installed on every team computer, is stored by a team admin as a [Team Secret](https://cursor.com/docs/grok-bot/teams.md#team-secrets) on the Enterprise dashboard instead. Those never reach your Bots directly.
+Secrets you save are yours. On a shared Bot you own or manage, secrets are used in every teammate's chat, so only add keys you're happy for everyone who can chat with the Bot to use. A credential your company's setup scripts need, such as a license key for a tool installed on every team computer, is stored by a team admin as a [Team Secret](https://cursor.com/docs/grok-bot/teams.md#team-secrets) on the Enterprise dashboard instead. Those never reach your Bots directly.
 
 ## Why can't I see the secret value?
 
@@ -84,20 +84,20 @@ That is expected. Saved values are write-only.
 
 - In **Settings** > **Vault**, saved passwords stay hidden, and cards show only their last four digits.
 - The secure secret card does not show the value after **Saved**. The footer says **Stored securely, never shown to your Bot**.
-- On a Team Bot, **Secrets** lists the name and description only. It never shows the value again, including in Shell.
+- On a shared Bot, **Secrets** lists the name and description only. It never shows the value again, including in Shell.
 - To change a value there, choose **Replace**, paste the new value, and choose **Replace value**. You cannot read the old value back.
 
 If a page asked for the secret, a filled card says **Filled into the page. Secret values were never shown to your Bot.** If it says **Could not fill into the page**, the page may have moved. The value was still not shown to the Bot. Submit a new card if the Bot asks again.
 
-If save fails, the form says **The secret was not saved. Try again.** If a Team Bot's **Secrets** list says **Something went wrong. Try again.**, choose **Try Again**. **No secrets yet** means that Bot has no saved names, not that a value is hidden on the card.
+If save fails, the form says **The secret was not saved. Try again.** If a shared Bot's **Secrets** list says **Something went wrong. Try again.**, choose **Try Again**. **No secrets yet** means that Bot has no saved names, not that a value is hidden on the card.
 
 ## Did Update delete my secrets?
 
 **Recover**, **Reset**, and computer updates remove installed apps and packages. A secret you typed into a file, a shell profile, or an installed tool on the computer can disappear with that. That is separate from secrets you saved with the secure card, under **Secrets**, or in **Vault**.
 
-Shell not printing a secret does not mean it was wiped. On a Team Bot, if the name is still listed under **Secrets**, the value is still stored. See [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md) for what Update, Recover, and Reset keep.
+Shell not printing a secret does not mean it was wiped. On a shared Bot, if the name is still listed under **Secrets**, the value is still stored. See [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md) for what Update, Recover, and Reset keep.
 
-If a Team Bot's secret name is gone and you did not choose **Remove**:
+If a shared Bot's secret name is gone and you did not choose **Remove**:
 
 1. Fully quit Grok Bot and reopen it. On Mac, choose **Quit** from the menu bar, not just close the window.
 2. Open the same Bot on another device signed into the same Cursor account.

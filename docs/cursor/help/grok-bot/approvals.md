@@ -93,9 +93,9 @@ On desktop, open **Settings** > **General** and turn off the **Auto-review** swi
 
 With Auto-review off, the Bot runs actions without checking them first. Your Custom Rules are hidden and not used, but they're kept. Turn Auto-review back on to use them again.
 
-## How do approvals work on Team Bots and group chats?
+## How do approvals work on shared Bots and group chats?
 
-On a Team Bot, each teammate answers cards for their own requests in their own chat with the Bot. In a Slack thread, the card has **Allow once**, **Deny**, and **View details**, and only the person who asked can answer. See [Team Bots](https://cursor.com/help/grok-bot/team-bots.md).
+On a shared Bot, each teammate answers cards for their own requests in their own chat with the Bot. In a Slack thread, the card has **Allow once**, **Deny**, and **View details**, and only the person who asked can answer. See [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md).
 
 In a group chat, only the person whose message the Bot is answering can approve. Everyone else sees who the card is waiting on. Group chat cards don't offer **Always allow**.
 
@@ -108,7 +108,7 @@ An approval card asks whether the Bot may take an action. Two other cards look s
 
 ## Related
 
-- [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
+- [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md)
 - [Group chats and Bot-to-Bot messages](https://cursor.com/help/grok-bot/group-chats.md)
 - [Give your Bot an email address](https://cursor.com/help/grok-bot/agent-email.md)
 - [Grok Bot How Tos](https://cursor.com/help/grok-bot/how-to.md)
