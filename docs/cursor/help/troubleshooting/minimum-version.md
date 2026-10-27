@@ -67,6 +67,10 @@ Your version is older than the minimum allowed version, which usually happens ab
 
 The warning comes back each time Cursor starts and after agent requests. Once your version reaches the minimum allowed version, agent requests fail with an "Update Required" error instead. Update any time before or after that point to clear it.
 
+### Why do I still see the update message after updating?
+
+The message is likely left over from a chat you had before updating. Dismiss it and send a new chat.
+
 ### What if my IT team controls Cursor updates?
 
 Contact your IT admin and ask them to deploy the latest version. Admins can push it through MDM and manage automatic updates with the `UpdateMode` policy. See [How can admins keep their team on a supported Cursor version?](https://cursor.com/help/troubleshooting/minimum-version.md#how-can-admins-keep-their-team-on-a-supported-cursor-version)
