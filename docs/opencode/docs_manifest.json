@@ -200,8 +200,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-27T03:19:10.609808",
-    "fetch_duration_seconds": 7.541786,
+    "last_fetch_completed": "2026-10-27T11:26:22.781448",
+    "fetch_duration_seconds": 5.913621,
     "total_pages_discovered": 33,
     "pages_fetched_successfully": 33,
     "pages_failed": 0,
@@ -212,7 +212,7 @@
     "total_files": 33,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-27T03:19:10.609830",
+  "last_updated": "2026-10-27T11:26:22.781469",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
