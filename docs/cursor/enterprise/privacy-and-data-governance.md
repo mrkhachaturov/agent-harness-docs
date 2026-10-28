@@ -109,6 +109,7 @@ When US-only data residency is enabled for a team, the following stay on US-base
 - Data processing pipelines that handle your content
 - Storage of your Customer Data
 - Use of Cloud Agents, including inference, processing, and storage
+- Use of [Grok Bot](https://cursor.com/docs/grok-bot.md), including inference, processing, and storage
 - Tab, editing, and autocomplete
 
 **Traveling users:** If a user on a US-only team is abroad, their requests still route to US-only infrastructure. This may add latency.
@@ -130,6 +131,10 @@ It's enabled per team, so you can scope it to the teams that need it.
 ### Does it cover Cloud Agents?
 
 Yes. Inference, processing, and storage for Cloud Agents can be US-only today.
+
+### Does it cover Grok Bot?
+
+Yes. Inference, processing, and storage for Grok Bot can be US-only today. Grok Bot computers already run in the US.
 
 ### What happens if a user travels outside the US?
 

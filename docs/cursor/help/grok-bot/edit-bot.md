@@ -30,6 +30,10 @@ On the phone, open the Bot's profile, tap **Edit**, then tap the picture or **Av
 - **Generate** makes a picture from a short description.
 - **Upload** uses your own image. Choose **Choose from Photos** or **Take Photo**, then crop it. Images can be up to 25 MB.
 
+## Why did the screen go blank after I edited my Bot on Android?
+
+On Grok Bot for Android 1.18.0, tapping **Done** or **Discard** after changing a Bot's name, title, or picture can show a blank or error screen. Your change is usually saved. Go back to the chat and check. This is fixed in Android 1.19.0, which is rolling out on Google Play. Update when Google Play offers it to you.
+
 ## How do I change what a Bot does?
 
 Tell the Bot in chat. For a lasting rule, ask it to remember. For example: "From now on, ask before sending any email." The Bot keeps lasting rules in its memory. Put one-time requests in a normal message.

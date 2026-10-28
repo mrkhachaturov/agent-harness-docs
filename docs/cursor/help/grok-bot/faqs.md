@@ -44,7 +44,7 @@ If the status page shows no incident and the Bot says **Bot failed to respond** 
 
 ## My Bot stopped replying and says I hit my usage limit. Is it broken?
 
-No. Your weekly usage is used up. It resets each week. To keep going now, add prepaid credit (The X Subscription), turn on on-demand usage (legacy Cursor plans), or move to a bigger plan. See [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work).
+No. Your weekly usage is used up. It resets each week. To keep going now, add prepaid credit (The X Subscription), turn on on-demand usage (legacy Cursor plans), or move to a bigger plan. See [How does Grok Bot usage work?](https://cursor.com/help/grok-bot/plans.md#how-does-grok-bot-usage-work). If you earned a usage reset through the Grok Bot referral program, it shows under **Settings** > **Usage** once using resets is enabled for your account. See [Does Grok Bot have a referral program?](https://cursor.com/help/account-and-billing/referral-program.md#does-grok-bot-have-a-referral-program).
 
 ## Why doesn't my SuperGrok limit match my Grok Bot usage?
 

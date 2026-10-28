@@ -39,6 +39,10 @@ The store you bought through handles the subscription, including store free tria
 
 The Grok Bot usage-credit trial claimed on web or desktop is separate. See [How do I cancel my Grok Bot trial?](https://cursor.com/help/grok-bot/plans.md#how-do-i-cancel-my-grok-bot-trial).
 
+## Why can't I switch plans on Android?
+
+A Google Play subscription belongs to the Grok Bot account that bought it. If your Google account's subscription was bought while you were signed in to a different Grok Bot account, changing the plan from the app fails with a general error and nothing is charged. Sign in to the account that owns the subscription to change the plan, or let the current subscription end and subscribe again from the account you want to use. See [Is my plan tied to my email or my Google account?](https://cursor.com/help/account-and-billing/google-play-subscription.md#is-my-plan-tied-to-my-email-or-my-google-account).
+
 ## Related
 
 - [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)

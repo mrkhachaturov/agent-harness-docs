@@ -51,6 +51,10 @@ Grok Bot tries to reconnect on its own first, so a short drop usually picks back
 
 If Grok Bot says microphone access was denied, allow Grok Bot to use the microphone in your system settings. If it says no microphone was found, connect one and try again. To pick which microphone Grok Bot uses, open **Settings** and choose one under **Microphone**.
 
+## Why did my voice chat end when a call came in?
+
+On the phone app (version 1.18 and later, iPhone and Android), a voice chat ends when a phone call, FaceTime, or another app takes over the audio. This works the same as choosing **Hang up**, and the voice chat doesn't resume on its own. When you're done, choose **Start voice chat** again. Short interruptions on Android, such as a navigation prompt, only pause the conversation.
+
 ## Where do the call notes go?
 
 After you hang up, a **Voice chat** card appears in that Bot's chat. It shows how long the call lasted. Open it to read the full transcript.

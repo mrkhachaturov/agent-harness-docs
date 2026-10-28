@@ -26,6 +26,12 @@ You should not purchase a second subscription through Apple or Google Play in th
 
 Computer updates are not available on mobile. Use desktop Grok Bot to update, recover, or reset the computer. See [Grok Bot computer](https://cursor.com/help/grok-bot/computer-recovery.md).
 
+## Which phone features can a Bot use?
+
+When you allow it, a Bot on your phone can use your **Calendar**, **Contacts**, **Alarms**, and **Location**.
+
+On Android, Grok Bot 1.18.0 removed the ability to read your phone's notifications, and the app no longer asks for notification access. If you granted it in an earlier version, you can remove it under **Settings** > **Notifications** > **Device & app notifications** on your phone. Nothing is broken if the notification option is gone.
+
 ## How do I stop phone notifications while I work on desktop?
 
 There is no setting that stays quiet only while the desktop app is open.

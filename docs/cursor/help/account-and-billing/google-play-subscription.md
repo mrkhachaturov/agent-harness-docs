@@ -29,6 +29,8 @@ Go to [cursor.com/unify](https://cursor.com/unify) and pick a plan. When you swi
 
 Both. An in-app plan is tied to a single Cursor email and the Google account used to buy it. If you sign in with a different email and try to restore the purchase, you'll see an error. Use the same email you subscribed with.
 
+The same rule applies to changing plans. If the subscription on your Google account was bought under a different Grok Bot account, a plan switch from the app fails with a general error and you aren't charged. Sign in to the account that owns the subscription to change it.
+
 ## What if my in-app purchase hasn't synced?
 
 Your subscription status usually syncs automatically. If it still looks wrong after a purchase, tap **Restore Purchases** in the app. This re-downloads your subscription state from Google Play and re-applies your plan. Restore Purchases is for accounts that aren't already on a cursor.com subscription.

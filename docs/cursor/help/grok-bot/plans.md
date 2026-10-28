@@ -35,6 +35,7 @@ On The X Subscription, Grok Bot is one more product on your plan rather than a s
 - **Top-ups instead of on-demand.** When your weekly pool runs out, extra Grok Bot usage is paid from your prepaid credit. Buy credit, turn on Auto Top-up, and set a monthly additional usage limit under **Additional usage credits** at [grok.com/dashboard/billing](https://grok.com/dashboard/billing). See [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md).
 - **No linking needed.** A SuperGrok or X Premium+ link isn't part of The X Subscription. If you switch from a legacy plan that used a link, your Grok Bot usage comes from the shared pool after the switch.
 - **Check usage** under **Usage** at [grok.com/dashboard](https://grok.com/dashboard).
+- **Referral resets.** Inviting a friend to Grok Bot can earn you a usage reset. See [Does Grok Bot have a referral program?](https://cursor.com/help/account-and-billing/referral-program.md#does-grok-bot-have-a-referral-program).
 
 For what happens to SuperGrok and Grok Bot when you switch, see [Grok Bot on The X Subscription](https://docs.x.ai/x-subscription/grok-bot). The rest of this page describes legacy Cursor plans and account links.
 
