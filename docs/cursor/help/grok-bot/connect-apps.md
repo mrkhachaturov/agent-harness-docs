@@ -24,7 +24,7 @@ That Cursor control is separate from a company Google admin. A Google block uses
 
 ## What if Google says an admin needs to review Grok?
 
-A company Google account can stop the connection before Gmail, Calendar, Drive, Docs, Sheets, or Slides finishes signing in. Grok Bot signs in to Google as **Grok**, not Cursor. The Google page decides the next step.
+A company Google account can stop the connection before Gmail, Calendar, Drive, Docs, Sheets, Slides, or BigQuery finishes signing in. Grok Bot signs in to Google as **Grok**, not Cursor. The Google page decides the next step.
 
 **Your admin needs to review Grok**
 
@@ -44,6 +44,21 @@ That approval covers the Google apps those people connect. It does not turn an a
 Google refused the sign-in. A personal Gmail account does not need a company admin. A company account often hits this when Grok is not on the allowlist, or when the admin has blocked third-party apps.
 
 Ask the Google admin to trust **Grok**, using the steps above. If the page still says access is blocked after that, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the Google account email and a screenshot of the blocked page. Changing browsers or connecting the app again does not clear a Google admin block.
+
+## What if Microsoft says an admin needs to approve Grok Bot?
+
+A work or school Microsoft 365 account can stop **Outlook**, **Outlook Calendar**, **OneDrive**, or **Teams** from connecting until the organization's Microsoft 365 admin approves the app. Retrying the sign-in or allowing the permissions again doesn't help.
+
+- On your computer, the sign-in page says **Your organization's Microsoft 365 admin needs to approve this app before you can connect** and shows an **Approval link for your IT admin**. Send that link to your IT admin. After they approve it, connect again from Grok Bot.
+- On the phone app 1.19.0 or later, the connect card says the same and adds **Ask your IT admin to approve Grok Bot, then connect again**. The phone doesn't show the approval link, so if your admin needs it, connect once from your computer to get it.
+
+If the page says the app is **blocked by your organization** instead, the admin has to allow the connection. The page lists the connector, the Microsoft Entra application ID, the error code, and the time to send them.
+
+## Why does the phone say to connect an app on my computer?
+
+Some providers don't finish sign-in from a phone browser. On the phone app 1.19.0 or later, **Connect** for **Adapter**, **Robinhood**, and **Intercom**, and for **Postiz** on iPhone, shows **Connect on your computer** instead of opening the sign-in page. Open Grok Bot on your computer and connect the app there. The connection then works on your phone too, because apps belong to your account, not the device.
+
+**Slack** still signs in on the phone. If you close its sign-in before finishing, the phone reminds you that Slack's phone sign-in needs your workspace password, and that you can connect Slack from your computer instead.
 
 ## What can a connected app do?
 
@@ -72,6 +87,30 @@ Gmail can search and read mail, draft and send, and apply labels on the connecte
 **X**
 
 The X plugin needs X API credits on your X developer account. See [What if the X plugin is connected but bookmarks, DMs, or the timeline fail?](https://cursor.com/help/grok-bot/how-to.md#what-if-the-x-plugin-is-connected-but-bookmarks-dms-or-the-timeline-fail).
+
+**Microsoft Power BI**
+
+Power BI connects with a work or school Microsoft account. A personal Microsoft account can't connect it. The bot can list workspaces, reports, and datasets, and render a report or one of its pages as images. Every Power BI tool reads only. Rendering needs the workspace on Premium, Embedded, or Fabric capacity, and the Power BI tenant setting **Export reports as image files** turned on.
+
+**Google BigQuery**
+
+BigQuery signs in to Google as **Grok**, like the other Google apps, so a company Google block uses the screens in [What if Google says an admin needs to review Grok?](https://cursor.com/help/grok-bot/connect-apps.md#what-if-google-says-an-admin-needs-to-review-grok). The bot queries the datasets the connected Google account can read. A Cursor team admin can enter the team's own Google OAuth client ID and secret in the plugin's team setup on the dashboard's [Plugins & MCPs page](https://cursor.com/dashboard/plugins); members then sign in under that client instead.
+
+**Databricks Genie**
+
+Databricks Genie is set up by a Cursor team admin before members can connect it. The admin registers an OAuth app connection in the Databricks account, then enters the workspace URL, client ID, and client secret (left blank for a public client) in the plugin's team setup on the dashboard's [Plugins & MCPs page](https://cursor.com/dashboard/plugins). Each member then signs in with their own Databricks account, and the bot asks Genie questions in natural language against the data that account can query.
+
+**Asana**
+
+Asana needs no admin setup. Sign in with your Asana account, and the bot works in the workspaces and projects that account can open.
+
+**Vanta**
+
+Vanta keeps each account in one region. Connect Vanta from **Connect apps** the first time, and pick the region of your Vanta account when you sign in: **United States**, **Europe**, or **Australia**. A sign-in on the wrong region doesn't find your account; sign in again and choose the other region.
+
+**Shop Pay**
+
+Shop Pay is a wallet. Connect it and sign in to Shop, and the bot can check out with Shop Pay on Shopify stores, next to a card saved in [Vault](https://cursor.com/help/grok-bot/secrets.md#what-is-vault), Link, or X Money. See [Take over for sensitive steps](https://cursor.com/docs/grok-bot/work.md#take-over-for-sensitive-steps) for how the bot pays at checkout.
 
 ## Can I connect two Gmail accounts?
 

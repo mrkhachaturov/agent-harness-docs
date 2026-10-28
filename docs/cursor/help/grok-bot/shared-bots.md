@@ -114,6 +114,8 @@ If your admin added the Bot to your sidebar for you, **Hide from sidebar** isn't
 
 Yes. Shared Bots you've added appear in the phone app. To find another, tap **+**, then **Browse shared Bots**. You can chat with shared Bots and answer their **Allow** cards. A shared Bot can't be your primary Bot.
 
+Sharing and browsing on the phone need Grok Bot 1.19.0 or later on iPhone and Android, from the App Store or Google Play. Earlier versions still open the shared Bots already in your list, and some of their screens still say **Team Bots**.
+
 ## Can I voice chat with a teammate's shared Bot?
 
 Yes, on desktop. In your own chat with the Bot, choose **Start voice chat**. See [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md).

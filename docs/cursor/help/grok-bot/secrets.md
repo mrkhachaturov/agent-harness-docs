@@ -68,6 +68,12 @@ Open **Settings** > **Vault** and select the item to edit it, or choose **Remove
 
 To change a card's number, remove the card and add it again. On the phone, saved cards can't be edited yet.
 
+## Why is there no Save button for a new login on my iPhone?
+
+On Grok Bot for iPhone 1.18.0 with iOS 26 or later, **Settings** > **Vault** > **New item** > **Login** shows only a back button, so a login typed there can't be saved. Cards and contact info aren't affected. This is fixed in iPhone 1.19.0, which is rolling out on the App Store. Update when the App Store offers it to you, or open the App Store and update Grok Bot yourself.
+
+On 1.19.0, **Save** is at the top of the form and stays off until you fill in the **Name**, **Website**, and **Password**. Until you update, add the login from Grok Bot on your computer, or ask your Bot to sign in to that site and save the login from the **Secure Form** it shows in the chat.
+
 ## How should I add an API key or secret?
 
 For an API key or other secret that isn't a login or card, use the **secure secret card** when a Bot asks for one. The field is masked. Choose **Save securely**. The card then says **Saved** and **Saved securely and kept private**. The value is not written into the chat.

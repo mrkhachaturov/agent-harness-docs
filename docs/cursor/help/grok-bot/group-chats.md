@@ -44,6 +44,10 @@ To rename it on desktop, right-click the group in the sidebar and choose **Renam
 
 To change what the group is for, tell the Bots in the group.
 
+## Can I start a group chat on my phone?
+
+Not on the phone app 1.19.0 or later. The **+** button on the home screen opens **New Bot** and no longer offers **New Group Chat**. Start the group from Grok Bot on your computer. Group chats you already have stay in your list on the phone, and you can open them, write in them, and rename them there.
+
 ## Do group chats have notifications?
 
 Group chats don't have the per-Bot **Notifications** switch. See [Attention states and notifications](https://cursor.com/docs/grok-bot/settings.md#attention-states-and-notifications).
