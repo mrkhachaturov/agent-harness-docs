@@ -63,8 +63,8 @@
     "account/teams/members.md": {
       "original_url": "https://cursor.com/docs/account/teams/members",
       "original_md_url": "https://cursor.com/docs/account/teams/members.md",
-      "hash": "0059f3c07825c8e0c6e78fcddd0640724182a1409c62c5ae40a808059e94534b",
-      "last_updated": "2026-10-21T19:06:25.240756"
+      "hash": "f9d20c963a2019a4a87db6f60b4c902cef60cd5d2eb2fc3e6f5e8922419efec8",
+      "last_updated": "2026-10-28T17:57:09.287467"
     },
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
@@ -453,8 +453,8 @@
     "api/origin/changelog.md": {
       "original_url": "https://cursor.com/docs/api/origin/changelog",
       "original_md_url": "https://cursor.com/docs/api/origin/changelog.md",
-      "hash": "8ccebf4fe9cdea43a22f9659ace0ff85f52d5bc310c1396049c6c72fb02ed959",
-      "last_updated": "2026-10-27T21:43:49.595628"
+      "hash": "c4e27a0fa260ff355259eb63e010bf439e4a0c5938c199c3373814862badb7d1",
+      "last_updated": "2026-10-28T17:57:09.289006"
     },
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
@@ -663,8 +663,8 @@
     "cloud-agent/self-hosted.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted.md",
-      "hash": "fd46838cf16bb03e5a68b5d0989377c89f143621da887f6bfa4f41fc818b4ccf",
-      "last_updated": "2026-10-27T17:14:59.463370"
+      "hash": "51a8cea833c4994adf4ce5da465d18ac21f58d69145d95cb12bf4d875304d06d",
+      "last_updated": "2026-10-28T17:57:09.290334"
     },
     "cloud-agent/self-hosted/choose-runtime.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime",
@@ -1935,8 +1935,8 @@
     "sdk/python.md": {
       "original_url": "https://cursor.com/docs/sdk/python",
       "original_md_url": "https://cursor.com/docs/sdk/python.md",
-      "hash": "d80fdcc15c5599316d31768f131500b633262c9543443609c0d36d006f503416",
-      "last_updated": "2026-10-27T17:14:59.469317"
+      "hash": "7f116c85cadb25c7ac32393bd66ed3d69c23d887d8f086840440caaf15e53cd1",
+      "last_updated": "2026-10-28T17:57:09.294501"
     },
     "sdk/typescript.md": {
       "original_url": "https://cursor.com/docs/sdk/typescript",
@@ -1947,8 +1947,8 @@
     "security-agents.md": {
       "original_url": "https://cursor.com/docs/security-agents",
       "original_md_url": "https://cursor.com/docs/security-agents.md",
-      "hash": "025657499ae8e856bd4ab45136d229dd91e43e05e9741824c7a026b4331fb306",
-      "last_updated": "2026-10-08T18:20:02.643582"
+      "hash": "37536e1dbd54135baa5004f1b023e9f4129805d38db40b5f91604fffec7c0c6b",
+      "last_updated": "2026-10-28T17:57:09.295085"
     },
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
@@ -1964,8 +1964,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-28T11:59:36.098246",
-    "fetch_duration_seconds": 3.705004,
+    "last_fetch_completed": "2026-10-28T17:57:09.299321",
+    "fetch_duration_seconds": 3.699915,
     "total_pages_discovered": 327,
     "pages_fetched_successfully": 327,
     "pages_failed": 0,
@@ -1978,7 +1978,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-10-28T11:59:36.098258",
+  "last_updated": "2026-10-28T17:57:09.299339",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
