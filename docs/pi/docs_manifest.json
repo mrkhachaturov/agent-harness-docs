@@ -51,8 +51,8 @@
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md",
-      "hash": "d4114fb6023f26ffab1feb3de6c7982a740cb7a1024735a0837173fcc2f4c9be",
-      "last_updated": "2026-10-31T03:42:10.051553"
+      "hash": "be4a565813a79c4e1bb170854af753dbc05be8f189305d8b674f99acd7b2e427",
+      "last_updated": "2026-10-31T20:54:32.210985"
     },
     "how-pi-works.md": {
       "upstream_path": "packages/coding-agent/docs/how-pi-works.md",
@@ -225,8 +225,8 @@
     "tmux.md": {
       "upstream_path": "packages/coding-agent/docs/tmux.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/tmux.md",
-      "hash": "9756dcfce86deb9a5afb1acbb57c77c1aa7f0ac29c37808d26b0e511ab217ab3",
-      "last_updated": "2026-10-31T16:42:05.359858"
+      "hash": "cba8048064e0f3322d5b693b5e7b50a0d17c2e0af2aabc59285eb6024775b7d4",
+      "last_updated": "2026-10-31T20:54:32.215265"
     },
     "tui.md": {
       "upstream_path": "packages/coding-agent/docs/tui.md",
@@ -249,13 +249,13 @@
     "windows.md": {
       "upstream_path": "packages/coding-agent/docs/windows.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/windows.md",
-      "hash": "f4daa853705ad9da9365a386b58f5055ffdb5c6ffb84f6eaff805097ef717cbb",
-      "last_updated": "2026-10-31T16:42:05.360550"
+      "hash": "b30d75000d9623832c375b20a53b492929ef31d9631f1be90a0ed1469d8c0728",
+      "last_updated": "2026-10-31T20:54:32.215874"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-31T16:42:05.360597",
-    "fetch_duration_seconds": 1.82473,
+    "last_fetch_completed": "2026-10-31T20:54:32.215931",
+    "fetch_duration_seconds": 1.406297,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-31T16:42:05.360608",
+  "last_updated": "2026-10-31T20:54:32.215948",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
