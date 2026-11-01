@@ -80,16 +80,16 @@ Both options take an array of model IDs — the same IDs shown in the `/models` 
 
 ---
 
-## OpenCode Zen
+## OpenCode Models
 
-OpenCode Zen is a list of models provided by the OpenCode team that have been
+OpenCode Models is a list of models provided by the OpenCode team that have been
 tested and verified to work well with OpenCode. [Learn more](https://opencode.ai/v2/docs/console/).
 
 :::tip
-If you are new, we recommend starting with OpenCode Zen.
+If you are new, we recommend starting with OpenCode Models.
 :::
 
-1. Run the `/connect` command in the TUI, select `OpenCode Zen`, and head to [opencode.ai/auth](https://opencode.ai/zen).
+1. Run the `/connect` command in the TUI, select `OpenCode`, and head to [opencode.ai/auth](https://opencode.ai/auth).
 
    ```txt
    /connect
@@ -121,7 +121,7 @@ It works like any other provider in OpenCode and is completely optional to use.
 OpenCode Go is a low cost subscription plan that provides reliable access to popular open coding models provided by the OpenCode team that have been
 tested and verified to work well with OpenCode.
 
-1. Run the `/connect` command in the TUI, select `OpenCode Go`, and head to [opencode.ai/auth](https://opencode.ai/zen).
+1. Run the `/connect` command in the TUI, select `OpenCode Go`, and head to [opencode.ai/auth](https://opencode.ai/auth).
 
    ```txt
    /connect
@@ -1040,7 +1040,7 @@ to store token in opencode auth storage.
 
 :::note\[compliance note]
 OpenCode uses a small model for some AI tasks like generating the session title.
-It is configured to use gpt-5-nano by default, hosted by Zen. To lock OpenCode
+It is configured to use gpt-5-nano by default, hosted by OpenCode. To lock OpenCode
 to only use your own GitLab-hosted instance, add the following to your
 `opencode.json` file.
 
@@ -1808,13 +1808,13 @@ If you already have an API key, you can select **Manually enter API Key** and pa
 
 ---
 
-### OpenCode Zen
+### OpenCode Models
 
-OpenCode Zen is a list of tested and verified models provided by the OpenCode team. [Learn more](https://opencode.ai/v2/docs/console/).
+OpenCode Models is a list of tested and verified models provided by the OpenCode team. [Learn more](https://opencode.ai/v2/docs/console/).
 
-1. Sign in to **OpenCode Zen** and click **Create API Key**.
+1. Sign in to **OpenCode Console** and click **Create API Key**.
 
-2. Run the `/connect` command and search for **OpenCode Zen**.
+2. Run the `/connect` command and search for **OpenCode**.
 
    ```txt
    /connect

@@ -9,8 +9,8 @@
     "agents.md": {
       "upstream_path": "packages/web/src/content/docs/agents.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/agents.mdx",
-      "hash": "6271180b32f0f428f5c969a9ba8ee84f88a0a4285f662e86a2f2da87fc9a1575",
-      "last_updated": "2026-10-23T02:57:38.800680"
+      "hash": "347b0eae3286e25e05be972eed6bd0567a2a1c18aa87ca737b385774aeba99e7",
+      "last_updated": "2026-11-01T03:48:51.082669"
     },
     "cli.md": {
       "upstream_path": "packages/web/src/content/docs/cli.mdx",
@@ -75,8 +75,8 @@
     "index.md": {
       "upstream_path": "packages/web/src/content/docs/index.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/index.mdx",
-      "hash": "a0462366450be7bc9ebb2e38d76638d35a5bf271e7d8f575ecd1eb9ac1c59b95",
-      "last_updated": "2026-10-23T02:57:40.862845"
+      "hash": "133eb3ac11ee742eb5e94b7f029121a97b2e270917410ab48c5cabaa2a50dd6e",
+      "last_updated": "2026-11-01T03:48:52.427572"
     },
     "keybinds.md": {
       "upstream_path": "packages/web/src/content/docs/keybinds.mdx",
@@ -99,8 +99,8 @@
     "models.md": {
       "upstream_path": "packages/web/src/content/docs/models.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/models.mdx",
-      "hash": "83f29291dc628b93e83b5da1b058a2684f159d4707e3ffa8f8deb4ddbfba5d18",
-      "last_updated": "2026-10-23T02:57:41.595800"
+      "hash": "7c3c9d393476a1bb8821716427d07b06a3471b3dc3cb9c79385e474f1d94db93",
+      "last_updated": "2026-11-01T03:48:52.915283"
     },
     "network.md": {
       "upstream_path": "packages/web/src/content/docs/network.mdx",
@@ -129,8 +129,8 @@
     "providers.md": {
       "upstream_path": "packages/web/src/content/docs/providers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/providers.mdx",
-      "hash": "b4b8ce726b6ed1f8b842387157761443eea388a4822bb05ed14603ea764c486a",
-      "last_updated": "2026-10-23T02:57:42.661008"
+      "hash": "4d8306e2698fc57970e0fef3308c8ec457a28578e69199d23b1082822fc446e6",
+      "last_updated": "2026-11-01T03:48:53.626514"
     },
     "references.md": {
       "upstream_path": "packages/web/src/content/docs/references.mdx",
@@ -200,8 +200,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-10-31T23:55:57.342472",
-    "fetch_duration_seconds": 6.162743,
+    "last_fetch_completed": "2026-11-01T03:48:54.988339",
+    "fetch_duration_seconds": 5.543035,
     "total_pages_discovered": 33,
     "pages_fetched_successfully": 33,
     "pages_failed": 0,
@@ -212,7 +212,7 @@
     "total_files": 33,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-10-31T23:55:57.342490",
+  "last_updated": "2026-11-01T03:48:54.988361",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
