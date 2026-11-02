@@ -105,8 +105,8 @@
     "models.md": {
       "upstream_path": "packages/coding-agent/docs/models.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models.md",
-      "hash": "c9914f5411db5ddd158b5391ec1da76c1f65788cfaea3a90e1e1555451b3d12e",
-      "last_updated": "2026-10-21T23:54:45.075778"
+      "hash": "a1a373ac64d62afc3a039d7b614caf1216d3ef9c9278179f9d859eee5ca0855d",
+      "last_updated": "2026-11-02T21:17:55.108133"
     },
     "nvidia-rtx-llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/nvidia-rtx-llama-cpp.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-02T10:27:30.150718",
-    "fetch_duration_seconds": 0.683832,
+    "last_fetch_completed": "2026-11-02T21:17:55.111863",
+    "fetch_duration_seconds": 1.102273,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-02T10:27:30.150734",
+  "last_updated": "2026-11-02T21:17:55.111877",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
