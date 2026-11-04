@@ -4,7 +4,7 @@ Cursor sign-in is moving to accounts.spacexsi.com (replacing authenticator.curso
 
 If your company uses a firewall or proxy allowlist (for example Zscaler), add the domains below. If accounts.spacexsi.com is blocked on your network, sign-in falls back to the old page for now, so nobody is locked out.
 
-We recommend adding the domains as soon as you can so your users get the new sign-in page from day one. The fallback is temporary. Once it is retired on October 30, sign-in requires accounts.spacexsi.com.
+We recommend adding the domains as soon as you can so your users get the new sign-in page from day one. The fallback is temporary. Once it is retired on November 30, sign-in requires accounts.spacexsi.com.
 
 If your team has bookmarks or internal docs that point to authenticator.cursor.sh, update them to accounts.spacexsi.com.
 
