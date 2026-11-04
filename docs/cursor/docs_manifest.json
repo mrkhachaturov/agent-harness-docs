@@ -27,8 +27,8 @@
     "account/pricing/legacy-cursor-plans.md": {
       "original_url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans",
       "original_md_url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans.md",
-      "hash": "c4935f419d34aac04d1d37b2090d417b379ba333f65fc73cc878213067ed604f",
-      "last_updated": "2026-10-21T14:19:42.749177"
+      "hash": "1138998263e00754292ab1fe5b51ade1e88da96ed11da8d54828eb1b2d8ff726",
+      "last_updated": "2026-11-04T10:19:18.957034"
     },
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
@@ -69,8 +69,8 @@
     "account/teams/pricing.md": {
       "original_url": "https://cursor.com/docs/account/teams/pricing",
       "original_md_url": "https://cursor.com/docs/account/teams/pricing.md",
-      "hash": "0b487e496e9d5ef6789d56a9cfbf189119463b389664d3a9a9aeca9c941b9027",
-      "last_updated": "2026-10-26T22:12:59.929771"
+      "hash": "6444344600cf1f6ee306e9e111d5e07f601aafd30d8dd4b58b18e3e2d5b2c1d8",
+      "last_updated": "2026-11-04T10:19:18.957520"
     },
     "account/teams/scim.md": {
       "original_url": "https://cursor.com/docs/account/teams/scim",
@@ -585,8 +585,8 @@
     "cloud-agent.md": {
       "original_url": "https://cursor.com/docs/cloud-agent",
       "original_md_url": "https://cursor.com/docs/cloud-agent.md",
-      "hash": "0a6ca38d1d6aab6ab982b471cc111863f688bc248f308e6d5159312d20d8a051",
-      "last_updated": "2026-10-22T14:19:03.810240"
+      "hash": "4a31d6282a8ff6f2cb14427d438cffef0749028cde09fa5cc41cc1ac2dec11e1",
+      "last_updated": "2026-11-04T10:19:18.959063"
     },
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
@@ -599,6 +599,12 @@
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/webhooks.md",
       "hash": "ac1de6fe77d750240651d849f26974af43c2ce378cf4f73afc1eb369b049d6d1",
       "last_updated": "2026-08-25T00:57:12.643268"
+    },
+    "cloud-agent/apps.md": {
+      "original_url": "https://cursor.com/docs/cloud-agent/apps",
+      "original_md_url": "https://cursor.com/docs/cloud-agent/apps.md",
+      "hash": "f9cf2b73b6f33ce958985e3852f116781d88c1642556c4855181121066d3e5b8",
+      "last_updated": "2026-11-04T10:19:18.959411"
     },
     "cloud-agent/automations.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/automations",
@@ -663,8 +669,8 @@
     "cloud-agent/self-hosted.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted.md",
-      "hash": "51a8cea833c4994adf4ce5da465d18ac21f58d69145d95cb12bf4d875304d06d",
-      "last_updated": "2026-10-28T17:57:09.290334"
+      "hash": "865621a638edb86fc9379250d3d0e791e19bbf3dc0e3da5c98ae0f4c0f5f00b2",
+      "last_updated": "2026-11-04T10:19:18.959713"
     },
     "cloud-agent/self-hosted/choose-runtime.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/choose-runtime",
@@ -717,8 +723,8 @@
     "cursor-router.md": {
       "original_url": "https://cursor.com/docs/cursor-router",
       "original_md_url": "https://cursor.com/docs/cursor-router.md",
-      "hash": "752fb6bd6dbffe4a747484e3ddc009b549ce521558bf76bf1d577fd9575f3f9d",
-      "last_updated": "2026-10-21T14:19:42.751451"
+      "hash": "caec278cbd2b064181453b564acc100343fe5db4b71a9e6093152f8973360d2f",
+      "last_updated": "2026-11-04T10:19:18.959989"
     },
     "customize-cursor.md": {
       "original_url": "https://cursor.com/docs/customize-cursor",
@@ -789,14 +795,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "fa790f02dc89565e96d6ab46560aa2e73657aaf57675b1fa68beafe89faafa4d",
-      "last_updated": "2026-10-27T03:19:02.920381"
+      "hash": "3d61edaa684fe96632f9d212f79de8c8424adf910a4e907efd911dda5e3146e8",
+      "last_updated": "2026-11-04T10:19:18.960323"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "6614804e4db5b90b6bae7a39f0e0fdfaee3dbe7e03a36a11380bf07e85a810b9",
-      "last_updated": "2026-10-27T03:19:02.920836"
+      "hash": "39c69106bd82a9a5261ef737f838c5d1acf6b903183aa85d010edaead4134c8c",
+      "last_updated": "2026-11-04T10:19:18.960567"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -849,8 +855,8 @@
     "grok-bot/computers.md": {
       "original_url": "https://cursor.com/docs/grok-bot/computers",
       "original_md_url": "https://cursor.com/docs/grok-bot/computers.md",
-      "hash": "06204ac87cc286655cf347a58945e35207fcab4d257b0a7ae2f0273fafe024d0",
-      "last_updated": "2026-10-27T17:14:59.464723"
+      "hash": "de76cbde2ff781fcd82d5d1a55919cb89e7cef1608d960aa47a2aa174095acf8",
+      "last_updated": "2026-11-04T10:19:18.960930"
     },
     "grok-bot/deployment.md": {
       "original_url": "https://cursor.com/docs/grok-bot/deployment",
@@ -873,8 +879,8 @@
     "grok-bot/inference-hooks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/inference-hooks",
       "original_md_url": "https://cursor.com/docs/grok-bot/inference-hooks.md",
-      "hash": "3ea937c64754c33fdc53242008078d6d78bd8959d5cd9089f6db0aeb5c48aa72",
-      "last_updated": "2026-10-27T21:43:49.598845"
+      "hash": "ef558dbec064f8ac807d53015df9d399cd75334475d1d48938dcbdbc85500a48",
+      "last_updated": "2026-11-04T10:19:18.961101"
     },
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
@@ -891,14 +897,14 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "861b48910e381cd56932b63d406a619ec453a62edfa07d1e6e19d1f7b3fbfc25",
-      "last_updated": "2026-10-28T03:34:40.058022"
+      "hash": "86cea674faf11eef1e22b517b6fb3bea4514e02f58c96df7b911d0e045e3dbf7",
+      "last_updated": "2026-11-04T10:19:18.961309"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "6c47f63707c51e8cbd66204a6b12f1cbdf3dc4a5b461fa506eaaaca50948e164",
-      "last_updated": "2026-10-28T22:09:05.427499"
+      "hash": "9f82e09a9d14cfe033e364c50dc0c68bec5aca9f0be3d0c73255fd8aff052643",
+      "last_updated": "2026-11-04T10:19:18.961443"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -993,8 +999,8 @@
     "help/account-and-billing/overages.md": {
       "original_url": "https://cursor.com/help/account-and-billing/overages",
       "original_md_url": "https://cursor.com/help/account-and-billing/overages.md",
-      "hash": "d19d30c52b6c0c5c6e36f4aa330a982eadd559e49e81c61229fb44bf97a5e58c",
-      "last_updated": "2026-10-21T14:19:42.754295"
+      "hash": "cc66d61bb8c27dabc1dfc935c16e4b42da33b648801bcfdd820512b5435f5f29",
+      "last_updated": "2026-11-04T10:19:18.961660"
     },
     "help/account-and-billing/payment-issues.md": {
       "original_url": "https://cursor.com/help/account-and-billing/payment-issues",
@@ -1011,8 +1017,8 @@
     "help/account-and-billing/pricing.md": {
       "original_url": "https://cursor.com/help/account-and-billing/pricing",
       "original_md_url": "https://cursor.com/help/account-and-billing/pricing.md",
-      "hash": "f0d9041b987507dfabea05b2b36b2b78dffce41a6c817494b1ac84d6bc4245ba",
-      "last_updated": "2026-10-21T14:19:42.754595"
+      "hash": "22da1a32811df78a9bdedb819baa565a2893c28745663d8ab129a66af3fb93c6",
+      "last_updated": "2026-11-04T10:19:18.961836"
     },
     "help/account-and-billing/profiles.md": {
       "original_url": "https://cursor.com/help/account-and-billing/profiles",
@@ -1455,14 +1461,14 @@
     "help/models-and-usage/api-keys.md": {
       "original_url": "https://cursor.com/help/models-and-usage/api-keys",
       "original_md_url": "https://cursor.com/help/models-and-usage/api-keys.md",
-      "hash": "282089dcad163dc8d47efb88ec6f3fde6d50b4820f0896521bce5636deb3155b",
-      "last_updated": "2026-10-21T14:19:42.755306"
+      "hash": "9be72cc08e5941a2ccfca64402a2d98184846f020ddf73224e6f19383a2360cb",
+      "last_updated": "2026-11-04T10:19:18.962462"
     },
     "help/models-and-usage/available-models.md": {
       "original_url": "https://cursor.com/help/models-and-usage/available-models",
       "original_md_url": "https://cursor.com/help/models-and-usage/available-models.md",
-      "hash": "5e1df0c94bc6812c317175c9060a75bfe80fde6d02a743defb1f6903d05c5b1f",
-      "last_updated": "2026-10-21T14:19:42.755557"
+      "hash": "8d0befb234f5c23bac75e69d3a44de3e2b574d9a729a927e6c92601950e1596c",
+      "last_updated": "2026-11-04T10:19:18.962558"
     },
     "help/models-and-usage/cursor-router.md": {
       "original_url": "https://cursor.com/help/models-and-usage/cursor-router",
@@ -1491,14 +1497,14 @@
     "help/models-and-usage/token-rate.md": {
       "original_url": "https://cursor.com/help/models-and-usage/token-rate",
       "original_md_url": "https://cursor.com/help/models-and-usage/token-rate.md",
-      "hash": "ee7e97219d0eac75a04ece668eb057835b47fd2db4cbf872219146ccbeeb5a7b",
-      "last_updated": "2026-10-21T14:19:42.755845"
+      "hash": "4d6212db6feb30cac005a55a1c61721102e1c08b9b91c55eae0b8cac32f101af",
+      "last_updated": "2026-11-04T10:19:18.962652"
     },
     "help/models-and-usage/usage-limits.md": {
       "original_url": "https://cursor.com/help/models-and-usage/usage-limits",
       "original_md_url": "https://cursor.com/help/models-and-usage/usage-limits.md",
-      "hash": "bfacd2705ce23c6386ac24981d83a433924ac310e845ac264cb668d036dbb066",
-      "last_updated": "2026-10-21T14:19:42.756098"
+      "hash": "5ad6c2d7e9d64ae1792f91c6f3a0bb31529c9e08bba543b95be0d8184faada32",
+      "last_updated": "2026-11-04T10:19:18.962725"
     },
     "help/security-and-privacy/account-compromised.md": {
       "original_url": "https://cursor.com/help/security-and-privacy/account-compromised",
@@ -1587,8 +1593,8 @@
     "help/troubleshooting/sign-in-domains.md": {
       "original_url": "https://cursor.com/help/troubleshooting/sign-in-domains",
       "original_md_url": "https://cursor.com/help/troubleshooting/sign-in-domains.md",
-      "hash": "cfa0820d2fe4ef47f0f022cc7c79c4c08ed9ccbfd8fbcb641985ad00c918ac26",
-      "last_updated": "2026-10-02T21:44:31.671808"
+      "hash": "d3beaebbff004b5a62eeced98b227d8d5eed58e77d641390faaf13d4b8ab96d9",
+      "last_updated": "2026-11-04T10:19:18.962893"
     },
     "help/troubleshooting/tab-issues.md": {
       "original_url": "https://cursor.com/help/troubleshooting/tab-issues",
@@ -1695,8 +1701,8 @@
     "models-and-pricing.md": {
       "original_url": "https://cursor.com/docs/models-and-pricing",
       "original_md_url": "https://cursor.com/docs/models-and-pricing.md",
-      "hash": "e3f6aee695446630790f73553110b5ff11d605a66a39d42ffc5e93f0489b5ce2",
-      "last_updated": "2026-10-26T22:12:59.936221"
+      "hash": "6f3d68875f425595022a59d6af40704b7a010614f45d1de8e64fc6e615f634ae",
+      "last_updated": "2026-11-04T10:19:18.963338"
     },
     "models/claude-fable-5-1.md": {
       "original_url": "https://cursor.com/docs/models/claude-fable-5-1",
@@ -1959,26 +1965,26 @@
     "subagents.md": {
       "original_url": "https://cursor.com/docs/subagents",
       "original_md_url": "https://cursor.com/docs/subagents.md",
-      "hash": "264b4b00e713ec0dd73939306690ea4013168bead35411da3cc56fc1a71b2668",
-      "last_updated": "2026-10-21T14:19:42.758440"
+      "hash": "414149d065130579de2f1ba51a0623c0ccd56799e52d19f3afb1992467cabfbb",
+      "last_updated": "2026-11-04T10:19:18.965092"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-04T01:01:39.021967",
-    "fetch_duration_seconds": 3.955719,
-    "total_pages_discovered": 327,
-    "pages_fetched_successfully": 327,
+    "last_fetch_completed": "2026-11-04T10:19:18.967210",
+    "fetch_duration_seconds": 4.504269,
+    "total_pages_discovered": 328,
+    "pages_fetched_successfully": 328,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 327,
+    "total_files": 328,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-04T01:01:39.021981",
+  "last_updated": "2026-11-04T10:19:18.967225",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
