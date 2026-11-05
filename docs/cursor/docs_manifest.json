@@ -831,8 +831,8 @@
     "enterprise/security-hardening.md": {
       "original_url": "https://cursor.com/docs/enterprise/security-hardening",
       "original_md_url": "https://cursor.com/docs/enterprise/security-hardening.md",
-      "hash": "2a35dcc947095ab36989947d9d3bd709d256e2a7d1af554dff8ad41ff6921148",
-      "last_updated": "2026-10-27T17:14:59.464391"
+      "hash": "446f4212d3581b1b348b1e33c9ba551b976eddcba41315516481e212ccc1afa1",
+      "last_updated": "2026-11-05T10:12:40.224719"
     },
     "enterprise/tenancy-restriction.md": {
       "original_url": "https://cursor.com/docs/enterprise/tenancy-restriction",
@@ -855,8 +855,8 @@
     "grok-bot/computers.md": {
       "original_url": "https://cursor.com/docs/grok-bot/computers",
       "original_md_url": "https://cursor.com/docs/grok-bot/computers.md",
-      "hash": "de76cbde2ff781fcd82d5d1a55919cb89e7cef1608d960aa47a2aa174095acf8",
-      "last_updated": "2026-11-04T10:19:18.960930"
+      "hash": "c20be9d8bea8826da1c420b3211c556d93494278d9ba975371527f83fa1ca22c",
+      "last_updated": "2026-11-05T10:12:40.225070"
     },
     "grok-bot/deployment.md": {
       "original_url": "https://cursor.com/docs/grok-bot/deployment",
@@ -903,8 +903,8 @@
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "9f82e09a9d14cfe033e364c50dc0c68bec5aca9f0be3d0c73255fd8aff052643",
-      "last_updated": "2026-11-04T10:19:18.961443"
+      "hash": "0ccd8f14b5fe854ae521426ba2daaefda49559fa525cdf82ccdeb5aaf0bc66cf",
+      "last_updated": "2026-11-05T10:12:40.225475"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
@@ -915,8 +915,8 @@
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "b00d7ab94fc285da9be3a5a80faa6ba049ca8376005a7c1db6b8ffc558ecad60",
-      "last_updated": "2026-10-27T21:43:49.599732"
+      "hash": "5ce3d67b3e17b1d1e330a0858630023d6878976436ce7fa288e5299ada23bbba",
+      "last_updated": "2026-11-05T10:12:40.225808"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1970,8 +1970,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-05T01:16:07.474445",
-    "fetch_duration_seconds": 4.716653,
+    "last_fetch_completed": "2026-11-05T10:12:40.231460",
+    "fetch_duration_seconds": 5.150156,
     "total_pages_discovered": 328,
     "pages_fetched_successfully": 328,
     "pages_failed": 0,
@@ -1984,7 +1984,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-05T01:16:07.474460",
+  "last_updated": "2026-11-05T10:12:40.231472",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
