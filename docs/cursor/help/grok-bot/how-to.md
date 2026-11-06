@@ -32,7 +32,30 @@ On desktop, right-click the Bot in the sidebar and choose **Hide from sidebar**.
 
 To show it again on desktop, open **Hidden Bots**, right-click the Bot, and choose **Show in sidebar**. On the phone, open **Show Hidden Bots** and choose **Unhide**.
 
+A [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) your admin added to your sidebar for you has no **Hide from sidebar** option. See [How do I remove a shared Bot from my sidebar?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-i-remove-a-shared-bot-from-my-sidebar)
+
 If it is missing from both lists, use the checks in [My chats or bots look missing](https://cursor.com/help/grok-bot/computer-recovery.md#my-chats-or-bots-look-missing-were-they-deleted).
+
+## How do I share a Bot with my team?
+
+You need to be on a Cursor team. Bots that run on your own computer can't be shared.
+
+**Make a new Bot for the team:**
+
+1. Choose **+** in the sidebar, then **Create a Bot**, and give it a name.
+2. Tell it what it should help the team with, then follow its setup steps for apps, secrets, skills, and files. Until you publish it, it's a draft only you can see.
+3. When the Bot says it's ready to share, choose **Publish**. Teammates can then find it.
+
+**Share a Bot you already have:**
+
+1. Click the Bot's name at the top of the chat and choose **Share**.
+2. Under **Who has access**, choose your team, your organization, or **People you invite**.
+3. To add someone, choose **Add people or groups**, then pick **Collaborator** to let them chat with it or **Manager** to let them also change how it works.
+4. Choose **Copy link** to send teammates a link.
+
+Before you share, check the Bot's apps, secrets, skills, and files. They work in every teammate's chat. Teammates find the Bot under **+** > **Browse shared Bots**. If **Share** is disabled and says **Only team admins can share Bots**, ask a team admin.
+
+To add it to Slack, see [How do I add a shared Bot to Slack?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-i-add-a-shared-bot-to-slack) For everything else, see [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md).
 
 ## How do I troubleshoot Grok Bot computer, routine, connector, and startup problems?
 
@@ -139,6 +162,8 @@ Match what you see:
 - **Connected**: send the Bot a new message and ask it to try the app again.
 
 If it still doesn't work, choose **Remove**, add the app again, and sign in. If that doesn't help, [contact support](https://cursor.com/help/grok-bot/get-help.md) with the app name and your account email.
+
+**A shared Bot says a teammate's app needs reconnecting.** The app is a shared connector, so the Bot uses that Manager's account for it. Only they can reconnect it, under the Bot's **Shared connectors**. See [How do shared connectors work?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-shared-connectors-work)
 
 ## How do I add a second account for the same app?
 

@@ -23,7 +23,7 @@ When Cursor traffic goes through Secure Web Gateways (SWG), SSL inspection, or D
 Cursor's services are already encrypted end-to-end. We recommend disabling SSL inspection for these domains:
 
 - `.cursor.sh`
-- `cursor-cdn.com`
+- `cursor-cdn.com`, `*.cursor-cdn.com`
 - `marketplace.cursorapi.com`
 - `authenticate.cursor.sh`
 - `authenticator.cursor.sh`
