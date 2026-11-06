@@ -9,8 +9,8 @@
     "agents.md": {
       "upstream_path": "packages/web/src/content/docs/agents.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/agents.mdx",
-      "hash": "347b0eae3286e25e05be972eed6bd0567a2a1c18aa87ca737b385774aeba99e7",
-      "last_updated": "2026-11-01T03:48:51.082669"
+      "hash": "b84070ea2cc8c158edc83e6345c89f90d3e72f94d1ffd97114bf12974228561d",
+      "last_updated": "2026-11-06T18:47:19.084233"
     },
     "cli.md": {
       "upstream_path": "packages/web/src/content/docs/cli.mdx",
@@ -75,8 +75,8 @@
     "index.md": {
       "upstream_path": "packages/web/src/content/docs/index.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/index.mdx",
-      "hash": "133eb3ac11ee742eb5e94b7f029121a97b2e270917410ab48c5cabaa2a50dd6e",
-      "last_updated": "2026-11-01T03:48:52.427572"
+      "hash": "e0b09a93cc35fcba123d99a44255581e30726b41fd87c5b804b0c24d09f6cbdc",
+      "last_updated": "2026-11-06T18:47:21.387517"
     },
     "keybinds.md": {
       "upstream_path": "packages/web/src/content/docs/keybinds.mdx",
@@ -93,14 +93,14 @@
     "mcp-servers.md": {
       "upstream_path": "packages/web/src/content/docs/mcp-servers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/mcp-servers.mdx",
-      "hash": "526c9d35a470e75c3cfbdff936d3389b58e0de1499cca97982218efd137b29e7",
-      "last_updated": "2026-10-23T02:57:41.420052"
+      "hash": "e49f3d2593c0ee94dd975bb4c7e8ce2d16f33be8c17d5e0cb7a06aa93ddcb9bf",
+      "last_updated": "2026-11-06T18:47:22.004738"
     },
     "models.md": {
       "upstream_path": "packages/web/src/content/docs/models.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/models.mdx",
-      "hash": "7c3c9d393476a1bb8821716427d07b06a3471b3dc3cb9c79385e474f1d94db93",
-      "last_updated": "2026-11-01T03:48:52.915283"
+      "hash": "b7bd6d7d43ee07fd193a9ee4f28d2ee08e5d157b95e703838b2311c93f1f137a",
+      "last_updated": "2026-11-06T18:47:22.192890"
     },
     "network.md": {
       "upstream_path": "packages/web/src/content/docs/network.mdx",
@@ -117,20 +117,20 @@
     "plugins.md": {
       "upstream_path": "packages/web/src/content/docs/plugins.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/plugins.mdx",
-      "hash": "7d3bf152aba4fc6c1bf92632a1d0af3d97463b2e903891f1f702e3e2b48ce277",
-      "last_updated": "2026-10-23T02:57:42.116601"
+      "hash": "5aa6cde52778b72f2f743b43af44baa32e9caf00b54d095195f0c0b49ef6e151",
+      "last_updated": "2026-11-06T18:47:22.775833"
     },
     "policies.md": {
       "upstream_path": "packages/web/src/content/docs/policies.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/policies.mdx",
-      "hash": "35e3dd31b258ff9042d4780f5fefe81d7d139277e480ff05540baf9ca4e8c126",
-      "last_updated": "2026-10-23T02:57:42.280338"
+      "hash": "cab0c818323f0db2cef60e5c64c4d5a0b5bc47f0a3148b5fd659101c50078361",
+      "last_updated": "2026-11-06T18:47:22.956082"
     },
     "providers.md": {
       "upstream_path": "packages/web/src/content/docs/providers.mdx",
       "upstream_url": "https://github.com/anomalyco/opencode/blob/dev/packages/web/src/content/docs/providers.mdx",
-      "hash": "4d8306e2698fc57970e0fef3308c8ec457a28578e69199d23b1082822fc446e6",
-      "last_updated": "2026-11-01T03:48:53.626514"
+      "hash": "7c8ed291fe332bf8b11794947ca0848dd8e3c91e8fbe1f7bde9feb3ec30899d0",
+      "last_updated": "2026-11-06T18:47:23.384147"
     },
     "references.md": {
       "upstream_path": "packages/web/src/content/docs/references.mdx",
@@ -200,8 +200,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-06T10:16:27.231094",
-    "fetch_duration_seconds": 8.045944,
+    "last_fetch_completed": "2026-11-06T18:47:25.668722",
+    "fetch_duration_seconds": 8.715237,
     "total_pages_discovered": 33,
     "pages_fetched_successfully": 33,
     "pages_failed": 0,
@@ -212,7 +212,7 @@
     "total_files": 33,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-06T10:16:27.231117",
+  "last_updated": "2026-11-06T18:47:25.668744",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/opencode/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

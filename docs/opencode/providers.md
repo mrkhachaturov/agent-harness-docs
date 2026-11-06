@@ -83,7 +83,7 @@ Both options take an array of model IDs — the same IDs shown in the `/models` 
 ## OpenCode Models
 
 OpenCode Models is a list of models provided by the OpenCode team that have been
-tested and verified to work well with OpenCode. [Learn more](https://opencode.ai/v2/docs/console/).
+tested and verified to work well with OpenCode. [Learn more](https://opencode.ai/docs/console/).
 
 :::tip
 If you are new, we recommend starting with OpenCode Models.
@@ -1810,7 +1810,7 @@ If you already have an API key, you can select **Manually enter API Key** and pa
 
 ### OpenCode Models
 
-OpenCode Models is a list of tested and verified models provided by the OpenCode team. [Learn more](https://opencode.ai/v2/docs/console/).
+OpenCode Models is a list of tested and verified models provided by the OpenCode team. [Learn more](https://opencode.ai/docs/console/).
 
 1. Sign in to **OpenCode Console** and click **Create API Key**.
 
