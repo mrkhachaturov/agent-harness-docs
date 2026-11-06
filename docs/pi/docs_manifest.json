@@ -123,8 +123,8 @@
     "prompt-templates.md": {
       "upstream_path": "packages/coding-agent/docs/prompt-templates.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/prompt-templates.md",
-      "hash": "ad5113cce0d05ef0ac77b3c71f9ebe41ea68c072275f9273b9616e4924feda42",
-      "last_updated": "2026-09-22T18:29:25.271601"
+      "hash": "3ca3033678cd7f762d8bf4fff40e52e6c7fce3e5c6f24716105fa7fcbca60267",
+      "last_updated": "2026-11-06T10:16:28.413702"
     },
     "providers.md": {
       "upstream_path": "packages/coding-agent/docs/providers.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-06T01:20:32.132491",
-    "fetch_duration_seconds": 0.727616,
+    "last_fetch_completed": "2026-11-06T10:16:28.416783",
+    "fetch_duration_seconds": 1.088089,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-06T01:20:32.132504",
+  "last_updated": "2026-11-06T10:16:28.416796",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
