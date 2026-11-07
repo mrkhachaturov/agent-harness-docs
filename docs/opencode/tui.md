@@ -94,16 +94,6 @@ Compact the current session. *Alias*: `/summarize`
 
 ---
 
-### details
-
-Toggle tool execution details.
-
-```bash frame="none"
-/details
-```
-
----
-
 ### editor
 
 Open external editor for composing messages. Uses the editor set in your `EDITOR` environment variable. [Learn more](#editor-setup).
