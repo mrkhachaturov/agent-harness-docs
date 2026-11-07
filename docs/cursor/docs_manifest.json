@@ -1413,8 +1413,8 @@
     "help/grok-bot/shared-bots.md": {
       "original_url": "https://cursor.com/help/grok-bot/shared-bots",
       "original_md_url": "https://cursor.com/help/grok-bot/shared-bots.md",
-      "hash": "28b96f5ae17bb5879091c1a6074b3a3662e00ddd9cefcebd3cf7ed184cca8861",
-      "last_updated": "2026-11-06T01:20:23.547955"
+      "hash": "05d46bb832b3f9e06464b6710e8532fdc339d1c2f6ab621dabbc05d7adf09c57",
+      "last_updated": "2026-11-07T00:35:13.896205"
     },
     "help/grok-bot/sign-in.md": {
       "original_url": "https://cursor.com/help/grok-bot/sign-in",
@@ -1917,8 +1917,8 @@
     "release-notes.md": {
       "original_url": "https://cursor.com/docs/release-notes",
       "original_md_url": "https://cursor.com/docs/release-notes.md",
-      "hash": "6b04570bd0beeb7f560611777f7f29f253e870dc24cf56a53c895195ffb62b3a",
-      "last_updated": "2026-10-28T22:09:05.431875"
+      "hash": "fd212a878e539c923ac8aae24615e4cd9d97b2fb5fefe00125ee7c0b41c82f0c",
+      "last_updated": "2026-11-07T00:35:13.899140"
     },
     "release-notes/sdk.md": {
       "original_url": "https://cursor.com/docs/release-notes/sdk",
@@ -1976,8 +1976,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-06T18:47:16.818241",
-    "fetch_duration_seconds": 3.839479,
+    "last_fetch_completed": "2026-11-07T00:35:13.903730",
+    "fetch_duration_seconds": 3.545657,
     "total_pages_discovered": 329,
     "pages_fetched_successfully": 329,
     "pages_failed": 0,
@@ -1990,7 +1990,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-06T18:47:16.818257",
+  "last_updated": "2026-11-07T00:35:13.903743",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

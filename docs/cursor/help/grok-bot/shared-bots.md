@@ -111,14 +111,35 @@ In a channel thread or a DM, the shared Bot acts for the teammate who mentioned 
 
 Bots record who asked for each message they post in Slack, so anyone in the thread can ask the Bot who requested it. When a shared Bot's routine replies in a Slack thread, the Bot follows that thread and answers later replies without an @mention.
 
-Link your Slack account so the Bot knows who you are and can use your apps. Open **Settings** > **General** > **Team Bots** and choose **Link**.
+Teammates link their own Slack accounts the first time they message the Bot. See [How do I chat with a shared Bot in Slack?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-i-chat-with-a-shared-bot-in-slack)
+
+## How do I chat with a shared Bot in Slack?
+
+Mention the Bot in a channel, or send it a direct message. A Bot needs to know which Cursor account you are before it can chat with you, so the first time, it asks you to connect.
+
+1. Choose **Connect**. Your browser opens cursor.com.
+2. Sign in with the Cursor account that matches the Bot's team, then choose **Link Account**. If you're already signed in, you go straight to that page.
+3. Choose **Open Slack** to return to Slack. The Bot answers the message you sent if you successfully linked your Cursor account on the Bot's team.
+
+You connect once per Slack workspace. The link covers every Bot in that workspace, and Cloud Agents you start from Slack.
+
+You can also link before a Bot asks:
+
+- On desktop, open **Settings** > **General** > **Team Bots** and choose **Link**.
+- In the Cursor dashboard, open [Integrations](https://cursor.com/dashboard/integrations?view=slack-management) and choose Slack.
+  - If your workspace is listed under **Workspaces** and isn't marked **Connection expired**, you're linked.
+  - If your workspace is marked **Connection expired**, choose **Reconnect**, then pick your workspace in Slack's dialog and allow it.
+  - If other workspaces are listed but yours isn't, choose **Add to another workspace**, then pick your workspace in Slack's dialog and allow it.
+  - If it says **No Slack workspaces linked**, choose **Install Cursor in Slack**, then pick your workspace in Slack's dialog and allow it.
+
+Once you're connected, the Bot can still decline if it isn't shared with you. See [Who can talk to a shared Bot in Slack?](https://cursor.com/help/grok-bot/shared-bots.md#who-can-talk-to-a-shared-bot-in-slack)
 
 ## Who can talk to a shared Bot in Slack?
 
 It depends on who the Bot is shared with.
 
-- **Your organization**: any full member of your Slack workspace can mention it in channels and threads, even without a linked Cursor account or a seat on your team. Without a linked account, they're told once per thread that **some features will be limited**. In a DM, they still need to link first. The same goes for a Bot shared with your team when the team isn't in an organization, or is the only team in it.
-- **Your team, or certain people**: only people it's shared with. A linked teammate without access is told the Bot **hasn't been shared with you yet**. Add them under **Share this Bot**. Someone without a linked account is asked to link one.
+- **Your organization**: any full member of your Slack workspace can mention it in channels and threads, even without a linked Cursor account or a seat on your team. Without a linked account, they're told once per thread that **some features will be limited**. In a DM, they still need to connect first. The same goes for a Bot shared with your team when the team isn't in an organization, or is the only team in it.
+- **Your team, or certain people**: only people it's shared with. A linked teammate without access is told the Bot **hasn't been shared with you yet**. Add them under **Share this Bot**. Someone without a linked account is asked to connect one. See [How do I chat with a shared Bot in Slack?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-i-chat-with-a-shared-bot-in-slack)
 - **A personal Bot** only chats with its owner.
 
 Slack guests, Slack Connect channels, and other Slack workspaces are never included. If your Slack email matches a Cursor account that already has access, the Bot asks you to link it instead.
@@ -186,7 +207,8 @@ See [Grok Bot for Teams and Enterprise](https://cursor.com/docs/grok-bot/teams.m
 | **Your usage limit has been reached**                                                                        | Your Grok Bot usage ran out. Your chats with a teammate's shared Bot use your usage. See [Plans and billing](https://cursor.com/help/grok-bot/plans.md).                                                                                                                                                  |
 | **This Bot's owner has reached their usage limit**                                                           | This reply was billed to the owner's account, and the owner's usage ran out. Ask the owner to check their plan.                                                                                                                                                                                           |
 | **This conversation can't run on your computer because your privacy mode is stricter than the bot owner's.** | Your privacy mode setting is stricter than the owner's, so this chat can't use your computer.                                                                                                                                                                                                             |
-| In Slack, the Bot asks you to link a Cursor account                                                          | Link your Slack account under **Settings** > **General** > **Team Bots**, using the Cursor account on the Bot's team.                                                                                                                                                                                     |
+| In Slack, **Connect your Grok account to chat with me**                                                      | Choose **Connect** and sign in with the Cursor account on the Bot's team. The Bot then answers the message you sent. See [How do I chat with a shared Bot in Slack?](https://cursor.com/help/grok-bot/shared-bots.md#how-do-i-chat-with-a-shared-bot-in-slack)                                            |
+| In Slack, the Bot still asks you to connect after you did                                                    | You signed in with a different Cursor account, or linked a different Slack workspace. Unlink under **Settings** > **General** > **Team Bots**, then choose **Connect** again with the account on the Bot's team.                                                                                          |
 | In Slack, **some features will be limited**                                                                  | The Bot answered you without a linked account. Link one so it knows who you are and can use your apps.                                                                                                                                                                                                    |
 | In Slack, **I haven't been shared with you yet**                                                             | Ask the Bot's owner or a Manager to add you under **Share this Bot**.                                                                                                                                                                                                                                     |
 | In Slack, the Bot says it's someone's personal Bot                                                           | Only its owner can talk to it.                                                                                                                                                                                                                                                                            |
