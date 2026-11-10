@@ -21,8 +21,8 @@
     "account/organizations/organization-admin-api.md": {
       "original_url": "https://cursor.com/docs/account/organizations/organization-admin-api",
       "original_md_url": "https://cursor.com/docs/account/organizations/organization-admin-api.md",
-      "hash": "76d23a44b9978c946b664aa3a0237f54a42f699cc88aa5a53f5a6b4250c74d51",
-      "last_updated": "2026-10-26T22:12:59.929111"
+      "hash": "0740ee6b9179c22b9aa7ab6c632cf044d8f1f7e1ac172e464f219781e5ae90d2",
+      "last_updated": "2026-11-10T05:38:54.304654"
     },
     "account/pricing/legacy-cursor-plans.md": {
       "original_url": "https://cursor.com/docs/account/pricing/legacy-cursor-plans",
@@ -33,8 +33,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "cc6508428e311aef93166ee3cb7bb050465240cbe61a7699a11a149537d1b29a",
-      "last_updated": "2026-10-23T23:44:40.905652"
+      "hash": "665c31a2d5ad66f347b2411cb5f87c236274e3cf4a30059f9020bf92a15907ef",
+      "last_updated": "2026-11-10T05:38:54.305272"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -45,8 +45,8 @@
     "account/teams/analytics-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/analytics-api",
       "original_md_url": "https://cursor.com/docs/account/teams/analytics-api.md",
-      "hash": "64b9d139e881d0f4a93bcbbab23e916235392128ec62804a04b9dbe8a94976c2",
-      "last_updated": "2026-10-08T18:20:02.636438"
+      "hash": "d92f1b7116e95785194187b85e1f7353f50fefb5d858bc778cdfdb87036761f8",
+      "last_updated": "2026-11-10T05:38:54.305780"
     },
     "account/teams/analytics.md": {
       "original_url": "https://cursor.com/docs/account/teams/analytics",
@@ -495,8 +495,8 @@
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
       "original_md_url": "https://cursor.com/docs/bugbot.md",
-      "hash": "e9c1a2c61a3c71aadcd307f64b1a9e4ef9e88524637aed396f914b0fd4acdc50",
-      "last_updated": "2026-10-23T18:52:06.336250"
+      "hash": "c08725e36edf7bf00ab8d552be6de905127554d5ba87e3569957c1f1a1239a99",
+      "last_updated": "2026-11-10T05:38:54.307495"
     },
     "cli/acp.md": {
       "original_url": "https://cursor.com/docs/cli/acp",
@@ -1976,8 +1976,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-09T21:52:15.513169",
-    "fetch_duration_seconds": 3.773199,
+    "last_fetch_completed": "2026-11-10T05:38:54.316549",
+    "fetch_duration_seconds": 3.83768,
     "total_pages_discovered": 329,
     "pages_fetched_successfully": 329,
     "pages_failed": 0,
@@ -1990,7 +1990,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-09T21:52:15.513180",
+  "last_updated": "2026-11-10T05:38:54.316565",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
