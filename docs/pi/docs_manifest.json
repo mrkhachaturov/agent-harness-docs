@@ -81,8 +81,8 @@
     "llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/llama-cpp.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/llama-cpp.md",
-      "hash": "29d7890cc1e2a4b6ca97068237e4ca1dd8a5bb5d6890956c28d973dc0e24aa07",
-      "last_updated": "2026-11-04T10:19:26.125325"
+      "hash": "24d7d9bc1dc66fcf0e3cacf8716fc9e0561072aea95058d805818d3819389152",
+      "last_updated": "2026-11-10T14:08:32.720522"
     },
     "mcp.md": {
       "upstream_path": "packages/coding-agent/docs/mcp.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-10T05:39:04.683752",
-    "fetch_duration_seconds": 1.716239,
+    "last_fetch_completed": "2026-11-10T14:08:32.723806",
+    "fetch_duration_seconds": 0.834055,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-10T05:39:04.683764",
+  "last_updated": "2026-11-10T14:08:32.723815",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
