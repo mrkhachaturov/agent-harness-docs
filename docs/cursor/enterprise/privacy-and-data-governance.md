@@ -96,7 +96,7 @@ Data residency applies across three independent layers for supported features an
 | **Data storage**    | Customer Data is stored only in the selected region, including backups. |
 
 - Today, customers can enroll in **US-only data residency** (inference, processing, and storage in the US).
-- EU + UK inference-only coverage is available on request. Broader EU support and additional regions are in active development.
+- Broader EU support and additional regions are in active development.
 - Contact your account executive if you are interested in either option.
 
 ### US data residency

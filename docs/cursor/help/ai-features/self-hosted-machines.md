@@ -127,7 +127,7 @@ No. The worker initiates a single outbound HTTPS connection from your machine to
 
 You do not need inbound ports, firewall changes, or VPN tunnels. If your network uses an HTTPS proxy, set `HTTPS_PROXY` or `https_proxy` in the worker environment.
 
-Workers need outbound access to `api2.cursor.sh`, `api2direct.cursor.sh`, and `cloud-agent-artifacts.s3.us-east-1.amazonaws.com` for artifact uploads. See [What leaves your network](https://cursor.com/docs/cloud-agent/self-hosted.md#what-leaves-your-network) for the full data flow.
+Workers need outbound access to `api2.cursor.sh`, `api2direct.cursor.sh`, `api3.cursor.sh`, `downloads.cursor.com`, `agent-stores.s3.us-east-1.amazonaws.com`, and `cloud-agent-artifacts.s3.us-east-1.amazonaws.com`. Without `agent-stores.s3.us-east-1.amazonaws.com`, artifacts and screenshots fail to upload even though the agent keeps working. See [Networking](https://cursor.com/docs/cloud-agent/self-hosted/pool.md#networking) for a connectivity check, and [What leaves your network](https://cursor.com/docs/cloud-agent/self-hosted.md#what-leaves-your-network) for the full data flow.
 
 ## What data stays on my machine vs. in Cursor's cloud?
 

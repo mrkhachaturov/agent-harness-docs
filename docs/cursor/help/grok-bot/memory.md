@@ -35,9 +35,9 @@ In a group chat, your Bot can use what you told it in your private chat. If some
 
 Each Bot in a group chat has its own memory. Your Bot's memory isn't shared with the other Bots there, but everyone in the group can read what your Bot says. See [Group chats and Bot-to-Bot messages](https://cursor.com/help/grok-bot/group-chats.md).
 
-## What does a shared Bot learn for the team?
+## What does a Team Bot learn for the team?
 
-A [shared Bot](https://cursor.com/help/grok-bot/shared-bots.md) keeps team memory and skills that everyone who uses it benefits from. When a teammate teaches it something for the team, such as a better way to do a task, the Bot suggests the change instead of saving it straight away.
+A [Team Bot](https://cursor.com/help/grok-bot/team-bots.md) keeps team memory and skills that everyone who uses it benefits from. When a teammate teaches it something for the team, such as a better way to do a task, the Bot suggests the change instead of saving it straight away.
 
 - Suggested memory and skill changes wait until the owner or a Manager approves them. Owners and Managers see **Review learnings**, with the number waiting, under **Suggested** in the Bot's details. Each one says what it does, such as **Updates the skill** or **Forgets a team memory**, with **Approve** and **Reject**.
 - Changes the owner or a Manager makes in the Bot's main chat apply right away.
@@ -72,12 +72,12 @@ To delete everything, see [Delete your Grok Bot account](https://cursor.com/help
 
 A personal Bot's memory is yours. Only you can change it.
 
-A shared Bot can learn things for the whole team, and the owner or a Manager approves what it learns from teammates. It doesn't save anything about you personally for the team, and a teammate's shared Bot doesn't get the facts your own Bots share about you. See [What does a shared Bot learn for the team?](https://cursor.com/help/grok-bot/memory.md#what-does-a-shared-bot-learn-for-the-team)
+A Team Bot can learn things for the whole team, and the owner or a Manager approves what it learns from teammates. It doesn't save anything about you personally for the team, and a teammate's Team Bot doesn't get the facts your own Bots share about you. See [What does a Team Bot learn for the team?](https://cursor.com/help/grok-bot/memory.md#what-does-a-team-bot-learn-for-the-team)
 
 ## Related
 
 - [Change a Bot's name, picture, and what it does](https://cursor.com/help/grok-bot/edit-bot.md)
-- [Shared Bots](https://cursor.com/help/grok-bot/shared-bots.md)
+- [Team Bots](https://cursor.com/help/grok-bot/team-bots.md)
 - [Group chats and Bot-to-Bot messages](https://cursor.com/help/grok-bot/group-chats.md)
 - [Voice chat with a Bot](https://cursor.com/help/grok-bot/voice-chat.md)
 - [Store secrets securely](https://cursor.com/help/grok-bot/secrets.md)
