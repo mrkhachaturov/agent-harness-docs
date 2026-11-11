@@ -33,8 +33,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "665c31a2d5ad66f347b2411cb5f87c236274e3cf4a30059f9020bf92a15907ef",
-      "last_updated": "2026-11-10T05:38:54.305272"
+      "hash": "97c2df8103b1b627b42c1509425fd916e56784ee22b61db02348decf3bcaf416",
+      "last_updated": "2026-11-11T13:24:58.165177"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -897,8 +897,8 @@
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
       "original_md_url": "https://cursor.com/docs/grok-bot/private-networks.md",
-      "hash": "435becb0960a346843f32022bdddbc86e46fc7b34682c1f67d4f6b7e3ba8ff26",
-      "last_updated": "2026-10-24T22:51:02.754291"
+      "hash": "4460d0dc582ce23086609a84bf559d86841e9c246349bf300b8dc7f58ea34b79",
+      "last_updated": "2026-11-11T13:24:58.168574"
     },
     "grok-bot/proxies.md": {
       "original_url": "https://cursor.com/docs/grok-bot/proxies",
@@ -909,26 +909,26 @@
     "grok-bot/security-faq.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security-faq",
       "original_md_url": "https://cursor.com/docs/grok-bot/security-faq.md",
-      "hash": "ad627606b254b17fabee100e3caf0e27a99669ac90e28f29dae90ad3bffa7e01",
-      "last_updated": "2026-11-10T21:10:21.100364"
+      "hash": "6c2daac84f4b8d7038563d4e5ecc827398c1642f51856a317362c880d64daa5a",
+      "last_updated": "2026-11-11T13:24:58.168899"
     },
     "grok-bot/security.md": {
       "original_url": "https://cursor.com/docs/grok-bot/security",
       "original_md_url": "https://cursor.com/docs/grok-bot/security.md",
-      "hash": "c6b80b2b6572998b44b35316432b4db6ffb4bec605ab1328d7a8d4a8aa4ba951",
-      "last_updated": "2026-11-10T21:10:21.100643"
+      "hash": "63777945cf240793acc57754f3ec934db50020843ddc012614481baef7f8e1f6",
+      "last_updated": "2026-11-11T13:24:58.169183"
     },
     "grok-bot/settings.md": {
       "original_url": "https://cursor.com/docs/grok-bot/settings",
       "original_md_url": "https://cursor.com/docs/grok-bot/settings.md",
-      "hash": "0d5b809e0809f921c6e6aad1bb541e321d16f2a1adc439f196ee771c4223c63a",
-      "last_updated": "2026-10-24T22:51:02.755114"
+      "hash": "2a0a1d6bcc2cca25e2b0b2b1c02b5deec27502392f8f7660e57ccbed46a42fca",
+      "last_updated": "2026-11-11T13:24:58.169430"
     },
     "grok-bot/teams.md": {
       "original_url": "https://cursor.com/docs/grok-bot/teams",
       "original_md_url": "https://cursor.com/docs/grok-bot/teams.md",
-      "hash": "d6c370a15c1b0c287c0ba13cd08f9609fcb52e22163fb55a60b478c5a4cb06bb",
-      "last_updated": "2026-11-10T21:10:21.100900"
+      "hash": "3e54f2afef77322db88a308e9321331220084c097f3ceb4bf9a73ed3bafff947",
+      "last_updated": "2026-11-11T13:24:58.169719"
     },
     "grok-bot/use-cases.md": {
       "original_url": "https://cursor.com/docs/grok-bot/use-cases",
@@ -1994,8 +1994,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-11T04:10:16.210151",
-    "fetch_duration_seconds": 4.29355,
+    "last_fetch_completed": "2026-11-11T13:24:58.176606",
+    "fetch_duration_seconds": 2.872004,
     "total_pages_discovered": 332,
     "pages_fetched_successfully": 332,
     "pages_failed": 0,
@@ -2008,7 +2008,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-11T04:10:16.210165",
+  "last_updated": "2026-11-11T13:24:58.176622",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

@@ -51,8 +51,8 @@
     "extensions.md": {
       "upstream_path": "packages/coding-agent/docs/extensions.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/extensions.md",
-      "hash": "d59f4ded8e49275120c8379dbeabb847267efd36e15fc21f6189026d0fbf8f22",
-      "last_updated": "2026-11-05T01:16:17.848445"
+      "hash": "158cb65337456868a2f625790fb3d3575a0fd59ceef85c82b74018b39a8d4886",
+      "last_updated": "2026-11-11T13:24:59.719699"
     },
     "how-pi-works.md": {
       "upstream_path": "packages/coding-agent/docs/how-pi-works.md",
@@ -99,8 +99,8 @@
     "models-configuration.md": {
       "upstream_path": "packages/coding-agent/docs/models-configuration.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models-configuration.md",
-      "hash": "1761b36835cf37fbeb7adc9ebb1cb88d190145f69a6d507ad5d4349f17f908a6",
-      "last_updated": "2026-11-07T00:35:22.962436"
+      "hash": "3d87888507009fb61d10020d1f6576f0cf9f59d8d2e8f48b6cc69337bdeb8e54",
+      "last_updated": "2026-11-11T13:24:59.721457"
     },
     "models.md": {
       "upstream_path": "packages/coding-agent/docs/models.md",
@@ -111,8 +111,8 @@
     "nvidia-rtx-llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/nvidia-rtx-llama-cpp.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/nvidia-rtx-llama-cpp.md",
-      "hash": "bcd12ebfd283d8f528cf206ee4ec74f981ab36d3604419acc434c595decbebdb",
-      "last_updated": "2026-10-13T20:31:07.047728"
+      "hash": "ebb5e1c1441aa27295447f09d566f9a5266be1ac78f3afd4eafc4da96c249843",
+      "last_updated": "2026-11-11T13:24:59.722043"
     },
     "packages.md": {
       "upstream_path": "packages/coding-agent/docs/packages.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-11T04:10:18.707060",
-    "fetch_duration_seconds": 1.381229,
+    "last_fetch_completed": "2026-11-11T13:24:59.724794",
+    "fetch_duration_seconds": 0.733219,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-11T04:10:18.707075",
+  "last_updated": "2026-11-11T13:24:59.724805",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
