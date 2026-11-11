@@ -519,8 +519,8 @@
     "cli/headless.md": {
       "original_url": "https://cursor.com/docs/cli/headless",
       "original_md_url": "https://cursor.com/docs/cli/headless.md",
-      "hash": "d767966f4e86012bce9e358c80c8a8e056d4ad0c8e73d74fd036d5acdf32a7af",
-      "last_updated": "2026-06-29T22:53:03.550253"
+      "hash": "140cba16bdb10fbb2f12c05c2795e1112c447f771caabc1ec2ceca1e84977a0b",
+      "last_updated": "2026-11-11T21:42:58.997105"
     },
     "cli/installation.md": {
       "original_url": "https://cursor.com/docs/cli/installation",
@@ -585,8 +585,8 @@
     "cli/using.md": {
       "original_url": "https://cursor.com/docs/cli/using",
       "original_md_url": "https://cursor.com/docs/cli/using.md",
-      "hash": "b070cb1f882dd8e8b9ab7434ff6f96fe1f181c4907ee242773ae6bbbedb47b0b",
-      "last_updated": "2026-08-24T21:24:42.907673"
+      "hash": "4857306b2c8133685573f0c43051400750673838a0464c9bf6ffd90bd202951b",
+      "last_updated": "2026-11-11T21:42:58.997887"
     },
     "cloud-agent.md": {
       "original_url": "https://cursor.com/docs/cloud-agent",
@@ -597,8 +597,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "78368191a372d389bc9b58e826627d709bc4c4630c4c4d16f169fc351b4ba6df",
-      "last_updated": "2026-10-28T03:34:40.056774"
+      "hash": "4d2beceb0fbb0cba9bf4025bbd50fb489b3d108869f5d89a772d23bf15587666",
+      "last_updated": "2026-11-11T21:42:58.998847"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -1994,8 +1994,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-11T13:24:58.176606",
-    "fetch_duration_seconds": 2.872004,
+    "last_fetch_completed": "2026-11-11T21:42:59.007762",
+    "fetch_duration_seconds": 3.183549,
     "total_pages_discovered": 332,
     "pages_fetched_successfully": 332,
     "pages_failed": 0,
@@ -2008,7 +2008,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-11T13:24:58.176622",
+  "last_updated": "2026-11-11T21:42:59.007772",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
