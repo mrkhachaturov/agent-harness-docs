@@ -237,7 +237,7 @@ Self-hosted runs use two layers: Cursor routing (which worker serves a request) 
 **Git access on the worker**
 
 - **Existing checkouts** (My Machines or repo-backed team pools): The agent uses git credentials already on the machine, such as SSH keys or a personal access token in your credential helper. Grant each worker only the repo access it needs.
-- **Any-repo team pools with `--clone-git-repos`**: The worker clones on claim using a short-lived GitHub token minted for the user who started the run. The token covers every repo in the request. A team admin must enable GitHub token minting for team pool workers, and the requesting user must have access to each of those repositories in GitHub.
+- **Any-repo team pools with `--clone-git-repos`**: The worker clones on claim using a short-lived SCM token minted for the user who started the run. `--clone-git-repos` implies `--mint-scm-token`. The token covers every repo in the request. A team admin must turn on **SCM token minting** in [Cloud Agents → Self-hosted Machines](https://cursor.com/dashboard/cloud-agents#self-hosted). The worker flag and the team setting are both required, and the requesting user must have access to each of those repositories in GitHub.
 - **Private or self-hosted GitLab**: Authenticate git on the worker with a local PAT or SSH key. See [How do I connect private or self-hosted GitLab?](https://cursor.com/help/ai-features/self-hosted-machines.md#how-do-i-connect-private-or-self-hosted-gitlab).
 
 **When git fails but the worker is connected**

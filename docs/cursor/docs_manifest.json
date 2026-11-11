@@ -393,8 +393,8 @@
     "agent/projects.md": {
       "original_url": "https://cursor.com/docs/agent/projects",
       "original_md_url": "https://cursor.com/docs/agent/projects.md",
-      "hash": "7d7f6b16a56e7b88c5bf626a92f987c0b1db3f26e145a6ee7687c37698c8e2a2",
-      "last_updated": "2026-10-22T14:19:03.808181"
+      "hash": "9a180744ccb96bad434f132291e5a077d21f2b6f7789455468553ff2a6727d71",
+      "last_updated": "2026-11-11T04:10:16.199987"
     },
     "agent/prompting.md": {
       "original_url": "https://cursor.com/docs/agent/prompting",
@@ -705,8 +705,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "884760b04ec0a08d1aab5364ecca3bec0615489e927185a33442e8d874af59c7",
-      "last_updated": "2026-11-10T21:10:21.092541"
+      "hash": "90376472c316d10a1ebe2332c438c3dcc777125a9b80edbf6546c10f80740981",
+      "last_updated": "2026-11-11T04:10:16.202542"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -879,14 +879,20 @@
     "grok-bot/identity.md": {
       "original_url": "https://cursor.com/docs/grok-bot/identity",
       "original_md_url": "https://cursor.com/docs/grok-bot/identity.md",
-      "hash": "68b72a4c9d4368d80b0f92de77fb3af84f9e921514b83f861346153b796bdb59",
-      "last_updated": "2026-10-18T22:44:19.868775"
+      "hash": "1aecb202a4e30493886444b725f4655e7050f45430f4a379d47a39dccad697b0",
+      "last_updated": "2026-11-11T04:10:16.203710"
     },
     "grok-bot/inference-hooks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/inference-hooks",
       "original_md_url": "https://cursor.com/docs/grok-bot/inference-hooks.md",
       "hash": "13f5793508df60235c4d8d2d5fb6724f66d4ba71f5cafcfec28602e92dde8080",
       "last_updated": "2026-11-10T21:10:21.100130"
+    },
+    "grok-bot/okta-fastpass.md": {
+      "original_url": "https://cursor.com/docs/grok-bot/okta-fastpass",
+      "original_md_url": "https://cursor.com/docs/grok-bot/okta-fastpass.md",
+      "hash": "200bb3358e9a294c14aa710e446eb871122b601e3f4bfc352e3aa1c5efb08640",
+      "last_updated": "2026-11-11T04:10:16.203974"
     },
     "grok-bot/private-networks.md": {
       "original_url": "https://cursor.com/docs/grok-bot/private-networks",
@@ -1170,11 +1176,17 @@
       "hash": "b05917709c2126633fc794a805f26a69981d25278f11ca97837152244e7fdf3c",
       "last_updated": "2026-08-25T00:57:12.644733"
     },
+    "help/ai-features/projects.md": {
+      "original_url": "https://cursor.com/help/ai-features/projects",
+      "original_md_url": "https://cursor.com/help/ai-features/projects.md",
+      "hash": "ffd1c3351f8cc3d4aa788b55abb083fdde55c4cd2776e6f77211c4f4f401b9c9",
+      "last_updated": "2026-11-11T04:10:16.204621"
+    },
     "help/ai-features/self-hosted-machines.md": {
       "original_url": "https://cursor.com/help/ai-features/self-hosted-machines",
       "original_md_url": "https://cursor.com/help/ai-features/self-hosted-machines.md",
-      "hash": "edfe82d2ad22ccb743881c684a13607ec7c8150bd0b52e53d5ac518652f2f14c",
-      "last_updated": "2026-11-10T21:10:21.101536"
+      "hash": "3fe845e4d84998b096d607666ed49b5a4ba84fbdf073133cc398916b334967c4",
+      "last_updated": "2026-11-11T04:10:16.204888"
     },
     "help/ai-features/shared-transcripts.md": {
       "original_url": "https://cursor.com/help/ai-features/shared-transcripts",
@@ -1982,21 +1994,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-10T21:10:21.109122",
-    "fetch_duration_seconds": 4.748441,
-    "total_pages_discovered": 330,
-    "pages_fetched_successfully": 330,
+    "last_fetch_completed": "2026-11-11T04:10:16.210151",
+    "fetch_duration_seconds": 4.29355,
+    "total_pages_discovered": 332,
+    "pages_fetched_successfully": 332,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 330,
+    "total_files": 332,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-10T21:10:21.109134",
+  "last_updated": "2026-11-11T04:10:16.210165",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
