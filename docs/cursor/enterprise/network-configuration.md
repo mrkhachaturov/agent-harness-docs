@@ -133,6 +133,13 @@ We generally recommend allowlisting with the domain patterns above. However, if 
 - `prod.authentication.cursor.sh`: Production token issuer.
 - `authentication.cursor.sh`: JWT issuer (backend).
 
+The desktop app also reaches these hosts. The domain patterns above don't match them, so add them to your allowlist even if you use the patterns:
+
+- `agent-stores.s3.us-east-1.amazonaws.com`, `agent-stores.s3.amazonaws.com`: Used to sync skills and agent files.
+- `cursor.blob.core.windows.net`: Used to download the Remote SSH server to Windows remote hosts. Linux and macOS remote hosts download it from `downloads.cursor.com`.
+
+The remote host downloads the server itself. If it can't reach these hosts, Cursor downloads the server on your machine and copies it over SSH. To always download it locally, set `remote.SSH.localServerDownload` to `always`.
+
 ## Private connectivity
 
 Cursor supports [private connectivity](https://cursor.com/docs/cloud-agent/private-connectivity.md) for Enterprise teams that need Cloud Agents, Bugbot, or Cursor backend services to access private source control systems and package registries. Supported options include AWS PrivateLink and Cloudflare Tunnel.

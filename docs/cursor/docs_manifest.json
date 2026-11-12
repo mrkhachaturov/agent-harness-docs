@@ -795,8 +795,8 @@
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
       "original_md_url": "https://cursor.com/docs/enterprise/network-configuration.md",
-      "hash": "2223304d1bf186a9dc010fb1132e928a97cf7b0a370672f7eda74709c4bf60f2",
-      "last_updated": "2026-11-06T01:20:23.545483"
+      "hash": "1899324badbf5381754d1ca518258f7738d7ec7804ba79b892dab558094ae030",
+      "last_updated": "2026-11-12T05:22:11.968170"
     },
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
@@ -1994,8 +1994,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-11T21:42:59.007762",
-    "fetch_duration_seconds": 3.183549,
+    "last_fetch_completed": "2026-11-12T05:22:11.972755",
+    "fetch_duration_seconds": 5.025593,
     "total_pages_discovered": 332,
     "pages_fetched_successfully": 332,
     "pages_failed": 0,
@@ -2008,7 +2008,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-11T21:42:59.007772",
+  "last_updated": "2026-11-12T05:22:11.972763",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
