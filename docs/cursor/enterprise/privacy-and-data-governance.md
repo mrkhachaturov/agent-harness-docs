@@ -109,7 +109,7 @@ When US-only data residency is enabled for a team, the following stay on US-base
 - Data processing pipelines that handle your content
 - Storage of your Customer Data
 - Use of Cloud Agents, including inference, processing, and storage
-- Use of [Grok Bot](https://cursor.com/docs/grok-bot.md), including inference, processing, and storage
+- Use of [Grok Bot](https://docs.x.ai/grok-bot/overview), including inference, processing, and storage
 - Tab, editing, and autocomplete
 
 **Traveling users:** If a user on a US-only team is abroad, their requests still route to US-only infrastructure. This may add latency.

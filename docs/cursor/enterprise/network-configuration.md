@@ -33,7 +33,7 @@ Cursor's services are already encrypted end-to-end. We recommend disabling SSL i
 
 Sign-in also uses `accounts.spacex.ai`, `accounts.x.ai`, and related auth hosts. Exclude those from inspection too. `authenticator.cursor.sh` remains the fallback sign-in page during the transition. See [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md) for the full list.
 
-Both `cursorvm.com` patterns are required for Grok Bot: hosted computers use nested hostnames, and a single-level wildcard misses them. Apply the exclusions to off-network and roaming proxy profiles as well as office locations. For Grok Bot symptoms and Zscaler profile notes, see [Configure TLS-inspecting proxies](https://cursor.com/docs/grok-bot/proxies.md).
+Both `cursorvm.com` patterns are required for Grok Bot: hosted computers use nested hostnames, and a single-level wildcard misses them. Apply the exclusions to off-network and roaming proxy profiles as well as office locations. For Grok Bot symptoms and Zscaler profile notes, see [Configure TLS-inspecting proxies](https://docs.x.ai/grok-bot/proxies).
 
 If your security policy requires SSL inspection on all traffic, your proxy must support:
 

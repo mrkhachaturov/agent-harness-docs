@@ -11,7 +11,7 @@ Account deletion is self-serve and permanent.
 
 ## How do I delete a Grok Bot account?
 
-Grok Bot uses your Cursor account. Deleting the Cursor account also deletes Grok Bot. On iOS, you can start this from Grok Bot Settings. See [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md).
+Grok Bot uses your Cursor account. Deleting the Cursor account also deletes Grok Bot. On iOS, you can start this from Grok Bot Settings. See [Delete your Grok Bot account](https://grok.com/help/grok-bot/delete-account).
 
 ## What gets deleted when I delete my account?
 
@@ -29,7 +29,7 @@ All data is removed within 30 days.
 
 - [Cancel your subscription](https://cursor.com/help/account-and-billing/cancel.md)
 - [Change your email address](https://cursor.com/help/account-and-billing/change-email.md)
-- [Delete your Grok Bot account](https://cursor.com/help/grok-bot/delete-account.md)
+- [Delete your Grok Bot account](https://grok.com/help/grok-bot/delete-account)
 
 
 ---

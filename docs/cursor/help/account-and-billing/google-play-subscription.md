@@ -1,6 +1,6 @@
 # Subscribe from the Android app
 
-The [Grok Bot Android app](https://cursor.com/help/grok-bot/mobile.md) supports subscribing to a paid plan as an in-app purchase handled by Google Play. Here's how it works and how it differs from subscribing on the web.
+The [Grok Bot Android app](https://grok.com/help/grok-bot/mobile) supports subscribing to a paid plan as an in-app purchase handled by Google Play. Here's how it works and how it differs from subscribing on the web.
 
 ## Which plans can I buy in the app?
 
@@ -42,8 +42,8 @@ Yes. In-app plans are available in every region where Grok Bot is on Google Play
 ## Related
 
 - [Pricing and plans](https://cursor.com/help/account-and-billing/pricing.md)
-- [Grok Bot on mobile](https://cursor.com/help/grok-bot/mobile.md)
-- [Subscribe from the mobile app](https://cursor.com/help/grok-bot/mobile-purchase.md)
+- [Grok Bot on mobile](https://grok.com/help/grok-bot/mobile)
+- [Subscribe from the mobile app](https://grok.com/help/grok-bot/mobile-purchase)
 - [On-demand usage for mobile subscriptions](https://cursor.com/help/account-and-billing/on-demand-usage-for-mobile-subscriptions.md)
 - [Subscribe from the iOS app](https://cursor.com/help/account-and-billing/app-store-subscription.md)
 - [Usage-based charges](https://cursor.com/help/account-and-billing/overages.md)

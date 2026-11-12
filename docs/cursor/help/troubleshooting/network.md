@@ -30,7 +30,7 @@ If your firewall blocks outbound connections, allowlist these domains:
 
 Sign-in also needs the hosts in [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md).
 
-See the [network configuration docs](https://cursor.com/docs/enterprise/network-configuration.md) for the full list and connectivity tests. If Grok Bot hangs or fails at computer setup, see [Configure TLS-inspecting proxies](https://cursor.com/docs/grok-bot/proxies.md).
+See the [network configuration docs](https://cursor.com/docs/enterprise/network-configuration.md) for the full list and connectivity tests. If Grok Bot hangs or fails at computer setup, see [Configure TLS-inspecting proxies](https://docs.x.ai/grok-bot/proxies).
 
 ## What if AI features don't work over SSH or remote connections?
 

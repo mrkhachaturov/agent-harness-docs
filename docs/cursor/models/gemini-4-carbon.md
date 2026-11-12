@@ -1,4 +1,4 @@
-Gemini 4 Carbon is Google's most capable Gemini model. Use it for complex software engineering, long agentic coding tasks, and document-heavy work. For faster, lower-cost everyday work, use [Gemini 4 Argon](https://cursor.com/docs/models/gemini-4-argon.md).
+Gemini 4 Carbon is Google's most capable Gemini model. Use it for complex software engineering, long agentic coding tasks, and document-heavy work. For faster, lower-cost everyday work, use [Gemini 4 Hydrogen](https://cursor.com/docs/models/gemini-4-hydrogen.md).
 
 ## Strengths
 
