@@ -33,8 +33,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "97c2df8103b1b627b42c1509425fd916e56784ee22b61db02348decf3bcaf416",
-      "last_updated": "2026-11-11T13:24:58.165177"
+      "hash": "b05fdc833dfbe479fb2ae3fa365794c3daed7153c3aaba47180b260ab9e763f0",
+      "last_updated": "2026-11-12T14:29:31.045724"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -1994,8 +1994,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-12T05:22:11.972755",
-    "fetch_duration_seconds": 5.025593,
+    "last_fetch_completed": "2026-11-12T14:29:31.056505",
+    "fetch_duration_seconds": 2.626485,
     "total_pages_discovered": 332,
     "pages_fetched_successfully": 332,
     "pages_failed": 0,
@@ -2008,7 +2008,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-12T05:22:11.972763",
+  "last_updated": "2026-11-12T14:29:31.056519",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
