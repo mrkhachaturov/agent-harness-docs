@@ -141,8 +141,8 @@
     "rpc-commands.md": {
       "upstream_path": "packages/coding-agent/docs/rpc-commands.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/rpc-commands.md",
-      "hash": "4deeee367852f4633ef594bc079f9e9fb14640a4e3ba8a69b7c89b6f54740838",
-      "last_updated": "2026-09-25T14:23:47.476591"
+      "hash": "2bf20a4e7690db5c3407948efe0b374b444df7707ff7b238e2e80c46025bb440",
+      "last_updated": "2026-11-13T13:47:30.770326"
     },
     "rpc-extension-ui.md": {
       "upstream_path": "packages/coding-agent/docs/rpc-extension-ui.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-13T04:37:13.460589",
-    "fetch_duration_seconds": 1.91898,
+    "last_fetch_completed": "2026-11-13T13:47:30.771923",
+    "fetch_duration_seconds": 1.268455,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-13T04:37:13.460601",
+  "last_updated": "2026-11-13T13:47:30.771933",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
