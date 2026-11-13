@@ -393,8 +393,8 @@
     "agent/projects.md": {
       "original_url": "https://cursor.com/docs/agent/projects",
       "original_md_url": "https://cursor.com/docs/agent/projects.md",
-      "hash": "9a180744ccb96bad434f132291e5a077d21f2b6f7789455468553ff2a6727d71",
-      "last_updated": "2026-11-11T04:10:16.199987"
+      "hash": "dad48295ab48acebbe5299bcd83b7f770d30629eb38d9b99f34bde46fe3cb42b",
+      "last_updated": "2026-11-13T21:09:04.858984"
     },
     "agent/prompting.md": {
       "original_url": "https://cursor.com/docs/agent/prompting",
@@ -597,8 +597,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "4bc6bbac837504b5f84c45dcaaad8d6a1005a7609e86db3c21e801cd3acd5c9e",
-      "last_updated": "2026-11-12T21:42:42.659117"
+      "hash": "92a28eb02a0b0df148cbbb51cee0cf53f47e71d166b320cdb55f3faf39e547d9",
+      "last_updated": "2026-11-13T21:09:04.860575"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -1743,8 +1743,8 @@
     "security-review.md": {
       "original_url": "https://cursor.com/docs/security-review",
       "original_md_url": "https://cursor.com/docs/security-review.md",
-      "hash": "40a0f90faa68023353cc1e566c1fd6a589304b0f456aff3e3fa86492232120cf",
-      "last_updated": "2026-11-12T21:42:42.673401"
+      "hash": "64314c613a04287509e0f3ae29fdcb60715efd94f9b50dce46ebd877bcb751ca",
+      "last_updated": "2026-11-13T21:09:04.863994"
     },
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
@@ -1761,13 +1761,13 @@
     "vulnerability-remediation.md": {
       "original_url": "https://cursor.com/docs/vulnerability-remediation",
       "original_md_url": "https://cursor.com/docs/vulnerability-remediation.md",
-      "hash": "47d92bf8b06f380d7edf255c57fe1d6304bcb00c844e23744209b93192496d5e",
-      "last_updated": "2026-11-12T21:42:42.673704"
+      "hash": "c94e8caaf5760765d0822dea1675e2a1c07c13b1577f675d5d171d94d76eeaff",
+      "last_updated": "2026-11-13T21:09:04.864429"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-13T13:47:28.428096",
-    "fetch_duration_seconds": 2.187409,
+    "last_fetch_completed": "2026-11-13T21:09:04.867523",
+    "fetch_duration_seconds": 1.961525,
     "total_pages_discovered": 294,
     "pages_fetched_successfully": 294,
     "pages_failed": 0,
@@ -1780,7 +1780,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-13T13:47:28.428109",
+  "last_updated": "2026-11-13T21:09:04.867536",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
