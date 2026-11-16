@@ -89,6 +89,8 @@ Higher-priority sources replace lower-priority ones. They do not merge.
 
 When an allowlist is active, only servers matching an allowlist entry can run. Servers that don't match are blocked.
 
+A group can have its own MCP configuration, set in the group's settings under **Members** → **Groups**. A group's lists only narrow the team policy for its members. They can't allow a server or tool that the team policy blocks.
+
 Adding a server to the allowlist does not push it to users' machines. Team members still need to configure the server in their own [Cursor settings](https://cursor.com/docs/mcp.md).
 
 To distribute an approved server, add it to a [team marketplace](https://cursor.com/docs/plugins.md#team-marketplaces). Admins can link existing standalone Team MCP servers to the Default marketplace so teammates can install and configure them in the Agent Window, IDE, and CLI.
@@ -146,6 +148,12 @@ The allowlist entry matches against the full URL `https://mcp.acme.com/sse`:
 | `https://mcp.acme.com/sse` | This exact URL                          |
 | `https://*.acme.com/*`     | Any subdomain and path under `acme.com` |
 | `https://mcp.acme.com/*`   | Any path on this host                   |
+
+### Cloud Agent Allowlist
+
+By default, Cloud Agents follow the MCP allowlist above. To give them a different list, open the **Cloud Agent Allowlist** section of MCP Configuration, turn on the switch to use a separate allowlist for Cloud Agents, and save the list. Local agents keep using the regular MCP allowlist. Turn the switch off to have Cloud Agents follow the regular list again. Group MCP settings can still narrow the Cloud Agent Allowlist.
+
+Agents that run in the cloud, including Cloud Agents and agents hosted with the [Agent SDK](https://cursor.com/docs/agent-sdk/deployment.md), follow the tool controls of the list that applies to Cloud Agents. A tool outside those controls isn't offered to the agent, and calling it fails with "Your team's admin limits this MCP tool for agents that run in the cloud". Local Agent SDK and CLI runs follow the regular MCP allowlist.
 
 ### Per-server tool controls
 
