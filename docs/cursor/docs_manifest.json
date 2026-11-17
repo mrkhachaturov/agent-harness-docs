@@ -465,8 +465,8 @@
     "api/origin/grants-api.md": {
       "original_url": "https://cursor.com/docs/api/origin/grants-api",
       "original_md_url": "https://cursor.com/docs/api/origin/grants-api.md",
-      "hash": "102dfa8b3af74bd8f69f9cc4d9f14e7a339f4ccf8a20851035fb56cc73e0252c",
-      "last_updated": "2026-11-16T21:31:52.195671"
+      "hash": "a5289017a315fafcb002d6140f1d5555c6e3957c1aebb786945437b18b745e8e",
+      "last_updated": "2026-11-17T06:03:10.467695"
     },
     "api/origin/mcp.md": {
       "original_url": "https://cursor.com/docs/api/origin/mcp",
@@ -483,8 +483,8 @@
     "api/origin/migrations.md": {
       "original_url": "https://cursor.com/docs/api/origin/migrations",
       "original_md_url": "https://cursor.com/docs/api/origin/migrations.md",
-      "hash": "bf78210211c45eefaa2a86fd8737d778fa704959f03473533f6e8fa6e979d15c",
-      "last_updated": "2026-11-16T21:31:52.196640"
+      "hash": "8e9274d149efdb7e1122894f3650e9a1e2d5908e85db9548ad7426e5834ebb87",
+      "last_updated": "2026-11-17T06:03:10.468293"
     },
     "approval-agents.md": {
       "original_url": "https://cursor.com/docs/approval-agents",
@@ -1772,8 +1772,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-16T21:31:52.210198",
-    "fetch_duration_seconds": 2.55132,
+    "last_fetch_completed": "2026-11-17T06:03:10.476109",
+    "fetch_duration_seconds": 2.551208,
     "total_pages_discovered": 295,
     "pages_fetched_successfully": 295,
     "pages_failed": 0,
@@ -1786,7 +1786,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-16T21:31:52.210212",
+  "last_updated": "2026-11-17T06:03:10.476122",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
