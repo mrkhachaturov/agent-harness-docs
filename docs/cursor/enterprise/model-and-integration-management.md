@@ -149,11 +149,13 @@ The allowlist entry matches against the full URL `https://mcp.acme.com/sse`:
 | `https://*.acme.com/*`     | Any subdomain and path under `acme.com` |
 | `https://mcp.acme.com/*`   | Any path on this host                   |
 
-### Cloud Agent Allowlist
+### Local and Cloud lists
 
-By default, Cloud Agents follow the MCP allowlist above. To give them a different list, open the **Cloud Agent Allowlist** section of MCP Configuration, turn on the switch to use a separate allowlist for Cloud Agents, and save the list. Local agents keep using the regular MCP allowlist. Turn the switch off to have Cloud Agents follow the regular list again. Group MCP settings can still narrow the Cloud Agent Allowlist.
+The **Team MCP Allowlist** in MCP Configuration has two halves. The **Local list** covers local agents in the Cursor app and CLI. The **Cloud list** covers Cloud Agents and Grok Bot. Each rule applies to **Local only**, **Cloud only**, or **Local and Cloud**. Click **Use one list** to have Cloud Agents follow the Local list again. Group MCP settings can still narrow either list.
 
-Agents that run in the cloud, including Cloud Agents and agents hosted with the [Agent SDK](https://cursor.com/docs/agent-sdk/deployment.md), follow the tool controls of the list that applies to Cloud Agents. A tool outside those controls isn't offered to the agent, and calling it fails with an error that names the list, for example "This tool is outside the tool limit in your team's MCP allowlist for cloud agents, which applies because this agent runs in the cloud." Local Agent SDK and CLI runs follow the regular MCP allowlist.
+The allowlist doesn't check MCP servers that a [self-hosted worker](https://cursor.com/docs/cloud-agent/self-hosted.md) loads from its own `mcp.json`.
+
+Agents that run in the cloud, including Cloud Agents and agents hosted with the [Agent SDK](https://cursor.com/docs/agent-sdk/deployment.md), follow the tool controls of the list that applies to Cloud Agents. A tool outside those controls isn't offered to the agent, and calling it fails with an error that names the list, for example "This tool is outside the tool limit in your team's MCP allowlist for cloud agents, which applies because this agent runs in the cloud." Local Agent SDK and CLI runs follow the Local list.
 
 ### Per-server tool controls
 
