@@ -489,8 +489,8 @@
     "approval-agents.md": {
       "original_url": "https://cursor.com/docs/approval-agents",
       "original_md_url": "https://cursor.com/docs/approval-agents.md",
-      "hash": "c928a6935cfd3df4ec35a5e32a4f816d7d5bc63ab8399b094ff47d8e0567253e",
-      "last_updated": "2026-10-22T14:19:03.809324"
+      "hash": "80db48604f27bcffee1f57c3581cb889058262275d205d41f43d2da986106943",
+      "last_updated": "2026-11-18T02:43:00.771917"
     },
     "bugbot.md": {
       "original_url": "https://cursor.com/docs/bugbot",
@@ -597,8 +597,8 @@
     "cloud-agent/api/endpoints.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/endpoints",
       "original_md_url": "https://cursor.com/docs/cloud-agent/api/endpoints.md",
-      "hash": "206d0ef90e31b1ab949ffdb8699ce5c578f735d2030643b7287ecacca1a95a11",
-      "last_updated": "2026-11-17T18:03:26.944669"
+      "hash": "0472f55b0bd4c7eacc1b26658cddc3b8cc2c1b0a4ea9344e93ea72036981bae8",
+      "last_updated": "2026-11-18T02:43:00.772967"
     },
     "cloud-agent/api/webhooks.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/api/webhooks",
@@ -711,8 +711,8 @@
     "cloud-agent/self-hosted/pool.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool",
       "original_md_url": "https://cursor.com/docs/cloud-agent/self-hosted/pool.md",
-      "hash": "90376472c316d10a1ebe2332c438c3dcc777125a9b80edbf6546c10f80740981",
-      "last_updated": "2026-11-11T04:10:16.202542"
+      "hash": "d38b7aaa340aa79de96db897ee1601e683cdab6a68b5070ff160bd7e6eefc5db",
+      "last_updated": "2026-11-18T02:43:00.773772"
     },
     "cloud-agent/settings.md": {
       "original_url": "https://cursor.com/docs/cloud-agent/settings",
@@ -765,8 +765,8 @@
     "enterprise/compliance-and-monitoring.md": {
       "original_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring",
       "original_md_url": "https://cursor.com/docs/enterprise/compliance-and-monitoring.md",
-      "hash": "dbb026ff1a84dca80b1ca9cbae385e4cad7c6a582f8e23998d858171b8263bf1",
-      "last_updated": "2026-11-12T21:42:42.661689"
+      "hash": "689dc57ed76b7e4a17d60eeacc7bed4d610f099a66ae0d04995e6ca85d6f88cf",
+      "last_updated": "2026-11-18T02:43:00.774335"
     },
     "enterprise/deployment-patterns.md": {
       "original_url": "https://cursor.com/docs/enterprise/deployment-patterns",
@@ -795,8 +795,8 @@
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
       "original_md_url": "https://cursor.com/docs/enterprise/model-and-integration-management.md",
-      "hash": "837176a19dd85069e532ad8b9551f1694f8ada1d4f057ab46d4e513aa4498a78",
-      "last_updated": "2026-11-16T21:31:52.200057"
+      "hash": "9d12dd68fd86a9ac9dd33525b363abfd9d2f388c46745bb39f6046ffa50fdce2",
+      "last_updated": "2026-11-18T02:43:00.774686"
     },
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
@@ -807,14 +807,14 @@
     "enterprise/opentelemetry-export.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export.md",
-      "hash": "97c0c6d27f15649d102e5142db9d45b28a16112a76af7657de12f4a2c5faf089",
-      "last_updated": "2026-11-12T21:42:42.663201"
+      "hash": "4744bf7d5549422d064d1f97844b992855468d07485525e4633bda3ebb02f355",
+      "last_updated": "2026-11-18T02:43:00.775031"
     },
     "enterprise/opentelemetry-export/wire.md": {
       "original_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire",
       "original_md_url": "https://cursor.com/docs/enterprise/opentelemetry-export/wire.md",
-      "hash": "39c69106bd82a9a5261ef737f838c5d1acf6b903183aa85d010edaead4134c8c",
-      "last_updated": "2026-11-04T10:19:18.960567"
+      "hash": "c493dddff998fd388dd3f2695af66f3d110934d4cb417f2c256d12b5157c364f",
+      "last_updated": "2026-11-18T02:43:00.775433"
     },
     "enterprise/organization-groups.md": {
       "original_url": "https://cursor.com/docs/enterprise/organization-groups",
@@ -1407,8 +1407,8 @@
     "integrations/bitbucket.md": {
       "original_url": "https://cursor.com/docs/integrations/bitbucket",
       "original_md_url": "https://cursor.com/docs/integrations/bitbucket.md",
-      "hash": "c3cf3b4d26465647cbfcb67121d8633b6dd4f0b684e08b464dd6c564887bfb9b",
-      "last_updated": "2026-11-16T21:31:52.201653"
+      "hash": "f2e859a2d0bb691fb014a6b997e5657067354c8b5aeb3fadd73b1f0e34e1dbf5",
+      "last_updated": "2026-11-18T02:43:00.776589"
     },
     "integrations/cursor-blame.md": {
       "original_url": "https://cursor.com/docs/integrations/cursor-blame",
@@ -1461,8 +1461,8 @@
     "integrations/slack.md": {
       "original_url": "https://cursor.com/docs/integrations/slack",
       "original_md_url": "https://cursor.com/docs/integrations/slack.md",
-      "hash": "9e9ddbeeeb74f2a8fe0cf55aae51496ff90700b1d24ac3fce7fd257a936a683d",
-      "last_updated": "2026-11-16T21:31:52.202015"
+      "hash": "d75e259869cc72d3582b269e501c6bff84deb88dedf891f12af3e8eb43885f30",
+      "last_updated": "2026-11-18T02:43:00.777051"
     },
     "integrations/tailscale.md": {
       "original_url": "https://cursor.com/docs/integrations/tailscale",
@@ -1671,8 +1671,8 @@
     "origin/git.md": {
       "original_url": "https://cursor.com/docs/origin/git",
       "original_md_url": "https://cursor.com/docs/origin/git.md",
-      "hash": "926384b78b4304a74141e9eeeb0977703324e28209b35fff24979e35e3940c0a",
-      "last_updated": "2026-10-19T21:57:54.420965"
+      "hash": "b000a8d1f77f97ad950a589bf397e65f9977b07efdd849549b59380cd91f533b",
+      "last_updated": "2026-11-18T02:43:00.777647"
     },
     "origin/mirror-github.md": {
       "original_url": "https://cursor.com/docs/origin/mirror-github",
@@ -1767,13 +1767,13 @@
     "vulnerability-remediation.md": {
       "original_url": "https://cursor.com/docs/vulnerability-remediation",
       "original_md_url": "https://cursor.com/docs/vulnerability-remediation.md",
-      "hash": "ba1b43de4bae99c2ee33c0758a6b505b379700a5837ce63c3340a8991ca7d566",
-      "last_updated": "2026-11-16T21:31:52.207628"
+      "hash": "f76d400614f6d1cf34d968c0a4b6205e468078202a07ba3888fa97d485ec00c8",
+      "last_updated": "2026-11-18T02:43:00.779532"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-17T18:03:26.951715",
-    "fetch_duration_seconds": 2.924038,
+    "last_fetch_completed": "2026-11-18T02:43:00.783041",
+    "fetch_duration_seconds": 4.030099,
     "total_pages_discovered": 295,
     "pages_fetched_successfully": 295,
     "pages_failed": 0,
@@ -1786,7 +1786,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-17T18:03:26.951727",
+  "last_updated": "2026-11-18T02:43:00.783055",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

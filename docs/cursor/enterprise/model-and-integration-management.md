@@ -153,7 +153,7 @@ The allowlist entry matches against the full URL `https://mcp.acme.com/sse`:
 
 By default, Cloud Agents follow the MCP allowlist above. To give them a different list, open the **Cloud Agent Allowlist** section of MCP Configuration, turn on the switch to use a separate allowlist for Cloud Agents, and save the list. Local agents keep using the regular MCP allowlist. Turn the switch off to have Cloud Agents follow the regular list again. Group MCP settings can still narrow the Cloud Agent Allowlist.
 
-Agents that run in the cloud, including Cloud Agents and agents hosted with the [Agent SDK](https://cursor.com/docs/agent-sdk/deployment.md), follow the tool controls of the list that applies to Cloud Agents. A tool outside those controls isn't offered to the agent, and calling it fails with "Your team's admin limits this MCP tool for agents that run in the cloud". Local Agent SDK and CLI runs follow the regular MCP allowlist.
+Agents that run in the cloud, including Cloud Agents and agents hosted with the [Agent SDK](https://cursor.com/docs/agent-sdk/deployment.md), follow the tool controls of the list that applies to Cloud Agents. A tool outside those controls isn't offered to the agent, and calling it fails with an error that names the list, for example "This tool is outside the tool limit in your team's MCP allowlist for cloud agents, which applies because this agent runs in the cloud." Local Agent SDK and CLI runs follow the regular MCP allowlist.
 
 ### Per-server tool controls
 
