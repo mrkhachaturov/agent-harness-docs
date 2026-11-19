@@ -33,8 +33,8 @@
     "account/teams/admin-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/admin-api",
       "original_md_url": "https://cursor.com/docs/account/teams/admin-api.md",
-      "hash": "4cfadf7d7d5df7a151a2c2d09e0f01bd3dac66fff2025d32a7e0f2e1756a528c",
-      "last_updated": "2026-11-12T21:42:42.653099"
+      "hash": "01419538557f619067afb50fcb6eeeb656e54c5f223ed85e2c37d437eb673591",
+      "last_updated": "2026-11-19T19:52:30.428325"
     },
     "account/teams/ai-code-tracking-api.md": {
       "original_url": "https://cursor.com/docs/account/teams/ai-code-tracking-api",
@@ -795,8 +795,8 @@
     "enterprise/model-and-integration-management.md": {
       "original_url": "https://cursor.com/docs/enterprise/model-and-integration-management",
       "original_md_url": "https://cursor.com/docs/enterprise/model-and-integration-management.md",
-      "hash": "f64419e6e0f103fc2cd3121f0f7b80762bba2b68ebf14f10e866a6646be5fc8c",
-      "last_updated": "2026-11-18T19:52:15.274591"
+      "hash": "f9cb9db868f5f00cdfeb60def44b7748e0b7f08d420e101eddfef2f6a0df8a3f",
+      "last_updated": "2026-11-19T19:52:30.430965"
     },
     "enterprise/network-configuration.md": {
       "original_url": "https://cursor.com/docs/enterprise/network-configuration",
@@ -1773,13 +1773,13 @@
     "vulnerability-remediation.md": {
       "original_url": "https://cursor.com/docs/vulnerability-remediation",
       "original_md_url": "https://cursor.com/docs/vulnerability-remediation.md",
-      "hash": "d27501926a32105f2e7ff0228f7cc7571f103949b552ac18828c5bf58d849fcc",
-      "last_updated": "2026-11-18T19:52:15.280381"
+      "hash": "a3a3d353f8701d0dfc74d552dde91f42652efc7b55038b79360e5fbbce98f166",
+      "last_updated": "2026-11-19T19:52:30.433904"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-19T11:01:30.119516",
-    "fetch_duration_seconds": 3.236723,
+    "last_fetch_completed": "2026-11-19T19:52:30.437026",
+    "fetch_duration_seconds": 4.031817,
     "total_pages_discovered": 296,
     "pages_fetched_successfully": 296,
     "pages_failed": 0,
@@ -1792,7 +1792,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-19T11:01:30.119529",
+  "last_updated": "2026-11-19T19:52:30.437038",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
