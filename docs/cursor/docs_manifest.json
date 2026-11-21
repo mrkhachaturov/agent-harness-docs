@@ -1791,13 +1791,13 @@
     "vulnerability-remediation.md": {
       "original_url": "https://cursor.com/docs/vulnerability-remediation",
       "original_md_url": "https://cursor.com/docs/vulnerability-remediation.md",
-      "hash": "a3a3d353f8701d0dfc74d552dde91f42652efc7b55038b79360e5fbbce98f166",
-      "last_updated": "2026-11-19T19:52:30.433904"
+      "hash": "29b4afa00b6d4686b0802645598e563b187d21d9c3c455cdb0b6a0b167fdc14e",
+      "last_updated": "2026-11-21T18:35:06.569073"
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-21T10:33:44.149414",
-    "fetch_duration_seconds": 3.926643,
+    "last_fetch_completed": "2026-11-21T18:35:06.572642",
+    "fetch_duration_seconds": 2.832194,
     "total_pages_discovered": 299,
     "pages_fetched_successfully": 299,
     "pages_failed": 0,
@@ -1810,7 +1810,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-21T10:33:44.149427",
+  "last_updated": "2026-11-21T18:35:06.572654",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
