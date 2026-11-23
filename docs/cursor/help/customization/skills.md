@@ -39,7 +39,7 @@ Open **Customize → Skills**, open a personal skill, and choose **Publish**. Cu
 
 ## Are user-level skills available on Cloud Agents and remote workers?
 
-You can [sync](https://cursor.com/help/customization/skills.md#how-do-i-use-personal-skills-with-cloud-agents) `~/.cursor/skills/` so Cloud Agents can use those skills. `~/.agents/skills/` and unsynced local skills stay on your machine. They are not copied to Cloud Agents, Agents Window remote SSH, or [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted/pool.md). On self-hosted workers, use project skills in the repo or bake skills into the worker image.
+You can [sync](https://cursor.com/help/customization/skills.md#how-do-i-use-personal-skills-with-cloud-agents) `~/.cursor/skills/` so Cloud Agents can use those skills, including Cloud Agents on [self-hosted workers](https://cursor.com/docs/cloud-agent/self-hosted/pool.md). `~/.agents/skills/` and unsynced local skills stay on your machine. They are not copied to Cloud Agents or Agents Window remote SSH. A self-hosted worker also reads the skill folders in its own home folder. Skills in the worker's `~/.cursor/skills/` appear in the `/` menu there.
 
 ## How do I scope a skill to specific files?
 

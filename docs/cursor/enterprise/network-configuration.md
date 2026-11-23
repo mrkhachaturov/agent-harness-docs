@@ -31,7 +31,7 @@ Cursor's services are already encrypted end-to-end. We recommend disabling SSL i
 - `*.*.cursorvm.com`
 - `cursor.com` and `*.cursor.com` (the web dashboard, Cloud Agents at `cursor.com/agents`, and code review pages)
 
-Sign-in also uses `accounts.spacex.ai`, `accounts.x.ai`, and related auth hosts. Exclude those from inspection too. `authenticator.cursor.sh` remains the fallback sign-in page during the transition. See [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md) for the full list.
+Sign-in also uses `accounts.spacexsi.com` and related auth hosts, plus `accounts.x.ai` during the transition. Exclude those from inspection too. `authenticator.cursor.sh` remains the fallback sign-in page during the transition. See [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md) for the full list.
 
 Both `cursorvm.com` patterns are required for Grok Bot: hosted computers use nested hostnames, and a single-level wildcard misses them. Apply the exclusions to off-network and roaming proxy profiles as well as office locations. For Grok Bot symptoms and Zscaler profile notes, see [Configure TLS-inspecting proxies](https://docs.x.ai/grok-bot/proxies).
 
@@ -129,7 +129,7 @@ We generally recommend allowlisting with the domain patterns above. However, if 
   - `agentn.global.api5.cursor.sh`
 - `authenticate.cursor.sh`: Authorization endpoint.
 - `authenticator.cursor.sh`: Auth UI and login webview. Fallback sign-in page during the transition.
-- `accounts.spacex.ai`, `accounts.x.ai`: New sign-in page. See [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md) for the related auth hosts.
+- `accounts.spacexsi.com`: New sign-in page. `accounts.x.ai` also serves it during the transition. See [Which domains does Cursor sign-in need?](https://cursor.com/help/troubleshooting/sign-in-domains.md) for the related auth hosts.
 - `prod.authentication.cursor.sh`: Production token issuer.
 - `authentication.cursor.sh`: JWT issuer (backend).
 

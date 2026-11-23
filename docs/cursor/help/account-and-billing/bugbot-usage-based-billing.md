@@ -38,6 +38,12 @@ You can configure effort levels from **Settings** in [Bugbot Automations](https:
 
 A review Bugbot skips because the PR is too large records no review usage. On the [legacy seat-based plan](https://cursor.com/docs/bugbot/legacy-pricing.md), starting that review can still add a Bugbot seat before Bugbot checks the PR size.
 
+## Does Bugbot learning use Bugbot usage?
+
+Yes. When **Automatically Learn Rules** is on, Bugbot runs a learning pass each time a pull request is merged or closed. That pass uses Bugbot usage like a review and posts nothing on the pull request. `@cursor remember` and a manual backfill use Bugbot usage too.
+
+To stop automatic learning, turn off **Automatically Learn Rules** for the organization in [Bugbot in Automations](https://cursor.com/automations/from-cursor/bugbot). A repository set to manual-only skips it. On a personal account, running Bugbot **only when mentioned** also skips it. A team member's personal setting doesn't stop learning for the team. See [Learned rules](https://cursor.com/docs/bugbot.md#learned-rules).
+
 ## How to switch to usage-based Bugbot early
 
 Existing customers can switch to usage-based Bugbot in their [Cursor dashboard](https://cursor.com/dashboard/bugbot?modal=migrate-bugbot).

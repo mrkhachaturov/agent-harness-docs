@@ -15,8 +15,8 @@
     "codemode.md": {
       "upstream_path": "packages/coding-agent/docs/codemode.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/codemode.md",
-      "hash": "3a96ee10da36395bbd22beb60ac029f8ca8a859f2fd3c3104cfc38f9d5a1f95a",
-      "last_updated": "2026-10-20T18:54:11.210995"
+      "hash": "691ee9ae7e13dc002e6ab3bc6bde8d279eace28f5a4c2d013aa98de154f2afe9",
+      "last_updated": "2026-11-23T23:14:19.607196"
     },
     "compaction.md": {
       "upstream_path": "packages/coding-agent/docs/compaction.md",
@@ -93,20 +93,20 @@
     "message-types.md": {
       "upstream_path": "packages/coding-agent/docs/message-types.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/message-types.md",
-      "hash": "78bb9c295e88948c9bdb23e7c75a66a0e2703601c48d731fda01d24664dcf63a",
-      "last_updated": "2026-10-23T14:02:37.879044"
+      "hash": "4dc1befb84d59716cfa561a52c3208cd7b9805409258ae296ecf507c3128e7c6",
+      "last_updated": "2026-11-23T23:14:19.610300"
     },
     "models-configuration.md": {
       "upstream_path": "packages/coding-agent/docs/models-configuration.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models-configuration.md",
-      "hash": "bca10788293f0674afca7656e061604adba1aa5f1c022493ecaee0ac46153e41",
-      "last_updated": "2026-11-21T01:56:49.742811"
+      "hash": "de542ee453cb6f4f04681aba9bc16f79ce1890e3d00d3d2ac0a89c82a31e1123",
+      "last_updated": "2026-11-23T23:14:19.610704"
     },
     "models.md": {
       "upstream_path": "packages/coding-agent/docs/models.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/models.md",
-      "hash": "a1a373ac64d62afc3a039d7b614caf1216d3ef9c9278179f9d859eee5ca0855d",
-      "last_updated": "2026-11-02T21:17:55.108133"
+      "hash": "dae214138391725d202ea895adec590c596f1ce588cf9ef22b9f946bbd38cf39",
+      "last_updated": "2026-11-23T23:14:19.611073"
     },
     "nvidia-rtx-llama-cpp.md": {
       "upstream_path": "packages/coding-agent/docs/nvidia-rtx-llama-cpp.md",
@@ -129,8 +129,8 @@
     "providers.md": {
       "upstream_path": "packages/coding-agent/docs/providers.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/providers.md",
-      "hash": "4ed501bc435fb8ffb3824748ca679496f778618caca67859c8a8fee0b7f5aebf",
-      "last_updated": "2026-11-13T04:37:13.458386"
+      "hash": "71c190962e84c4dc08ba6904bd460153ac4c8f91f49d53e5d1d3d86e4132bf63",
+      "last_updated": "2026-11-23T23:14:19.611863"
     },
     "quickstart.md": {
       "upstream_path": "packages/coding-agent/docs/quickstart.md",
@@ -141,8 +141,8 @@
     "rpc-commands.md": {
       "upstream_path": "packages/coding-agent/docs/rpc-commands.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/rpc-commands.md",
-      "hash": "2bf20a4e7690db5c3407948efe0b374b444df7707ff7b238e2e80c46025bb440",
-      "last_updated": "2026-11-13T13:47:30.770326"
+      "hash": "a9b930a96292138e3f06dc9d1346294814eb481b83d77ac705e5047ff7abc2b9",
+      "last_updated": "2026-11-23T23:14:19.612373"
     },
     "rpc-extension-ui.md": {
       "upstream_path": "packages/coding-agent/docs/rpc-extension-ui.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-23T11:40:03.245813",
-    "fetch_duration_seconds": 1.480739,
+    "last_fetch_completed": "2026-11-23T23:14:19.615141",
+    "fetch_duration_seconds": 1.227897,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-23T11:40:03.245844",
+  "last_updated": "2026-11-23T23:14:19.615150",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",

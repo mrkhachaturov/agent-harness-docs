@@ -46,6 +46,8 @@ Learning is set per organization.
 2. Go to **Organizations** and select the organization
 3. Turn **Automatically Learn Rules** on or off
 
+Learning uses Bugbot usage. Bugbot runs a learning pass each time a pull request is merged or closed, and it posts nothing on the pull request. On a personal account, running Bugbot **only when mentioned** also skips that pass. A team member's personal setting doesn't stop learning for the team. `@cursor remember` and a manual backfill use Bugbot usage too.
+
 See [Bugbot](https://cursor.com/docs/bugbot.md#learned-rules) for details.
 
 ## How do I check which rules Bugbot used?
