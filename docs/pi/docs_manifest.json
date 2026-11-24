@@ -15,8 +15,8 @@
     "codemode.md": {
       "upstream_path": "packages/coding-agent/docs/codemode.md",
       "upstream_url": "https://github.com/earendil-works/pi/blob/main/packages/coding-agent/docs/codemode.md",
-      "hash": "691ee9ae7e13dc002e6ab3bc6bde8d279eace28f5a4c2d013aa98de154f2afe9",
-      "last_updated": "2026-11-23T23:14:19.607196"
+      "hash": "52830e39b999b802afc50da50a7338f80198781591419aa30443664148cf598d",
+      "last_updated": "2026-11-24T19:52:57.914334"
     },
     "compaction.md": {
       "upstream_path": "packages/coding-agent/docs/compaction.md",
@@ -254,8 +254,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-24T07:57:30.931201",
-    "fetch_duration_seconds": 1.595684,
+    "last_fetch_completed": "2026-11-24T19:52:57.921190",
+    "fetch_duration_seconds": 0.659427,
     "total_pages_discovered": 42,
     "pages_fetched_successfully": 42,
     "pages_failed": 0,
@@ -266,7 +266,7 @@
     "total_files": 42,
     "fetch_tool_version": "1.0"
   },
-  "last_updated": "2026-11-24T07:57:30.931215",
+  "last_updated": "2026-11-24T19:52:57.921202",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/pi/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
