@@ -1011,8 +1011,8 @@
     "help/account-and-billing/teams-setup.md": {
       "original_url": "https://cursor.com/help/account-and-billing/teams-setup",
       "original_md_url": "https://cursor.com/help/account-and-billing/teams-setup.md",
-      "hash": "30e4205bb7af6f0afbca8ec8eb8dbd6568232907b177ac42d55e506565feb273",
-      "last_updated": "2026-06-29T22:53:03.563668"
+      "hash": "34a4298975deef3d9e8f894b35d2a7052e1c3d556efc73da139bf753c72b9bd9",
+      "last_updated": "2026-11-26T20:50:08.329539"
     },
     "help/ai-features/agent.md": {
       "original_url": "https://cursor.com/help/ai-features/agent",
@@ -1832,8 +1832,8 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-26T11:48:46.428990",
-    "fetch_duration_seconds": 3.4124,
+    "last_fetch_completed": "2026-11-26T20:50:08.335064",
+    "fetch_duration_seconds": 5.724719,
     "total_pages_discovered": 305,
     "pages_fetched_successfully": 305,
     "pages_failed": 0,
@@ -1846,7 +1846,7 @@
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-26T11:48:46.429005",
+  "last_updated": "2026-11-26T20:50:08.335077",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
