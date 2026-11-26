@@ -1,6 +1,6 @@
 # Privacy and data
 
-Cursor is designed to keep your code private. Here's how data handling works.
+Cursor is designed to keep your code private.
 
 ## What is Privacy Mode?
 

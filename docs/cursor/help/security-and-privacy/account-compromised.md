@@ -22,7 +22,13 @@ Next, sign out all active Cursor sessions:
 
 1. Go to [cursor.com/dashboard](https://cursor.com/dashboard)
 2. Click My Settings
-3. Scroll down to Active Sessions and click Revoke next to each session
+3. Scroll down to **Active Sessions** or **Sessions** and click **Sign out everywhere**.
+4. Select **Also revoke my personal API keys** if a Cursor API key may be exposed
+5. Confirm with **Sign out everywhere**
+
+This signs your account out of every device and Cursor client, including the desktop app, the CLI, mobile, and other browsers. **Keep this browser signed in** leaves your current browser session active so you can keep working in the dashboard.
+
+To end one session instead, click Revoke next to it. Learn more in [Session management](https://cursor.com/docs/security/sessions.md).
 
 ## What if I use SSO to log in?
 

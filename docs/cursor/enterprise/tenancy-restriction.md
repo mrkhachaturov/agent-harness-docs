@@ -113,7 +113,7 @@ Sign-in and refresh use the same error key:
 
 ### Desktop app
 
-cursor.com shows the page and session-check body above. The desktop app does not yet display this error. A blocked sign-in can stay on the waiting screen, and a blocked refresh signs the user out without the explanation.
+cursor.com shows the page and session-check body above. The desktop app doesn't display this error. A blocked sign-in can stay on the waiting screen, and a blocked refresh signs the user out without the explanation.
 
 ## Related docs
 

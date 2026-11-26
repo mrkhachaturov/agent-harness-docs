@@ -1,6 +1,6 @@
 # Endpoint Security Configuration
 
-Cursor loads JavaScript modules and performs file I/O during startup. Endpoint security software that intercepts file operations or injects into processes can slow startup past internal timeouts, causing features like Agent to fail. This page covers how to configure exclusions so Cursor works alongside your security stack.
+Cursor loads JavaScript modules and performs file I/O during startup. Endpoint security software that intercepts file operations or injects into processes can slow startup past Cursor's timeouts, causing features like Agent to fail. Configure exclusions so Cursor works alongside your security stack.
 
 ## What to exclude
 
@@ -45,7 +45,7 @@ This primarily affects startup. Once modules are loaded into memory, ongoing fil
 
 Cursor's own files are code-signed binaries and bundled JavaScript, not user-generated content. Excluding them from real-time scanning is low-risk and does not reduce protection for user files or network traffic.
 
-Both **process exclusions** and **path exclusions** may be needed. Some products use kernel-level minifilter drivers that scan all file I/O regardless of which process is reading. A process-only exclusion may not be sufficient — add path exclusions for the Cursor install directory as well.
+Both **process exclusions** and **path exclusions** may be needed. Some products use kernel-level minifilter drivers that scan all file I/O regardless of which process is reading. A process-only exclusion may not be enough, so add path exclusions for the Cursor install directory as well.
 
 ## Identifying active security software
 
@@ -80,7 +80,7 @@ After applying exclusions, restart Cursor and verify that Agent features work wi
 
 1. Run the [identification commands above](https://cursor.com/docs/enterprise/endpoint-security.md#identifying-active-security-software) to determine which security products are running
 2. Add both process and path exclusions for the identified products in their management consoles
-3. Restart Cursor and test Agent — this is the definitive test of whether exclusions are working
+3. Restart Cursor and test Agent. This is the definitive test of whether exclusions are working
 4. If exclusions don't resolve the issue, [export logs](https://cursor.com/help/troubleshooting/agent-issues.md#what-if-i-see-agent-execution-timed-out) and contact Cursor support with the diagnostic output\`
 
 

@@ -60,7 +60,7 @@ Admins can create and manage service accounts from the [Cursor Dashboard](https:
 
 Each service account API key has its own permissions and repository scope, which you choose when you create the key. Permissions cover areas such as members, usage and spend, audit logs, settings, repositories, Bugbot, security findings, and Cloud Agents. **Run Cloud Agents** is selected by default.
 
-When you create a service account, an API key is generated. Copy this key immediately—it will only be shown once and cannot be retrieved later.
+When you create a service account, an API key is generated. Copy this key immediately. It is shown only once and can't be retrieved later.
 
 Store your API key securely. If you lose it, you'll need to rotate it to generate a new one.
 
@@ -84,7 +84,7 @@ To rotate an API key:
 2. Find the service account and click the rotate icon next to its API key
 3. Copy the new key immediately
 
-The old key is immediately invalidated. Update any integrations using the old key.
+The old key is invalidated. Update any integrations using the old key.
 
 ## Spend limits
 

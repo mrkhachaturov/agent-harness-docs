@@ -56,7 +56,7 @@ See [Deployment Patterns](https://cursor.com/docs/enterprise/deployment-patterns
 
 The most important MDM policy prevents users from logging into personal Cursor accounts on corporate devices. Device management enforces this policy on the computer. The [tenancy restriction header](https://cursor.com/docs/enterprise/tenancy-restriction.md) limits organizations and teams on traffic from your network.
 
-When you set an allowed team ID policy, Cursor only permits authentication to those specific team IDs. If a user tries to log in with a different team ID (like a personal account), Cursor logs them out immediately.
+When you set an allowed team ID policy, Cursor only permits authentication to those specific team IDs. If a user tries to log in with a different team ID (like a personal account), Cursor logs them out.
 
 For example, if your employees have corporate laptops, you can set the allowed team ID to your enterprise team ID. This prevents them from accidentally using personal accounts that might not have Privacy Mode enabled.
 
@@ -66,7 +66,7 @@ For example, setting `cursorAuth.allowedTeamId` to `"1,3,7"` allows users from t
 
 When a user attempts to log in with a team ID that is not in the allowed list:
 
-- They are forcefully logged out immediately
+- They are forcefully logged out
 - An error message is displayed
 - The application prevents further authentication attempts until a valid team ID is used
 
@@ -82,7 +82,7 @@ Control which extensions users can install in Cursor. Extensions can access your
 
 The `extensions.allowed` Cursor setting controls which extensions can be installed. This setting accepts a JSON object where keys are publisher names or full extension IDs, and values are booleans indicating whether they are allowed.
 
-> **Important:** `extensions.allowed` uses an allowlist model. As soon as you add any entries, only explicitly allowed entries are permitted, and everything else is blocked. There is no implicit "allow all" fallback. For example, setting `extensions.allowed` to `{"anysphere": false}` does not only block Anysphere extensions; it blocks every other publisher too, because nothing else is on the allowlist.
+> **Important:** `extensions.allowed` uses an allowlist model. Once you add any entries, only explicitly allowed entries are permitted, and everything else is blocked. There is no implicit "allow all" fallback. For example, setting `extensions.allowed` to `{"anysphere": false}` does not only block Anysphere extensions; it blocks every other publisher too, because nothing else is on the allowlist.
 
 To block specific extensions while keeping everything else allowed, use the `"*": true` wildcard alongside the entries you want to deny. The wildcard is the least specific match, so publisher and extension ID entries override it:
 

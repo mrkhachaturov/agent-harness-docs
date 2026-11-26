@@ -1,6 +1,6 @@
 # Compliance and Monitoring
 
-Compliance requires visibility into who did what, when, and why. This documentation covers audit logs, AI code tracking, certifications, and how to meet regulatory requirements.
+Compliance requires visibility into who did what, when, and why. Use audit logs, AI code tracking, and Cursor's certifications to meet regulatory requirements.
 
 ## Audit logs
 
@@ -96,6 +96,8 @@ Field names are keys in Admin API `event_data` and in the equivalent CSV or stre
 | `service_account`       | A service account is created, archived, or gets a spend limit                                                                                   | `action` (`create`, `archive`, `set_spend_limit`), `service_account_id`, `service_account_name`, `old_spend_limit_cents`, `new_spend_limit_cents`  |
 | `api_key`               | A service account key is created, rotated, or rescoped                                                                                          | `action` (`create`, `rotate`, `update_repo_scope`), `service_account_id`, `service_account_name`, `api_key_id`, `repo_scope`, `repo_scope_enabled` |
 | `cloud_agent_sub_token` | A service account key mints a delegated token for a member through `POST /v1/sub-tokens`. `user_email` is the key; the member is in the payload | `subject_user_email`, `service_account_id`, `api_key_id`, `ttl_seconds`                                                                            |
+
+To review one key's activity, go to the API Keys page and select **View audit logs** from the menu on the key's row or the service account's row. The audit log opens filtered to that key. The same page shows when each key was last used. See [Review key activity](https://cursor.com/docs/security/api-keys.md#review-key-activity).
 
 #### Team settings and integrations
 

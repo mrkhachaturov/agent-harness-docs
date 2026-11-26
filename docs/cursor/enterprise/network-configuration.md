@@ -1,6 +1,6 @@
 # Network Configuration
 
-Cursor needs to communicate with backend services and AI providers. This documentation covers how to configure Cursor to work within your network infrastructure, including proxies, firewalls, and encryption requirements.
+Cursor needs to communicate with backend services and AI providers. Configure your proxies and firewalls to let that traffic through, and review the encryption requirements.
 
 To limit which organizations and teams can use Cursor from this network, send the [tenancy restriction header](https://cursor.com/docs/enterprise/tenancy-restriction.md) from your proxy.
 
@@ -144,7 +144,7 @@ The remote host downloads the server itself. If it can't reach these hosts, Curs
 
 Cursor supports [private connectivity](https://cursor.com/docs/cloud-agent/private-connectivity.md) for Enterprise teams that need Cloud Agents, Bugbot, or Cursor backend services to access private source control systems and package registries. Supported options include AWS PrivateLink and Cloudflare Tunnel.
 
-Cursor does not currently offer VPC peering or customer-facing Google Private Service Connect.
+Cursor doesn't offer VPC peering or customer-facing Google Private Service Connect.
 
 When you run Cursor agents in the editor or via the CLI, they inherit your existing network configuration. If you run Cursor on a machine within your VPC, agent operations inherit:
 

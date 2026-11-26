@@ -1,19 +1,19 @@
 # Security and Privacy Hardening
 
-This page consolidates the security and privacy guidance spread across the Cursor docs into one reference, so teams configuring Cursor can review and apply the right controls without hunting through every page. Each item links to its source doc for the full detail.
+Harden your Cursor deployment with these security and privacy controls. Each control has a recommendation and a link to the doc where you configure it.
 
 ## Shared responsibility
 
-Cursor and your team share responsibility for a secure deployment. Cursor builds, secures, and operates the platform; you decide how to configure and adopt it for your environment. This page focuses on the controls you own. For Cursor's own posture, see the [Trust Center](https://trust.cursor.com/), [Security page](https://cursor.com/security), and [Data Use](https://cursor.com/data-use) policies.
+Cursor and your team share responsibility for a secure deployment. Cursor builds, secures, and operates the platform. You decide how to configure and adopt it for your environment. For Cursor's own posture, see the [Trust Center](https://trust.cursor.com/), [Security page](https://cursor.com/security), and [Data Use](https://cursor.com/data-use) policies.
 
 - **Cursor handles** platform security, encryption, infrastructure, certifications, and the contractual commitments documented in the Trust Center.
-- **You configure** identity, privacy enforcement, agent controls, extensibility trust, and monitoring, covered in the sections below.
+- **You configure** identity, privacy enforcement, agent controls, extensibility trust, and monitoring.
 - Layer controls for defense in depth: pair best-effort guardrails (Auto-review, allowlists, `.cursorignore`) with deterministic ones (approvals, hooks, sandboxing) rather than relying on a single layer.
 - Most **enforcement** levers here (org-wide policies, MDM, SIEM streaming) are **Enterprise** features set in the [team dashboard](https://cursor.com/docs/account/teams/dashboard.md) or through MDM. Per-user controls such as `.cursorignore` and Run Mode defaults apply more broadly.
 
 ## Admin quickstart
 
-Do these first. Each links to its detail page. Other items for regulated orgs, like Cloud Agent retention windows, appear in the tables below.
+Do these first. Regulated orgs have more to set, like Cloud Agent retention windows under [Data retention and deletion](https://cursor.com/docs/enterprise/security-hardening.md#data-retention-and-deletion).
 
 1. Enforce **[Privacy Mode](https://cursor.com/docs/enterprise/privacy-and-data-governance.md#privacy-mode-enforcement)** org-wide so members can't disable Privacy Mode or its zero data retention commitments for Cursor-routed models.
 2. Set the org **[Run Mode policy](https://cursor.com/docs/agent/security/run-modes.md#run-mode)** to **Auto-review** (not Run Everything) and enable [sandboxing](https://cursor.com/docs/agent/security/run-modes.md#sandboxing).
@@ -35,6 +35,8 @@ Control who signs in and on which device.
 | Control                        | Recommendation                                                                                                                                                                                                  | Learn more                                                                                                                                                                                       |
 | :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **SSO and SCIM**               | Centralize authentication and automate user deprovisioning.                                                                                                                                                     | [SSO](https://cursor.com/docs/account/teams/sso.md), [SCIM](https://cursor.com/docs/account/teams/scim.md)                                                                                       |
+| **Member sessions**            | Review where members are signed in and use **Sign out everywhere** to end all of a member's sessions during offboarding or an incident.                                                                         | [Sessions](https://cursor.com/docs/security/sessions.md#manage-member-sessions)                                                                                                                  |
+| **Fine-grained API keys**      | Give each key only the permissions its job needs and set an expiry. Replace legacy keys that carry broad access.                                                                                                | [API keys](https://cursor.com/docs/security/api-keys.md#fine-grained-and-legacy-keys)                                                                                                            |
 | **Allowed Team IDs**           | Block personal accounts on corporate devices via MDM so Privacy Mode always applies.                                                                                                                            | [Identity](https://cursor.com/docs/enterprise/identity-and-access-management.md#allowed-team-ids)                                                                                                |
 | **Tenancy restriction**        | Send `x-cursor-allowed-tenants` from a TLS-terminating proxy so this network only accepts listed organizations and teams.                                                                                       | [Tenancy restriction](https://cursor.com/docs/enterprise/tenancy-restriction.md)                                                                                                                 |
 | **Allowed Extensions**         | Allowlist trusted publishers; any entry blocks the rest unless you add `"*": true`.                                                                                                                             | [Extensions](https://cursor.com/docs/enterprise/identity-and-access-management.md#allowed-extensions)                                                                                            |
@@ -69,7 +71,7 @@ You and your users have several ways to manage your data.
 | **Shared transcript retention (Enterprise)** | Your team's shared transcripts older than the period you choose (30 to 365 days). Their links stop working. Off by default. | [Team Settings](https://cursor.com/dashboard/team-settings) → **Sharing** → **Shared transcript retention**                                            |
 | **Cloud Agent deletion**                     | An agent's conversation transcript and artifacts, on demand.                                                                | [Delete Agent API](https://cursor.com/docs/cloud-agent/api/endpoints.md#delete-an-agent-permanently)                                                   |
 | **Automatic expiry**                         | Cloud Agent snapshots (30 days inactivity).                                                                                 | Automatic, no action needed ([snapshots](https://cursor.com/docs/cloud-agent/security-network.md#data-retention))                                      |
-| **Enterprise retention windows**             | Cap Cloud Agent data retention (Indefinite or 90 days; custom windows in early access).                                     | [Cloud Agent retention](https://cursor.com/docs/cloud-agent/security-network.md#cloud-agent-retention-policies); contact sales                         |
+| **Enterprise retention windows**             | Cap Cloud Agent data retention (Indefinite or 90 days).                                                                     | [Cloud Agent retention](https://cursor.com/docs/cloud-agent/security-network.md#cloud-agent-retention-policies); contact sales for other windows       |
 | **Contract termination (Enterprise)**        | Return or deletion of personal data for the enterprise engagement.                                                          | Governed by the [DPA](https://cursor.com/terms/dpa); coordinate with your account team                                                                 |
 
 ## Agent runtime and deterministic controls
@@ -107,6 +109,7 @@ Review output, verify controls, and keep an audit trail.
 | :------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Pre-production review**  | Have Bugbot and Security Agents review Cursor-generated code before it ships to production.                                                                                                        | [Bugbot](https://cursor.com/docs/bugbot.md), [Security Review](https://cursor.com/docs/security-review.md)                                                                                           |
 | **Audit logs**             | Periodically review them and stream to SIEM, webhooks, or S3 for authentication and admin events.                                                                                                  | [Compliance](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#audit-logs)                                                                                                             |
+| **API key activity**       | Check **Last used** on the API Keys page and remove keys that nothing uses. Use **View audit logs** on a key's row to see what that key did.                                                       | [Key activity](https://cursor.com/docs/security/api-keys.md#review-key-activity), [Members' keys](https://cursor.com/docs/account/teams/members.md#review-members-api-keys)                          |
 | **OpenTelemetry Export**   | Stream usage and activity telemetry to your own collector over OTLP. This is separate from [audit-log SIEM streaming](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#audit-logs). | [OpenTelemetry Export](https://cursor.com/docs/enterprise/opentelemetry-export.md), [Compliance](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#usage-telemetry-over-opentelemetry) |
 | **Compliance logging**     | Use hooks to capture development-activity metadata beyond Cursor's audit logs.                                                                                                                     | [Hooks logging](https://cursor.com/docs/enterprise/compliance-and-monitoring.md#using-hooks-for-compliance-logging)                                                                                  |
 | **Responsible disclosure** | Report vulnerabilities to [security-reports@cursor.com](mailto:security-reports@cursor.com).                                                                                                       | [Disclosure](https://cursor.com/docs/agent/security.md#responsible-disclosure)                                                                                                                       |
@@ -177,7 +180,7 @@ Security reviewers can start with [Grok Bot security](https://docs.x.ai/grok-bot
 
 ## Further reading
 
-Background and product context. The docs linked throughout this page are the authority for each control.
+Background and product context. For each control, the linked doc is the authority.
 
 - [Cloud Agent security overview](https://cursor.com/docs/cloud-agent/security.md)
 - [Governing agent autonomy with Auto-review](https://cursor.com/blog/agent-autonomy-auto-review)
@@ -186,7 +189,7 @@ Background and product context. The docs linked throughout this page are the aut
 
 ## Platform commitments
 
-The controls on this page describe how to configure your own environment. They complement Cursor's platform security and contractual commitments:
+These controls cover your own environment. Cursor's platform security and contractual commitments cover the rest:
 
 - [Trust Center](https://trust.cursor.com/) for certifications, security architecture, and subprocessors
 - [Master Services Agreement](https://cursor.com/terms/msa) and [Data Processing Agreement](https://cursor.com/terms/dpa) for contractual and data-protection terms

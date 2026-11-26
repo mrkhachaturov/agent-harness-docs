@@ -1,6 +1,6 @@
 # LLM Safety and Controls
 
-AI models can behave unexpectedly. This documentation covers how to control what agents can do, set up safety guardrails, and guide LLM behavior toward desired outcomes.
+AI models can behave unexpectedly. Control what agents can do, set up safety guardrails, and steer LLM behavior toward the outcomes you want.
 
 ## Understanding model behavior
 
@@ -129,7 +129,7 @@ Configure in the [team dashboard](https://cursor.com/docs/account/teams/dashboar
 
 #### Browser origin controls
 
-Enterprise teams can restrict which websites agents can navigate to when using the [browser tool](https://cursor.com/docs/agent/tools/browser.md). Define an allowlist of approved domains—agents attempting to visit other origins are blocked.
+Enterprise teams can restrict which websites agents can navigate to when using the [browser tool](https://cursor.com/docs/agent/tools/browser.md). Define an allowlist of approved domains. Agents attempting to visit other origins are blocked.
 
 Configure in the [team dashboard](https://cursor.com/docs/account/teams/dashboard.md) under "Browser Controls" (Enterprise only).
 
@@ -314,7 +314,7 @@ Model Context Protocol (MCP) servers let agents access external data sources. Us
 
 MCPs enrich the agent's context with information it wouldn't otherwise have. For example, an MCP might provide access to your API specifications, so agents can generate code that correctly calls your internal services.
 
-MCPs are scoped to teams or users. Unlike hooks, MCPs don't enforce policies—they provide information that helps agents make better decisions.
+MCPs are scoped to teams or users. Unlike hooks, MCPs don't enforce policies. They provide information that helps agents make better decisions.
 
 See [MCP Integration](https://cursor.com/docs/mcp.md) for configuration and examples.
 

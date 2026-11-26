@@ -1,6 +1,6 @@
 # Privacy and Data Governance
 
-Understanding how data flows through Cursor is critical for security reviews and compliance assessments. This documentation explains what data goes where, what guarantees you have, and where that data lives geographically.
+For a security review or compliance assessment, you need to know how data flows through Cursor: what leaves your environment, which guarantees apply, and where that data is stored.
 
 ## Two data flows
 
@@ -27,8 +27,8 @@ Cloud Agents are the only feature that requires Cursor to store code. Unlike LLM
 **What gets stored:**
 
 - Encrypted copies of repositories that Cloud Agents work on
-- Stored temporarily while the agent runs
-- Deleted after the agent completes
+
+See [what data is stored, where, and for how long](https://cursor.com/docs/cloud-agent/security.md#what-data-is-stored-where-and-for-how-long).
 
 Cloud Agents are optional. If your security policy prohibits code storage, don't enable Cloud Agents. You can still use all other Cursor features.
 
@@ -44,7 +44,7 @@ When a Fable request trips one of its security guardrails, Cursor routes that re
 
 ## Privacy Mode enforcement
 
-Privacy Mode can be enabled at the team level to ensure all team members benefit from ZDR guarantees.
+Turn on Privacy Mode at the team level so every team member gets ZDR guarantees.
 
 **Team-level enforcement:**
 
@@ -60,7 +60,7 @@ See [Identity and Access Management](https://cursor.com/docs/enterprise/identity
 
 ## Compliance and contracts
 
-Our [DPA](https://cursor.com/terms/dpa) includes comprehensive data protection commitments that follow industry standards, including data minimization, access control, and secure processing.
+Our [DPA](https://cursor.com/terms/dpa) includes data protection commitments that follow industry standards, including data minimization, access control, and secure processing.
 
 All [sub-processors](https://trust.cursor.com/subprocessors) are covered by appropriate data processing agreements.
 
@@ -71,19 +71,19 @@ Cursor encrypts data for all infrastructure, including:
 - TLS 1.2+ in transit
 - AES-256 at rest
 
-For enhanced security control, enterprise customers can use Customer Managed Encryption Keys (CMEK) for encrypting data stored in Cursor's infrastructure.
+Enterprise customers can use Customer Managed Encryption Keys (CMEK) to encrypt data stored in Cursor's infrastructure.
 
 With CMEK enabled:
 
 - Cloud Agent data is encrypted using your customer encryption key
 - You control key rotation and access
-- Provides additional layer of security beyond standard encryption
+- You get a layer of security beyond standard encryption
 
 [Contact sales](https://cursor.com/contact-sales?source=docs-cmek) to enable CMEK for your organization.
 
 ## Data residency
 
-Data residency controls let customers enrolled in the program manage where their code and data are processed and stored. When data residency is enabled for a team, model inference, data processing, and data storage for in-scope features stay in the selected region.
+Data residency controls where your code and data are processed and stored. When data residency is enabled for a team, model inference, data processing, and data storage for in-scope features stay in the selected region.
 
 ### What data residency covers
 
@@ -95,9 +95,8 @@ Data residency applies across three independent layers for supported features an
 | **Data processing** | Data pipelines that touch your content run only in the selected region. |
 | **Data storage**    | Customer Data is stored only in the selected region, including backups. |
 
-- Today, customers can enroll in **US-only data residency** (inference, processing, and storage in the US).
-- Broader EU support and additional regions are in active development.
-- Contact your account executive if you are interested in either option.
+- **US-only data residency** keeps inference, processing, and storage in the US.
+- Contact your account executive to enroll, or to ask about other regions.
 
 ### US data residency
 
@@ -120,7 +119,7 @@ US-only data residency incurs a 10% uplift on Model pricing for eligible Models.
 
 #### How to enable
 
-US-only data residency is available to Enterprise customers and is enabled per team. Enablement is handled by your account team while self-serve controls are built out; plan for up to two weeks from the time the request comes in. Contact your account team to enroll a team.
+US-only data residency is available to Enterprise customers and is enabled per team. Your account team handles enablement. Plan for up to two weeks from the time the request comes in. Contact your account team to enroll a team.
 
 #### FAQ
 
@@ -130,11 +129,11 @@ It's enabled per team, so you can scope it to the teams that need it.
 
 ### Does it cover Cloud Agents?
 
-Yes. Inference, processing, and storage for Cloud Agents can be US-only today.
+Yes. Inference, processing, and storage for Cloud Agents can be US-only.
 
 ### Does it cover Grok Bot?
 
-Yes. Inference, processing, and storage for Grok Bot can be US-only today. Grok Bot computers already run in the US.
+Yes. Inference, processing, and storage for Grok Bot can be US-only. Grok Bot computers already run in the US.
 
 ### What happens if a user travels outside the US?
 
@@ -148,17 +147,17 @@ No. Only models marked as eligible in the US Data Residency column on [Models & 
 
 Some functionality depends on external services or on infrastructure Cursor doesn't control, so US data residency can't be provided for it:
 
-- **SSO / authentication** — Routes through Cursor's identity provider (WorkOS) regardless of region.
-- **Bring your own key (BYOK)** — US data residency is not supported for BYOK.
-- **Custom models** — A custom model reached via an OpenAI-compatible base URL override or a third-party gateway carries the region of that gateway or model, which may not be in the US.
-- **MCPs and external integrations** — `@Web` and user-configured MCPs or connectors are separate services, each with its own region.
-- **Bugbot / code review** — Runs against your repository's infrastructure, so its region depends on where your repositories are located.
-- **Shared links** — If a link is shared outside a US-only team, US-only residency can't be guaranteed for the recipient.
-- **Slack- or web-triggered Cloud Agents** — The region of the issuing command can't be guaranteed.
+- **SSO / authentication**: Routes through Cursor's identity provider regardless of region.
+- **Bring your own key (BYOK)**: US data residency is not supported for BYOK.
+- **Custom models**: A custom model reached via an OpenAI-compatible base URL override or a third-party gateway carries the region of that gateway or model, which may not be in the US.
+- **MCPs and external integrations**: `@Web` and user-configured MCPs or connectors are separate services, each with its own region.
+- **Bugbot / code review**: Runs against your repository's infrastructure, so its region depends on where your repositories are located.
+- **Shared links**: If a link is shared outside a US-only team, US-only residency can't be guaranteed for the recipient.
+- **Slack- or web-triggered Cloud Agents**: The region of the issuing command can't be guaranteed.
 
 ### Is data residency available outside the US?
 
-US-only data residency is available today. Coverage for the EU/EEA and APAC is in active development. Please reach out to your account manager for more information.
+No. Data residency is US-only. To ask about other regions, reach out to your account manager.
 
 ### Enterprise privacy and data controls
 

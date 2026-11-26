@@ -1,10 +1,10 @@
 # Model and Integration Management
 
-Your team can access multiple AI models and integrate Cursor with various services. This documentation covers how to control which models are available, manage MCP server trust, and set up integrations with tools like Slack, GitHub, and Linear.
+Control which AI models your team can use, manage MCP server trust, and set up integrations with tools like Slack, GitHub, and Linear.
 
 ## Model access control
 
-Enterprise teams can control which AI models team members can use, [contact sales](https://cursor.com/contact-sales?source=docs-model-controls) to get access. This helps manage costs, ensure appropriate usage, and comply with organizational policies.
+Enterprise admins control which AI models team members can use. If you're not on Enterprise, [contact sales](https://cursor.com/contact-sales?source=docs-model-controls). Model access control helps you manage costs, keep usage appropriate, and comply with organizational policies.
 
 Configure model access in two places:
 
@@ -27,9 +27,7 @@ See [Organization Groups](https://cursor.com/docs/enterprise/organization-groups
 
 ### How enterprise model rollout works
 
-When new models become available, Cursor doesn't immediately enable them for all enterprise teams.
-
-Instead, Enterprise teams can opt in to new models for their organization.
+When new models become available, Cursor doesn't immediately enable them for all enterprise teams. Instead, Enterprise teams can opt in to new models for their organization.
 
 See [Models](https://cursor.com/docs/models-and-pricing.md) for the current list of available models.
 
