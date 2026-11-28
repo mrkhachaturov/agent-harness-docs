@@ -1785,32 +1785,38 @@
     "security.md": {
       "original_url": "https://cursor.com/docs/security",
       "original_md_url": "https://cursor.com/docs/security.md",
-      "hash": "a01fd0e13f196a2b6db20cb39c1aa5d8d4c90630185d558273682f0aeee8ce75",
-      "last_updated": "2026-11-26T01:28:06.703374"
+      "hash": "416a54f477883dc1d3d3e3fec08e32aa51fce4c7aae031a06e6d14529a213738",
+      "last_updated": "2026-11-28T00:58:41.032736"
     },
     "security/api-keys.md": {
       "original_url": "https://cursor.com/docs/security/api-keys",
       "original_md_url": "https://cursor.com/docs/security/api-keys.md",
-      "hash": "b47923efd87a25b18f74371d8dc6401df439e807e47c651cfc5ab929ecc14f4b",
-      "last_updated": "2026-11-26T01:28:06.703484"
+      "hash": "c802fe56e2680f3a6d4f53eb0ac141f2cf219893ee5e782dbdaec9aa09351d03",
+      "last_updated": "2026-11-28T00:58:41.033104"
     },
     "security/network-controls.md": {
       "original_url": "https://cursor.com/docs/security/network-controls",
       "original_md_url": "https://cursor.com/docs/security/network-controls.md",
-      "hash": "393874afd2cf4236a7b6629c71226d1f8c0dfd4a59dc174fc25ac8faed672f18",
-      "last_updated": "2026-11-26T01:28:06.703564"
+      "hash": "5ebc9de454a6dd5dfb179ae7e073c9263b1053e36e1e5a7dde8cb36143966438",
+      "last_updated": "2026-11-28T00:58:41.033371"
     },
     "security/oauth-applications.md": {
       "original_url": "https://cursor.com/docs/security/oauth-applications",
       "original_md_url": "https://cursor.com/docs/security/oauth-applications.md",
-      "hash": "349c55dc708544e84f35c7e67f3689998c1485dc05527a61fb7b1d8d160e3a1d",
-      "last_updated": "2026-11-26T01:28:06.703638"
+      "hash": "d71e91f5af2cedd8ff80522b8c9580bbedd903f01927d94ac620eaf5321b3502",
+      "last_updated": "2026-11-28T00:58:41.033675"
     },
     "security/sessions.md": {
       "original_url": "https://cursor.com/docs/security/sessions",
       "original_md_url": "https://cursor.com/docs/security/sessions.md",
-      "hash": "6f0a97b7007bdf5232f557a804592082e0b320058657ab8cbe78905d1be12c1c",
-      "last_updated": "2026-11-26T01:28:06.703697"
+      "hash": "e6b0e576913ebbd0ced4f9eeacfaf40cceba7361bc440f532046dc436d48cbb1",
+      "last_updated": "2026-11-28T00:58:41.033944"
+    },
+    "security/trusted-issuers.md": {
+      "original_url": "https://cursor.com/docs/security/trusted-issuers",
+      "original_md_url": "https://cursor.com/docs/security/trusted-issuers.md",
+      "hash": "1d38039ded207c5dd85b60826f4280e2f1f55cfaeaa25c72f685a47826730031",
+      "last_updated": "2026-11-28T00:58:41.034106"
     },
     "skills.md": {
       "original_url": "https://cursor.com/docs/skills",
@@ -1832,21 +1838,21 @@
     }
   },
   "fetch_metadata": {
-    "last_fetch_completed": "2026-11-27T15:59:18.287246",
-    "fetch_duration_seconds": 3.122765,
-    "total_pages_discovered": 305,
-    "pages_fetched_successfully": 305,
+    "last_fetch_completed": "2026-11-28T00:58:41.037457",
+    "fetch_duration_seconds": 4.165244,
+    "total_pages_discovered": 306,
+    "pages_fetched_successfully": 306,
     "pages_failed": 0,
     "failed_urls": [],
     "index_url": "https://cursor.com/llms.txt",
     "base_url": "https://cursor.com",
-    "total_files": 305,
+    "total_files": 306,
     "layout": "nested",
     "max_workers": 10,
     "warming_passes": 4,
     "fetch_tool_version": "2.0"
   },
-  "last_updated": "2026-11-27T15:59:18.287258",
+  "last_updated": "2026-11-28T00:58:41.037475",
   "base_url": "https://raw.githubusercontent.com/mrkhachaturov/agent-harness-docs/main/docs/cursor/",
   "github_repository": "mrkhachaturov/agent-harness-docs",
   "github_ref": "main",
